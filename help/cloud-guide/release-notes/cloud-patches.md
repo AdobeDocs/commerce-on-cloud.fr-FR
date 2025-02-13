@@ -4,9 +4,9 @@ description: Consultez la liste des dernières améliorations apportées au pack
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-02-06T00:00:00Z
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
-source-git-commit: 33f89e5c9af7c172ad0592b61343e285b456fc1a
+source-git-commit: 4c8da3e40561a43674906cdf7f461bbcb1066c30
 workflow-type: tm+mt
-source-wordcount: '2326'
+source-wordcount: '2347'
 ht-degree: 0%
 
 ---
@@ -29,14 +29,17 @@ Le package de `magento/magento-cloud-patches` utilise la séquence de version su
 
 <!--Add release notes below-->
 
-## v1.1.3 {#latest}
+## v1.1.4 {#latest}
 
+Date de publication : 13 février 2025
+
+- ![nouvelle icône](../../assets/new.svg) **Correctif ajouté pour Commerce 2.4.4 à 2.4.7**—Cette mise à jour corrige les correctifs [CVE-2025-24434](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).<!-- MCLOUD-13240	 - -->
+
+## v1.1.3
 
 Date de publication : 6 février 2025
 
 - ![nouvelle icône](../../assets/new.svg) **PHP 8.4**—Ajout de la prise en charge de PHP 8.4.<!-- MCLOUD-13149	 - -->
-
-
 
 ## v1.1.2
 
@@ -124,9 +127,9 @@ Date de publication : 11 août 2022
 
 Correctif critique pour Adobe Commerce 2.4.5 :
 
-- **Problème lié aux commandes à l’aide de paiements par Braintree**—Ce correctif résout un problème critique empêchant les administrateurs de passer de nouvelles commandes ou de passer de nouvelles commandes.<!-- MCLOUD-9137 -->
+- **Problème lié aux commandes à l’aide des paiements Braintree**—Ce correctif résout un problème critique empêchant les administrateurs de passer de nouvelles commandes ou de passer de nouvelles commandes.<!-- MCLOUD-9137 -->
 
-Voir [L’administrateur ne peut pas créer de commande/réorganiser lorsque le paiement par Braintree est activé](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.html).
+Voir [L’administrateur ne peut pas créer de commande/réorganiser lorsque le paiement Braintree est activé](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.html).
 
 ## v1.0.17
 
@@ -142,7 +145,7 @@ Correctif critique pour Adobe Commerce 2.3.3-p1 et les versions ultérieures :
 
 Mise à jour des correctifs pour résoudre une vulnérabilité **critique** entraînant l’exécution de code à distance non authentifié.<!-- MCLOUD-8479 -->
 
-Voir [Bulletin de sécurité d’Adobe APSB22-12](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
+Voir [Bulletin de sécurité Adobe APSB22-12](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
 
 ## v1.0.15
 
@@ -159,7 +162,7 @@ Correctif critique pour Adobe Commerce 2.3.3-p1 et les versions ultérieures :
 
 Ajout d’un correctif pour résoudre une vulnérabilité **critique** qui entraîne l’exécution de code distant non authentifié.<!-- MCLOUD-8461 -->
 
-Voir [Bulletin de sécurité d’Adobe APSB22-12](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
+Voir [Bulletin de sécurité Adobe APSB22-12](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
 
 ## v1.0.13
 
@@ -216,7 +219,7 @@ Date de publication : 14 octobre 2020
 
 - **Correctifs Redis pour Adobe Commerce 2.3.0 à 2.3.5, 2.4.0**—Mise à jour des correctifs Redis pour prendre en charge l’ajout de produits à une catégorie lors de l’implémentation d’un cache de niveau 2. <!--MCLOUD-6659-->
 
-- **Correctif VBE pour Braintree**—Correction d&#39;un problème qui générait une erreur lorsqu&#39;un administrateur tentait d&#39;afficher un rapport de règlement Braintree. <!--MCLOUD-6684-->
+- **Correctif Braintree VBE**—Correctif d&#39;un problème qui générait une erreur lorsqu&#39;un administrateur tentait d&#39;afficher un rapport de règlement Braintree. <!--MCLOUD-6684-->
 
 - Désormais, la commande `ece-patches apply` utilise la commande Unix `patch` pour appliquer des correctifs si Git n’est pas disponible sur le système hôte. <!--MCLOUD-7069-->
 
@@ -261,7 +264,7 @@ Date de publication : 12 mai 2020
 
 - **Amélioration des performances du site**—Correction d&#39;un problème de performances de la fonction `Magento\Framework\App\DeploymentConfig\Reader::load`, qui subissait périodiquement de longs temps de chargement affectant les performances du site. <!--MCLOUD-5650-->
 
-- Mise à jour de l&#39;affectation de correctifs pour les correctifs de mode de paiement afin de cibler les modules de paiement au lieu du package de base de Magento (magento/magento2-base), de sorte que les correctifs de mode de paiement soient appliqués uniquement si les modules de paiement existent.<!--MCLOUD-5666-->
+- Mise à jour de l&#39;affectation de correctifs pour les correctifs de méthode de paiement afin de cibler les modules de paiement au lieu du package de base Magento (magento/magento2-base) de sorte que les correctifs de paiement soient appliqués uniquement si les modules de paiement existent.<!--MCLOUD-5666-->
 
 - Correctifs mis à jour pour des raisons de compatibilité avec Magento Open Source.<!--MCLOUD-5701-->
 
@@ -287,13 +290,13 @@ Cette version comprend les correctifs et correctifs critiques suivants :
 
 - **Correctif du déploiement de l’application** : ajout d’un correctif pour résoudre un problème qui désactivait le cache de pages complet pendant le processus de déploiement. Ce correctif s’applique à Adobe Commerce version 2.3.2 et ultérieures.
 
-- **Paramètre d’étendue pour l’API asynchrone/en bloc** : mise à jour de ce correctif pour corriger une erreur de syntaxe dans le fichier `composer.json`. Ce correctif s’applique aux versions 2.3.1 et 2.3.2 du Magento Open Source. Voir la description complète du correctif sur la page de téléchargement des correctifs.
+- **Paramètre d’étendue pour l’API asynchrone/en bloc** : mise à jour de ce correctif pour corriger une erreur de syntaxe dans le fichier `composer.json`. Ce correctif s’applique à Magento Open Source 2.3.1 et 2.3.2. Voir la description complète du correctif sur la page de téléchargement des correctifs.
 
 ## v1.0.1
 
 Date de publication : 6 février 2020
 
-Nous avons inclus tous les correctifs du Magento Open Source 2.x de la page téléchargements de logiciels dans la version 1.0.1 de magento/magento-cloud-patches. Si vous avez déjà copié des correctifs dans votre projet, supprimez-les pour éviter les conflits.
+Nous avons inclus tous les correctifs Magento Open Source 2.x de la page téléchargements de logiciels dans la version 1.0.1 de magento/magento-cloud-patches. Si vous avez déjà copié des correctifs dans votre projet, supprimez-les pour éviter les conflits.
 
 Cette version comprend les correctifs et correctifs critiques suivants :
 
@@ -303,7 +306,7 @@ Cette version comprend les correctifs et correctifs critiques suivants :
 
    - Ajoute une opération _retry_ pour éviter tout blocage lors des mises à jour des données dans la table `cron_schedule`.
 
-- **Mise à jour du `magento/magento-cloud-patches` pour inclure tous les correctifs disponibles pour Magento Open Source 2.x**—Mise à jour du package magento/magento-cloud-patches pour inclure tous les correctifs Magento Open Source 2.x disponibles sur la page des téléchargements de logiciels. Si vous avez déjà copié des correctifs de Magento Open Source dans votre projet d’infrastructure cloud d’Adobe Commerce, supprimez-les pour éviter les conflits.<!--MAGECLOUD-4606-->
+- **Mise à jour du `magento/magento-cloud-patches` pour inclure tous les correctifs disponibles pour Magento Open Source 2.x**—Mise à jour du package magento/magento-cloud-patches pour inclure tous les correctifs Magento Open Source 2.x disponibles sur la page des téléchargements de logiciels. Si vous avez déjà copié des correctifs Magento Open Source dans votre projet d’infrastructure cloud Adobe Commerce, supprimez-les pour éviter les conflits.<!--MAGECLOUD-4606-->
 
 - **Correctif de pagination de catalogue Elasticsearch** —A remplacé le correctif de pagination de catalogue Elasticsearch fourni dans magento/magento-cloud-patches v1.0 par un correctif plus efficace.<!--MAGECLOUD-4847-->
 
@@ -325,4 +328,4 @@ Cette version comprend les correctifs et correctifs critiques suivants :
 
 - **Compatibilité descendante des nouvelles interfaces de messagerie**-corrige un problème d’incompatibilité descendante causé par l’interface PHP `Magento\Framework\Mail\EmailMessageInterface` introduite dans Adobe Commerce v2.3.3. Dans la portée de ce correctif, le nouveau `EmailMessageInterface` hérite de l’ancien `MessageInterface` et les modules principaux d’Adobe Commerce deviennent dépendants de `MessageInterface`.<!--MAGECLOUD-4422-->
 
-- **La pagination du catalogue ne fonctionne pas sur Elasticsearch 6.x** : corrige un problème critique lié à la pagination des résultats de recherche qui affecte les clients utilisant Elasticsearch 6.x comme moteur de recherche de catalogue<!--MAGECLOUD-4448-->.
+- **La pagination du catalogue ne fonctionne pas sur Elasticsearch 6.x**—Correction d’un problème critique lié à la pagination des résultats de recherche qui affecte les clients utilisant Elasticsearch 6.x comme moteur de recherche de catalogue.<!--MAGECLOUD-4448-->
