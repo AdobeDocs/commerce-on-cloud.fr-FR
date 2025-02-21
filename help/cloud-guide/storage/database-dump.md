@@ -2,16 +2,17 @@
 title: Sauvegarde de la base de données
 description: Découvrez comment utiliser les outils ECE pour créer une sauvegarde de la base de données pour un projet d'infrastructure Adobe Commerce on cloud.
 feature: Cloud, Iaas, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 351f7691-3153-4b8a-83af-8b8895b93d98
+source-git-commit: 3a3b0cd6e28f3e6ed3521a86f7c7c8868be0cf83
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
 
 # Sauvegarde de la base de données
 
-Vous pouvez créer une copie de votre base de données à l’aide de la commande `ece-tools db-dump` sans capturer toutes les données d’environnement des services et des montages. Par défaut, cette commande crée des sauvegardes dans le répertoire `/app/var/dump-main` pour toutes les connexions à la base de données spécifiées dans la configuration de l&#39;environnement. L’opération de vidage de la base de données fait passer l’application en mode de maintenance, arrête les processus de file d’attente des clients et désactive les tâches cron avant que le vidage ne commence.
+Vous pouvez créer une copie de votre base de données à l’aide de la commande `ece-tools db-dump` sans capturer toutes les données d’environnement des services et des montages. Par défaut, cette commande crée des sauvegardes dans le répertoire `app/var/` pour toutes les connexions à la base de données spécifiées dans la configuration de l&#39;environnement. L’opération de vidage de la base de données fait passer l’application en mode de maintenance, arrête les processus de file d’attente des clients et désactive les tâches cron avant que le vidage ne commence.
 
 Tenez compte des instructions suivantes pour l’image mémoire de la base de données :
 
@@ -28,8 +29,8 @@ php vendor/bin/ece-tools db-dump main sales
 
 Utilisez la commande `php vendor/bin/ece-tools db-dump --help` pour accéder à plus d’options :
 
-- `--dump-directory=<dir>` : sélectionnez un répertoire cible pour l&#39;image mémoire de la base de données
-- `--remove-definers` : supprimer les instructions DEFINER de l&#39;image mémoire de la base de données
+- `--dump-directory=<dir>` : sélectionnez un répertoire cible pour l&#39;image mémoire de la base de données. **Ne choisissez pas les répertoires Web publics tels que `pub/media` ou`pub/static`**.
+- `--remove-definers`—Supprimez les instructions DEFINER de l&#39;image mémoire de la base de données.
 
 **Pour créer une image mémoire de base de données dans l’environnement d’évaluation ou de production** :
 
@@ -49,6 +50,10 @@ Utilisez la commande `php vendor/bin/ece-tools db-dump --help` pour accéder à 
 
 1. Créez une sauvegarde de la base de données. Pour choisir un répertoire cible pour l’image mémoire de la base de données, utilisez l’option `--dump-directory`.
 
+   >[!WARNING]
+   >
+   >Si vous spécifiez un répertoire cible, ne choisissez pas de répertoires web publics tels que `pub/media` ou `pub/static`.
+
    ```bash
    php vendor/bin/ece-tools db-dump -- main
    ```
@@ -65,7 +70,7 @@ Utilisez la commande `php vendor/bin/ece-tools db-dump --help` pour accéder à 
    [2020-01-28 16:38:10] INFO: Running Magento cron and consumers processes were not found.
    [2020-01-28 16:38:10] INFO: Waiting for lock on db dump.
    [2020-01-28 16:38:10] INFO: Start creation DB dump for main database...
-   [2020-01-28 16:38:10] INFO: Finished DB dump for main database, it can be found here: /tmp/qxmtlseakof6y/dump-main-1580229490.sql.gz
+   [2020-01-28 16:38:10] INFO: Finished DB dump for main database, it can be found here: /app/qxmtlseakof6y/var/dump-main-1580229490.sql.gz
    [2020-01-28 16:38:10] INFO: Backup completed.
    [2020-01-28 16:38:11] NOTICE: Maintenance mode is disabled.
    ```

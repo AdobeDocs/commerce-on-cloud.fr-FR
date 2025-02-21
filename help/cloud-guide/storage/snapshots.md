@@ -2,9 +2,10 @@
 title: Gestion des sauvegardes
 description: Découvrez comment créer et restaurer manuellement une sauvegarde pour votre projet d’infrastructure cloud d’Adobe Commerce.
 feature: Cloud, Paas, Snapshots, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: e73a57e7-e56c-42b4-aa7b-2960673a7b68
+source-git-commit: b5fa153b4eb0569fd16c78fb7bf47c54222752cd
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -14,6 +15,10 @@ ht-degree: 0%
 Vous pouvez effectuer une sauvegarde manuelle des environnements de démarrage actifs à tout moment à l’aide du bouton **[!UICONTROL Backup]** de la [!DNL Cloud Console] ou à l’aide de la commande `magento-cloud snapshot:create` .
 
 Une sauvegarde ou _snapshot_ est une sauvegarde complète des données de l’environnement qui inclut toutes les données persistantes des services en cours d’exécution (base de données MySQL) et tous les fichiers stockés sur les volumes montés (var, pub/media, app/etc.). L’instantané n’inclut __ de code, car le code est déjà stocké dans le référentiel Git. Vous ne pouvez pas télécharger une copie d’un instantané.
+
+>[!WARNING]
+>
+>Bien que les sauvegardes contiennent normalement le contenu des répertoires montés, y compris les répertoires Web publics comme `pub/media`, ne déplacez pas les fichiers de sortie de sauvegarde vers des répertoires Web publics comme `pub/media` ou `pub/static`.
 
 La fonction de sauvegarde/instantané ne s’applique **pas** aux environnements d’évaluation et de production Pro, qui reçoivent par défaut des sauvegardes régulières à des fins de reprise après sinistre. Pour plus d&#39;informations, reportez-vous à la section [Pro Backup &amp; Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery). Contrairement aux sauvegardes dynamiques automatiques dans les environnements d’évaluation et de production Pro, les sauvegardes ne sont **pas** automatiques. Il est de _votre_ responsabilité de créer manuellement une sauvegarde ou de configurer une tâche cron pour créer régulièrement une sauvegarde de vos environnements d’intégration Starter ou Pro.
 
