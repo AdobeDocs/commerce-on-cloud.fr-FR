@@ -2,9 +2,10 @@
 title: Workflow de pro-projet
 description: Découvrez comment utiliser les workflows de développement et de déploiement Pro.
 feature: Cloud, Iaas, Paas
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: efe41991-8940-4d5c-a720-80369274bee3
+source-git-commit: b4905acf71e4cb71eb369cb6d4bb3abe9ada4e9d
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ L’illustration suivante présente le workflow de développement et de déploie
 
 ## Workflow de développement
 
-L’environnement d’intégration fournit une branche de `integration` de base unique contenant le code de votre infrastructure Adobe Commerce on cloud. Vous pouvez créer une branche d’environnement active supplémentaire. Cela permet d’avoir jusqu’à deux branches actives déployées sur les conteneurs Platform as a Service (PaaS). Le nombre d’environnements inactifs n’est pas limité.
+L’environnement d’intégration fournit une branche de `integration` de base unique contenant le code de votre infrastructure Adobe Commerce on cloud. Vous pouvez créer une branche d’environnement active supplémentaire. Cela permet d’avoir jusqu’à deux branches actives déployées sur les conteneurs Platform as a Service (PaaS). Le nombre d’environnements inactifs n’est pas limité. Cependant, plus il y a d’environnements inactifs, plus le chargement de la console cloud prendra du temps.
 
 {{enhanced-integration-envs}}
 
