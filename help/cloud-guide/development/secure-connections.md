@@ -4,16 +4,17 @@ description: Découvrez comment appliquer des clés SSH à votre projet d’infr
 role: Developer
 feature: Cloud, Security
 topic: Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 73af13d8-7085-4ac8-9cfe-9772bc6bc112
+source-git-commit: c25e5b74ae8105995107860246ecb9ba45910bb1
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
 
 # Connexions sécurisées à des environnements distants
 
-Secure Shell (SSH) est un protocole courant utilisé pour se connecter en toute sécurité aux serveurs et systèmes distants. Vous pouvez utiliser SSH pour accéder à vos environnements distants afin de gérer l’application Adobe Commerce et d’accéder aux journaux d’environnement distant. Adobe ne prend en charge que les connexions FTP sécurisées (sFTP) utilisant votre clé publique SSH. Connexions FTP non prises en charge.
+Secure Shell (SSH) est un protocole courant utilisé pour se connecter en toute sécurité aux serveurs et systèmes distants. Vous pouvez utiliser SSH pour accéder à vos environnements distants afin de gérer l’application Adobe Commerce et d’accéder aux journaux d’environnement distant. Adobe ne prend en charge que les connexions FTP sécurisées (sFTP) à l’aide de votre clé publique SSH. Connexions FTP non prises en charge.
 
 ## Générer une paire de clés SSH
 
@@ -28,7 +29,7 @@ Créez une paire de clés SSH sur chaque ordinateur et espace de travail qui né
 
 ## Ajouter une clé publique SSH à votre compte
 
-Après avoir ajouté votre clé publique SSH à votre compte d’infrastructure Adobe Commerce on cloud, redéployez tous les environnements actifs sur votre compte pour installer la clé.
+Après avoir ajouté ou mis à jour votre clé publique SSH sur votre compte d’infrastructure cloud Adobe Commerce, [redéployez tous les environnements actifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference#environmentredeploy) sur votre compte pour installer la clé.
 
 Vous pouvez ajouter des clés SSH à votre compte à l’aide de l’une des méthodes suivantes : Cloud CLI ou [!DNL Cloud Console].
 
