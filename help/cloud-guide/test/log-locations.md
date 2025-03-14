@@ -2,7 +2,8 @@
 title: Affichage et gestion des journaux
 description: Identifiez les types de fichiers journaux disponibles dans l’infrastructure cloud et où les trouver.
 last-substantial-update: 2023-05-23T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: f0bb8830-8010-4764-ac23-d63d62dc0117
+source-git-commit: 7615347cd5b528406c2a0e72be3450350655eeb9
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 0%
@@ -111,7 +112,7 @@ Re-deploying environment project-integration-ID
 
 >[!TIP]
 >
->Lorsque vous configurez votre environnement cloud, vous pouvez configurer des [notifications par Slack et par e-mail basées sur les journaux](../environment/set-up-notifications.md) pour des actions de génération et de déploiement.
+>Lorsque vous configurez votre environnement cloud, vous pouvez configurer des [notifications Slack et par e-mail basées sur les journaux](../environment/set-up-notifications.md) pour des actions de génération et de déploiement.
 
 Les journaux suivants ont un emplacement commun pour tous les projets cloud :
 
@@ -208,13 +209,13 @@ Pour les environnements d’évaluation et de production Pro, les journaux Dépl
 
 | Fichier journal | Évaluation de pro | Pro Production |
 | ------------------- | --------------------------------------------------- | ----------------------------------------------- |
-| **Journal de déploiement** | Premier nœud uniquement :<br>`/var/log/platform/<project-ID>_stg/deploy.log` | Premier nœud uniquement :<br>`/var/log/platform/<project-ID>/deploy.log` |
-| **Log de post-déploiement** | Premier nœud uniquement :<br>`/var/log/platform/<project-ID>_stg/post_deploy.log` | Premier nœud uniquement :<br>`/var/log/platform/<project-ID>/post_deploy.log` |
-| **Log cron** | Premier nœud uniquement :<br>`/var/log/platform/<project-ID>_stg/cron.log` | Premier nœud uniquement :<br>`/var/log/platform/<project-ID>/cron.log` |
-| **Journal des accès Nginx** | `/var/log/platform/<project-ID>_stg/access.log` | `/var/log/platform/<project-ID>/access.log` |
-| **Journal des erreurs Nginx** | `/var/log/platform/<project-ID>_stg/error.log` | `/var/log/platform/<project-ID>/error.log` |
-| **Log d’accès PHP** | `/var/log/platform/<project-ID>_stg/php.access.log` | `/var/log/platform/<project-ID>/php.access.log` |
-| **Log FPM PHP** | `/var/log/platform/<project-ID>_stg/php5-fpm.log` | `/var/log/platform/<project-ID>/php5-fpm.log` |
+| **Journal de déploiement** | Premier nœud uniquement :<br>`/var/log/platform/<project-ID>_stg*/deploy.log` | Premier nœud uniquement :<br>`/var/log/platform/<project-ID>/deploy.log` |
+| **Log de post-déploiement** | Premier nœud uniquement :<br>`/var/log/platform/<project-ID>_stg*/post_deploy.log` | Premier nœud uniquement :<br>`/var/log/platform/<project-ID>/post_deploy.log` |
+| **Log cron** | Premier nœud uniquement :<br>`/var/log/platform/<project-ID>_stg*/cron.log` | Premier nœud uniquement :<br>`/var/log/platform/<project-ID>/cron.log` |
+| **Journal des accès Nginx** | `/var/log/platform/<project-ID>_stg*/access.log` | `/var/log/platform/<project-ID>/access.log` |
+| **Journal des erreurs Nginx** | `/var/log/platform/<project-ID>_stg*/error.log` | `/var/log/platform/<project-ID>/error.log` |
+| **Log d’accès PHP** | `/var/log/platform/<project-ID>_stg*/php.access.log` | `/var/log/platform/<project-ID>/php.access.log` |
+| **Log FPM PHP** | `/var/log/platform/<project-ID>_stg*/php5-fpm.log` | `/var/log/platform/<project-ID>/php5-fpm.log` |
 
 ### Fichiers journaux archivés
 
@@ -234,8 +235,8 @@ Les fichiers journaux archivés sont toujours stockés dans le répertoire où s
 
 Comme chaque service s’exécute dans un conteneur distinct, les journaux de service ne sont pas disponibles dans l’environnement d’intégration. Adobe Commerce sur les infrastructures cloud permet d’accéder au conteneur du serveur web dans l’environnement d’intégration uniquement. Les emplacements de journaux de service suivants sont destinés aux environnements de production et d&#39;évaluation Pro :
 
-- **Journal Redis** : `/var/log/platform/<project-ID>_stg/redis-server-<project-ID>_stg.log`
-- **journal Elasticsearch** : `/var/log/elasticsearch/elasticsearch.log`
+- **Journal Redis** : `/var/log/platform/<project-ID>*/redis-server-<project-ID>*.log`
+- **Journal Elasticsearch** : `/var/log/elasticsearch/elasticsearch.log`
 - **Journal de nettoyage de la mémoire Java** : `/var/log/elasticsearch/gc.log`
 - **Journal des e-mails** : `/var/log/mail.log`
 - **Journal des erreurs MySQL** : `/var/log/mysql/mysql-error.log`
