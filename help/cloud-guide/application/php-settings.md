@@ -2,9 +2,10 @@
 title: Paramètres PHP
 description: Découvrez les paramètres PHP optimaux pour la configuration de l'application Commerce dans l'infrastructure cloud.
 feature: Cloud, Configuration, Extensions
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 83094c16-7407-41fa-ba1c-46b206aa160d
+source-git-commit: 1725741cfab62a2791fe95cfae9ed9dffa352339
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -66,10 +67,16 @@ Ces paramètres permettent aux processus PHP de mettre en cache les chemins vers
 
 ### Vérifier les paramètres PHP personnalisés
 
-Après avoir envoyé les modifications `php.ini` à votre environnement Cloud, vous pouvez vérifier que la configuration PHP personnalisée a été ajoutée à votre environnement. Par exemple, utilisez SSH pour vous connecter à l’environnement distant et afficher le fichier à l’aide d’un élément similaire à ce qui suit :
+Après avoir envoyé les modifications `php.ini` à votre environnement Cloud, vous pouvez vérifier que la configuration PHP personnalisée a été ajoutée à votre environnement. Par exemple, utilisez SSH pour vous connecter à l’environnement distant, afficher les informations de configuration PHP et filtrer selon la directive `register_argc_argv` :
 
 ```bash
-cat /etc/php/<php-version>/fpm/php.ini
+php -i | grep register_argc_ar
+```
+
+Exemple de sortie :
+
+```text
+register_argc_argv => On => On
 ```
 
 >[!WARNING]
