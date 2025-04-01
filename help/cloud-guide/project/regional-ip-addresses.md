@@ -1,16 +1,17 @@
 ---
 title: Adresses IP régionales
 description: Consultez une liste d’adresses IP pour les régions AWS et Azure utilisées par Adobe Commerce sur les infrastructures cloud pour les environnements d’intégration.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 1137f5cf-4879-46d7-878c-bf47de7a0e34
+source-git-commit: f2214dd56625847132298892635c7cf738c3d71f
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
 
 # Adresses IP régionales
 
-Les tableaux suivants répertorient les adresses IP entrantes et sortantes utilisées par Adobe Commerce sur les infrastructures cloud [environnements d’intégration](../architecture/pro-architecture.md#integration-environment). Ces adresses IP sont stables, mais peuvent changer. L’Adobe avertit les clients avant d’effectuer tout changement d’adresse IP.
+Les tableaux suivants répertorient les adresses IP entrantes et sortantes utilisées par Adobe Commerce sur les infrastructures cloud [environnements d’intégration](../architecture/pro-architecture.md#integration-environment). Ces adresses IP sont stables, mais peuvent changer. Adobe avertit les clients avant d’effectuer tout changement d’adresse IP.
 
 La syntaxe permettant d’aborder les environnements d’intégration est la suivante :
 
@@ -22,7 +23,9 @@ La syntaxe permettant d’aborder les environnements d’intégration est la sui
 - **ID de projet** = ID de projet de 13 caractères
 - **Region** = nom de la région AWS ou Azure
 
-Vous pouvez utiliser la commande `ping` pour récupérer l’adresse IP entrante :
+Vous pouvez utiliser la commande `ping` ou `dig` pour récupérer l’adresse IP entrante :
+
+**Ping**
 
 ```bash
 ping integration-abcd123-abcd78910.us-3.magentosite.cloud
@@ -35,6 +38,18 @@ PING integration-abcd123-abcd78910.us-3.magentosite.cloud (34.210.133.187): 56 d
 Request timeout for icmp_seq 0
 Request timeout for icmp_seq 1
 Request timeout for icmp_seq 2
+```
+
+**Dig**
+
+```bash
+dig +short integration-abcd123-abcd78910.us-3.magentosite.cloud
+```
+
+Exemple de réponse
+
+```bash
+34.210.133.187
 ```
 
 Si vous disposez d’un pare-feu d’entreprise qui bloque les connexions SSH sortantes, vous pouvez ajouter les adresses IP entrantes à votre place sur la liste autorisée.
