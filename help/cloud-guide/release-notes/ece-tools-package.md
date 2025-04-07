@@ -2,11 +2,11 @@
 title: Notes de mise à jour des outils de la CEE
 description: Voir la liste des dernières améliorations apportées au progiciel ECE-Tools.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-02-06T00:00:00Z
+last-substantial-update: 2024-04-03T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: 33f89e5c9af7c172ad0592b61343e285b456fc1a
+source-git-commit: 3d5c84890f48a26938b42783b591b876fd2a2fd1
 workflow-type: tm+mt
-source-wordcount: '3022'
+source-wordcount: '3059'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,14 @@ Les notes de mise à jour incluent les éléments suivants :
 
 <!--Add release notes below-->
 
-## v2002.2.1 {#latest}
+## v2002.2.2 {#latest}
 
+Date de publication : 3 avril 2025
+
+- ![nouvelle icône](../../assets/new.svg) **Valkey**—Ajout de la prise en charge d&#39;un nouveau service (Valkey), qui remplace Redis.<!-- MCLOUD-13455	 - -->
+- ![icône de correction](../../assets/fix.svg) **Opensearch2 pour 2.4.4/2.4.5**—Ajout de la prise en charge de `opensearch2` dans les versions d’Adobe Commerce 2.4.4/2.4.5. <!-- MCLOUD-13493	 - -->
+
+## v2002.2.1
 
 Date de publication : 6 février 2024
 
@@ -44,14 +50,14 @@ Date de publication : 7 octobre 2024
 - ![nouvelle icône](../../assets/new.svg) **MariaDB 11.4**-Ajout de la prise en charge de MariaDB 11.4.
 - ![icône de correction](../../assets/fix.svg) **code refactorisé**-Suppression de la prise en charge des anciennes versions PHP 7.4, 7.3, 7.2 et des bibliothèques associées.<!-- MCLOUD-9278 -->
 - ![icône de correction](../../assets/fix.svg) **mise à niveau de Monolog version**-prise en charge ajoutée de monolog 3.6.<!-- MCLOUD-12855 -->
-- ![Icône de correction](../../assets/fix.svg) **Validateur pour RabbitMQ, MariaDB et PHP**-Correction du validateur qui générait un message trompeur sur la mauvaise version du service.
+- ![icône de correction](../../assets/fix.svg) **Validateur pour RabbitMQ, MariaDB et PHP**-Correction du validateur qui générait un message trompeur sur la mauvaise version du service.
 
 ## v2002.1.19
 
 Date de publication : 21 mai 2024
 
 - ![nouvelle icône](../../assets/new.svg) **Lua** : option ajoutée useLua pour CACHE_CONFIGURATION.
-- ![icône de correction](../../assets/fix.svg) **programme de validation** : programmes de validation mis à jour pour les nouvelles versions de Redis et RabbitMQ.
+- ![icône de correctif](../../assets/fix.svg) **Validateur**—Validateurs mis à jour pour les nouvelles versions de Redis et RabbitMQ.
 
 ## v2002.1.18
 
@@ -64,7 +70,7 @@ Date de publication : 8 avril 2024
 
 Date de publication : 16 janvier 2024
 
-- ![icône de correction](../../assets/fix.svg) **Validateur pour Elasticsearch et OpenSearch** : correction du validateur qui générait un message trompeur pour installer un service de recherche lorsque LiveSearch est activé.<!-- MCLOUD-10167 -->
+- ![icône de correction](../../assets/fix.svg) **Validator pour Elasticsearch et OpenSearch**—Correction du validateur qui générait un message trompeur pour installer un service de recherche lorsque LiveSearch était activé.<!-- MCLOUD-10167 -->
 - ![icône de correction](../../assets/fix.svg) **avertissement de déploiement**—Correction d’un problème qui entraînait des avertissements de déploiement concernant les dossiers non vides.<!-- MCLOUD-8958 -->
 
 ## v2002.1.16
@@ -79,7 +85,7 @@ Date de publication : 31 juillet 2023
 
 - ![icône de correction](../../assets/fix.svg) **Codes d’erreur**—Mise à jour du schéma de code d’erreur et du générateur de document de code d’erreur.
 - ![Icône de correction](../../assets/fix.svg) **Validateur pour le modèle Redis personnalisé**-Mise à jour du validateur pour les modèles principaux Redis personnalisés. [Voir l’exemple de configuration du cache](../environment/variables-deploy.md#cache_configuration).
-- ![Icône de correction](../../assets/fix.svg) **Validateur pour RabbitMQ**-Prise en charge ajoutée de RabbitMQ 3.11
+- ![icône de correction](../../assets/fix.svg) **Validateur pour RabbitMQ**-prise en charge ajoutée pour RabbitMQ 3.11
 - ![Icône de correction](../../assets/fix.svg) **Correction du lien incorrect**-Correction du lien incorrect vers la documentation d’intégration dans le modèle d’e-mail de bienvenue.
 
 ## v2002.1.14
@@ -151,7 +157,7 @@ Date de publication : 29 juillet 2021
 
 - ![icône de correction](../../assets/fix.svg) **Mise à jour des exigences du compositeur pour`symphony/console`**—Mise à jour des exigences de version du `composer.json` ECE-Tools pour le package `symphony/console` afin de résoudre un problème qui a provoqué l&#39;échec des commandes `di:compile` avec l&#39;erreur suivante : `Incompatible argument type: Required type: int. Actual type: string`<!--MC-42919-->
 
-- ![icône de correction](../../assets/fix.svg) Mise à jour des contrôles logiciels de fin de vie (`eol.yaml`) afin d’inclure l’Elasticsearch 7.9.x.<!--MCLOUD-7938-->
+- ![icône de correction](../../assets/fix.svg) Mise à jour des contrôles logiciels de fin de vie (`eol.yaml`) afin d’inclure Elasticsearch 7.9.x.<!--MCLOUD-7938-->
 
 ## v2002.1.6
 
@@ -159,13 +165,13 @@ Date de publication : 20 avril 2021
 
 - ![nouvelle icône](../../assets/new.svg) **Informations d’identification d’authentification Redis**—Ajout de la possibilité de lire les informations d’identification d’autorisation Redis à partir de la propriété `relationships` pendant la phase de déploiement.<!--MCLOUD-7694-->
 
-- ![nouvelle icône](../../assets/new.svg) **informations d’identification d’autorisation d’Elasticsearch**—Ajout de la possibilité de lire les informations d’identification d’autorisation d’Elasticsearch à partir de la propriété `relationships` pendant la phase de déploiement.<!--MCLOUD-7695-->
+- ![nouvelle icône](../../assets/new.svg) **informations d’identification d’autorisation Elasticsearch**—Ajout de la possibilité de lire les informations d’identification d’autorisation Elasticsearch à partir de la propriété `relationships` pendant la phase de déploiement.<!--MCLOUD-7695-->
 
 - ![nouvelle icône](../../assets/new.svg) **Service de stockage de session dédié**—Ajout de `redis-session` en tant que seconde option pour le stockage de session. Vous pouvez utiliser le service `redis-session` pour stocker les informations de session et utiliser le service `redis` pour le cache afin d’offrir de meilleures performances.<!--MCLOUD-7698-->
 
 - ![nouvelle icône](../../assets/new.svg) **Messages SPLIT_DB obsolètes**—Ajout de messages d’avertissement et critiques du programme de validation pour l’option de `SPLIT_DB` obsolète d’Adobe Commerce 2.4.2 et sa suppression dans Adobe Commerce 2.5.0.<!--MCLOUD-7806-->
 
-- ![icône de correction](../../assets/fix.svg) **version de l’Elasticsearch à partir des relations**—Correction du validateur de service pour récupérer la version correcte de l’Elasticsearch à partir des propriétés de `relationships` dans Cloud Docker et les environnements d’intégration.<!--MCLOUD-7572-->
+- ![icône de correction](../../assets/fix.svg) **version d’Elasticsearch à partir des relations**—Correction du validateur de service pour récupérer la version correcte d’Elasticsearch à partir des propriétés `relationships` dans Cloud Docker et les environnements d’intégration.<!--MCLOUD-7572-->
 
 - ![icône de correction](../../assets/fix.svg) **validation flexible du port Redis** : Redis peut désormais valider le port dans une connexion de cache personnalisée à partir de l’URL `server`. Par exemple, vous pouvez ajouter votre numéro de port à l’URL de votre serveur comme suit : `server: 'tcp://rfs-store-simple-page-cache:26379'`. Cela permet d’éviter les erreurs de validation lorsque l’option `port` est manquante ou incorrecte.<!--MCLOUD-7722-->
 
@@ -217,13 +223,13 @@ Date de publication : 9 novembre 2020
 
 - ![nouvelle icône](../../assets/new.svg) Ajout d’une validation du moteur de recherche pour s’assurer que `elasticsearch` est défini pour Adobe Commerce sur les infrastructures cloud 2.4 et versions ultérieures. Si la validation échoue, le déploiement est arrêté avec un message d’erreur critique qui suggère des correctifs pour le problème. Voir [Erreurs critiques, étape de déploiement](../dev-tools/error-reference.md#deploy-stage).<!--MCLOUD-6937-->
 
-- ![nouvelle icône](../../assets/new.svg) Ajout d’une validation de l’Elasticsearch pour vérifier la compatibilité entre la version du service Elasticsearch et la version Adobe Commerce.<!--MCLOUD-7193-->
+- ![nouvelle icône](../../assets/new.svg) Ajout d’une validation Elasticsearch pour vérifier la compatibilité entre la version du service Elasticsearch et la version Adobe Commerce.<!--MCLOUD-7193-->
 
-- ![nouvelle icône](../../assets/new.svg) Mise à jour du message d’erreur de compatibilité de l’Elasticsearch pour afficher les versions de l’Elasticsearch compatibles avec le module Adobe Commerce Elasticsearch. Le message d’erreur indique désormais les versions spécifiques de l’Elasticsearch à installer dans votre infrastructure cloud afin qu’elle soit compatible avec le module Elasticsearch utilisé par votre version d’Adobe Commerce. Voir [Erreurs d’avertissement, étape de déploiement](../dev-tools/error-reference.md#deploy-stage-1).<!--MCLOUD-6698-->
+- ![nouvelle icône](../../assets/new.svg) Mise à jour du message d’erreur de compatibilité d’Elasticsearch pour afficher les versions d’Elasticsearch compatibles avec le module Adobe Commerce Elasticsearch. Le message d’erreur indique désormais les versions Elasticsearch spécifiques à installer dans votre infrastructure cloud afin qu’elle soit compatible avec le module Elasticsearch utilisé par votre version d’Adobe Commerce. Voir [Erreurs d’avertissement, étape de déploiement](../dev-tools/error-reference.md#deploy-stage-1).<!--MCLOUD-6698-->
 
 - ![nouvelle icône](../../assets/new.svg) Ajout d’erreurs d’avertissement `2026` et `2027` pour les paramètres de variable d’environnement `MAGE_MODE` non valides. La seule valeur valide est `production`. Avant ce correctif, `MAGE_MODE` pouvait être défini sur `developer` sans erreur de déploiement, pour entraîner ultérieurement des erreurs lors de tentatives d’écriture dans des fichiers en lecture seule. Voir [Erreurs d’avertissement](../dev-tools/error-reference.md#warning-errors).<!--MCLOUD-6708-->
 
-- ![Icône de correction](../../assets/fix.svg) Correction de la validation des services Redis, RabbitMQ et MySQL pour s’assurer que ces versions sont compatibles avec la version d’Adobe Commerce. Des versions valides de ces services sont désormais écrites dans le `cloud.log`.<!--MCLOUD-7098-->
+- ![Icône de correction](../../assets/fix.svg) Correction de la validation des services Redis, RabbitMQ et MySQL pour s’assurer que ces versions sont compatibles avec la version Adobe Commerce. Des versions valides de ces services sont désormais écrites dans le `cloud.log`.<!--MCLOUD-7098-->
 
 - ![Icône de correction](../../assets/fix.svg) Mise à jour du `cloud.log` afin d’inclure la limite de requêtes simultanées pour l’envoi de requêtes pendant le préchauffage du cache. Cette valeur est configurée dans la variable post-déploiement [WARM_UP_CONCURRENCY](../environment/variables-post-deploy.md#warm_up_concurrency). <!--MCLOUD-5563-->
 
@@ -253,7 +259,7 @@ Date de publication : 5 août 2020
 
    - Code d&#39;erreur 102 : ajout de vérifications supplémentaires pour les problèmes qui se produisent lorsque le fichier `env.php` n&#39;est pas accessible en écriture <!--MCLOUD-6221-->
 
-- ![nouvelle icône](../../assets/new.svg) Ajout de la variable d’environnement **QUALITY_PATCH** pour spécifier un ou plusieurs correctifs de qualité à appliquer pendant le processus de déploiement. Voir [Créer des variables](../environment/variables-build.md#quality_patches).<!--MCLOUD-6375-->
+- ![nouvelle icône](../../assets/new.svg) Ajout de la variable d’environnement **QUALITY_PATCHES** pour spécifier un ou plusieurs correctifs de qualité à appliquer pendant le processus de déploiement. Voir [Créer des variables](../environment/variables-build.md#quality_patches).<!--MCLOUD-6375-->
 
 ## v2002.1.1
 
@@ -361,7 +367,7 @@ Date de publication : 6 février 2020
 
    - ![nouvelle icône](../../assets/new.svg) Ajout d’une validation pour vérifier les versions de service installées par rapport à la date de fin de vie de chaque service. Désormais, les clients reçoivent une notification si une version de service est dans les trois mois suivant la date de fin de vie, ainsi qu’un avertissement si la date de fin de vie est dans le passé.<!--MAGECLOUD-4076-->
 
-   - ![icône de correction](../../assets/fix.svg) correction d’un problème de configuration de l’Elasticsearch afin de s’assurer que les paramètres d’Elasticsearch appropriés sont configurés dans tous les environnements.<!--MAGECLOUD-4474-->
+   - ![icône de correction](../../assets/fix.svg) correction d’un problème de configuration d’Elasticsearch afin de s’assurer que les paramètres Elasticsearch appropriés sont configurés dans tous les environnements.<!--MAGECLOUD-4474-->
 
 >[!NOTE]
 >
