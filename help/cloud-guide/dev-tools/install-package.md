@@ -2,7 +2,8 @@
 title: Projet de mise à niveau pour l'utilisation des outils de la CEE
 description: Découvrez comment mettre à niveau votre projet Adobe Commerce sur l'infrastructure cloud pour utiliser le package ECE-Tools et tirer parti des derniers correctifs et fonctionnalités.
 feature: Cloud, Install
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 164c47e4-c871-41a3-b268-581d426e7a7f
+source-git-commit: 1cea1cdebf3aba2a1b43f305a61ca6b55e3b9d08
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # Projet de mise à niveau pour utiliser le module ECE-Tools
 
-L’Adobe a abandonné les packages `magento/magento-cloud-configuration` et `magento/ece-patches` au profit du package `ece-tools`, ce qui simplifie de nombreux processus cloud. Si vous utilisez un ancien projet d’infrastructure Adobe Commerce on cloud qui ne contient _pas_ le package `ece-tools`, vous devez effectuer une opération manuelle unique _mise à niveau_ sur votre projet.
+Adobe a abandonné les packages `magento/magento-cloud-configuration` et `magento/ece-patches` au profit du package `ece-tools`, ce qui simplifie de nombreux processus cloud. Si vous utilisez un ancien projet d’infrastructure Adobe Commerce on cloud qui ne contient _pas_ le package `ece-tools`, vous devez effectuer une opération manuelle unique _mise à niveau_ sur votre projet.
 
 >[!WARNING]
 >
@@ -43,11 +44,11 @@ Si vous souhaitez installer Adobe Commerce `2.3.5-p2`, définissez `current_vers
 
 Vous pouvez toujours trouver la dernière contrainte de métapaquet dans le modèle de [`magento-cloud`](https://github.com/magento/magento-cloud/blob/master/composer.json).
 
-L’exemple suivant place une contrainte pour le métapaquet Adobe Commerce sur l’infrastructure cloud sur toute version supérieure ou égale à la version actuelle 2.4.7 et inférieure à la version suivante 2.4.8 :
+L’exemple suivant place une contrainte pour le métapaquet Adobe Commerce sur l’infrastructure cloud sur toute version supérieure ou égale à la version actuelle 2.4.8 et inférieure à la version suivante 2.4.9 :
 
 ```json
 "require": {
-    "magento/magento-cloud-metapackage": ">=2.4.7 <2.4.8"
+    "magento/magento-cloud-metapackage": ">=2.4.8 <2.4.9"
 },
 ```
 
@@ -60,7 +61,7 @@ Pour mettre à niveau votre projet afin d’utiliser le package `ece-tools`, vou
 1. Mettez à jour la contrainte de version `magento/magento-cloud-metapackage` dans le fichier `composer.json`.
 
    ```bash
-   composer require "magento/magento-cloud-metapackage":">=2.4.7 <2.4.8" --no-update
+   composer require "magento/magento-cloud-metapackage":">=2.4.8 <2.4.9" --no-update
    ```
 
 1. Mettez à jour le métapaquet .

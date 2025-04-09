@@ -2,7 +2,8 @@
 title: Mettre à niveau la version de Commerce
 description: Découvrez comment mettre à niveau la version Adobe Commerce dans le projet d’infrastructure cloud.
 feature: Cloud, Upgrade
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: 0cc070cf-ab25-4269-b18c-b2680b895c17
+source-git-commit: 1cea1cdebf3aba2a1b43f305a61ca6b55e3b9d08
 workflow-type: tm+mt
 source-wordcount: '1547'
 ht-degree: 0%
@@ -15,7 +16,7 @@ Vous pouvez mettre à niveau la base de code Adobe Commerce vers une version plu
 
 Selon la configuration de votre projet, vos tâches de mise à niveau peuvent inclure les éléments suivants :
 
-- Mettez à jour les services tels que MariaDB (MySQL), OpenSearch, RabbitMQ et Redis pour des raisons de compatibilité avec les nouvelles versions d’Adobe Commerce.
+- Mettez à jour les services tels que MariaDB (MySQL), OpenSearch, RabbitMQ et Redis pour garantir la compatibilité avec les nouvelles versions d’Adobe Commerce.
 - Convertissez un fichier de gestion de configuration plus ancien.
 - Mettez à jour le fichier `.magento.app.yaml` avec de nouveaux paramètres pour les hooks et les variables d’environnement.
 - Mettez à niveau les extensions tierces vers la dernière version prise en charge.
@@ -64,7 +65,7 @@ Lors de la mise à niveau à partir d’une version plus ancienne, vous devez mi
 
 ### Vérifier les dépendances du compositeur de structure d&#39;envoi
 
-Lors de la mise à niveau vers **2.3.x ou une version ultérieure à partir de 2.2.x**, vérifiez que les dépendances de Zend Framework ont été ajoutées à la propriété `autoload` du fichier `composer.json` pour prendre en charge Laminas. Ce plug-in prend en charge les nouvelles exigences de la structure Zend, qui a migré vers le projet Laminas. Voir [Migration de Zend Framework vers le projet Laminas](https://community.magento.com/t5/Magento-DevBlog/Migration-of-Zend-Framework-to-the-Laminas-Project/ba-p/443251) sur le _DevBlog Magento_.
+Lors de la mise à niveau vers **2.3.x ou une version ultérieure à partir de 2.2.x**, vérifiez que les dépendances de Zend Framework ont été ajoutées à la propriété `autoload` du fichier `composer.json` pour prendre en charge Laminas. Ce plug-in prend en charge les nouvelles exigences de la structure Zend, qui a migré vers le projet Laminas. Voir [ Migration de Zend Framework vers le projet Laminas ](https://community.magento.com/t5/Magento-DevBlog/Migration-of-Zend-Framework-to-the-Laminas-Project/ba-p/443251) sur le _DevBlog Magento_.
 
 **Pour vérifier la configuration `auto-load:psr-4`, procédez comme suit**
 
@@ -123,7 +124,7 @@ Avant de mettre à niveau l’application, vous devez mettre à jour les fichier
 
 ### .magento.app.yaml
 
-Vérifiez toujours les valeurs contenues dans le fichier [.magento.app.yaml](../application/configure-app-yaml.md) pour la version installée, car il contrôle la manière dont votre application crée et déploie l’infrastructure cloud. L’exemple suivant concerne la version 2.4.7 et utilise le compositeur 2.7.2. La propriété `build: flavor:` n’est pas utilisée pour le compositeur 2.x. Voir [Installation et utilisation du compositeur 2](../application/properties.md#installing-and-using-composer-2).
+Vérifiez toujours les valeurs contenues dans le fichier [.magento.app.yaml](../application/configure-app-yaml.md) pour la version installée, car il contrôle la manière dont votre application crée et déploie l’infrastructure cloud. L’exemple suivant concerne la version 2.4.8 et utilise le compositeur 2.8.4. La propriété `build: flavor:` n’est pas utilisée pour le compositeur 2.x. Voir [Installation et utilisation du compositeur 2](../application/properties.md#installing-and-using-composer-2).
 
 **Pour mettre à jour le fichier `.magento.app.yaml`** :
 
@@ -134,13 +135,13 @@ Vérifiez toujours les valeurs contenues dans le fichier [.magento.app.yaml](../
 1. Mettez à jour les options PHP.
 
    ```yaml
-   type: php:8.3
+   type: php:8.4
    
    build:
        flavor: none
    dependencies:
        php:
-           composer/composer: '2.7.2'
+           composer/composer: '2.8.4'
    ```
 
 1. Modifiez les `build` de propriété `hooks` et les commandes `deploy`.

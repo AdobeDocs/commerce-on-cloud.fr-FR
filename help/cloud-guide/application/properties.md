@@ -2,7 +2,8 @@
 title: Propriétés
 description: Utilisez la liste des propriétés comme référence lors de la configuration de l’application  [!DNL Commerce]  pour la génération et le déploiement sur l’infrastructure cloud.
 feature: Cloud, Configuration, Build, Deploy, Roles/Permissions, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 32bd1f64-43d6-48a3-84b7-bea22f125bb0
+source-git-commit: 1cea1cdebf3aba2a1b43f305a61ca6b55e3b9d08
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%
@@ -54,7 +55,7 @@ La propriété `build` détermine ce qui se passe par défaut lors de la créati
 
 ```yaml
 # The toolstack used to build the application.
-type: php:8.3
+type: php:8.4
 build:
     flavor: none
 
