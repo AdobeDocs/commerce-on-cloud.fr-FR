@@ -1,13 +1,13 @@
 ---
-source-git-commit: 6a686858394e65dfbb665bb76332ee13348dad7e
+source-git-commit: 9fbcca6f545276e7afedcdb6e6061a87dd8f2dd9
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 3%
 
 ---
-# outils cee
+# Outils de la CEE
 
-**Version** : 2002.2.1
+**Version** : 2002.2.2
 
 Cette référence contient 34 commandes disponibles via l’outil de ligne de commande `ece-tools`.
 La liste initiale est générée automatiquement à l’aide de la commande `ece-tools list` dans Adobe Commerce sur l’infrastructure cloud.
@@ -20,16 +20,16 @@ Cette référence est générée à partir de la base de code de l’application
 
 #### `--help`, `-h`
 
-Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, afficher l’aide pour la commande de liste
+Affichez l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, afficher l’aide pour la commande de liste
 
 - Valeur par défaut : `false`
 - N’accepte aucune valeur
 
 #### `--quiet`, `-q`
 
-Ne pas générer de message
+Ne génère aucun message
 
-- Valeur par défaut : `false`
+- Faire défaut: `false`
 - N’accepte aucune valeur
 
 #### `--verbose`, `-v|-vv|-vvv`
@@ -90,7 +90,7 @@ Le type de coque (« bash », « fish », « zsh »)
 Tableau de jetons d’entrée (par exemple COMP_WORDS ou argv)
 
 - Valeur par défaut : `[]`
-- Requiert une valeur
+- Nécessite une valeur
 
 #### `--current`, `-c`
 
@@ -169,14 +169,14 @@ Le type de shell (par exemple « bash »), la valeur de la variable d&#39;enviro
 
 ### Options
 
-Pour les options globales, voir [Options globales](#global-options).
+Pour connaître les options globales, reportez-vous à la section [Options globales](#global-options).
 
 #### `--debug`
 
-Faire apparaître dans le journal de débogage l’achèvement
+Suivez le journal de débogage de fin
 
-- Valeur par défaut : `false`
-- N’accepte aucune valeur
+- Faire défaut: `false`
+- N’accepte pas de valeur
 
 
 ## `db-dump`
@@ -193,7 +193,7 @@ Crée des sauvegardes de base de données.
 
 Bases de données pour la sauvegarde. Valeurs disponibles : [vente du devis principal]. Si la valeur de l’argument n’est pas spécifiée, les sauvegardes de la base de données sont créées à l’aide des informations d’identification stockées dans la variable d’environnement `MAGENTO_CLOUD_RELATIONSHIP` ou/et la propriété `stage.deploy.DATABASE_CONFIGURATION` du fichier de configuration .magento.env.yaml.
 
-- Valeur par défaut : `[]`
+- Faire défaut: `[]`
 - Tableau
 
 ### Options
@@ -204,8 +204,8 @@ Pour les options globales, voir [Options globales](#global-options).
 
 Supprimer les définisseurs de l&#39;image mémoire de la base de données
 
-- Valeur par défaut : `false`
-- N’accepte aucune valeur
+- Faire défaut: `false`
+- N’accepte pas de valeur
 
 #### `--dump-directory`, `-a`
 
@@ -370,7 +370,7 @@ Exécuter scénario(s).
 
 #### `scenario`
 
-Scénario(s)
+Scenario(s)
 
 - Valeur par défaut : `[]`
 - Obligatoire
@@ -379,7 +379,7 @@ Scénario(s)
 
 ### Options
 
-Pour les options globales, voir [Options globales](#global-options).
+Pour connaître les options globales, reportez-vous à la section [Options globales](#global-options).
 
 
 ## `backup:list`
@@ -409,9 +409,9 @@ Pour les options globales, voir [Options globales](#global-options).
 
 #### `--force`, `-f`
 
-Écraser les fichiers existants lors de la restauration d’une sauvegarde
+Ecraser des fichiers existants lors de la restauration d’une sauvegarde
 
-- Valeur par défaut : `false`
+- Faire défaut: `false`
 - N’accepte aucune valeur
 
 #### `--file`
@@ -427,7 +427,7 @@ Chemin de récupération de fichier spécifique
 ece-tools build:generate
 ```
 
-Génère tous les fichiers nécessaires à l’étape de création.
+Génère tous les fichiers nécessaires à la phase de génération.
 
 ### Options
 
@@ -486,7 +486,7 @@ Configuration au format JSON
 
 ### Options
 
-Pour les options globales, voir [Options globales](#global-options).
+Pour connaître les options globales, reportez-vous à la section [Options globales](#global-options).
 
 
 ## `cloud:config:validate`
@@ -495,7 +495,7 @@ Pour les options globales, voir [Options globales](#global-options).
 ece-tools cloud:config:validate
 ```
 
-Valide `.magento.env.yaml` fichier de configuration
+Valide le `.magento.env.yaml` fichier de configuration
 
 ### Options
 
@@ -521,7 +521,7 @@ Pour les options globales, voir [Options globales](#global-options).
 ece-tools cron:disable
 ```
 
-Désactivez tous les processus cron Magento et arrêtez tous les processus en cours d’exécution.
+Disable all Magento cron processes and terminates all running processes.
 
 ### Options
 
@@ -534,7 +534,7 @@ Pour les options globales, voir [Options globales](#global-options).
 ece-tools cron:enable
 ```
 
-Active les processus cron Magento.
+Active les processus Magento cron.
 
 ### Options
 
@@ -547,7 +547,7 @@ Pour les options globales, voir [Options globales](#global-options).
 ece-tools cron:kill
 ```
 
-Termine tous les processus cron Magento.
+Termine tous les processus cron de Magento.
 
 ### Options
 
@@ -606,13 +606,13 @@ Pour les options globales, voir [Options globales](#global-options).
 ece-tools env:config:show [<variable>...]
 ```
 
-Affichez les variables d’environnement de configuration cloud codées.
+Affichez les variables d’environnement de configuration de cloud codées.
 
 ### Arguments
 
 #### `variable`
 
-Variables d’environnement à afficher, options possibles : services, itinéraires, variables
+Variables d’environnement à afficher, options possibles : services,itinéraires,variables
 
 - Valeur par défaut : `[]`
 - Tableau
@@ -634,7 +634,7 @@ Affiche des informations sur l’erreur par ID d’erreur ou des informations su
 
 #### `error-code`
 
-Le code d’erreur, s’il n’est pas transmis, affiche des informations sur toutes les erreurs du dernier déploiement
+Code d’erreur, s’il n’est pas transmis. La commande affiche des informations sur toutes les erreurs du dernier déploiement
 
 ### Options
 
@@ -644,8 +644,8 @@ Pour les options globales, voir [Options globales](#global-options).
 
 Utilisé pour obtenir un résultat au format JSON
 
-- Valeur par défaut : `false`
-- N’accepte aucune valeur
+- Faire défaut: `false`
+- N’accepte pas de valeur
 
 
 ## `module:refresh`
@@ -667,7 +667,7 @@ Pour les options globales, voir [Options globales](#global-options).
 ece-tools schema:generate
 ```
 
-Génère le fichier schema *.dist.
+Génère le fichier *.dist du schéma.
 
 ### Options
 
@@ -697,7 +697,7 @@ Vérifie la configuration maître-esclave.
 
 ### Options
 
-Pour les options globales, voir [Options globales](#global-options).
+Pour connaître les options globales, reportez-vous à la section [Options globales](#global-options).
 
 
 ## `wizard:scd-on-build`
@@ -706,7 +706,7 @@ Pour les options globales, voir [Options globales](#global-options).
 ece-tools wizard:scd-on-build
 ```
 
-Vérifie le SCD sur la configuration de la version.
+Vérifie SCD sur la configuration de build.
 
 ### Options
 
@@ -719,11 +719,11 @@ Pour les options globales, voir [Options globales](#global-options).
 ece-tools wizard:scd-on-demand
 ```
 
-Vérifie la configuration SCD à la demande.
+Vérifie la configuration SCD on Demand.
 
 ### Options
 
-Pour les options globales, voir [Options globales](#global-options).
+Pour connaître les options globales, reportez-vous à la section [Options globales](#global-options).
 
 
 ## `wizard:scd-on-deploy`
