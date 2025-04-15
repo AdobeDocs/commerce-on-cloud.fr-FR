@@ -2,9 +2,10 @@
 title: Mise en cache
 description: Découvrez comment activer la mise en cache pour votre Adobe Commerce sur les environnements d’infrastructure cloud.
 feature: Cloud, Cache, Routes
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: e73c36d6-9a58-45c0-9220-86074c1f46f0
+source-git-commit: a1ed2818cbaf5adf8b673df0ee9b9218e6f700a2
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
@@ -130,7 +131,7 @@ Il existe un cas particulier si la clé `cookies` a la valeur `["*"]`. Cette val
 
 Les cookies présentent les restrictions suivantes :
 
-- Vous pouvez définir un maximum de **50 cookies** dans le système. Dans le cas contraire, l’application renvoie une exception `Unable to send the cookie. Maximum number of cookies would be exceeded`.
+- Le système contient un maximum défini de **50 cookies**. Dans le cas contraire, l’application renvoie une exception `Unable to send the cookie. Maximum number of cookies would be exceeded`. Pour augmenter le nombre de cookies à 200, appliquez le correctif [MDVA-12304](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) à l’aide de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/tools/quality-patch-tool).
 - La taille maximale des cookies est de **4 096 octets**. Dans le cas contraire, l’application renvoie une exception `Unable to send the cookie. Size of '%name' is %size bytes`.
 
 ### `default_ttl`
