@@ -2,9 +2,10 @@
 title: Personnalisation de la configuration du cache
 description: Découvrez comment vérifier et personnaliser les paramètres de configuration du cache une fois la configuration du service Fastly terminée.
 feature: Cloud, Configuration, Iaas, Cache
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: f6901931-7b3f-40a8-9514-168c6243cc43
+source-git-commit: dcf585e25a4b06ff903642e42e72a71820bad008
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1857'
 ht-degree: 0%
 
 ---
@@ -17,7 +18,7 @@ Les sections suivantes présentent une vue d’ensemble et des instructions pour
 
 ## Forcer TLS
 
-Fastly fournit l’option _Forcer TLS_ pour rediriger les requêtes non chiffrées (HTTP) vers Fastly. Une fois votre environnement d’évaluation ou de production configuré avec un [certificat SSL/TLS valide](fastly-configuration.md#provision-ssltls-certificates), vous pouvez mettre à jour la configuration Fastly de votre magasin afin d’activer l’option Forcer le protocole TLS. Consultez le guide Fastly [Forcer TLS](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/FORCE-TLS.md) dans la documentation du _Module de réseau CDN Fastly pour Magento 2_.
+Fastly fournit l’option _Forcer TLS_ pour rediriger les requêtes non chiffrées (HTTP) vers Fastly. Une fois votre environnement d’évaluation ou de production configuré avec un [certificat SSL/TLS valide](fastly-configuration.md#provision-ssltls-certificates), vous pouvez mettre à jour la configuration Fastly de votre magasin afin d’activer l’option Forcer le protocole TLS. Consultez le guide Fastly [Forcer TLS](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/FORCE-TLS.md) dans la documentation du _module Fastly CDN pour Magento 2_ .
 
 >[!NOTE]
 >
@@ -30,6 +31,8 @@ La configuration du service Fastly spécifie un délai d’expiration par défau
 Pour effectuer des actions en masse qui prennent plus de 3 minutes, modifiez la valeur_ _Délai d’expiration du chemin d’administration__ afin d’éviter les erreurs 503.
 
 >[!NOTE]
+>
+>Si vous avez spécifié un point d’entrée de chemin d’administration personnalisé dans le champ **Chemin d’administration personnalisé** dans **Magasins** > **Configuration** > **Avancé** > **Admin** > **URL de base d’administration**, vous devez également définir la variable [ADMIN_URL](../environment/variables-admin.md#change-the-admin-url) dans cet environnement sur la même valeur. Si les paramètres sont différents, la temporisation ne fonctionne pas.
 >
 >Pour étendre les paramètres de délai d’expiration de Fastly à d’autres utilisateurs qu’Admin dans l’interface utilisateur de Fastly, voir [Augmentation des délais pour les tâches longues](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-INCREASE-TIMEOUTS-LONG-JOBS.md).
 
@@ -51,7 +54,7 @@ Fastly récupère le chemin d’accès Admin pour générer le fichier VCL à pa
 
 ## Configurer les options de purge
 
-Fastly fournit plusieurs types d’options de purge sur la page de gestion du cache de votre Magento, y compris des options de purge de la catégorie de produits, des ressources de produits et du contenu. Lorsqu’il est activé, Fastly recherche les événements afin de purger automatiquement ces caches. Si vous désactivez une option de purge, vous pouvez purger manuellement les caches Fastly après avoir terminé les mises à jour via la page Gestion du cache .
+Fastly fournit plusieurs types d’options de purge sur votre page de gestion du cache de Magento, notamment des options de purge de la catégorie de produits, des ressources de produits et du contenu. Lorsqu’il est activé, Fastly recherche les événements afin de purger automatiquement ces caches. Si vous désactivez une option de purge, vous pouvez purger manuellement les caches Fastly après avoir terminé les mises à jour via la page Gestion du cache .
 
 Les options de purge sont les suivantes :
 
