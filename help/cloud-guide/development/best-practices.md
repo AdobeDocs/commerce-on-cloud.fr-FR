@@ -49,9 +49,9 @@ Suivez les bonnes pratiques en matière de versions et de déploiement, et utili
 
    - Utilisez SSH pour vous connecter au serveur distant et vérifier les éléments suivants :
 
-      - Vérifiez le statut de l’indexeur et réindexez-le si nécessaire. Voir [Gestion des indexeurs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) dans le _Guide de configuration_.
+      - Vérifiez le statut de l’indexeur et réindexez-le si nécessaire. Voir [Gestion des indexeurs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=fr) dans le _Guide de configuration_.
 
       - Vérifiez les journaux `cron` et la table `cron_schedule` dans la base de données Adobe Commerce pour connaître l’état cron, puis réexécutez les tâches cron si nécessaire.
-Voir [Journalisation](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html#logging) dans le _Guide de configuration_.
+Voir [Journalisation](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=fr#logging) dans le _Guide de configuration_.
 
    - Effectuez le test d’acceptation utilisateur UAT après la mise à niveau sur les environnements d’évaluation et de production et résolvez tous les problèmes liés aux mises à niveau des extensions tierces et personnalisées.

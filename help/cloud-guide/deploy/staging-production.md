@@ -139,7 +139,7 @@ L’interface de ligne de commande Cloud fournit des commandes pour déployer le
 
 ## Migration de fichiers statiques
 
-Les [fichiers statiques](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) sont stockés dans `mounts`. Il existe deux méthodes pour migrer des fichiers d’un emplacement de montage source, tel que votre environnement local, vers un emplacement de montage de destination. Les deux méthodes utilisent l’utilitaire `rsync`, mais Adobe recommande d’utiliser l’interface de ligne de commande `magento-cloud` pour déplacer les fichiers entre l’environnement local et l’environnement distant. Et Adobe recommande d’utiliser la méthode `rsync` lors du déplacement de fichiers d’une source distante vers un autre emplacement distant.
+Les [fichiers statiques](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/glossary) sont stockés dans `mounts`. Il existe deux méthodes pour migrer des fichiers d’un emplacement de montage source, tel que votre environnement local, vers un emplacement de montage de destination. Les deux méthodes utilisent l’utilitaire `rsync`, mais Adobe recommande d’utiliser l’interface de ligne de commande `magento-cloud` pour déplacer les fichiers entre l’environnement local et l’environnement distant. Et Adobe recommande d’utiliser la méthode `rsync` lors du déplacement de fichiers d’une source distante vers un autre emplacement distant.
 
 ### Migration de fichiers à l’aide de l’interface de ligne de commande
 

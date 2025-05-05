@@ -35,7 +35,7 @@ https://store.com/second/
 
 >[!TIP]
 >
->Pour ajouter une vue de magasin à l’URL de base du site, il n’est pas nécessaire de créer plusieurs répertoires. Voir [Ajouter le code de magasin à l’URL de base](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html) dans le _Guide de configuration_.
+>Pour ajouter une vue de magasin à l’URL de base du site, il n’est pas nécessaire de créer plusieurs répertoires. Voir [Ajouter le code de magasin à l’URL de base](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html?lang=fr) dans le _Guide de configuration_.
 
 ## Ajouter des domaines
 
@@ -45,11 +45,11 @@ Le processus d’ajout d’un domaine dépend du type de compte Cloud :
 
 - Pour l’évaluation et la production pro
 
-  Ajoutez le nouveau domaine à Fastly, consultez [Gestion des domaines](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou ouvrez un ticket d’assistance pour demander de l’aide. En outre, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour demander l’ajout de nouveaux domaines à un cluster.
+  Ajoutez le nouveau domaine à Fastly, consultez [Gestion des domaines](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou ouvrez un ticket d’assistance pour demander de l’aide. En outre, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour demander l’ajout de nouveaux domaines à un cluster.
 
 - Pour la production de démarrage uniquement
 
-  Ajoutez le nouveau domaine à Fastly, consultez [Gestion des domaines](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou [Envoi d’un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour demander de l’aide. En outre, vous devez ajouter le nouveau domaine à l’onglet **Domaines** dans le [!DNL Cloud Console] : `https://<zone>.magento.cloud/projects/<project-ID>/edit`
+  Ajoutez le nouveau domaine à Fastly, consultez [Gestion des domaines](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou [Envoi d’un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour demander de l’aide. En outre, vous devez ajouter le nouveau domaine à l’onglet **Domaines** dans le [!DNL Cloud Console] : `https://<zone>.magento.cloud/projects/<project-ID>/edit`
 
 ## Configuration de l’installation locale
 
@@ -212,7 +212,7 @@ Lorsque la configuration des itinéraires définit la manière dont les URL sont
 
 ### Configurer des sites web, des boutiques et des affichages de boutique
 
-Dans l’_interface utilisateur d’administration_, configurez vos **sites web**, **magasins** et **vues de magasin** Adobe Commerce. Voir [Configuration de plusieurs sites web, boutiques et vues de boutique dans la section Admin](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html) du _Guide de configuration_.
+Dans l’_interface utilisateur d’administration_, configurez vos **sites web**, **magasins** et **vues de magasin** Adobe Commerce. Voir [Configuration de plusieurs sites web, boutiques et vues de boutique dans la section Admin](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html?lang=fr) du _Guide de configuration_.
 
 Il est important d’utiliser le même nom et le même code pour vos sites web, magasins et vues de magasin de votre administrateur lorsque vous configurez votre installation locale. Vous avez besoin de ces valeurs lorsque vous mettez à jour le fichier `magento-vars.php`.
 
@@ -352,4 +352,4 @@ Adobe recommande d’effectuer des tests complets dans l’environnement d’év
 
 <!-- link definitions -->
 
-[config-multiweb]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html
+[config-multiweb]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html?lang=fr

@@ -30,7 +30,7 @@ Les instructions suivantes utilisent une combinaison de commandes d’interface 
 
 **Pour cloner un projet `master` un environnement** :
 
-1. Connectez-vous à votre station de travail locale avec un compte [propriétaire du système de fichiers](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html).
+1. Connectez-vous à votre station de travail locale avec un compte [propriétaire du système de fichiers](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=fr).
 
 1. Accédez au serveur web ou à l’hôte virtuel _répertoire docroot_.
 

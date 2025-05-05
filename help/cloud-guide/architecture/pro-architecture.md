@@ -176,7 +176,7 @@ Adobe Commerce sur les infrastructures cloud utilise une architecture à haute d
 
 >[!NOTE]
 >
->Les volumes montés ne comprennent/ne font référence qu&#39;aux [montages inscriptibles](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) et n&#39;incluent pas l&#39;ensemble de votre répertoire `app/`. Quant aux autres fichiers, ils sont créés/générés par le [processus de création et de déploiement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) et vous devrez également vérifier votre référentiel Git pour les fichiers restants.
+>Les volumes montés ne comprennent/ne font référence qu&#39;aux [montages inscriptibles](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) et n&#39;incluent pas l&#39;ensemble de votre répertoire `app/`. Quant aux autres fichiers, ils sont créés/générés par le [processus de création et de déploiement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) et vous devrez également vérifier votre référentiel Git pour les fichiers restants.
 
 {{pro-backups}}
 
@@ -210,4 +210,4 @@ Le dimensionnement du cluster Pro et les configurations _compute_ varient en fon
 
 L’architecture redondante permet à l’infrastructure cloud d’Adobe de se mettre à niveau sans temps d’arrêt. Lors de la mise à l’échelle, chacune des trois instances effectue une rotation pour mettre à niveau la capacité sans affecter le fonctionnement du site. Par exemple, vous pouvez ajouter des serveurs web supplémentaires à un cluster existant au cas où le niveau de restriction serait PHP plutôt qu&#39;au niveau de la base de données. Cette mise à l’échelle _horizontale_ complète la mise à l’échelle verticale fournie par des processeurs supplémentaires au niveau de la base de données. Pour plus d&#39;informations, consultez la section [Architecture évolutive](scaled-architecture.md).
 
-Si vous prévoyez une augmentation significative du trafic pour un événement ou pour une autre raison, vous pouvez demander une augmentation temporaire de la capacité. Consultez [Comment demander une mise à niveau temporaire](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html) dans le Centre d’aide de Commerce __.
+Si vous prévoyez une augmentation significative du trafic pour un événement ou pour une autre raison, vous pouvez demander une augmentation temporaire de la capacité. Consultez [Comment demander une mise à niveau temporaire](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=fr) dans le Centre d’aide de Commerce __.

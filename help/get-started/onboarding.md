@@ -53,5 +53,5 @@ Cette page fournit un statut pour les composants et services Adobe Commerce, sui
 <!-- link definitions -->
 
 [Ventes]: https://business.adobe.com/products/magento/get-demo.html
-[Accès partagé]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access
+[Accès partagé]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#shared-access
 [Page de statut]: https://status.adobe.com/products/503473

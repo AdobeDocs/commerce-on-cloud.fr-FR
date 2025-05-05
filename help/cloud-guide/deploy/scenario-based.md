@@ -40,7 +40,7 @@ hooks:
 
 >[!NOTE]
 >
->Avec la version 2002.1.x de `ece-tools`, il existe un nouveau format [configuration des hooks](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property.html). Le format hérité des versions 2002.0.x de `ece-tools` est toujours pris en charge. Cependant, vous devez effectuer une mise à jour vers le nouveau format pour utiliser la fonctionnalité de déploiement basé sur un scénario.
+>Avec la version 2002.1.x de `ece-tools`, il existe un nouveau format [configuration des hooks](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property.html?lang=fr). Le format hérité des versions 2002.0.x de `ece-tools` est toujours pris en charge. Cependant, vous devez effectuer une mise à jour vers le nouveau format pour utiliser la fonctionnalité de déploiement basé sur un scénario.
 
 ## Examiner les étapes du scénario
 

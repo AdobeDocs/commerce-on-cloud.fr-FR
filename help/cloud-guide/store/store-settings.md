@@ -15,14 +15,14 @@ Les configurations par défaut de votre magasin sont stockées dans un `config.x
 
 Les paramètres de la boutique, qui font référence aux configurations de la section Admin **Magasins** > **Paramètres** > **Configuration**, sont stockés dans les fichiers de configuration du déploiement en fonction du type de configuration :
 
-- `app/etc/config.php` : paramètres de configuration pour les magasins, les sites web, les modules ou les extensions, l’optimisation des fichiers statiques et les valeurs système liées au déploiement de contenu statique. Voir la référence [config.php](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-configphp.html) dans le _Guide de configuration_.
-- `app/etc/env.php` : valeurs pour les remplacements spécifiques au système et les paramètres sensibles qui ne doivent _PAS_ être stockés dans le contrôle de code source. Voir la [référence env.php](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-envphp.html) dans le _Guide de configuration_.
+- `app/etc/config.php` : paramètres de configuration pour les magasins, les sites web, les modules ou les extensions, l’optimisation des fichiers statiques et les valeurs système liées au déploiement de contenu statique. Voir la référence [config.php](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-configphp.html?lang=fr) dans le _Guide de configuration_.
+- `app/etc/env.php` : valeurs pour les remplacements spécifiques au système et les paramètres sensibles qui ne doivent _PAS_ être stockés dans le contrôle de code source. Voir la [référence env.php](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-envphp.html?lang=fr) dans le _Guide de configuration_.
 
 >[!NOTE]
 >
 >Comme Adobe Commerce sur les infrastructures cloud ne prend en charge que les modes de production et de maintenance, la section **Avancé** > **Développeur** n’est pas accessible dans l’administration. Vous devez disposer des [privilèges d’administration d’environnement](../project/user-access.md) pour effectuer les tâches de gestion de la configuration. Vous pouvez configurer des paramètres supplémentaires à l’aide de [variables d’environnement](../environment/configure-env-yaml.md).
 
-La gestion de la configuration permet de déployer des paramètres de magasin cohérents dans vos environnements avec un temps d’arrêt minimal à l’aide du déploiement du pipeline. Le projet d’infrastructure d’Adobe Commerce sur le cloud comprend le serveur de génération, les scripts de génération et de déploiement, ainsi que les environnements de déploiement conçus en tenant compte de la [ stratégie de déploiement du pipeline ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html).
+La gestion de la configuration permet de déployer des paramètres de magasin cohérents dans vos environnements avec un temps d’arrêt minimal à l’aide du déploiement du pipeline. Le projet d’infrastructure d’Adobe Commerce sur le cloud comprend le serveur de génération, les scripts de génération et de déploiement, ainsi que les environnements de déploiement conçus en tenant compte de la [ stratégie de déploiement du pipeline ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html?lang=fr).
 
 ## Schéma de remplacement de configuration
 
@@ -36,7 +36,7 @@ En résumé, les variables d’environnement remplacent toutes les autres valeur
 
 >[!TIP]
 >
->Voir [Gestion de la configuration](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) dans le _Guide de configuration_ pour en savoir plus sur le schéma de remplacement pour le déploiement du pipeline.
+>Voir [Gestion de la configuration](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html?lang=fr) dans le _Guide de configuration_ pour en savoir plus sur le schéma de remplacement pour le déploiement du pipeline.
 
 Si le même paramètre est configuré à plusieurs endroits, l’application s’appuie sur la hiérarchie de configuration suivante pour déterminer la valeur à appliquer à l’environnement :
 
@@ -69,7 +69,7 @@ Les données « vidées » dans le fichier `app/etc/config.php` deviennent _verr
 
 Toutes les configurations sensibles sont exportées dans le fichier `app/etc/env.php` lorsque vous utilisez la commande `bin/magento app:config:dump`. Vous pouvez définir des valeurs sensibles à l’aide de la commande CLI : `bin/magento config:sensitive:set`. Voir [Paramètres sensibles et spécifiques à un environnement](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/) dans le guide _Extensions PHP Commerce_ pour savoir comment désigner les paramètres de configuration comme étant sensibles ou spécifiques à un système.
 
-Consultez une liste des [paramètres sensibles ou spécifiques au système](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/config-reference-sens.html) dans le _guide de configuration_.
+Consultez une liste des [paramètres sensibles ou spécifiques au système](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/config-reference-sens.html?lang=fr) dans le _guide de configuration_.
 
 ### Performances SCD
 

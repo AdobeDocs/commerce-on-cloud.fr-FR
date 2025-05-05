@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Vous devez disposer d’une clé d’authentification pour accéder au référentiel Adobe Commerce et activer les commandes d’installation et de mise à jour pour votre projet d’infrastructure cloud Adobe Commerce. Il existe deux méthodes pour spécifier les informations d’identification d’autorisation du compositeur.
 
-- **fichier d’authentification** : fichier qui contient vos informations d’identification d’Adobe Commerce [informations d’autorisation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) dans votre répertoire racine d’Adobe Commerce sur l’infrastructure cloud.
+- **fichier d’authentification** : fichier qui contient vos informations d’identification d’Adobe Commerce [informations d’autorisation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=fr) dans votre répertoire racine d’Adobe Commerce sur l’infrastructure cloud.
 - **variable d’environnement** : variable d’environnement permettant de configurer des clés d’authentification dans votre projet d’infrastructure Adobe Commerce sur le cloud afin d’éviter toute exposition accidentelle.
 
 >[!BEGINSHADEBOX]

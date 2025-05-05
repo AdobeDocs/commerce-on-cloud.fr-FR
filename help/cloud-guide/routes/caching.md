@@ -131,7 +131,7 @@ Il existe un cas particulier si la clé `cookies` a la valeur `["*"]`. Cette val
 
 Les cookies présentent les restrictions suivantes :
 
-- Le système contient un maximum défini de **50 cookies**. Dans le cas contraire, l’application renvoie une exception `Unable to send the cookie. Maximum number of cookies would be exceeded`. Pour augmenter le nombre de cookies à 200, appliquez le correctif [MDVA-12304](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) à l’aide de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/tools/quality-patch-tool).
+- Le système contient un maximum défini de **50 cookies**. Dans le cas contraire, l’application renvoie une exception `Unable to send the cookie. Maximum number of cookies would be exceeded`. Pour augmenter le nombre de cookies à 200, appliquez le correctif [MDVA-12304](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=fr) à l’aide de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/tools/quality-patch-tool).
 - La taille maximale des cookies est de **4 096 octets**. Dans le cas contraire, l’application renvoie une exception `Unable to send the cookie. Size of '%name' is %size bytes`.
 
 ### `default_ttl`

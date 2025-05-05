@@ -31,7 +31,7 @@ Exemples pour les domaines de production et d’évaluation :
 
 Voir [Configuration de plusieurs sites web ou magasins](../cloud-guide/store/multiple-sites.md) dans le guide _Commerce sur les infrastructures cloud_ pour obtenir des conseils supplémentaires sur les domaines multiples ou uniques.
 
-Voir [Comptes Fastly multiples et domaines attribués](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly#multiple-fastly-accounts-and-assigned-domains){target="_blank"} si vous disposez d’un compte Fastly existant qui lie les mêmes apex et sous-domaines utilisés sur votre site Adobe Commerce.
+Voir [Comptes Fastly multiples et domaines attribués](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/fastly#multiple-fastly-accounts-and-assigned-domains){target="_blank"} si vous disposez d’un compte Fastly existant qui lie les mêmes apex et sous-domaines utilisés sur votre site Adobe Commerce.
 
 ## Domaine d’e-mail transactionnel
 

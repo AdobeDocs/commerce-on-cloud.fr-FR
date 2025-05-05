@@ -14,15 +14,15 @@ ht-degree: 0%
 Les correctifs [Cloud pour Commerce](https://github.com/magento/magento-cloud-patches) et l’outil de correctifs de la qualité [Quality Patches Tool](https://github.com/magento/quality-patches) fournissent des correctifs à votre application Adobe Commerce installée.
 
 - Le package Correctifs cloud pour Commerce fournit les correctifs requis avec des correctifs critiques
-- Les correctifs de qualité fournissent des correctifs de qualité facultatifs et à faible impact sous la forme de [correctifs individuels](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/versioning-policy.html#individual-patch) qui ne contiennent pas de modifications non rétrocompatibles
+- Les correctifs de qualité fournissent des correctifs de qualité facultatifs et à faible impact sous la forme de [correctifs individuels](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/versioning-policy.html?lang=fr#individual-patch) qui ne contiennent pas de modifications non rétrocompatibles
 
-Consultez [Correctifs disponibles](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le _Guide des outils d’exploitation Commerce_ pour obtenir une liste complète des correctifs publiés.
+Consultez [Correctifs disponibles](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le _Guide des outils d’exploitation Commerce_ pour obtenir une liste complète des correctifs publiés.
 
 Les deux packages améliorent l’intégration de toutes les versions d’Adobe Commerce avec les environnements cloud et prennent en charge la diffusion rapide de correctifs critiques, facultatifs et personnalisés. Vous pouvez utiliser ces packages pour appliquer, rétablir et afficher des informations générales sur tous les correctifs individuels disponibles pour Commerce.
 
 >[!TIP]
 >
->Vous pouvez utiliser l’[outil de correctifs de qualité](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) et les correctifs cloud pour Commerce en tant que packages autonomes pour les projets Magento Open Source et Adobe Commerce. Nous vous recommandons d’utiliser l’outil de correctifs de qualité pour les projets non cloud.
+>Vous pouvez utiliser l’[outil de correctifs de qualité](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) et les correctifs cloud pour Commerce en tant que packages autonomes pour les projets Magento Open Source et Adobe Commerce. Nous vous recommandons d’utiliser l’outil de correctifs de qualité pour les projets non cloud.
 
 Lorsque vous déployez des modifications dans l’environnement distant, le package `ece-tools` utilise `magento/magento-cloud-patches` et `magento/quality-patches` pour rechercher les correctifs en attente et les applique automatiquement dans l’ordre suivant :
 

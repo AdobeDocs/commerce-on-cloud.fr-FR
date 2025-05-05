@@ -33,7 +33,7 @@ La stratégie d’embranchement utilise un workflow Git courant dans lequel vous
 
 Votre compte prend en charge un nombre limité de branches de développement ![branche active](../../assets/icon-active.png){width="32"} (active) and an unlimited number of ![inactive branch](../../assets/icon-inactive.png){width="32"} (inactive). Gérez les branches actives et inactives en ajoutant ou en supprimant une branche à l’aide de l’interface de ligne de commande [!DNL Cloud Console] ou Cloud. Avant de pouvoir supprimer une branche, vous devez la désactiver, car elle reste dans la liste _Environnements_ marquée comme _inactive_. Vous pouvez réactiver la branche ultérieurement ou [supprimer la branche](../dev-tools/cloud-cli-overview.md#) dans les paramètres d’environnement ou à l’aide de l’interface de ligne de commande cloud.
 
-Si vous avez besoin d’environnements actifs supplémentaires pour le développement, envoyez un ticket d’assistance [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Si vous avez besoin d’environnements actifs supplémentaires pour le développement, envoyez un ticket d’assistance [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket).
 
 **Pour ajouter une branche** :
 

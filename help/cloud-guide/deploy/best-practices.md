@@ -61,7 +61,7 @@ Examinez ces bonnes pratiques et considérations concernant votre processus de d
 
 - **Vérifier les versions et les relations des services et la possibilité de se connecter**
 
-  Vérifiez les services disponibles pour votre application et assurez-vous que vous utilisez la version la plus récente et compatible. Voir [Relations de service](../services/services-yaml.md#service-relationships) et [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) dans le _Guide d’installation_ pour obtenir les versions recommandées.
+  Vérifiez les services disponibles pour votre application et assurez-vous que vous utilisez la version la plus récente et compatible. Voir [Relations de service](../services/services-yaml.md#service-relationships) et [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) dans le _Guide d’installation_ pour obtenir les versions recommandées.
 
 - **Testez localement et dans l’environnement d’intégration avant le déploiement dans les environnements d’évaluation et de production**
 
@@ -117,7 +117,7 @@ Cette phase s’exécute également `composer install` pour récupérer les dép
 Cette phase crée la base de code et exécute les crochets dans la section `build` de `.magento.app.yaml`. Le hook de build par défaut est la commande `php ./vendor/bin/ece-tools` et effectue les opérations suivantes :
 
 - Application de correctifs dans `vendor/magento/ece-patches` et de correctifs facultatifs spécifiques au projet dans `m2-hotfixes`
-- Régénère le code et la configuration [injection de dépendance](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) (c’est-à-dire le répertoire `generated/`, qui comprend `generated/code` et `generated/metapackage`) à l’aide de `bin/magento setup:di:compile`.
+- Régénère le code et la configuration [injection de dépendance](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/glossary) (c’est-à-dire le répertoire `generated/`, qui comprend `generated/code` et `generated/metapackage`) à l’aide de `bin/magento setup:di:compile`.
 - Vérifie si le fichier [`app/etc/config.php`](../store/store-settings.md) existe dans la base de code. Adobe Commerce génère automatiquement ce fichier s’il ne le détecte pas lors de la phase de création et inclut une liste de modules et d’extensions. S’il existe, la phase de création se poursuit normalement, comprime les fichiers statiques à l’aide de GZIP et se déploie, ce qui réduit le temps d’arrêt dans la phase de déploiement. Pour en savoir plus sur la personnalisation ou la désactivation de la compression de fichiers[&#128279;](../environment/variables-build.md) voir Options de création.
 
 >[!WARNING]
@@ -144,7 +144,7 @@ Le slug comprend tous les fichiers et dossiers **à l’exclusion des éléments
 
 ### Phase 4 : déploiement des slugs et du cluster
 
-Vos applications et tous les services [principaux](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) sont configurés comme suit :
+Vos applications et tous les services [principaux](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/glossary) sont configurés comme suit :
 
 - Monte chaque service dans un conteneur, tel qu’un serveur web, OpenSearch, [!DNL RabbitMQ]
 - Monte le système de fichiers en lecture-écriture (monté sur une grille de stockage distribuée à haute disponibilité)
@@ -170,13 +170,13 @@ Si le fichier `app/etc/config.php` n’existe pas dans le codebase, les fichiers
 
 Il existe deux hooks de déploiement. Le hook `pre-deploy.php` effectue le nettoyage et la récupération nécessaires des ressources et du code générés dans le hook de build. Le hook `php ./vendor/bin/ece-tools deploy` exécute une série de commandes et de scripts :
 
-- Si Adobe Commerce n’est **pas installé**, il s’installe avec `bin/magento setup:install` et met à jour la configuration du déploiement, les `app/etc/env.php` et la base de données pour l’environnement spécifié, tel que Redis et les URL de site web. **Important :** lorsque vous avez terminé le [premier déploiement](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/launch/overview.html) lors de la configuration, Adobe Commerce a été installé et déployé dans tous les environnements.
+- Si Adobe Commerce n’est **pas installé**, il s’installe avec `bin/magento setup:install` et met à jour la configuration du déploiement, les `app/etc/env.php` et la base de données pour l’environnement spécifié, tel que Redis et les URL de site web. **Important :** lorsque vous avez terminé le [premier déploiement](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/launch/overview.html?lang=fr) lors de la configuration, Adobe Commerce a été installé et déployé dans tous les environnements.
 
 - Si Adobe Commerce **est installé**, effectuez les mises à niveau nécessaires. Le script de déploiement exécute `bin/magento setup:upgrade` pour mettre à jour le schéma et les données de la base de données (ce qui est nécessaire après les mises à jour de l’extension ou du code principal). Il met également à jour la configuration du déploiement, les `app/etc/env.php` et la base de données pour votre environnement. Enfin, le script de déploiement efface le cache d’Adobe Commerce.
 
 - Le script génère éventuellement du contenu web statique à l’aide de la `magento setup:static-content:deploy` de commande .
 
-- Utilise des portées (indicateur `-s` dans les scripts de version) avec un paramètre par défaut de `quick` pour la stratégie de déploiement de contenu statique. Vous pouvez personnaliser la stratégie à l’aide de la variable d’environnement [`SCD_STRATEGY`](../environment/variables-deploy.md#scd_strategy). Pour plus d’informations sur ces options et fonctionnalités, consultez [Stratégies de déploiement de fichiers statiques](../deploy/static-content.md) et l’indicateur de `-s` pour [Déployer des fichiers d’affichage statiques](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
+- Utilise des portées (indicateur `-s` dans les scripts de version) avec un paramètre par défaut de `quick` pour la stratégie de déploiement de contenu statique. Vous pouvez personnaliser la stratégie à l’aide de la variable d’environnement [`SCD_STRATEGY`](../environment/variables-deploy.md#scd_strategy). Pour plus d’informations sur ces options et fonctionnalités, consultez [Stratégies de déploiement de fichiers statiques](../deploy/static-content.md) et l’indicateur de `-s` pour [Déployer des fichiers d’affichage statiques](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=fr).
 
 >[!NOTE]
 >

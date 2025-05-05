@@ -177,7 +177,7 @@ stage:
 - **Par défaut**—_Non défini_
 - **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
-Utilisez la variable `X_FRAME_CONFIGURATION` pour modifier la configuration de l’en-tête [`X-Frame-Options`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html) de votre site Adobe Commerce. Cette configuration contrôle la manière dont le navigateur effectue le rendu d’une page dans une `<frame>`, un `<iframe>` ou un `<object>`. Utilisez l’une des options suivantes :
+Utilisez la variable `X_FRAME_CONFIGURATION` pour modifier la configuration de l’en-tête [`X-Frame-Options`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html?lang=fr) de votre site Adobe Commerce. Cette configuration contrôle la manière dont le navigateur effectue le rendu d’une page dans une `<frame>`, un `<iframe>` ou un `<object>`. Utilisez l’une des options suivantes :
 
 - `DENY` : la page ne peut pas être affichée dans un cadre.
 - `SAMEORIGIN` : (paramètre Adobe Commerce par défaut). La page ne peut être affichée que dans un cadre de la même origine que la page elle-même.

@@ -56,7 +56,7 @@ Dans l’environnement d’intégration, vous pouvez vous connecter à l’admin
    ![Modifier le paramètre régional](../../assets/locale-options.png)
 
 1. Cliquez sur **Enregistrer la configuration**.
-1. Si vous y êtes invité, [ videz le cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
+1. Si vous y êtes invité, [ videz le cache](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/cache-management).
 1. Déconnectez-vous de l’administrateur.
 
 ## Exporter les valeurs et transférer config.php à votre système local
@@ -159,7 +159,7 @@ Pour ajouter des valeurs de configuration dans l’environnement d’intégratio
 1. Dans le volet de droite, développez **Paramètres JavaScript**.
 1. Dans la liste **Fusionner des fichiers JavaScript**, cliquez sur **Oui**.
 1. Cliquez sur **Enregistrer la configuration**.
-1. Si vous y êtes invité, [ videz le cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
+1. Si vous y êtes invité, [ videz le cache](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/cache-management).
 1. Déconnectez-vous de l’administrateur.
 
 En exécutant à nouveau la commande de vidage, la nouvelle configuration est ajoutée au fichier .

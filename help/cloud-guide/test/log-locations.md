@@ -78,7 +78,7 @@ ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
 >
 >Pour les environnements d’évaluation et de production Pro, la rotation, la compression et la suppression automatiques des journaux sont activées pour les fichiers journaux ayant un nom de fichier fixe. Chaque type de fichier journal possède un modèle rotatif et une durée de vie.
 >Vous trouverez des détails complets sur la rotation des journaux de l’environnement et la durée de vie des journaux compressés dans : `/etc/logrotate.conf` et `/etc/logrotate.d/<various>`.
->Pour les environnements d’évaluation et de production Pro, vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour demander des modifications dans la configuration de la rotation du journal.
+>Pour les environnements d’évaluation et de production Pro, vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour demander des modifications dans la configuration de la rotation du journal.
 
 >[!TIP]
 >
@@ -189,7 +189,7 @@ title: The configured state is not ideal
 type: warning
 ```
 
-La plupart des messages d’erreur contiennent une description et une action suggérée. Utilisez la référence [Message d&#39;erreur pour ECE-Tools](../dev-tools/error-reference.md) pour rechercher le code d&#39;erreur afin d&#39;obtenir d&#39;autres indications. Pour plus d’informations, utilisez l’utilitaire de dépannage du déploiement d’Adobe Commerce [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
+La plupart des messages d’erreur contiennent une description et une action suggérée. Utilisez la référence [Message d&#39;erreur pour ECE-Tools](../dev-tools/error-reference.md) pour rechercher le code d&#39;erreur afin d&#39;obtenir d&#39;autres indications. Pour plus d’informations, utilisez l’utilitaire de dépannage du déploiement d’Adobe Commerce [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=fr).
 
 ## Logs de l&#39;application
 

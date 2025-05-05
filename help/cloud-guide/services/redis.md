@@ -13,7 +13,7 @@ ht-degree: 0%
 
 [Redis](https://redis.io) est une solution de cache back-end facultative qui remplace Zend_Cache_Backend_File de la structure Zend, utilisée par défaut par Adobe Commerce.
 
-Voir [Configuration de Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html) dans le _Guide de configuration_.
+Voir [Configuration de Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html?lang=fr) dans le _Guide de configuration_.
 
 {{service-instruction}}
 
@@ -128,7 +128,7 @@ Exemple de réponse :
 
 Consultez les articles d’assistance Adobe Commerce suivants pour obtenir de l’aide sur la résolution des problèmes Redis :
 
-- [Délai de résolution des problèmes Connexion ou passage en caisse de l’administrateur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redis-issue-delay-magento-admin-login-or-checkout.html)
-- [Implémentation étendue du cache Redis dans Adobe Commerce 2.3.5 et ultérieure](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
-- [Alertes gérées sur Adobe Commerce : alerte d’avertissement de mémoire Redis](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-warning-alert.html)
-- [Alertes gérées sur Adobe Commerce : alerte critique de mémoire Redis](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-critical-alert.html)
+- [Délai de résolution des problèmes Connexion ou passage en caisse de l’administrateur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redis-issue-delay-magento-admin-login-or-checkout.html?lang=fr)
+- [Implémentation étendue du cache Redis dans Adobe Commerce 2.3.5 et ultérieure](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html?lang=fr)
+- [Alertes gérées sur Adobe Commerce : alerte d’avertissement de mémoire Redis](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-warning-alert.html?lang=fr)
+- [Alertes gérées sur Adobe Commerce : alerte critique de mémoire Redis](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-critical-alert.html?lang=fr)

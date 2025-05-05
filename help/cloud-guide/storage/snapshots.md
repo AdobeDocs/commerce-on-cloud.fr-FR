@@ -137,7 +137,7 @@ Les délais de restauration varient en fonction de la taille de votre base de do
 
 ## Restauration d’un instantané de reprise après sinistre
 
-Pour restaurer l&#39;instantané de reprise après sinistre dans les environnements d&#39;évaluation et de production Pro, [Importez l&#39;image mémoire de la base de données directement depuis le serveur](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
+Pour restaurer l&#39;instantané de reprise après sinistre dans les environnements d&#39;évaluation et de production Pro, [Importez l&#39;image mémoire de la base de données directement depuis le serveur](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
 ## Restaurer le code
 

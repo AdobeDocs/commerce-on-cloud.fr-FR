@@ -104,9 +104,9 @@ Lorsque vous êtes prêt à configurer votre boutique, envoyez l’ensemble de v
 Pour obtenir de meilleures informations sur les configurations, consultez la documentation relative à Adobe Commerce et aux extensions installées. Voici quelques liens et idées pour commencer :
 
 - [Bonnes pratiques relatives à la configuration du magasin](../store/best-practices.md) pour connaître les bonnes pratiques spécifiques en matière de cloud
-- [Configuration de base](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details) pour l’accès administrateur de boutique, le nom, les langues, les devises, le branding, les sites, les vues de boutique, etc
-- [Thème](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu#design-features) pour l’aspect du site et des magasins, y compris les CSS et les mises en page
-- [Configuration du système](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) pour les rôles, les outils, les notifications et votre clé de chiffrement pour la base de données
+- [Configuration de base](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/setup/store-details) pour l’accès administrateur de boutique, le nom, les langues, les devises, le branding, les sites, les vues de boutique, etc
+- [Thème](https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/content-menu#design-features) pour l’aspect du site et des magasins, y compris les CSS et les mises en page
+- [Configuration du système](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/guide-overview) pour les rôles, les outils, les notifications et votre clé de chiffrement pour la base de données
 - Paramètres d’extension utilisant leur documentation
 
 Outre les paramètres de la boutique, vous pouvez configurer plusieurs sites et boutiques, services configurés, etc. Voir [ Configuration de votre boutique ](../store/overview.md).
@@ -162,9 +162,9 @@ Lorsque vous développez des fonctionnalités, ajoutez des extensions et conceve
 
 Pour exporter des données de production en tant que données de test à utiliser dans les environnements d’évaluation et d’intégration :
 
-- [Exécutez les utilitaires d’assistance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) commandes d’interface de ligne de commande (recommandé) lors de l’exportation d’une sauvegarde protégée des données client et de stockage à l’aide de votre clé de chiffrement Adobe Commerce
+- [Exécutez les utilitaires d’assistance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=fr) commandes d’interface de ligne de commande (recommandé) lors de l’exportation d’une sauvegarde protégée des données client et de stockage à l’aide de votre clé de chiffrement Adobe Commerce
 
-- Outil [Collecte de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) pour générer et exporter des données
+- Outil [Collecte de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/support#data-collector) pour générer et exporter des données
 
 Pour migrer ces données, voir [Migrer et déployer des fichiers et des données statiques](../deploy/staging-production.md#migrate-static-files).
 
@@ -172,7 +172,7 @@ Pour migrer ces données, voir [Migrer et déployer des fichiers et des données
 
 >[!NOTE]
 >
->Avant de transférer les données vers un autre environnement, vous devez envisager de nettoyer vos données. Vous disposez de plusieurs options, notamment l’[utilisation d’utilitaires d’assistance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) ou le développement d’un script pour nettoyer les données client.
+>Avant de transférer les données vers un autre environnement, vous devez envisager de nettoyer vos données. Vous disposez de plusieurs options, notamment l’[utilisation d’utilitaires d’assistance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=fr) ou le développement d’un script pour nettoyer les données client.
 
 >[!WARNING]
 >

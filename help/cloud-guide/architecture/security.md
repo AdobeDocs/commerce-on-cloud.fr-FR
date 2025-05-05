@@ -66,9 +66,9 @@ Adobe teste régulièrement le code de l’application principale pour détecter
 - OWASPZAP
 - etSqlMap
 
-La base de code complète est analysée deux fois par semaine à l’aide de ces outils. Les clients sont informés des correctifs de sécurité par le biais d’e-mails directs, de notifications dans l’application et dans le [Centre de sécurité](https://helpx.adobe.com/security.html).
+La base de code complète est analysée deux fois par semaine à l’aide de ces outils. Les clients sont informés des correctifs de sécurité par le biais d’e-mails directs, de notifications dans l’application et dans le [Centre de sécurité](https://helpx.adobe.com/fr/security.html).
 
-Les clients doivent s’assurer que ces correctifs sont appliqués à leur application personnalisée dans les 30 jours suivant leur publication, conformément aux directives PCI. Adobe propose également un [outil de numérisation de sécurité](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) qui permet aux commerçants de surveiller régulièrement leurs sites et de recevoir des mises à jour sur les risques de sécurité connus, les logiciels malveillants et les accès non autorisés. L’outil Security Scan Tool est un service gratuit et peut être exécuté dans n’importe quelle version d’Adobe Commerce.
+Les clients doivent s’assurer que ces correctifs sont appliqués à leur application personnalisée dans les 30 jours suivant leur publication, conformément aux directives PCI. Adobe propose également un [outil de numérisation de sécurité](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-scan) qui permet aux commerçants de surveiller régulièrement leurs sites et de recevoir des mises à jour sur les risques de sécurité connus, les logiciels malveillants et les accès non autorisés. L’outil Security Scan Tool est un service gratuit et peut être exécuté dans n’importe quelle version d’Adobe Commerce.
 
 Pour encourager les chercheurs en sécurité à identifier et à signaler les vulnérabilités, Adobe Commerce dispose d’un programme [ bug-bounty](https://hackerone.com/magento) en plus des tests internes. En outre, le client reçoit le code source complet de l’application pour sa propre révision, si désiré.
 
@@ -108,7 +108,7 @@ Le RGPD exige que toutes les informations d’identification personnelle (telles
 
 >[!NOTE]
 >
->Cette page donne un aperçu général des éléments à prendre en compte pour le RGPD. Consultez le _[Guide de sécurité et de conformité ](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)_ pour plus d’informations sur la manière dont Adobe Commerce stocke les informations personnelles. Pour déterminer comment votre entreprise devrait se conformer aux obligations légales, consultez votre conseiller juridique ou reportez-vous au [texte officiel](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+>Cette page donne un aperçu général des éléments à prendre en compte pour le RGPD. Consultez le _[Guide de sécurité et de conformité ](https://experienceleague.adobe.com/fr/docs/commerce-operations/security-and-compliance/overview)_ pour plus d’informations sur la manière dont Adobe Commerce stocke les informations personnelles. Pour déterminer comment votre entreprise devrait se conformer aux obligations légales, consultez votre conseiller juridique ou reportez-vous au [texte officiel](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
 ## Sauvegardes
 

@@ -181,7 +181,7 @@ Pour les projets Starter et Pro, vous pouvez utiliser l’option [!UICONTROL Dom
 
 - Pour les projets de démarrage, accédez à l’URL du projet sous l’onglet [!UICONTROL Domains] dans la [!DNL Cloud Console] pour ajouter votre URL de projet.
 
-- Pour les projets Pro, envoyez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour ajouter le domaine à la configuration de votre projet cloud. L’équipe d’assistance met également à jour la configuration du compte Fastly Adobe Commerce pour ajouter le domaine.
+- Pour les projets Pro, envoyez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour ajouter le domaine à la configuration de votre projet cloud. L’équipe d’assistance met également à jour la configuration du compte Fastly Adobe Commerce pour ajouter le domaine.
 
 **Pour gérer la configuration de domaine Fastly à partir de l’administrateur** :
 

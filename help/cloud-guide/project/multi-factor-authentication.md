@@ -18,7 +18,7 @@ Lorsque l’authentification multifacteur est activée sur un projet, tous les c
 
 >[!NOTE]
 >
->Par défaut, MFA n’est pas activé sur les projets cloud . Le propriétaire du compte pour le projet d’infrastructure cloud d’Adobe Commerce doit [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour l’activer. Lorsque l’authentification multifacteur est activée, tous les utilisateurs doivent disposer de l’authentification à deux facteurs (TFA) activée sur leur compte d’infrastructure Adobe Commerce sur le cloud pour pouvoir accéder aux environnements de projet via SSH.
+>Par défaut, MFA n’est pas activé sur les projets cloud . Le propriétaire du compte pour le projet d’infrastructure cloud d’Adobe Commerce doit [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour l’activer. Lorsque l’authentification multifacteur est activée, tous les utilisateurs doivent disposer de l’authentification à deux facteurs (TFA) activée sur leur compte d’infrastructure Adobe Commerce sur le cloud pour pouvoir accéder aux environnements de projet via SSH.
 
 ## Certificats pour l’accès SSH
 

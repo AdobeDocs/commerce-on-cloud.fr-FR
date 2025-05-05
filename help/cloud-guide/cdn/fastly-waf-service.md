@@ -50,7 +50,7 @@ Lorsque le service WAF est activé, il inspecte tout le trafic web et administra
 
 Vous pouvez personnaliser cette page de réponse d’erreur à partir de l’Administration. Voir [Personnaliser la page de réponse de WAF](fastly-custom-response.md#customize-the-waf-error-page).
 
-Si votre page d’administration Adobe Commerce ou votre storefront renvoie une page d’erreur `403 Forbidden` en réponse à une requête d’URL légitime, envoyez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case). Copiez l’ID de référence de la page de réponse d’erreur et collez-le dans la description du ticket.
+Si votre page d’administration Adobe Commerce ou votre storefront renvoie une page d’erreur `403 Forbidden` en réponse à une requête d’URL légitime, envoyez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case). Copiez l’ID de référence de la page de réponse d’erreur et collez-le dans la description du ticket.
 
 Pour identifier la réponse WAF pour une requête spécifique à l’aide de New Relic, reportez-vous aux sections suivantes :
 

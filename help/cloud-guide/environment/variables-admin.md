@@ -18,7 +18,7 @@ Les utilisateurs disposant d’un accès administratif au projet d’infrastruct
 
 Vous pouvez remplacer les informations d’identification de l’utilisateur administrateur lors de l’installation de Commerce par les variables ADMIN dans le tableau suivant.
 
-Si vous souhaitez modifier les valeurs après l’installation, connectez-vous à votre environnement à l’aide de SSH et utilisez la commande de [`admin:user` de l’interface de ligne de commande Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html) pour créer ou modifier les informations d’identification de l’utilisateur administrateur.
+Si vous souhaitez modifier les valeurs après l’installation, connectez-vous à votre environnement à l’aide de SSH et utilisez la commande de [`admin:user` de l’interface de ligne de commande Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html?lang=fr) pour créer ou modifier les informations d’identification de l’utilisateur administrateur.
 
 | Variable | Par défaut | Description |
 | -------------- | --------------------------- | ----------- |

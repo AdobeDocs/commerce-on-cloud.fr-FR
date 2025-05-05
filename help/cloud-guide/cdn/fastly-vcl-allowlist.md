@@ -74,7 +74,7 @@ Le code de fragment de code VCL personnalisé suivant (format JSON) montre la lo
 }
 ```
 
-Avant de [créer un extrait de code personnalisé](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html#add-the-custom-vcl-snippet) à partir de cet exemple, passez en revue les valeurs pour déterminer si vous devez apporter des modifications. Saisissez ensuite chaque valeur dans les champs respectifs, par exemple `type` dans le champ Type `content` dans le champ Contenu .
+Avant de [créer un extrait de code personnalisé](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html?lang=fr#add-the-custom-vcl-snippet) à partir de cet exemple, passez en revue les valeurs pour déterminer si vous devez apporter des modifications. Saisissez ensuite chaque valeur dans les champs respectifs, par exemple `type` dans le champ Type `content` dans le champ Contenu .
 
 - `name` — Nom du fragment de code VCL. Pour cet exemple, `allowlist`.
 

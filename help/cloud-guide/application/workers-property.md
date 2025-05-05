@@ -17,7 +17,7 @@ Vous pouvez définir un programme de travail qui s’exécute indépendamment de
 
 Les programmes de travail sont disponibles uniquement pour les environnements d’évaluation et de production Pro. Les environnements d’intégration Pro et de démarrage peuvent choisir d’utiliser la variable [CRON_CONSUMERS_RUNNER](../environment/variables-deploy.md#cron_consumers_runner).
 
-Pour configurer un programme de travail dans Pro Staging ou Production, [Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) et renseignez les informations suivantes :
+Pour configurer un programme de travail dans Pro Staging ou Production, [Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) et renseignez les informations suivantes :
 
 - ID de projet
 - Identifiant de l’environnement

@@ -55,7 +55,7 @@ Date de publication : 10 mars 2023
 
 Date de publication : 13 septembre 2022
 
-- ![Icône de correction](../../assets/fix.svg) **Erreurs lors du préchauffage**—Correction d’un problème qui tentait d’effectuer un [préchauffage](../environment/variables-post-deploy.md#warm_up_pages) lorsque la visibilité de la page était définie sur [**Non visible individuellement**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure) dans l’administration, ce qui entraînait des erreurs `ERROR: Warming up failed: <link to page>` dans le journal de déploiement.<!-- MCLOUD-9134 -->
+- ![Icône de correction](../../assets/fix.svg) **Erreurs lors du préchauffage**—Correction d’un problème qui tentait d’effectuer un [préchauffage](../environment/variables-post-deploy.md#warm_up_pages) lorsque la visibilité de la page était définie sur [**Non visible individuellement**](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure) dans l’administration, ce qui entraînait des erreurs `ERROR: Warming up failed: <link to page>` dans le journal de déploiement.<!-- MCLOUD-9134 -->
 
 ## v1.0.11
 

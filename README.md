@@ -9,8 +9,8 @@ ht-degree: 0%
 
 Ce site contient la documentation la plus récente pour les développeurs de Commerce sur les infrastructures cloud.
 
-- [Guide de Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/overview.html)
-- [Prise en main de Commerce](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html) sur les infrastructures cloud
+- [Guide de Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/overview.html?lang=fr)
+- [Prise en main de Commerce](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=fr) sur les infrastructures cloud
 
 ## Code de conduite d’Adobe Open Source
 
@@ -19,7 +19,7 @@ Voir l’article [Contribution](contributing.md).
 
 ### Modifications mineures
 
-Si vous contribuez à des mises à jour mineures, ouvrez l’article et cliquez sur le lien **Modifier** qui vous mène à la source GitHub de l’article. Utilisez l’interface utilisateur GitHub pour effectuer vos mises à jour. Voir le guide du contributeur aux [documents Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Si vous contribuez à des mises à jour mineures, ouvrez l’article et cliquez sur le lien **Modifier** qui vous mène à la source GitHub de l’article. Utilisez l’interface utilisateur GitHub pour effectuer vos mises à jour. Voir le guide du contributeur aux [documents Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr).
 
 Les corrections ou précisions mineures que vous apportez à la documentation et aux exemples de code dans ce référentiel sont couvertes par les conditions d’utilisation de l’Adobe.
 
@@ -35,7 +35,7 @@ Si vous êtes rédacteur technique, responsable de programme ou développeur au 
 
 Les contributeurs de la communauté peuvent utiliser l’interface utilisateur de GitHub pour apporter des modifications mineures, ou dupliquer le référentiel pour apporter des contributions majeures.
 
-Pour plus d’informations, consultez le Guide du contributeur aux documents Adobe [&#128279;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Pour plus d’informations, consultez le Guide du contributeur aux documents Adobe [&#128279;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr).
 
 ## Markdown
 

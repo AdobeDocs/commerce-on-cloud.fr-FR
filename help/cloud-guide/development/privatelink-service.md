@@ -35,7 +35,7 @@ L’intégration du service PrivateLink pour Adobe Commerce dans les projets d�
 - Vous ne pouvez pas établir de connexions SSH à l’aide de PrivateLink. Voir [Activer les clés SSH](secure-connections.md).
 - Au-delà de l’activation initiale, la prise en charge d’Adobe Commerce ne couvre pas le dépannage des problèmes AWS PrivateLink.
 - Les clients sont responsables des coûts associés à la gestion de leur propre VPC.
-- Vous ne pouvez pas utiliser le protocole HTTPS (port 443) pour vous connecter à Adobe Commerce sur une infrastructure cloud via Azure Private Link en raison du [cloaking d’origine Fastly](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html). Cette limitation ne s’applique pas à AWS PrivateLink.
+- Vous ne pouvez pas utiliser le protocole HTTPS (port 443) pour vous connecter à Adobe Commerce sur une infrastructure cloud via Azure Private Link en raison du [cloaking d’origine Fastly](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html?lang=fr). Cette limitation ne s’applique pas à AWS PrivateLink.
 - PrivateDNS non disponible.
 
 ## Types de connexion PrivateLink
@@ -202,7 +202,7 @@ Vous pouvez utiliser l’application Telnet pour tester la connexion au service 
 
 ## Modifier la configuration de PrivateLink
 
-[Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour modifier une configuration de lien privé existante. Par exemple, vous pouvez demander des modifications comme celles-ci :
+[Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour modifier une configuration de lien privé existante. Par exemple, vous pouvez demander des modifications comme celles-ci :
 
 - Supprimez la connexion PrivateLink d’Adobe Commerce sur l’infrastructure cloud dans l’environnement de production ou d’évaluation Pro.
 - Modifiez le numéro de compte de la plateforme cloud client pour accéder au service de point d’entrée Adobe.

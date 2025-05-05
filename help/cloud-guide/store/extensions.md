@@ -49,7 +49,7 @@ Bien que cette section explique comment obtenir le nom et la version du composit
 
 ## Installation d’une extension
 
-Adobe recommande de travailler dans une branche de développement lors de l’ajout d’une extension à votre implémentation. Lors de l’installation d’une extension, le nom de l’extension (`<VendorName>_<ComponentName>`) est automatiquement inséré dans le fichier [`app/etc/config.php`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html). Il n’est pas nécessaire de modifier directement le fichier.
+Adobe recommande de travailler dans une branche de développement lors de l’ajout d’une extension à votre implémentation. Lors de l’installation d’une extension, le nom de l’extension (`<VendorName>_<ComponentName>`) est automatiquement inséré dans le fichier [`app/etc/config.php`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html?lang=fr). Il n’est pas nécessaire de modifier directement le fichier.
 
 **Pour installer une extension** :
 
@@ -155,7 +155,7 @@ N’activez ou ne désactivez jamais une extension lorsque vous êtes connecté 
 
 ## Mettre à niveau une extension
 
-Avant de continuer, vous avez besoin du nom et de la version du compositeur pour l’extension. Vérifiez également que l’extension est compatible avec votre projet et la version d’Adobe Commerce. En particulier, [vérifiez la version PHP requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) avant de commencer.
+Avant de continuer, vous avez besoin du nom et de la version du compositeur pour l’extension. Vérifiez également que l’extension est compatible avec votre projet et la version d’Adobe Commerce. En particulier, [vérifiez la version PHP requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) avant de commencer.
 
 **Pour mettre à jour une extension** :
 
@@ -189,4 +189,4 @@ Avant de continuer, vous avez besoin du nom et de la version du compositeur pour
    git push origin <branch-names>
    ```
 
-Si vous rencontrez des erreurs, reportez-vous à la section [Récupération après une défaillance de composant](../deploy/recover-failed-deployment.md). Pour en savoir plus sur l’utilisation des extensions avec Adobe Commerce, voir [Extensions](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/extensions.html) dans le _Guide d’administration_.
+Si vous rencontrez des erreurs, reportez-vous à la section [Récupération après une défaillance de composant](../deploy/recover-failed-deployment.md). Pour en savoir plus sur l’utilisation des extensions avec Adobe Commerce, voir [Extensions](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/extensions.html?lang=fr) dans le _Guide d’administration_.

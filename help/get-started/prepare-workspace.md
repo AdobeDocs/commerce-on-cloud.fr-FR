@@ -27,7 +27,7 @@ Avant de configurer un espace de travail, collectez les clés et l’accès au c
 
 - **Clé de chiffrement Adobe Commerce**
 
-  Lors de l’importation d’un système existant uniquement, capturez la clé de chiffrement utilisée pour protéger l’accès et les données de la base de données. Pour plus d’informations sur cette clé, voir [Résoudre les problèmes liés à la clé de chiffrement](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.html)
+  Lors de l’importation d’un système existant uniquement, capturez la clé de chiffrement utilisée pour protéger l’accès et les données de la base de données. Pour plus d’informations sur cette clé, voir [Résoudre les problèmes liés à la clé de chiffrement](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.html?lang=fr)
 
 ## Outils de développement
 
