@@ -14,7 +14,7 @@ ht-degree: 7%
 # Commerce sur les infrastructures cloud {#user-guide}
 
 + [Commerce](overview.md)
-+ {#architecture} d’architecture
++ d’architecture{#architecture}
    + [Infrastructure cloud](architecture/cloud-architecture.md)
    + [Sécurité](architecture/security.md)
    + [Pile technologique](architecture/tech-stack.md)
@@ -34,7 +34,7 @@ ht-degree: 7%
    + [Packages cloud](release-notes/cloud-packages.md)
    + [Modifications non rétrocompatibles](release-notes/backward-incompatible-changes.md)
    + [Archive des notes de mise à jour](release-notes/cloud-release-archive.md)
-+ {#project} de projet cloud
++ de projet cloud{#project}
    + [Présentation du projet](project/overview.md)
    + [Structure du projet](project/file-structure.md)
    + [Accès utilisateur](project/user-access.md)
@@ -46,7 +46,7 @@ ht-degree: 7%
    + [Adresses IP régionales](project/regional-ip-addresses.md)
 + Outils de développement {#dev-tools}
    + [Vue d’ensemble](dev-tools/overview.md)
-   + {#cloud-cli} de l’interface de ligne de commande Cloud
+   + de l’interface de ligne de commande Cloud{#cloud-cli}
       + [Présentation de l’interface de ligne de commande](dev-tools/cloud-cli-overview.md)
       + [Référence de l’interface de ligne de commande](dev-tools/cloud-cli-reference.md)
    + [Cloud Docker](dev-tools/cloud-docker.md)
@@ -62,7 +62,7 @@ ht-degree: 7%
       + [GitHub](integrations/github.md)
       + [GitLab](integrations/gitlab.md)
       + [Notifications d’intégrité](integrations/health-notifications.md)
-+ {#develop} de développement
++ de développement{#develop}
    + [Vue d’ensemble](development/overview.md)
    + [Clés d’authentification](development/authentication-keys.md)
    + [Gestion des branches de l’interface de ligne de commande](development/cli-branches.md)
@@ -77,7 +77,7 @@ ht-degree: 7%
       + [Assistants intelligents](deploy/smart-wizards.md)
       + [Déploiement dans les environnements d’évaluation et de production](deploy/staging-production.md)
       + [Récupération après une panne de composant](deploy/recover-failed-deployment.md)
-   + {#test} de test
+   + de test{#test}
       + [Conseils de test](test/guidance.md)
       + [Logs](test/log-locations.md)
       + [Xdebug](test/debug.md)
@@ -87,7 +87,7 @@ ht-degree: 7%
    + [Service PrivateLink](development/privatelink-service.md)
    + [Bloc de protection](development/protective-block.md)
    + [Restaurer l’environnement](development/restore-environment.md)
-   + {#storage} de stockage
+   + de stockage{#storage}
       + [Gestion de l’espace disque](storage/manage-disk-space.md)
       + [Requêtes de base de données de profils](storage/profile-database-queries.md)
       + [Sauvegarde de la base de données](storage/database-dump.md)
@@ -96,9 +96,9 @@ ht-degree: 7%
       + [Bonnes pratiques](development/best-practices.md)
       + [Mettre à niveau la version de Commerce](development/commerce-version.md)
       + [Application de correctifs](development/apply-patches.md)
-+ {#configure} de configuration
++ de configuration{#configure}
    + [Vue d’ensemble](environment/overview.md)
-   + {#app} d’application
+   + d’application{#app}
       + [Configuration du déploiement de l’application](application/configure-app-yaml.md)
       + [Paramètres PHP](application/php-settings.md)
       + Propriétés {#properties}
@@ -110,7 +110,7 @@ ht-degree: 7%
          + [Web](application/web-property.md)
          + [Travailleurs](application/workers-property.md)
       + [Définir le cache pour les fichiers statiques](application/set-cache.md)
-   + {#env} de l’environnement
+   + de l’environnement{#env}
       + [Configuration du déploiement de l’environnement](environment/configure-env-yaml.md)
       + [Niveaux et options variables](environment/variable-levels.md)
       + Remplacer les variables {#stage}
@@ -121,7 +121,7 @@ ht-degree: 7%
          + [Build](environment/variables-build.md)
          + [Déployer](environment/variables-deploy.md)
          + [Après le déploiement](environment/variables-post-deploy.md)
-      + Configuration des {#log} de notifications
+      + Configuration des de notifications {#log}
          + [Notifications](environment/set-up-notifications.md)
          + [Gestionnaires de journaux](environment/log-handlers.md)
    + Itinéraires {#routes}
@@ -129,7 +129,7 @@ ht-degree: 7%
       + [Mise en cache](routes/caching.md)
       + [Redirections](routes/redirects.md)
       + [Inclusions côté serveur](routes/server-side-includes.md)
-   + {#service} des services
+   + des services{#service}
       + [Configuration des services](services/services-yaml.md)
       + [Elasticsearch](services/elasticsearch.md)
       + [MySQL](services/mysql.md)
@@ -137,9 +137,9 @@ ht-degree: 7%
       + [RabbitMQ](services/rabbitmq.md)
       + [Redis](services/redis.md)
       + [Valkey](services/valkey.md)
-+ {#cdn} des services Fastly
++ des services Fastly{#cdn}
    + [Vue d’ensemble](cdn/fastly.md)
-   + {#setup-fastly} de configuration rapide
+   + de configuration rapide{#setup-fastly}
       + [Configuration des services Fastly](cdn/fastly-configuration.md)
       + [Personnalisation de la configuration du cache](cdn/fastly-custom-cache-configuration.md)
       + [Personnaliser les pages d’erreur et de maintenance](cdn/fastly-custom-response.md)
@@ -163,16 +163,16 @@ ht-degree: 7%
    + [Plan du site et moteurs de recherche robots](store/robots-sitemap.md)
    + [Modes de paiement PayPal](store/paypal.md)
    + [Gestion de la configuration](store/store-settings.md)
-+ Lancer l’{#launch} du site
++ Lancer l’ du site{#launch}
    + [Vue d’ensemble](launch/overview.md)
    + [Liste de contrôle de Launch](launch/checklist.md)
    + [Étapes de lancement](launch/steps.md)
-+ Surveillance des {#monitor} du site
++ Surveillance des du site {#monitor}
    + [Performances](monitor/performance.md)
-   + {#new-relic} du service New Relic
+   + du service New Relic{#new-relic}
       + [Présentation de New Relic](monitor/new-relic-service.md)
       + [Gestion des comptes et des utilisateurs](monitor/account-management.md)
-      + Examiner les {#investigate} de performances
+      + Examiner les de performances {#investigate}
          + [Politiques, alertes et workflows](monitor/investigate-performance.md)
          + [Ingestion des données](monitor/ingest-data.md)
          + [Suivi des déploiements](monitor/track-deployments.md)

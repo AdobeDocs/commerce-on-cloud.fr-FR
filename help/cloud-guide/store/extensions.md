@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Gestion des extensions
 
-Vous pouvez étendre les fonctionnalités de votre application Adobe Commerce en ajoutant une extension à partir du Commerce Marketplace [](https://marketplace.magento.com). Par exemple, vous pouvez ajouter un thème pour modifier l’aspect de votre storefront ou vous pouvez ajouter un package de langue pour localiser votre storefront et votre administrateur.
+Vous pouvez étendre les fonctionnalités de votre application Adobe Commerce en ajoutant une extension à partir du Commerce Marketplace [&#128279;](https://marketplace.magento.com). Par exemple, vous pouvez ajouter un thème pour modifier l’aspect de votre storefront ou vous pouvez ajouter un package de langue pour localiser votre storefront et votre administrateur.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Bien que cette section explique comment obtenir le nom et la version du composit
 
 **Pour obtenir le nom du compositeur d’un module à partir du Commerce Marketplace** :
 
-1. Connectez-vous au Commerce Marketplace [](https://marketplace.magento.com) avec le nom d&#39;utilisateur et le mot de passe que vous avez utilisés pour acheter le composant.
+1. Connectez-vous au Commerce Marketplace [&#128279;](https://marketplace.magento.com) avec le nom d&#39;utilisateur et le mot de passe que vous avez utilisés pour acheter le composant.
 
 1. Dans le coin supérieur droit, cliquez sur votre nom d’utilisateur et sélectionnez **Mon profil**.
 

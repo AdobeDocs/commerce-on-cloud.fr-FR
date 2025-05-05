@@ -34,7 +34,7 @@ La méthode du fichier d’authentification est idéale lors de l’utilisation 
 1. Si votre répertoire racine de projet ne contient pas de fichier `auth.json`, créez-en un.
 
    - À l’aide d’un éditeur de texte, créez un fichier `auth.json` dans le répertoire racine du projet.
-   - Copiez le contenu de l’exemple de `auth.json`](https://github.com/magento/magento2/blob/2.3/auth.json.sample) [ dans le nouveau fichier `auth.json`.
+   - Copiez le contenu de l’exemple de `auth.json`[&#128279;](https://github.com/magento/magento2/blob/2.3/auth.json.sample)  dans le nouveau fichier `auth.json`.
 
 1. Remplacez `<public-key>` et `<private-key>` par vos informations d’authentification Adobe Commerce.
 

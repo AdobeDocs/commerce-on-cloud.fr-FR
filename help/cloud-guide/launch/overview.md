@@ -58,13 +58,13 @@ Dans le cadre de l’abonnement à Adobe Commerce sur l’infrastructure cloud, 
 >
 >Ajoutez ces adresses IP à une liste autorisée dans les règles de pare-feu de votre réseau pour permettre à l’outil d’analyser votre site. L’outil affiche les requêtes sur les ports 80 et 443 uniquement.
 
-L&#39;outil Security Scan Tool vous permet de surveiller régulièrement les sites Web de votre boutique et de recevoir des mises à jour pour les risques de sécurité connus, les logiciels malveillants et les logiciels obsolètes. Cet outil est un service gratuit disponible pour toutes les implémentations et versions d’Adobe Commerce sur les infrastructures cloud. Vous accédez à l’outil par l’intermédiaire de votre compte de Commerce Marketplace [](https://account.magento.com/customer/account/login).
+L&#39;outil Security Scan Tool vous permet de surveiller régulièrement les sites Web de votre boutique et de recevoir des mises à jour pour les risques de sécurité connus, les logiciels malveillants et les logiciels obsolètes. Cet outil est un service gratuit disponible pour toutes les implémentations et versions d’Adobe Commerce sur les infrastructures cloud. Vous accédez à l’outil par l’intermédiaire de votre compte de Commerce Marketplace [&#128279;](https://account.magento.com/customer/account/login).
 
 - Surveillance de l’état de sécurité de vos sites et des mises à jour de sécurité appliquées
 
 - Recevoir des mises à jour de sécurité et des notifications spécifiques au site
 
-Pour plus d’informations sur la configuration et l’utilisation de l’outil d’analyse de sécurité](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) consultez le [ Guide de l’utilisateur. En règle générale, vous commencez à utiliser cet outil lorsque vous commencez les tests d’acceptation utilisateur (UAT).
+Pour plus d’informations sur la configuration et l’utilisation de l’outil d’analyse de sécurité[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) consultez le  Guide de l’utilisateur. En règle générale, vous commencez à utiliser cet outil lorsque vous commencez les tests d’acceptation utilisateur (UAT).
 
 Chaque site que vous analysez doit être enregistré via l&#39;onglet Analyse de sécurité. Pendant le processus d&#39;enregistrement, vous devez accepter la clause de non-responsabilité avant de pouvoir commencer l&#39;analyse. Vous contrôlez à la fois le planning et l’autorisation donnée à l’utilisateur de recevoir des notifications une fois chaque analyse terminée. Vous pouvez planifier des analyses pour une date et une heure spécifiques et récurrentes, ou exécuter une analyse à la demande si nécessaire.
 
@@ -79,7 +79,7 @@ Visbot/2.0 (+http://www.visvo.com/en/webmasters.jsp;bot@visvo.com)
 
 ## Analyser votre site
 
-1. Accédez à votre compte de Commerce Marketplace [](https://account.magento.com/customer/account/login).
+1. Accédez à votre compte de Commerce Marketplace [&#128279;](https://account.magento.com/customer/account/login).
 
 1. Cliquez sur l’onglet Analyse de sécurité et sélectionnez **Accéder à l’analyse de sécurité**.
 

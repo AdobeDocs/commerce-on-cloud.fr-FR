@@ -48,7 +48,7 @@ Cette page fournit un statut pour les composants et services Adobe Commerce, sui
 >
 > Ouvrez la nouvelle [!DNL Cloud Console] et affichez les activités du projet et de l’environnement.
 >
->**Étape suivante** : [Connectez-vous à la console CI[!DNL ]oud](cloud-console.md)
+>**Étape suivante** : [Connectez-vous à la console CIoud](cloud-console.md)
 
 <!-- link definitions -->
 

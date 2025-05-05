@@ -313,7 +313,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
       - La configuration de l’environnement contient des valeurs incorrectes pour les variables de déploiement ou cloud.
 
-   - La version Elasticsearch de l’infrastructure cloud est incompatible avec la version du module elasticsearch/elasticsearch prise en charge par Adobe Commerce sur l’infrastructure cloud. Consultez l’article de dépannage de l’Elasticsearch [](https://support.magento.com/hc/en-us/articles/360015758471-Deployment-fails-or-interrupts-with-cloud-log-error-Elasticsearch-version-is-not-compatible-with-current-version-of-magento) dans la Base de connaissances de l’assistance Adobe Commerce.<!--MAGECLOUD-2600-->
+   - La version Elasticsearch de l’infrastructure cloud est incompatible avec la version du module elasticsearch/elasticsearch prise en charge par Adobe Commerce sur l’infrastructure cloud. Consultez l’article de dépannage de l’Elasticsearch [&#128279;](https://support.magento.com/hc/en-us/articles/360015758471-Deployment-fails-or-interrupts-with-cloud-log-error-Elasticsearch-version-is-not-compatible-with-current-version-of-magento) dans la Base de connaissances de l’assistance Adobe Commerce.<!--MAGECLOUD-2600-->
 
    - Correction d’un problème lié aux paramètres de configuration partagés dans le fichier `app/etc/config.php` qui provoquait des erreurs `recursion detected` lors du déploiement.<!--MAGECLOUD-2173-->
 

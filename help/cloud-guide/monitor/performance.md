@@ -19,6 +19,6 @@ Vous pouvez utiliser les services suivants pour surveiller les performances de v
 
 ## Service New Relic
 
-Surveillez les performances d’Adobe Commerce dans les environnements d’évaluation et de production à l’aide du service New Relic [](new-relic-service.md).
+Surveillez les performances d’Adobe Commerce dans les environnements d’évaluation et de production à l’aide du service New Relic [&#128279;](new-relic-service.md).
 
 - [Politique d&#39;Adobe des alertes gérées](investigate-performance.md#monitor-performance-with-managed-alerts)—Politique qui effectue le suivi de différentes mesures de performances et inclut un ensemble d&#39;alertes qui définissent des seuils pour déclencher des avertissements et des notifications critiques lorsque des problèmes d&#39;infrastructure de site ou d&#39;application affectent les performances.

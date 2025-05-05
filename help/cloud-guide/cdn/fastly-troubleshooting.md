@@ -258,7 +258,7 @@ Si l’en-tête `X-Cache` contient des `HIT` (`HIT, HIT` ou `HIT, MISS`), cela i
 
 Si l’en-tête `X-Cache` est `MISS, MISS` et ne contient pas de `HIT`, exécutez à nouveau la commande `curl` pour vous assurer que la page n’a pas été récemment purgée du cache.
 
-Si vous obtenez le même résultat, utilisez les commandes [`curl` et vérifiez ](#check-live-site-through-fastly)en-têtes de réponse [](#check-cache-hit-and-miss-response-headers) :
+Si vous obtenez le même résultat, utilisez les commandes [`curl` et vérifiez ](#check-live-site-through-fastly)en-têtes de réponse [&#128279;](#check-cache-hit-and-miss-response-headers) :
 
 - `Pragma` est `cache`
 - `X-Magento-Tags` existe
@@ -284,7 +284,7 @@ Si le problème persiste, une autre extension réinitialise probablement ces en-
 
    - Activez une extension à la fois, enregistrez la configuration et videz le cache d’Adobe Commerce.
 
-   - Exécutez les commandes [`curl` pour vérifier ](#check-live-site-through-fastly) en-têtes de réponse [](#check-cache-hit-and-miss-response-headers).
+   - Exécutez les commandes [`curl` pour vérifier ](#check-live-site-through-fastly) en-têtes de réponse [&#128279;](#check-cache-hit-and-miss-response-headers).
 
    Répétez ce processus pour chaque extension. Si les en-têtes de réponse Fastly ne s’affichent plus, vous avez identifié l’extension à l’origine des problèmes liés à Fastly.
 

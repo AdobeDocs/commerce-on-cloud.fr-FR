@@ -87,7 +87,7 @@ Avant de pouvoir supprimer un environnement, vous devez le désactiver. Une fois
 
 1. Cliquez sur l’icône de configuration sur le côté droit de la barre de navigation supérieure, ce qui ouvre les paramètres de l’environnement.
 
-1. Dans l’onglet _[!UICONTROL General]_, faites défiler l’écran jusqu’à la section_[!UICONTROL Deactivate environment]_ , cliquez sur **[!UICONTROL Deactivate environment and delete data]** et suivez les instructions.
+1. Dans l’onglet _[!UICONTROL General]_, faites défiler l’écran jusqu’à la section&#x200B;_[!UICONTROL Deactivate environment]_ , cliquez sur **[!UICONTROL Deactivate environment and delete data]** et suivez les instructions.
 
 ## Synchroniser un environnement
 

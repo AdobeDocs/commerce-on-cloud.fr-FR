@@ -118,7 +118,7 @@ Cette phase crée la base de code et exécute les crochets dans la section `buil
 
 - Application de correctifs dans `vendor/magento/ece-patches` et de correctifs facultatifs spécifiques au projet dans `m2-hotfixes`
 - Régénère le code et la configuration [injection de dépendance](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) (c’est-à-dire le répertoire `generated/`, qui comprend `generated/code` et `generated/metapackage`) à l’aide de `bin/magento setup:di:compile`.
-- Vérifie si le fichier [`app/etc/config.php`](../store/store-settings.md) existe dans la base de code. Adobe Commerce génère automatiquement ce fichier s’il ne le détecte pas lors de la phase de création et inclut une liste de modules et d’extensions. S’il existe, la phase de création se poursuit normalement, comprime les fichiers statiques à l’aide de GZIP et se déploie, ce qui réduit le temps d’arrêt dans la phase de déploiement. Pour en savoir plus sur la personnalisation ou la désactivation de la compression de fichiers](../environment/variables-build.md) voir [Options de création.
+- Vérifie si le fichier [`app/etc/config.php`](../store/store-settings.md) existe dans la base de code. Adobe Commerce génère automatiquement ce fichier s’il ne le détecte pas lors de la phase de création et inclut une liste de modules et d’extensions. S’il existe, la phase de création se poursuit normalement, comprime les fichiers statiques à l’aide de GZIP et se déploie, ce qui réduit le temps d’arrêt dans la phase de déploiement. Pour en savoir plus sur la personnalisation ou la désactivation de la compression de fichiers[&#128279;](../environment/variables-build.md) voir Options de création.
 
 >[!WARNING]
 >
