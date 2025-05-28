@@ -3,9 +3,9 @@ title: Gestion des sauvegardes
 description: Découvrez comment créer et restaurer manuellement une sauvegarde pour votre projet d’infrastructure cloud d’Adobe Commerce.
 feature: Cloud, Paas, Snapshots, Storage
 exl-id: e73a57e7-e56c-42b4-aa7b-2960673a7b68
-source-git-commit: b5fa153b4eb0569fd16c78fb7bf47c54222752cd
+source-git-commit: 3efc5478428c4ede9e2106e1cbef8362c525ccd8
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,8 @@ Vous pouvez créer une sauvegarde manuelle de n’importe quel environnement de 
    +---------------------------+----------------------+------------+
    ```
 
+Pour créer une image mémoire de base de données de n’importe quel environnement, y compris les environnements d’évaluation et de production, consultez l’article [Créer une image mémoire de base de données](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) de la base de connaissances.
+
 ## Restaurer une sauvegarde manuelle
 
 Vous devez disposer d’un [accès administrateur](../project/user-access.md) à l’environnement. Vous avez jusqu’à **sept jours** pour _restaurer_ une sauvegarde manuelle. La restauration d’une sauvegarde ne modifie pas le code de la branche Git actuelle. La restauration d&#39;une sauvegarde de cette manière ne s&#39;applique pas aux environnements d&#39;évaluation et de production Pro ; consultez [Pro Backup &amp; Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery).
@@ -137,7 +139,7 @@ Les délais de restauration varient en fonction de la taille de votre base de do
 
 ## Restauration d’un instantané de reprise après sinistre
 
-Pour restaurer l&#39;instantané de reprise après sinistre dans les environnements d&#39;évaluation et de production Pro, [Importez l&#39;image mémoire de la base de données directement depuis le serveur](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
+Pour restaurer l&#39;instantané de reprise après sinistre dans les environnements d&#39;évaluation et de production Pro, [Importez l&#39;image mémoire de la base de données directement depuis le serveur](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
 ## Restaurer le code
 
