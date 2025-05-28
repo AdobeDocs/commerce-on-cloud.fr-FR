@@ -16,7 +16,7 @@ ht-degree: 0%
 Vous pouvez utiliser les services suivants pour surveiller les performances de vos environnements cloud :
 
 - [Notifications d’intégrité](../integrations/health-notifications.md) : intégration qui fournit une alerte d’espace disque sur les environnements d’intégration Starter et Pro.
-- [Guide d’observation pour Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/observation-for-adobe-commerce/intro) : surveillance complète de tous les sites Commerce qui associe des données de journal provenant de plusieurs sources pour vous aider à mieux gérer les performances de votre site Adobe Commerce et à diagnostiquer les problèmes.
+- [Guide d’observation pour Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/observation-for-adobe-commerce/intro) : surveillance complète de tous les sites Commerce qui associe des données de journal provenant de plusieurs sources pour vous aider à mieux gérer les performances de votre site Adobe Commerce et à diagnostiquer les problèmes.
 - [Service de télémétrie opérationnelle](operational-telemetry.md) : surveillance des performances du trafic côté client sur votre storefront.
 
 ## Service New Relic
