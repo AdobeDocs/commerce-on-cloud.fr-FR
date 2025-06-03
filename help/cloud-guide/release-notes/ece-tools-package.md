@@ -2,11 +2,11 @@
 title: Notes de mise à jour des outils de la CEE
 description: Voir la liste des dernières améliorations apportées au progiciel ECE-Tools.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-05-27T00:00:00Z
+last-substantial-update: 2024-06-03T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: 70664897a10a59668fad74565c04b4ad72474736
+source-git-commit: e447e19d89edeaec84314c52b377f3712e0f0400
 workflow-type: tm+mt
-source-wordcount: '3166'
+source-wordcount: '3185'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,17 @@ Les notes de mise à jour incluent les éléments suivants :
 
 <!--Add release notes below-->
 
-## v2002.2.5 {#latest}
+## v2002.2.6 {#latest}
+
+Date de publication : 3 juin 2025
+
+- ![icône de correction](../../assets/fix.svg) **compatibilité améliorée avec la version 2.4.8**-bibliothèques tierces mises à jour pour une meilleure compatibilité avec la version 2.4.8<!-- MCLOUD-13707	 - -->
+
+## v2002.2.5
 
 Date de publication : 27 mai 2025
 
-- ![icône de correction](../../assets/new.svg) **compatibilité Valkey étendue** compatibilité Valkey étendue dans Adobe Commerce.<!-- MCLOUD-13595	 - -->
+- ![nouvelle icône](../../assets/new.svg) **Compatibilité Valkey étendue**-Compatibilité Valkey étendue dans Adobe Commerce.<!-- MCLOUD-13595	 - -->
 - ![Icône de correction](../../assets/fix.svg) **Validateur RabbitMQ mis à jour**-Validateur mis à jour pour RabbitMQ.<!-- MCLOUD-13589	 - -->
 - ![icône de correction](../../assets/fix.svg) **Mise à jour de la validation MariaDB**-Mise à jour de la validation ece-tools pour MariaDB 10.11.<!-- MCLOUD-13593	 - -->
 - ![icône de correction](../../assets/fix.svg) **compatibilité étendue Opensearch2**-Opensearch2 compatible avec les dernières versions 2.4.4.<!-- MCLOUD-13710	 - -->

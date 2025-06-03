@@ -3,9 +3,9 @@ title: Composants cloud pour Commerce
 description: Consultez la liste des dernières améliorations apportées au package Composants cloud .
 recommendations: noDisplay, catalog
 exl-id: 34aec593-e2ea-4060-a6b9-6f4cb95a11c0
-source-git-commit: 33f89e5c9af7c172ad0592b61343e285b456fc1a
+source-git-commit: dcf71ffbdafae46e6a02735c090c33a8fe248bc6
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,13 @@ Les notes de mise à jour incluent les éléments suivants :
 
 <!--Add release notes below-->
 
-## v1.1.1 {#latest}
+## v1.1.2 {#latest}
 
+Date de publication : 3 juin 2025
+
+- ![icône de correction](../../assets/fix.svg) **compatibilité améliorée avec la version 2.4.8**-bibliothèques tierces mises à jour pour une meilleure compatibilité avec la version 2.4.8<!-- MCLOUD-13707	 - -->
+
+## v1.1.1
 
 Date de publication : 6 février 2025
 
@@ -55,7 +60,7 @@ Date de publication : 10 mars 2023
 
 Date de publication : 13 septembre 2022
 
-- ![Icône de correction](../../assets/fix.svg) **Erreurs lors du préchauffage**—Correction d’un problème qui tentait d’effectuer un [préchauffage](../environment/variables-post-deploy.md#warm_up_pages) lorsque la visibilité de la page était définie sur [**Non visible individuellement**](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure) dans l’administration, ce qui entraînait des erreurs `ERROR: Warming up failed: <link to page>` dans le journal de déploiement.<!-- MCLOUD-9134 -->
+- ![Icône de correction](../../assets/fix.svg) **Erreurs lors du préchauffage**—Correction d’un problème qui tentait d’effectuer un [préchauffage](../environment/variables-post-deploy.md#warm_up_pages) lorsque la visibilité de la page était définie sur [**Non visible individuellement**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure) dans l’administration, ce qui entraînait des erreurs `ERROR: Warming up failed: <link to page>` dans le journal de déploiement.<!-- MCLOUD-9134 -->
 
 ## v1.0.11
 
