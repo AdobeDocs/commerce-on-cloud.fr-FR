@@ -1,9 +1,10 @@
 ---
 title: Lancement du site
 description: Découvrez comment commencer la préparation du lancement du site.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 95abc7aa-ed4d-44f7-96aa-517c646bc00d
+source-git-commit: 38ac38d4edd0f317155d0d4537021a29a21d5761
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
@@ -42,7 +43,7 @@ Dans le cadre de l’abonnement à Adobe Commerce sur l’infrastructure cloud, 
 
 >[!NOTE]
 >
->Si vous souhaitez déployer votre propre certificat SSL de validation étendue pour votre société au lieu d’utiliser le certificat Let’s Encrypt, contactez votre CTA ou [Envoyez un ticket d’assistance pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket).
+>Si vous souhaitez déployer votre propre certificat SSL de validation étendue pour votre société au lieu d’utiliser le certificat Let’s Encrypt, contactez votre CTA ou [Envoyez un ticket d’assistance pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Configuration de l’outil d’analyse de sécurité
 
@@ -58,13 +59,17 @@ Dans le cadre de l’abonnement à Adobe Commerce sur l’infrastructure cloud, 
 >
 >Ajoutez ces adresses IP à une liste autorisée dans les règles de pare-feu de votre réseau pour permettre à l’outil d’analyser votre site. L’outil affiche les requêtes sur les ports 80 et 443 uniquement.
 
-L&#39;outil Security Scan Tool vous permet de surveiller régulièrement les sites Web de votre boutique et de recevoir des mises à jour pour les risques de sécurité connus, les logiciels malveillants et les logiciels obsolètes. Cet outil est un service gratuit disponible pour toutes les implémentations et versions d’Adobe Commerce sur les infrastructures cloud. Vous accédez à l’outil par l’intermédiaire de votre compte de Commerce Marketplace [&#128279;](https://account.magento.com/customer/account/login).
+L&#39;outil Security Scan Tool vous permet de surveiller régulièrement les sites Web de votre boutique et de recevoir des mises à jour pour les risques de sécurité connus, les logiciels malveillants et les logiciels obsolètes. Cet outil est un service gratuit disponible pour toutes les implémentations et versions d’Adobe Commerce sur les infrastructures cloud. Vous accédez à l’outil via votre compte [Commerce Marketplace](https://account.magento.com/customer/account/login).
 
 - Surveillance de l’état de sécurité de vos sites et des mises à jour de sécurité appliquées
 
 - Recevoir des mises à jour de sécurité et des notifications spécifiques au site
 
-Pour plus d’informations sur la configuration et l’utilisation de l’outil d’analyse de sécurité[&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-scan) consultez le  Guide de l’utilisateur. En règle générale, vous commencez à utiliser cet outil lorsque vous commencez les tests d’acceptation utilisateur (UAT).
+>[!NOTE]
+>
+>Adobe recommande d’utiliser l’outil de scan de sécurité plutôt que d’autres outils tiers afin d’assurer la meilleure qualité de service lors de l’enquête sur les résultats.
+
+Pour plus d’informations sur la configuration et l’utilisation de l’outil d’analyse de sécurité](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) consultez le [ Guide de l’utilisateur. En règle générale, vous commencez à utiliser cet outil lorsque vous commencez les tests d’acceptation utilisateur (UAT).
 
 Chaque site que vous analysez doit être enregistré via l&#39;onglet Analyse de sécurité. Pendant le processus d&#39;enregistrement, vous devez accepter la clause de non-responsabilité avant de pouvoir commencer l&#39;analyse. Vous contrôlez à la fois le planning et l’autorisation donnée à l’utilisateur de recevoir des notifications une fois chaque analyse terminée. Vous pouvez planifier des analyses pour une date et une heure spécifiques et récurrentes, ou exécuter une analyse à la demande si nécessaire.
 
@@ -79,7 +84,7 @@ Visbot/2.0 (+http://www.visvo.com/en/webmasters.jsp;bot@visvo.com)
 
 ## Analyser votre site
 
-1. Accédez à votre compte de Commerce Marketplace [&#128279;](https://account.magento.com/customer/account/login).
+1. Accédez à votre compte [Commerce Marketplace](https://account.magento.com/customer/account/login).
 
 1. Cliquez sur l’onglet Analyse de sécurité et sélectionnez **Accéder à l’analyse de sécurité**.
 
