@@ -2,9 +2,10 @@
 title: Déploiement de contenu statique
 description: Découvrez les stratégies de déploiement de contenu statique, tel que des images, des scripts et des feuilles CSS, sur Adobe Commerce dans les projets d’infrastructure cloud.
 feature: Cloud, Build, Deploy, SCD
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 8f30cae7-a3a0-4ce4-9c73-d52649ef4d7a
+source-git-commit: 325b7584daa38ad788905a6124e6d037cf679332
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -15,11 +16,11 @@ Le déploiement de contenu statique (SCD) a un impact significatif sur le proces
 
 ## Optimisation du contenu JavaScript et HTML
 
-Vous pouvez utiliser le regroupement et la minimisation pour créer un contenu JavaScript et HTML optimisé lors du déploiement de contenu statique.
+Vous pouvez utiliser le regroupement et la minimisation pour créer du contenu JavaScript et HTML optimisé lors du déploiement de contenu statique.
 
 ### Minimiser le contenu
 
-Vous pouvez réduire le temps de chargement du SCD pendant le processus de déploiement si vous ignorez la copie des fichiers de vue statiques dans le répertoire `var/view_preprocessed` et si vous générez un HTML _miniaturisé_ si nécessaire. Vous pouvez l’activer en définissant la variable d’environnement global [SKIP_HTML_MINIFICATION](../environment/variables-global.md#skiphtmlminification) sur `true` dans le fichier `.magento.env.yaml`.
+Vous pouvez réduire le temps de chargement du SCD pendant le processus de déploiement si vous ignorez la copie des fichiers de vue statiques dans le répertoire `var/view_preprocessed` et si vous générez _miniaturisé_ HTML lorsque cela est nécessaire. Vous pouvez l’activer en définissant la variable d’environnement global [SKIP_HTML_MINIFICATION](../environment/variables-global.md#skiphtmlminification) sur `true` dans le fichier `.magento.env.yaml`.
 
 >[!NOTE]
 >
@@ -29,15 +30,20 @@ Vous pouvez économiser **plus** de temps de déploiement et d’espace disque e
 
 ## Choisir une stratégie de déploiement
 
-Les stratégies de déploiement varient selon que vous choisissez de générer du contenu statique pendant la phase _build_, la phase _déploiement_ ou _à la demande_. Comme le montre le graphique suivant, la génération de contenu statique pendant la phase de déploiement est le choix le moins optimal. Même avec un HTML miniaturisé, chaque fichier de contenu doit être copié dans le répertoire de `~/pub/static` monté, ce qui peut prendre beaucoup de temps. La génération de contenu statique à la demande semble être le choix optimal. Cependant, si le fichier de contenu n’existe pas dans le cache, il est généré au moment où il est demandé, ce qui ajoute du temps de chargement à l’expérience utilisateur. Par conséquent, la génération de contenu statique pendant la phase de création est la plus optimale.
+Les stratégies de déploiement varient selon que vous choisissez de générer du contenu statique pendant la phase _build_, la phase _déploiement_ ou _à la demande_. Comme le montre le graphique suivant, la génération de contenu statique pendant la phase de déploiement est le choix le moins optimal. Même avec HTML miniaturisé, chaque fichier de contenu doit être copié dans le répertoire de `~/pub/static` monté, ce qui peut prendre beaucoup de temps. La génération de contenu statique à la demande semble être le choix optimal. Cependant, si le fichier de contenu n’existe pas dans le cache, il est généré au moment où il est demandé, ce qui ajoute du temps de chargement à l’expérience utilisateur. Par conséquent, la génération de contenu statique pendant la phase de création est la plus optimale.
 
 ![Comparaison de charge SCD](../../assets/scd-load-times.png)
 
 ### Définition du SCD sur la version
 
-La génération de contenu statique pendant la phase de création avec l’HTML miniaturisé est la configuration optimale pour les déploiements [**zéro temps d’arrêt** ](reduce-downtime.md), également appelés **état idéal**. Au lieu de copier des fichiers sur un lecteur monté, il crée un lien symbolique à partir du répertoire `./init/pub/static`.
+La génération de contenu statique pendant la phase de création avec HTML miniaturisé est la configuration optimale pour des déploiements [**zéro temps d’arrêt**](reduce-downtime.md), également appelés **état idéal**. Au lieu de copier des fichiers sur un lecteur monté, il crée un lien symbolique à partir du répertoire `./init/pub/static`.
 
 La génération de contenu statique nécessite l’accès aux thèmes et aux paramètres régionaux. Adobe Commerce stocke les thèmes dans le système de fichiers, qui est accessible pendant la phase de création. Toutefois, Adobe Commerce stocke les paramètres régionaux dans la base de données. La base de données n’est _pas_ disponible pendant la phase de création. Pour générer le contenu statique pendant la phase de création, vous devez utiliser la commande `config:dump` du package de `ece-tools` pour déplacer les paramètres régionaux vers le système de fichiers. Il lit les paramètres régionaux et les enregistre dans le fichier `app/etc/config.php`.
+
+>[!NOTE]
+>Après avoir exécuté la commande `config:dump` dans le package `ece-tools`, les configurations qui sont vidées dans le fichier `config.php` [sont verrouillées (grisées) dans le tableau de bord Admin](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/locked-fields-in-magento-admin). la seule façon de mettre à jour ces configurations dans l’administration consiste à les supprimer du fichier localement et à redéployer le projet.
+>>En outre, chaque fois que vous ajoutez un nouveau magasin/groupe de magasins/site web à votre instance, vous devez penser à exécuter la commande `config:dump` pour vous assurer que la base de données est synchronisée. Vous pouvez également choisir [les configurations à vider](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) dans le fichier `config.php`.
+>>Si vous supprimez la configuration magasin/groupe de magasins/site web du fichier `config.php` parce que les champs sont grisés mais que vous négligez d’effectuer cette étape, les nouvelles entités qui n’ont pas été extraites sont supprimées de la base de données lors du déploiement suivant.
 
 **Pour configurer votre projet afin de générer un SCD sur la version** :
 
