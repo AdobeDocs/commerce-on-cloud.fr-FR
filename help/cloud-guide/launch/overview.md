@@ -43,7 +43,7 @@ Dans le cadre de l’abonnement à Adobe Commerce sur l’infrastructure cloud, 
 
 >[!NOTE]
 >
->Si vous souhaitez déployer votre propre certificat SSL de validation étendue pour votre société au lieu d’utiliser le certificat Let’s Encrypt, contactez votre CTA ou [Envoyez un ticket d’assistance pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+>Si vous souhaitez déployer votre propre certificat SSL de validation étendue pour votre société au lieu d’utiliser le certificat Let’s Encrypt, contactez votre CTA ou [Envoyez un ticket d’assistance pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket).
 
 ## Configuration de l’outil d’analyse de sécurité
 
@@ -69,7 +69,7 @@ L&#39;outil Security Scan Tool vous permet de surveiller régulièrement les sit
 >
 >Adobe recommande d’utiliser l’outil de scan de sécurité plutôt que d’autres outils tiers afin d’assurer la meilleure qualité de service lors de l’enquête sur les résultats.
 
-Pour plus d’informations sur la configuration et l’utilisation de l’outil d’analyse de sécurité[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) consultez le  Guide de l’utilisateur. En règle générale, vous commencez à utiliser cet outil lorsque vous commencez les tests d’acceptation utilisateur (UAT).
+Pour plus d’informations sur la configuration et l’utilisation de l’outil d’analyse de sécurité[&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-scan) consultez le  Guide de l’utilisateur. En règle générale, vous commencez à utiliser cet outil lorsque vous commencez les tests d’acceptation utilisateur (UAT).
 
 Chaque site que vous analysez doit être enregistré via l&#39;onglet Analyse de sécurité. Pendant le processus d&#39;enregistrement, vous devez accepter la clause de non-responsabilité avant de pouvoir commencer l&#39;analyse. Vous contrôlez à la fois le planning et l’autorisation donnée à l’utilisateur de recevoir des notifications une fois chaque analyse terminée. Vous pouvez planifier des analyses pour une date et une heure spécifiques et récurrentes, ou exécuter une analyse à la demande si nécessaire.
 
