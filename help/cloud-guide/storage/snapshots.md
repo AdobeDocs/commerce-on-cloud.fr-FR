@@ -3,9 +3,9 @@ title: Gestion des sauvegardes
 description: Découvrez comment créer et restaurer manuellement une sauvegarde pour votre projet d’infrastructure cloud d’Adobe Commerce.
 feature: Cloud, Paas, Snapshots, Storage
 exl-id: e73a57e7-e56c-42b4-aa7b-2960673a7b68
-source-git-commit: b9bbbb9b83ed995951feaa9391015f02a9661206
+source-git-commit: 13cb5e3231c2173d5687aec3e4e64ecc154ee962
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,18 @@ La fonction de sauvegarde/instantané ne s’applique **pas** aux environnements
 
 Vous pouvez créer une sauvegarde manuelle de n’importe quel environnement de démarrage actif et de l’environnement d’intégration Pro à partir de l’[!DNL Cloud Console] ou créer un instantané à partir de l’interface de ligne de commande Cloud. Vous devez disposer d’un [rôle d’administrateur](../project/user-access.md) pour l’environnement.
 
+>[!NOTE]
+>
+>Vous pouvez créer une sauvegarde du code directement sur les clusters Pro Production et Staging en exécutant la commande suivante dans le terminal - en l’ajustant pour tous les dossiers/chemins que vous souhaitez inclure/exclure :
+>
+```bash
+>mkdir -p var/support
+>/usr/bin/nice -n 15 /bin/tar -czhf var/support/code-$(date +"%Y%m%d%H%M%p").tar.gz app bin composer.* dev lib pub/*.php pub/errors setup vendor --exclude='pub/media'
+>```
+
 **Pour créer une sauvegarde de base de données de l&#39;environnement Pro** :
-Pour créer un vidage de base de données de n&#39;importe quel environnement Pro, y compris l&#39;évaluation et la production, consultez l&#39;article [Créer un vidage de base de données](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) de la base de connaissances.
+
+Pour créer un vidage de base de données de n&#39;importe quel environnement Pro, y compris l&#39;évaluation et la production, consultez l&#39;article [Créer un vidage de base de données](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) de la base de connaissances.
 
 **Pour créer une sauvegarde d’un environnement de démarrage à l’aide de l’[!DNL Cloud Console]** :
 
@@ -140,10 +150,15 @@ Les délais de restauration varient en fonction de la taille de votre base de do
 
 ## Restauration d’un instantané de reprise après sinistre
 
-Pour restaurer l&#39;instantané de reprise après sinistre dans les environnements d&#39;évaluation et de production Pro, [Importez l&#39;image mémoire de la base de données directement depuis le serveur](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
+Pour restaurer l&#39;instantané de reprise après sinistre dans les environnements d&#39;évaluation et de production Pro, [Importez l&#39;image mémoire de la base de données directement depuis le serveur](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
 ## Restaurer le code
 
 Les sauvegardes et les instantanés ne comprennent _pas_ une copie de votre code. Votre code est déjà stocké dans le référentiel Git. Vous pouvez donc utiliser des commandes basées sur Git pour restaurer (ou rétablir) le code. Par exemple, utilisez `git log --oneline` pour faire défiler les validations précédentes, puis utilisez [`git revert`](https://git-scm.com/docs/git-revert) pour restaurer le code d’une validation spécifique.
 
 Vous pouvez également choisir de stocker le code dans une branche _inactive_. Utilisez les commandes Git pour créer une branche au lieu d’utiliser des commandes `magento-cloud`. Voir à propos des [commandes Git](../dev-tools/cloud-cli-overview.md#git-commands) dans la rubrique relative à l’interface de ligne de commande Cloud.
+
+## Informations connexes
+
+- [Sauvegarde de la base de données](database-dump.md)
+- [Sauvegarde et reprise après sinistre](../architecture/pro-architecture.md#backup-and-disaster-recovery) pour les clusters Pro de production et d&#39;évaluation
