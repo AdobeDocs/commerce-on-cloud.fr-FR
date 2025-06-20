@@ -2,9 +2,10 @@
 title: Présentation des services Fastly
 description: Découvrez comment les services Fastly inclus dans Adobe Commerce sur les infrastructures cloud vous aident à optimiser et sécuriser les opérations de diffusion de contenu pour vos sites Adobe Commerce.
 feature: Cloud, Configuration, Iaas, Paas, Cache, Security, Services
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 429b6762-0b01-438b-a962-35376306895b
+source-git-commit: 3cef442321120d8ca813c760d2fd0435f4961235
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1443'
 ht-degree: 0%
 
 ---
@@ -43,7 +44,7 @@ Fastly fournit les services suivants pour optimiser et sécuriser les opération
 
 - **Cloaking d&#39;origine**—Empêche le trafic de contourner Fastly WAF et masque les adresses IP de vos serveurs d&#39;origine pour les protéger des attaques DDoS et d&#39;accès direct.
 
-  Le cloaking de l’origine est activé par défaut sur les projets de pro production d’infrastructure cloud d’Adobe Commerce. Pour activer le cloaking de l’origine sur les projets de démarrage d’exploitation d’Adobe Commerce sur l’infrastructure cloud, envoyez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket). Si vous avez du trafic qui ne nécessite pas de mise en cache, vous pouvez personnaliser la configuration du service Fastly pour permettre aux requêtes de [contourner le cache Fastly](fastly-vcl-bypass-to-origin.md).
+  Le cloaking de l’origine est activé par défaut sur les projets de pro production d’infrastructure cloud d’Adobe Commerce. Pour activer le cloaking de l’origine sur les projets de démarrage d’exploitation d’Adobe Commerce sur l’infrastructure cloud, envoyez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Si vous avez du trafic qui ne nécessite pas de mise en cache, vous pouvez personnaliser la configuration du service Fastly pour permettre aux requêtes de [contourner le cache Fastly](fastly-vcl-bypass-to-origin.md).
 
 - **[Optimisation des images](fastly-image-optimization.md)** : décharge le traitement et le redimensionnement des images sur le service Fastly afin que les serveurs puissent traiter les commandes et les conversions plus efficacement.
 
@@ -51,13 +52,13 @@ Fastly fournit les services suivants pour optimiser et sécuriser les opération
 
 ## Module Fast CDN pour Magento 2
 
-Les services Fastly pour Adobe Commerce sur les infrastructures cloud utilisent le module [Fastly CDN pour Magento 2] installé dans les environnements suivants : évaluation et production Pro, démarrage de la production (branche `master`).
+Les services Fastly pour Adobe Commerce sur les infrastructures cloud utilisent le module [Fastly CDN pour Magento 2] installé dans les environnements suivants : évaluation et production pro, démarrage de la production (branche `master`).
 
 Lors de l’approvisionnement initial ou de la mise à niveau de votre projet Adobe Commerce, Adobe installe la dernière version du module Fast CDN dans vos environnements d’évaluation et de production. Lorsque Fastly publie des mises à jour de module, vous recevez des notifications dans l’Admin pour vos environnements. Adobe vous recommande de mettre à jour vos environnements pour utiliser la dernière version. Voir [ Mise à niveau rapide ](fastly-configuration.md#upgrade-the-fastly-module).
 
 ## Compte de service et informations d’identification Fastly
 
-Adobe Commerce sur les projets d’infrastructure cloud ne dispose pas d’un compte Fastly dédié. Le service Fastly est géré dans un compte centralisé enregistré dans Adobe, et le tableau de bord de gestion n’est accessible qu’à l’équipe d’assistance cloud.
+Adobe Commerce sur les projets d’infrastructure cloud ne dispose pas d’un compte Fastly dédié. Le service Fastly est géré dans un compte centralisé, enregistré auprès d’Adobe, et le tableau de bord de gestion n’est accessible qu’à l’équipe d’assistance cloud.
 
 Au lieu de cela, chaque environnement d’évaluation et de production dispose d’informations d’identification Fastly uniques (jeton API et ID de service) pour configurer et gérer les services Fastly à partir de l’administrateur Commerce. L’API Fastly est disponible pour effectuer une gestion avancée du service Fastly, qui nécessitera les informations d’identification pour envoyer ces requêtes.
 
@@ -65,11 +66,13 @@ Pendant la mise en service du projet, Adobe ajoute votre projet au compte de ser
 
 ### Modifier le jeton API Fastly
 
-Envoyez un ticket d’assistance Adobe Commerce pour modifier les informations d’identification du jeton API Fastly. Lorsque vous recevez le nouveau jeton, mettez à jour votre environnement d’évaluation ou de production pour utiliser le nouveau jeton.
+Envoyez un ticket d’assistance Adobe Commerce pour émettre de nouvelles informations d’identification du jeton API Fastly [si elles n’ont pas été validées/ont expiré](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials) ou si vous pensez qu’elles ont été compromises.
+
+Lorsque vous recevez le nouveau jeton, mettez à jour votre environnement d’évaluation ou de production pour utiliser le nouveau jeton.
 
 **Pour modifier les informations d’identification du jeton API Fastly** :
 
-1. [Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) demandant de nouvelles informations d’identification d’API Fastly.
+1. [Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) demandant de nouvelles informations d’identification d’API Fastly.
 
    Incluez votre Adobe Commerce sur l’ID de projet d’infrastructure cloud et les environnements qui nécessitent de nouvelles informations d’identification.
 
@@ -115,18 +118,18 @@ La protection DDOS est intégrée au service Fast CDN. Une fois que vous avez ac
 
   Fast gère les attaques de niveau TCP au niveau de la couche de cache. Cette stratégie fournit l&#39;échelle et le contexte nécessaires par client pour faire face à une attaque de CRUE SYN et à ses nombreuses variantes, y compris la pile TCP, les attaques de ressources et les attaques TLS dans les systèmes Fastly.
 
-- Fastly fournit également une protection contre les attaques de couche 7. Si votre boutique rencontre des problèmes de performances et que vous suspectez une attaque DDoS de couche 7, envoyez un ticket d’assistance Adobe Commerce. Adobe peut créer et appliquer des règles personnalisées au service Fastly afin de rechercher et de filtrer les requêtes malveillantes en fonction de l’en-tête, de la payload ou d’une combinaison d’attributs qui identifient le trafic d’attaque. Voir [Recherche d’attaques DDoS] et [Comment bloquer le trafic malveillant] dans le *Centre d’aide d’Adobe Commerce*.
+- Fastly fournit également une protection contre les attaques de couche 7. Si votre boutique rencontre des problèmes de performances et que vous suspectez une attaque DDoS de couche 7, envoyez un ticket d’assistance Adobe Commerce. Adobe peut créer et appliquer des règles personnalisées au service Fastly afin de rechercher et de filtrer les requêtes malveillantes en fonction de l’en-tête, de la payload ou d’une combinaison d’attributs identifiant le trafic d’attaque. Voir [Recherche d’attaques DDoS] et [Comment bloquer le trafic malveillant] dans le *Centre d’aide d’Adobe Commerce*.
 
 <!--Link definitions-->
 
 [Caching with Fastly]: https://developer.adobe.com/commerce/webapi/graphql/usage/caching/#caching-with-fastly
 
-[Recherche des attaques DDoS]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.html?lang=fr
+[Recherche des attaques DDoS]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.html
 
 [Module Fast CDN pour Magento 2]: https://github.com/fastly/fastly-magento2
 
 [Ticket d’assistance Fastly]: https://docs.fastly.com/products/support-description-and-sla#support-requests
 
-[Comment bloquer le trafic malveillant]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html?lang=fr
+[Comment bloquer le trafic malveillant]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html
 
 [Utilisation des domaines]: https://docs.fastly.com/en/guides/working-with-domains
