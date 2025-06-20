@@ -42,8 +42,8 @@ La génération de contenu statique nécessite l’accès aux thèmes et aux par
 
 >[!NOTE]
 >Après avoir exécuté la commande `config:dump` dans le package `ece-tools`, les configurations qui sont vidées dans le fichier `config.php` [sont verrouillées (grisées) dans le tableau de bord Admin](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/locked-fields-in-magento-admin). la seule façon de mettre à jour ces configurations dans l’administration consiste à les supprimer du fichier localement et à redéployer le projet.
->>En outre, chaque fois que vous ajoutez un nouveau magasin/groupe de magasins/site web à votre instance, vous devez penser à exécuter la commande `config:dump` pour vous assurer que la base de données est synchronisée. Vous pouvez également choisir [les configurations à vider](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) dans le fichier `config.php`.
->>Si vous supprimez la configuration magasin/groupe de magasins/site web du fichier `config.php` parce que les champs sont grisés mais que vous négligez d’effectuer cette étape, les nouvelles entités qui n’ont pas été extraites sont supprimées de la base de données lors du déploiement suivant.
+>&#x200B;>En outre, chaque fois que vous ajoutez un nouveau magasin/groupe de magasins/site web à votre instance, vous devez penser à exécuter la commande `config:dump` pour vous assurer que la base de données est synchronisée. Vous pouvez également choisir [les configurations à vider](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) dans le fichier `config.php`.
+>&#x200B;>Si vous supprimez la configuration magasin/groupe de magasins/site web du fichier `config.php` parce que les champs sont grisés mais que vous négligez d’effectuer cette étape, les nouvelles entités qui n’ont pas été extraites sont supprimées de la base de données lors du déploiement suivant.
 
 **Pour configurer votre projet afin de générer un SCD sur la version** :
 
