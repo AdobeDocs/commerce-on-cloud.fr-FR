@@ -30,7 +30,7 @@ Vous pouvez créer une sauvegarde manuelle de n’importe quel environnement de 
 >
 >Vous pouvez créer une sauvegarde du code directement sur les clusters Pro Production et Staging en exécutant la commande suivante dans le terminal - en l’ajustant pour tous les dossiers/chemins que vous souhaitez inclure/exclure :
 >
-```bash
+>```bash
 >mkdir -p var/support
 >/usr/bin/nice -n 15 /bin/tar -czhf var/support/code-$(date +"%Y%m%d%H%M%p").tar.gz app bin composer.* dev lib pub/*.php pub/errors setup vendor --exclude='pub/media'
 >```
