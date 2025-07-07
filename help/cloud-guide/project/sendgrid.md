@@ -63,7 +63,7 @@ Pour que SendGrid envoie des e-mails transactionnels en votre nom à partir d&#3
 
 >[!TIP]
 >
->Assurez-vous de configurer l’option **[!UICONTROLSstocker les adresses e-mail]** avec le domaine approprié dans **[!UICONTROL Stores > Configuration > General > Store Email Addresses]**. L’authentification de domaine est effectuée sur l’adresse e-mail de l’expéditeur. Si le paramètre par défaut (`example.com`) est configuré, les e-mails provenant de `example.com` sont bloqués par Sendgrid.
+>Assurez-vous de configurer l’option **[!UICONTROL Sstocker les adresses e-mail]** avec le domaine approprié dans **[!UICONTROL Stores > Configuration > General > Store Email Addresses]**. L’authentification de domaine est effectuée sur l’adresse e-mail de l’expéditeur. Si le paramètre par défaut (`example.com`) est configuré, les e-mails provenant de `example.com` sont bloqués par Sendgrid.
 
 **Pour activer l’authentification de domaine** :
 
