@@ -3,195 +3,36 @@ title: Mettre à niveau la version de Commerce
 description: Découvrez comment mettre à niveau la version Adobe Commerce dans le projet d’infrastructure cloud.
 feature: Cloud, Upgrade
 exl-id: 0cc070cf-ab25-4269-b18c-b2680b895c17
-source-git-commit: 1cea1cdebf3aba2a1b43f305a61ca6b55e3b9d08
+source-git-commit: bcb5b00f7f203b53eae5c1bc1037cdb1837ad473
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '894'
 ht-degree: 0%
 
 ---
 
 # Mettre à niveau la version de Commerce
 
-Vous pouvez mettre à niveau la base de code Adobe Commerce vers une version plus récente. Avant de mettre à niveau votre projet, consultez la section [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) du guide _Installation_ pour connaître la configuration requise pour la dernière version du logiciel.
+Vous pouvez mettre à niveau la base de code Adobe Commerce vers une version plus récente. Avant de mettre à niveau votre projet, consultez la section [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) du guide _Installation_ pour connaître la configuration requise pour la dernière version du logiciel.
 
 Selon la configuration de votre projet, vos tâches de mise à niveau peuvent inclure les éléments suivants :
 
-- Mettez à jour les services tels que MariaDB (MySQL), OpenSearch, RabbitMQ et Redis pour garantir la compatibilité avec les nouvelles versions d’Adobe Commerce.
-- Convertissez un fichier de gestion de configuration plus ancien.
+- Mettez à jour le fichier `.magento/services.yaml` avec les nouvelles versions de MariaDB (MySQL), OpenSearch, RabbitMQ et Redis pour garantir la compatibilité avec les nouvelles versions d’Adobe Commerce.
 - Mettez à jour le fichier `.magento.app.yaml` avec de nouveaux paramètres pour les hooks et les variables d’environnement.
 - Mettez à niveau les extensions tierces vers la dernière version prise en charge.
-- Mettez à jour le fichier `.gitignore`.
 
 {{upgrade-tip}}
 
 {{pro-update-service}}
 
-## Mise à niveau à partir de versions plus anciennes
-
-Si vous commencez une mise à niveau à partir d&#39;une version de Commerce antérieure à la version 2.1, certaines restrictions de la base de code Adobe Commerce peuvent affecter votre capacité à _mettre à jour_ vers une version spécifique de ECE-Tools ou à _mettre à niveau_ vers la prochaine version de Commerce prise en charge. Utilisez le tableau suivant pour déterminer le meilleur chemin d’accès :
-
-| Version actuelle | Chemin de mise à niveau |
-| ----------------- | ------------ |
-| 2.1.3 et versions antérieures | Mettez à niveau Adobe Commerce vers la version 2.1.4 ou une version ultérieure avant de continuer. Effectuez ensuite une [mise à niveau ponctuelle pour installer ECE-Tools](../dev-tools/install-package.md). |
-| 2.1.4 - 2.1.14 | [Mise à jour du package ECE-Tools](../dev-tools/update-package.md).<br>Voir les notes de mise à jour de la version [2002.0.9](../release-notes/cloud-release-archive.md#v200209) et des versions ultérieures 2002.0.x. |
-| 2.1.15 - 2.1.16 | [Mise à jour du package ECE-Tools](../dev-tools/update-package.md).<br>Voir les notes de mise à jour de la version 2002[0.9](../release-notes/cloud-release-archive.md#v200209) et des versions ultérieures. |
-| 2.2.x et versions ultérieures | [Mise à jour du package ECE-Tools](../dev-tools/update-package.md).<br>Voir les notes de mise à jour de la version 2002[0.8](../release-notes/cloud-release-archive.md#v200208) et des versions ultérieures. |
-
-{style="table-layout:auto"}
-
-{{ece-tools-package}}
-
-## Gestion de la configuration
-
-Les versions plus anciennes d’Adobe Commerce, telles que 2.1.4 ou les versions ultérieures à 2.2.x ou les versions ultérieures, utilisaient un fichier `config.local.php` pour la gestion de la configuration. Les versions 2.2.0 et ultérieures d’Adobe Commerce utilisent le fichier `config.php`, qui fonctionne exactement comme le fichier `config.local.php`, mais il comporte différents paramètres de configuration qui incluent une liste de vos modules activés et des options de configuration supplémentaires.
-
-Lors de la mise à niveau à partir d’une version plus ancienne, vous devez migrer le fichier `config.local.php` pour utiliser le fichier `config.php` plus récent. Pour sauvegarder votre fichier de configuration et en créer un, procédez comme suit.
-
-**Pour créer un fichier `config.php` temporaire** :
-
-1. Créez une copie `config.local.php` fichier et nommez-le `config.php`.
-
-1. Ajoutez ce fichier au dossier `app/etc` de votre projet.
-
-1. Ajoutez et validez le fichier dans votre branche.
-
-1. Envoyez le fichier à votre branche d’intégration.
-
-1. Poursuivez le processus de mise à niveau.
-
->[!WARNING]
->
->Après la mise à niveau, vous pouvez supprimer le fichier `config.php` et générer un nouveau fichier complet. Vous ne pouvez supprimer ce fichier que pour le remplacer cette fois-ci. Après avoir généré un nouveau fichier `config.php` complet, vous ne pouvez pas supprimer le fichier pour en générer un nouveau. Voir [Gestion de la configuration et déploiement du pipeline](../store/store-settings.md).
-
-### Vérifier les dépendances du compositeur de structure d&#39;envoi
-
-Lors de la mise à niveau vers **2.3.x ou une version ultérieure à partir de 2.2.x**, vérifiez que les dépendances de Zend Framework ont été ajoutées à la propriété `autoload` du fichier `composer.json` pour prendre en charge Laminas. Ce plug-in prend en charge les nouvelles exigences de la structure Zend, qui a migré vers le projet Laminas. Voir [ Migration de Zend Framework vers le projet Laminas ](https://community.magento.com/t5/Magento-DevBlog/Migration-of-Zend-Framework-to-the-Laminas-Project/ba-p/443251) sur le _DevBlog Magento_.
-
-**Pour vérifier la configuration `auto-load:psr-4`, procédez comme suit**
-
-1. Sur votre station de travail locale, accédez au répertoire du projet.
-
-1. Consultez votre branche d’intégration.
-
-1. Ouvrez le fichier `composer.json` dans un éditeur de texte.
-
-1. Consultez la section `autoload:psr-4` pour la mise en œuvre du gestionnaire de plug-ins Zend pour la dépendance des contrôleurs.
-
-   ```json
-    "autoload": {
-       "psr-4": {
-          "Magento\\Framework\\": "lib/internal/Magento/Framework/",
-          "Magento\\Setup\\": "setup/src/Magento/Setup/",
-          "Magento\\": "app/code/Magento/",
-          "Zend\\Mvc\\Controller\\": "setup/src/Zend/Mvc/Controller/"
-       },
-   }
-   ```
-
-1. Si la dépendance Zend est manquante, mettez à jour le fichier `composer.json` :
-
-   - Ajoutez la ligne suivante à la section `autoload:psr-4` .
-
-     ```json
-     "Zend\\Mvc\\Controller\\": "setup/src/Zend/Mvc/Controller/"
-     ```
-
-   - Mettez à jour les dépendances du projet.
-
-     ```bash
-     composer update
-     ```
-
-   - Ajout, validation et modifications de code push.
-
-     ```bash
-     git add -A
-     ```
-
-     ```bash
-     git commit -m "Add Zend plugin manager implementation for controllers dependency for Laminas support"
-     ```
-
-     ```bash
-     git push origin <branch-name>
-     ```
-
-   - Fusionnez les modifications apportées à l’environnement d’évaluation, puis à la production.
-
 ## Fichiers de configuration
 
 Avant de mettre à niveau l’application, vous devez mettre à jour les fichiers de configuration de votre projet afin de tenir compte des modifications apportées aux paramètres de configuration par défaut d’Adobe Commerce sur l’infrastructure cloud ou l’application. Les dernières valeurs par défaut se trouvent dans le référentiel GitHub [magento-cloud](https://github.com/magento/magento-cloud).
-
-### .magento.app.yaml
-
-Vérifiez toujours les valeurs contenues dans le fichier [.magento.app.yaml](../application/configure-app-yaml.md) pour la version installée, car il contrôle la manière dont votre application crée et déploie l’infrastructure cloud. L’exemple suivant concerne la version 2.4.8 et utilise le compositeur 2.8.4. La propriété `build: flavor:` n’est pas utilisée pour le compositeur 2.x. Voir [Installation et utilisation du compositeur 2](../application/properties.md#installing-and-using-composer-2).
-
-**Pour mettre à jour le fichier `.magento.app.yaml`** :
-
-1. Sur votre station de travail locale, accédez au répertoire du projet.
-
-1. Ouvrez et modifiez le fichier `magento.app.yaml`.
-
-1. Mettez à jour les options PHP.
-
-   ```yaml
-   type: php:8.4
-   
-   build:
-       flavor: none
-   dependencies:
-       php:
-           composer/composer: '2.8.4'
-   ```
-
-1. Modifiez les `build` de propriété `hooks` et les commandes `deploy`.
-
-   ```yaml
-   hooks:
-       # We run build hooks before your application has been packaged.
-       build: |
-           set -e
-           composer install
-           php ./vendor/bin/ece-tools run scenario/build/generate.xml
-           php ./vendor/bin/ece-tools run scenario/build/transfer.xml
-       # We run deploy hook after your application has been deployed and started.
-       deploy: |
-           php ./vendor/bin/ece-tools run scenario/deploy.xml
-       # We run post deploy hook to clean and warm the cache. Available with ECE-Tools 2002.0.10.
-       post_deploy: |
-           php ./vendor/bin/ece-tools run scenario/post-deploy.xml
-   ```
-
-1. Ajoutez les variables d’environnement suivantes à la fin du fichier .
-
-   Pour Adobe Commerce 2.2.x à 2.3.x-
-
-   ```yaml
-   variables:
-       env:
-           CONFIG__DEFAULT__PAYPAL_ONBOARDING__MIDDLEMAN_DOMAIN: 'payment-broker.magento.com'
-           CONFIG__STORES__DEFAULT__PAYMENT__BRAINTREE__CHANNEL: 'Magento_Enterprise_Cloud_BT'
-           CONFIG__STORES__DEFAULT__PAYPAL__NOTATION_CODE: 'Magento_Enterprise_Cloud'
-   ```
-
-   Pour Adobe Commerce 2.4.x-
-
-   ```yaml
-   variables:
-       env:
-           CONFIG__DEFAULT__PAYPAL_ONBOARDING__MIDDLEMAN_DOMAIN: 'payment-broker.magento.com'
-           CONFIG__STORES__DEFAULT__PAYPAL__NOTATION_CODE: 'Magento_Enterprise_Cloud'
-   ```
-
-1. Enregistrez le fichier. Ne validez pas et n’envoyez pas encore les modifications à l’environnement distant.
-
-1. Poursuivez le processus de mise à niveau.
 
 ### composer.json
 
 Avant la mise à niveau, vérifiez toujours que les dépendances du fichier `composer.json` sont compatibles avec la version Adobe Commerce.
 
-**Pour mettre à jour le fichier `composer.json` pour Adobe Commerce version 2.4.4 et ultérieure** :
+Pour mettre à jour le fichier `composer.json` pour Adobe Commerce version 2.4.4 et ultérieure **
 
 1. Ajoutez les `allow-plugins` suivantes à la section `config` :
 
@@ -271,17 +112,29 @@ Consultez les informations [versions de service](../services/services-yaml.md#se
 
 1. Sur votre station de travail locale, accédez au répertoire du projet.
 
-1. Définissez la version de mise à niveau à l’aide de la [ syntaxe de contrainte de version ](overview.md#cloud-metapackage).
+1. Définissez la [contrainte de version](overview.md#cloud-metapackage) pour la version de mise à niveau cible. Cette étape n’est nécessaire que si la version cible se trouve en dehors de la contrainte existante.
 
    ```bash
-   composer require "magento/magento-cloud-metapackage":">=CURRENT_VERSION <NEXT_VERSION" --no-update
+   composer require-commerce "magento/magento-cloud-metapackage":">=CURRENT_VERSION <NEXT_VERSION" --no-update
    ```
 
    >[!NOTE]
    >
    >Vous devez utiliser la syntaxe de contrainte de version pour mettre à jour le package `ece-tools`. La contrainte de version se trouve dans le fichier `composer.json` correspondant à la version du modèle d&#39;application [modèle d&#39;application](https://github.com/magento/magento-cloud/blob/master/composer.json) que vous utilisez pour la mise à niveau.
 
-1. Mettez à jour le projet.
+1. Mettez à jour votre fichier `composer.json` avec la version de mise à niveau de Commerce principale.
+
+   ```bash
+   composer require-commerce magento/product-enterprise-edition 2.4.8 --no-update
+   ```
+
+1. Si vous utilisez le B2B, mettez à jour votre fichier `composer.json` avec la [version prise en charge](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#adobe-authored-extensions) pour Commerce.
+
+   ```bash
+   composer require-commerce magento/extension-b2b 1.5.2 --no-update
+   ```
+
+1. Mettez à jour les dépendances de projet.
 
    ```bash
    composer update
@@ -289,15 +142,15 @@ Consultez les informations [versions de service](../services/services-yaml.md#se
 
 1. Examinez les correctifs actuellement appliqués :
 
-   - Si des correctifs sont installés dans le répertoire `m2-hotfixes`, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) et contactez l’assistance Adobe Commerce pour vérifier quels correctifs peuvent toujours être appliqués à la nouvelle version. Supprimez le ou les correctifs non applicables du répertoire `m2-hotfixes`.
+   - Si des correctifs sont installés dans le répertoire `m2-hotfixes`, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) et contactez l’assistance Adobe Commerce pour vérifier quels correctifs peuvent toujours être appliqués à la nouvelle version. Supprimez le ou les correctifs non applicables du répertoire `m2-hotfixes`.
 
    - Si des [correctifs de qualité] sont appliqués dans le fichier `.magento.env.yaml`, vérifiez s’ils peuvent toujours être appliqués à la nouvelle version. Supprimez le ou les correctifs non applicables de la section `QUALITY_PATCHES` du fichier `.magento.env.yaml`.
 
-   **Méthode 1** : [vérifiez les versions applicables dans les notes de mise à jour des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+   **Méthode 1** : [vérifiez les versions applicables dans les notes de mise à jour des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
 
-   **Méthode 2** : [affichage des correctifs et de l’état disponibles](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
+   **Méthode 2** : [affichage des correctifs et de l’état disponibles](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 
-   **Méthode 3** : [Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr)
+   **Méthode 3** : [Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=en)
 
 
 1. Ajout, validation et modifications de code push.
@@ -325,42 +178,6 @@ Consultez les informations [versions de service](../services/services-yaml.md#se
    ```bash
    php bin/magento --version
    ```
-
-### Créer un fichier config.php
-
-Comme indiqué dans [Gestion de la configuration](#configuration-management), après la mise à niveau, vous devez créer un fichier `config.php` mis à jour. Effectuez toutes les modifications de configuration supplémentaires via l’Administration dans votre environnement d’intégration.
-
-**Pour créer un fichier de configuration spécifique au système** :
-
-1. À partir du terminal, utilisez une commande SSH pour générer le fichier `/app/etc/config.php` pour l’environnement.
-
-   ```bash
-   ssh <SSH-URL> "<Command>"
-   ```
-
-   Par exemple, pour Pro, pour exécuter le `scd-dump` sur la branche `integration` :
-
-   ```bash
-   ssh <project-id-integration>@ssh.us.magentosite.cloud "php vendor/bin/ece-tools config:dump"
-   ```
-
-1. Transférez le fichier `config.php` vers vos stations de travail locales à l&#39;aide de `rsync` ou `scp`. Vous pouvez uniquement ajouter ce fichier à la branche localement.
-
-   ```bash
-   rsync <SSH-URL>:app/etc/config.php ./app/etc/config.php
-   ```
-
-1. Ajout, validation et modifications de code push.
-
-   ```bash
-   git add app/etc/config.php && git commit -m "Add system-specific configuration" && git push origin master
-   ```
-
-   Cela génère un fichier `/app/etc/config.php` mis à jour avec une liste de modules et des paramètres de configuration.
-
->[!WARNING]
->
->Pour une mise à niveau, supprimez le fichier `config.php`. Une fois ce fichier ajouté à votre code, vous ne devez **pas** le supprimer. Si vous devez supprimer ou modifier des paramètres, modifiez le fichier manuellement.
 
 ### Mettre à niveau les extensions
 
