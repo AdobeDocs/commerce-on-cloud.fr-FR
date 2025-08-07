@@ -3,11 +3,11 @@ title: Package Cloud Docker
 description: Consultez la liste des dernières améliorations apportées au package Cloud Docker.
 feature: Cloud, Docker, Release Notes
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-06-03T00:00:00Z
+last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 95cf4f30-6bce-4bac-8e11-cfe53cac2c70
-source-git-commit: e447e19d89edeaec84314c52b377f3712e0f0400
+source-git-commit: b90959335c91dd0631d270ebb522524cf1db6ff0
 workflow-type: tm+mt
-source-wordcount: '3729'
+source-wordcount: '3775'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,17 @@ Les notes de mise à jour incluent les éléments suivants :
 
 <!--Add release notes below-->
 
-## v1.4.3 {#latest}
+## v1.4.4 {#latest}
+
+Date de publication : 7 août 2025
+
+- ![icône de correction](../../assets/fix.svg) **PHP 8.4**—Ajout de tests PHP 8.4.<!-- MCLOUD-13311 -->
+- ![icône de correctif](../../assets/fix.svg) **extension FTP**-Correctif ajouté pour l’extension FTP.<!-- MCLOUD-13843 -->
+- ![nouvelle icône](../../assets/new.svg) **Image Opensearch3**—Ajout de la prise en charge d’Opensearch3.<!-- MCLOUD-13766 -->
+- ![nouvelle icône](../../assets/new.svg) **Tests Opensearch3**—Ajout de tests PHP 8.4 pour Opensearch3.<!-- MCLOUD-13768 -->
+- ![nouvelle icône](../../assets/new.svg) **Valkey**—Ajout de la prise en charge de Valkey.<!-- MCLOUD-13558 -->
+
+## v1.4.3
 
 Date de publication : 3 juin 2025
 
