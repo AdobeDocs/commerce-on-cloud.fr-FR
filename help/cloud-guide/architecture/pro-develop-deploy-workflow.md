@@ -3,9 +3,9 @@ title: Workflow de pro-projet
 description: Découvrez comment utiliser les workflows de développement et de déploiement Pro.
 feature: Cloud, Iaas, Paas
 exl-id: efe41991-8940-4d5c-a720-80369274bee3
-source-git-commit: b4905acf71e4cb71eb369cb6d4bb3abe9ada4e9d
+source-git-commit: 8aacac9ae721bc98cbe29e67ddf23d784e478e55
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,20 @@ Le projet Pro comprend un référentiel Git unique avec une branche de `master` 
 
 ![Liste des environnements Pro](../../assets/pro-environments.png)
 
-Ces environnements sont `read-only` et acceptent les modifications de code déployé des branches transmises à partir de votre espace de travail local. Voir [Architecture Pro](pro-architecture.md) pour une vue d’ensemble complète des environnements Pro. Voir [[!DNL Cloud Console]](../project/overview.md#cloud-console) pour un aperçu de la liste Environnements professionnels dans la vue du projet.
+Ces environnements sont `read-only`, acceptant les modifications de code déployé des branches transmises à partir de votre espace de travail local uniquement.
 
 L’illustration suivante présente le workflow de développement et de déploiement Pro, qui utilise une approche simple par branchement Git. Vous [développez](#development-workflow) codez à l’aide d’une branche active basée sur l’environnement `integration`, en _poussant_ et _extrayant_ le code change vers et depuis votre branche active distante. Vous déployez du code vérifié en _fusionnant_ la branche distante vers la branche de base, ce qui active un processus automatisé [création et déploiement](#deployment-workflow) pour cet environnement.
 
 ![Vue d&#39;ensemble du workflow de développement de l&#39;architecture Pro](../../assets/pro-dev-workflow.png)
+
+Comme l’environnement est en lecture seule, vous ne pouvez pas apporter de modifications de code directement dans l’environnement Cloud. Si vous essayez d’exécuter `composer install` pour installer des modules, une erreur s’affiche, par exemple :
+
+```bash
+file_put_contents(...): Failed to open stream: Read-only file system  
+The disk hosting /app/<cluster_ID> is full
+```
+
+Pour plus d&#39;informations, consultez [Architecture Pro](pro-architecture.md) pour un aperçu des environnements Pro, et voir [[!DNL Cloud Console]](../project/overview.md#cloud-console) pour un aperçu de la liste Environnements Pro dans la vue Projet.
 
 ## Workflow de développement
 
