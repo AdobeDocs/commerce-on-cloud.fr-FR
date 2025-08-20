@@ -3,7 +3,7 @@ title: Prise en main des fragments de code VCL personnalisés
 description: Découvrez comment utiliser des fragments de code du langage de contrôle Varnish pour personnaliser la configuration du service Fastly pour Adobe Commerce.
 feature: Cloud, Configuration, Services
 exl-id: 90f0bea6-4365-4657-94e9-92a0fd1145fd
-source-git-commit: 71fb8f5b3f32553d8b247de44fea29b1bb945584
+source-git-commit: a51946f65ccd606cde6fbb4278f625a49ae42dad
 workflow-type: tm+mt
 source-wordcount: '2037'
 ht-degree: 0%
@@ -108,6 +108,20 @@ Les exemples suivants montrent comment créer et gérer des fragments de code VC
 - [VCL personnalisé pour la liste autorisée IP](fastly-vcl-allowlist.md)
 - [VCL personnalisé pour la liste bloquée IP](fastly-vcl-blocking.md)
 - [Contournement du cache Fastly](fastly-vcl-bypass-to-origin.md)
+
+## Fragments de code ne pouvant pas être affichés/modifiés dans l’administration Commerce
+
+Vous ne pouvez pas afficher ni modifier certains fragments de code directement dans Commerce Admin. Par exemple, [ extraits dynamiques ](https://docs.fastly.com/en/guides/using-dynamic-vcl-snippets). Dans la section Fragments de code VCL personnalisés , vous ne verrez pas les fragments de code qui ont été ajoutés directement par l’équipe de support cloud au tableau de bord de gestion [Fastly](fastly.md#fastly-service-account-and-credentials).
+
+
+**Pour observer les fragments de code ajoutés par l’équipe d’assistance cloud, procédez comme suit**
+
+1. Accédez à la section **Outils**.
+
+1. Cliquez sur **Répertorier toutes les versions** en regard de _Historique des versions_.
+
+1. Cliquez sur l’icône représentant un œil en regard de la version de VCL applicable pour afficher les fragments de code existants.
+
 
 ## Gérer le VCL à l’aide de l’API
 
@@ -270,6 +284,7 @@ Après avoir ajouté un fragment de code VCL personnalisé, Fastly insère le fr
    curl -H "Fastly-Key: $FASTLY_API_TOKEN" https://api.fastly.com/service/$FASTLY_SERVICE_ID/version/$FASTLY_EDIT_VERSION/activate -X PUT
    ```
 
+
 ## Référence rapide d’API pour les fragments de code VCL
 
 Ces exemples de requête API utilisent des variables d’environnement exportées pour fournir les informations d’identification permettant de s’authentifier avec Fastly. Pour plus d’informations sur ces commandes, voir [Référence de l’API Fastly](https://docs.fastly.com/api/config#vcl).
@@ -317,16 +332,3 @@ Ces exemples de requête API utilisent des variables d’environnement exportée
 - **Remplacer les valeurs dans le [code VCL Fastly par défaut](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets)**
 
   Créez un fragment de code avec des valeurs mises à jour et attribuez-lui une priorité de `100`.
-
-## Fragments de code ne pouvant pas être affichés/modifiés dans l’administration Commerce
-
-Vous ne pouvez pas afficher ni modifier certains fragments de code directement dans Commerce Admin. Par exemple, [ extraits dynamiques ](https://docs.fastly.com/en/guides/using-dynamic-vcl-snippets). Dans la section Fragments de code VCL personnalisés , vous ne verrez pas les fragments de code qui ont été ajoutés directement par l’équipe de support cloud au tableau de bord de gestion [Fastly](fastly.md#fastly-service-account-and-credentials).
-
-
-**Pour observer les fragments de code ajoutés par l’équipe d’assistance cloud, procédez comme suit**
-
-1. Accédez à la section **Outils**.
-
-1. Cliquez sur **Répertorier toutes les versions** en regard de _Historique des versions_.
-
-1. Cliquez sur l’icône représentant un œil en regard de la version de VCL applicable pour afficher les fragments de code existants.
