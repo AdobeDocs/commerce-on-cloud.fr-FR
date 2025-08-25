@@ -3,7 +3,7 @@ title: Paramètres PHP
 description: Découvrez les paramètres PHP optimaux pour la configuration de l'application Commerce dans l'infrastructure cloud.
 feature: Cloud, Configuration, Extensions
 exl-id: 83094c16-7407-41fa-ba1c-46b206aa160d
-source-git-commit: 1725741cfab62a2791fe95cfae9ed9dffa352339
+source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Paramètres PHP
 
-Vous pouvez choisir la [version de PHP](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) à exécuter dans votre fichier `.magento.app.yaml` :
+Vous pouvez choisir la [version de PHP](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) à exécuter dans votre fichier `.magento.app.yaml` :
 
 ```yaml
 name: mymagento
@@ -63,7 +63,7 @@ Ces paramètres permettent aux processus PHP de mettre en cache les chemins vers
 
 >[!NOTE]
 >
->Pour obtenir une liste des paramètres de configuration PHP recommandés, voir [Paramètres PHP requis](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html?lang=fr) dans le _Guide d&#39;installation_.
+>Pour obtenir une liste des paramètres de configuration PHP recommandés, voir [Paramètres PHP requis](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html) dans le _Guide d&#39;installation_.
 
 ### Vérifier les paramètres PHP personnalisés
 
@@ -118,7 +118,7 @@ Le tableau suivant présente les extensions PHP prises en charge lors du déploi
 
 {{$include /help/_includes/templated/php-extensions-cloud.md}}
 
-Les exigences du module PHP sont liées à la version Adobe Commerce. Voir [Exigences PHP](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html?lang=fr).
+Les exigences du module PHP sont liées à la version Adobe Commerce. Voir [Exigences PHP](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html).
 
 ### Prise en charge des extensions
 
@@ -136,8 +136,10 @@ sourceguardian.restrict_unencoded = "1"
 
 Voir [section 3.5 de la documentation de SourceGuardian](https://sourceguardian.com/demofiles/files/SourceGuardian%20for%20Linux%20User%20Manual.pdf). _Il s’agit d’un lien vers un PDF_.
 
-[Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour obtenir de l’aide sur l’installation de ces extensions PHP dans tous les environnements de production et environnements d’évaluation Pro. Incluez votre fichier `.magento/services.yaml` mis à jour, `.magento.app.yaml` fichier avec la version PHP mise à jour et toutes les extensions PHP supplémentaires. Pour apporter des modifications à un environnement de production actif, vous devez fournir un préavis minimal de 48 heures. La mise à jour de votre projet par l’équipe en charge de l’infrastructure cloud peut prendre jusqu’à 48 heures.
+[Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour obtenir de l’aide sur l’installation de ces extensions PHP dans tous les environnements de production et environnements d’évaluation Pro. Incluez votre fichier `.magento/services.yaml` mis à jour, `.magento.app.yaml` fichier avec la version PHP mise à jour et toutes les extensions PHP supplémentaires. Pour apporter des modifications à un environnement de production actif, vous devez fournir un préavis minimal de 48 heures. La mise à jour de votre projet par l’équipe en charge de l’infrastructure cloud peut prendre jusqu’à 48 heures.
 
 >[!WARNING]
 >
 >PHP compilé avec débogage n&#39;est pas pris en charge et la sonde peut entrer en conflit avec [!DNL XDebug] ou [!DNL XHProf]. Désactivez ces extensions lors de l’activation de la sonde. La sonde est en conflit avec certaines extensions PHP comme [!DNL Pinba] ou IonCube.
+
+<!-- Last updated from includes: 2025-04-14 09:39:27 -->

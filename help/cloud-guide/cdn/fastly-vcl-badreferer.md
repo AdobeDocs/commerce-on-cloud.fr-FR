@@ -2,7 +2,8 @@
 title: Bloquer le spam de référence
 description: Bloquez le spam de référence de votre site à l’aide du dictionnaire Fastly Edge et d’un fragment de code VCL personnalisé.
 feature: Cloud, Configuration, Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 4ed47a71-7fee-4f37-a7da-3e30052004df
+source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 0%
@@ -79,7 +80,7 @@ Avant de créer un fragment de code basé sur cet exemple, passez en revue les v
 
 - `dynamic` — La valeur 0 indique un [fragment de code normal](https://docs.fastly.com/en/guides/using-regular-vcl-snippets) à charger vers le VCL avec version pour la configuration Fastly.
 
-- `priority` — Détermine quand le fragment de code VCL s&#39;exécute. La priorité est `5` pour exécuter ce code de fragment de code avant que l’un des fragments de code VCL de Magento par défaut (`magentomodule_*`) ne se voie attribuer une priorité de 50. Définissez une priorité supérieure ou inférieure à 50 pour chaque fragment de code personnalisé en fonction du moment où vous souhaitez que votre fragment de code s’exécute. Les fragments de code dont le numéro de priorité est inférieur s’exécutent en premier.
+- `priority` — Détermine quand le fragment de code VCL s&#39;exécute. La priorité est `5` pour exécuter ce code de fragment de code avant que l’un des fragments de code VCL Magento par défaut (`magentomodule_*`) ne se voie attribuer une priorité de 50. Définissez une priorité supérieure ou inférieure à 50 pour chaque fragment de code personnalisé en fonction du moment où vous souhaitez que votre fragment de code s’exécute. Les fragments de code dont le numéro de priorité est inférieur s’exécutent en premier.
 
 - `type` — Spécifie un emplacement pour insérer le fragment de code dans la version VCL. Dans cet exemple, le fragment de code VCL est un fragment de code `recv`. Lorsque le fragment de code est inséré dans la version VCL, il est ajouté à la sous-routine `vcl_recv`, sous le code VCL Fastly par défaut et au-dessus de tous les objets.
 
@@ -135,3 +136,5 @@ Valide rapidement la version VCL mise à jour pendant le processus de chargement
 {{$include /help/_includes/vcl-snippet-modify.md}}
 
 {{$include /help/_includes/vcl-snippet-delete.md}}
+
+<!-- Last updated from includes: 2025-01-27 17:16:28 -->

@@ -2,7 +2,8 @@
 title: Réacheminer les requêtes vers un serveur principal CMS
 description: Découvrez comment réacheminer les requêtes entrantes d’un magasin Adobe Commerce vers un site WordPress distinct à l’aide du module Fastly Edge.
 feature: Cloud, Configuration, Routes
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: ef024c68-395b-4d47-9362-a8404a93dbbe
+source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%
@@ -48,3 +49,5 @@ Utilisez les modules Fastly Edge pour créer et charger le code VCL personnalis�
      Pour obtenir des instructions détaillées, consultez [Modules Fastly Edge - Autre intégration CMS/serveur principal](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-OTHER-CMS-INTEGRATION.md) dans la documentation _Module Fastly CDN pour Magento 2_.
 
 1. Après la mise à jour de la configuration du service Fastly , testez votre boutique Adobe Commerce pour vous assurer que les requêtes d’URL spécifiées pour WordPress sont correctement redirigées.
+
+<!-- Last updated from includes: 2025-01-27 17:16:28 -->

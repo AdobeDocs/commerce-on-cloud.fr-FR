@@ -3,7 +3,7 @@ title: Prise en main des fragments de code VCL personnalisés
 description: Découvrez comment utiliser des fragments de code du langage de contrôle Varnish pour personnaliser la configuration du service Fastly pour Adobe Commerce.
 feature: Cloud, Configuration, Services
 exl-id: 90f0bea6-4365-4657-94e9-92a0fd1145fd
-source-git-commit: a51946f65ccd606cde6fbb4278f625a49ae42dad
+source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
 workflow-type: tm+mt
 source-wordcount: '2037'
 ht-degree: 0%
@@ -332,3 +332,5 @@ Ces exemples de requête API utilisent des variables d’environnement exportée
 - **Remplacer les valeurs dans le [code VCL Fastly par défaut](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets)**
 
   Créez un fragment de code avec des valeurs mises à jour et attribuez-lui une priorité de `100`.
+
+<!-- Last updated from includes: 2025-01-27 17:16:28 -->
