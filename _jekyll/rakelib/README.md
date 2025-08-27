@@ -1,7 +1,7 @@
 ---
-source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
+source-git-commit: f75dbbc9726ff21a648b1bb3d8f06cb45a5d6b08
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -11,13 +11,28 @@ Ce répertoire contient les définitions de tâches principales organisées par 
 
 ## Organisation des fichiers
 
+### `adobe-docs-tasks.rake`
+
+Contient des tâches requises courantes, des fonctionnalités partagées et des tâches sans espace de noms pour le référentiel de documentation d’Adobe Commerce sur Experience League. Effectuez les tâches suivantes :
+
+- `whatsnew` - Générer des données pour le résumé des actualités (par défaut : depuis la dernière mise à jour)
+- `render` - Générer des fichiers modélisés et gérer les inclusions
+
 ### `includes.rake`
 
-Contient toutes les tâches rake liées à l’inclusion sous l’espace de noms `:includes` :
+Contient des tâches de gestion des inclusions organisées dans l&#39;espace de noms `:includes` :
 
-- `includes:maintain_relationships` - Découvrir et maintenir les relations d’inclusion
+- `includes:maintain_relationships` - Découvrir et gérer les relations d’inclusion dans les fichiers Markdown
 - `includes:maintain_timestamps` - Ajouter/mettre à jour des horodatages en fonction des modifications apportées au fichier d’inclusion
 - `includes:maintain_all` - Exécuter les deux opérations en séquence
+- `includes:unused` - Rechercher les fichiers d’inclusion inutilisés
+
+### `images.rake`
+
+Contient des tâches de gestion des images organisées dans l&#39;espace de noms `:images` :
+
+- `images:optimize` - Optimisation des images dans les fichiers non validés modifiés
+- `images:unused` - Rechercher des images inutilisées dans le projet
 
 ## Fonctionnement
 
@@ -28,7 +43,7 @@ Rake détecte et charge automatiquement tous les fichiers `.rake` dans le réper
 3. **Ajouter facilement de nouveaux groupes de tâches** - Créez simplement de nouveaux fichiers `.rake`
 4. **Maintenir la séparation des préoccupations** - Chaque fichier gère un domaine spécifique
 
-## Ajout de nouveaux groupes de tâches
+## Ajouter de nouveaux groupes de tâches
 
 Pour ajouter un nouveau groupe de tâches associées :
 
