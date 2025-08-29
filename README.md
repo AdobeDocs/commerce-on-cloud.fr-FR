@@ -1,7 +1,7 @@
 ---
-source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
+source-git-commit: 5236f2718e5091dfc2fc140e15d4ac87a073d1d0
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '781'
 ht-degree: 1%
 
 ---
@@ -9,8 +9,8 @@ ht-degree: 1%
 
 Ce site contient la documentation la plus récente pour les développeurs de Commerce sur les infrastructures cloud.
 
-- [Guide de Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/overview)
-- [Prise en main de Commerce](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/start/overview) sur les infrastructures cloud
+- [Guide de Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+- [Prise en main de Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/overview) sur les infrastructures cloud
 
 ## Code de conduite d’Adobe Open Source
 
@@ -18,7 +18,7 @@ Ce projet a adopté le [code de conduite d’Adobe Open Source](code-of-conduct.
 
 ## À propos de vos contributions au contenu d’Adobe
 
-Consultez le Guide du contributeur aux documents Adobe [&#128279;](https://experienceleague.adobe.com/fr/docs/contributor/contributor-guide/introduction).
+Consultez le Guide du contributeur aux documents Adobe [](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
 
 La façon dont vous contribuez dépend de qui vous êtes et du type de modifications que vous souhaitez apporter :
 
@@ -40,7 +40,7 @@ Si vous êtes rédacteur technique, responsable de programme ou développeur au 
 
 Les contributeurs de la communauté peuvent utiliser l’interface utilisateur de GitHub pour apporter des modifications mineures, ou dupliquer le référentiel pour apporter des contributions majeures.
 
-Pour plus d’informations, consultez le Guide du contributeur aux documents Adobe [&#128279;](https://experienceleague.adobe.com/fr/docs/contributor/contributor-guide/introduction).
+Pour plus d’informations, consultez le Guide du contributeur aux documents Adobe [](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
 
 ## Comment utiliser Markdown pour formater votre rubrique
 
@@ -70,7 +70,7 @@ En règle générale, la plupart des auteurs et des autrices n’ont besoin d’
 >**REMARQUE :**
 >
 >- La génération de contenu modélisé nécessite de travailler sur la ligne de commande dans un terminal.
->- Ruby doit être installé pour exécuter le script de rendu. Voir [_jekyll/.ruby-version] (_jekyll/.ruby-version) pour la version requise.
+>- Ruby doit être installé pour exécuter le script de rendu. Voir [_jekyll/.ruby-version](_jekyll/.ruby-version) pour la version requise.
 
 Pour obtenir une description de la structure de fichiers pour le contenu modélisé, reportez-vous aux sections suivantes :
 
@@ -131,3 +131,31 @@ Pour mettre à jour le contenu modélisé :
    ```
 
 Consultez la documentation Jekyll pour plus d’informations sur [Fichiers de données](https://jekyllrb.com/docs/datafiles), [Filtres liquides](https://jekyllrb.com/docs/liquid/filters/) et d’autres fonctionnalités.
+
+## Points d’extension de pré-validation pour l’optimisation des images
+
+Ce référentiel comprend des hooks de prévalidation automatisés qui optimisent les images avant validation. **Tous les contributeurs doivent activer ces raccordements** afin d’assurer une optimisation cohérente des images et une taille de référentiel réduite.
+
+### Configuration rapide
+
+Après avoir cloné le référentiel, exécutez :
+
+```bash
+.githooks/setup-hooks.sh
+```
+
+### Ce que font les crochets
+
+- Détecter automatiquement les fichiers image intermédiaires (PNG, JPG, JPEG, GIF, SVG)
+- Exécutez `image_optim` pour compresser et optimiser les images.
+- Réévaluation automatique des images optimisées
+- Vérifiez que toutes les images validées sont correctement optimisées.
+
+### Avantages
+
+- Taille réduite du référentiel
+- Chargement plus rapide des pages pour la documentation
+- Qualité d’image cohérente pour tous les contributeurs et contributrices
+- Aucune optimisation manuelle requise
+
+Pour obtenir des instructions détaillées sur la configuration, le dépannage et la configuration, voir [`.githooks/README.md`](.githooks/README.md).
