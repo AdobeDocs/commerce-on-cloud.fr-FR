@@ -9,8 +9,8 @@ ht-degree: 1%
 
 Ce site contient la documentation la plus récente pour les développeurs de Commerce sur les infrastructures cloud.
 
-- [Guide de Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
-- [Prise en main de Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/overview) sur les infrastructures cloud
+- [Guide de Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/overview)
+- [Prise en main de Commerce](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/start/overview) sur les infrastructures cloud
 
 ## Code de conduite d’Adobe Open Source
 
@@ -18,7 +18,7 @@ Ce projet a adopté le [code de conduite d’Adobe Open Source](code-of-conduct.
 
 ## À propos de vos contributions au contenu d’Adobe
 
-Consultez le Guide du contributeur aux documents Adobe [&#128279;](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
+Consultez le Guide du contributeur aux documents Adobe [&#128279;](https://experienceleague.adobe.com/fr/docs/contributor/contributor-guide/introduction).
 
 La façon dont vous contribuez dépend de qui vous êtes et du type de modifications que vous souhaitez apporter :
 
@@ -40,7 +40,7 @@ Si vous êtes rédacteur technique, responsable de programme ou développeur au 
 
 Les contributeurs de la communauté peuvent utiliser l’interface utilisateur de GitHub pour apporter des modifications mineures, ou dupliquer le référentiel pour apporter des contributions majeures.
 
-Pour plus d’informations, consultez le Guide du contributeur aux documents Adobe [&#128279;](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
+Pour plus d’informations, consultez le Guide du contributeur aux documents Adobe [&#128279;](https://experienceleague.adobe.com/fr/docs/contributor/contributor-guide/introduction).
 
 ## Comment utiliser Markdown pour formater votre rubrique
 
