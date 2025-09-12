@@ -23,7 +23,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Clarification des systèmes d’exploitation pris en charge pour <code class="language-plaintext highlighter-rouge">magento-cloud</code>’outil CLI <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview">installation</a>.</p>
+      <td><p>Clarification des systèmes d’exploitation pris en charge pour <code class="language-plaintext highlighter-rouge">magento-cloud</code>’outil CLI <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview">installation</a>.</p>
 </td>
       <td>
         Feedback
@@ -45,7 +45,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches"> notes de mise à jour </a> pour le package de correctifs cloud v1.1.11.</p>
+      <td><p>Ajout de <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches"> notes de mise à jour </a> pour le package de correctifs cloud v1.1.11.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -67,7 +67,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">référence de l'interface en ligne de commande</a> et <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference">messages d'erreur</a> après la publication de ECE-Tools, v2002.2.7.</p>
+      <td><p>Mise à jour de <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">référence de l'interface en ligne de commande</a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference">messages d'erreur</a> après la publication de ECE-Tools, v2002.2.7.</p>
 </td>
       <td>
         Technique
@@ -89,7 +89,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite"> notes de mise à jour</a> pour les composants cloud, Docker, les correctifs et le package d’outils ECE.</p>
+      <td><p>Ajout de <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite"> notes de mise à jour</a> pour les composants cloud, Docker, les correctifs et le package d’outils ECE.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -111,7 +111,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une note sur la période de recharge obligatoire de 6 heures après l’augmentation de l’espace disque <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space"></a> pour les projets hébergés sur AWS.</p>
+      <td><p>Ajout d’une note sur la période de recharge obligatoire de 6 heures après l’augmentation de l’espace disque <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space"></a> pour les projets hébergés sur AWS.</p>
 </td>
       <td>
         Technique
@@ -133,7 +133,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’informations supplémentaires sur l’<a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration">authentification de base</a> dans Fastly.</p>
+      <td><p>Ajout d’informations supplémentaires sur l’<a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration">authentification de base</a> dans Fastly.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -155,7 +155,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de détails <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey">configuration</a> manquants pour le service Valkey.</p>
+      <td><p>Ajout de détails <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/valkey">configuration</a> manquants pour le service Valkey.</p>
 </td>
       <td>
         Technique
@@ -177,7 +177,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Suppression de <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version"> instructions de mise à niveau </a> pour les versions de Commerce qui ont atteint la fin de la prise en charge et provoquaient la confusion.</p>
+      <td><p>Suppression de <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version"> instructions de mise à niveau </a> pour les versions de Commerce qui ont atteint la fin de la prise en charge et provoquaient la confusion.</p>
 </td>
       <td>
         Mise à jour majeure, commentaires
