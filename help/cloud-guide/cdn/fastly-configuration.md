@@ -76,7 +76,7 @@ Dans les projets Cloud Starter, obtenez les informations d’identification à p
 
 - Si vous ne parvenez pas à trouver les informations d’identification Fastly pour les environnements d’évaluation ou de production, contactez votre conseiller technique client Adobe (CTA).
 
-- [ Erreur lors de la validation des informations d’identification Fastly ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials#solution).
+- [&#x200B; Erreur lors de la validation des informations d’identification Fastly &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials#solution).
 
 ## Sécuriser vos informations d’identification
 
@@ -90,7 +90,7 @@ Si votre jeton API n’est jamais partagé publiquement ou joint à un ticket d�
 
 Vous avez besoin des composants suivants pour activer et configurer les services Fastly :
 
-- La dernière version du module [Fast CDN for Magento 2](fastly.md#fastly-cdn-module-for-magento-2) est installée dans les environnements d’évaluation et de production. Voir [ Mise à niveau rapide ](#upgrade-the-fastly-module).
+- La dernière version du module [Fast CDN for Magento 2](fastly.md#fastly-cdn-module-for-magento-2) est installée dans les environnements d’évaluation et de production. Voir [&#x200B; Mise à niveau rapide &#x200B;](#upgrade-the-fastly-module).
 
 - [Informations d’identification Fastly](#get-fastly-credentials) pour Adobe Commerce sur les environnements d’évaluation et de production d’infrastructure cloud
 
@@ -124,7 +124,7 @@ Vous avez besoin des composants suivants pour activer et configurer les services
 
    >[!NOTE]
    >
-   >Ne sélectionnez pas le lien pour créer le jeton API Fastly. Utilisez plutôt les informations d’identification Fastly [ (ID de service et jeton API) fournies par Adobe](#get-fastly-credentials).
+   >Ne sélectionnez pas le lien pour créer le jeton API Fastly. Utilisez plutôt les informations d’identification Fastly [&#x200B; (ID de service et jeton API) fournies par Adobe](#get-fastly-credentials).
 
 1. Cliquez sur **Tester les informations d’identification**.
 
@@ -210,7 +210,7 @@ Pour acheminer le trafic depuis les URL de votre boutique vers le service Fastly
 - Chargez le code VCL Fastly par défaut.
 - Fournissez une liste de niveau supérieur et de sous-domaines pour chaque environnement à Adobe, ou envoyez un ticket d’assistance Adobe Commerce.
 - Attendez la confirmation que les domaines spécifiés ont été ajoutés à vos environnements cloud.
-- Dans les projets de démarrage, ajoutez les domaines à votre configuration de service Fastly . Voir [ Gestion des domaines ](fastly-custom-cache-configuration.md#manage-domains).
+- Dans les projets de démarrage, ajoutez les domaines à votre configuration de service Fastly . Voir [&#x200B; Gestion des domaines &#x200B;](fastly-custom-cache-configuration.md#manage-domains).
 - Pour plus d’informations sur la mise à jour de la configuration DNS, contactez votre [bureau d’enregistrement DNS](https://lookup.icann.org/) pour connaître la méthode appropriée pour votre service de domaine.
 
 **Pour mettre à jour votre configuration DNS pour le développement** :
@@ -260,7 +260,7 @@ Pour acheminer le trafic depuis les URL de votre boutique vers le service Fastly
 
    >[!NOTE]
    >
-   >Au lieu d’utiliser l’interface de ligne de commande Cloud, vous pouvez mettre à jour l’URL de base à partir de l’[ Admin ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
+   >Au lieu d’utiliser l’interface de ligne de commande Cloud, vous pouvez mettre à jour l’URL de base à partir de l’[&#x200B; Admin &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
 
 1. Redémarrez le navigateur web.
 
