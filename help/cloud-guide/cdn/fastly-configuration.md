@@ -3,9 +3,9 @@ title: Configuration des services Fastly
 description: Découvrez comment configurer les services Fastly pour votre projet Adobe Commerce.
 feature: Cloud, Configuration, Iaas, Cache, Security
 exl-id: f9ce1e8b-4e9f-488e-8a4d-f866567c41d8
-source-git-commit: 084e41d074f0abd9019bd45c8e337b174f8736b2
+source-git-commit: cfb9aa37ddb4220aa9ce0b2e876c99bcdd40ae5a
 workflow-type: tm+mt
-source-wordcount: '2098'
+source-wordcount: '2121'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Vous avez besoin des informations d’identification Fastly pour configurer les 
 
 Avec Adobe Commerce sur les infrastructures cloud, vous ne pouvez pas accéder directement au tableau de bord d’administration Fastly .
 
-Utilisez l’Administration d’Adobe Commerce pour examiner et mettre à jour la configuration Fastly pour vos environnements. Si vous ne pouvez pas résoudre un problème à l’aide des fonctionnalités Fastly dans l’administration, envoyez un [ticket d’assistance pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr).
+Utilisez l’Administration d’Adobe Commerce pour examiner et mettre à jour la configuration Fastly pour vos environnements. Si vous ne pouvez pas résoudre un problème à l’aide des fonctionnalités Fastly dans l’administration, envoyez un [ticket d’assistance pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html).
 
 ## Obtenir des informations d’identification Fastly
 
@@ -76,7 +76,7 @@ Dans les projets Cloud Starter, obtenez les informations d’identification à p
 
 - Si vous ne parvenez pas à trouver les informations d’identification Fastly pour les environnements d’évaluation ou de production, contactez votre conseiller technique client Adobe (CTA).
 
-- [&#x200B; Erreur lors de la validation des informations d’identification Fastly &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials#solution).
+- [ Erreur lors de la validation des informations d’identification Fastly ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials#solution).
 
 ## Sécuriser vos informations d’identification
 
@@ -90,7 +90,7 @@ Si votre jeton API n’est jamais partagé publiquement ou joint à un ticket d�
 
 Vous avez besoin des composants suivants pour activer et configurer les services Fastly :
 
-- La dernière version du module [Fast CDN for Magento 2](fastly.md#fastly-cdn-module-for-magento-2) est installée dans les environnements d’évaluation et de production. Voir [&#x200B; Mise à niveau rapide &#x200B;](#upgrade-the-fastly-module).
+- La dernière version du module [Fast CDN for Magento 2](fastly.md#fastly-cdn-module-for-magento-2) est installée dans les environnements d’évaluation et de production. Voir [ Mise à niveau rapide ](#upgrade-the-fastly-module).
 
 - [Informations d’identification Fastly](#get-fastly-credentials) pour Adobe Commerce sur les environnements d’évaluation et de production d’infrastructure cloud
 
@@ -124,7 +124,7 @@ Vous avez besoin des composants suivants pour activer et configurer les services
 
    >[!NOTE]
    >
-   >Ne sélectionnez pas le lien pour créer le jeton API Fastly. Utilisez plutôt les informations d’identification Fastly [&#x200B; (ID de service et jeton API) fournies par Adobe](#get-fastly-credentials).
+   >Ne sélectionnez pas le lien pour créer le jeton API Fastly. Utilisez plutôt les informations d’identification Fastly [ (ID de service et jeton API) fournies par Adobe](#get-fastly-credentials).
 
 1. Cliquez sur **Tester les informations d’identification**.
 
@@ -156,7 +156,7 @@ Après avoir activé le module Fastly, téléchargez le code [VCL](https://githu
 
 ## Approvisionnement des certificats SSL/TLS
 
-Adobe fournit un certificat SSL/TLS validé par un domaine pour chiffrer le trafic HTTPS sécurisé provenant de Fastly. Adobe fournit un certificat pour chaque environnement Pro de production, d’évaluation et de démarrage de production afin de sécuriser tous les domaines de cet environnement. Pour plus d’informations sur le certificat fourni, voir [Certificats Adobe SSL (TLS) pour Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq).
+Adobe fournit un certificat SSL/TLS validé par un domaine pour chiffrer le trafic HTTPS sécurisé provenant de Fastly. Adobe fournit un certificat pour chaque environnement Pro de production, d’évaluation et de démarrage de production afin de sécuriser tous les domaines de cet environnement. Pour plus d’informations sur le certificat fourni, voir [Certificats Adobe SSL (TLS) pour Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq).
 
 >[!NOTE]
 >
@@ -210,7 +210,7 @@ Pour acheminer le trafic depuis les URL de votre boutique vers le service Fastly
 - Chargez le code VCL Fastly par défaut.
 - Fournissez une liste de niveau supérieur et de sous-domaines pour chaque environnement à Adobe, ou envoyez un ticket d’assistance Adobe Commerce.
 - Attendez la confirmation que les domaines spécifiés ont été ajoutés à vos environnements cloud.
-- Dans les projets de démarrage, ajoutez les domaines à votre configuration de service Fastly . Voir [&#x200B; Gestion des domaines &#x200B;](fastly-custom-cache-configuration.md#manage-domains).
+- Dans les projets de démarrage, ajoutez les domaines à votre configuration de service Fastly . Voir [ Gestion des domaines ](fastly-custom-cache-configuration.md#manage-domains).
 - Pour plus d’informations sur la mise à jour de la configuration DNS, contactez votre [bureau d’enregistrement DNS](https://lookup.icann.org/) pour connaître la méthode appropriée pour votre service de domaine.
 
 **Pour mettre à jour votre configuration DNS pour le développement** :
@@ -260,7 +260,7 @@ Pour acheminer le trafic depuis les URL de votre boutique vers le service Fastly
 
    >[!NOTE]
    >
-   >Au lieu d’utiliser l’interface de ligne de commande Cloud, vous pouvez mettre à jour l’URL de base à partir de l’[&#x200B; Admin &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/store-urls)
+   >Au lieu d’utiliser l’interface de ligne de commande Cloud, vous pouvez mettre à jour l’URL de base à partir de l’[ Admin ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
 
 1. Redémarrez le navigateur web.
 
@@ -297,6 +297,8 @@ Si les en-têtes n’ont pas les valeurs correctes, consultez [Résoudre les err
 
 Fastly met à jour le module Fastly CDN pour Magento 2 afin de résoudre les problèmes, d’augmenter les performances et de fournir de nouvelles fonctionnalités.
 Adobe vous recommande de mettre à jour le module Fastly dans vos environnements d’évaluation et de production vers la [dernière version](https://github.com/fastly/fastly-magento2/blob/master/VERSION).
+
+Pour obtenir les dernières informations sur les versions et les mises à jour des modules, consultez les [notes de mise à jour du réseau CDN Fastly pour le module Magento2](https://github.com/fastly/fastly-magento2/blob/master/Release-Notes.md) sur GitHub.
 
 Après avoir mis à jour le module, vous devez charger le code VCL pour appliquer les modifications à la configuration de service Fastly.
 
@@ -335,4 +337,4 @@ Après avoir vérifié les services Fastly sur le site d’évaluation, répéte
 
 >[!TIP]
 >
-> Si vous rencontrez des problèmes avec les services Fastly dans vos environnements Adobe Commerce, consultez l’[utilitaire de dépannage Fastly Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-fastly-troubleshooter).
+> Si vous rencontrez des problèmes avec les services Fastly dans vos environnements Adobe Commerce, consultez l’[utilitaire de dépannage Fastly Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-fastly-troubleshooter).

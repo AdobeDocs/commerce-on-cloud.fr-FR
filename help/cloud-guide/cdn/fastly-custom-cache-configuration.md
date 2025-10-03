@@ -3,9 +3,9 @@ title: Personnalisation de la configuration du cache
 description: Découvrez comment vérifier et personnaliser les paramètres de configuration du cache une fois la configuration du service Fastly terminée.
 feature: Cloud, Configuration, Iaas, Cache
 exl-id: f6901931-7b3f-40a8-9514-168c6243cc43
-source-git-commit: 551a00932165dd1c0a876b8151ba14752ceac802
+source-git-commit: a2f5e2f67c7739302a87eaa27df25a62fca1acb7
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1995'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,11 @@ ht-degree: 0%
 
 Une fois que vous avez configuré et testé le service Fastly dans vos environnements d’évaluation et de production, passez en revue et personnalisez les paramètres de configuration du cache. Par exemple, vous pouvez mettre à jour les paramètres pour forcer le protocole TLS à rediriger les requêtes HTTP vers Fastly, mettre à jour les paramètres de purge et activer l’authentification de base pour protéger votre site par mot de passe pendant le développement.
 
-Les sections suivantes présentent une vue d’ensemble et des instructions pour configurer certains paramètres du cache. Obtenez des informations supplémentaires sur les options de configuration disponibles dans la documentation du [module de réseau CDN Fastly pour Magento 2](https://github.com/fastly/fastly-magento2/tree/master/Documentation) .
+Les sections suivantes présentent une vue d’ensemble et des instructions pour configurer certains paramètres du cache.
+
+>[!IMPORTANT]
+>
+>Les options d’administration disponibles pour configurer le cache Fastly dépendent de la version du module Fastly CDN pour Magento 2 installée. Adobe vous recommande d’[mettre à niveau le module Fastly](fastly-configuration.md#upgrade) le module Fastly dans vos environnements d’évaluation et de production vers la dernière version. Pour obtenir les informations les plus récentes, consultez les [notes de mise à jour du module Fastly CDN pour Magento2](https://github.com/fastly/fastly-magento2/blob/master/Release-Notes.md).
 
 ## Forcer TLS
 
@@ -187,7 +191,7 @@ Pour les projets Starter et Pro, vous pouvez utiliser l’option [!UICONTROL Dom
 
 - Pour les projets de démarrage, accédez à l’URL du projet sous l’onglet [!UICONTROL Domains] dans la [!DNL Cloud Console] pour ajouter votre URL de projet.
 
-- Pour les projets Pro, envoyez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour ajouter le domaine à la configuration de votre projet cloud. L’équipe d’assistance met également à jour la configuration du compte Fastly Adobe Commerce pour ajouter le domaine.
+- Pour les projets Pro, envoyez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour ajouter le domaine à la configuration de votre projet cloud. L’équipe d’assistance met également à jour la configuration du compte Fastly Adobe Commerce pour ajouter le domaine.
 
 **Pour gérer la configuration de domaine Fastly à partir de l’administrateur** :
 
