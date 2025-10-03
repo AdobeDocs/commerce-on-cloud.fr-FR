@@ -2,9 +2,10 @@
 title: Projet d’infrastructure cloud
 description: Lisez une présentation d’Adobe Commerce sur l’infrastructure cloud et apprenez  [!DNL Cloud Console]  accéder aux paramètres du compte.
 last-substantial-update: 2024-02-06T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 8eed04c7-6469-45a4-aa89-dc594c977264
+source-git-commit: 00b1b6578c226a304697963d17ba349ea17da260
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -42,7 +43,7 @@ Tant que vous n’avez pas sélectionné d’environnement, la vue d’ensemble 
 
 Et dans la présentation du projet principal :
 
-- La vue Environnements affiche une liste ou une arborescence d’environnements ![branche active](../../assets/icon-active.png){width="32"} (active) and ![inactive branch](../../assets/icon-inactive.png){width="32"} (inactifs).
+- La vue Environnements affiche une vue en liste ou en arborescence des environnements ![branche active](../../assets/icon-active.png){width="32"} (active) et ![branche inactive](../../assets/icon-inactive.png){width="32"} (inactive).
 - Le [flux d’activités](activity-stream.md) affiche les activités en cours, en attente et récentes pour le projet.
 <!-- - Apps & Services—Shows a topology of service containers -->
 
@@ -140,7 +141,7 @@ Cliquez sur **[!UICONTROL Environments]** et sélectionnez un environnement spé
 
 >[!WARNING]
 >
->**NE PAS** utilisez la méthode de contrôle d’accès HTTP pour sécuriser les environnements d’évaluation et de production Pro. Cela interrompt la mise en cache rapide. Utilisez plutôt la fonctionnalité [Blocage](../cdn/fastly-vcl-blocking.md) disponible dans le réseau CDN Fastly pour Adobe Commerce.
+>**NE PAS** utilisez la méthode de contrôle d’accès HTTP pour sécuriser les environnements d’évaluation et de production Pro. Cela interrompt la mise en cache rapide. Utilisez plutôt la fonctionnalité [Blocage](../cdn/fastly-vcl-blocking.md) disponible dans le réseau CDN Fastly pour qu’Adobe Commerce bloque l’accès ou mette en œuvre le contrôle d’accès à l’aide de l’[Authentification de base Fastly](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BASIC-AUTH.md).
 
 ## Informations d’identification Fastly et New Relic
 
