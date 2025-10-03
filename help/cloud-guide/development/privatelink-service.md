@@ -121,7 +121,7 @@ Le workflow suivant décrit le processus d’activation de l’intégration de P
 
 1. **Adobe** approuve la demande de connexion.
 
-1. Après la validation de la demande de connexion, **le client** [ vérifie la connexion](#test-vpc-endpoint-service-connection) entre son VPC et le VPC Adobe.
+1. Après la validation de la demande de connexion, **le client** [&#x200B; vérifie la connexion](#test-vpc-endpoint-service-connection) entre son VPC et le VPC Adobe.
 
 1. Étapes supplémentaires pour activer les connexions bidirectionnelles :
 
