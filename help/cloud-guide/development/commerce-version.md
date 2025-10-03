@@ -1,20 +1,20 @@
 ---
 title: Mettre à niveau la version de Commerce
-description: Découvrez comment mettre à niveau la version Adobe Commerce dans le projet d’infrastructure cloud.
+description: Découvrez comment mettre à niveau la version d’Adobe Commerce dans l’environnement de l’infrastructure cloud.
 feature: Cloud, Upgrade
 exl-id: 0cc070cf-ab25-4269-b18c-b2680b895c17
-source-git-commit: bcb5b00f7f203b53eae5c1bc1037cdb1837ad473
+source-git-commit: 7f9aac358effdf200b59678098e6a1635612301b
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
 
 # Mettre à niveau la version de Commerce
 
-Vous pouvez mettre à niveau la base de code Adobe Commerce vers une version plus récente. Avant de mettre à niveau votre projet, consultez la section [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) du guide _Installation_ pour connaître la configuration requise pour la dernière version du logiciel.
+Vous pouvez mettre à niveau la base de code Adobe Commerce vers une version plus récente. Avant de mettre à niveau l’environnement, consultez la section [ Configuration requise ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) dans le guide _Installation_ pour connaître la configuration requise pour la dernière version du logiciel.
 
-Selon la configuration de votre projet, vos tâches de mise à niveau peuvent inclure les éléments suivants :
+Selon le type d’environnement (Développement, Évaluation ou Production), vos tâches de mise à niveau peuvent inclure les éléments suivants :
 
 - Mettez à jour le fichier `.magento/services.yaml` avec les nouvelles versions de MariaDB (MySQL), OpenSearch, RabbitMQ et Redis pour garantir la compatibilité avec les nouvelles versions d’Adobe Commerce.
 - Mettez à jour le fichier `.magento.app.yaml` avec de nouveaux paramètres pour les hooks et les variables d’environnement.
@@ -68,9 +68,9 @@ Pour mettre à jour le fichier `composer.json` pour Adobe Commerce version 2.4.4
 
 1. Poursuivez le processus de mise à niveau.
 
-## Sauvegarde du projet
+## Sauvegarde de l’environnement
 
-Nous vous recommandons de créer une sauvegarde de votre projet avant une mise à niveau. Suivez les étapes ci-après pour sauvegarder vos environnements d’intégration, d’évaluation et de production.
+Nous vous recommandons de créer une sauvegarde de l’instance avant une mise à niveau. Suivez les étapes ci-après pour sauvegarder vos environnements d’intégration, d’évaluation et de production.
 
 **Pour sauvegarder la base de données et le code de votre environnement d’intégration** :
 
@@ -128,7 +128,7 @@ Consultez les informations [versions de service](../services/services-yaml.md#se
    composer require-commerce magento/product-enterprise-edition 2.4.8 --no-update
    ```
 
-1. Si vous utilisez le B2B, mettez à jour votre fichier `composer.json` avec la [version prise en charge](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/product-availability#adobe-authored-extensions) pour Commerce.
+1. Si vous utilisez le B2B, mettez à jour votre fichier `composer.json` avec la [version prise en charge](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#adobe-authored-extensions) pour Commerce.
 
    ```bash
    composer require-commerce magento/extension-b2b 1.5.2 --no-update
@@ -142,15 +142,15 @@ Consultez les informations [versions de service](../services/services-yaml.md#se
 
 1. Examinez les correctifs actuellement appliqués :
 
-   - Si des correctifs sont installés dans le répertoire `m2-hotfixes`, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) et contactez l’assistance Adobe Commerce pour vérifier quels correctifs peuvent toujours être appliqués à la nouvelle version. Supprimez le ou les correctifs non applicables du répertoire `m2-hotfixes`.
+   - Si des correctifs sont installés dans le répertoire `m2-hotfixes`, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) et contactez l’assistance Adobe Commerce pour vérifier quels correctifs peuvent toujours être appliqués à la nouvelle version. Supprimez le ou les correctifs non applicables du répertoire `m2-hotfixes`.
 
    - Si des [correctifs de qualité] sont appliqués dans le fichier `.magento.env.yaml`, vérifiez s’ils peuvent toujours être appliqués à la nouvelle version. Supprimez le ou les correctifs non applicables de la section `QUALITY_PATCHES` du fichier `.magento.env.yaml`.
 
-   **Méthode 1** : [vérifiez les versions applicables dans les notes de mise à jour des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+   **Méthode 1** : [vérifiez les versions applicables dans les notes de mise à jour des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
 
-   **Méthode 2** : [affichage des correctifs et de l’état disponibles](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
+   **Méthode 2** : [affichage des correctifs et de l’état disponibles](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 
-   **Méthode 3** : [Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr)
+   **Méthode 3** : [Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=en)
 
 
 1. Ajout, validation et modifications de code push.
