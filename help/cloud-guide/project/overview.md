@@ -32,7 +32,7 @@ La vue _Tous les projets_ répertorie tous les projets auxquels vous avez accès
 
 Lorsque vous sélectionnez un projet dans la liste _Tous les projets_, vous accédez à la vue d’ensemble du projet. La présentation du projet affiche toujours une barre de navigation du projet, qui comprend un sélecteur d’environnement et un bouton de configuration :
 
-![ Navigation dans le projet ](../../assets/project-nav.png)
+![&#x200B; Navigation dans le projet &#x200B;](../../assets/project-nav.png)
 
 Tant que vous n’avez pas sélectionné d’environnement, la vue d’ensemble du projet affiche un résumé des détails du projet dans la zone de prévisualisation :
 
@@ -47,7 +47,7 @@ Et dans la présentation du projet principal :
 - Le [flux d’activités](activity-stream.md) affiche les activités en cours, en attente et récentes pour le projet.
 <!-- - Apps & Services—Shows a topology of service containers -->
 
-Pour les projets **de démarrage**, il existe une hiérarchie de branches commençant par `master` (production). Toute branche que vous créez s’affiche en tant qu’enfants à partir de la branche `master`. Adobe recommande de créer une branche `staging`, puis une branche `integration` pour le développement. Voir [ Architecture de démarrage ](../architecture/starter-architecture.md).
+Pour les projets **de démarrage**, il existe une hiérarchie de branches commençant par `master` (production). Toute branche que vous créez s’affiche en tant qu’enfants à partir de la branche `master`. Adobe recommande de créer une branche `staging`, puis une branche `integration` pour le développement. Voir [&#x200B; Architecture de démarrage &#x200B;](../architecture/starter-architecture.md).
 
 Pour **Pro**, il existe une hiérarchie de branches allant de `production` à `staging` et à `integration`. L’icône ![icône dédiée](../../assets/icon-dedicated.png){width="32"} indique que la branche se déploie vers un environnement dédié. Toutes les branches que vous créez s’affichent en tant qu’enfants de la branche `integration`. Voir [Architecture Pro](../architecture/pro-architecture.md).
 
@@ -73,7 +73,7 @@ Et dans la présentation de l’environnement principal :
 
 - Le [flux d’activités](activity-stream.md) constitue la présentation de l’environnement principal et affiche les activités en cours, en attente et récentes pour l’environnement sélectionné.
 <!-- - Services tab shows and Apps & Services menu, including overview and configuration tabs for each service. -->
-- L’onglet [ Sauvegardes ](../storage/snapshots.md#create-a-manual-backup) fournit une liste des sauvegardes stockées, un historique des actions de sauvegarde et le bouton Sauvegarder .
+- L’onglet [&#x200B; Sauvegardes &#x200B;](../storage/snapshots.md#create-a-manual-backup) fournit une liste des sauvegardes stockées, un historique des actions de sauvegarde et le bouton Sauvegarder .
 
 ### Accéder au storefront
 
@@ -117,7 +117,7 @@ Ouvrez le panneau _Paramètres_ en cliquant sur l’icône ![Configurer le proje
 | Accès | Gérez l’[accès utilisateur](user-access.md) pour les types de projet et d’environnement. |
 | Certificats | Affichez une liste des certificats SSL associés au projet. |
 | Déployer la clé | Ajoutez et affichez la clé publique au référentiel de code du projet. |
-| Domaines | Ajoutez un nom de domaine au projet. Voir [ Gestion des domaines ](../cdn/fastly-custom-cache-configuration.md#manage-domains). |
+| Domaines | Ajoutez un nom de domaine au projet. Voir [&#x200B; Gestion des domaines &#x200B;](../cdn/fastly-custom-cache-configuration.md#manage-domains). |
 | Intégrations | Ajoutez et gérez les [intégrations](../integrations/overview.md), telles que les notifications d’intégrité et les webhooks. |
 | Variables | Ajoutez des [variables au niveau du projet](../environment/variable-levels.md) qui sont disponibles lors de la génération et de l’exécution dans tous les environnements. |
 
