@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Mettre à niveau la version de Commerce
 
-Vous pouvez mettre à niveau la base de code Adobe Commerce vers une version plus récente. Avant de mettre à niveau l’environnement, consultez la section [&#x200B; Configuration requise &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) dans le guide _Installation_ pour connaître la configuration requise pour la dernière version du logiciel.
+Vous pouvez mettre à niveau la base de code Adobe Commerce vers une version plus récente. Avant de mettre à niveau l’environnement, consultez la section [&#x200B; Configuration requise &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) dans le guide _Installation_ pour connaître la configuration requise pour la dernière version du logiciel.
 
 Selon le type d’environnement (Développement, Évaluation ou Production), vos tâches de mise à niveau peuvent inclure les éléments suivants :
 
@@ -128,7 +128,7 @@ Consultez les informations [versions de service](../services/services-yaml.md#se
    composer require-commerce magento/product-enterprise-edition 2.4.8 --no-update
    ```
 
-1. Si vous utilisez le B2B, mettez à jour votre fichier `composer.json` avec la [version prise en charge](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#adobe-authored-extensions) pour Commerce.
+1. Si vous utilisez le B2B, mettez à jour votre fichier `composer.json` avec la [version prise en charge](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/product-availability#adobe-authored-extensions) pour Commerce.
 
    ```bash
    composer require-commerce magento/extension-b2b 1.5.2 --no-update
@@ -142,15 +142,15 @@ Consultez les informations [versions de service](../services/services-yaml.md#se
 
 1. Examinez les correctifs actuellement appliqués :
 
-   - Si des correctifs sont installés dans le répertoire `m2-hotfixes`, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) et contactez l’assistance Adobe Commerce pour vérifier quels correctifs peuvent toujours être appliqués à la nouvelle version. Supprimez le ou les correctifs non applicables du répertoire `m2-hotfixes`.
+   - Si des correctifs sont installés dans le répertoire `m2-hotfixes`, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) et contactez l’assistance Adobe Commerce pour vérifier quels correctifs peuvent toujours être appliqués à la nouvelle version. Supprimez le ou les correctifs non applicables du répertoire `m2-hotfixes`.
 
    - Si des [correctifs de qualité] sont appliqués dans le fichier `.magento.env.yaml`, vérifiez s’ils peuvent toujours être appliqués à la nouvelle version. Supprimez le ou les correctifs non applicables de la section `QUALITY_PATCHES` du fichier `.magento.env.yaml`.
 
-   **Méthode 1** : [vérifiez les versions applicables dans les notes de mise à jour des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+   **Méthode 1** : [vérifiez les versions applicables dans les notes de mise à jour des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/release-notes)
 
-   **Méthode 2** : [affichage des correctifs et de l’état disponibles](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
+   **Méthode 2** : [affichage des correctifs et de l’état disponibles](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 
-   **Méthode 3** : [Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=en)
+   **Méthode 3** : [Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr)
 
 
 1. Ajout, validation et modifications de code push.
