@@ -23,7 +23,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Clarification des systèmes d’exploitation pris en charge pour <code class="language-plaintext highlighter-rouge">magento-cloud</code>’outil CLI <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview">installation</a>.</p>
+      <td><p>Clarification des systèmes d’exploitation pris en charge pour <code class="language-plaintext highlighter-rouge">magento-cloud</code>’outil CLI <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview">installation</a>.</p>
 </td>
       <td>
         Feedback
@@ -45,7 +45,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches"> notes de mise à jour </a> pour le package de correctifs cloud v1.1.11.</p>
+      <td><p>Ajout de <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches"> notes de mise à jour </a> pour le package de correctifs cloud v1.1.11.</p>
 </td>
       <td>
         Mise à jour majeure
