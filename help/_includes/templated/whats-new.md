@@ -1,8 +1,8 @@
 ---
-source-git-commit: 988b07b827c32c94a8cb2d30abb7e73fec71c4a0
+source-git-commit: b29ca0d786bf8cd15e5a3ba1ee8218f3bed2ae2f
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 7%
+source-wordcount: '61'
+ht-degree: 6%
 
 ---
 # Nouveautés du modèle
@@ -23,7 +23,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Clarification des systèmes d’exploitation pris en charge pour <code class="language-plaintext highlighter-rouge">magento-cloud</code>’outil CLI <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview">installation</a>.</p>
+      <td><p>Clarification des systèmes d’exploitation pris en charge pour <code class="language-plaintext highlighter-rouge">magento-cloud</code>’outil CLI <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview">installation</a>.</p>
 </td>
       <td>
         Feedback
@@ -45,78 +45,12 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches"> notes de mise à jour </a> pour le package de correctifs cloud v1.1.11.</p>
+      <td><p>Ajout de <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches"> notes de mise à jour </a> pour le package de correctifs cloud v1.1.11.</p>
 </td>
       <td>
         Mise à jour majeure
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/2b6f0790dbfb47472fd06db4a46e36c847873eb7">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### samedi 8 août 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Mise à jour de <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">référence de l'interface en ligne de commande</a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference">messages d'erreur</a> après la publication de ECE-Tools, v2002.2.7.</p>
-</td>
-      <td>
-        Technique
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/8cf7b01cbd9fe32a89d83db5b4eac7638b834c49">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### vendredi 7 août 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout de <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite"> notes de mise à jour</a> pour les composants cloud, Docker, les correctifs et le package d’outils ECE.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/7aecdc89a2f4e0103cfe46ed1c2dc7b93566baf5">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### jeudi 6 août 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout d’une note sur la période de recharge obligatoire de 6 heures après l’augmentation de l’espace disque <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space"></a> pour les projets hébergés sur AWS.</p>
-</td>
-      <td>
-        Technique
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/a04d056377da4fec9a54503d959f90ebf605de41">validation</a></td>
     </tr>
   </tbody>
 </table>
