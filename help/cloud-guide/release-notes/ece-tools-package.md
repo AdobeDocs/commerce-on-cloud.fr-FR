@@ -4,9 +4,9 @@ description: Voir la liste des dernières améliorations apportées au progiciel
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: b90959335c91dd0631d270ebb522524cf1db6ff0
+source-git-commit: e39b348b02b4edfbe091420c54a20b320387a4b6
 workflow-type: tm+mt
-source-wordcount: '3269'
+source-wordcount: '3286'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,15 @@ Les notes de mise à jour incluent les éléments suivants :
 
 <!--Add release notes below-->
 
-## v2002.2.7 {#latest}
+## v2002.2.8 {#latest}
+
+Date de publication : 8 octobre 2025
+
+- ![nouvelle icône](../../assets/new.svg) **ActiveMQ**-Prise en charge ajoutée d’ActiveMQ.<!-- MCLOUD-13770 -->
+- ![nouvelle icône](../../assets/new.svg) **Tests fonctionnels ActiveMQ**-ajoutés.<!-- MCLOUD-13813 -->
+
+
+## v2002.2.7
 
 Date de publication : 7 août 2025
 
