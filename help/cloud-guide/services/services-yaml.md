@@ -39,7 +39,7 @@ L’infrastructure cloud prend en charge et déploie les services suivants :
 - [Elasticsearch](elasticsearch.md)
 - [OpenSearch](opensearch.md)
 
-Vous pouvez afficher les versions par défaut et les valeurs de disque dans le fichier [ actuel `services.yaml`par défaut](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). L’exemple suivant montre les services `mysql`, `redis`, `opensearch` ou `elasticsearch`, `rabbitmq` et `activemq-artemis` définis dans le fichier de configuration `services.yaml` :
+Vous pouvez afficher les versions par défaut et les valeurs de disque dans le fichier [&#x200B; actuel `services.yaml`par défaut](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). L’exemple suivant montre les services `mysql`, `redis`, `opensearch` ou `elasticsearch`, `rabbitmq` et `activemq-artemis` définis dans le fichier de configuration `services.yaml` :
 
 ```yaml
 mysql:
@@ -186,7 +186,7 @@ Pendant le processus de déploiement, le package `ece-tools` vérifie les versio
 - Si une version de service est en cours depuis moins de trois mois, une notification s’affiche dans le journal de déploiement.
 - Si la date de fin de vie est passée, une notification d’avertissement s’affiche.
 
-Pour maintenir la sécurité du magasin, mettez à jour les versions logicielles installées avant qu&#39;elles n&#39;atteignent leur fin de vie. Vous pouvez consulter les dates de fin de vie dans le fichier [ de `eol.yaml`ece-tools](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
+Pour maintenir la sécurité du magasin, mettez à jour les versions logicielles installées avant qu&#39;elles n&#39;atteignent leur fin de vie. Vous pouvez consulter les dates de fin de vie dans le fichier [&#x200B; de `eol.yaml`ece-tools](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
 ### Migrer vers OpenSearch
 
