@@ -75,4 +75,4 @@ Vous pouvez utiliser l’outil Cloud Docker for Commerce pour émuler Adobe Comm
 
 >[!TIP]
 >
->Pour plus d’informations sur l’utilisation des services d’hébergement basés sur Git avec Adobe Commerce sur les infrastructures cloud, voir [ Intégrations ](../integrations/overview.md).
+>Pour plus d’informations sur l’utilisation des services d’hébergement basés sur Git avec Adobe Commerce sur les infrastructures cloud, voir [&#x200B; Intégrations &#x200B;](../integrations/overview.md).

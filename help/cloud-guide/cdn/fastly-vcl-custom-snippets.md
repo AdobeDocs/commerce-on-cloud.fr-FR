@@ -49,7 +49,7 @@ Ce tutoriel et les exemples montrent l’utilisation de fragments de code VCL pe
 
 Vous pouvez créer et gérer des fragments de code VCL personnalisés à partir de l’administration Adobe Commerce ou à l’aide de l’API Fastly :
 
-- [Administrateur Adobe Commerce ](#manage-custom-vcl-from-admin)—Nous vous recommandons d’utiliser l’administrateur Adobe Commerce pour gérer les fragments de code VCL personnalisés, car cela automatise le processus de validation, de chargement et d’application des modifications VCL à la configuration de service Fastly. Vous pouvez également afficher et modifier les fragments de code VCL personnalisés ajoutés à la configuration du service Fastly à partir de l’administrateur.
+- [Administrateur Adobe Commerce &#x200B;](#manage-custom-vcl-from-admin)—Nous vous recommandons d’utiliser l’administrateur Adobe Commerce pour gérer les fragments de code VCL personnalisés, car cela automatise le processus de validation, de chargement et d’application des modifications VCL à la configuration de service Fastly. Vous pouvez également afficher et modifier les fragments de code VCL personnalisés ajoutés à la configuration du service Fastly à partir de l’administrateur.
 
 - [API Fastly](#manage-vcl-using-the-api) : si vous ne pouvez pas accéder à l’administration, utilisez l’API Fastly pour gérer les fragments de code VCL personnalisés. Par exemple, utilisez l’API pour résoudre les problèmes de configuration du service Fastly lorsque le site est hors service ou pour ajouter un fragment de code VCL personnalisé. En outre, certaines opérations ne peuvent être effectuées qu’à l’aide de l’API . Par exemple, vous devez utiliser l&#39;API pour réactiver une ancienne version de VCL ou pour afficher tous les fragments de code VCL inclus dans une version de VCL spécifiée. Voir [Référence rapide de l’API pour les fragments de code VCL](#api-quick-reference-for-vcl-snippets).
 
@@ -111,7 +111,7 @@ Les exemples suivants montrent comment créer et gérer des fragments de code VC
 
 ## Fragments de code ne pouvant pas être affichés/modifiés dans l’administration Commerce
 
-Vous ne pouvez pas afficher ni modifier certains fragments de code directement dans Commerce Admin. Par exemple, [ extraits dynamiques ](https://docs.fastly.com/en/guides/using-dynamic-vcl-snippets). Dans la section Fragments de code VCL personnalisés , vous ne verrez pas les fragments de code qui ont été ajoutés directement par l’équipe de support cloud au tableau de bord de gestion [Fastly](fastly.md#fastly-service-account-and-credentials).
+Vous ne pouvez pas afficher ni modifier certains fragments de code directement dans Commerce Admin. Par exemple, [&#x200B; extraits dynamiques &#x200B;](https://docs.fastly.com/en/guides/using-dynamic-vcl-snippets). Dans la section Fragments de code VCL personnalisés , vous ne verrez pas les fragments de code qui ont été ajoutés directement par l’équipe de support cloud au tableau de bord de gestion [Fastly](fastly.md#fastly-service-account-and-credentials).
 
 
 **Pour observer les fragments de code ajoutés par l’équipe d’assistance cloud, procédez comme suit**
@@ -129,7 +129,7 @@ La présentation suivante vous explique comment créer des fichiers de fragment 
 
 **Conditions préalables :**
 
-- Configurez votre environnement Adobe Commerce sur l’infrastructure cloud pour les services Fastly . Voir [ Configuration rapide ](fastly-configuration.md).
+- Configurez votre environnement Adobe Commerce sur l’infrastructure cloud pour les services Fastly . Voir [&#x200B; Configuration rapide &#x200B;](fastly-configuration.md).
 
 - [Obtenez les informations d’identification de l’API Fastly](fastly-configuration.md) pour authentifier les requêtes auprès de l’API Fastly. Assurez-vous d’obtenir les informations d’identification pour l’environnement approprié : évaluation ou production.
 

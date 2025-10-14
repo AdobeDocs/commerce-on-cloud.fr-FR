@@ -99,7 +99,7 @@ Combinez toutes les modifications de code vérifiées en fusionnant votre branch
 
 L’évaluation est un environnement de préproduction qui fournit tous les services et paramètres aussi proche que possible de l’environnement de production. Envoyez toujours vos modifications de code de l’environnement `integration` vers l’environnement `staging` afin de pouvoir effectuer des tests approfondis avec tous les services. La première fois que vous utilisez l’environnement d’évaluation, vous devez configurer des services, tels que [Fast CDN](../cdn/fastly.md) et [New Relic](../monitor/new-relic-service.md). Configurez les passerelles de paiement, l’expédition, les notifications et d’autres services essentiels avec des informations d’identification de test ou de sandbox.
 
-Il est préférable de tester minutieusement chaque service, de vérifier vos outils de test de performance et d’effectuer des tests UAT en tant qu’administrateur et client, jusqu’à ce que vous sentiez que votre boutique est prête pour l’environnement de production. Voir [ Déployer votre boutique ](../deploy/staging-production.md).
+Il est préférable de tester minutieusement chaque service, de vérifier vos outils de test de performance et d’effectuer des tests UAT en tant qu’administrateur et client, jusqu’à ce que vous sentiez que votre boutique est prête pour l’environnement de production. Voir [&#x200B; Déployer votre boutique &#x200B;](../deploy/staging-production.md).
 
 {{second-staging}}
 

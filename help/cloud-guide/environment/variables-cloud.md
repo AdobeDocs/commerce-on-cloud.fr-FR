@@ -33,7 +33,7 @@ Les variables d’environnement spécifiques à Adobe Commerce sur les infrastru
 >
 >Pour ajouter des variables d’environnement à [remplacer les paramètres de configuration](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html?lang=fr) à l’aide de l’[[!DNL Cloud Console]](../project/overview.md), vous devez ajouter le préfixe `env:` au nom de la variable, comme dans l’exemple suivant :
 >
->![ Exemple de variable d’environnement ](../../assets/set-env-variable-ui.png)
+>![&#x200B; Exemple de variable d’environnement &#x200B;](../../assets/set-env-variable-ui.png)
 
 Comme les valeurs peuvent changer au fil du temps, il est préférable d’inspecter la variable au moment de l’exécution et de l’utiliser pour configurer votre application. Par exemple, utilisez la variable `MAGENTO_CLOUD_RELATIONSHIPS` pour récupérer les relations liées à l’environnement comme suit :
 

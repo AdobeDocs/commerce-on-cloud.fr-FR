@@ -225,4 +225,4 @@ Suivez les événements de déploiement de votre projet Commerce dans New Relic 
 
 1. Sous _Événements_, cliquez sur **[!UICONTROL Change tracking]**.
 
-   ![ Déploiements ](../../assets/new-relic/deployments.png)
+   ![&#x200B; Déploiements &#x200B;](../../assets/new-relic/deployments.png)

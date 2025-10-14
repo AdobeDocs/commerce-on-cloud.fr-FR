@@ -100,7 +100,7 @@ https://refactorcss-oy3m2pq-mswy7hzcuhcjw.us.magentosite.cloud/
 
 >[!NOTE]
 >
->Si votre projet cloud prend en charge plusieurs magasins, suivez les instructions de configuration d’itinéraire pour [ plusieurs sites web ou magasins ](../store/multiple-sites.md).
+>Si votre projet cloud prend en charge plusieurs magasins, suivez les instructions de configuration d’itinéraire pour [&#x200B; plusieurs sites web ou magasins &#x200B;](../store/multiple-sites.md).
 
 ### Barre oblique de fin
 
@@ -167,7 +167,7 @@ Diffuser toutes les pages via TLS. Pour cette configuration, vous devez configur
       upstream: "mymagento:http"
   ```
 
-- Pour les environnements d’évaluation et de production, activez l’option [ Forcer TLS sur Fastly ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls.html?lang=fr) à partir de l’interface utilisateur d’administration. Lorsque vous utilisez cette option, Fastly gère la redirection vers HTTPS, de sorte que vous n’ayez pas à mettre à jour la configuration `routes.yaml`.
+- Pour les environnements d’évaluation et de production, activez l’option [&#x200B; Forcer TLS sur Fastly &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls.html?lang=fr) à partir de l’interface utilisateur d’administration. Lorsque vous utilisez cette option, Fastly gère la redirection vers HTTPS, de sorte que vous n’ayez pas à mettre à jour la configuration `routes.yaml`.
 
 ## Options d’itinéraire
 

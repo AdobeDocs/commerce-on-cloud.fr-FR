@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Bonnes pratiques pour mettre à niveau votre projet
 
-Suivez les bonnes pratiques en matière de versions et de déploiement, et utilisez le workflow [ Mises à niveau et correctifs ](../development/commerce-version.md) pour mettre à niveau votre application. Suivez les instructions suivantes pour planifier votre travail de mise à niveau et après la mise à niveau :
+Suivez les bonnes pratiques en matière de versions et de déploiement, et utilisez le workflow [&#x200B; Mises à niveau et correctifs &#x200B;](../development/commerce-version.md) pour mettre à niveau votre application. Suivez les instructions suivantes pour planifier votre travail de mise à niveau et après la mise à niveau :
 
-- **Sauvegardez votre projet**-Avant de mettre à niveau Adobe Commerce et toute extension tierce ou personnalisée, sauvegardez la base de données dans les environnements d’intégration, d’évaluation et de production. Pour plus d&#39;informations, consultez la section [ Sauvegarder la base de données ](../development/commerce-version.md#project-backup).
+- **Sauvegardez votre projet**-Avant de mettre à niveau Adobe Commerce et toute extension tierce ou personnalisée, sauvegardez la base de données dans les environnements d’intégration, d’évaluation et de production. Pour plus d&#39;informations, consultez la section [&#x200B; Sauvegarder la base de données &#x200B;](../development/commerce-version.md#project-backup).
 
 - **Rechercher les problèmes de compatibilité**-
 
@@ -29,13 +29,13 @@ Suivez les bonnes pratiques en matière de versions et de déploiement, et utili
 
    - Apportez les mises à jour requises aux paramètres spécifiques à l’environnement avant de procéder au déploiement sur l’environnement distant.
 
-   - Assurez-vous que la version du service de recherche est compatible avec la version du client PHP. Voir [Configuration d’Elasticsearch ](../services/elasticsearch.md) ou [Configuration d’OpenSearch](../services/opensearch.md).
+   - Assurez-vous que la version du service de recherche est compatible avec la version du client PHP. Voir [Configuration d’Elasticsearch &#x200B;](../services/elasticsearch.md) ou [Configuration d’OpenSearch](../services/opensearch.md).
 
 - **Vérifier la connectivité de la base de données et le stockage disponible dans les environnements distants**-
 
    - Utilisez SSH pour vous connecter au serveur distant et vérifier la connexion à la base de données MySQL. Voir [Connexion à la base de données](../services/mysql.md#connect-to-the-database).
 
-   - Vérifier le stockage disponible dans l’environnement distant : utilisez la commande `disk free` pour afficher et gérer l’espace disque disponible dans vos environnements cloud. Voir [ Gérer l’espace disque ](../storage/manage-disk-space.md).
+   - Vérifier le stockage disponible dans l’environnement distant : utilisez la commande `disk free` pour afficher et gérer l’espace disque disponible dans vos environnements cloud. Voir [&#x200B; Gérer l’espace disque &#x200B;](../storage/manage-disk-space.md).
 
       - Vérifiez la taille de la base de données mise à niveau et que le fichier `services.yaml` dispose de suffisamment d&#39;espace disque alloué.
 

@@ -34,7 +34,7 @@ Adobe active le service WAF sur de nouveaux comptes dans les 2 à 3 semaines sui
 
 >[!NOTE]
 >
->Avant de pouvoir utiliser le service WAF, vous devez acheminer tout le trafic externe vers votre projet d’infrastructure cloud d’Adobe Commerce via le service Fastly . Voir [ Configuration rapide ](fastly-configuration.md).
+>Avant de pouvoir utiliser le service WAF, vous devez acheminer tout le trafic externe vers votre projet d’infrastructure cloud d’Adobe Commerce via le service Fastly . Voir [&#x200B; Configuration rapide &#x200B;](fastly-configuration.md).
 
 ## Fonctionnement
 
@@ -77,4 +77,4 @@ Le service WAF standard optimisé par Fastly ne prend pas en charge les fonction
 
 Le service WAF vous permet de bloquer ou d’autoriser le trafic en fonction des adresses IP. Vous pouvez ajouter des listes de contrôle d’accès (ACL) et des fragments de code VCL personnalisés à votre service Fastly pour spécifier les adresses IP et la logique VCL pour bloquer ou autoriser le trafic. Voir [Extraits personnalisés Fastly VCL](fastly-vcl-custom-snippets.md).
 
-Le service WAF ne prend pas en charge le filtrage des requêtes TCP, UDP ou ICMP. Cependant, cette fonctionnalité est fournie par la protection DDoS intégrée incluse avec le service Fast CDN. Voir [ Protection DDoS ](fastly.md#ddos-protection).
+Le service WAF ne prend pas en charge le filtrage des requêtes TCP, UDP ou ICMP. Cependant, cette fonctionnalité est fournie par la protection DDoS intégrée incluse avec le service Fast CDN. Voir [&#x200B; Protection DDoS &#x200B;](fastly.md#ddos-protection).

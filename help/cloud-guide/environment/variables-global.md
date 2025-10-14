@@ -85,7 +85,7 @@ stage:
 
 Activez la génération de contenu statique lorsqu’un utilisateur ou une utilisatrice (SCD) le demande. Le contenu statique à la demande est idéal pour le workflow de développement et de test, car il réduit le temps de déploiement.
 
-Le préchargement du cache à l’aide du hook [`post_deploy` réduit ](../application/hooks-property.md) temps d’arrêt du site. Le réchauffement du cache n’est disponible que pour les projets Pro contenant des environnements d’évaluation et de production dans les projets [!DNL Cloud Console] et de démarrage. Ajoutez la variable d’environnement `SCD_ON_DEMAND` à l’étape `global` dans le fichier `.magento.env.yaml` :
+Le préchargement du cache à l’aide du hook [`post_deploy` réduit &#x200B;](../application/hooks-property.md) temps d’arrêt du site. Le réchauffement du cache n’est disponible que pour les projets Pro contenant des environnements d’évaluation et de production dans les projets [!DNL Cloud Console] et de démarrage. Ajoutez la variable d’environnement `SCD_ON_DEMAND` à l’étape `global` dans le fichier `.magento.env.yaml` :
 
 ```yaml
 stage:

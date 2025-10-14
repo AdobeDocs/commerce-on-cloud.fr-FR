@@ -32,7 +32,7 @@ Lorsque vous déployez des modifications dans l’environnement distant, le pack
 
 >[!NOTE]
 >
->Lorsque vous mettez à jour le package `ece-tools` ou le package Correctifs cloud pour Commerce, les derniers correctifs requis sont appliqués la prochaine fois que vous déployez votre projet. Vous pouvez également les déployer immédiatement à l’aide de la commande de l’interface de ligne de commande `ece-patches apply` et redéployer votre environnement Cloud. Vous ne pouvez pas ignorer [ correctifs requis](https://github.com/magento/magento-cloud-patches/tree/develop/patches) pendant le processus de déploiement.
+>Lorsque vous mettez à jour le package `ece-tools` ou le package Correctifs cloud pour Commerce, les derniers correctifs requis sont appliqués la prochaine fois que vous déployez votre projet. Vous pouvez également les déployer immédiatement à l’aide de la commande de l’interface de ligne de commande `ece-patches apply` et redéployer votre environnement Cloud. Vous ne pouvez pas ignorer [&#x200B; correctifs requis](https://github.com/magento/magento-cloud-patches/tree/develop/patches) pendant le processus de déploiement.
 
 ## Conditions préalables
 

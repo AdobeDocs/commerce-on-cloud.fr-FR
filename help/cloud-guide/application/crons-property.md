@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Propriété Cron
 
-Adobe Commerce utilise la propriété `crons` pour planifier des activités répétitives. Il est idéal pour planifier l’exécution d’une tâche spécifique à certains moments de la journée. En raison de la nature des environnements en lecture seule, une seule tâche cron peut s’exécuter à la fois sur l’instance web pour Adobe Commerce dans les projets d’infrastructure cloud. Il est recommandé de ventiler les tâches de longue durée en tâches plus petites et en file d’attente. Vous pouvez également créer une [ instance de travail ](workers-property.md).
+Adobe Commerce utilise la propriété `crons` pour planifier des activités répétitives. Il est idéal pour planifier l’exécution d’une tâche spécifique à certains moments de la journée. En raison de la nature des environnements en lecture seule, une seule tâche cron peut s’exécuter à la fois sur l’instance web pour Adobe Commerce dans les projets d’infrastructure cloud. Il est recommandé de ventiler les tâches de longue durée en tâches plus petites et en file d’attente. Vous pouvez également créer une [&#x200B; instance de travail &#x200B;](workers-property.md).
 
 Adobe vous recommande d’exécuter `crons` en tant que [propriétaire du système de fichiers](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=fr). N’exécutez __ `crons` en tant que `root` ou utilisateur du serveur web.
 
@@ -35,7 +35,7 @@ crons:
         cmd: "php bin/magento cron:run"
 ```
 
-Si votre projet nécessite des tâches cron personnalisées, vous pouvez les ajouter à la configuration `crons` par défaut. Voir [ Création d’une tâche cron ](#build-a-cron-job).
+Si votre projet nécessite des tâches cron personnalisées, vous pouvez les ajouter à la configuration `crons` par défaut. Voir [&#x200B; Création d’une tâche cron &#x200B;](#build-a-cron-job).
 
 ### `crontab`
 

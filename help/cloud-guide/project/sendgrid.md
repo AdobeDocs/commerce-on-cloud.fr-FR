@@ -67,7 +67,7 @@ Pour que SendGrid envoie des e-mails transactionnels en votre nom à partir d&#3
 
 **Pour activer l’authentification de domaine** :
 
-1. Envoyez un [ ticket d’assistance ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) pour demander l’activation de DKIM pour un domaine spécifique (**environnements d’évaluation et de production Pro uniquement**).
+1. Envoyez un [&#x200B; ticket d’assistance &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) pour demander l’activation de DKIM pour un domaine spécifique (**environnements d’évaluation et de production Pro uniquement**).
 1. Mettez à jour votre configuration DNS avec les enregistrements `TXT` et `CNAME` qui vous ont été fournis dans le ticket de support.
 
 **Exemple d&#39;enregistrement `TXT` avec l&#39;identifiant de compte** :

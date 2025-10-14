@@ -32,7 +32,7 @@ magento-cloud integration:add --type health.email --from-address you@example.com
 
 ## Notifications du canal Slack
 
-Slack est un service externe qui utilise des applications interactives appelées robots pour publier des messages dans un salon de chat. Avant de pouvoir recevoir des notifications d’intégrité dans Slack, vous devez créer un [utilisateur de robot](https://api.slack.com/bot-users) personnalisé pour votre groupe Slack. Après avoir configuré l’utilisateur de robot pour votre ou vos canaux, enregistrez le [ jeton de robot ](https://api.slack.com/docs/token-types#bot) fourni par Slack pour enregistrer votre intégration. L’exemple suivant enregistre les notifications d’intégrité dans un canal Slack :
+Slack est un service externe qui utilise des applications interactives appelées robots pour publier des messages dans un salon de chat. Avant de pouvoir recevoir des notifications d’intégrité dans Slack, vous devez créer un [utilisateur de robot](https://api.slack.com/bot-users) personnalisé pour votre groupe Slack. Après avoir configuré l’utilisateur de robot pour votre ou vos canaux, enregistrez le [&#x200B; jeton de robot &#x200B;](https://api.slack.com/docs/token-types#bot) fourni par Slack pour enregistrer votre intégration. L’exemple suivant enregistre les notifications d’intégrité dans un canal Slack :
 
 ```bash
 magento-cloud integration:add --type health.slack --token SLACK_BOT_TOKEN --channel '#slack-channel-name'

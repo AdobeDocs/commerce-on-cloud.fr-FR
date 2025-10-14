@@ -19,11 +19,11 @@ Avant de configurer un espace de travail, collectez les clés et l’accès au c
 
 - **Clés d’authentification (clés du compositeur)**
 
-  Les clés d’authentification sont des jetons d’authentification de 32 caractères qui fournissent un accès sécurisé au référentiel du compositeur d’Adobe Commerce (`repo.magento.com`) et à tout autre service Git requis pour le développement d’applications, tel que GitHub. Votre compte peut avoir plusieurs clés d’authentification. Pour la configuration de l’espace de travail, commencez par une clé spécifique pour votre référentiel de code. Si vous ne disposez d’aucune clé, contactez le propriétaire du projet ou créez vous-même les [ clés d’authentification ](../cloud-guide/development/authentication-keys.md).
+  Les clés d’authentification sont des jetons d’authentification de 32 caractères qui fournissent un accès sécurisé au référentiel du compositeur d’Adobe Commerce (`repo.magento.com`) et à tout autre service Git requis pour le développement d’applications, tel que GitHub. Votre compte peut avoir plusieurs clés d’authentification. Pour la configuration de l’espace de travail, commencez par une clé spécifique pour votre référentiel de code. Si vous ne disposez d’aucune clé, contactez le propriétaire du projet ou créez vous-même les [&#x200B; clés d’authentification &#x200B;](../cloud-guide/development/authentication-keys.md).
 
 - **Compte de projet cloud**
 
-  Le propriétaire du projet doit vous inviter à rejoindre le projet d’infrastructure cloud d’Adobe Commerce. Lorsque vous recevez l’invitation par courrier électronique, cliquez sur le lien et suivez les invites pour créer votre compte. Voir [ Intégration ](onboarding.md).
+  Le propriétaire du projet doit vous inviter à rejoindre le projet d’infrastructure cloud d’Adobe Commerce. Lorsque vous recevez l’invitation par courrier électronique, cliquez sur le lien et suivez les invites pour créer votre compte. Voir [&#x200B; Intégration &#x200B;](onboarding.md).
 
 - **Clé de chiffrement Adobe Commerce**
 
@@ -45,7 +45,7 @@ Avant de configurer un espace de travail, collectez les clés et l’accès au c
 
 - **Intégration de services basés sur Git**
 
-  Vous pouvez éventuellement intégrer un service d’hébergement basé sur Git, tel que GitHub ou GitLab, à Adobe Commerce sur l’infrastructure cloud. Pour plus d&#39;informations, consultez la section [ Intégrations ](../cloud-guide/integrations/overview.md).
+  Vous pouvez éventuellement intégrer un service d’hébergement basé sur Git, tel que GitHub ou GitLab, à Adobe Commerce sur l’infrastructure cloud. Pour plus d&#39;informations, consultez la section [&#x200B; Intégrations &#x200B;](../cloud-guide/integrations/overview.md).
 
 ## Code du projet
 

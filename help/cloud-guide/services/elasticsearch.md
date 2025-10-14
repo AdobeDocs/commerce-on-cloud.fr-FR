@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Configurer le service Elasticsearch
 
-[Elasticsearch ](https://www.elastic.co) est un produit open-source qui vous permet de prendre des données de n’importe quelle source, n’importe quel format, et de les rechercher et de les visualiser en temps réel.
+[Elasticsearch &#x200B;](https://www.elastic.co) est un produit open-source qui vous permet de prendre des données de n’importe quelle source, n’importe quel format, et de les rechercher et de les visualiser en temps réel.
 
 {{elasticsearch-support}}
 
@@ -197,7 +197,7 @@ La prise en charge des versions de service et de la compatibilité pour Adobe Co
 
 ## Redémarrez le service Elasticsearch
 
-Si vous devez redémarrer le service [Elasticsearch ](https://www.elastic.co), vous devez contacter l&#39;assistance Adobe Commerce.
+Si vous devez redémarrer le service [Elasticsearch &#x200B;](https://www.elastic.co), vous devez contacter l&#39;assistance Adobe Commerce.
 
 ## Configuration de recherche supplémentaire
 
@@ -264,6 +264,6 @@ La suppression des entrées du plug-in d’`elasticsearch:` dans `.magento/servi
 
 Consultez les articles d’assistance Adobe Commerce suivants pour obtenir de l’aide sur la résolution des problèmes Elasticsearch :
 
-- [L&#39;Elasticsearch 5 est configuré, mais la page de recherche ne se charge pas avec l&#39;erreur « Fielddata is disabled... » ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html?lang=fr)
+- [L&#39;Elasticsearch 5 est configuré, mais la page de recherche ne se charge pas avec l&#39;erreur « Fielddata is disabled... » &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html?lang=fr)
 - [Elasticsearch dans l’utilitaire de résolution de problèmes Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-in-magento-troubleshooter.html)
 - [Statut de l&#39;index Elasticsearch `yellow` ou `red`](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-index-status-is-yellow-or-red.html?lang=fr)

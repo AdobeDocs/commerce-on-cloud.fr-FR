@@ -34,7 +34,7 @@ Lorsque vous êtes prêt à lancer votre site, vous devez mettre à jour la conf
 
   En règle générale, vous travaillez avec votre conseiller technique client pour ajouter tous les domaines et sous-domaines de niveau supérieur requis pour vos magasins. Pour ajouter ou modifier les domaines de votre environnement de production, [Envoyez un ticket d’assistance Adobe Commerce](https://support.magento.com/hc/en-us/articles/360019088251). Attendez la confirmation que la configuration de votre projet a été mise à jour.
 
-  Dans les projets de démarrage, vous devez ajouter les domaines à votre projet. Voir [ Gestion des domaines ](../cdn/fastly-custom-cache-configuration.md#manage-domains).
+  Dans les projets de démarrage, vous devez ajouter les domaines à votre projet. Voir [&#x200B; Gestion des domaines &#x200B;](../cdn/fastly-custom-cache-configuration.md#manage-domains).
 
 - Certificat SSL/TLS configuré pour vos environnements de production.
 

@@ -17,9 +17,9 @@ La section Prise en main vous guide tout au long des procédures d’initialisat
 
 Ce guide suppose que vous avez une connaissance pratique et une compréhension de l’application [!DNL Commerce]. Reportez-vous aux derniers guides de l’utilisateur et du développeur de Commerce Commerce :
 
-- [Documentation pour les développeurs Adobe Commerce ](https://developer.adobe.com/commerce/docs/) (site Adobe Developer) : développez, personnalisez, intégrez, étendez et utilisez des fonctionnalités avancées
+- [Documentation pour les développeurs Adobe Commerce &#x200B;](https://developer.adobe.com/commerce/docs/) (site Adobe Developer) : développez, personnalisez, intégrez, étendez et utilisez des fonctionnalités avancées
 
-- [Documentation Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce.html?lang=fr) (Adobe Experience League) : planification, implémentation, exploitation, mise à niveau et maintenance de vos projets Commerce
+- [Documentation Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce.html?lang=fr) (Adobe Experience League) : planification, implémentation, exploitation, mise à niveau et maintenance de vos projets Commerce
 
 >[!TIP]
 >

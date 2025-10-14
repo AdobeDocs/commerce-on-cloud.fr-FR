@@ -180,7 +180,7 @@ Adobe Commerce sur les infrastructures cloud utilise une architecture à haute d
 
 {{pro-backups}}
 
-Vous pouvez créer une **sauvegarde manuelle** de la base de données pour vos environnements d’évaluation et de production à l’aide de commandes d’interface de ligne de commande. Pour plus d&#39;informations, consultez la section [ Sauvegarder la base de données ](../storage/database-dump.md). Pour les environnements `integration`, Adobe recommande de commencer par créer une sauvegarde après avoir accédé à votre projet d’infrastructure cloud Adobe Commerce et avant d’appliquer des modifications majeures. Voir [ Gestion des sauvegardes ](../storage/snapshots.md).
+Vous pouvez créer une **sauvegarde manuelle** de la base de données pour vos environnements d’évaluation et de production à l’aide de commandes d’interface de ligne de commande. Pour plus d&#39;informations, consultez la section [&#x200B; Sauvegarder la base de données &#x200B;](../storage/database-dump.md). Pour les environnements `integration`, Adobe recommande de commencer par créer une sauvegarde après avoir accédé à votre projet d’infrastructure cloud Adobe Commerce et avant d’appliquer des modifications majeures. Voir [&#x200B; Gestion des sauvegardes &#x200B;](../storage/snapshots.md).
 
 ### Objectif du point de récupération
 

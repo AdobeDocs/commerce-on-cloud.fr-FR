@@ -38,7 +38,7 @@ Vous pouvez ajouter des utilisateurs et affecter des rôles à l’aide de l’i
 
 **Conditions préalables :**
 
-- Utilisateur enregistré avec un Adobe ID. Un utilisateur doit [s’inscrire à un compte d’Adobe ](https://account.adobe.com) puis [initialiser son compte Cloud](https://console.adobecommerce.com) avant de pouvoir l’ajouter à un projet cloud.
+- Utilisateur enregistré avec un Adobe ID. Un utilisateur doit [s’inscrire à un compte d’Adobe &#x200B;](https://account.adobe.com) puis [initialiser son compte Cloud](https://console.adobecommerce.com) avant de pouvoir l’ajouter à un projet cloud.
 - Un utilisateur disposant du rôle **Admin** ne peut pas gérer les utilisateurs avec l’interface de ligne de commande `magento-cloud`. Seuls les utilisateurs dotés du rôle **Propriétaire du compte** peuvent gérer les utilisateurs.
 
 >[!ENDSHADEBOX]
@@ -278,6 +278,6 @@ Dans les projets pour lesquels l’application MFA est activée, vous devez disp
 
 1. Cliquez sur **[!UICONTROL Create API token]** et saisissez un nom, par exemple, spécifiez un nom correspondant à l’utilisateur de la machine ou au processus automatisé qui utilise le jeton API.
 
-   ![ Jetons API ](../../assets/api-token-name.png)
+   ![&#x200B; Jetons API &#x200B;](../../assets/api-token-name.png)
 
 1. Cliquez sur **[!UICONTROL Create API token]**.

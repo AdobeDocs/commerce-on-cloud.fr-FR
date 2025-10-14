@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Les intégrations sont utiles pour utiliser des services externes, tels que l’hébergement Git ou les robots de Slack, et pour maintenir vos processus de développement actuels, tels que l’utilisation de la fonction de révision du code et de demande de tirage dans GitHub. Vous pouvez ajouter les intégrations suivantes à votre projet d’infrastructure cloud Adobe Commerce :
 
-![ Intégrations ](/help/assets/integrations.png)
+![&#x200B; Intégrations &#x200B;](/help/assets/integrations.png)
 
 >[!BEGINTABS]
 

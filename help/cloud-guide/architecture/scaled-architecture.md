@@ -33,7 +33,7 @@ Vous pouvez optimiser davantage les performances du niveau de service en achemin
 
 ### Niveau web
 
-Il existe trois nœuds web pour le traitement des requêtes et du trafic web : **php-fpm** et **NGINX**. En plus de la mise à l’échelle verticale en augmentant la puissance et la mémoire, le niveau web peut être mis à l’échelle horizontale en ajoutant des serveurs web à un cluster existant lorsqu’il est limité au niveau PHP. Voir [ Mise à l’échelle automatique ](autoscaling.md) pour savoir comment les nœuds web sont automatiquement mis à l’échelle.
+Il existe trois nœuds web pour le traitement des requêtes et du trafic web : **php-fpm** et **NGINX**. En plus de la mise à l’échelle verticale en augmentant la puissance et la mémoire, le niveau web peut être mis à l’échelle horizontale en ajoutant des serveurs web à un cluster existant lorsqu’il est limité au niveau PHP. Voir [&#x200B; Mise à l’échelle automatique &#x200B;](autoscaling.md) pour savoir comment les nœuds web sont automatiquement mis à l’échelle.
 
 ![Mise à l’échelle de niveau web](../../assets/scaling-web.png)
 

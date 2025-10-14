@@ -17,7 +17,7 @@ Le tableau suivant décrit les fichiers inclus dans un projet cloud :
 | Fichier | Description |
 | ------------------------- | ------------ |
 | `/.magento/routes.yaml` | Fichier de configuration qui redirige le `www` vers le domaine apex et `php` application vers le HTTP. Voir [Configurer les itinéraires](../routes/routes-yaml.md). |
-| `/.magento/services.yaml` | Un fichier de configuration qui définit une instance MySQL (MariaDB), Redis et OpenSearch ou Elasticsearch. Voir [ Configuration des services ](../services/services-yaml.md). |
+| `/.magento/services.yaml` | Un fichier de configuration qui définit une instance MySQL (MariaDB), Redis et OpenSearch ou Elasticsearch. Voir [&#x200B; Configuration des services &#x200B;](../services/services-yaml.md). |
 | `/app` | Le dossier `code` est utilisé pour les modules personnalisés. Le dossier `design` est utilisé pour les [thèmes personnalisés](../store/custom-theme.md). Le dossier `etc` contient les fichiers de configuration de l’application. |
 | `/m2-hotfixes` | Utilisé pour les correctifs personnalisés. |
 | `/update` | Dossier de service utilisé par le module de support. |

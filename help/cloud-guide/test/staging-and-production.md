@@ -20,7 +20,7 @@ Si vous rencontrez des erreurs lors du déploiement ou d’autres problèmes lor
 
 Le journal de déploiement est en `/var/log/platform/<prodject-ID>/deploy.log`. La valeur de `<project-ID>` dépend de l’identifiant du projet et du statut de l’environnement : Évaluation ou Production. Par exemple, avec un ID de projet de `yw1unoukjcawe`, l’utilisateur intermédiaire est `yw1unoukjcawe_stg` et l’utilisateur de production est `yw1unoukjcawe`.
 
-Lors de l’accès aux journaux dans les environnements de production ou d’évaluation, utilisez SSH pour vous connecter à chacun des trois nœuds afin de localiser les journaux. Vous pouvez également utiliser la gestion des journaux de [New Relic](../monitor/log-management.md) pour afficher et interroger les données de journaux agrégées de tous les nœuds. Voir [ Afficher les journaux ](log-locations.md#application-logs).
+Lors de l’accès aux journaux dans les environnements de production ou d’évaluation, utilisez SSH pour vous connecter à chacun des trois nœuds afin de localiser les journaux. Vous pouvez également utiliser la gestion des journaux de [New Relic](../monitor/log-management.md) pour afficher et interroger les données de journaux agrégées de tous les nœuds. Voir [&#x200B; Afficher les journaux &#x200B;](log-locations.md#application-logs).
 
 ## Vérifier la base de code
 
@@ -63,7 +63,7 @@ Vérifiez les paramètres de configuration via le panneau d’administration, y 
    - Évaluation : `dig https://mcstaging.<your-domain>.com`
    - Production : `dig https://mcprod.<your-domain>.com`
 
-   Pour des tests de `dig` supplémentaires, voir Tests de Fastly [ avant de modifier le DNS](https://docs.fastly.com/en/guides/working-with-domains).
+   Pour des tests de `dig` supplémentaires, voir Tests de Fastly [&#x200B; avant de modifier le DNS](https://docs.fastly.com/en/guides/working-with-domains).
 
 1. Utilisez `cURL` pour vérifier les informations d’en-tête de réponse.
 

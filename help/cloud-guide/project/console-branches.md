@@ -93,7 +93,7 @@ Avant de pouvoir supprimer un environnement, vous devez le désactiver. Une fois
 
 La synchronisation d’un environnement (ou d’une branche) est identique à la `git pull origin <parent>`. Vous pouvez synchroniser le code mis à jour à partir d’un environnement parent. Vous pouvez utiliser cette fonctionnalité via l’[!DNL Cloud Console] pour tous les environnements Starter et Pro.
 
-Pour le plan Pro, vous pouvez synchroniser les environnements d’évaluation et de production avec votre branche `master`. Cette synchronisation extrait et transmet uniquement le code, et non les données. Pour synchroniser les données, videz les données de la base de données et envoyez-les vers la base de données d’un autre environnement. Voir [ Migrer et déployer des fichiers et des données statiques](/help/cloud-guide/deploy/staging-production.md#migrate-static-files).
+Pour le plan Pro, vous pouvez synchroniser les environnements d’évaluation et de production avec votre branche `master`. Cette synchronisation extrait et transmet uniquement le code, et non les données. Pour synchroniser les données, videz les données de la base de données et envoyez-les vers la base de données d’un autre environnement. Voir [&#x200B; Migrer et déployer des fichiers et des données statiques](/help/cloud-guide/deploy/staging-production.md#migrate-static-files).
 
 **Pour synchroniser un environnement** :
 

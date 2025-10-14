@@ -38,7 +38,7 @@ La configuration par défaut permet ce qui suit :
 - À partir du chemin d’accès racine (`/`), seuls le web et les médias sont accessibles
 - À partir des chemins d’accès `~/pub/static` et `~/pub/media`, n’importe quel fichier est accessible
 
-L’exemple suivant illustre la configuration par défaut dans le fichier `.magento.app.yaml` pour un ensemble d’emplacements accessibles sur le web associés à une entrée dans la propriété [`mounts` ](properties.md#mounts)
+L’exemple suivant illustre la configuration par défaut dans le fichier `.magento.app.yaml` pour un ensemble d’emplacements accessibles sur le web associés à une entrée dans la propriété [`mounts` &#x200B;](properties.md#mounts)
 
 ```yaml
  # The configuration of app when it is exposed to the web.

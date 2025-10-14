@@ -17,10 +17,10 @@ Vous pouvez configurer les paramètres d’application, les itinéraires, les ac
 
 | Configuration | Nom de fichier | Description |
 | ------------- | -------- | ----------- |
-| [ Application ](../application/configure-app-yaml.md) | `.magento.app.yaml` | Définit comment créer et déployer Adobe Commerce, y compris les services, les hooks et les tâches cron. |
-| [ Environnement ](configure-env-yaml.md) | `.magento.env.yaml` | Centralise la gestion des actions de génération et de déploiement dans tous vos environnements, y compris l’évaluation et la production professionnelles, à l’aide de variables d’environnement. |
+| [&#x200B; Application &#x200B;](../application/configure-app-yaml.md) | `.magento.app.yaml` | Définit comment créer et déployer Adobe Commerce, y compris les services, les hooks et les tâches cron. |
+| [&#x200B; Environnement &#x200B;](configure-env-yaml.md) | `.magento.env.yaml` | Centralise la gestion des actions de génération et de déploiement dans tous vos environnements, y compris l’évaluation et la production professionnelles, à l’aide de variables d’environnement. |
 | [Itinéraires](../routes/routes-yaml.md) | `.magento/routes.yaml` | Configurez la mise en cache, les redirections et les inclusions côté serveur. |
-| [Service ](../services/services-yaml.md) | `.magento/services.yaml` | Définit les services utilisés par Adobe Commerce par nom et par version. Par exemple, ce fichier peut inclure des versions de MariaDB, des extensions PHP, Redis, RabbitMQ et Elasticsearch ou OpenSearch. Vous devez ouvrir un ticket d’assistance pour pousser ces modifications vers les environnements d’évaluation et de production ProPlan. |
+| [Service &#x200B;](../services/services-yaml.md) | `.magento/services.yaml` | Définit les services utilisés par Adobe Commerce par nom et par version. Par exemple, ce fichier peut inclure des versions de MariaDB, des extensions PHP, Redis, RabbitMQ et Elasticsearch ou OpenSearch. Vous devez ouvrir un ticket d’assistance pour pousser ces modifications vers les environnements d’évaluation et de production ProPlan. |
 | [Paramètres PHP](../application/php-settings.md#configure-php) | `php.ini` | Fichier facultatif qui peut être ajouté au projet. Les paramètres contenus dans ce fichier sont ajoutés à ceux gérés par l’infrastructure cloud. |
 
 {style="table-layout:auto"}

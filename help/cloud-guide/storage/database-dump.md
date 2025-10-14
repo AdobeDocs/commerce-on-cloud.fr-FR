@@ -19,7 +19,7 @@ Tenez compte des instructions suivantes pour l’image mémoire de la base de do
 - Pour les environnements de production, Adobe recommande d’effectuer les opérations de vidage de la base de données pendant les heures creuses afin de minimiser les interruptions de service qui se produisent lorsque le site est en mode de maintenance.
 - Si une erreur se produit lors de l’opération de vidage, la commande supprime le fichier de vidage pour préserver l’espace disque. Consultez les journaux pour plus de détails (`var/log/cloud.log`).
 - Pour les environnements de production Pro, cette commande n’effectue le vidage qu’à partir de _un_ des trois nœuds à haute disponibilité, de sorte que les données de production écrites sur un autre nœud au cours du vidage peuvent ne pas être copiées. La commande génère un fichier `var/dbdump.lock` pour empêcher l’exécution de la commande sur plusieurs nœuds.
-- Pour une sauvegarde de tous les services d’environnement, Adobe recommande de créer une [ sauvegarde ](snapshots.md).
+- Pour une sauvegarde de tous les services d’environnement, Adobe recommande de créer une [&#x200B; sauvegarde &#x200B;](snapshots.md).
 
 Vous pouvez choisir de sauvegarder plusieurs bases de données en ajoutant les noms de base de données à la commande . L&#39;exemple suivant sauvegarde deux bases de données : `main` et `sales` :
 

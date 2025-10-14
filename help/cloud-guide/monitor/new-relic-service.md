@@ -32,8 +32,8 @@ Les fonctionnalités New Relic suivantes sont disponibles pour une utilisation a
 - **Surveillance des requêtes de base de données** : localisez et surveillez les requêtes de base de données qui affectent les performances.
 - **App Map** : permet d’afficher toutes les dépendances d’applications au sein de votre site, de vos extensions et de vos services externes.
 - **[!DNL Apdex]les scores**—Évaluez les performances et créez des alertes qui identifient les problèmes et vous informent lorsqu&#39;ils se produisent, par exemple les performances du site affectées par une vente flash ou un événement web. Voir [Score Apdex](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction/).
-- **Alertes gérées pour Adobe Commerce**-utilisez cette stratégie d’alerte New Relic pour surveiller les performances des applications et de l’infrastructure en fonction des bonnes pratiques du secteur. Voir [ Surveillance des performances avec la politique d’alerte Alertes gérées pour Adobe Commerce](investigate-performance.md/#monitor-performance-with-managed-alerts).
-- **Suivi des déploiements** : surveillez les événements de déploiement et analysez l’impact du déploiement sur les performances globales. Voir [ Suivi des déploiements ](track-deployments.md).
+- **Alertes gérées pour Adobe Commerce**-utilisez cette stratégie d’alerte New Relic pour surveiller les performances des applications et de l’infrastructure en fonction des bonnes pratiques du secteur. Voir [&#x200B; Surveillance des performances avec la politique d’alerte Alertes gérées pour Adobe Commerce](investigate-performance.md/#monitor-performance-with-managed-alerts).
+- **Suivi des déploiements** : surveillez les événements de déploiement et analysez l’impact du déploiement sur les performances globales. Voir [&#x200B; Suivi des déploiements &#x200B;](track-deployments.md).
 
 Votre projet d’infrastructure cloud d’Adobe Commerce comprend le logiciel pour le service New Relic APM ainsi qu’une clé de licence. Vous n&#39;avez pas besoin d&#39;acheter ou d&#39;installer un logiciel supplémentaire.
 

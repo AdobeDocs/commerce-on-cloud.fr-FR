@@ -26,7 +26,7 @@ Vous devez obtenir un jeton GitLab et un webhook pour continuer le processus.
 ## Conditions préalables
 
 - Accès des administrateurs au projet d’infrastructure cloud d’Adobe Commerce
-- [`magento-cloud` de l’interface de ligne ](../dev-tools/cloud-cli-overview.md) commande dans votre environnement local
+- [`magento-cloud` de l’interface de ligne &#x200B;](../dev-tools/cloud-cli-overview.md) commande dans votre environnement local
 - Un compte GitLab
 - Un jeton d’accès personnel GitLab avec un accès en écriture au référentiel GitLab, les portées sélectionnées doivent être au moins : `api` et `read_repository`.
 

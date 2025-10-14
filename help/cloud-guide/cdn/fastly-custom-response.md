@@ -121,7 +121,7 @@ Vous pouvez utiliser l’option **Pages synthétiques personnalisées** > **Modi
 
 1. Dans le volet de droite, développez **Cache de page complet** > **Configuration rapide** > **Pages synthétiques personnalisées**.
 
-   ![Option Modifier la page d’erreur WAF ](../../assets/cdn/fastly-custom-synthetic-pages-edit-waf.png)
+   ![Option Modifier la page d’erreur WAF &#x200B;](../../assets/cdn/fastly-custom-synthetic-pages-edit-waf.png)
 
 1. Sélectionnez **Modifier la page WAF**.
 

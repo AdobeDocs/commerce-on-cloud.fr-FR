@@ -38,7 +38,7 @@ La phase _post-déploiement_ exécute les hooks de post-déploiement définis da
 
 ## ![Vérification de l’état](../../assets/status-verify.png) Vérification des configurations
 
-Vous pouvez tester la configuration optimale pour l’état de votre projet en exécutant les [ Assistants intelligents ](smart-wizards.md).
+Vous pouvez tester la configuration optimale pour l’état de votre projet en exécutant les [&#x200B; Assistants intelligents &#x200B;](smart-wizards.md).
 
 >[!NOTE]
 >

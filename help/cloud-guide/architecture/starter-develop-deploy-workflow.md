@@ -74,7 +74,7 @@ Le format de la commande Cloud CLI `branch` est le suivant :
 magento-cloud environment:branch <environment-name> <parent-environment-ID>
 ```
 
-![Branche du Principal ](../../assets/starter/branching.png)
+![Branche du Principal &#x200B;](../../assets/starter/branching.png)
 
 ### Développer du code
 
@@ -109,7 +109,7 @@ Pour obtenir de meilleures informations sur les configurations, consultez la doc
 - [Configuration du système](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/guide-overview) pour les rôles, les outils, les notifications et votre clé de chiffrement pour la base de données
 - Paramètres d’extension utilisant leur documentation
 
-Outre les paramètres de la boutique, vous pouvez configurer plusieurs sites et boutiques, services configurés, etc. Voir [ Configuration de votre boutique ](../store/overview.md).
+Outre les paramètres de la boutique, vous pouvez configurer plusieurs sites et boutiques, services configurés, etc. Voir [&#x200B; Configuration de votre boutique &#x200B;](../store/overview.md).
 
 ### Générer des fichiers de gestion de la configuration
 
@@ -218,13 +218,13 @@ Envoyez toujours votre code par itérations vers l’environnement `staging` pou
 
 L’évaluation est un environnement de préproduction qui fournit tous les services et paramètres aussi proche que possible de la production. Testez minutieusement chaque service, vérifiez vos outils de test de performance, effectuez des tests UAT en tant qu’administrateur et client, jusqu’à ce que vous sentiez que votre boutique est prête pour la production.
 
-Voir [ Déployer votre boutique ](../deploy/staging-production.md).
+Voir [&#x200B; Déployer votre boutique &#x200B;](../deploy/staging-production.md).
 
 ### Intégrer à la production
 
 Lorsque vous effectuez une transmission de type push vers la branche `master`, vous effectuez une transmission de type push vers l’environnement `production`. Effectuez les activités de configuration et de test dans l’environnement de production comme vous l’avez fait dans l’environnement d’évaluation avec une différence importante. Dans l’environnement de production, utilisez les informations d’identification actives pour la configuration et les tests. Au moment où vous lancez votre site, les clients peuvent effectuer des achats et les administrateurs peuvent gérer la boutique en ligne.
 
-Voir [ Déployer votre boutique ](../deploy/staging-production.md).
+Voir [&#x200B; Déployer votre boutique &#x200B;](../deploy/staging-production.md).
 
 ### Lancement du site
 

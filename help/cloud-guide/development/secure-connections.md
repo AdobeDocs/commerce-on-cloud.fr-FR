@@ -176,7 +176,7 @@ Vérifiez si des tunnels sont ouverts à l’aide de .
 magento-cloud tunnel:list
 ```
 
-Pour construire un tunnel, vous devez connaître le [ nom de l’application ](../application/properties.md#name). Vous pouvez vérifier le nom de l’application à l’aide de l’interface de ligne de commande :
+Pour construire un tunnel, vous devez connaître le [&#x200B; nom de l’application &#x200B;](../application/properties.md#name). Vous pouvez vérifier le nom de l’application à l’aide de l’interface de ligne de commande :
 
 ```bash
 magento-cloud apps
