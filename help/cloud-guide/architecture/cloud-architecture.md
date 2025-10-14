@@ -4,9 +4,10 @@ description: Découvrez le contraste des architectures de projet Starter et Pro 
 feature: Cloud, Iaas, Paas
 topic: Architecture
 recommendations: noDisplay
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 7c1e895d-0f88-4f11-919a-b3b5748ca5f0
+source-git-commit: 5fc2082ca2aae8a1466821075c01ce756ba382cc
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -19,8 +20,8 @@ Adobe Commerce sur les infrastructures cloud dispose d’un plan Starter et Pro.
 
 |          | Démarreur | Pro |
 | -------- | --------------------| ------------------ |
-| Fonctionnalités principales | <ul><li>[Toutes les fonctionnalités d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/features.html?lang=fr)</li><li>Outil d’intégration PayPal</li><li>[Rapports Commerce](https://business.adobe.com/products/magento/business-intelligence.html?_ga=2.85288604.442698376.1665067470-1322106587.1655147209)</li></ul> | <ul><li>[Toutes les fonctionnalités d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/features.html?lang=fr)</li><li>Outil d’intégration PayPal</li><li>[Rapports Commerce](https://business.adobe.com/products/magento/business-intelligence.html?_ga=2.85288604.442698376.1665067470-1322106587.1655147209)</li><li>[Module B2B](https://business.adobe.com/products/magento/b2b-ecommerce.html?_ga=2.105948422.442698376.1665067470-1322106587.1655147209)</li></ul> |
-| Infrastructure et déploiement | <ul><li>Outils d’intégration cloud continue avec un nombre illimité d’utilisateurs</li><li>Fast Content Delivery Network (CDN), Optimisation des images (IO) et sécurité accrue avec de larges bandes passantes. Le service Pare-feu d’application web (WAF) est disponible uniquement dans les environnements de production.</li><li>[New Relic](../monitor/new-relic-service.md) APM (Performance Monitoring) sur 3 branches : `master` et 2 de votre choix<br>environnements de production, d’évaluation et de développement de Platform as a service (PaaS) (4 environnements actifs au total) optimisés pour Adobe Commerce</li><li>Filtrage des sorties (pare-feu sortant)</li></ul> | <ul><li>Outils d’intégration cloud continue avec un nombre illimité d’utilisateurs</li><li>Fast Content Delivery Network (CDN), Optimisation des images (IO) et sécurité accrue avec de larges bandes passantes. Le service Pare-feu d’application web (WAF) est disponible uniquement dans les environnements de production.</li><li>[New Relic &#x200B;](../monitor/new-relic-service.md) Infrastructure en production + APM (surveillance des performances) en évaluation et en production. La politique [&#x200B; Alertes gérées &#x200B;](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts) pour Adobe Commerce met en œuvre les bonnes pratiques de surveillance afin de vous informer de manière proactive des problèmes d’application et d’infrastructure affectant les performances du site.</li><li>Environnements basés sur Platform as a service (PaaS) [développement de l’intégration](pro-architecture.md#integration-environment) (2 environnements actifs au total) optimisés pour Adobe Commerce</li><li>Infrastructure en tant que service (IaaS) : infrastructure virtuelle dédiée aux environnements d’évaluation et de production</li></ul> |
+| Fonctionnalités principales | <ul><li>[Toutes les fonctionnalités d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/features.html)</li><li>Outil d’intégration PayPal</li><li>[Rapports Commerce](https://business.adobe.com/products/magento/business-intelligence.html?_ga=2.85288604.442698376.1665067470-1322106587.1655147209)</li></ul> | <ul><li>[Toutes les fonctionnalités d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/features.html)</li><li>Outil d’intégration PayPal</li><li>[Rapports Commerce](https://business.adobe.com/products/magento/business-intelligence.html?_ga=2.85288604.442698376.1665067470-1322106587.1655147209)</li><li>[Module B2B](https://business.adobe.com/products/magento/b2b-ecommerce.html?_ga=2.105948422.442698376.1665067470-1322106587.1655147209)</li></ul> |
+| Infrastructure et déploiement | <ul><li>Outils d’intégration cloud continue avec un nombre illimité d’utilisateurs</li><li>Fast Content Delivery Network (CDN), Optimisation des images (IO) et sécurité accrue avec de larges bandes passantes. Le service Pare-feu d’application web (WAF) est disponible uniquement dans les environnements de production.</li><li>[New Relic](../monitor/new-relic-service.md) APM (Performance Monitoring) sur 3 branches : `master` et 2 de votre choix<br>environnements de production, d’évaluation et de développement de Platform as a service (PaaS) (4 environnements actifs au total) optimisés pour Adobe Commerce</li><li>Filtrage des sorties (pare-feu sortant)</li></ul> | <ul><li>Outils d’intégration cloud continue avec un nombre illimité d’utilisateurs</li><li>Fast Content Delivery Network (CDN), Optimisation des images (IO) et sécurité accrue avec de larges bandes passantes. Le service Pare-feu d’application web (WAF) est disponible uniquement dans les environnements de production.</li><li>[New Relic ](../monitor/new-relic-service.md) Infrastructure en production + APM (surveillance des performances) en évaluation et en production. La politique [ Alertes gérées ](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts) pour Adobe Commerce met en œuvre les bonnes pratiques de surveillance afin de vous informer de manière proactive des problèmes d’application et d’infrastructure affectant les performances du site.</li><li>Environnements basés sur Platform as a service (PaaS) [développement de l’intégration](pro-architecture.md#integration-environment) (2 environnements actifs au total) optimisés pour Adobe Commerce</li><li>Infrastructure en tant que service (IaaS) : infrastructure virtuelle dédiée aux environnements d’évaluation et de production</li></ul> |
 | Infrastructure à haute disponibilité | | [Architecture haute disponibilité](pro-architecture.md#redundant-hardware) avec une configuration à trois serveurs dans l’infrastructure en tant que service (IaaS) sous-jacente pour offrir une fiabilité et une disponibilité de niveau entreprise |
 | Matériel dédié | | Matériel isolé et dédié dans l’infrastructure en tant que service (IaaS) sous-jacente pour offrir des niveaux encore plus élevés de fiabilité et de disponibilité |
 | Assistance par e-mail 24h/24 et 7j/7 | surveillance et prise en charge par e-mail 24h/24 et 7j/7 de l’application principale et de l’infrastructure cloud | surveillance et prise en charge par e-mail 24h/24 et 7j/7 de l’application principale et de l’infrastructure cloud |
@@ -68,6 +69,7 @@ Vous pouvez configurer les services suivants :
 - [MySQL](../services/mysql.md)
 - [Redis](../services/redis.md)
 - [RabbitMQ](../services/rabbitmq.md)
+- [ActiveMQ](../services/activemq.md)
 - [Elasticsearch](../services/elasticsearch.md)
 - [OpenSearch](../services/opensearch.md)
 
@@ -75,7 +77,7 @@ Vous pouvez configurer les services suivants :
 
 >[!NOTE]
 >
->Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) dans le _Guide d’installation_ pour obtenir les versions recommandées.
+>Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) dans le _Guide d’installation_ pour obtenir les versions recommandées.
 
 Le module Fastly CDN est utilisé pour les services de réseau CDN et de mise en cache sur les environnements d’évaluation et de production. Voir [Configuration des services Fastly](../cdn/fastly.md).
 

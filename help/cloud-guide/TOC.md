@@ -3,9 +3,9 @@ user-guide-title: Guide de Commerce sur le cloud
 user-guide-description: Découvrez comment gérer l’application Adobe Commerce sur l’infrastructure cloud.
 product: magento
 feature: Cloud
-source-git-commit: 3347ad0a5fe202cbd80d08b7289c20a1c98ed1e3
+source-git-commit: 5fc2082ca2aae8a1466821075c01ce756ba382cc
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '360'
 ht-degree: 8%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 8%
    + [Workflow Pro](architecture/pro-develop-deploy-workflow.md)
    + [Architecture à grande échelle](architecture/scaled-architecture.md)
    + [Mise à l’échelle automatique](architecture/autoscaling.md)
-+ [Commencer](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=fr)
++ [Commencer](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html)
 + Notes de mise à jour {#release-notes}
    + [Suite d’outils cloud](release-notes/cloud-tools-suite.md)
    + [Ensemble d&#39;outils de la CEE](release-notes/ece-tools-package.md)
@@ -131,6 +131,7 @@ ht-degree: 8%
       + [Inclusions côté serveur](routes/server-side-includes.md)
    + Services tertiaires {#service}
       + [Configuration des services](services/services-yaml.md)
+      + [ActiveMQ](services/activemq.md)
       + [Elasticsearch](services/elasticsearch.md)
       + [MySQL](services/mysql.md)
       + [OpenSearch](services/opensearch.md)

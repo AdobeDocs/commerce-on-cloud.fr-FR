@@ -2,20 +2,25 @@
 title: Configuration du service RabbitMQ
 description: Découvrez comment activer le service RabbitMQ pour gérer les files d’attente de messages pour Adobe Commerce sur l’infrastructure cloud.
 feature: Cloud, Services
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 64af1dfa-e3f0-4404-a352-659ca47c1121
+source-git-commit: 2df119f1c09b92e45ae30544e5c2ee0e0d21834c
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
 
 # Configuration du service [!DNL RabbitMQ]
 
-Le [Message Queue Framework (MQF)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html?lang=fr) est un système d’Adobe Commerce qui permet à un [module](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/glossary#module) de publier des messages dans les files d’attente. Il définit également les consommateurs qui reçoivent les messages de manière asynchrone.
+Le [Message Queue Framework (MQF)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) est un système d’Adobe Commerce qui permet à un [module](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module) de publier des messages dans les files d’attente. Il définit également les consommateurs qui reçoivent les messages de manière asynchrone.
 
-MQF utilise [RabbitMQ](https://www.rabbitmq.com/) comme courtier de messagerie, qui fournit une plateforme évolutive pour envoyer et recevoir des messages. Il comprend également un mécanisme de stockage des messages non diffusés. [!DNL RabbitMQ] est basé sur la spécification AMQP (Advanced Message Queuing Protocol) 0.9.1.
+Le MQF utilise [RabbitMQ](https://www.rabbitmq.com/) comme courtier de messagerie, ce qui fournit une plateforme évolutive pour envoyer et recevoir des messages. Il comprend également un mécanisme de stockage des messages non diffusés. [!DNL RabbitMQ] est basé sur la spécification AMQP (Advanced Message Queuing Protocol) 0.9.1.
 
->[!WARNING]
+>[!NOTE]
+>
+>Adobe Commerce sur les infrastructures cloud prend également en charge [ActiveMQ Artemis](activemq.md) en tant que service de file d’attente de messages alternatif à l’aide du protocole STOMP.
+
+>[!IMPORTANT]
 >
 >Si vous préférez utiliser un service basé sur AMQP existant, comme [!DNL RabbitMQ], au lieu de vous fier à Adobe Commerce sur une infrastructure cloud pour le créer, utilisez la variable d’environnement [`QUEUE_CONFIGURATION`](../environment/variables-deploy.md#queue_configuration) pour le connecter à votre site.
 
@@ -23,7 +28,7 @@ MQF utilise [RabbitMQ](https://www.rabbitmq.com/) comme courtier de messagerie, 
 
 **Pour activer RabbitMQ** :
 
-1. Ajoutez le nom, le type et la valeur de disque requis (en Mo) au fichier `.magento/services.yaml` avec la version RabbitMQ installée.
+1. Ajoutez le nom, le type et la valeur de disque requis (en Mo) au fichier `.magento/services.yaml` avec la version de RabbitMQ installée.
 
    ```yaml
    rabbitmq:
@@ -56,7 +61,7 @@ MQF utilise [RabbitMQ](https://www.rabbitmq.com/) comme courtier de messagerie, 
 
 {{service-change-tip}}
 
-## Connexion à RabbitMQ pour le débogage
+## Se connecter à RabbitMQ pour le débogage
 
 À des fins de débogage, il est utile de se connecter directement à une instance de service de l’une des manières suivantes :
 
@@ -84,7 +89,7 @@ MQF utilise [RabbitMQ](https://www.rabbitmq.com/) comme courtier de messagerie, 
    magento-cloud ssh
    ```
 
-1. Récupérez les détails de connexion et les informations d’identification de connexion RabbitMQ à partir de la variable [$MAGENTO_CLOUD_RELATIONSHIPS](../application/properties.md#relationships) :
+1. Récupérez les informations de connexion et les informations d’identification RabbitMQ à partir de la variable [$MAGENTO_CLOUD_RELATIONSHIPS](../application/properties.md#relationships) :
 
    ```bash
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
@@ -113,7 +118,7 @@ MQF utilise [RabbitMQ](https://www.rabbitmq.com/) comme courtier de messagerie, 
    }
    ```
 
-1. Activez le transfert du port local vers RabbitMQ (si votre projet est situé dans une autre région telle que US-3, EU-5 ou AP-3, remplacez ``us`` par ``us-3``/``eu-5``/``ap-3``).
+1. Activez le transfert du port local vers RabbitMQ (si votre projet est situé dans une autre région telle que US-3, EU-5 ou région AP-3, remplacez ``us-3``/``eu-5``/``ap-3`` par ``us``).
 
    ```bash
    ssh -L <port-number>:rabbitmq.internal:<port-number> <project-ID>-<branch-ID>@ssh.us.magentosite.cloud
@@ -125,7 +130,7 @@ MQF utilise [RabbitMQ](https://www.rabbitmq.com/) comme courtier de messagerie, 
    ssh -L 15672:rabbitmq.internal:15672 <project-ID>-<branch-ID>@ssh.us.magentosite.cloud
    ```
 
-1. Lorsque la session est ouverte, vous pouvez démarrer un client RabbitMQ de votre choix à partir de votre station de travail locale, configurée pour se connecter au `localhost:<portnumber>` à l’aide du numéro de port, du nom d’utilisateur et du mot de passe de la variable MAGENTO_CLOUD_RELATIONSHIPS .
+1. Lorsque la session est ouverte, vous pouvez démarrer un client RabbitMQ de votre choix à partir de votre poste de travail local, configuré pour se connecter au `localhost:<portnumber>` à l’aide du numéro de port, du nom d’utilisateur et du mot de passe de la variable MAGENTO_CLOUD_RELATIONSHIPS .
 
 ### Connexion depuis l&#39;application
 
