@@ -24,7 +24,7 @@ ht-degree: 8%
    + [Workflow Pro](architecture/pro-develop-deploy-workflow.md)
    + [Architecture à grande échelle](architecture/scaled-architecture.md)
    + [Mise à l’échelle automatique](architecture/autoscaling.md)
-+ [Commencer](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html)
++ [Commencer](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=fr)
 + Notes de mise à jour {#release-notes}
    + [Suite d’outils cloud](release-notes/cloud-tools-suite.md)
    + [Ensemble d&#39;outils de la CEE](release-notes/ece-tools-package.md)
