@@ -819,7 +819,7 @@ Connectez-vous à Magento Cloud à l’aide d’un jeton API
 Use this command to log in to your Magento Cloud account using an API token.
 
 You can create an account at:
-    https://business.adobe.com/products/magento/magento-commerce.html
+    https://business.adobe.com/fr/products/magento/magento-commerce.html
 
 If you have an account, but you do not already have an API token, you can create one here:
     https://accounts.magento.cloud/user/api-tokens
