@@ -36,7 +36,7 @@ Fastly fournit les services suivants pour optimiser et sécuriser les opération
 
    - [Pare-feu d’application web](fastly-waf-service.md) (WAF) : service de pare-feu d’application web géré qui fournit une protection compatible PCI pour bloquer le trafic malveillant avant qu’il ne puisse endommager votre Adobe Commerce de production sur les sites et le réseau d’infrastructure cloud. Le service WAF est disponible uniquement dans les environnements de production Pro et Starter.
 
-   - [Protection DDoS (Distributed Denial of Service)](#ddos-protection) : protection DDoS intégrée contre les attaques de couches 3 et 4 courantes telles que les attaques Ping of Death, les attaques Smurf et d&#39;autres attaques par inondation basées sur ICMP. La protection intégrée n’inclut pas la protection contre les attaques de couche 7. Voir [ Protection DDoS ](#ddos-protection).
+   - [Protection DDoS (Distributed Denial of Service)](#ddos-protection) : protection DDoS intégrée contre les attaques de couches 3 et 4 courantes telles que les attaques Ping of Death, les attaques Smurf et d&#39;autres attaques par inondation basées sur ICMP. La protection intégrée n’inclut pas la protection contre les attaques de couche 7. Voir [&#x200B; Protection DDoS &#x200B;](#ddos-protection).
 
    - [Certificats SSL/TLS](fastly-configuration.md#provision-ssltls-certificates) : le service Fastly nécessite un certificat SSL/TLS pour traiter le trafic sécurisé via HTTPS.
 
@@ -54,7 +54,7 @@ Fastly fournit les services suivants pour optimiser et sécuriser les opération
 
 Les services Fastly pour Adobe Commerce sur les infrastructures cloud utilisent le module [Fastly CDN pour Magento 2] installé dans les environnements suivants : évaluation et production pro, démarrage de la production (branche `master`).
 
-Lors de l’approvisionnement initial ou de la mise à niveau de votre projet Adobe Commerce, Adobe installe la dernière version du module Fast CDN dans vos environnements d’évaluation et de production. Lorsque Fastly publie des mises à jour de module, vous recevez des notifications dans l’Admin pour vos environnements. Adobe vous recommande de mettre à jour vos environnements pour utiliser la dernière version. Voir [ Mise à niveau rapide ](fastly-configuration.md#upgrade-the-fastly-module).
+Lors de l’approvisionnement initial ou de la mise à niveau de votre projet Adobe Commerce, Adobe installe la dernière version du module Fast CDN dans vos environnements d’évaluation et de production. Lorsque Fastly publie des mises à jour de module, vous recevez des notifications dans l’Admin pour vos environnements. Adobe vous recommande de mettre à jour vos environnements pour utiliser la dernière version. Voir [&#x200B; Mise à niveau rapide &#x200B;](fastly-configuration.md#upgrade-the-fastly-module).
 
 ## Compte de service et informations d’identification Fastly
 
