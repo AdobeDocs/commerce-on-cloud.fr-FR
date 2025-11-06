@@ -3,7 +3,7 @@ title: Affichage et gestion des journaux
 description: Identifiez les types de fichiers journaux disponibles dans l’infrastructure cloud et où les trouver.
 last-substantial-update: 2023-05-23T00:00:00Z
 exl-id: f0bb8830-8010-4764-ac23-d63d62dc0117
-source-git-commit: 731cc36816afdb5374269e871d337e056a71c050
+source-git-commit: afdc6f2b72d53199634faff7f30fd87ff3b31f3f
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 0%
@@ -77,13 +77,13 @@ ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
 >[!TIP]
 >
 >Pour les environnements d’évaluation et de production Pro, la rotation, la compression et la suppression automatiques des journaux sont activées pour les fichiers journaux ayant un nom de fichier fixe. Chaque type de fichier journal possède un modèle rotatif et une durée de vie.
->&#x200B;>Vous trouverez des détails complets sur la rotation des journaux de l’environnement et la durée de vie des journaux compressés dans : `/etc/logrotate.conf` et `/etc/logrotate.d/<various>`.
->&#x200B;>Pour les environnements d’évaluation et de production Pro, vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour demander des modifications dans la configuration de la rotation du journal.
+>Vous trouverez des détails complets sur la rotation des journaux de l’environnement et la durée de vie des journaux compressés dans : `/etc/logrotate.conf` et `/etc/logrotate.d/<various>`.
+>Pour les environnements d’évaluation et de production Pro, vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour demander des modifications dans la configuration de la rotation du journal.
 
 >[!TIP]
 >
 >La rotation de journal ne peut pas être configurée dans les environnements d&#39;intégration Pro.
->&#x200B;>Pour l’intégration Pro, vous devez mettre en œuvre une solution/un script personnalisé et [configurer votre cron](../application/crons-property.md) pour exécuter le script si nécessaire.
+>Pour l’intégration Pro, vous devez mettre en œuvre une solution/un script personnalisé et [configurer votre cron](../application/crons-property.md) pour exécuter le script si nécessaire.
 
 >[!NOTE]
 >
@@ -189,7 +189,7 @@ title: The configured state is not ideal
 type: warning
 ```
 
-La plupart des messages d’erreur contiennent une description et une action suggérée. Utilisez la référence [Message d&#39;erreur pour ECE-Tools](../dev-tools/error-reference.md) pour rechercher le code d&#39;erreur afin d&#39;obtenir d&#39;autres indications. Pour plus d’informations, utilisez l’utilitaire de dépannage du déploiement d’Adobe Commerce [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=fr).
+La plupart des messages d’erreur contiennent une description et une action suggérée. Utilisez la référence [Message d&#39;erreur pour ECE-Tools](../dev-tools/error-reference.md) pour rechercher le code d&#39;erreur afin d&#39;obtenir d&#39;autres indications. Pour plus d’informations, utilisez l’utilitaire de dépannage du déploiement d’Adobe Commerce [](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
 
 ## Logs de l&#39;application
 
@@ -219,7 +219,7 @@ Pour les environnements d’évaluation et de production Pro, les journaux Dépl
 
 ### Fichiers journaux archivés
 
-Les journaux d’application sont compressés et archivés une fois par jour et conservés pendant 365 jours **par défaut (pour les clusters d’évaluation et de production Pro**. La rotation des journaux n’est pas disponible dans tous les environnements d’intégration/de démarrage. Les journaux compressés sont nommés à l’aide d’un identifiant unique qui correspond au `Number of Days Ago + 1`. Par exemple, sur les environnements de production Pro, un journal d’accès PHP datant de 21 jours est stocké et nommé comme suit :
+Les journaux d’application sont compressés et archivés une fois par jour et conservés pendant **30 jours** par défaut (pour les clusters d’évaluation et de production Pro). La rotation des journaux n’est pas disponible dans tous les environnements d’intégration/de démarrage. Les journaux compressés sont nommés à l’aide d’un identifiant unique qui correspond au `Number of Days Ago + 1`. Par exemple, sur les environnements de production Pro, un journal d’accès PHP datant de 21 jours est stocké et nommé comme suit :
 
 ```
 /var/log/platform/<project-ID>/php.access.log.22.gz
@@ -227,7 +227,7 @@ Les journaux d’application sont compressés et archivés une fois par jour et 
 
 Les fichiers journaux archivés sont toujours stockés dans le répertoire où se trouvait le fichier d’origine avant la compression.
 
-Vous pouvez [envoyer un ticket d’assistance](https://experienceleague.adobe.com/home?lang=fr&support-tab=home#support) pour demander des modifications de votre période de conservation des journaux ou de la configuration de la connexion. Vous pouvez augmenter la période de rétention jusqu’à un maximum de 365 jours, la réduire pour conserver le quota de stockage ou ajouter des chemins de journal supplémentaires à la configuration de logrotate. Ces modifications sont disponibles pour les clusters d’évaluation et de production Pro.
+Vous pouvez [envoyer un ticket d’assistance](https://experienceleague.adobe.com/home?support-tab=home#support) pour demander des modifications de votre période de conservation des journaux ou de la configuration de la connexion. Vous pouvez augmenter la période de rétention jusqu’à un maximum de 365 jours, la réduire pour conserver le quota de stockage ou ajouter des chemins de journal supplémentaires à la configuration de logrotate. Ces modifications sont disponibles pour les clusters d’évaluation et de production Pro.
 
 Par exemple, si vous créez un chemin personnalisé pour stocker les journaux dans le répertoire `var/log/mymodule`, vous pouvez demander la rotation des journaux pour ce chemin. Toutefois, l’infrastructure actuelle nécessite des noms de fichiers cohérents pour qu’Adobe configure correctement la rotation des journaux. Adobe recommande de conserver la cohérence des noms de journal afin d’éviter des problèmes de configuration.
 
