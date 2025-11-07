@@ -156,4 +156,4 @@ Voir [Impossible de se connecter à RabbitMQ dans Adobe Commerce Cloud](https://
 
 ## Mettre à niveau le service [!DNL RabbitMQ]
 
-Pour obtenir des instructions de mise à niveau, voir [ Modifier la version du service ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version).
+Pour obtenir des instructions de mise à niveau, voir [&#x200B; Modifier la version du service &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version).
