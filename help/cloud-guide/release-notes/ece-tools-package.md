@@ -410,7 +410,7 @@ Date de publication : 6 février 2020
 
 >[!NOTE]
 >
->Avant de mettre à jour vers la version 2002.1.0 de ECE-Tools, passez en revue le [rétrospectif   modifications incompatibles ](backward-incompatible-changes.md) pour en savoir plus sur les modifications qui pourraient nécessiter que vous   mettez à jour Adobe Commerce sur la configuration ou les processus de projet d’infrastructure cloud.
+>Avant de mettre à jour vers la version 2002.1.0 de ECE-Tools, passez en revue le [rétrospectif   modifications incompatibles &#x200B;](backward-incompatible-changes.md) pour en savoir plus sur les modifications qui pourraient nécessiter que vous   mettez à jour Adobe Commerce sur la configuration ou les processus de projet d’infrastructure cloud.
 
 - ![nouvelle icône](../../assets/new.svg) **Mises à jour des services**—
 
@@ -438,7 +438,7 @@ Date de publication : 6 février 2020
 
 - ![nouvelle icône](../../assets/new.svg) **mises à jour des commandes CLI**—
 
-   - ![nouvelle icône](../../assets/new.svg) **Nouvelle commande cron**—Vous pouvez désormais gérer manuellement le traitement cron dans votre environnement Adobe Commerce sur l&#39;infrastructure cloud à l&#39;aide des commandes `cron:disable` et `cron:enable`. Utilisez la commande disable pour arrêter tous les processus cron actifs et désactiver toutes les tâches cron. Utilisez la commande d’activation pour réactiver les tâches cron lorsque vous êtes prêt. Voir [ Désactiver les tâches cron ](../application/crons-property.md#disable-cron-jobs).
+   - ![nouvelle icône](../../assets/new.svg) **Nouvelle commande cron**—Vous pouvez désormais gérer manuellement le traitement cron dans votre environnement Adobe Commerce sur l&#39;infrastructure cloud à l&#39;aide des commandes `cron:disable` et `cron:enable`. Utilisez la commande disable pour arrêter tous les processus cron actifs et désactiver toutes les tâches cron. Utilisez la commande d’activation pour réactiver les tâches cron lorsque vous êtes prêt. Voir [&#x200B; Désactiver les tâches cron &#x200B;](../application/crons-property.md#disable-cron-jobs).
 
    - ![nouvelle icône](../../assets/new.svg) **Amélioration des rapports d&#39;erreur**—Ajout d&#39;une meilleure journalisation pour les défaillances de commande CLI qui se produisent pendant le traitement ECE-Tools.<!--MAGECLOUD-4849-->
 
