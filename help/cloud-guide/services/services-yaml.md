@@ -3,9 +3,9 @@ title: Configuration des services
 description: Découvrez comment configurer les services utilisés par Adobe Commerce sur les infrastructures cloud.
 feature: Cloud, Configuration, Services
 exl-id: ddf44b7c-e4ae-48f0-97a9-a219e6012492
-source-git-commit: 5fc2082ca2aae8a1466821075c01ce756ba382cc
+source-git-commit: 322f7af2c79dd4eeeabafa2ba7e5a32cbd8b1925
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1070'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,6 @@ Le fichier `services.yaml` définit les services pris en charge et utilisés par
 >[!NOTE]
 >
 >Le fichier `.magento/services.yaml` est géré localement dans le répertoire `.magento` de votre projet. La configuration est accessible pendant le processus de création afin de définir les versions de service requises dans l’environnement d’intégration uniquement. Elle est supprimée une fois le déploiement terminé. Vous ne les trouverez donc pas sur le serveur.
-
 
 Le script de déploiement utilise les fichiers de configuration du répertoire `.magento` pour fournir à l’environnement les services configurés. Un service devient disponible pour votre application s’il est inclus dans la propriété [`relationships`](../application/properties.md#relationships) du fichier `.magento.app.yaml`. Le fichier `services.yaml` contient les valeurs _type_ et _disk_. Le type de service définit le service _nom_ et _version_.
 
@@ -39,7 +38,11 @@ L’infrastructure cloud prend en charge et déploie les services suivants :
 - [Elasticsearch](elasticsearch.md)
 - [OpenSearch](opensearch.md)
 
-Vous pouvez afficher les versions par défaut et les valeurs de disque dans le fichier [&#x200B; actuel `services.yaml`par défaut](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). L’exemple suivant montre les services `mysql`, `redis`, `opensearch` ou `elasticsearch`, `rabbitmq` et `activemq-artemis` définis dans le fichier de configuration `services.yaml` :
+>[!NOTE]
+>
+>Après la mise à niveau vers une nouvelle version de RabbitMQ, déclenchez un déploiement complet pour vous assurer que vos files d’attente de messages personnalisées sont recréées dans RabbitMQ.
+
+Vous pouvez afficher les versions par défaut et les valeurs de disque dans le fichier [ actuel `services.yaml`par défaut](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). L’exemple suivant montre les services `mysql`, `redis`, `opensearch` ou `elasticsearch`, `rabbitmq` et `activemq-artemis` définis dans le fichier de configuration `services.yaml` :
 
 ```yaml
 mysql:
@@ -177,7 +180,7 @@ Vous pouvez récupérer les données de configuration pour toutes les relations 
 
 ## Versions des services
 
-La prise en charge des versions de service et de la compatibilité pour Adobe Commerce sur l’infrastructure cloud est déterminée par les versions déployées et testées sur l’infrastructure cloud et diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Consultez [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) dans le guide _Installation_ pour obtenir une liste des dépendances logicielles tierces qu’Adobe a testées avec des versions spécifiques d’Adobe Commerce et de Magento Open Source.
+La prise en charge des versions de service et de la compatibilité pour Adobe Commerce sur l’infrastructure cloud est déterminée par les versions déployées et testées sur l’infrastructure cloud et diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Consultez [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) dans le guide _Installation_ pour obtenir une liste des dépendances logicielles tierces qu’Adobe a testées avec des versions spécifiques d’Adobe Commerce et de Magento Open Source.
 
 ### Vérifications de fin de vie du logiciel
 
@@ -186,7 +189,7 @@ Pendant le processus de déploiement, le package `ece-tools` vérifie les versio
 - Si une version de service est en cours depuis moins de trois mois, une notification s’affiche dans le journal de déploiement.
 - Si la date de fin de vie est passée, une notification d’avertissement s’affiche.
 
-Pour maintenir la sécurité du magasin, mettez à jour les versions logicielles installées avant qu&#39;elles n&#39;atteignent leur fin de vie. Vous pouvez consulter les dates de fin de vie dans le fichier [&#x200B; de `eol.yaml`ece-tools](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
+Pour maintenir la sécurité du magasin, mettez à jour les versions logicielles installées avant qu&#39;elles n&#39;atteignent leur fin de vie. Vous pouvez consulter les dates de fin de vie dans le fichier [ de `eol.yaml`ece-tools](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
 ### Migrer vers OpenSearch
 
