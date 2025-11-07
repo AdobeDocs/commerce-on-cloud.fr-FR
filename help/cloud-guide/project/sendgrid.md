@@ -31,7 +31,7 @@ Vous pouvez activer ou désactiver les e-mails sortants pour chaque environnemen
 
 Par défaut, les e-mails sortants sont activés sur les environnements de production et d’évaluation Pro. Cependant, [!UICONTROL Outgoing emails] peut sembler désactivé dans les paramètres d’environnement jusqu’à ce que vous définissiez la propriété `enable_smtp` via [ligne de commande](outgoing-emails.md#enable-emails-in-the-cli) ou [console cloud](outgoing-emails.md#enable-emails-in-the-cloud-console). Vous pouvez activer les e-mails sortants pour les environnements d’intégration et d’évaluation afin d’envoyer une authentification à deux facteurs ou réinitialiser les e-mails de mot de passe pour les utilisateurs de projets cloud. Voir [Configuration des e-mails pour les tests](outgoing-emails.md).
 
-Si les e-mails sortants doivent être désactivés ou réactivés dans les environnements de production ou d’évaluation Pro, vous pouvez envoyer un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Si les e-mails sortants doivent être désactivés ou réactivés dans les environnements de production ou d’évaluation Pro, vous pouvez envoyer un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 >[!TIP]
 >
@@ -41,7 +41,7 @@ Si les e-mails sortants doivent être désactivés ou réactivés dans les envir
 
 Tous les projets cloud sont gérés sous un compte central, de sorte que seul le support technique a accès au tableau de bord SendGrid. SendGrid ne fournit pas de fonctionnalités de restriction de sous-compte.
 
-Pour consulter les logs d’activité concernant le statut de la diffusion ou une liste d’adresses e-mail de rebond, de rejet ou de blocage, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). L’équipe d’assistance **ne peut pas** récupérer les journaux d’activité datant de plus de 30 jours.
+Pour consulter les logs d’activité concernant le statut de la diffusion ou une liste d’adresses e-mail de rebond, de rejet ou de blocage, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). L’équipe d’assistance **ne peut pas** récupérer les journaux d’activité datant de plus de 30 jours.
 
 Si possible, joignez les informations suivantes à votre demande :
 
@@ -55,7 +55,7 @@ DKIM est une technologie d’authentification des e-mails qui permet aux fournis
 
 >[!WARNING]
 >
->Les signatures SendGrid DKIM et la prise en charge de l’authentification de domaine ne sont disponibles que dans les environnements de production et d’évaluation pour les projets Pro, mais pas dans tous les environnements de démarrage. Par conséquent, les e-mails transactionnels sortants sont susceptibles d&#39;être marqués par des filtres de spam. L’utilisation de DKIM améliore le taux de diffusion en tant qu’expéditeur d’e-mail authentifié. Pour améliorer le taux de diffusion des messages, vous pouvez effectuer une mise à niveau de Starter vers Pro ou utiliser votre propre serveur SMTP ou votre fournisseur de services de diffusion par e-mail. Voir [Configurer les connexions par e-mail](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-communications) dans le guide _Admin Systems_.
+>Les signatures SendGrid DKIM et la prise en charge de l’authentification de domaine ne sont disponibles que dans les environnements de production et d’évaluation pour les projets Pro, mais pas dans tous les environnements de démarrage. Par conséquent, les e-mails transactionnels sortants sont susceptibles d&#39;être marqués par des filtres de spam. L’utilisation de DKIM améliore le taux de diffusion en tant qu’expéditeur d’e-mail authentifié. Pour améliorer le taux de diffusion des messages, vous pouvez effectuer une mise à niveau de Starter vers Pro ou utiliser votre propre serveur SMTP ou votre fournisseur de services de diffusion par e-mail. Voir [Configurer les connexions par e-mail](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/communications/email-communications) dans le guide _Admin Systems_.
 
 ### Authentification de l’expéditeur et du domaine
 
@@ -67,7 +67,7 @@ Pour que SendGrid envoie des e-mails transactionnels en votre nom à partir d&#3
 
 **Pour activer l’authentification de domaine** :
 
-1. Envoyez un [&#x200B; ticket d’assistance &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) pour demander l’activation de DKIM pour un domaine spécifique (**environnements d’évaluation et de production Pro uniquement**).
+1. Envoyez un [&#x200B; ticket d’assistance &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) pour demander l’activation de DKIM pour un domaine spécifique (**environnements d’évaluation et de production Pro uniquement**).
 1. Mettez à jour votre configuration DNS avec les enregistrements `TXT` et `CNAME` qui vous ont été fournis dans le ticket de support.
 
 **Exemple d&#39;enregistrement `TXT` avec l&#39;identifiant de compte** :
@@ -118,7 +118,7 @@ dig CNAME s2._domainkey.domain_name
 
 Le seuil des e-mails transactionnels fait référence au nombre d’e-mails transactionnels que vous pouvez envoyer à partir d’environnements Pro au cours d’une période spécifique, par exemple 12 000 e-mails par mois provenant d’environnements hors production. Le seuil est conçu pour vous protéger contre l&#39;envoi de spam et les dommages potentiels à la réputation de vos emails.
 
-Il n’existe aucune limite stricte au nombre d’e-mails pouvant être envoyés dans l’environnement de production, tant que le score de réputation de l’expéditeur est supérieur à 95 %. La réputation est affectée par le nombre d&#39;e-mails rejetés ou rejetés et si les registres de spam basés sur DNS ont signalé votre domaine comme source potentielle de spam. Voir [E-mails non envoyés lorsque les crédits SendGrid sont dépassés sur Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/emails-not-being-sent-sendgrid-credits-exceeded) dans la base de connaissances de la prise en charge de _Commerce_.
+Il n’existe aucune limite stricte au nombre d’e-mails pouvant être envoyés dans l’environnement de production, tant que le score de réputation de l’expéditeur est supérieur à 95 %. La réputation est affectée par le nombre d&#39;e-mails rejetés ou rejetés et si les registres de spam basés sur DNS ont signalé votre domaine comme source potentielle de spam. Voir [E-mails non envoyés lorsque les crédits SendGrid sont dépassés sur Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/emails-not-being-sent-sendgrid-credits-exceeded) dans la base de connaissances de la prise en charge de _Commerce_.
 
 **Pour vérifier si le nombre maximal de crédits est dépassé** :
 
@@ -132,7 +132,7 @@ Il n’existe aucune limite stricte au nombre d’e-mails pouvant être envoyés
 
 1. Recherchez des entrées de `/var/log/mail.log` dans la `authentication failed : Maxium credits exceeded`.
 
-   Si vous voyez des entrées de journal `authentication failed` et que la **réputation d’envoi d’e-mail** est d’au moins 95, vous pouvez [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) pour demander une augmentation de l’allocation de crédit.
+   Si vous voyez des entrées de journal `authentication failed` et que la **réputation d’envoi d’e-mail** est d’au moins 95, vous pouvez [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) pour demander une augmentation de l’allocation de crédit.
 
 >[!NOTE]
 >
@@ -148,6 +148,6 @@ Une liste de suppression des e-mails est une liste de destinataires auxquels les
 
 Pour empêcher l&#39;envoi d&#39;e-mails vers le dossier des courriers indésirables, suivez l&#39;article Bonnes pratiques de Sendgrid, [Pourquoi mes e-mails vont-ils dans le courrier indésirable ?](https://sendgrid.com/en-us/blog/10-tips-to-keep-email-out-of-the-spam-folder).
 
-Si certains destinataires ne reçoivent pas vos e-mails, vous pouvez [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) pour demander une révision des listes de suppression et supprimer le(s) destinataire(s) si nécessaire.
+Si certains destinataires ne reçoivent pas vos e-mails, vous pouvez [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) pour demander une révision des listes de suppression et supprimer le(s) destinataire(s) si nécessaire.
 
 Pour plus d’informations, voir [Qu’est-ce qu’une liste de suppression ?](https://sendgrid.com/en-us/blog/what-is-a-suppression-list)
