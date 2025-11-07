@@ -4,9 +4,9 @@ description: Voir la liste des dernières améliorations apportées au progiciel
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: e39b348b02b4edfbe091420c54a20b320387a4b6
+source-git-commit: 562fd6e1dcd09600e00d034a94509b2dfd69d1ef
 workflow-type: tm+mt
-source-wordcount: '3286'
+source-wordcount: '3314'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,14 @@ Les notes de mise à jour incluent les éléments suivants :
 
 <!--Add release notes below-->
 
-## v2002.2.8 {#latest}
+## v2002.2.9 {#latest}
+
+Date de publication : 6 novembre 2025
+
+- ![Icône de correction](../../assets/fix.svg) **Package Symfony**-Ajout de la prise en charge des derniers packages Symfony YAML.<!-- MCLOUD-14020 -->
+- ![icône de correction](../../assets/fix.svg) **nettoyage du cache fixe pour les services actifs** - Ajout de la validation des services actifs.<!-- MCLOUD-14166 -->
+
+## v2002.2.8
 
 Date de publication : 8 octobre 2025
 
@@ -410,7 +417,7 @@ Date de publication : 6 février 2020
 
 >[!NOTE]
 >
->Avant de mettre à jour vers la version 2002.1.0 de ECE-Tools, passez en revue le [rétrospectif   modifications incompatibles &#x200B;](backward-incompatible-changes.md) pour en savoir plus sur les modifications qui pourraient nécessiter que vous   mettez à jour Adobe Commerce sur la configuration ou les processus de projet d’infrastructure cloud.
+>Avant de mettre à jour vers la version 2002.1.0 de ECE-Tools, passez en revue le [rétrospectif   modifications incompatibles ](backward-incompatible-changes.md) pour en savoir plus sur les modifications qui pourraient nécessiter que vous   mettez à jour Adobe Commerce sur la configuration ou les processus de projet d’infrastructure cloud.
 
 - ![nouvelle icône](../../assets/new.svg) **Mises à jour des services**—
 
@@ -438,7 +445,7 @@ Date de publication : 6 février 2020
 
 - ![nouvelle icône](../../assets/new.svg) **mises à jour des commandes CLI**—
 
-   - ![nouvelle icône](../../assets/new.svg) **Nouvelle commande cron**—Vous pouvez désormais gérer manuellement le traitement cron dans votre environnement Adobe Commerce sur l&#39;infrastructure cloud à l&#39;aide des commandes `cron:disable` et `cron:enable`. Utilisez la commande disable pour arrêter tous les processus cron actifs et désactiver toutes les tâches cron. Utilisez la commande d’activation pour réactiver les tâches cron lorsque vous êtes prêt. Voir [&#x200B; Désactiver les tâches cron &#x200B;](../application/crons-property.md#disable-cron-jobs).
+   - ![nouvelle icône](../../assets/new.svg) **Nouvelle commande cron**—Vous pouvez désormais gérer manuellement le traitement cron dans votre environnement Adobe Commerce sur l&#39;infrastructure cloud à l&#39;aide des commandes `cron:disable` et `cron:enable`. Utilisez la commande disable pour arrêter tous les processus cron actifs et désactiver toutes les tâches cron. Utilisez la commande d’activation pour réactiver les tâches cron lorsque vous êtes prêt. Voir [ Désactiver les tâches cron ](../application/crons-property.md#disable-cron-jobs).
 
    - ![nouvelle icône](../../assets/new.svg) **Amélioration des rapports d&#39;erreur**—Ajout d&#39;une meilleure journalisation pour les défaillances de commande CLI qui se produisent pendant le traitement ECE-Tools.<!--MAGECLOUD-4849-->
 
