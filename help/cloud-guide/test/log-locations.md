@@ -3,9 +3,9 @@ title: Affichage et gestion des journaux
 description: Identifiez les types de fichiers journaux disponibles dans l’infrastructure cloud et où les trouver.
 last-substantial-update: 2023-05-23T00:00:00Z
 exl-id: f0bb8830-8010-4764-ac23-d63d62dc0117
-source-git-commit: afdc6f2b72d53199634faff7f30fd87ff3b31f3f
+source-git-commit: 445c5162f9d3436d9e5fe3df41af47189e344cfd
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1313'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,37 @@ Les journaux système sont stockés aux emplacements suivants :
 La valeur de `<project-ID>` dépend du projet et du statut de l’environnement : Évaluation ou Production. Par exemple, avec un ID de projet de `yw1unoukjcawe`, l’utilisateur de l’environnement d’évaluation est `yw1unoukjcawe_stg` et l’utilisateur de l’environnement de production est `yw1unoukjcawe`.
 
 Dans cet exemple, le journal de déploiement est le suivant : `/var/log/platform/yw1unoukjcawe_stg/deploy.log`
+
+### Recherche d’enregistrements de journal d’erreurs spécifiques
+
+Lorsque vous rencontrez une erreur avec un numéro d’enregistrement de journal spécifique (tel que `475a3bca674d3bbc77b35973d028e6da1cbee7404888bfb113daffc6b2f4a7b9`), vous pouvez localiser l’enregistrement en interrogeant les journaux d’environnement distant du serveur d’applications Commerce à l’aide des méthodes suivantes :
+
+>[!NOTE]
+>
+>Pour obtenir des instructions sur l’accès aux journaux d’environnement distant de votre application Commerce à l’aide de Secure Shell (SSH), voir [Connexions sécurisées à des environnements distants](../development/secure-connections.md).
+
+#### Méthode 1 : recherche à l’aide de grep
+
+```bash
+# Search for the specific error record in all log files
+magento-cloud ssh -e <environment-ID> "grep -r '475a3bca674d3bbc77b35973d028e6da1cbee7404888bfb113daffc6b2f4a7b9' /var/log/"
+
+# Search in specific log files
+magento-cloud ssh -e <environment-ID> "grep '475a3bca674d3bbc77b35973d028e6da1cbee7404888bfb113daffc6b2f4a7b9' /var/log/exception.log"
+```
+
+#### Méthode 2 : recherche dans les journaux archivés
+
+Si l’erreur s’est produite dans le passé, vérifiez les fichiers journaux archivés :
+
+```bash
+# Search in compressed log files
+magento-cloud ssh -e <environment-ID> "find /var/log -name '*.gz' -exec zgrep '475a3bca674d3bbc77b35973d028e6da1cbee7404888bfb113daffc6b2f4a7b9' {} \;"
+```
+
+#### Méthode 3 : utilisation de New Relic (environnements Pro)
+
+Pour les environnements de production et d’évaluation Pro, utilisez les journaux New Relic pour rechercher des enregistrements d’erreurs spécifiques. Pour plus d’informations, consultez la section [Gestion des journaux New Relic](../monitor/log-management.md).
 
 ### Affichage des journaux d’environnement distant
 
@@ -78,7 +109,7 @@ ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
 >
 >Pour les environnements d’évaluation et de production Pro, la rotation, la compression et la suppression automatiques des journaux sont activées pour les fichiers journaux ayant un nom de fichier fixe. Chaque type de fichier journal possède un modèle rotatif et une durée de vie.
 >Vous trouverez des détails complets sur la rotation des journaux de l’environnement et la durée de vie des journaux compressés dans : `/etc/logrotate.conf` et `/etc/logrotate.d/<various>`.
->Pour les environnements d’évaluation et de production Pro, vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour demander des modifications dans la configuration de la rotation du journal.
+>Pour les environnements d’évaluation et de production Pro, vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour demander des modifications dans la configuration de la rotation du journal.
 
 >[!TIP]
 >
@@ -143,7 +174,7 @@ Exemple de réponse :
 ```
 Reading log file projectID-branchname-ID--mymagento@ssh.zone.magento.cloud:/var/log/'deploy.log'
 
-[2023-04-24 18:58:03.080678] Launching command 'b'php ./vendor/bin/ece-tools run scenario/deploy.xml\n''.
+[2023-04-24 18:58:03.080678] Launching command 'b'php ./vendor/bin/ece-tools run scenario/deploy.xml\\n''.
 
 [2023-04-24T18:58:04.129888+00:00] INFO: Starting scenario(s): scenario/deploy.xml (magento/ece-tools version: 2002.1.14, magento/magento2-base version: 2.4.6)
 [2023-04-24T18:58:04.364714+00:00] NOTICE: Starting pre-deploy.
@@ -189,7 +220,7 @@ title: The configured state is not ideal
 type: warning
 ```
 
-La plupart des messages d’erreur contiennent une description et une action suggérée. Utilisez la référence [Message d&#39;erreur pour ECE-Tools](../dev-tools/error-reference.md) pour rechercher le code d&#39;erreur afin d&#39;obtenir d&#39;autres indications. Pour plus d’informations, utilisez l’utilitaire de dépannage du déploiement d’Adobe Commerce [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=fr).
+La plupart des messages d’erreur contiennent une description et une action suggérée. Utilisez la référence [Message d&#39;erreur pour ECE-Tools](../dev-tools/error-reference.md) pour rechercher le code d&#39;erreur afin d&#39;obtenir d&#39;autres indications. Pour plus d’informations, utilisez l’utilitaire de dépannage du déploiement d’Adobe Commerce [](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
 
 ## Logs de l&#39;application
 
@@ -227,7 +258,7 @@ Les journaux d’application sont compressés et archivés une fois par jour et 
 
 Les fichiers journaux archivés sont toujours stockés dans le répertoire où se trouvait le fichier d’origine avant la compression.
 
-Vous pouvez [envoyer un ticket d’assistance](https://experienceleague.adobe.com/home?lang=fr&support-tab=home#support) pour demander des modifications de votre période de conservation des journaux ou de la configuration de la connexion. Vous pouvez augmenter la période de rétention jusqu’à un maximum de 365 jours, la réduire pour conserver le quota de stockage ou ajouter des chemins de journal supplémentaires à la configuration de logrotate. Ces modifications sont disponibles pour les clusters d’évaluation et de production Pro.
+Vous pouvez [envoyer un ticket d’assistance](https://experienceleague.adobe.com/home?support-tab=home#support) pour demander des modifications de votre période de conservation des journaux ou de la configuration de la connexion. Vous pouvez augmenter la période de rétention jusqu’à un maximum de 365 jours, la réduire pour conserver le quota de stockage ou ajouter des chemins de journal supplémentaires à la configuration de logrotate. Ces modifications sont disponibles pour les clusters d’évaluation et de production Pro.
 
 Par exemple, si vous créez un chemin personnalisé pour stocker les journaux dans le répertoire `var/log/mymodule`, vous pouvez demander la rotation des journaux pour ce chemin. Toutefois, l’infrastructure actuelle nécessite des noms de fichiers cohérents pour qu’Adobe configure correctement la rotation des journaux. Adobe recommande de conserver la cohérence des noms de journal afin d’éviter des problèmes de configuration.
 
