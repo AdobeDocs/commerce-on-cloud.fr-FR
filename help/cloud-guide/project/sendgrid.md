@@ -63,11 +63,11 @@ Pour que SendGrid envoie des e-mails transactionnels en votre nom à partir d&#3
 
 >[!TIP]
 >
->Assurez-vous de configurer l’option **[!UICONTROLSstocker les adresses e-mail]** avec le domaine approprié dans **[!UICONTROL Stores > Configuration > General > Store Email Addresses]**. L’authentification de domaine est effectuée sur l’adresse e-mail de l’expéditeur. Si le paramètre par défaut (`example.com`) est configuré, les e-mails provenant de `example.com` sont bloqués par Sendgrid.
+>Assurez-vous de configurer l’option **[!UICONTROL Sstocker les adresses e-mail]** avec le domaine approprié dans **[!UICONTROL Stores > Configuration > General > Store Email Addresses]**. L’authentification de domaine est effectuée sur l’adresse e-mail de l’expéditeur. Si le paramètre par défaut (`example.com`) est configuré, les e-mails provenant de `example.com` sont bloqués par Sendgrid.
 
 **Pour activer l’authentification de domaine** :
 
-1. Envoyez un [ ticket d’assistance ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) pour demander l’activation de DKIM pour un domaine spécifique (**environnements d’évaluation et de production Pro uniquement**).
+1. Envoyez un [&#x200B; ticket d’assistance &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) pour demander l’activation de DKIM pour un domaine spécifique (**environnements d’évaluation et de production Pro uniquement**).
 1. Mettez à jour votre configuration DNS avec les enregistrements `TXT` et `CNAME` qui vous ont été fournis dans le ticket de support.
 
 **Exemple d&#39;enregistrement `TXT` avec l&#39;identifiant de compte** :
