@@ -5,9 +5,10 @@ role: Admin
 feature: Cloud, Roles/Permissions
 last-substantial-update: 2023-06-27T00:00:00Z
 topic: Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 953593de-f675-49fd-988f-f11306f67fbd
+source-git-commit: c972d9f2029499cf53edc334c1d9a40b155a991d
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
@@ -38,7 +39,7 @@ Vous pouvez ajouter des utilisateurs et affecter des rôles à l’aide de l’i
 
 **Conditions préalables :**
 
-- Utilisateur enregistré avec un Adobe ID. Un utilisateur doit [s’inscrire à un compte d’Adobe &#x200B;](https://account.adobe.com) puis [initialiser son compte Cloud](https://console.adobecommerce.com) avant de pouvoir l’ajouter à un projet cloud.
+- Utilisateur enregistré avec un Adobe ID. Un utilisateur doit [s’inscrire à un compte Adobe](https://account.adobe.com), puis initialiser son compte [Cloud](https://console.adobecommerce.com) en consultant le site [https://console.adobecommerce.com](https://console.adobecommerce.com) avant de pouvoir l’ajouter à un projet cloud.
 - Un utilisateur disposant du rôle **Admin** ne peut pas gérer les utilisateurs avec l’interface de ligne de commande `magento-cloud`. Seuls les utilisateurs dotés du rôle **Propriétaire du compte** peuvent gérer les utilisateurs.
 
 >[!ENDSHADEBOX]
@@ -213,7 +214,7 @@ Les instructions d’installation de l’application d’authentification et d�
 
    - Cliquez sur **[!UICONTROL Verify and save]**.
 
-     Si le code est valide, Adobe envoie une notification à l’adresse e-mail du compte confirmant que le compte dispose désormais de l’autorisation TFA.
+     Si le code est valide, Adobe envoie une notification à l’adresse e-mail du compte confirmant que ce dernier dispose désormais de l’autorisation TFA.
 
 1. Facultatif. Activez les paramètres _Navigateur approuvé_ pour mettre en cache le code d’authentification dans le navigateur pendant 30 jours.
 
@@ -231,7 +232,7 @@ Les instructions d’installation de l’application d’authentification et d�
 
      >[!WARNING]
      >
-     >Si vous perdez l’accès à un compte avec TFA et que vous ne disposez pas de la liste des codes de récupération, vous devez contacter l’administrateur de votre projet ou [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour réinitialiser l’application TFA.
+     >Si vous perdez l’accès à un compte avec TFA et que vous ne disposez pas de la liste des codes de récupération, vous devez contacter l’administrateur de votre projet ou [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour réinitialiser l’application TFA.
 
 1. Une fois la configuration de l’AFE terminée, cliquez sur **Enregistrer** pour mettre à jour votre compte.
 
@@ -266,7 +267,7 @@ Dans les projets pour lesquels l’application MFA est activée, vous devez disp
 
 >[!IMPORTANT]
 >
->Valeurs du jeton API Protect pour votre compte. N’exposez pas la valeur dans les exemples de code, les captures d’écran ou les communications client-serveur non sécurisées. En outre, n’exposez pas la valeur dans le code source stocké dans les référentiels publics.
+>Protégez les valeurs de jeton API pour votre compte. N’exposez pas la valeur dans les exemples de code, les captures d’écran ou les communications client-serveur non sécurisées. En outre, n’exposez pas la valeur dans le code source stocké dans les référentiels publics.
 
 **Pour créer un jeton API** :
 
@@ -278,6 +279,6 @@ Dans les projets pour lesquels l’application MFA est activée, vous devez disp
 
 1. Cliquez sur **[!UICONTROL Create API token]** et saisissez un nom, par exemple, spécifiez un nom correspondant à l’utilisateur de la machine ou au processus automatisé qui utilise le jeton API.
 
-   ![&#x200B; Jetons API &#x200B;](../../assets/api-token-name.png)
+   ![ Jetons API ](../../assets/api-token-name.png)
 
 1. Cliquez sur **[!UICONTROL Create API token]**.
