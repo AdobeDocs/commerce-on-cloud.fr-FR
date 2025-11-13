@@ -443,7 +443,7 @@ Date de publication : 5 février 2020
 
    - ![nouvelle icône](../../assets/new.svg) **Mises à jour de `build:compose` commande**—
 
-      - ![nouvelle icône](../../assets/new.svg) Ajout de l’option `--sync-engine="native"` à la commande `docker-build` pour désactiver la synchronisation des fichiers lorsque vous générez le fichier de configuration Docker Compose en mode développeur. Utilisez cette option lors du développement sur des systèmes Linux, qui ne nécessitent pas de synchronisation de fichiers pour le développement local de Docker. Voir [ Synchronisation des données dans l’environnement Docker ](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data/).<!--MCLOUD-3231, MCLOUD-3890-->
+      - ![nouvelle icône](../../assets/new.svg) Ajout de l’option `--sync-engine="native"` à la commande `docker-build` pour désactiver la synchronisation des fichiers lorsque vous générez le fichier de configuration Docker Compose en mode développeur. Utilisez cette option lors du développement sur des systèmes Linux, qui ne nécessitent pas de synchronisation de fichiers pour le développement local de Docker. Voir [&#x200B; Synchronisation des données dans l’environnement Docker &#x200B;](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data/).<!--MCLOUD-3231, MCLOUD-3890-->
 
    - ![nouvelle icône](../../assets/new.svg) Modification du paramètre de synchronisation de fichiers par défaut de `docker-sync` à `native`. [Correctif soumis par Mathew Beane de Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/124).<!--MAGECLOUD-5066-->
 
