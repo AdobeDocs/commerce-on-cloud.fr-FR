@@ -23,7 +23,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>La période de conservation des fichiers journaux archivés pour Commerce dans les projets cloud est désormais de 30 jours. Voir <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations">Afficher et gérer les journaux</a> dans le guide Commerce sur Cloud .</p>
+      <td><p>La période de conservation des fichiers journaux archivés pour Commerce dans les projets cloud est désormais de 30 jours. Voir <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/test/log-locations">Afficher et gérer les journaux</a> dans le guide Commerce sur Cloud .</p>
 </td>
       <td>
         Technique, commentaires
@@ -45,7 +45,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">référence CLI</a> après la version 2002.2.8 des outils ECE.</p>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">référence CLI</a> après la version 2002.2.8 des outils ECE.</p>
 </td>
       <td>
         Technique
@@ -67,7 +67,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference">référence de l’interface de ligne de commande</a> après la version 1.47.0 de l’interface de ligne de commande Cloud.</p>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference">référence de l’interface de ligne de commande</a> après la version 1.47.0 de l’interface de ligne de commande Cloud.</p>
 </td>
       <td>
         Technique
