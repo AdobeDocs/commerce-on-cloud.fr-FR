@@ -1,23 +1,24 @@
 ---
-title: Configurer le service Elasticsearch
+title: Configuration du service Elasticsearch
 description: Découvrez comment activer le service Elasticsearch pour Adobe Commerce sur l’infrastructure cloud.
 feature: Cloud, Search, Services
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 238b9ed5-ce73-428f-9459-35de8573d5d8
+source-git-commit: ef22e7b305c20148f4ee4b2c0e64e2114bf229b5
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
 
-# Configurer le service Elasticsearch
+# Configuration du service Elasticsearch
 
-[Elasticsearch &#x200B;](https://www.elastic.co) est un produit open-source qui vous permet de prendre des données de n’importe quelle source, n’importe quel format, et de les rechercher et de les visualiser en temps réel.
+[Elasticsearch](https://www.elastic.co) est un produit open-source qui vous permet de prendre des données de n’importe quelle source, n’importe quel format, et de les rechercher et de les visualiser en temps réel.
 
 {{elasticsearch-support}}
 
 Pour Adobe Commerce version 2.4.4 et ultérieure, voir [Configuration du service OpenSearch](opensearch.md).
 
-- Elasticsearch effectue des recherches rapides et avancées sur les produits du catalogue de produits
+- Elasticsearch effectue des recherches rapides et avancées sur les produits du catalogue
 - Les analyseurs Elasticsearch prennent en charge plusieurs langues
 - Prend en charge les mots vides et les synonymes
 - L’indexation n’affecte pas les clients tant que l’opération de réindexation n’est pas terminée
@@ -28,9 +29,9 @@ Pour Adobe Commerce version 2.4.4 et ultérieure, voir [Configuration du service
 
 {{service-instruction}}
 
-**Pour activer l’Elasticsearch** :
+**Pour activer Elasticsearch** :
 
-1. Pour les projets de démarrage, ajoutez le service `elasticsearch` au fichier `.magento/services.yaml` avec la version Elasticsearch et l’espace disque alloué en Mo.
+1. Pour les projets de démarrage, ajoutez le service `elasticsearch` au fichier `.magento/services.yaml` avec la version d’Elasticsearch et l’espace disque alloué en Mo.
 
    ```yaml
    elasticsearch:
@@ -38,7 +39,7 @@ Pour Adobe Commerce version 2.4.4 et ultérieure, voir [Configuration du service
        disk: 1024
    ```
 
-   Pour les projets Pro, vous devez envoyer un ticket d’assistance Adobe Commerce pour modifier la version de l’Elasticsearch dans les environnements d’évaluation et de production.
+   Pour les projets Pro, vous devez envoyer un ticket d’assistance Adobe Commerce pour modifier la version d’Elasticsearch dans les environnements d’évaluation et de production.
 
 1. Définissez la propriété `relationships` dans le fichier `.magento.app.yaml`.
 
@@ -79,13 +80,13 @@ Pour Adobe Commerce version 2.4.4 et ultérieure, voir [Configuration du service
 
 Lorsque vous installez ou mettez à niveau votre projet d’infrastructure Adobe Commerce sur le cloud, vérifiez toujours la compatibilité entre la version du service Elasticsearch et le client [Elasticsearch PHP](https://github.com/elastic/elasticsearch-php) pour Adobe Commerce.
 
-- **Première configuration**-Vérifiez que la version Elasticsearch spécifiée dans le fichier `services.yaml` est compatible avec le client PHP Elasticsearch configuré pour Adobe Commerce.
+- **Première configuration**-Vérifiez que la version d’Elasticsearch spécifiée dans le fichier `services.yaml` est compatible avec le client Elasticsearch PHP configuré pour Adobe Commerce.
 
-- **Mise à niveau du projet**-Vérifiez que le client PHP Elasticsearch dans la nouvelle version de l&#39;application est compatible avec la version du service Elasticsearch installée sur l&#39;infrastructure cloud.
+- **Mise à niveau du projet**-Vérifiez que le client PHP Elasticsearch dans la nouvelle version de l’application est compatible avec la version du service Elasticsearch installée sur l’infrastructure cloud.
 
 La prise en charge des versions de service et de la compatibilité pour Adobe Commerce sur l’infrastructure cloud est déterminée par les versions déployées sur l’infrastructure cloud et diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Voir [Versions des services](services-yaml.md#service-versions).
 
-**Pour vérifier la compatibilité logicielle Elasticsearch** :
+**Pour vérifier la compatibilité logicielle d’Elasticsearch** :
 
 1. Sur votre station de travail locale, accédez au répertoire du projet.
 
@@ -124,7 +125,7 @@ La prise en charge des versions de service et de la compatibilité pour Adobe Co
    names    : elasticsearch/elasticsearch
    ```
 
-   En outre, vous pouvez retrouver la version Elasticsearch du client PHP dans le fichier `composer.lock` dans le répertoire racine de l&#39;environnement.
+   En outre, la version du client PHP Elasticsearch est disponible dans le fichier `composer.lock` du répertoire racine de l&#39;environnement.
 
 1. À partir de la ligne de commande, récupérez les détails de connexion au service Elasticsearch.
 
@@ -191,13 +192,13 @@ La prise en charge des versions de service et de la compatibilité pour Adobe Co
      composer require "elasticsearch/elasticsearch:~<version>"
      ```
 
-   - Remplacez la version du service Elasticsearch dans le fichier `services.yaml` par une version compatible avec le client PHP Elasticsearch.
+   - Remplacez la version du service Elasticsearch du fichier `services.yaml` par une version compatible avec le client Elasticsearch PHP.
 
      {{pro-update-service}}
 
 ## Redémarrez le service Elasticsearch
 
-Si vous devez redémarrer le service [Elasticsearch &#x200B;](https://www.elastic.co), vous devez contacter l&#39;assistance Adobe Commerce.
+Si vous devez redémarrer le service [Elasticsearch](https://www.elastic.co), vous devez contacter l’assistance Adobe Commerce.
 
 ## Configuration de recherche supplémentaire
 
@@ -205,7 +206,7 @@ Si vous devez redémarrer le service [Elasticsearch &#x200B;](https://www.elasti
 
 - Une fois que vous avez configuré le service Elasticsearch pour votre projet, utilisez l’interface utilisateur d’administration pour tester la connexion Elasticsearch et personnaliser les paramètres Elasticsearch pour Adobe Commerce.
 
-### Ajout de modules externes pour l’Elasticsearch
+### Ajout de modules externes pour Elasticsearch
 
 Vous pouvez éventuellement ajouter des modules externes pour Elasticsearch en ajoutant la section `configuration:plugins` au service Elasticsearch dans le fichier `.magento/services.yaml`. Par exemple, le code suivant active les modules externes d’analyse ICU et d’analyse phonétique.
 
@@ -222,11 +223,11 @@ elasticsearch:
 Si vous utilisez le plug-in tiers Elastic Suite, vous devez [mettre à jour le package `ece-tools`](../dev-tools/update-package.md) vers la version 2002.0.19 ou ultérieure.
 Lors de la configuration d’Elastic Suite, ajoutez les paramètres de configuration à la variable de déploiement `ELASTICSUITE_CONFIGURATION`. Cette configuration enregistre les paramètres dans tous les déploiements.
 
-### Supprimer les modules externes pour l’Elasticsearch
+### Suppression de modules externes pour Elasticsearch
 
-La suppression des entrées du plug-in d’`elasticsearch:` dans `.magento/services.yaml` ne les désinstalle pas ou ne les désactive pas comme vous pourriez vous y attendre. Vous devez réindexer les données de votre Elasticsearch. Ce comportement est destiné à empêcher la perte ou la corruption possible des données qui dépendent de ces modules externes.
+La suppression des entrées du plug-in d’`elasticsearch:` dans `.magento/services.yaml` ne les désinstalle pas ou ne les désactive pas comme vous pourriez vous y attendre. Vous devez réindexer vos données Elasticsearch. Ce comportement est destiné à empêcher la perte ou la corruption possible des données qui dépendent de ces modules externes.
 
-**Pour supprimer des modules externes Elasticsearch** :
+**Pour supprimer les modules externes d’Elasticsearch** :
 
 1. Supprimez les entrées du module externe Elasticsearch de votre fichier `.magento/services.yaml`.
 1. Ajouter, valider et transmettre vos modifications de code.
@@ -260,10 +261,3 @@ La suppression des entrées du plug-in d’`elasticsearch:` dans `.magento/servi
 >
 >Pour plus d’informations sur l’utilisation ou la résolution des problèmes du plug-in Elastic Suite avec Adobe Commerce, consultez la [documentation Elastic Suite](https://github.com/Smile-SA/elasticsuite).
 
-## Dépannage
-
-Consultez les articles d’assistance Adobe Commerce suivants pour obtenir de l’aide sur la résolution des problèmes Elasticsearch :
-
-- [L&#39;Elasticsearch 5 est configuré, mais la page de recherche ne se charge pas avec l&#39;erreur « Fielddata is disabled... » &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html?lang=fr)
-- [Elasticsearch dans l’utilitaire de résolution de problèmes Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-in-magento-troubleshooter.html)
-- [Statut de l&#39;index Elasticsearch `yellow` ou `red`](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-index-status-is-yellow-or-red.html?lang=fr)
