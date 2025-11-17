@@ -1,5 +1,5 @@
 ---
-source-git-commit: 11d0e86ad4633d9c4232474b9921ed491f285969
+source-git-commit: 1521b83be787fd7d8e0db302bfaea48f912af572
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 3%
@@ -7,7 +7,7 @@ ht-degree: 3%
 ---
 # outils cee
 
-**Version** : 2002.2.8
+**Version** : 2002.2.9
 
 Cette référence contient 34 commandes disponibles via l’outil de ligne de commande `ece-tools`.
 La liste initiale est générée automatiquement à l’aide de la commande `ece-tools list` dans Adobe Commerce sur l’infrastructure cloud.

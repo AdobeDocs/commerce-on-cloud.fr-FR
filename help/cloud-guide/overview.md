@@ -2,7 +2,7 @@
 title: Commerce sur les infrastructures cloud
 description: Découvrez comment créer, déployer et gérer Commerce sur les infrastructures cloud.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
-source-git-commit: fddbbe499d3a75fdee420fc87cbe1aa5e5c0a918
+source-git-commit: 1521b83be787fd7d8e0db302bfaea48f912af572
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
@@ -23,7 +23,7 @@ Adobe Commerce sur les infrastructures cloud fournit une plateforme d’héberge
 
 >[!NOTE]
 >
->Pour plus d’informations sur la sécurité, consultez la [liste de contrôle de lancement de la sécurité](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
+>Pour plus d’informations sur la sécurité, consultez la [liste de contrôle de lancement de la sécurité](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
 
 Affichez la [pile technologique](architecture/tech-stack.md) en détail ou découvrez en détail les fonctionnalités spécifiques et les produits pris en charge dans [Architecture cloud pour Commerce](architecture/cloud-architecture.md).
 
@@ -58,12 +58,11 @@ Les sections suivantes fournissent des détails sur les différentes régions AW
 
 Le guide Commerce sur les infrastructures cloud suppose que vous avez une connaissance pratique et une compréhension de l’application Adobe Commerce. Consultez les guides de l’utilisateur et du développeur [!DNL Commerce] ci-dessous :
 
-- [Documentation pour les développeurs Adobe Commerce &#x200B;](https://developer.adobe.com/commerce/docs/) (site Adobe Developer) : développez, personnalisez, intégrez, étendez et utilisez des fonctionnalités avancées
+- [Documentation pour les développeurs Adobe Commerce ](https://developer.adobe.com/commerce/docs/) (site Adobe Developer) : développez, personnalisez, intégrez, étendez et utilisez des fonctionnalités avancées
 
-- [Documentation Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce.html?lang=fr) (Adobe Experience League) : planification, implémentation, exploitation, mise à niveau et maintenance de vos projets [!DNL Commerce]
+- [Documentation Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce.html) (Adobe Experience League) : planification, implémentation, exploitation, mise à niveau et maintenance de vos projets [!DNL Commerce]
 
 {{$include /help/_includes/templated/whats-new.md}}
 
 
-<!-- Last updated from includes: 2025-10-10 20:36:31 -->
-
+<!-- Last updated from includes: 2025-11-14 21:34:39 -->
