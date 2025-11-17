@@ -2,9 +2,10 @@
 title: Architecture de démarrage
 description: Découvrez les environnements pris en charge par l’architecture Starter.
 feature: Cloud, Paas
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 2f16cc60-b5f7-4331-b80e-43042a3f9b8f
+source-git-commit: 2236d0b853e2f2b8d1bafcbefaa7c23ebd5d26b3
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,9 @@ Votre architecture de démarrage d’Adobe Commerce sur l’infrastructure cloud
 
 Tous les environnements se trouvent dans des conteneurs PaaS (Platform as a service). Ces conteneurs sont déployés dans des conteneurs hautement restreints sur une grille de serveurs. Ces environnements sont en lecture seule et acceptent les modifications de code déployé des branches transmises à partir de votre espace de travail local. Chaque environnement fournit une base de données et un serveur web.
 
-Vous pouvez utiliser n’importe quelle méthodologie de développement et d’embranchement. Lorsque vous obtenez l’accès initial à votre projet, créez un environnement `staging` à partir de l’environnement `master`. Créez ensuite l’environnement `integration` en embranchant à partir de `staging`.
+>[!NOTE]
+>
+>Il n’est pas possible de modifier les autorisations sur les dossiers en lecture seule dans les environnements de démarrage. Cette restriction protège l’intégrité et la sécurité de l’application. Les autorisations de dossier sur ces systèmes de fichiers en lecture seule ne peuvent pas être modifiées. Même le support technique ne peut pas les modifier. Toutes les modifications doivent être apportées à partir d’une branche dans votre environnement de développement local et transmises à l’environnement d’application. Vous pouvez utiliser n’importe quelle méthodologie de développement et d’embranchement. Lorsque vous obtenez l’accès initial à votre projet, créez un environnement `staging` à partir de l’environnement `master`. Créez ensuite l’environnement `integration` en embranchant à partir de `staging`.
 
 ## Architecture de l’environnement de démarrage
 
@@ -29,7 +32,7 @@ L’environnement de production fournit le code source pour déployer Adobe Comm
 
 Comme l’environnement `production` est en lecture seule, utilisez l’environnement `integration` pour apporter des modifications au code, effectuer un déploiement dans l’architecture du `integration` au `staging`, et enfin dans l’environnement `production`. Voir [Déploiement de votre boutique](../deploy/staging-production.md) et [Lancement du site](../launch/overview.md).
 
-Adobe recommande d’effectuer des tests complets dans votre branche `staging` avant d’effectuer un transfert vers la branche `master`, qui se déploie vers l’environnement `production`.
+Adobe recommande d’effectuer des tests complets dans votre branche `staging` avant d’effectuer un transfert vers la branche `master`, qui se déploie dans l’environnement `production`.
 
 ## Environnement d’évaluation
 
@@ -89,7 +92,7 @@ Les environnements de production et d’évaluation incluent les technologies su
 - Fastly pour la mise en cache HTTP et le réseau CDN
 - Serveur web Nginx parlant à PHP-FPM, une instance avec plusieurs workers
 - Serveur Redis
-- Elasticsearch de recherche catalogue pour Adobe Commerce 2.2 à 2.4.3-p2
+- Recherche catalogue dans Elasticsearch pour Adobe Commerce 2.2 à 2.4.3-p2
 - OpenSearch pour la recherche catalogue dans Adobe Commerce 2.3.7-p3, 2.4.3-p2, 2.4.4 et versions ultérieures
 - Filtrage des sorties (pare-feu sortant)
 
@@ -135,7 +138,7 @@ Utilisez les fichiers suivants pour configurer les versions de logiciels que vou
 
 ### Sauvegarde et reprise après sinistre
 
-Vous pouvez créer une sauvegarde de votre base de données et de votre système de fichiers à l’aide du [!DNL Cloud Console] ou de l’interface de ligne de commande. Voir [&#x200B; Gestion des sauvegardes &#x200B;](../storage/snapshots.md).
+Vous pouvez créer une sauvegarde de votre base de données et de votre système de fichiers à l’aide du [!DNL Cloud Console] ou de l’interface de ligne de commande. Voir [ Gestion des sauvegardes ](../storage/snapshots.md).
 
 ## Préparation au développement
 

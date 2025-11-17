@@ -3,9 +3,9 @@ title: Workflow de pro-projet
 description: Découvrez comment utiliser les workflows de développement et de déploiement Pro.
 feature: Cloud, Iaas, Paas
 exl-id: efe41991-8940-4d5c-a720-80369274bee3
-source-git-commit: edff4efe0af54542321e887defc27dc96e6ae7f6
+source-git-commit: 7758ca69fc8232a8e1798c536410dc028c87fee6
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ The disk hosting /app/<cluster_ID> is full
 
 >[!NOTE]
 >
->Cette restriction protège l’intégrité et la sécurité de l’application. Les autorisations de dossier sur ces systèmes de fichiers en lecture seule ne peuvent pas être modifiées. Même le support technique ne peut pas les modifier. Toutes les modifications doivent être apportées à partir d’une branche dans votre environnement de développement local et transmises à l’environnement d’application. Pour plus d&#39;informations, consultez [Architecture Pro](pro-architecture.md) pour un aperçu des environnements Pro, et voir [[!DNL Cloud Console]](../project/overview.md#cloud-console) pour un aperçu de la liste Environnements Pro dans la vue Projet.
+>Il n&#39;est pas possible de modifier les autorisations sur les dossiers en lecture seule dans aucun des environnements Pro. Cette restriction protège l’intégrité et la sécurité de l’application. Les autorisations de dossier sur ces systèmes de fichiers en lecture seule ne peuvent pas être modifiées. Même le support technique ne peut pas les modifier. Toutes les modifications doivent être apportées à partir d’une branche dans votre environnement de développement local et transmises à l’environnement d’application. Pour plus d&#39;informations, consultez [Architecture Pro](pro-architecture.md) pour un aperçu des environnements Pro, et voir [[!DNL Cloud Console]](../project/overview.md#cloud-console) pour un aperçu de la liste Environnements Pro dans la vue Projet.
 
 ## Workflow de développement
 
@@ -101,7 +101,7 @@ Combinez toutes les modifications de code vérifiées en fusionnant votre branch
 
 L’évaluation est un environnement de préproduction qui fournit tous les services et paramètres aussi proche que possible de l’environnement de production. Envoyez toujours vos modifications de code de l’environnement `integration` vers l’environnement `staging` afin de pouvoir effectuer des tests approfondis avec tous les services. La première fois que vous utilisez l’environnement d’évaluation, vous devez configurer des services, tels que [Fast CDN](../cdn/fastly.md) et [New Relic](../monitor/new-relic-service.md). Configurez les passerelles de paiement, l’expédition, les notifications et d’autres services essentiels avec des informations d’identification de test ou de sandbox.
 
-Il est préférable de tester minutieusement chaque service, de vérifier vos outils de test de performance et d’effectuer des tests UAT en tant qu’administrateur et client, jusqu’à ce que vous sentiez que votre boutique est prête pour l’environnement de production. Voir [&#x200B; Déployer votre boutique &#x200B;](../deploy/staging-production.md).
+Il est préférable de tester minutieusement chaque service, de vérifier vos outils de test de performance et d’effectuer des tests UAT en tant qu’administrateur et client, jusqu’à ce que vous sentiez que votre boutique est prête pour l’environnement de production. Voir [ Déployer votre boutique ](../deploy/staging-production.md).
 
 {{second-staging}}
 
