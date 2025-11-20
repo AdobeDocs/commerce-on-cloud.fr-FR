@@ -138,7 +138,7 @@ Utilisez les fichiers suivants pour configurer les versions de logiciels que vou
 
 ### Sauvegarde et reprise après sinistre
 
-Vous pouvez créer une sauvegarde de votre base de données et de votre système de fichiers à l’aide du [!DNL Cloud Console] ou de l’interface de ligne de commande. Voir [ Gestion des sauvegardes ](../storage/snapshots.md).
+Vous pouvez créer une sauvegarde de votre base de données et de votre système de fichiers à l’aide du [!DNL Cloud Console] ou de l’interface de ligne de commande. Voir [&#x200B; Gestion des sauvegardes &#x200B;](../storage/snapshots.md).
 
 ## Préparation au développement
 
