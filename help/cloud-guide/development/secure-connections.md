@@ -5,9 +5,9 @@ role: Developer
 feature: Cloud, Security
 topic: Security
 exl-id: 73af13d8-7085-4ac8-9cfe-9772bc6bc112
-source-git-commit: c25e5b74ae8105995107860246ecb9ba45910bb1
+source-git-commit: 9c0b4bea11abb2ce5644556ab3dadd361f8ff449
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '1010'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Créez une paire de clés SSH sur chaque ordinateur et espace de travail qui né
 
 ## Ajouter une clé publique SSH à votre compte
 
-Après avoir ajouté ou mis à jour votre clé publique SSH sur votre compte d’infrastructure cloud Adobe Commerce, [redéployez tous les environnements actifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference#environmentredeploy) sur votre compte pour installer la clé.
+Après avoir ajouté ou mis à jour votre clé publique SSH sur votre compte d’infrastructure cloud Adobe Commerce, [redéployez tous les environnements actifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference#environmentredeploy) sur votre compte pour installer la clé.
 
 Vous pouvez ajouter des clés SSH à votre compte à l’aide de l’une des méthodes suivantes : Cloud CLI ou [!DNL Cloud Console].
 
@@ -155,10 +155,10 @@ Selon le client, des options supplémentaires peuvent être nécessaires pour te
 
 Pour les **environnements de démarrage et les environnements d’intégration Pro**, vous pouvez également envisager d’ajouter [un `mount`](../application/properties.md#mounts) d’accès à un répertoire spécifique. Ajoutez le montage à votre fichier `.magento.app.yaml`. Pour obtenir une liste des répertoires accessibles en écriture, voir [Structure du projet](../project/file-structure.md). Ce point de montage ne fonctionne que dans ces environnements.
 
-Pour les environnements d’évaluation et de production **Pro**, si vous ne disposez pas d’un accès SSH à l’environnement, vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour demander un accès sFTP et un point de montage pour accéder au dossier spécifique, par exemple `pub/media`.
+Pour les environnements d’évaluation et de production **Pro**, si vous ne disposez pas d’un accès SSH à l’environnement, vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour demander un accès sFTP et un point de montage pour accéder au dossier spécifique, par exemple `pub/media`.
 
 >[!NOTE]
->Pour l’évaluation et la production Pro, si la connexion sFTP est destinée à un utilisateur _générique_ qui n’a **pas** besoin d’être [ajouté au projet cloud](../project/user-access.md), vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) avec sa clé **publique** jointe. **Ne fournissez jamais votre clé SSH privée.**
+>Pour l’évaluation et la production Pro, si la connexion sFTP est destinée à un utilisateur _générique_ qui n’a **pas** besoin d’être [ajouté au projet cloud](../project/user-access.md), vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) avec sa clé **publique** jointe. **Ne fournissez jamais votre clé SSH privée.**
 
 ## Tunneling SSH
 
@@ -176,7 +176,7 @@ Vérifiez si des tunnels sont ouverts à l’aide de .
 magento-cloud tunnel:list
 ```
 
-Pour construire un tunnel, vous devez connaître le [&#x200B; nom de l’application &#x200B;](../application/properties.md#name). Vous pouvez vérifier le nom de l’application à l’aide de l’interface de ligne de commande :
+Pour construire un tunnel, vous devez connaître le [ nom de l’application ](../application/properties.md#name). Vous pouvez vérifier le nom de l’application à l’aide de l’interface de ligne de commande :
 
 ```bash
 magento-cloud apps
@@ -219,3 +219,7 @@ Après avoir établi un tunnel SSH, vous pouvez vous connecter aux services comm
 ```bash
 mysql --host=127.0.0.1 --user='<database-username>' --pass='<user-password>' --database='<name>' --port='<port>'
 ```
+
+#### Obtention des informations d’identification MySQL
+
+Récupérez les informations d’identification de connexion MySQL à partir des propriétés `database` dans la variable d’environnement `$MAGENTO_CLOUD_RELATIONSHIPS`. Pour obtenir des instructions sur la récupération des informations dans un environnement local ou distant, voir [Relations de service](../services/services-yaml.md#service-relationships).
