@@ -58,7 +58,7 @@ Dans les versions antérieures de ECE-Tools, vous pouviez utiliser les commandes
 
 ## Modifications des correctifs cloud
 
-- **Supprimer les correctifs téléchargés**-Le package `magento/magento-cloud-patches` regroupe tous les correctifs disponibles à partir de la page [téléchargements de logiciels](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/commerce.html) et les applique automatiquement lorsque vous effectuez un déploiement sur le cloud. Pour éviter les conflits de correctifs après la mise à niveau vers ECE-Tools 2002.1.0 ou une version ultérieure, supprimez tous les correctifs fournis par Adobe que vous avez téléchargés et ajoutés manuellement à votre projet.
+- **Supprimer les correctifs téléchargés**-Le package `magento/magento-cloud-patches` regroupe tous les correctifs disponibles à partir de la page [téléchargements de logiciels](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/commerce.html?lang=fr) et les applique automatiquement lorsque vous effectuez un déploiement sur le cloud. Pour éviter les conflits de correctifs après la mise à niveau vers ECE-Tools 2002.1.0 ou une version ultérieure, supprimez tous les correctifs fournis par Adobe que vous avez téléchargés et ajoutés manuellement à votre projet.
 
 - **Mise à jour de la commande apply patches**-Nous avons déplacé la commande pour appliquer des correctifs du répertoire `vendor/bin/ece-tools` au répertoire `vendor/bin/ece-patches`. Si vous utilisez cette commande pour appliquer manuellement des correctifs, utilisez le nouveau chemin d&#39;accès.
 
