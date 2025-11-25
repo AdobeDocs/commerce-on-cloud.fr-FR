@@ -3,7 +3,8 @@ title: Modifications non rétrocompatibles
 description: Découvrez la rétrocompatibilité lors de la mise à niveau de projets cloud existants.
 feature: Cloud, Release Notes
 recommendations: noDisplay, catalog
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 3f3c1036-bfd0-4c70-8309-6c5e442134cd
+source-git-commit: de50fda78c28a57d76e5c0a4d5dac0f8d4d844a0
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 0%
@@ -57,7 +58,7 @@ Dans les versions antérieures de ECE-Tools, vous pouviez utiliser les commandes
 
 ## Modifications des correctifs cloud
 
-- **Supprimer les correctifs téléchargés**-Le package `magento/magento-cloud-patches` regroupe tous les correctifs disponibles à partir de la page [téléchargements de logiciels](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/commerce.html?lang=fr) et les applique automatiquement lorsque vous effectuez un déploiement sur le cloud. Pour éviter les conflits de correctifs après la mise à niveau vers ECE-Tools 2002.1.0 ou une version ultérieure, supprimez tous les correctifs fournis par l&#39;Adobe que vous avez téléchargés et ajoutés manuellement à votre projet.
+- **Supprimer les correctifs téléchargés**-Le package `magento/magento-cloud-patches` regroupe tous les correctifs disponibles à partir de la page [téléchargements de logiciels](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/commerce.html) et les applique automatiquement lorsque vous effectuez un déploiement sur le cloud. Pour éviter les conflits de correctifs après la mise à niveau vers ECE-Tools 2002.1.0 ou une version ultérieure, supprimez tous les correctifs fournis par Adobe que vous avez téléchargés et ajoutés manuellement à votre projet.
 
 - **Mise à jour de la commande apply patches**-Nous avons déplacé la commande pour appliquer des correctifs du répertoire `vendor/bin/ece-tools` au répertoire `vendor/bin/ece-patches`. Si vous utilisez cette commande pour appliquer manuellement des correctifs, utilisez le nouveau chemin d&#39;accès.
 
@@ -83,7 +84,7 @@ Dans les versions antérieures de ECE-Tools, vous pouviez utiliser les commandes
 
    - **Mise à jour des commandes Cloud docker-compose**-Nous avons renommé le chemin d’accès au fichier de commandes de `./bin/docker` à `./bin/magento-docker`. Mettez à jour vos scripts et commandes pour utiliser le nouveau chemin d’accès.
 
-   - **Le conteneur Cron n’est plus inclus dans la configuration Docker par défaut**-Maintenant, vous devez ajouter l’option `--with-cron` à la commande `ece-docker build:compose` pour inclure le conteneur Cron dans la configuration de l’environnement Docker. Voir [Gestion des tâches cron](https://developer.adobe.com/commerce/cloud-tools/docker/configure/manage-cron-jobs/) dans le guide _Cloud Docker for Commerce_ .
+   - **Le conteneur Cron n’est plus inclus dans la configuration Docker par défaut**-Maintenant, vous devez ajouter l’option `--with-cron` à la commande `ece-docker build:compose` pour inclure le conteneur Cron dans la configuration de l’environnement Docker. Voir [Gestion des tâches cron](https://developer.adobe.com/commerce/cloud-tools/docker/configure/manage-cron-jobs) dans le guide _Cloud Docker for Commerce_ .
 
      Les scripts qui généraient auparavant des conteneurs avec des tâches cron ne disposent plus du conteneur cron.
 

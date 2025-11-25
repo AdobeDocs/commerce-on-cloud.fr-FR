@@ -4,9 +4,10 @@ description: Découvrez les améliorations archivées pour les outils électroni
 hide: true
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: 3ba39fa6-88e9-4177-956d-f3e382bf59e3
+source-git-commit: de50fda78c28a57d76e5c0a4d5dac0f8d4d844a0
 workflow-type: tm+mt
-source-wordcount: '7147'
+source-wordcount: '7145'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
    - ![nouvelle icône](../../assets/new.svg) Mise à jour du fichier `composer.json` du package `ece-tools` afin d’ajouter une dépendance au package `magento/magento-cloud-patches` v1.0.0.
 
-   - ![Icône de correction](../../assets/fix.svg) Correction d’un problème en raison duquel le processus d’application de correctifs `ece-tools` était interrompu lors de l’application de jeux de correctifs en plus des versions de sécurité uniquement, à partir de la version 2.3.2-p2 et des versions ultérieures. Ce problème a été introduit par le nouveau schéma de version adopté pour les [correctifs de sécurité uniquement](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/overview).<!--MAGECLOUD-4661-->
+   - ![Icône de correction](../../assets/fix.svg) Correction d’un problème en raison duquel le processus d’application de correctifs `ece-tools` était interrompu lors de l’application de jeux de correctifs en plus des versions de sécurité uniquement, à partir de la version 2.3.2-p2 et des versions ultérieures. Ce problème a été introduit par le nouveau schéma de version adopté pour les [correctifs de sécurité uniquement](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/overview).<!--MAGECLOUD-4661-->
 
 - ![icône de correctif](../../assets/fix.svg) **Correctifs et correctifs critiques**-Mettez à jour vos environnements cloud avec `ece-tools` version 2002.0.22 pour appliquer les correctifs et correctifs critiques suivants. Ces correctifs sont inclus dans le package `magento/magento-cloud-patches` v1.0.0.
 
@@ -37,7 +38,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
    - ![icône de correction](../../assets/fix.svg) **compatibilité descendante des nouvelles interfaces de messagerie**-corrige un problème d’incompatibilité descendante causé par l’interface PHP `Magento\Framework\Mail\EmailMessageInterface` introduite dans Adobe Commerce v2.3.3. Dans la portée de ce correctif, le nouveau `EmailMessageInterface` hérite de l’ancien `MessageInterface` et les modules principaux d’Adobe Commerce deviennent dépendants de `MessageInterface`.<!--MAGECLOUD-4422-->
 
-   - ![icône de correctif](../../assets/fix.svg) **La pagination du catalogue ne fonctionne pas sur Elasticsearch 6.x**-corrige un problème critique de pagination des résultats de recherche qui affecte les clients utilisant Elasticsearch 6.x comme moteur de recherche de catalogue.<!--MAGECLOUD-4448-->
+   - ![icône de correctif](../../assets/fix.svg) **La pagination du catalogue ne fonctionne pas sur Elasticsearch 6.x**-corrige un problème critique de pagination des résultats de recherche qui affecte les clients et clientes utilisant Elasticsearch 6.x comme moteur de recherche de catalogue.<!--MAGECLOUD-4448-->
 
 ## v2002.0.21
 
@@ -71,7 +72,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
 - ![nouvelle icône](../../assets/new.svg) Ajout de la prise en charge de RabitMQ version 3.8.<!-- MAGECLOUD-4674-->
 
-- ![nouvelle icône](../../assets/new.svg) Mise à jour des validations interactives pour la compatibilité des services afin de refléter les versions prises en charge pour les nouvelles versions d’Adobe Commerce 2.3.3 et 2.2.10. Voir [Configuration requise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements) dans le _Guide d’installation_ pour obtenir les versions recommandées.<!-- MAGECLOUD-4018 -->
+- ![nouvelle icône](../../assets/new.svg) Mise à jour des validations interactives pour la compatibilité des services afin de refléter les versions prises en charge pour les nouvelles versions d’Adobe Commerce 2.3.3 et 2.2.10. Voir [Configuration requise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) dans le _Guide d’installation_ pour obtenir les versions recommandées.<!-- MAGECLOUD-4018 -->
 
 - ![Icône de correction](../../assets/fix.svg) Amélioration du message du journal renvoyé lorsque le processus de gestion des tâches cron en phase de déploiement tente d’arrêter une tâche cron déjà terminée, afin de clarifier que ce problème n’est pas une erreur. Modification du niveau de journal de `INFO` en `DEBUG`.<!-- MAGECLOUD-3653-->
 
@@ -87,11 +88,11 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
 - ![nouvelle icône](../../assets/new.svg) **Mises à jour Docker**—
 
-   - ![nouvelle icône](../../assets/new.svg) Vous pouvez désormais effectuer des tests fonctionnels à l’aide du package `ece-tools` dans l’environnement Docker. Voir [test d’application](https://developer.adobe.com/commerce/cloud-tools/docker/test/code-testing/).<!-- MAGECLOUD-3129/3684 -->
+   - ![nouvelle icône](../../assets/new.svg) Vous pouvez désormais effectuer des tests fonctionnels à l’aide du package `ece-tools` dans l’environnement Docker. Voir [test d’application](https://developer.adobe.com/commerce/cloud-tools/docker/test/code-testing).<!-- MAGECLOUD-3129/3684 -->
 
-   - ![nouvelle icône](../../assets/new.svg) Ajout de la prise en charge de la configuration des modules PHP à l’aide du fichier `.magento.app.yaml`. Toutes les [extensions PHP spécifiées dans le fichier `.magento.app.yaml`](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) sont disponibles dans les conteneurs PHP Docker.<!-- MAGECLOUD-3357 -->
+   - ![nouvelle icône](../../assets/new.svg) Ajout de la prise en charge de la configuration des modules PHP à l’aide du fichier `.magento.app.yaml`. Toutes les [extensions PHP spécifiées dans le fichier `.magento.app.yaml`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) sont disponibles dans les conteneurs PHP Docker.<!-- MAGECLOUD-3357 -->
 
-   - ![nouvelle icône](../../assets/new.svg) De nouvelles commandes sont disponibles pour améliorer l’expérience de la ligne de commande Docker. Voir la section [`bin/magento-docker` de la référence Docker](https://developer.adobe.com/commerce/cloud-tools/docker/quick-reference/#cloud-docker-cli).<!-- MAGECLOUD-3569 -->
+   - ![nouvelle icône](../../assets/new.svg) De nouvelles commandes sont disponibles pour améliorer l’expérience de la ligne de commande Docker. Voir la section [`bin/magento-docker` de la référence Docker](https://developer.adobe.com/commerce/cloud-tools/docker/quick-reference#cloud-docker-cli).<!-- MAGECLOUD-3569 -->
 
    - ![nouvelle icône](../../assets/new.svg) Ajout de la possibilité d’utiliser Mutagen.io pour synchroniser les fichiers pendant le développement entre l’hôte local et Docker.<!-- MAGECLOUD-3559 -->
 
@@ -125,7 +126,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
 - ![icône de correction](../../assets/fix.svg) correction d’un problème qui entraînait un échec du déploiement si l’URL de base n’existait pas dans la base de données.<!-- MAGECLOUD-3075 -->
 
-- ![nouvelle icône](../../assets/new.svg) Ajout d’une nouvelle commande **`env:config:show`** au package de `ece-tools` qui affiche les services d’environnement, les itinéraires ou les variables. Voir [Services, itinéraires et variables](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/package-overview#services-routes-and-variables). [Article présenté par Vladimir Kerkhoff](https://github.com/magento/ece-tools/pull/486).<!-- MAGECLOUD-3451 -->
+- ![nouvelle icône](../../assets/new.svg) Ajout d’une nouvelle commande **`env:config:show`** au package de `ece-tools` qui affiche les services d’environnement, les itinéraires ou les variables. Voir [Services, itinéraires et variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/package-overview#services-routes-and-variables). [Article présenté par Vladimir Kerkhoff](https://github.com/magento/ece-tools/pull/486).<!-- MAGECLOUD-3451 -->
 
 - ![Icône de correction](../../assets/fix.svg) Correction d’un problème qui provoquait une erreur critique lors de la tentative d’installation d’Adobe Commerce 2.2.6 ou version antérieure avec `ece-tools` développement après la refactorisation du shell.<!-- MAGECLOUD-3665 -->
 
@@ -143,15 +144,15 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
 - ![nouvelle icône](../../assets/new.svg) **Mises à jour Docker**—
 
-   - ![nouvelle icône](../../assets/new.svg) L’environnement Docker prend désormais en charge la configuration cron définie dans la propriété [crons du fichier .magento.app.yaml](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property).<!-- MAGECLOUD-3150 -->
+   - ![nouvelle icône](../../assets/new.svg) L’environnement Docker prend désormais en charge la configuration cron définie dans la propriété [crons du fichier .magento.app.yaml](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property).<!-- MAGECLOUD-3150 -->
 
-   - ![nouvelle icône](../../assets/new.svg) **Nouveau conteneur Docker**—Ajout d&#39;un [conteneur proxy de terminaison TLS](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#varnish-container) pour faciliter la terminaison SSL Varnish via HTTPS.<!-- MAGECLOUD-2890 -->
+   - ![nouvelle icône](../../assets/new.svg) **Nouveau conteneur Docker**—Ajout d&#39;un [conteneur proxy de terminaison TLS](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#varnish-container) pour faciliter la terminaison SSL Varnish via HTTPS.<!-- MAGECLOUD-2890 -->
 
    - ![nouvelle icône](../../assets/new.svg) **Nouvelle image Docker**—Ajout d’une image Node.js pour prendre en charge Gulp et d’autres fonctionnalités, telles que le test unitaire Jasmine JS.<!-- MAGECLOUD-3345 -->
 
    - ![nouvelle icône](../../assets/new.svg) **modes de création Docker**—Vous pouvez désormais choisir de lancer l’environnement Docker en [mode de production ou mode développeur](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode). Le mode Développeur prend en charge le développement actif avec des autorisations complètes et modifiables du système de fichiers.<!-- MAGECLOUD-3152/3511 -->
 
-   - ![icône de correction](../../assets/fix.svg) correction d’un problème en raison duquel le déploiement de Docker échouait avec une erreur `Name or service not known` si le cache était configuré pour un service qui n’est pas disponible. Vous pouvez maintenant supprimer un service du fichier [`.magento/services.yaml`](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/services-yaml). Le générateur de configuration Docker met automatiquement à jour le service dans le fichier `docker/config.php.dist`.<!-- MAGECLOUD-3369 -->
+   - ![icône de correction](../../assets/fix.svg) correction d’un problème en raison duquel le déploiement de Docker échouait avec une erreur `Name or service not known` si le cache était configuré pour un service qui n’est pas disponible. Vous pouvez maintenant supprimer un service du fichier [`.magento/services.yaml`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml). Le générateur de configuration Docker met automatiquement à jour le service dans le fichier `docker/config.php.dist`.<!-- MAGECLOUD-3369 -->
 
    - ![nouvelle icône](../../assets/new.svg) Ajout de validations interactives pour la compatibilité du service. Désormais, si un service demandé est incompatible avec la version Adobe Commerce ou d’autres services, le _mode interactif_ invite l’utilisateur à envoyer un message et à choisir de continuer. Consultez les [versions de service](https://developer.adobe.com/commerce/cloud-tools/docker/containers/#service-containers) disponibles pour Docker. Utilisez l’option `-n` pour ignorer l’interactivité à des fins de CICD.<!-- MAGECLOUD-3251 -->
 
@@ -165,7 +166,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
    - ![nouvelle icône](../../assets/new.svg) Ajout de la variable d’environnement **SCD_MAX_EXECUTION_TIMEOUT** afin que vous puissiez augmenter le temps nécessaire pour terminer le déploiement du contenu statique à partir du fichier `.magento.env.yaml`. Consultez la définition dans les [variables de déploiement](../environment/variables-deploy.md#scd_max_execution_time), les [variables de build](../environment/variables-build.md#scd_max_execution_time) et les [variables globales](../environment/variables-global.md#scd_max_execution_time).<!-- MAGECLOUD-2822 -->
 
-      - ![nouvelle icône](../../assets/new.svg) Ajout de la variable d’environnement **MAGENTO_CLOUD_LOCKS_DIR** pour configurer le chemin d’accès au point de montage du fournisseur de verrous sur l’infrastructure cloud. Le fournisseur de verrous empêche le lancement de tâches et de groupes cron en double. Cette variable est prise en charge dans Adobe Commerce version 2.2.5 et ultérieure et automatiquement configurée. Voir la définition dans [Variables cloud](../environment/variables-cloud.md).<!-- MAGECLOUD-3135 -->
+      - ![nouvelle icône](../../assets/new.svg) Ajout de la variable d’environnement **MAGENTO_CLOUD_LOCKS_DIR** pour configurer le chemin d’accès au point de montage du fournisseur de verrouillage sur l’infrastructure cloud. Le fournisseur de verrous empêche le lancement de tâches et de groupes cron en double. Cette variable est prise en charge dans Adobe Commerce version 2.2.5 et ultérieure et automatiquement configurée. Voir la définition dans [Variables cloud](../environment/variables-cloud.md).<!-- MAGECLOUD-3135 -->
 
       - ![icône de correction](../../assets/fix.svg) modification des valeurs par défaut de la variable d’environnement **SCD_THREADS** afin de déterminer automatiquement la valeur optimale en fonction du nombre de threads CPU détectés. Consultez les définitions mises à jour dans les [variables de déploiement](../environment/variables-deploy.md#scd_threads) et les [variables de build](../environment/variables-build.md#scd_threads).<!-- MAGECLOUD-3382 -->
 
@@ -177,17 +178,17 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
 - ![icône de correction](../../assets/fix.svg) Correction d’un problème qui exposait les données sensibles après qu’une exception se produisait. Désormais, les informations sensibles sont masquées de manière appropriée.<!-- MAGECLOUD-3525 -->
 
-- ![icône de correction](../../assets/fix.svg) Amélioration des paramètres de tolérance de panne du package du Magento Open Source. Dans le cas où Adobe Commerce ne peut pas lire les données de l’instance Redis `slave`, une lecture est effectuée à partir de l’instance Redis `master`. Voir [REDIS_USE_SLAVE_CONNECTION](../environment/variables-deploy.md#redis_use_slave_connection).<!-- MAGECLOUD-2899 -->
+- ![icône de correction](../../assets/fix.svg) Amélioration des paramètres de tolérance de pannes du package Magento Open Source. Dans le cas où Adobe Commerce ne peut pas lire les données de l’instance Redis `slave`, une lecture est effectuée à partir de l’instance Redis `master`. Voir [REDIS_USE_SLAVE_CONNECTION](../environment/variables-deploy.md#redis_use_slave_connection).<!-- MAGECLOUD-2899 -->
 
 ## v2002.0.17
 
 >[!NOTE]
 >
->La version `ece-tools` 2002.0.17 comprend un correctif de sécurité important. Voir [Ressources techniques : correctifs de Magento Open Source &#x200B;](https://magento.com/tech-resources/download#download2288).
+>La version `ece-tools` 2002.0.17 comprend un correctif de sécurité important. Voir [Ressources techniques : correctifs Magento Open Source](https://magento.com/tech-resources/download#download2288).
 
 - ![nouvelle icône](../../assets/new.svg) **Mises à jour des services**—Pris en charge par les versions d’Adobe Commerce suivantes : 2.2.8 et versions ultérieures 2.2.x, 2.3.1 et versions ultérieures 2.3.x
 
-   - Ajout de la prise en charge de la version 6.x.<!-- MAGECLOUD-3196 --> Elasticsearch
+   - Ajout de la prise en charge d’Elasticsearch version 6.x.<!-- MAGECLOUD-3196 -->
 
    - Ajout de la prise en charge de Redis version 5.0.
 
@@ -211,19 +212,19 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
    - Vous pouvez envoyer du courrier depuis votre environnement Docker à l’aide du service `sendmail`.<!-- MAGECLOUD-2907 -->
 
-   - Ajout de la possibilité de [configurer Xdebug](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug/) pour le débogage dans l’environnement Cloud Docker.<!-- MAGECLOUD-2891 -->
+   - Ajout de la possibilité de [configurer Xdebug](https://developer.adobe.com/commerce/cloud-tools/docker/configure-xdebug) pour le débogage dans l’environnement Cloud Docker.<!-- MAGECLOUD-2891 -->
 
    - Correction d’un problème lié aux autorisations de service web lors de la génération du fichier `docker-compose.yml`.<!-- MAGECLOUD-2883 -->
 
-- ![nouvelle icône](../../assets/new.svg) **Amélioration de la mise à niveau**—Ajout d&#39;une validation pour confirmer que la propriété `autoload` dans le fichier `composer.json` contient les modifications de configuration requises avant la mise à niveau vers Adobe Commerce v2.3. Voir [Mise à niveau de la version](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version).<!-- MAGECLOUD-2392 -->
+- ![nouvelle icône](../../assets/new.svg) **Amélioration de la mise à niveau**—Ajout d&#39;une validation pour confirmer que la propriété `autoload` dans le fichier `composer.json` contient les modifications de configuration requises avant la mise à niveau vers Adobe Commerce v2.3. Voir [Mise à niveau de la version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version).<!-- MAGECLOUD-2392 -->
 
-- ![nouvelle icône](../../assets/new.svg) le processus de compression lors du déploiement du contenu statique inclut désormais toutes les ressources (générées ou personnalisées en mode natif) et se produit pendant la phase de création, au début de la section de [`build:transfer`](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property). Auparavant, le processus de compression se produisait avant l’application d’une minimisation personnalisée et le regroupement des ressources statiques. [Correctif soumis par Rafael Garcia Lepper de Tryzens Limited](https://github.com/magento/ece-tools/pull/413).<!-- MAGECLOUD-3104 -->
+- ![nouvelle icône](../../assets/new.svg) le processus de compression lors du déploiement du contenu statique inclut désormais toutes les ressources (générées ou personnalisées en mode natif) et se produit pendant la phase de création, au début de la section de [`build:transfer`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property). Auparavant, le processus de compression se produisait avant l’application d’une minimisation personnalisée et le regroupement des ressources statiques. [Correctif soumis par Rafael Garcia Lepper de Tryzens Limited](https://github.com/magento/ece-tools/pull/413).<!-- MAGECLOUD-3104 -->
 
 - ![icône de correction](../../assets/fix.svg) Correction d’une erreur de connexion à la base de données qui se produisait lors du déploiement immédiatement après la configuration d’une relation de base de données et de service supplémentaire. En outre, ce correctif résout un problème qui se produisait pendant le processus de configuration de Rapports Commerce pour Starter. Pour commencer, cette mise à niveau est un « must have » pour l’utilisation de la création de rapports Commerce.<!-- MAGECLOUD-3035 -->
 
 - ![icône de correction](../../assets/fix.svg) correction d’un problème de validation avec la configuration de la base de données qui entraînait l’échec du processus de déploiement.<!-- MAGECLOUD-3003 -->
 
-- ![icône de correction](../../assets/fix.svg) Mise à jour de la contrainte avec la version appropriée du package de `symfony/yaml` à utiliser avec les [constantes PHP](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml#php-constants). L’analyse constante ne fonctionne pas lors de l’utilisation d’une version de package `symfony/yaml` antérieure à la version 3.2. [Correctif soumis par Vladimir Kerkhoff](https://github.com/magento/ece-tools/pull/404).<!-- MAGECLOUD-2956 -->
+- ![icône de correction](../../assets/fix.svg) Mise à jour de la contrainte avec la version appropriée du package de `symfony/yaml` à utiliser avec les [constantes PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml#php-constants). L’analyse constante ne fonctionne pas lors de l’utilisation d’une version de package `symfony/yaml` antérieure à la version 3.2. [Correctif soumis par Vladimir Kerkhoff](https://github.com/magento/ece-tools/pull/404).<!-- MAGECLOUD-2956 -->
 
 - ![nouvelle icône](../../assets/new.svg) **Vérification de la configuration de l’environnement**—Ajout d’une validation pour vérifier la version PHP et avertir les utilisateurs s’ils n’utilisent pas la dernière version recommandée.<!--MAGECLOUD-2903-->
 
@@ -257,7 +258,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
    - **Variables ADMIN**—<!-- MAGECLOUD-2573/MAGECLOUD-2848 -->
 
-      - Amélioration de la sécurité lors de la gestion des informations d’identification pour l’utilisateur administrateur utilisant des variables d’environnement. Vous ne pouvez plus utiliser les variables d’environnement ADMIN_EMAIL, ADMIN_USERNAME et ADMIN_PASSWORD pour remplacer les informations d’identification d’administrateur lors des mises à niveau. Si vous ne pouvez pas accéder au panneau d’administration, utilisez la fonction _Mot de passe oublié_ ou la commande de l’interface de ligne de commande `admin:user:create` pour créer un utilisateur administrateur. Voir [&#x200B; Accès à votre panneau d’administration &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/start/onboarding#admin).
+      - Amélioration de la sécurité lors de la gestion des informations d’identification pour l’utilisateur administrateur utilisant des variables d’environnement. Vous ne pouvez plus utiliser les variables d’environnement ADMIN_EMAIL, ADMIN_USERNAME et ADMIN_PASSWORD pour remplacer les informations d’identification d’administrateur lors des mises à niveau. Si vous ne pouvez pas accéder au panneau d’administration, utilisez la fonction _Mot de passe oublié_ ou la commande de l’interface de ligne de commande `admin:user:create` pour créer un utilisateur administrateur. Voir [ Accès à votre panneau d’administration ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/onboarding#admin).
 
       - ADMIN_EMAIL n’est plus nécessaire lors de la mise à niveau ou de l’application de correctifs.
 
@@ -269,7 +270,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
    - Ajout d’une image PHP 7.2 : ajout de la prise en charge de PHP 7.2 dans Cloud Docker. Mise à jour de la [configuration de Launch Docker](https://developer.adobe.com/commerce/cloud-tools/docker/configure/) afin d’inclure l’option `docker:build --php` pour spécifier la version de PHP compatible avec votre version d’Adobe Commerce. <!-- MAGECLOUD-2799 -->
 
-   - Ajout d’un [Conteneur Cron](https://developer.adobe.com/commerce/cloud-tools/docker/containers/cli/#cron-container) basé sur l’image PHP-CLI.<!-- MAGECLOUD-2565 -->
+   - Ajout d’un [Conteneur Cron](https://developer.adobe.com/commerce/cloud-tools/docker/containers/cli#cron-container) basé sur l’image PHP-CLI.<!-- MAGECLOUD-2565 -->
 
    - Ajout des services suivants à la version Docker :
 
@@ -279,9 +280,9 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
       - Redis 3.2 et 4.0<!-- MAGECLOUD-2886 -->
 
-- ![nouvelle icône](../../assets/new.svg) **Configurer avec des constantes PHP**—Ajout de la prise en charge des [constantes PHP](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml#php-constants) dans le fichier de configuration `.magento.env.yaml`.<!-- MAGECLOUD- 2575 -->
+- ![nouvelle icône](../../assets/new.svg) **Configurer avec des constantes PHP**—Ajout de la prise en charge des [constantes PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml#php-constants) dans le fichier de configuration `.magento.env.yaml`.<!-- MAGECLOUD- 2575 -->
 
-- ![nouvelle icône](../../assets/new.svg) **Nouvelle variable d’environnement** : par défaut, seul l’environnement de production dispose des Google Analytics activés. Vous pouvez activer des Google Analytics dans les environnements d’évaluation et d’intégration à l’aide de la variable d’environnement [ENABLE_GOOGLE_ANALYTICS](../environment/variables-deploy.md#enable_google_analytics).<!--MAGECLOUD-2879-->
+- ![nouvelle icône](../../assets/new.svg) **Nouvelle variable d’environnement** : par défaut, seul l’environnement de production dispose de Google Analytics activé. Vous pouvez activer Google Analytics dans les environnements d’évaluation et d’intégration à l’aide de la variable d’environnement [ENABLE_GOOGLE_ANALYTICS](../environment/variables-deploy.md#enable_google_analytics).<!--MAGECLOUD-2879-->
 
 - ![icône de correction](../../assets/fix.svg) correction d’un problème en raison duquel les configurations cron personnalisées étaient supprimées du fichier `env.php` après un redéploiement. Désormais, les configurations cron personnalisées restent en toute sécurité dans le fichier `env.php`.<!-- MAGECLOUD-2923 -->
 
@@ -313,7 +314,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
       - La configuration de l’environnement contient des valeurs incorrectes pour les variables de déploiement ou cloud.
 
-   - La version Elasticsearch de l’infrastructure cloud est incompatible avec la version du module elasticsearch/elasticsearch prise en charge par Adobe Commerce sur l’infrastructure cloud. Consultez l’article de dépannage de l’Elasticsearch [&#128279;](https://support.magento.com/hc/en-us/articles/360015758471-Deployment-fails-or-interrupts-with-cloud-log-error-Elasticsearch-version-is-not-compatible-with-current-version-of-magento) dans la Base de connaissances de l’assistance Adobe Commerce.<!--MAGECLOUD-2600-->
+   - La version d’Elasticsearch sur l’infrastructure cloud est incompatible avec la version du module elasticsearch/elasticsearch prise en charge par Adobe Commerce sur l’infrastructure cloud. Consultez l’article [Dépannage d’Elasticsearch](https://support.magento.com/hc/en-us/articles/360015758471-Deployment-fails-or-interrupts-with-cloud-log-error-Elasticsearch-version-is-not-compatible-with-current-version-of-magento) dans la Base de connaissances de l’assistance Adobe Commerce.<!--MAGECLOUD-2600-->
 
    - Correction d’un problème lié aux paramètres de configuration partagés dans le fichier `app/etc/config.php` qui provoquait des erreurs `recursion detected` lors du déploiement.<!--MAGECLOUD-2173-->
 
@@ -341,35 +342,35 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
    - **Prise en charge du service Redis** : ajout d’une image Redis, qui est déployée dans un conteneur Docker et configurée automatiquement pour fonctionner avec votre installation Docker.&lt;!—MAGECLOUD—2442—>
 
-   - Vous disposez désormais de la fonctionnalité de vidage de la base de données lors de l’utilisation du conteneur de base de données [&#x200B; Cloud Docker](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#database-container). Vous pouvez également [partager des fichiers](https://developer.adobe.com/commerce/cloud-tools/docker/containers/#sharing-data-between-host-machine-and-container) entre un ordinateur hôte et un conteneur à l’aide du répertoire `docker/mnt`.<!-- MAGECLOUD-2577 -->
+   - Vous disposez désormais de la fonctionnalité de vidage de la base de données lors de l’utilisation du conteneur de base de données [ Cloud Docker](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#database-container). Vous pouvez également [partager des fichiers](https://developer.adobe.com/commerce/cloud-tools/docker/containers#sharing-data-between-host-machine-and-container) entre un ordinateur hôte et un conteneur à l’aide du répertoire `docker/mnt`.<!-- MAGECLOUD-2577 -->
 
-   - **Prise en charge du service de vernis**— Ajout d’une image de vernis, qui est déployée automatiquement dans un conteneur Docker. Après le déploiement, vous pouvez configurer manuellement Varnish en suivant les bonnes pratiques relatives à Adobe Commerce. Voir [Configurer et utiliser le vernis](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish).&lt;!—MAGECLOUD—2358—>
+   - **Prise en charge du service de vernis**— Ajout d’une image de vernis, qui est déployée automatiquement dans un conteneur Docker. Après le déploiement, vous pouvez configurer manuellement Varnish en suivant les bonnes pratiques relatives à Adobe Commerce. Voir [Configurer et utiliser le vernis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish).&lt;!—MAGECLOUD—2358—>
 
    - Accès sécurisé au site : ajout de la prise en charge SSL pour accéder à votre boutique Adobe Commerce et à votre panneau d’administration.&lt;!—MAGECLOUD—2360—>
 
-- ![Icône de correction](../../assets/fix.svg) **Amélioration de la prise en charge des extensions Adobe Commerce sur les infrastructures cloud**—Mise à niveau des exigences de version minimale pour le package guzzlehttp/guzzle dans le fichier Adobe Commerce sur les infrastructures cloud [compositeur.json](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/overview) vers la version 6.2 afin que le package `ece-tools` soit compatible avec davantage d’extensions.<!--MAGECLOUD-2205-->
+- ![Icône de correction](../../assets/fix.svg) **Amélioration de la prise en charge des extensions Adobe Commerce sur les infrastructures cloud**—Mise à niveau des exigences de version minimale pour le package guzzlehttp/guzzle dans le fichier Adobe Commerce sur les infrastructures cloud [compositeur.json](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/overview) vers la version 6.2 afin que le package `ece-tools` soit compatible avec davantage d’extensions.<!--MAGECLOUD-2205-->
 
-- ![nouvelle icône](../../assets/new.svg) **Appliquez des modifications personnalisées à votre application Adobe Commerce au cours de la phase de création**—Nous divisons la phase de création en deux processus distincts afin que vous puissiez utiliser des raccordements pour appliquer des modifications personnalisées au contenu statique généré avant de compresser l&#39;application pour déploiement. Le processus _build:generate_ génère du code, applique des correctifs et génère du contenu statique. Le processus _build:transfer_ transfère le code généré et le contenu statique vers la destination finale. Voir [Application hooks](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property).<!--MAGECLOUD-2363-->
+- ![nouvelle icône](../../assets/new.svg) **Appliquez des modifications personnalisées à votre application Adobe Commerce au cours de la phase de création**—Nous divisons la phase de création en deux processus distincts afin que vous puissiez utiliser des raccordements pour appliquer des modifications personnalisées au contenu statique généré avant de compresser l&#39;application pour déploiement. Le processus _build :generate_génère du code, applique des correctifs et génère du contenu statique. Le processus _build:transfer_ transfère le code généré et le contenu statique vers la destination finale. Voir [Application hooks](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property).<!--MAGECLOUD-2363-->
 
 - ![icône de correction](../../assets/fix.svg) **contrôles de configuration de l’environnement**—Amélioration de la validation de la configuration de l’environnement pour avertir les clients des incompatibilités de version et des erreurs de configuration avant de créer et de déployer Adobe Commerce sur l’infrastructure cloud.
 
    - Ajout d’une validation spécifique à la version pour identifier les variables et valeurs d’environnement non prises en charge ou obsolètes.<!--MAGECLOUD-2183-->
 
-   - Ajout d’une vérification de compatibilité Elasticsearch pour avertir les utilisateurs des problèmes de configuration Elasticsearch. Désormais, le déploiement échoue si la version du service Elasticsearch sur le serveur est incompatible avec Adobe Commerce. Auparavant, le déploiement réussissait même si la version de l’Elasticsearch était incompatible, ce qui provoquait des problèmes de catalogue de produits après le déploiement du site.<!--MAGECLOUD-2389-->
+   - Ajout d’une vérification de compatibilité Elasticsearch pour avertir les utilisateurs des problèmes de configuration d’Elasticsearch. Désormais, le déploiement échoue si la version du service Elasticsearch sur le serveur est incompatible avec Adobe Commerce. Auparavant, le déploiement réussissait même si la version d’Elasticsearch était incompatible, ce qui provoquait des problèmes de catalogue de produits après le déploiement du site.<!--MAGECLOUD-2389-->
 
-     Vous pouvez résoudre l’incompatibilité en [soumettant un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices) pour mettre à niveau l’Elasticsearch vers une version compatible, ou modifier la configuration d’Adobe Commerce pour spécifier une version compatible du client PHP Elasticsearch.
+     Vous pouvez résoudre l’incompatibilité en [soumettant un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices) pour mettre à niveau Elasticsearch vers une version compatible, ou modifier la configuration d’Adobe Commerce pour spécifier une version compatible du client PHP Elasticsearch.
 
       - Pour Adobe Commerce version 2.1.x vers 2.2.2, mettez à niveau Elasticsearch vers la version 2.4.
 
-      - Pour Adobe Commerce version 2.2.3 et ultérieure, mettez à niveau Elasticsearch vers la version 5.2.
+      - Pour Adobe Commerce version 2.2.3 et ultérieures, mettez à niveau Elasticsearch vers la version 5.2.
 
-      - Si vous disposez de l’Elasticsearch 1.x ou 2.x et que vous ne souhaitez pas effectuer de mise à niveau, mettez à jour la configuration requise pour la version du client PHP de l’Elasticsearch Adobe Commerce dans composer.json vers `"elasticsearch/elasticsearch": "~2.0"`.
+      - Si vous disposez d’Elasticsearch 1.x ou 2.x et que vous ne souhaitez pas effectuer de mise à niveau, mettez à jour la configuration requise pour la version du client Adobe Commerce Elasticsearch PHP dans composer.json vers `"elasticsearch/elasticsearch": "~2.0"`.
 
    - Amélioration de la validation des variables d’environnement afin d’identifier les paramètres de configuration qui peuvent provoquer des conflits pendant les phases de création, de déploiement et de post-déploiement. Par exemple, un message d’avertissement s’affiche pendant le processus d’installation et de mise à niveau si le paramètre global pour le déploiement de contenu statique est en conflit avec les paramètres de la phase de création ou de déploiement.<!--MAGECLOUD-2156-->
 
 - ![icône de correction](../../assets/fix.svg) **mises à jour des variables d’environnement**—Modification des variables d’environnement suivantes :
 
-   - **[Variable globale SKIP_HTML_MINIFICATION](../environment/variables-global.md#skip_html_minification)** : modification de la valeur par défaut en `true` pour activer la minimisation du contenu d’HTML à la demande, ce qui réduit les temps d’arrêt lors du déploiement dans les environnements d’évaluation et de production. Cette configuration est requise pour les déploiements sans interruption de service.<!--MAGECLOUD-2435-->
+   - **[Variable globale SKIP_HTML_MINIFICATION](../environment/variables-global.md#skip_html_minification)** : modification de la valeur par défaut en `true` pour activer la minimisation du contenu HTML à la demande, ce qui réduit les temps d’arrêt lors du déploiement dans les environnements d’évaluation et de production. Cette configuration est requise pour les déploiements sans interruption de service.<!--MAGECLOUD-2435-->
 
    - **[Variable de déploiement CLEAN_STATIC_FILES](../environment/variables-deploy.md#clean_static_files)** : ajout de la possibilité de gérer le traitement des fichiers statiques propres pour le contenu statique généré pendant la phase de création en fonction du paramètre de la variable d’environnement CLEAN_STATIC_FILES. Auparavant, les fichiers de contenu statiques générés pendant la phase de création étaient toujours nettoyés.<!--MAGECLOUD-1506-->
 
@@ -393,7 +394,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
 - ![icône de correction](../../assets/fix.svg) correction d’un problème lié au [processus de compression de contenu statique](../environment/variables-intro.md) (`gzip`) qui provoquait des erreurs `not overwritten` et `no such file or directory` lors du référencement du fichier compressé pendant le processus de déploiement.<!-- MAGECLOUD-2182-->
 
-- ![icône de correction](../../assets/fix.svg) correction d’un problème qui empêchait la commande `php ./vendor/bin/ece-tools config:dump` de supprimer les sections redondantes du fichier `config.php` pendant le processus de vidage si les paramètres régionaux du magasin n’étaient pas spécifiés. Vous pouvez désormais facilement déplacer vos fichiers de configuration entre les environnements. Après la mise à jour vers `ece-tools` v2002.0.13, régénérez les fichiers `config.php` plus anciens à l’aide de la commande de `config:dump` améliorée. Voir [Gestion de la configuration pour les paramètres de magasin](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure-store/store-settings).<!--MAGECLOUD-2444-->
+- ![icône de correction](../../assets/fix.svg) correction d’un problème qui empêchait la commande `php ./vendor/bin/ece-tools config:dump` de supprimer les sections redondantes du fichier `config.php` pendant le processus de vidage si les paramètres régionaux du magasin n’étaient pas spécifiés. Vous pouvez désormais facilement déplacer vos fichiers de configuration entre les environnements. Après la mise à jour vers `ece-tools` v2002.0.13, régénérez les fichiers `config.php` plus anciens à l’aide de la commande de `config:dump` améliorée. Voir [Gestion de la configuration pour les paramètres de magasin](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/store-settings).<!--MAGECLOUD-2444-->
 
 - ![icône de correction](../../assets/fix.svg) correction d’un problème qui provoquait une erreur lors de la phase de déploiement si la configuration d’itinéraire dans le fichier `.magento/routes.yaml` redirige d’un domaine [apex](https://blog.cloudflare.com/zone-apex-naked-domain-root-domain-cname-supp/) vers un domaine `www`. <!--MAGECLOUD-2556-->
 
@@ -459,7 +460,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
 - ![icône de correction](../../assets/fix.svg) Suppression de la prise en charge de SOLR pour les versions 2.2.x. Les versions 2.1.x conservent la possibilité d’activer SOLR.<!-- MAGECLOUD-1282 -->
 
-- ![icône de correctif](../../assets/fix.svg) La première installation des environnements d&#39;évaluation et de production d&#39;un projet PRO inclut désormais différents préfixes d&#39;index pour l&#39;Elasticsearch afin d&#39;éviter d&#39;éventuels conflits tout en identifiant les enregistrements appartenant à chaque environnement.<!-- MAGECLOUD-1489 -->
+- ![icône de correction](../../assets/fix.svg) La première installation des environnements d’évaluation et de production d’un projet PRO comprend désormais différents préfixes d’index pour Elasticsearch, afin d’éviter d’éventuels conflits et d’identifier les enregistrements appartenant à chaque environnement<!-- MAGECLOUD-1489 -->.
 
 - ![icône de correction](../../assets/fix.svg) correction d’un problème qui interrompait la phase de création de l’architecture héritée pendant le déploiement du contenu statique.<!-- MAGECLOUD-2021 -->
 
@@ -499,7 +500,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
    - `CRYPT_KEY` : fournissez une clé cryptographique à un autre environnement lors du déplacement d&#39;une base de données.<!-- MAGECLOUD-1556 -->
 
-   - `SKIP_HTML_MINIFICATION`—_Global_ variable d&#39;environnement qui ignore la copie des fichiers d&#39;affichage statiques dans le répertoire `var/view_preprocessed` et génère un HTML miniaturisé lorsque cela est demandé.<!-- MAGECLOUD-1621 and MAGECLOUD-1736-->
+   - `SKIP_HTML_MINIFICATION`—_Global_ variable d&#39;environnement qui ignore la copie des fichiers d&#39;affichage statiques dans le répertoire `var/view_preprocessed` et génère une HTML miniaturisée lorsque cela est demandé.<!-- MAGECLOUD-1621 and MAGECLOUD-1736-->
 
    - `SCD_ON_DEMAND` : variable d’environnement _globale_ pour générer du contenu statique lorsque cela est demandé.<!-- MAGECLOUD-1738 -->
 
@@ -561,7 +562,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
 - **Nouvelle commande cron** : vous pouvez désormais déverrouiller des tâches cron bloquées spécifiques au lieu de les arrêter et de les relancer toutes à l’aide de la commande [`cron:unlock`](https://support.magento.com/hc/en-us/articles/360033099451). Non disponible dans 2.1.<!-- MAGECLOUD-1367 -->
 
-- **Fichier de configuration unifié**—Vous pouvez désormais configurer les phases de création et de déploiement à l’aide d’un fichier [`.magento.env.yaml`](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml).<!-- MAGECLOUD-1369 -->
+- **Fichier de configuration unifié**—Vous pouvez désormais configurer les phases de création et de déploiement à l’aide d’un fichier [`.magento.env.yaml`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml).<!-- MAGECLOUD-1369 -->
 
 - **Sauvegarder les fichiers de configuration** : le processus de déploiement crée désormais automatiquement une sauvegarde des fichiers de configuration `app/etc/env.php` et `app/etc/config.php` après le déploiement. Nous avons également ajouté une [nouvelle commande d’interface de ligne de commande](https://support.magento.com/hc/en-us/articles/360033182871) pour restaurer ces fichiers de configuration à partir d’une sauvegarde.<!-- MAGECLOUD-1372 -->
 
@@ -615,7 +616,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
 - **Analyse de la configuration** : nous analysons désormais les composants critiques pendant le processus de création/déploiement et interrompons le processus en cas d’échec de l’analyse, ce qui évite les temps d’arrêt inutiles dus au fait que le site est en mode de maintenance.
 
-- **Notifications de build/déploiement**—Nous avons ajouté un fichier de configuration que vous pouvez utiliser pour [configurer les notifications par Slack et/ou par e-mail](../environment/set-up-notifications.md) pour les actions de build/déploiement dans tous vos environnements.
+- **Notifications de build/déploiement**—Nous avons ajouté un fichier de configuration que vous pouvez utiliser pour [configurer les notifications Slack et/ou par e-mail](../environment/set-up-notifications.md) pour les actions de build/déploiement dans tous vos environnements.
 
 - **Compression de contenu statique** : nous compressons désormais le contenu statique à l’aide de [gzip](https://www.gnu.org/software/gzip/) pendant les phases de création et de déploiement. Cette compression, associée à la compression Fastly, permet de réduire la taille de votre boutique et d’augmenter la vitesse de déploiement. Si nécessaire, vous pouvez désactiver la compression à l’aide d’une [option de build](../environment/variables-build.md) ou d’une [variable de déploiement](../environment/variables-deploy.md). Pour plus d’informations, consultez les rubriques suivantes :
 
@@ -623,11 +624,11 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
    - [Performances de déploiement de contenu statique](../deploy/static-content.md)
 
-   - [&#x200B; Processus de déploiement &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices)
+   - [ Processus de déploiement ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices)
 
-- **Gestion de la configuration** : nous générons désormais automatiquement un fichier `app/etc/config.php` dans votre référentiel Git pendant la phase de création s’il n’existe pas déjà. Le fichier généré automatiquement ne comprend qu’une liste de modules et d’extensions. Si le fichier existe déjà, la phase de création se poursuit normalement. Si vous suivez la [Gestion de la configuration](../store/store-settings.md) ultérieurement, les commandes mettent à jour le fichier sans nécessiter d’étapes supplémentaires. Pour plus d’informations, voir [Processus de déploiement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices).
+- **Gestion de la configuration** : nous générons désormais automatiquement un fichier `app/etc/config.php` dans votre référentiel Git pendant la phase de création s’il n’existe pas déjà. Le fichier généré automatiquement ne comprend qu’une liste de modules et d’extensions. Si le fichier existe déjà, la phase de création se poursuit normalement. Si vous suivez la [Gestion de la configuration](../store/store-settings.md) ultérieurement, les commandes mettent à jour le fichier sans nécessiter d’étapes supplémentaires. Pour plus d’informations, voir [Processus de déploiement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices).
 
-- **Vidages de base de données** : nous avons ajouté une commande `magento/ece-tools` CLI pour créer des vidages de base de données dans tous les environnements. Pour les environnements de production Pro Plan, cette commande n&#39;effectue qu&#39;un vidage à partir de l&#39;un des trois nœuds à haute disponibilité, de sorte que les données de production écrites sur un autre nœud pendant le vidage ne peuvent pas être copiées. Nous vous recommandons de mettre l’application en mode de maintenance avant d’effectuer un vidage de base de données dans les environnements de production. Voir [Gestion des sauvegardes](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) pour plus d’informations.
+- **Vidages de base de données** : nous avons ajouté une commande `magento/ece-tools` CLI pour créer des vidages de base de données dans tous les environnements. Pour les environnements de production Pro Plan, cette commande n&#39;effectue qu&#39;un vidage à partir de l&#39;un des trois nœuds à haute disponibilité, de sorte que les données de production écrites sur un autre nœud pendant le vidage ne peuvent pas être copiées. Nous vous recommandons de mettre l’application en mode de maintenance avant d’effectuer un vidage de base de données dans les environnements de production. Voir [Gestion des sauvegardes](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) pour plus d’informations.
 
 - **Suppression des limitations de l’intervalle cron** : l’intervalle cron par défaut pour tous les environnements configurés dans les régions us-3, eu-3 et ap-3 est d’une minute. L’intervalle cron par défaut dans toutes les autres régions est de 5 minutes pour les environnements d’intégration Pro et de 1 minute pour les environnements d’évaluation et de production Pro. Pour modifier vos tâches cron existantes, modifiez vos paramètres dans `.magento.app.yaml` ou créez un ticket d’assistance pour les environnements de production/d’évaluation. Pour plus d’informations, voir [Configurer des tâches cron](../application/crons-property.md#set-up-cron-jobs).
 
@@ -647,7 +648,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
 - Correction d’un problème qui empêchait `ece-tools` d’arrêter l’exécution et de générer une exception si aucun correctif ne pouvait être appliqué.<!-- MAGECLOUD-1152 -->
 
-- Correction d’un problème qui provoquait des erreurs lors du chargement du storefront après l’activation de la minimisation des HTMLS dans l’Admin.<!-- MAGECLOUD-1138 -->
+- Correction d’un problème qui provoquait des erreurs lors du chargement du storefront après l’activation de la minimisation d’HTML dans Admin.<!-- MAGECLOUD-1138 -->
 
 ## v2002.0.4
 
@@ -671,7 +672,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
 **Nouvelles fonctionnalités :**
 
-- Adobe Commerce sur les infrastructures cloud prend désormais en charge les portées et les [&#x200B; stratégies de déploiement de contenu statique &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy). Nous avons ajouté le paramètre `–s` avec un paramètre par défaut de `quick` pour la stratégie de déploiement de contenu statique. Vous pouvez utiliser la variable d’environnement [SCD_STRATEGY](../environment/variables-deploy.md) pour personnaliser et utiliser ces stratégies avec vos actions de build et de déploiement. Cette variable prend en charge les options `standard`, `quick` ou `compact`. Si vous sélectionnez `compact`, nous remplaçons la valeur `STATIC_CONTENT_THREADS` par `1`, ce qui peut ralentir le déploiement, en particulier dans les environnements de production. Non disponible dans 2.1.<!--- MAGECLOUD-1057 -->
+- Adobe Commerce sur les infrastructures cloud prend désormais en charge les portées et les [ stratégies de déploiement de contenu statique ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy). Nous avons ajouté le paramètre `–s` avec un paramètre par défaut de `quick` pour la stratégie de déploiement de contenu statique. Vous pouvez utiliser la variable d’environnement [SCD_STRATEGY](../environment/variables-deploy.md) pour personnaliser et utiliser ces stratégies avec vos actions de build et de déploiement. Cette variable prend en charge les options `standard`, `quick` ou `compact`. Si vous sélectionnez `compact`, nous remplaçons la valeur `STATIC_CONTENT_THREADS` par `1`, ce qui peut ralentir le déploiement, en particulier dans les environnements de production. Non disponible dans 2.1.<!--- MAGECLOUD-1057 -->
 
 - Nous avons créé un fichier journal sur les environnements pour capturer et compiler les actions de génération et de déploiement. Le fichier `var/log/cloud.log` se trouve dans le répertoire racine de l’application.<!--- MAGECLOUD-1014 & MAGECLOUD-1023 -->
 

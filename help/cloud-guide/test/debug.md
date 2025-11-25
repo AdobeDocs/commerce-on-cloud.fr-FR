@@ -1,7 +1,8 @@
 ---
 title: Configurez  [!DNL Xdebug]
 description: Découvrez comment configurer l’extension Xdebug pour déboguer votre Adobe Commerce sur le développement de projet d’infrastructure cloud.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 32857c9c-4a49-4337-9c15-a6e46c328df7
+source-git-commit: d48b1844305e72b7b4a37568f2358f3aa4cf2e24
 workflow-type: tm+mt
 source-wordcount: '1920'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Vous pouvez configurer [!DNL Xdebug] pour qu’il s’exécute dans l’environnement Cloud Docker à des fins de débogage local sans modifier la configuration de votre projet Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de Xdebug pour Docker](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug/).
+>Vous pouvez configurer [!DNL Xdebug] pour qu’il s’exécute dans l’environnement Cloud Docker à des fins de débogage local sans modifier la configuration de votre projet Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de Xdebug pour Docker](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug).
 
 Pour activer [!DNL Xdebug], vous devez configurer un fichier dans votre référentiel Git, votre IDE et configurer le transfert de port. Vous pouvez configurer certains paramètres dans le fichier `magento.app.yaml`. Après modification, poussez les modifications Git sur tous les environnements de démarrage et les environnements d’intégration Pro pour activer [!DNL Xdebug]. [!DNL Xdebug] est déjà disponible dans les environnements d’évaluation et de production Pro.
 
@@ -305,7 +306,7 @@ Vous avez besoin des éléments suivants :
 
 **Pour commencer le débogage à l’aide de l’URL d’environnement** :
 
-Il s’agit d’une démonstration des configurations utilisées, ainsi que du paramètre de GET permettant de démarrer une session de débogage à distance.
+Il s’agit d’une démonstration des configurations utilisées et du paramètre GET permettant de démarrer une session de débogage à distance.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3437417?learn=on)
 

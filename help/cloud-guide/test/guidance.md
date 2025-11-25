@@ -1,7 +1,8 @@
 ---
 title: Conseils de test
 description: Découvrez les types de tests et les bonnes pratiques pour lancer Adobe Commerce sur les infrastructures cloud.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 70fdfbbd-1763-4b1b-9ffd-9ffdc92f4f91
+source-git-commit: d48b1844305e72b7b4a37568f2358f3aa4cf2e24
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
@@ -16,9 +17,9 @@ Après avoir configuré et personnalisé votre projet d’infrastructure Adobe C
 
 Lors du développement, il est important d’effectuer des tests fonctionnels de bout en bout sur votre projet d’infrastructure cloud Adobe Commerce. Consultez les conseils suivants pour effectuer des tests fonctionnels dans l’environnement Docker :
 
-- **Tests d’application** : utilisez la [structure de tests fonctionnels du Magento (MFTF)](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing/) pour les tests d’application dans l’environnement Cloud Docker.
+- **Tests d’application** : utilisez la [structure de tests fonctionnels Magento (MFTF)](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing) pour les tests d’application dans l’environnement Cloud Docker.
 
-- **Test de code** : utilisez le cadre de test de [Codeception pour PHP](https://developer.adobe.com/commerce/cloud-tools/docker/test/code-testing/) pour valider le code destiné à apporter une contribution aux référentiels de packages cloud.
+- **Test de code** : utilisez le cadre de test de [Codeception pour PHP](https://developer.adobe.com/commerce/cloud-tools/docker/test/code-testing) pour valider le code destiné à apporter une contribution aux référentiels de packages cloud.
 
 ## Bonnes pratiques avant le lancement
 
