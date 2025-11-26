@@ -1,7 +1,8 @@
 ---
 title: Tests d’évaluation et de production
 description: Découvrez comment effectuer des tests dans les environnements d’évaluation et de production.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 39625c97-5eb0-4039-ac5f-ddaeb43156de
+source-git-commit: 0d84d29c470a098c7238b6ca7cc9538463dda695
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 0%
@@ -20,7 +21,7 @@ Si vous rencontrez des erreurs lors du déploiement ou d’autres problèmes lor
 
 Le journal de déploiement est en `/var/log/platform/<prodject-ID>/deploy.log`. La valeur de `<project-ID>` dépend de l’identifiant du projet et du statut de l’environnement : Évaluation ou Production. Par exemple, avec un ID de projet de `yw1unoukjcawe`, l’utilisateur intermédiaire est `yw1unoukjcawe_stg` et l’utilisateur de production est `yw1unoukjcawe`.
 
-Lors de l’accès aux journaux dans les environnements de production ou d’évaluation, utilisez SSH pour vous connecter à chacun des trois nœuds afin de localiser les journaux. Vous pouvez également utiliser la gestion des journaux de [New Relic](../monitor/log-management.md) pour afficher et interroger les données de journaux agrégées de tous les nœuds. Voir [&#x200B; Afficher les journaux &#x200B;](log-locations.md#application-logs).
+Lors de l’accès aux journaux dans les environnements de production ou d’évaluation, utilisez SSH pour vous connecter à chacun des trois nœuds afin de localiser les journaux. Vous pouvez également utiliser la gestion des journaux de [New Relic](../monitor/log-management.md) pour afficher et interroger les données de journaux agrégées de tous les nœuds. Voir [ Afficher les journaux ](log-locations.md#application-logs).
 
 ## Vérifier la base de code
 
@@ -63,7 +64,7 @@ Vérifiez les paramètres de configuration via le panneau d’administration, y 
    - Évaluation : `dig https://mcstaging.<your-domain>.com`
    - Production : `dig https://mcprod.<your-domain>.com`
 
-   Pour des tests de `dig` supplémentaires, voir Tests de Fastly [&#x200B; avant de modifier le DNS](https://docs.fastly.com/en/guides/working-with-domains).
+   Pour des tests de `dig` supplémentaires, voir Tests de Fastly [ avant de modifier le DNS](https://docs.fastly.com/en/guides/working-with-domains).
 
 1. Utilisez `cURL` pour vérifier les informations d’en-tête de réponse.
 
@@ -87,7 +88,7 @@ Si vous rencontrez des problèmes, enregistrez les étapes de reproduction, les 
 
 <table>
 <tr>
-<td style="width:150px">Gestion des utilisateurs</td>
+<td style="width:150px">Gestion des utilisateurs et utilisatrices</td>
 <td>
 <ul>
 <li>Créer et modifier des comptes clients, vérifier les e-mails</li>
@@ -211,7 +212,7 @@ Pour de meilleurs résultats, utilisez les outils suivants :
 
 ## Tests fonctionnels
 
-Vous pouvez utiliser la structure de tests fonctionnels (MFTF) du Magento pour effectuer des tests fonctionnels pour Adobe Commerce à partir de l’environnement Cloud Docker. Voir [Test d’application](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing/) dans le guide _Cloud Docker for Commerce_.
+Vous pouvez utiliser la structure de tests fonctionnels (MFTF) Magento pour effectuer des tests fonctionnels pour Adobe Commerce à partir de l’environnement Cloud Docker. Voir [Test d’application](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing) dans le guide _Cloud Docker for Commerce_.
 
 ## Configuration de l’outil d’analyse de sécurité
 

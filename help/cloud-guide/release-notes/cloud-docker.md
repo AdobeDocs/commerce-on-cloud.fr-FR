@@ -5,7 +5,7 @@ feature: Cloud, Docker, Release Notes
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 95cf4f30-6bce-4bac-8e11-cfe53cac2c70
-source-git-commit: bbf11023474cb6ac6b3b881c40897c3260542de9
+source-git-commit: 0d84d29c470a098c7238b6ca7cc9538463dda695
 workflow-type: tm+mt
 source-wordcount: '3806'
 ht-degree: 0%
@@ -87,7 +87,7 @@ Date de publication : 8 avril 2024
 Date de publication : 31 juillet 2023
 
 - ![nouvelle icône](../../assets/new.svg) **Ajout d’une nouvelle version de service**—OpenSearch 2.5.
-- ![nouvelle icône](../../assets/new.svg) **Activer le cache du compositeur**—Vous pouvez désormais étendre la configuration Docker pour activer le cache effacé du compositeur lors du démarrage du conteneur Docker. Voir [Extension de la configuration Docker](https://developer.adobe.com/commerce/cloud-tools/docker/configure) dans le guide _Cloud Docker pour Commerce_ .
+- ![nouvelle icône](../../assets/new.svg) **Activer le cache du compositeur**—Vous pouvez désormais étendre la configuration Docker pour activer le cache effacé du compositeur lors du démarrage du conteneur Docker. Voir [Extension de la configuration Docker](https://developer.adobe.com/commerce/cloud-tools/docker/configure/) dans le guide _Cloud Docker pour Commerce_ .
 
 ## v1.3.5
 
@@ -241,7 +241,7 @@ Date de publication : 9 novembre 2020
 
    - ![Icône de correction](../../assets/fix.svg) **Conteneur TLS** : désormais, le [Conteneur TLS](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#tls-container) est basé sur l’image Docker `https://hub.docker.com/r/magento/magento-cloud-docker-nginx` au lieu de l’image CentOS. Cette modification corrige les problèmes qui provoquaient des erreurs lors de l’envoi de requêtes HTTPS entre les conteneurs dans l’environnement Cloud Docker.<!--MCLOUD-6469-->
 
-   - ![nouvelle icône](../../assets/new.svg) **Conteneur de test** : ajout d’un conteneur de test pour les tests d’application et ajout de l’option `--with-test` à la commande Docker `build:compose` pour créer le conteneur uniquement lors des tests dans l’environnement Docker. Voir [test d’application](https://developer.adobe.com/commerce/cloud-tools/docker/test-application-testing).<!--MCLOUD-6394-->
+   - ![nouvelle icône](../../assets/new.svg) **Conteneur de test** : ajout d’un conteneur de test pour les tests d’application et ajout de l’option `--with-test` à la commande Docker `build:compose` pour créer le conteneur uniquement lors des tests dans l’environnement Docker. Voir [test d’application](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing).<!--MCLOUD-6394-->
 
    - ![nouvelle icône](../../assets/new.svg) **Conteneur FPM-XDEBUG**
 
@@ -251,7 +251,7 @@ Date de publication : 9 novembre 2020
 
 - ![nouvelle icône](../../assets/new.svg) **modifications apportées à la configuration Docker**
 
-   - **Configuration MailHog** : vous pouvez maintenant utiliser les options de commande `ece-docker build:compose` suivantes pour désactiver MailHog et spécifier les ports : `--no-mailhog`, `--mailhog-http-port` et `--mailhog-smtp-port`. Voir [Configurer l’e-mail](https://developer.adobe.com/commerce/cloud-tools/docker/configure#set-up-email).<!--MCLOUD-6898, MCLOUD-6660-->
+   - **Configuration MailHog** : vous pouvez maintenant utiliser les options de commande `ece-docker build:compose` suivantes pour désactiver MailHog et spécifier les ports : `--no-mailhog`, `--mailhog-http-port` et `--mailhog-smtp-port`. Voir [Configurer l’e-mail](https://developer.adobe.com/commerce/cloud-tools/docker/configure/#set-up-email).<!--MCLOUD-6898, MCLOUD-6660-->
 
    - Pour Cloud Docker pour Commerce 1.2.0 et versions ultérieures, Adobe fournit désormais des images Docker pour chaque version de correctif, et le générateur de configuration Docker crée la configuration Docker avec une version de correctif spécifiée au lieu d’utiliser la dernière. Auparavant, le générateur de configuration Docker créait la configuration à l’aide de la dernière version de correctif, ce qui pouvait interrompre Cloud Docker pour les environnements Commerce créés à l’aide d’une version antérieure.<!--MCLOUD-7093-->
 
@@ -427,7 +427,7 @@ Date de publication : 5 février 2020
 
    - ![nouvelle icône](../../assets/new.svg) **Prise en charge du mode pont réseau**—Ajout de la prise en charge du mode pont réseau pour activer les connexions entre les conteneurs Docker sur le réseau local.<!--MAGECLOUD-4165-->
 
-   - ![nouvelle icône](../../assets/new.svg) **Conteneur Cron désactivé par défaut** : pour améliorer les performances, le conteneur Cron n’est plus configuré par défaut lorsque vous créez l’environnement Docker. Vous pouvez utiliser l’option `--with-cron` sur la commande de création Docker pour ajouter un conteneur Cron à votre environnement. Voir [Gestion des tâches cron](https://developer.adobe.com/commerce/cloud-tools/docker/configure#manage-cron-jobs).<!--MAGECLOUD-5181-->
+   - ![nouvelle icône](../../assets/new.svg) **Conteneur Cron désactivé par défaut** : pour améliorer les performances, le conteneur Cron n’est plus configuré par défaut lorsque vous créez l’environnement Docker. Vous pouvez utiliser l’option `--with-cron` sur la commande de création Docker pour ajouter un conteneur Cron à votre environnement. Voir [Gestion des tâches cron](https://developer.adobe.com/commerce/cloud-tools/docker/configure/#manage-cron-jobs).<!--MAGECLOUD-5181-->
 
    - ![nouvelle icône](../../assets/new.svg) **Arrêtez de synchroniser les fichiers de sauvegarde volumineux**—Ajout des fichiers d’archive et de vidage de base de données (ZIP, SQL, GZ et BZ2) à la liste d’exclusion dans les fichiers `dist/docker-sync.yml` et `dist/mutagen.sh`. La synchronisation de fichiers volumineux (> 1 Go) peut entraîner une période d’inactivité et les fichiers de sauvegarde ne nécessitent normalement pas de synchronisation, car vous pouvez les régénérer.<!--MAGECLOUD-3979-->
 
@@ -443,7 +443,7 @@ Date de publication : 5 février 2020
 
    - ![nouvelle icône](../../assets/new.svg) **Mises à jour de `build:compose` commande**—
 
-      - ![nouvelle icône](../../assets/new.svg) Ajout de l’option `--sync-engine="native"` à la commande `docker-build` pour désactiver la synchronisation des fichiers lorsque vous générez le fichier de configuration Docker Compose en mode développeur. Utilisez cette option lors du développement sur des systèmes Linux, qui ne nécessitent pas de synchronisation de fichiers pour le développement local de Docker. Voir [&#x200B; Synchronisation des données dans l’environnement Docker &#x200B;](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data).<!--MCLOUD-3231, MCLOUD-3890-->
+      - ![nouvelle icône](../../assets/new.svg) Ajout de l’option `--sync-engine="native"` à la commande `docker-build` pour désactiver la synchronisation des fichiers lorsque vous générez le fichier de configuration Docker Compose en mode développeur. Utilisez cette option lors du développement sur des systèmes Linux, qui ne nécessitent pas de synchronisation de fichiers pour le développement local de Docker. Voir [ Synchronisation des données dans l’environnement Docker ](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data).<!--MCLOUD-3231, MCLOUD-3890-->
 
    - ![nouvelle icône](../../assets/new.svg) Modification du paramètre de synchronisation de fichiers par défaut de `docker-sync` à `native`. [Correctif soumis par Mathew Beane de Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/124).<!--MAGECLOUD-5066-->
 
