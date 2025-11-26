@@ -258,7 +258,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
    - **Variables ADMIN**—<!-- MAGECLOUD-2573/MAGECLOUD-2848 -->
 
-      - Amélioration de la sécurité lors de la gestion des informations d’identification pour l’utilisateur administrateur utilisant des variables d’environnement. Vous ne pouvez plus utiliser les variables d’environnement ADMIN_EMAIL, ADMIN_USERNAME et ADMIN_PASSWORD pour remplacer les informations d’identification d’administrateur lors des mises à niveau. Si vous ne pouvez pas accéder au panneau d’administration, utilisez la fonction _Mot de passe oublié_ ou la commande de l’interface de ligne de commande `admin:user:create` pour créer un utilisateur administrateur. Voir [ Accès à votre panneau d’administration ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/onboarding#admin).
+      - Amélioration de la sécurité lors de la gestion des informations d’identification pour l’utilisateur administrateur utilisant des variables d’environnement. Vous ne pouvez plus utiliser les variables d’environnement ADMIN_EMAIL, ADMIN_USERNAME et ADMIN_PASSWORD pour remplacer les informations d’identification d’administrateur lors des mises à niveau. Si vous ne pouvez pas accéder au panneau d’administration, utilisez la fonction _Mot de passe oublié_ ou la commande de l’interface de ligne de commande `admin:user:create` pour créer un utilisateur administrateur. Voir [&#x200B; Accès à votre panneau d’administration &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/onboarding#admin).
 
       - ADMIN_EMAIL n’est plus nécessaire lors de la mise à niveau ou de l’application de correctifs.
 
@@ -342,7 +342,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
    - **Prise en charge du service Redis** : ajout d’une image Redis, qui est déployée dans un conteneur Docker et configurée automatiquement pour fonctionner avec votre installation Docker.&lt;!—MAGECLOUD—2442—>
 
-   - Vous disposez désormais de la fonctionnalité de vidage de la base de données lors de l’utilisation du conteneur de base de données [ Cloud Docker](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#database-container). Vous pouvez également [partager des fichiers](https://developer.adobe.com/commerce/cloud-tools/docker/containers/#sharing-data-between-host-machine-and-container) entre un ordinateur hôte et un conteneur à l’aide du répertoire `docker/mnt`.<!-- MAGECLOUD-2577 -->
+   - Vous disposez désormais de la fonctionnalité de vidage de la base de données lors de l’utilisation du conteneur de base de données [&#x200B; Cloud Docker](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#database-container). Vous pouvez également [partager des fichiers](https://developer.adobe.com/commerce/cloud-tools/docker/containers/#sharing-data-between-host-machine-and-container) entre un ordinateur hôte et un conteneur à l’aide du répertoire `docker/mnt`.<!-- MAGECLOUD-2577 -->
 
    - **Prise en charge du service de vernis**— Ajout d’une image de vernis, qui est déployée automatiquement dans un conteneur Docker. Après le déploiement, vous pouvez configurer manuellement Varnish en suivant les bonnes pratiques relatives à Adobe Commerce. Voir [Configurer et utiliser le vernis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish).&lt;!—MAGECLOUD—2358—>
 
@@ -624,7 +624,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
    - [Performances de déploiement de contenu statique](../deploy/static-content.md)
 
-   - [ Processus de déploiement ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices)
+   - [&#x200B; Processus de déploiement &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices)
 
 - **Gestion de la configuration** : nous générons désormais automatiquement un fichier `app/etc/config.php` dans votre référentiel Git pendant la phase de création s’il n’existe pas déjà. Le fichier généré automatiquement ne comprend qu’une liste de modules et d’extensions. Si le fichier existe déjà, la phase de création se poursuit normalement. Si vous suivez la [Gestion de la configuration](../store/store-settings.md) ultérieurement, les commandes mettent à jour le fichier sans nécessiter d’étapes supplémentaires. Pour plus d’informations, voir [Processus de déploiement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices).
 
@@ -672,7 +672,7 @@ La version `ece-tools` 2002.0.22 modifie la structure du package `ece-tools` pou
 
 **Nouvelles fonctionnalités :**
 
-- Adobe Commerce sur les infrastructures cloud prend désormais en charge les portées et les [ stratégies de déploiement de contenu statique ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy). Nous avons ajouté le paramètre `–s` avec un paramètre par défaut de `quick` pour la stratégie de déploiement de contenu statique. Vous pouvez utiliser la variable d’environnement [SCD_STRATEGY](../environment/variables-deploy.md) pour personnaliser et utiliser ces stratégies avec vos actions de build et de déploiement. Cette variable prend en charge les options `standard`, `quick` ou `compact`. Si vous sélectionnez `compact`, nous remplaçons la valeur `STATIC_CONTENT_THREADS` par `1`, ce qui peut ralentir le déploiement, en particulier dans les environnements de production. Non disponible dans 2.1.<!--- MAGECLOUD-1057 -->
+- Adobe Commerce sur les infrastructures cloud prend désormais en charge les portées et les [&#x200B; stratégies de déploiement de contenu statique &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy). Nous avons ajouté le paramètre `–s` avec un paramètre par défaut de `quick` pour la stratégie de déploiement de contenu statique. Vous pouvez utiliser la variable d’environnement [SCD_STRATEGY](../environment/variables-deploy.md) pour personnaliser et utiliser ces stratégies avec vos actions de build et de déploiement. Cette variable prend en charge les options `standard`, `quick` ou `compact`. Si vous sélectionnez `compact`, nous remplaçons la valeur `STATIC_CONTENT_THREADS` par `1`, ce qui peut ralentir le déploiement, en particulier dans les environnements de production. Non disponible dans 2.1.<!--- MAGECLOUD-1057 -->
 
 - Nous avons créé un fichier journal sur les environnements pour capturer et compiler les actions de génération et de déploiement. Le fichier `var/log/cloud.log` se trouve dans le répertoire racine de l’application.<!--- MAGECLOUD-1014 & MAGECLOUD-1023 -->
 
