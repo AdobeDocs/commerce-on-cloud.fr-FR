@@ -23,7 +23,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Met à jour les notes de mise à jour <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Correctifs cloud 1.1.12</a> afin d’inclure le correctif pour l’échec de l’extraction lorsque la minimisation et le regroupement JS sont activés : problème.</p>
+      <td><p>Met à jour les notes de mise à jour <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Correctifs cloud 1.1.12</a> afin d’inclure le correctif pour l’échec de l’extraction lorsque la minimisation et le regroupement JS sont activés : problème.</p>
 </td>
       <td>
         Technique
@@ -31,7 +31,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/d07be1a20fa95e2a79534e364e7620a2f856fc0d">validation</a></td>
     </tr>
     <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">référence CLI</a> après la version 2002.2.9 des outils ECE.</p>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">référence CLI</a> après la version 2002.2.9 des outils ECE.</p>
 </td>
       <td>
         Technique
