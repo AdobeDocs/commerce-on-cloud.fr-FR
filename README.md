@@ -1,7 +1,7 @@
 ---
-source-git-commit: b151aac666510594751937e80dc3d9db4ede41b7
+source-git-commit: 8cbda8ca194c5e5865073c9eb08e061cfecb5ace
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '831'
 ht-degree: 1%
 
 ---
@@ -9,8 +9,8 @@ ht-degree: 1%
 
 Ce site contient la documentation la plus récente pour les développeurs de Commerce sur les infrastructures cloud.
 
-- [Guide de Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/overview)
-- [Prise en main de Commerce](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/start/overview) sur les infrastructures cloud
+- [Guide de Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+- [Prise en main de Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/overview) sur les infrastructures cloud
 
 ## Code de conduite d’Adobe Open Source
 
@@ -18,7 +18,7 @@ Ce projet a adopté le [code de conduite d’Adobe Open Source](code-of-conduct.
 
 ## À propos de vos contributions au contenu d’Adobe
 
-Consultez le Guide du contributeur aux documents Adobe [&#128279;](https://experienceleague.adobe.com/fr/docs/contributor/contributor-guide/introduction).
+Consultez le Guide du contributeur aux documents Adobe [](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
 
 La façon dont vous contribuez dépend de qui vous êtes et du type de modifications que vous souhaitez apporter :
 
@@ -40,7 +40,7 @@ Si vous êtes rédacteur technique, responsable de programme ou développeur au 
 
 Les contributeurs de la communauté peuvent utiliser l’interface utilisateur de GitHub pour apporter des modifications mineures, ou dupliquer le référentiel pour apporter des contributions majeures.
 
-Pour plus d’informations, consultez le Guide du contributeur aux documents Adobe [&#128279;](https://experienceleague.adobe.com/fr/docs/contributor/contributor-guide/introduction).
+Pour plus d’informations, consultez le Guide du contributeur aux documents Adobe [](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
 
 ## Comment utiliser Markdown pour formater votre rubrique
 
@@ -70,7 +70,7 @@ En règle générale, la plupart des auteurs et des autrices n’ont besoin d’
 >**REMARQUE :**
 >
 >- La génération de contenu modélisé nécessite de travailler sur la ligne de commande dans un terminal.
->- Ruby doit être installé pour exécuter le script de rendu. Voir [_jekyll/.ruby-version] (_jekyll/.ruby-version) pour la version requise.
+>- Ruby doit être installé pour exécuter le script de rendu. Voir [_jekyll/.ruby-version](_jekyll/.ruby-version) pour la version requise.
 
 Pour obtenir une description de la structure de fichiers pour le contenu modélisé, reportez-vous aux sections suivantes :
 
@@ -101,7 +101,7 @@ Pour mettre à jour le contenu modélisé :
    bundle exec rake render
    ```
 
-   >**REMARQUE :** vous devez exécuter le script à partir du répertoire `_jekyll`. Si c’est la première fois que vous exécutez le script, vous devez d’abord installer les dépendances Ruby avec la commande `bundle install`. Les tâches principales sont fournies par `adobe-comdox-exl-rake-tasks` gem pour une meilleure maintenabilité dans les référentiels de documentation Adobe Commerce.
+   >**REMARQUE :** vous devez exécuter le script à partir du répertoire `_jekyll`. Si c’est la première fois que vous exécutez le script, vous devez d’abord installer les dépendances Ruby avec la commande `bundle install`. Les tâches et dépendances principales de Rake (Jekyll, Rake, optimisation des images) sont fournies par le `adobe-comdox-exl-rake-tasks` gem pour une meilleure maintenabilité dans les référentiels de documentation Adobe Commerce. Les tâches personnalisées spécifiques à ce référentiel sont implémentées dans le `Rakefile`.
 
 5. Revenez au répertoire `root`.
 
