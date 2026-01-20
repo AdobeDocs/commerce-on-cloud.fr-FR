@@ -23,7 +23,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la version des exemples dans <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch">Configuration du service OpenSearch</a>.</p>
+      <td><p>Mise à jour de la version des exemples dans <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/opensearch">Configuration du service OpenSearch</a>.</p>
 </td>
       <td>
         Feedback
