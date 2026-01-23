@@ -2,9 +2,10 @@
 title: Déploiement dans les environnements d’évaluation et de production
 description: Découvrez comment déployer votre code d’infrastructure cloud Adobe Commerce sur les environnements d’évaluation et de production pour des tests supplémentaires.
 feature: Cloud, Console, Deploy, SCD, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 1cfeb472-c6ec-44ff-9b32-516ffa1b30d2
+source-git-commit: fe634412c6de8325faa36c07e9769cde0eb76c48
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1311'
 ht-degree: 0%
 
 ---
@@ -17,13 +18,13 @@ Lorsque vous êtes prêt à déployer votre magasin, vous devez terminer le dép
 
 >[!TIP]
 >
->Adobe recommande de créer une [sauvegarde](../storage/snapshots.md) de l’environnement avant les déploiements.
+>Adobe recommande de créer une [ sauvegarde ](../storage/snapshots.md) l’environnement avant les déploiements.
 
 En outre, vous pouvez activer le [suivi des déploiements avec New Relic](../monitor/track-deployments.md) pour surveiller les événements de déploiement et vous aider à analyser les performances entre les déploiements.
 
 ## Flux de déploiement de démarrage
 
-Adobe recommande de créer une branche `staging` à partir de la branche `master` pour prendre en charge au mieux le développement et le déploiement de votre plan de démarrage. Deux de vos quatre environnements actifs sont alors prêts : `master` pour la production et `staging` pour l’évaluation.
+Adobe recommande de créer une branche `staging` à partir de la branche `master` pour prendre en charge le développement et le déploiement de votre plan de démarrage. Deux de vos quatre environnements actifs sont alors prêts : `master` pour la production et `staging` pour l’évaluation.
 
 Pour plus d’informations sur le processus, voir [Démarrer le développement et le déploiement d’un workflow](../architecture/starter-develop-deploy-workflow.md).
 
@@ -139,7 +140,7 @@ L’interface de ligne de commande Cloud fournit des commandes pour déployer le
 
 ## Migration de fichiers statiques
 
-Les [fichiers statiques](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/glossary) sont stockés dans `mounts`. Il existe deux méthodes pour migrer des fichiers d’un emplacement de montage source, tel que votre environnement local, vers un emplacement de montage de destination. Les deux méthodes utilisent l’utilitaire `rsync`, mais Adobe recommande d’utiliser l’interface de ligne de commande `magento-cloud` pour déplacer les fichiers entre l’environnement local et l’environnement distant. Et Adobe recommande d’utiliser la méthode `rsync` lors du déplacement de fichiers d’une source distante vers un autre emplacement distant.
+Les [fichiers statiques](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) sont stockés dans `mounts`. Il existe deux méthodes pour migrer des fichiers d’un emplacement de montage source, tel que votre environnement local, vers un emplacement de montage de destination. Les deux méthodes utilisent l’utilitaire `rsync`, mais Adobe recommande d’utiliser l’interface de ligne de commande `magento-cloud` pour déplacer les fichiers entre l’environnement local et l’environnement distant. Adobe recommande également d’utiliser la méthode `rsync` lors du déplacement de fichiers d’une source distante vers un autre emplacement distant.
 
 ### Migration de fichiers à l’aide de l’interface de ligne de commande
 
@@ -245,11 +246,11 @@ Voir l’aide de [rsync](https://linux.die.net/man/1/rsync).
 >
 >La base de données de l’environnement d’intégration est strictement destinée aux tests de développement et peut inclure des données que vous ne souhaitez pas migrer vers les environnements d’évaluation et de production.
 
-Pour les déploiements d’intégration continue, l’Adobe **déconseille** de migrer les données de l’intégration vers les environnements d’évaluation et de production. Vous pouvez transmettre des données de test ou remplacer des données importantes. Toutes les configurations essentielles sont transmises à l’aide du [fichier de configuration](../store/store-settings.md) et de la commande `setup:upgrade` lors de la génération et du déploiement.
+Pour les déploiements d’intégration continue, Adobe **déconseille** de migrer les données de l’intégration vers les environnements d’évaluation et de production. Vous pouvez transmettre des données de test ou remplacer des données importantes. Toutes les configurations essentielles sont transmises à l’aide du [fichier de configuration](../store/store-settings.md) et de la commande `setup:upgrade` lors de la génération et du déploiement.
 
 >[!ENDSHADEBOX]
 
-L’Adobe **recommande** de migrer les données de la production vers l’évaluation pour tester entièrement votre site et le stocker dans un environnement de quasi-production avec tous les services et paramètres.
+Adobe **recommande** de migrer les données de la production vers l’évaluation pour tester entièrement votre site et le stocker dans un environnement de quasi-production avec tous les services et paramètres.
 
 >[!NOTE]
 >
@@ -319,16 +320,10 @@ Lors de l’import de données, vous devez supprimer et créer une base de donn�
    drop database main;
    ```
 
-   Pour la production :
+   Pour les environnements de production et d’évaluation :
 
    ```shell
-   drop database <cluster-id>;
-   ```
-
-   Pour l’évaluation :
-
-   ```shell
-   drop database <cluster-ID_stg>;
+   drop database <database_name>;
    ```
 
 1. Recréez la base de données.
