@@ -18,7 +18,7 @@ Lorsque vous êtes prêt à déployer votre magasin, vous devez terminer le dép
 
 >[!TIP]
 >
->Adobe recommande de créer une [ sauvegarde ](../storage/snapshots.md) l’environnement avant les déploiements.
+>Adobe recommande de créer une [&#x200B; sauvegarde &#x200B;](../storage/snapshots.md) l’environnement avant les déploiements.
 
 En outre, vous pouvez activer le [suivi des déploiements avec New Relic](../monitor/track-deployments.md) pour surveiller les événements de déploiement et vous aider à analyser les performances entre les déploiements.
 
