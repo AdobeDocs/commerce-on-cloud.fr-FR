@@ -89,9 +89,9 @@ Exemple de sortie :
 Ideal state is configured
 ```
 
-Voir [ Notes de mise à jour pour ece-tools](../release-notes/cloud-tools-suite.md).
+Voir [&#x200B; Notes de mise à jour pour ece-tools](../release-notes/cloud-tools-suite.md).
 
 ## Correctifs Adobe et correctifs personnalisés
 
-Le package `ece-tools` comprend une dépendance pour le package [magento/magento-cloud-patches](https://github.com/magento/magento-cloud-patches), qui fournit des correctifs Adobe et des correctifs logiciels qui améliorent l’intégration de toutes les versions d’Adobe Commerce aux environnements cloud et prennent en charge la diffusion rapide de correctifs critiques. Le « fournit également des correctifs personnalisés que vous ajoutez à votre projet d’infrastructure cloud Adobe Commerce on cloud. Voir [ Application de correctifs](../development/apply-patches.md).
+Le package `ece-tools` comprend une dépendance pour le package [magento/magento-cloud-patches](https://github.com/magento/magento-cloud-patches), qui fournit des correctifs Adobe et des correctifs logiciels qui améliorent l’intégration de toutes les versions d’Adobe Commerce aux environnements cloud et prennent en charge la diffusion rapide de correctifs critiques. Le « fournit également des correctifs personnalisés que vous ajoutez à votre projet d’infrastructure cloud Adobe Commerce on cloud. Voir [&#x200B; Application de correctifs](../development/apply-patches.md).
 
