@@ -3,7 +3,7 @@ title: Configurer plusieurs sites web ou magasins
 description: Découvrez comment configurer plusieurs sites web ou magasins pour Adobe Commerce sur une infrastructure cloud.
 feature: Cloud, Configuration, Routes, Site Navigation
 exl-id: 773d8d64-d235-4c2b-87e9-aadbf8471b2c
-source-git-commit: 0d84d29c470a098c7238b6ca7cc9538463dda695
+source-git-commit: db34528be490f92cc61c609ca143c01ef3284157
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 0%
@@ -36,7 +36,7 @@ https://store.com/second/
 
 >[!TIP]
 >
->Pour ajouter une vue de magasin à l’URL de base du site, il n’est pas nécessaire de créer plusieurs répertoires. Voir [Ajouter le code de magasin à l’URL de base](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html?lang=fr) dans le _Guide de configuration_.
+>Pour ajouter une vue de magasin à l’URL de base du site, il n’est pas nécessaire de créer plusieurs répertoires. Voir [Ajouter le code de magasin à l’URL de base](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html) dans le _Guide de configuration_.
 
 ## Ajouter des domaines
 
@@ -46,15 +46,15 @@ Le processus d’ajout d’un domaine dépend du type de compte Cloud :
 
 - Pour l’évaluation et la production pro
 
-  Ajoutez le nouveau domaine à Fastly, consultez [Gestion des domaines](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou ouvrez un ticket d’assistance pour demander de l’aide. En outre, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour demander l’ajout de nouveaux domaines à un cluster.
+  Ajoutez le nouveau domaine à Fastly, consultez [Gestion des domaines](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou ouvrez un ticket d’assistance pour demander de l’aide. En outre, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour demander l’ajout de nouveaux domaines à un cluster.
 
 - Pour la production de démarrage uniquement
 
-  Ajoutez le nouveau domaine à Fastly, consultez [Gestion des domaines](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou [Envoi d’un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour demander de l’aide. En outre, vous devez ajouter le nouveau domaine à l’onglet **Domaines** dans le [!DNL Cloud Console] : `https://<zone>.magento.cloud/projects/<project-ID>/edit`
+  Ajoutez le nouveau domaine à Fastly, consultez [Gestion des domaines](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou [Envoi d’un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour demander de l’aide. En outre, vous devez ajouter le nouveau domaine à l’onglet **Domaines** dans le [!DNL Cloud Console] : `https://<zone>.magento.cloud/projects/<project-ID>/edit`
 
 ## Configuration de l’installation locale
 
-Pour configurer votre installation locale afin d’utiliser plusieurs magasins, voir [Sites web ou magasins multiples][config-multiweb] dans le _Guide de configuration_.
+Pour configurer votre installation locale afin d’utiliser plusieurs magasins, voir [Sites web ou magasins multiples](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html) dans le _Guide de configuration_.
 
 Une fois l’installation locale créée et testée pour utiliser plusieurs magasins, vous devez préparer votre environnement d’intégration :
 
@@ -213,7 +213,7 @@ Lorsque la configuration des itinéraires définit la manière dont les URL sont
 
 ### Configurer des sites web, des boutiques et des affichages de boutique
 
-Dans l’_interface utilisateur d’administration_, configurez vos **sites web**, **magasins** et **vues de magasin** Adobe Commerce. Voir [Configuration de plusieurs sites web, boutiques et vues de boutique dans la section Admin](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html?lang=fr) du _Guide de configuration_.
+Dans l’_interface utilisateur d’administration_, configurez vos **sites web**, **magasins** et **vues de magasin** Adobe Commerce. Voir [Configuration de plusieurs sites web, boutiques et vues de boutique dans la section Admin](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html) du _Guide de configuration_.
 
 Il est important d’utiliser le même nom et le même code pour vos sites web, magasins et vues de magasin de votre administrateur lorsque vous configurez votre installation locale. Vous avez besoin de ces valeurs lorsque vous mettez à jour le fichier `magento-vars.php`.
 
@@ -351,6 +351,3 @@ Suivez le processus de déploiement [déploiement dans les environnements d’é
 
 Adobe recommande d’effectuer des tests complets dans l’environnement d’évaluation avant d’effectuer le transfert vers l’environnement de production. Apportez des modifications de code dans l’environnement d’intégration et recommencez le processus de déploiement dans les environnements.
 
-<!-- link definitions -->
-
-[config-multiweb]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html?lang=fr
