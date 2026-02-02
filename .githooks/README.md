@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8cbda8ca194c5e5865073c9eb08e061cfecb5ace
+source-git-commit: ee2ed3a78939af36572f0baa6672b2e9f9a2557f
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ Ce répertoire contient des hooks de prévalidation qui optimisent automatiqueme
 
 ## Ce que font les crochets
 
-- **Détection automatique** fichiers image intermédiaires (PNG, JPG, JPEG, GIF, SVG)
+- **Détection automatique** fichiers image intermédiaires (PNG, JPG, JPEG, GIF)
 - **Exécuter des`image_optim`** pour compresser et optimiser les images
 - **Réorganiser automatiquement les images optimisées**
 - **Vérifiez que toutes les images validées** sont correctement optimisées.
@@ -85,11 +85,11 @@ Image optimization complete!
 ## Instructions relatives aux images
 
 - **PNG** : à utiliser pour les captures d’écran et les éléments d’interface utilisateur (sera optimisé automatiquement)
-- **SVG** : à utiliser pour les icônes et les graphiques simples (optimisation désactivée par défaut)
 - **JPEG** : utiliser pour les photos (sera optimisé automatiquement)
 - **GIF** : à utiliser pour les animations (sera optimisé automatiquement)
+- **SVG** : à utiliser pour les icônes et les graphiques simples (non traités par des points d&#39;extension, validation en l&#39;état)
 
-Les hooks de pré-validation optimisent automatiquement toutes les images lors de la validation.
+Les hooks de prévalidation optimisent automatiquement les images PNG, JPEG et GIF lors de la validation.
 
 ## Optimisation manuelle
 
@@ -107,7 +107,7 @@ Les points d’extension utilisent le fichier de configuration `_jekyll/.image_o
 - **PNG** : utilise `advpng`, `optipng` et `pngquant`
 - **JPEG** : utilise `jhead`, `jpegoptim` et `jpegtran`
 - **GIF** : Utilise `gifsicle`
-- **SVG** : l&#39;optimisation du SVG est désactivée par défaut (peut rompre les graphiques et animations vectoriels complexes)
+- **SVG** : non traité (exclu de la détection pour conserver les graphiques vectoriels et les animations)
 
 ## Dépannage
 
@@ -141,7 +141,7 @@ Les points d’extension utilisent le fichier de configuration `_jekyll/.image_o
 - **PNG** (`.png`) - Compression sans perte et avec perte
 - **JPEG** (`.jpg`, `.jpeg`) - Compression avec perte avec nettoyage des métadonnées
 - **GIF** (`.gif`) - Animation et optimisation statique
-- **SVG** (`.svg`) - Optimisation vectorielle (désactivée par défaut)
+- **SVG** (`.svg`) - Non traité par les hooks (valider en l&#39;état pour préserver la qualité)
 
 ## Bonnes pratiques
 
