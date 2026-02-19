@@ -148,4 +148,4 @@ Pour modifier le propriétaire du compte New Relic de votre projet d’infrastru
 
 3. **Besoin d’aide ?** Si aucun propriétaire ou administrateur existant ne peut vous aider, tout utilisateur Adobe Commerce ayant accès au compte [Propriétaire du partenariat Adobe Commerce](https://account.newrelic.com/accounts/1311131/users) peut ajouter des utilisateurs en votre nom.
 
-Pour plus d’informations, consultez la présentation du service New Relic [](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service).
+Pour plus d’informations, consultez la présentation du service New Relic [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service).
