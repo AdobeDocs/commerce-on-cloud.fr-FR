@@ -91,7 +91,7 @@ Lorsque vous êtes prêt à lancer votre site, vous devez mettre à jour la conf
      php bin/magento setup:store-config:set --base-url="https://www.<domain-name>.com/"
      ```
 
-   **REMARQUE** : vous pouvez également mettre à jour l’URL de base à partir de l’Administration. Voir [URL des magasins](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html) dans le _Guide des magasins et de l’expérience d’achat Adobe Commerce_.
+   **REMARQUE** : vous pouvez également mettre à jour l’URL de base à partir de l’Administration. Voir [URL des magasins](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html?lang=fr) dans le _Guide des magasins et de l’expérience d’achat Adobe Commerce_.
 
 1. Patientez quelques minutes pour que le site se mette à jour.
 
@@ -105,7 +105,7 @@ Les modifications et vérifications recommandées sont les suivantes :
 
 - [Test des e-mails sortants terminé](../project/outgoing-emails.md)
 
-- [Configuration sécurisée des informations d’identification des administrateurs et de l’URL de l’administrateur de base](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)
+- [Configuration sécurisée des informations d’identification des administrateurs et de l’URL de l’administrateur de base](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-admin)
 
 - [Optimiser toutes les images pour le web](../cdn/fastly-image-optimization.md)
 
@@ -137,9 +137,9 @@ Vous pouvez également effectuer des tests à l’aide des options tierces suiva
 
 - [Configuration de l’analyse de sécurité](overview.md#set-up-the-security-scan-tool)
 
-- [Configuration sécurisée pour l’utilisateur administrateur](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)
+- [Configuration sécurisée pour l’utilisateur administrateur](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-admin)
 
-- [Configuration sécurisée de l’URL d’administration](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url)
+- [Configuration sécurisée de l’URL d’administration](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url)
 
 - [Supprimez tous les utilisateurs qui ne participent plus au projet d’infrastructure cloud d’Adobe Commerce](../project/user-access.md)
 
