@@ -20,5 +20,5 @@ Pour vérifier l’espace disponible pour chaque Adobe Commerce dans l’environ
 
 ## Lecture connexe
 
-[Gérer l’espace disque](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space?lang=en) dans notre documentation destinée aux développeurs.
+[Gérer l’espace disque](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space?lang=en) dans notre documentation destinée aux développeurs.
 
