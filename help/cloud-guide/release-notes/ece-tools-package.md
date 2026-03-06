@@ -4,9 +4,9 @@ description: Voir la liste des dernières améliorations apportées au progiciel
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: 16d5577da8841c2f65f9b5298beaa7fb84a1ab47
+source-git-commit: d31037e9afa4223165b208d5eb7714103a1d3e87
 workflow-type: tm+mt
-source-wordcount: '3314'
+source-wordcount: '3491'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,16 @@ Les notes de mise à jour incluent les éléments suivants :
 
 <!--Add release notes below-->
 
-## v2002.2.9 {#latest}
+## v2002.2.10 {#latest}
+
+Date de publication : 5 mars 2026
+
+- ![nouvelle icône](../../assets/new.svg) **PHP 8.5**—Ajout de la prise en charge de PHP 8.5.<!-- MCLOUD-14179 -->
+- ![icône de correction](../../assets/fix.svg) **test fonctionnel mis à jour**-tests Valkey 8.1, 8,2 et Redis 8.4 mis à jour<!-- MCLOUD-13983 -->
+- ![icône de correction](../../assets/fix.svg) **mise à jour des validateurs MariaDB, PHP et Opensearch**-mise à jour du script de validation.<!-- MCLOUD-14574/MCLOUD-14466 -->
+- ![icône de correction](../../assets/fix.svg) **validateur de fin de vie**-dates de services de fin de vie mises à jour.<!-- MCLOUD-14272 -->
+
+## v2002.2.9
 
 Date de publication : 13 novembre 2025
 
@@ -177,7 +186,7 @@ Date de publication : 4 août 2022
 
 - ![icône de correction](../../assets/fix.svg) **ElasticSuite Validator et OpenSearch** - Correction du problème de validation de vérification d’intégrité ElasticSuite lors de l’installation d’OpenSearch.<!-- MCLOUD-8767 -->
 - ![Icône de correction](../../assets/fix.svg) **Types de retour pour les commandes de déploiement**—Types de retour fixes pour les commandes de déploiement.<!-- AC-3208 -->
-- ![icône de correction](../../assets/fix.svg) **[!DNL RabbitMQ]problème lié à la nouvelle installation de Commerce 2.4.5**—Correction d’[!DNL RabbitMQ] problème de blocage sur la nouvelle installation de Commerce 2.4.5<!-- MCLOUD-9059 -->
+- ![icône de correction](../../assets/fix.svg) **[!DNL RabbitMQ]problème lié à la nouvelle installation de Commerce 2.4.5**—Correction d’[!DNL RabbitMQ] problème de blocage sur le nouveau Commerce 2.4.5. installation.<!-- MCLOUD-9059 -->
 
 ## v2002.1.10
 
@@ -361,7 +370,7 @@ Date de publication : 25 juin 2020
 
    - ![nouvelle icône](../../assets/new.svg) **Contrôles de compatibilité Elasticsearch 7.x**—Mise à jour de la validation Elasticsearch pour les contrôles de compatibilité logicielle Elasticsearch 7.x.<!--MCLOUD-5542-->
 
-   - ![nouvelle icône](../../assets/new.svg) **Mise à jour de la version du service et contrôles de validation de fin de vie**—Mise à jour de la validation pour vérifier les versions de service installées par rapport aux exigences d’Adobe Commerce 2.4.<!--MCLOUD-6144-->.
+   - ![nouvelle icône](../../assets/new.svg) **Contrôles de version de service et de validation de fin de vie mis à jour**—Validation mise à jour pour vérifier les versions de service installées par rapport à Adobe Commerce 2.4. requirements.<!--MCLOUD-6144-->
 
    - ![Icône de correction](../../assets/fix.svg) Correction d’un problème de validation en raison duquel le message d’avertissement post-déploiement suivant s’affichait uniquement si la configuration du hook `post-deploy` était absente du fichier `.magento.app.yaml` :
 
@@ -417,7 +426,7 @@ Date de publication : 6 février 2020
 
 >[!NOTE]
 >
->Avant de mettre à jour vers la version 2002.1.0 de ECE-Tools, passez en revue le [rétrospectif   modifications incompatibles &#x200B;](backward-incompatible-changes.md) pour en savoir plus sur les modifications qui pourraient nécessiter que vous   mettez à jour Adobe Commerce sur la configuration ou les processus de projet d’infrastructure cloud.
+>Avant de mettre à jour vers la version 2002.1.0 de ECE-Tools, passez en revue le [rétrospectif   modifications incompatibles ](backward-incompatible-changes.md) pour en savoir plus sur les modifications qui pourraient nécessiter que vous   mettez à jour Adobe Commerce sur la configuration ou les processus de projet d’infrastructure cloud.
 
 - ![nouvelle icône](../../assets/new.svg) **Mises à jour des services**—
 
@@ -445,7 +454,7 @@ Date de publication : 6 février 2020
 
 - ![nouvelle icône](../../assets/new.svg) **mises à jour des commandes CLI**—
 
-   - ![nouvelle icône](../../assets/new.svg) **Nouvelle commande cron**—Vous pouvez désormais gérer manuellement le traitement cron dans votre environnement Adobe Commerce sur l&#39;infrastructure cloud à l&#39;aide des commandes `cron:disable` et `cron:enable`. Utilisez la commande disable pour arrêter tous les processus cron actifs et désactiver toutes les tâches cron. Utilisez la commande d’activation pour réactiver les tâches cron lorsque vous êtes prêt. Voir [&#x200B; Désactiver les tâches cron &#x200B;](../application/crons-property.md#disable-cron-jobs).
+   - ![nouvelle icône](../../assets/new.svg) **Nouvelle commande cron**—Vous pouvez désormais gérer manuellement le traitement cron dans votre environnement Adobe Commerce sur l&#39;infrastructure cloud à l&#39;aide des commandes `cron:disable` et `cron:enable`. Utilisez la commande disable pour arrêter tous les processus cron actifs et désactiver toutes les tâches cron. Utilisez la commande d’activation pour réactiver les tâches cron lorsque vous êtes prêt. Voir [ Désactiver les tâches cron ](../application/crons-property.md#disable-cron-jobs).
 
    - ![nouvelle icône](../../assets/new.svg) **Amélioration des rapports d&#39;erreur**—Ajout d&#39;une meilleure journalisation pour les défaillances de commande CLI qui se produisent pendant le traitement ECE-Tools.<!--MAGECLOUD-4849-->
 

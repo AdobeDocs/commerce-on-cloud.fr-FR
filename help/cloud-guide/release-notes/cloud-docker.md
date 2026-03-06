@@ -5,9 +5,9 @@ feature: Cloud, Docker, Release Notes
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 95cf4f30-6bce-4bac-8e11-cfe53cac2c70
-source-git-commit: 0d84d29c470a098c7238b6ca7cc9538463dda695
+source-git-commit: c668b984ae4353757adfde23fd5c028c80b9d2a7
 workflow-type: tm+mt
-source-wordcount: '3806'
+source-wordcount: '4437'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,15 @@ Les notes de mise à jour incluent les éléments suivants :
 
 <!--Add release notes below-->
 
-## v1.4.6 {#latest}
+## v1.4.7 {#latest}
+
+Date de publication : 5 mars 2026
+
+- ![nouvelle icône](../../assets/new.svg) **PHP 8.5**—Ajout de la prise en charge de PHP 8.5.<!-- MCLOUD-14180 -->
+- ![nouvelle icône](../../assets/new.svg) **Ajout d’images `php-cli` et `php-fpm` 8.5**—Ajout de nouvelles images Cloud Docker (CLI et FPM) avec la prise en charge de PHP 8.5.<!-- MCLOUD-14178 -->
+- ![nouvelle icône](../../assets/new.svg) **Ajout des commandes de génération d’images Docker PHP 8.5 et Opensearch 3.0**-Résolution de l’isolation du réseau Docker (y compris ARM64), correction des tests d’intégration et ajout de la prise en charge de PHP 8.5 et OpenSearch 3.0 pour les commandes de génération d’images Docker.<!-- MCLOUD-14523 -->
+
+## v1.4.6
 
 Date de publication : 13 novembre 2025
 
@@ -79,7 +87,7 @@ Date de publication : 8 avril 2024
 
 - ![nouvelle icône](../../assets/new.svg) **PHP** — Ajout de la prise en charge des images PHP 8.3 et PHP 8.3.
 - ![nouvelle icône](../../assets/new.svg) **Nginx** — Ajout de l&#39;image nginx v. 1.24.
-- ![nouvelle icône](../../assets/new.svg) **Opensearch** - Ajout de l’image OpenSearch v. 2.12, 1.3.
+- ![nouvelle icône](../../assets/new.svg) **Opensearch** - Ajout d’une image OpenSearch v. 2.12, 1.3.
 - ![nouvelle icône](../../assets/new.svg) **Compositeur** - Mise à jour de la version du compositeur vers la version 2.2.23.
 
 ## v1.3.6
@@ -314,7 +322,7 @@ Date de publication : 25 juin 2020
 
    - ![nouvelle icône](../../assets/new.svg) **PHP-FPM**
 
-      - Ajout de la prise en charge de PHP 7.4. [Correctif soumis par Mohanela Murugan de Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/198)<!--MCLOUD-198-->
+      - Ajout de la prise en charge de PHP 7.4 [Correctif soumis par Mohanela Murugan de Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/198)<!--MCLOUD-198-->
 
       - Possibilité de copier un fichier `php.ini` dans le répertoire racine du projet dans l&#39;environnement Cloud Docker et d&#39;appliquer des paramètres PHP personnalisés aux conteneurs PHP-FPM et CLI. Voir [Personnaliser les paramètres PHP](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#customize-php-settings). [Correctif soumis par Mathew Beane de Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/130).<!--MCLOUD-6012-->
 
@@ -443,7 +451,7 @@ Date de publication : 5 février 2020
 
    - ![nouvelle icône](../../assets/new.svg) **Mises à jour de `build:compose` commande**—
 
-      - ![nouvelle icône](../../assets/new.svg) Ajout de l’option `--sync-engine="native"` à la commande `docker-build` pour désactiver la synchronisation des fichiers lorsque vous générez le fichier de configuration Docker Compose en mode développeur. Utilisez cette option lors du développement sur des systèmes Linux, qui ne nécessitent pas de synchronisation de fichiers pour le développement local de Docker. Voir [&#x200B; Synchronisation des données dans l’environnement Docker &#x200B;](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data).<!--MCLOUD-3231, MCLOUD-3890-->
+      - ![nouvelle icône](../../assets/new.svg) Ajout de l’option `--sync-engine="native"` à la commande `docker-build` pour désactiver la synchronisation des fichiers lorsque vous générez le fichier de configuration Docker Compose en mode développeur. Utilisez cette option lors du développement sur des systèmes Linux, qui ne nécessitent pas de synchronisation de fichiers pour le développement local de Docker. Voir [ Synchronisation des données dans l’environnement Docker ](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data).<!--MCLOUD-3231, MCLOUD-3890-->
 
    - ![nouvelle icône](../../assets/new.svg) Modification du paramètre de synchronisation de fichiers par défaut de `docker-sync` à `native`. [Correctif soumis par Mathew Beane de Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/124).<!--MAGECLOUD-5066-->
 
