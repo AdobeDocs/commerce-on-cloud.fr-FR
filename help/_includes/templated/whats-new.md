@@ -1,8 +1,8 @@
 ---
-source-git-commit: 2dc98e99fe463f8cc7dbb40871cc1a6db08f3797
+source-git-commit: d7d8be211f07363c31ec558382f7adc38f6a46c6
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 4%
+source-wordcount: '364'
+ht-degree: 3%
 
 ---
 # Nouveautés du modèle
@@ -10,6 +10,72 @@ ht-degree: 4%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### 6 mars 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Version <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">ECE-Tools</a> v2002.2.10.</p>
+</td>
+      <td>
+        Technique
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/78c1e1ae549243e41721592195bf9426f6e3510f">validation</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 4 mars 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout d’une clarification sur la manière de <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin#change-the-admin-url">modifier l’URL d’administration</a> dans Adobe Commerce sur le cloud plutôt que sur site.</p>
+</td>
+      <td>
+        Mise à jour majeure, commentaires
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/e16ca6d2bdd93f2cf6c43527b5831779a1c7b3d9">validation</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2 mars 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout de la documentation pour la <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/check-disk-space-limit-on-cloud">vérification de la limite d’espace disque pour Adobe Commerce sur les projets cloud</a> à partir de la console cloud.</p>
+</td>
+      <td>
+        Nouvelle rubrique, technique
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/1feaf0c56401ceebf52263e290695d45302d5485">validation</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 27 Février 2026
 
@@ -23,7 +89,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/launch/checklist">liste de contrôle Launch</a> pour Commerce sur les projets cloud afin d’ajouter les enregistrements Fastly AAAA aux instructions de configuration DNS.</p>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist">liste de contrôle Launch</a> pour Commerce sur les projets cloud afin d’ajouter les enregistrements Fastly AAAA aux instructions de configuration DNS.</p>
 </td>
       <td>
         Feedback
@@ -45,7 +111,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’instructions pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management">modifier le propriétaire du compte New Relic</a> dans le <em>Guide de Commerce sur les infrastructures cloud</em>.</p>
+      <td><p>Ajout d’instructions pour <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management">modifier le propriétaire du compte New Relic</a> dans le <em>Guide de Commerce sur les infrastructures cloud</em>.</p>
 </td>
       <td>
         Technique
@@ -67,7 +133,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout des informations suivantes sur le cloaking de l’origine au <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/fastly">Présentation des services Fastly</a>.<br />- Définition et flux de trafic<br />- Statut d’activation (activé sur tous les projets cloud depuis 2021) Exemples d’URL d’origine bloquée<br />- Exemples d’utilisation de l’API REST</p>
+      <td><p>Ajout des informations suivantes sur le cloaking de l’origine au <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly">Présentation des services Fastly</a>.<br />- Définition et flux de trafic<br />- Statut d’activation (activé sur tous les projets cloud depuis 2021) Exemples d’URL d’origine bloquée<br />- Exemples d’utilisation de l’API REST</p>
 </td>
       <td>
         Technique
@@ -89,7 +155,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la version des exemples dans <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/opensearch">Configuration du service OpenSearch</a>.</p>
+      <td><p>Mise à jour de la version des exemples dans <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch">Configuration du service OpenSearch</a>.</p>
 </td>
       <td>
         Feedback
