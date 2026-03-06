@@ -2,9 +2,9 @@
 title: Commerce sur les infrastructures cloud
 description: Découvrez comment créer, déployer et gérer Commerce sur les infrastructures cloud.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
-source-git-commit: 28db61188282957d55d96b77d02533b573aa7df6
+source-git-commit: 603e8365fb20c90e9d54cb8c809cc51b5cd0ce9a
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '323'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ Adobe Commerce sur les infrastructures cloud fournit une plateforme d’héberge
 
 >[!NOTE]
 >
->Pour plus d’informations sur la sécurité, consultez la [liste de contrôle de lancement de la sécurité](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
+>Pour plus d’informations sur la sécurité, consultez la [liste de contrôle de lancement de la sécurité](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
 
 Affichez la [pile technologique](architecture/tech-stack.md) en détail ou découvrez en détail les fonctionnalités spécifiques et les produits pris en charge dans [Architecture cloud pour Commerce](architecture/cloud-architecture.md).
 
@@ -36,7 +36,7 @@ Affichez la [pile technologique](architecture/tech-stack.md) en détail ou déco
 
 ## Régions cloud
 
-Les sections suivantes fournissent des détails sur les différentes régions AWS et Azure disponibles pour Adobe Commerce sur les infrastructures cloud.
+Les sections suivantes fournissent des détails sur les différentes régions d’AWS et d’Azure disponibles pour Adobe Commerce sur les infrastructures cloud.
 
 ## Régions AWS
 
@@ -48,7 +48,7 @@ Les sections suivantes fournissent des détails sur les différentes régions AW
 
 ## Régions Azure
 
-![Diagramme affichant les régions Azure](../assets/azure-regions.svg){zoomable="yes"}
+![Diagramme montrant les régions Azure](../assets/azure-regions.svg){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -58,11 +58,11 @@ Les sections suivantes fournissent des détails sur les différentes régions AW
 
 Le guide Commerce sur les infrastructures cloud suppose que vous avez une connaissance pratique et une compréhension de l’application Adobe Commerce. Consultez les guides de l’utilisateur et du développeur [!DNL Commerce] ci-dessous :
 
-- [Documentation pour les développeurs Adobe Commerce &#x200B;](https://developer.adobe.com/commerce/docs/) (site Adobe Developer) : développez, personnalisez, intégrez, étendez et utilisez des fonctionnalités avancées
+- [Documentation pour les développeurs Adobe Commerce ](https://developer.adobe.com/commerce/docs/) (site Adobe Developer) : développez, personnalisez, intégrez, étendez et utilisez des fonctionnalités avancées
 
-- [Documentation Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce.html?lang=fr) (Adobe Experience League) : planification, implémentation, exploitation, mise à niveau et maintenance de vos projets [!DNL Commerce]
+- [Documentation Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce.html) (Adobe Experience League) : planification, implémentation, exploitation, mise à niveau et maintenance de vos projets [!DNL Commerce]
 
 {{$include /help/_includes/templated/whats-new.md}}
 
 
-<!-- Last updated from includes: 2026-02-09 17:16:19 -->
+<!-- Last updated from includes: 2026-02-27 23:49:32 -->
