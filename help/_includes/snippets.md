@@ -1,7 +1,7 @@
 ---
-source-git-commit: aae9f01d5b92d8067624953e3c959ec8dce3b108
+source-git-commit: c8effbdb82060e2a2cbcbdef577fed7249a76799
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1313'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Les projets configurés avant le 5 juin 2020 disposaient de plusieurs environnements d’intégration plus petits. Si vous avez besoin d’un environnement d’intégration plus grand pour les tests et le développement, demandez une mise à niveau vers les environnements d’intégration améliorés. Pour plus d’informations, consultez l’article [Demande d’environnement d’intégration](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=fr) dans le Centre d’aide d’_Adobe Commerce_.
+>Les projets configurés avant le 5 juin 2020 disposaient de plusieurs environnements d’intégration plus petits. Si vous avez besoin d’un environnement d’intégration plus grand pour les tests et le développement, demandez une mise à niveau vers les environnements d’intégration améliorés. Pour plus d’informations, consultez l’article [Demande d’environnement d’intégration](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html) dans le Centre d’aide d’_Adobe Commerce_.
 
 ## Options de fusion {#merge-options}
 
@@ -41,36 +41,46 @@ Définissez l’option `_merge` sur l’une des options suivantes :
 >Certains projets **Pro** nécessitent l’assistance de l’assistance Adobe pour mettre à jour les configurations d’itinéraire dans le fichier `routes.yaml` et les configurations cron dans le fichier `.magento.app.yaml`. Adobe recommande d’effectuer et de valider toutes les modifications de configuration YAML dans un environnement d’intégration avant de les déployer dans l’environnement d’évaluation.
 >
 >
->Si vos modifications ne sont pas répercutées sur les sites d’évaluation après le redéploiement et qu’aucun message d’erreur associé ne s’affiche dans le journal, vous **devez** [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket). Dans le ticket, décrivez clairement les modifications de configuration que vous avez tentées et joignez tout fichier de configuration YAML mis à jour dans le ticket.
+>Si vos modifications ne sont pas répercutées sur les sites d’évaluation après le redéploiement et qu’aucun message d’erreur associé ne s’affiche dans le journal, vous **devez** [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Dans le ticket, décrivez clairement les modifications de configuration que vous avez tentées et joignez tout fichier de configuration YAML mis à jour dans le ticket.
 
 ## Assistance des services professionnels {#pro-update-service}
 
 >[!BEGINSHADEBOX]
 
-- Pour les projets Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour installer ou mettre à jour les [services](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/service/services-yaml.html?lang=fr) dans les environnements `Staging` et `Production` uniquement.
+- Pour les projets Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour installer ou mettre à jour les [services](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/service/services-yaml.html) dans les environnements `Staging` et `Production` uniquement.
 
-- Indiquez les changements de service nécessaires, incluez vos fichiers `.magento.app.yaml` et `services.yaml` mis à jour, et indiquez la version PHP dans le ticket. Pour les modifications en libre-service de la version PHP, des extensions ou des paramètres d&#39;environnement, voir [paramètres PHP](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/php-settings.html?lang=fr) dans _Configuration de l&#39;application_.
+- Indiquez les changements de service nécessaires, incluez vos fichiers `.magento.app.yaml` et `services.yaml` mis à jour, et indiquez la version PHP dans le ticket. Pour les modifications en libre-service de la version PHP, des extensions ou des paramètres d&#39;environnement, voir [paramètres PHP](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/php-settings.html) dans _Configuration de l&#39;application_.
 
->[!IMPORTANT]
->
->Lorsque vous sélectionnez le champ Environnement dans le nouveau formulaire de ticket, utilisez la dénomination d’environnement Adobe. Par exemple, sélectionnez Évaluation même si vous appelez cet environnement **Dev** en interne. Vous pouvez mentionner votre nom interne dans la description, mais le champ Environnement lui-même doit utiliser la nomenclature Adobe.
+  >[!IMPORTANT]
+  >
+  >Lorsque vous sélectionnez le champ Environnement dans le nouveau formulaire de ticket, utilisez la dénomination d’environnement Adobe. Par exemple, sélectionnez Évaluation même si vous appelez cet environnement **Dev** en interne. Vous pouvez mentionner votre nom interne dans la description, mais le champ Environnement lui-même doit utiliser la nomenclature Adobe.
 
 - Pour apporter des modifications à un environnement de production en ligne (**Pro uniquement**), un préavis d’au moins 48 heures est requis. L’équipe en charge de l’infrastructure cloud dispose ainsi de suffisamment de temps pour rassembler les ressources et effectuer une mise à niveau sécurisée. La période de préavis commence lorsque l’équipe d’infrastructure accuse réception de la demande et planifie la mise à niveau, à l’exclusion des week-ends. Par exemple, pour que les mises à niveau de service soient terminées un lundi, un accusé de réception de la mise à niveau prévue doit être reçu avant le mercredi. Pendant les périodes de pointe, le traitement de votre demande peut prendre plus de temps.
 
->[!NOTE]
->
->Toutes les fenêtres de maintenance planifiées doivent être fournies au format UTC afin d’assurer la clarté et la cohérence de toutes les communications. Les mises à niveau de service ne peuvent pas être planifiées dans l’environnement d’évaluation. Dans la plupart des cas, elles sont effectuées le même jour que la demande.
->
->Si vous demandez une mise à niveau de RabbitMQ, veillez à redéployer l’environnement une fois la mise à niveau terminée afin que les files d’attente de messages soient réinitialisées.
+  >[!NOTE]
+  >
+  >Toutes les fenêtres de maintenance planifiées doivent être fournies au format UTC afin d’assurer la clarté et la cohérence de toutes les communications. Les mises à niveau de service ne peuvent pas être planifiées dans l’environnement d’évaluation. Dans la plupart des cas, elles sont effectuées le même jour que la demande.
+  >
+  >Si vous demandez une mise à niveau de RabbitMQ, veillez à redéployer l’environnement une fois la mise à niveau terminée afin que les files d’attente de messages soient réinitialisées.
+
+- **Processus de négociation en deux parties pour la planification des mises à niveau**
+
+  Pour garantir un processus de mise à niveau fluide et coordonné, l’assistance Adobe Commerce suit un processus de négociation en deux parties pour toutes les mises à niveau de l’environnement de production :
+
+   1. **Confirmation client** : l’assistance Adobe demande d’abord au client de confirmer la date et l’heure souhaitées pour la mise à niveau. Cette étape permet de s’assurer que le calendrier correspond aux besoins professionnels et aux fenêtres de maintenance du client.
+   2. **Planification et confirmation finale** : une fois que le client a confirmé le timing, l’assistance Adobe soumet la demande à l’équipe d’infrastructure, qui examine la demande et fournit la confirmation finale de la fenêtre de mise à niveau planifiée.
+
+La mise à niveau n’est pas considérée comme planifiée tant que l’équipe Infrastructure n’a pas fourni la confirmation finale. Nous recommandons aux clients de répondre rapidement au moins 48 heures avant la période de mise à niveau afin d’éviter les retards et de permettre un préavis suffisant.
+
 >[!ENDSHADEBOX]
 
 ## Sauvegardes Pro {#pro-backups}
 
 >[!TIP]
 >
->Sur les environnements d’évaluation et de production Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour récupérer une sauvegarde spécifique indiquant la date, l’heure et le fuseau horaire dans le ticket.
+>Sur les environnements d’évaluation et de production Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour récupérer une sauvegarde spécifique indiquant la date, l’heure et le fuseau horaire dans le ticket.
 >
->Adobe ne restaure **pas** les environnements à partir d’une sauvegarde automatique. Consultez [Restaurer un instantané de base de données à partir de l&#39;évaluation ou de la production](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production.html?lang=fr) pour choisir une méthode de restauration d&#39;un instantané d&#39;évaluation ou de production.
+>Adobe ne restaure **pas** les environnements à partir d’une sauvegarde automatique. Consultez [Restaurer un instantané de base de données à partir de l&#39;évaluation ou de la production](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production.html) pour choisir une méthode de restauration d&#39;un instantané d&#39;évaluation ou de production.
 
 ## Avertissement de redéploiement {#redeploy-warning}
 
@@ -108,7 +118,7 @@ Utilisez les instructions suivantes pour la configuration du service sur les env
 
 >[!NOTE]
 >
->[Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour modifier la configuration du service dans les environnements de production et d’évaluation Pro.
+>[Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour modifier la configuration du service dans les environnements de production et d’évaluation Pro.
 
 ## Changement de service {#service-change-tip}
 
@@ -120,7 +130,7 @@ Utilisez les instructions suivantes pour la configuration du service sur les env
 
 >[!TIP]
 >
->Pour obtenir de l’aide sur les déploiements bloqués, utilisez l’utilitaire de dépannage de déploiement [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=fr) dans le Centre d’aide de _Commerce_.
+>Pour obtenir de l’aide sur les déploiements bloqués, utilisez l’utilitaire de dépannage de déploiement [](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html) dans le Centre d’aide de _Commerce_.
 
 ## Mise à jour des outils de la CEE {#ece-tools-package}
 
