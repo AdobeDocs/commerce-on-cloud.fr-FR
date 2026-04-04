@@ -41,7 +41,7 @@ Vous pouvez utiliser le [[!DNL Cloud Console]](cloud-console.md) pour gérer vot
 
 ## S’inscrire au statut Adobe
 
-Obtenez des mises à jour sur Adobe Commerce sur les environnements de plateforme d’infrastructure cloud et les services associés à partir de la page [Statut](https://status.adobe.com/products/503473).
+Obtenez des mises à jour sur Adobe Commerce sur les environnements de plateforme d’infrastructure cloud et les services associés à partir de la page [Statut](https://status.adobe.com/fr/products/503473).
 
 Cette page fournit un statut pour les composants et services Adobe Commerce, suivi de notifications sur les rapports d’incident, les mises à niveau de service, les pannes planifiées et les opérations de maintenance planifiées. Toute personne travaillant sur votre projet peut s’abonner au site Statut d’Adobe Commerce pour recevoir des notifications et des mises à jour d’événement par e-mail ou Slack. Vous pouvez personnaliser votre abonnement au statut d’Adobe pour effectuer le suivi de produits spécifiques par région et événement.
 
