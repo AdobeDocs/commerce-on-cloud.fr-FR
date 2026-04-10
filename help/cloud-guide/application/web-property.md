@@ -2,9 +2,10 @@
 title: Propriété web
 description: Consultez des exemples sur la façon de configurer la propriété web dans le fichier  [!DNL Commerce]  configuration de l’application .
 feature: Cloud, Configuration
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 6ecf6fb5-57a8-435c-8de3-f66dc56837fe
+source-git-commit: 94a7748348ba590bb4fed740df658c5bac4c31e9
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -31,14 +32,18 @@ Vous pouvez affiner votre configuration de `locations` à l’aide des valeurs d
 | `rules` | Spécifier des remplacements pour un emplacement. Utilisez une expression régulière pour correspondre à une requête. Si une requête entrante correspond à la règle, la gestion régulière de la requête est remplacée par les clés utilisées dans la règle. |
 | `passthru` | Définissez l’URL utilisée au cas où un fichier statique ou un fichier PHP serait introuvable. En règle générale, cette URL est le contrôleur frontal de vos applications, telles que `/index.php` ou `/app.php`. |
 | `root` | Définissez le chemin d’accès par rapport à la racine de l’application exposée sur le web. Le répertoire public (emplacement « / ») d’un projet cloud est défini sur « pub » par défaut. |
-| `scripts` | Autorise le chargement de scripts à cet emplacement. Définissez la valeur sur `true` pour autoriser les scripts. |
+| `scripts` | Autorise le chargement de scripts à cet emplacement. Définissez la valeur sur `true` pour autoriser les scripts. Pour les répertoires `pub/media` et `pub/static`, la configuration par défaut est définie sur `scripts: false` afin d’empêcher l’exécution des fichiers chargés. |
+
+>[!IMPORTANT]
+>
+>**Remarque sur la sécurité :** la configuration par défaut de la propriété `web` pour Adobe Commerce sur le cloud définit le `scripts: false` pour les emplacements de média afin d’empêcher l’exécution des fichiers chargés. Ne remplacez ce paramètre que si vous comprenez pleinement les implications en matière de sécurité pour votre implémentation.
 
 La configuration par défaut permet ce qui suit :
 
 - À partir du chemin d’accès racine (`/`), seuls le web et les médias sont accessibles
-- À partir des chemins d’accès `~/pub/static` et `~/pub/media`, n’importe quel fichier est accessible
+- À partir des chemins d’accès `~/pub/media` et `~/pub/static`, n’importe quel fichier est accessible
 
-L’exemple suivant illustre la configuration par défaut dans le fichier `.magento.app.yaml` pour un ensemble d’emplacements accessibles sur le web associés à une entrée dans la propriété [`mounts` &#x200B;](properties.md#mounts)
+L’exemple suivant illustre la configuration par défaut dans le fichier `.magento.app.yaml` pour un ensemble d’emplacements accessibles sur le web associés à une entrée dans la propriété [`mounts` ](properties.md#mounts)
 
 ```yaml
  # The configuration of app when it is exposed to the web.
