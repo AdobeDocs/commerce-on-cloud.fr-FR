@@ -23,7 +23,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une note de sécurité à la référence <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">Configuration des propriétés web</a> pour Adobe Commerce sur l’infrastructure cloud afin de clarifier que la configuration par défaut de la propriété web utilise <code class="language-plaintext highlighter-rouge">scripts:false</code> pour les emplacements de médias afin d’empêcher l’exécution des fichiers chargés.</p>
+      <td><p>Ajout d’une note de sécurité à la référence <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">Configuration des propriétés web</a> pour Adobe Commerce sur l’infrastructure cloud afin de clarifier que la configuration par défaut de la propriété web utilise <code class="language-plaintext highlighter-rouge">scripts:false</code> pour les emplacements de médias afin d’empêcher l’exécution des fichiers chargés.</p>
 </td>
       <td>
         Technique, commentaires
@@ -45,7 +45,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Version <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">ECE-Tools</a> v2002.2.10.</p>
+      <td><p>Version <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">ECE-Tools</a> v2002.2.10.</p>
 </td>
       <td>
         Technique
@@ -67,7 +67,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une clarification sur la manière de <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin#change-the-admin-url">modifier l’URL d’administration</a> dans Adobe Commerce sur le cloud plutôt que sur site.</p>
+      <td><p>Ajout d’une clarification sur la manière de <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin#change-the-admin-url">modifier l’URL d’administration</a> dans Adobe Commerce sur le cloud plutôt que sur site.</p>
 </td>
       <td>
         Mise à jour majeure, commentaires
@@ -89,7 +89,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la documentation pour la <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/check-disk-space-limit-on-cloud">vérification de la limite d’espace disque pour Adobe Commerce sur les projets cloud</a> à partir de la console cloud.</p>
+      <td><p>Ajout de la documentation pour la <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/storage/check-disk-space-limit-on-cloud">vérification de la limite d’espace disque pour Adobe Commerce sur les projets cloud</a> à partir de la console cloud.</p>
 </td>
       <td>
         Nouvelle rubrique, technique
@@ -111,7 +111,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist">liste de contrôle Launch</a> pour Commerce sur les projets cloud afin d’ajouter les enregistrements Fastly AAAA aux instructions de configuration DNS.</p>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/launch/checklist">liste de contrôle Launch</a> pour Commerce sur les projets cloud afin d’ajouter les enregistrements Fastly AAAA aux instructions de configuration DNS.</p>
 </td>
       <td>
         Feedback
@@ -133,7 +133,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’instructions pour <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management">modifier le propriétaire du compte New Relic</a> dans le <em>Guide de Commerce sur les infrastructures cloud</em>.</p>
+      <td><p>Ajout d’instructions pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management">modifier le propriétaire du compte New Relic</a> dans le <em>Guide de Commerce sur les infrastructures cloud</em>.</p>
 </td>
       <td>
         Technique
