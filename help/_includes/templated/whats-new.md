@@ -23,7 +23,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added a security note to the <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">Web property configuration</a> reference for Adobe Commerce on cloud infrastructure to clarify that the default configuration for web property uses <code class="language-plaintext highlighter-rouge">scripts:false</code> for media locations to prevent execution of uploaded files.</p>
+      <td><p>Added a security note to the <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">Web property configuration</a> reference for Adobe Commerce on cloud infrastructure to clarify that the default configuration for web property uses <code class="language-plaintext highlighter-rouge">scripts:false</code> for media locations to prevent execution of uploaded files.</p>
 </td>
       <td>
         Technical, feedback
@@ -45,7 +45,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">ECE-Tools</a> release, v2002.2.10.</p>
+      <td><p><a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">ECE-Tools</a> release, v2002.2.10.</p>
 </td>
       <td>
         Technical
@@ -67,7 +67,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added clarification of how to <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin#change-the-admin-url">change the admin URL</a> in Adobe Commerce on Cloud as opposed to on-premises.</p>
+      <td><p>Added clarification of how to <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin#change-the-admin-url">change the admin URL</a> in Adobe Commerce on Cloud as opposed to on-premises.</p>
 </td>
       <td>
         Major update, feedback
@@ -89,7 +89,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la documentation pour la <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/check-disk-space-limit-on-cloud">vérification de la limite d’espace disque pour Adobe Commerce sur les projets cloud</a> à partir de la console cloud.</p>
+      <td><p>Ajout de la documentation pour la <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/storage/check-disk-space-limit-on-cloud">vérification de la limite d’espace disque pour Adobe Commerce sur les projets cloud</a> à partir de la console cloud.</p>
 </td>
       <td>
         Nouvelle rubrique, technique
@@ -111,7 +111,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist">liste de contrôle Launch</a> pour Commerce sur les projets cloud afin d’ajouter les enregistrements Fastly AAAA aux instructions de configuration DNS.</p>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/launch/checklist">liste de contrôle Launch</a> pour Commerce sur les projets cloud afin d’ajouter les enregistrements Fastly AAAA aux instructions de configuration DNS.</p>
 </td>
       <td>
         Feedback
