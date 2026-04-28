@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Mettre à niveau la version de Commerce
 
-Vous pouvez mettre à niveau la base de code Adobe Commerce vers une version plus récente. Avant de mettre à niveau l’environnement, consultez la section [ Configuration requise ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) dans le guide _Installation_ pour connaître la configuration requise pour la dernière version du logiciel.
+Vous pouvez mettre à niveau la base de code Adobe Commerce vers une version plus récente. Avant de mettre à niveau l’environnement, consultez la section [&#x200B; Configuration requise &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) dans le guide _Installation_ pour connaître la configuration requise pour la dernière version du logiciel.
 
 Selon le type d’environnement (Développement, Évaluation ou Production), vos tâches de mise à niveau peuvent inclure les éléments suivants :
 
