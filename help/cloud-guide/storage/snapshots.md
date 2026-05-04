@@ -45,7 +45,7 @@ Pour créer un vidage de base de données de n&#39;importe quel environnement Pr
 1. Sélectionnez un environnement dans la barre de navigation du projet. L’environnement doit être actif.
 1. Dans la vue _Sauvegardes_, cliquez sur **[!UICONTROL Backup]**. Cette option n&#39;est pas disponible pour un environnement Pro.
 
-   ![ Sauvegarde ](../../assets/button-backup.png){width="150"}
+   ![&#x200B; Sauvegarde &#x200B;](../../assets/button-backup.png){width="150"}
 
 **Pour créer une sauvegarde d’un environnement d’intégration à l’aide du[!DNL Cloud Console]** :
 
