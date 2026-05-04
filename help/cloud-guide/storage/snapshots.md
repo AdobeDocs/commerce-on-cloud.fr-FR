@@ -37,7 +37,7 @@ Vous pouvez créer une sauvegarde manuelle de n’importe quel environnement de 
 
 **Pour créer une sauvegarde de base de données de l&#39;environnement Pro** :
 
-Pour créer un vidage de base de données de n&#39;importe quel environnement Pro, y compris l&#39;évaluation et la production, consultez l&#39;article [Créer un vidage de base de données](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) de la base de connaissances.
+Pour créer un vidage de base de données de n&#39;importe quel environnement Pro, y compris l&#39;évaluation et la production, consultez l&#39;article [Créer un vidage de base de données](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) de la base de connaissances.
 
 **Pour créer une sauvegarde d’un environnement de démarrage à l’aide de l’[!DNL Cloud Console]** :
 
@@ -150,7 +150,7 @@ Les délais de restauration varient en fonction de la taille de votre base de do
 
 ## Restauration d’un instantané de reprise après sinistre
 
-Pour restaurer l&#39;instantané de reprise après sinistre dans les environnements d&#39;évaluation et de production Pro, [Importez l&#39;image mémoire de la base de données directement depuis le serveur](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
+Pour restaurer l&#39;instantané de reprise après sinistre dans les environnements d&#39;évaluation et de production Pro, [Importez l&#39;image mémoire de la base de données directement depuis le serveur](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
 ## Restaurer le code
 
