@@ -1,23 +1,27 @@
 ---
-source-git-commit: 50e1a864dcde1148f5ed036b55815442c5986eaf
+source-git-commit: bd353c3d100dee7fd0a1846b582a8af44448ff1b
 workflow-type: tm+mt
-source-wordcount: '2313'
+source-wordcount: '3168'
 ht-degree: 0%
 
 ---
 # Packages cloud pour Adobe Commerce
 
-<!-- The 'packages' variable contains the 'packages' node of the '_data/codebase/cloud/composer_lock.json' file
- -->
+<!--
+The 'packages' variable contains the 'packages' node of the '_data/codebase/cloud/composer_lock.json' file
+-->
 
-<!-- The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/cloud/composer_lock.json' file
- -->
+<!--
+The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/cloud/composer_lock.json' file
+-->
 
-<!-- The 'product' variable contains data of the 'magento/magento-cloud-metapackage' package
- -->
+<!--
+The 'product' variable contains data of the 'magento/magento-cloud-metapackage' package
+-->
 
-<!-- The edition variable contains `cloud` value from the _data/names.yml file
- -->
+<!--
+The edition variable contains `cloud` value from the _data/names.yml file
+-->
 
 Adobe Commerce sur les infrastructures cloud utilise le compositeur pour gérer les packages PHP.
 
@@ -121,7 +125,7 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/wikimedia/less.php.git">wikimedia/less.php</a>
+      <a href="https://github.com/wikimedia/less.php.git"></a>
     </td>
     <td>bibliothèque</td>
     <td>Port PHP du processeur LESS</td>
@@ -779,7 +783,7 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/jmespath/jmespath.php.git">mtdowling/jmespath.php</a>
+      <a href="https://github.com/jmespath/jmespath.php.git"></a>
     </td>
     <td>bibliothèque</td>
     <td>Spécifier de manière déclarative comment extraire des éléments d’un document JSON</td>

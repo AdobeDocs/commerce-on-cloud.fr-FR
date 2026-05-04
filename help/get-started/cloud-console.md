@@ -3,13 +3,13 @@ title: Connectez-vous à  [!DNL Cloud Console]
 description: En savoir plus sur le  [!DNL Cloud Console]  d’Adobe Commerce sur les infrastructures cloud.
 recommendations: noDisplay, catalog
 last-substantial-update: 2024-02-06T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 4c68508a-f25a-457b-be6d-36dc8ac428f1
+source-git-commit: 1114b6001bd171bdb41423df697c7b168ae6fe19
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
-
 
 # Connexion à [!DNL Cloud Console]
 
@@ -39,12 +39,14 @@ Les fonctionnalités nouvelles ou améliorées sont les suivantes :
 | -------------- | ----------------------------------- |
 | [Flux d’activité](../cloud-guide/project/activity-stream.md) | Interagissez avec une liste triable d’actions en cours, en attente ou historiques. Sélectionnez une activité et affichez les journaux ou annulez une version en cours d’exécution. |
 | [Présentation du projet et de l’environnement](../cloud-guide/project/overview.md#project-overview) | Ouvrez votre projet et consultez la liste des détails du projet et de l’environnement Vue d’ensemble . La présentation de l’environnement fournit plus de détails sur le statut de l’environnement, l’accès aux applications et les activités récentes. |
-| [Formulaires d’intégration](../cloud-guide/integrations/overview.md) | Utilisez des formulaires simples et des conseils pour ajouter des intégrations, telles que des notifications Bitbucket ou de Slack. |
+| [Formulaires d’intégration](../cloud-guide/integrations/overview.md) | Utilisez des formulaires simples et des conseils pour ajouter des intégrations, telles que des notifications Bitbucket ou Slack. |
 | [Liste de projets](../cloud-guide/project/overview.md#cloud-console) | La vue _Tous les projets_ répertorie tous les projets auxquels vous avez accès. Vous pouvez cliquer sur **[!UICONTROL Show filters]** et filtrer la liste des projets par type, région ou plan. |
 | [Options de visibilité variable](../cloud-guide/environment/variable-levels.md) | Limitez la visibilité d’une variable au niveau du projet ou de l’environnement lors de la création ou de l’exécution. |
 
-<!-- The following are features yet to be activated:
-| **Apps and services topology** | The Apps & Services topology is visible on Project and Environment views. This interactive diagram allows you to select a service and view the relationship details, such as name, type, version, port, and more. Click **[!UICONTROL View details]** to access the overview and configuration panel for each service. | -->
+<!--
+The following are features yet to be activated:
+| **Apps and services topology** | The Apps & Services topology is visible on Project and Environment views. This interactive diagram allows you to select a service and view the relationship details, such as name, type, version, port, and more. Click **[!UICONTROL View details]** to access the overview and configuration panel for each service. | 
+-->
 
 ## Questions de la console
 
