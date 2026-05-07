@@ -35,7 +35,7 @@ Date de publication : 6 mai 2026
 
 - ![Icône de correction](../../assets/fix.svg) **Visibilité de la version du correctif**-Visibilité de la version du correctif cloud fixe dans les environnements cloud.<!--MCLOUD-14221 -->
 - ![icône de correction](../../assets/fix.svg) **nettoyage PHPUnit**-avis PHPUnit fixes<!--MCLOUD-14717 -->
-- ![nouvelle icône ](../../assets/new.svg)**Correctifs cosmétiques**—Ajout d’améliorations cosmétiques.<!--MCLOUD-14686 -->
+- ![nouvelle icône &#x200B;](../../assets/new.svg)**Correctifs cosmétiques**—Ajout d’améliorations cosmétiques.<!--MCLOUD-14686 -->
 
 ## v1.1.13
 
