@@ -2,11 +2,11 @@
 title: Notes de mise à jour des outils de la CEE
 description: Voir la liste des dernières améliorations apportées au progiciel ECE-Tools.
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-08-07T00:00:00Z
+last-substantial-update: 2026-05-07T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: 1114b6001bd171bdb41423df697c7b168ae6fe19
+source-git-commit: 0781fdfe8b0dbc6312848572ff4b996e51270a3f
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3563'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,18 @@ Les notes de mise à jour incluent les éléments suivants :
 
 <!--Add release notes below-->
 
-## v2002.2.10 {#latest}
+## v2002.2.11 {#latest}
+
+Date de publication : 6 mai 2026
+
+- ![nouvelle icône](../../assets/new.svg) **RabbitMQ**—Ajout de la prise en charge de RabbitMQ 4.2.<!-- MCLOUD-14374 -->
+- ![nouvelle icône](../../assets/new.svg) **Opensearch**—Ajout de la prise en charge d’Opensearch 2.19 et 3.5 pour plusieurs versions de Magento. <!-- MCLOUD-14682 -->
+- ![nouvelle icône](../../assets/new.svg) **Valkey**—Ajout de la prise en charge de Valkey 8.1 et 9.<!-- MCLOUD-14784/MCLOUD-14625 -->
+- ![nouvelle icône](../../assets/new.svg) **ActiveMQ**—Ajout de la prise en charge d’ActiveMQ 2.5.1.<!-- MCLOUD-14683 -->
+- ![nouvelle icône](../../assets/new.svg) **MariaDB**—Ajout de la prise en charge de MariaDB 11.8 et 12.2.<!-- MCLOUD-14628 -->
+- ![icône de correction](../../assets/fix.svg) **Configuration et déploiement** : correction des avertissements de déploiement dans le cloud, mise à jour des abandons du test du compositeur et correction de la visibilité de la version des outils ECE lors du déploiement.<!-- MCLOUD-14822 -->
+
+## v2002.2.10
 
 Date de publication : 5 mars 2026
 
@@ -85,14 +96,18 @@ Date de publication : 27 mai 2025
 
 Date de publication : 24 avril 2025
 
-- ![icône de correction](../../assets/fix.svg) **Opensearch2 pour 2.4.4/2.4.5**—Correction d’un problème lié à la prise en charge des `opensearch2` dans les versions d’Adobe Commerce 2.4.4/2.4.5. <!-- MCLOUD-13607 -->
+- ![icône de correction](../../assets/fix.svg) **Opensearch2 pour 2.4.4/2.4.5**—Correction d’un problème lié à la prise en charge des `opensearch2` dans les versions d’Adobe Commerce 2.4.4/2.4.5.<!-- MCLOUD-13607 -->
 
 ## v2002.2.3
 
 Date de publication : 9 avril 2025
 
-- ![Icône de correction](../../assets/fix.svg) **Correction du problème Valkey** Correction du problème lié à la configuration personnalisée Valkey. <!-- MCLOUD-13569 -->
-- ![Icône de correction](../../assets/fix.svg) **Correction du programme de validation**-Correction du programme de validation pour RabbitMQ 4.0. <!-- MCLOUD-13560 -->
+- ![Icône de correction](../../assets/fix.svg) **Correction du problème Valkey** Correction du problème lié à la configuration personnalisée Valkey.<!-- MCLOUD-13569 -->
+- ![Icône de correction](../../assets/fix.svg) **Correction du programme de validation**-Correction du programme de validation pour RabbitMQ 4.0.<!-- MCLOUD-13560 -->
+
+## v2002.2.2
+
+Date de publication : 7 avril 2025
 
 ## v2002.2.2
 
@@ -165,7 +180,7 @@ Date de publication : 10 mars 2023
 
 Date de publication : 27 octobre 2022
 
-- ![nouvelle icône](../../assets/new.svg) **Ajout de la prise en charge de Adobe I/O Events pour Adobe Commerce**. Les développeurs d’extensions peuvent désormais utiliser le framework [&#128279;](https://developer.adobe.com/events/docs/) pour envoyer des informations d’événement Commerce depuis des instances Cloud à leurs applications écrites pour [Adobe App Builder](https://developer.adobe.com/app-builder/docs/overview/). Adobe I/O Events pour Adobe Commerce est en version préliminaire pour les partenaires.<!-- CEXT-932 -->
+- ![nouvelle icône](../../assets/new.svg) **Ajout de la prise en charge de Adobe I/O Events pour Adobe Commerce**. Les développeurs d’extensions peuvent désormais utiliser le framework [](https://developer.adobe.com/events/docs/) pour envoyer des informations d’événement Commerce depuis des instances Cloud à leurs applications écrites pour [Adobe App Builder](https://developer.adobe.com/app-builder/docs/overview/). Adobe I/O Events pour Adobe Commerce est en version préliminaire pour les partenaires.<!-- CEXT-932 -->
 - ![nouvelle icône](../../assets/new.svg) **Validateur pour la configuration du cache OP**—Ajout d&#39;un validateur pour vérifier la configuration du cache OPpour les chemins exclus.<!-- MCLOUD-9485 -->
 - ![icône de correction](../../assets/fix.svg) **correction d’un problème lié à la configuration du cache de GraphQL**—ECE-Tools conserve désormais la valeur de `id_salt` de GraphQL dans `cache` configuration dans le fichier `app/etc/env.php`.<!-- MCLOUD-9486 -->
 
@@ -256,9 +271,7 @@ Date de publication : 1er février 2021
 
 - ![nouvelle icône](../../assets/new.svg) **Nouvelle variable d’environnement SCD_NO_PARENT** : ajout de la variable d’environnement `SCD_NO_PARENT` (pour Adobe Commerce >=2.4.2) pour gérer la génération de contenu statique pour les thèmes parents<!--MCLOUD-7284-->.
 
-- ![icône de correction](../../assets/fix.svg) **limites et commandes de mémoire**—Correction d&#39;un problème où les commandes de `php vendor/bin/ece-tools` ne fonctionnaient pas si la taille du fichier `cloud.log` dépassait la limite de mémoire PHP. Au lieu de lire l’intégralité du fichier `cloud.log` en mémoire, nous ne lisons désormais qu’un plus petit sous-ensemble de données à partir du fichier journal.
-  <!--MCLOUD-7275-->
-  <!--MCLOUD-7400-->
+- ![icône de correction](../../assets/fix.svg) **limites et commandes de mémoire**—Correction d&#39;un problème où les commandes de `php vendor/bin/ece-tools` ne fonctionnaient pas si la taille du fichier `cloud.log` dépassait la limite de mémoire PHP. Au lieu de lire l’intégralité du fichier `cloud.log` en mémoire, nous ne lisons désormais qu’un plus petit sous-ensemble de données à partir du fichier journal.<!--MCLOUD-7275--><!--MCLOUD-7400-->
 
 - ![icône de correction](../../assets/fix.svg) **Connexions à la base de données personnalisée**—Correction d&#39;un problème de configuration `.magento.env.yaml` en raison duquel les connexions à la base de données personnalisée définies pour `DATABASE_CONFIGURATION` n&#39;étaient pas utilisées. Les paramètres de connexion n’ont pas été ajoutés à `app/etc/env.php`.<!--MCLOUD-7426-->
 
@@ -452,7 +465,7 @@ Date de publication : 6 février 2020
 
 - ![nouvelle icône](../../assets/new.svg) **mises à jour des commandes CLI**—
 
-   - ![nouvelle icône](../../assets/new.svg) **Nouvelle commande cron**—Vous pouvez désormais gérer manuellement le traitement cron dans votre environnement Adobe Commerce sur l&#39;infrastructure cloud à l&#39;aide des commandes `cron:disable` et `cron:enable`. Utilisez la commande disable pour arrêter tous les processus cron actifs et désactiver toutes les tâches cron. Utilisez la commande d’activation pour réactiver les tâches cron lorsque vous êtes prêt. Voir [&#x200B; Désactiver les tâches cron &#x200B;](../application/crons-property.md#disable-cron-jobs).
+   - ![nouvelle icône](../../assets/new.svg) **Nouvelle commande cron**—Vous pouvez désormais gérer manuellement le traitement cron dans votre environnement Adobe Commerce sur l&#39;infrastructure cloud à l&#39;aide des commandes `cron:disable` et `cron:enable`. Utilisez la commande disable pour arrêter tous les processus cron actifs et désactiver toutes les tâches cron. Utilisez la commande d’activation pour réactiver les tâches cron lorsque vous êtes prêt. Voir [ Désactiver les tâches cron ](../application/crons-property.md#disable-cron-jobs).
 
    - ![nouvelle icône](../../assets/new.svg) **Amélioration des rapports d&#39;erreur**—Ajout d&#39;une meilleure journalisation pour les défaillances de commande CLI qui se produisent pendant le traitement ECE-Tools.<!--MAGECLOUD-4849-->
 
