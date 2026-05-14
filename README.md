@@ -7,4 +7,4 @@ ht-degree: 0%
 ---
 # ARCHIVÉ
 
-Ce référentiel a été migré vers <https://github.com/Adobe-Enterprise-Docs/commerce-on-cloud.en>.
+Ce référentiel a été migré vers <https://github.com/Adobe-Enterprise-Docs/commerce-on-cloud.fr-FR>.
