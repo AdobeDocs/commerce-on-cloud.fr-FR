@@ -23,7 +23,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de l’offre <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/advanced-security">Sécurité avancée</a> pour Adobe Commerce sur les infrastructures cloud.</p>
+      <td><p>Ajout de l’offre <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/advanced-security">Sécurité avancée</a> pour Adobe Commerce sur les infrastructures cloud.</p>
 </td>
       <td>
         Nouvelle rubrique
