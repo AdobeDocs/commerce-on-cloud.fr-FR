@@ -2,7 +2,7 @@
 title: Commerce sur les infrastructures cloud
 description: Découvrez comment créer, déployer et gérer Commerce sur les infrastructures cloud.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
-source-git-commit: ede5f6b3f222d97bc5dfd8a5eb45535cb4ed2765
+source-git-commit: 8abce85f5a2ed22e344e1489c592ac12415568d8
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 3%
@@ -64,4 +64,4 @@ Le guide Commerce sur les infrastructures cloud suppose que vous avez une connai
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2026-05-07 12:29:15 -->
+<!-- Last updated from includes: 2026-05-13 23:38:24 -->
