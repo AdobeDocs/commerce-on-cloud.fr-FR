@@ -3,16 +3,17 @@ title: Gestionnaires de journaux
 description: Découvrez comment configurer des gestionnaires de journaux pour Adobe Commerce sur une infrastructure cloud.
 feature: Cloud, Logs, Configuration
 role: Developer
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 0d7fb653-468b-432c-9830-582b0fed8512
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
 # Gestionnaires de journaux
 
-Vous pouvez configurer des gestionnaires de journaux pour envoyer des messages à un serveur de journalisation distant. Un gestionnaire de journaux envoie les journaux de version et de déploiement à d’autres systèmes, de la même manière que vous envoyez les journaux à un Slack et à un e-mail. Vous pouvez activer un gestionnaire _syslog_, idéal pour la journalisation des messages liés au matériel, ou un gestionnaire GELF (Graylog Extended Log Format), idéal pour la journalisation des messages provenant d’applications logicielles.
+Vous pouvez configurer des gestionnaires de journaux pour envoyer des messages à un serveur de journalisation distant. Un gestionnaire de journaux envoie les journaux de version et de déploiement à d’autres systèmes, de la même manière que vous envoyez les journaux à Slack et aux e-mails. Vous pouvez activer un gestionnaire _syslog_, idéal pour la journalisation des messages liés au matériel, ou un gestionnaire GELF (Graylog Extended Log Format), idéal pour la journalisation des messages provenant d’applications logicielles.
 
 L’exemple suivant configure ces deux gestionnaires en ajoutant la configuration au fichier `.magento.env.yaml`. Pour les valeurs de niveau de journalisation minimal (`min_level`), voir [Niveaux de journalisation](#log-levels).
 

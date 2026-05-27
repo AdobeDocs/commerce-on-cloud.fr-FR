@@ -2,9 +2,10 @@
 title: Propriété du pare-feu
 description: Consultez des exemples sur la façon de configurer la propriété de pare-feu dans le fichier de configuration de l’application Commerce.
 feature: Cloud, Configuration, Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 27704633-78c7-4b5a-b415-6ce5f02bd5e4
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---

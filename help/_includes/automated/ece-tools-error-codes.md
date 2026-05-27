@@ -1,7 +1,7 @@
 ---
 source-git-commit: 7f2934af84c947046fed3a32c3b6e2937aed418a
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2710'
 ht-degree: 4%
 
 ---
@@ -53,8 +53,8 @@ Les erreurs critiques indiquent un problème de configuration du projet Commerce
 | 104 |  | Échec de l’analyse du fichier `.magento.env.yaml` | La configuration n’est pas définie dans le fichier `./vendor/magento/ece-tools/config/schema.yaml`. Vérifiez que le nom de la variable de configuration est correct et qu&#39;il est défini. |
 | 105 |  | Impossible de lire le fichier `.magento.env.yaml` | Impossible de lire le fichier `./.magento.env.yaml`. Vérifiez les autorisations de fichier. |
 | 106 |  | Impossible de lire le fichier `.schema.yaml` |  |
-| 107 | pré-déploiement : clean-red-cache | Échec du nettoyage du cache Redis | Échec du nettoyage du cache Redis. Vérifiez que la configuration du cache Redis est correcte et que le service Redis est disponible. Voir [Configuration du service Redis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/redis.html?lang=fr). |
-| 140 | pré-déploiement : clean-valkey-cache | Échec du nettoyage du cache Valkey | Échec du nettoyage du cache Valkey. Vérifiez que la configuration du cache Valkey est correcte et que le service Valkey est disponible. Voir [Configurer le service Valkey](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/valkey.html?lang=fr). |
+| 107 | pré-déploiement : clean-red-cache | Échec du nettoyage du cache Redis | Échec du nettoyage du cache Redis. Vérifiez que la configuration du cache Redis est correcte et que le service Redis est disponible. Voir [Configuration du service Redis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/redis.html). |
+| 140 | pré-déploiement : clean-valkey-cache | Échec du nettoyage du cache Valkey | Échec du nettoyage du cache Valkey. Vérifiez que la configuration du cache Valkey est correcte et que le service Valkey est disponible. Voir [Configurer le service Valkey](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/valkey.html). |
 | 108 | pré-déploiement : set-production-mode | Échec de la `/bin/magento maintenance:enable` de commande | Pour plus d’informations, consultez la `cloud.log` . Pour une sortie de commande plus détaillée, ajoutez l’option `VERBOSE_COMMANDS: '-vvv'` au fichier `.magento.env.yaml`. |
 | 109 | validate-config | Configuration de base de données incorrecte | Vérifiez que la variable d’environnement `DATABASE_CONFIGURATION` est correctement configurée. |
 | 110 | validate-config | Configuration de session incorrecte | Vérifiez que la variable d’environnement `SESSION_CONFIGURATION` est correctement configurée. La configuration doit contenir au moins le paramètre `save` . |
@@ -68,7 +68,7 @@ Les erreurs critiques indiquent un problème de configuration du projet Commerce
 | 118 |  | Utilitaire requis introuvable (temporisation, bash) |  |
 | 119 | install-update : deploy-static-content | Échec de la `/bin/magento setup:static-content:deploy` de commande | Pour plus d’informations, consultez la `cloud.log` . Pour une sortie de commande plus détaillée, ajoutez l’option `VERBOSE_COMMANDS: '-vvv'` au fichier `.magento.env.yaml`. |
 | 120 | compress-static-content | Échec de la compression du contenu statique | Pour plus d’informations, consultez la `cloud.log` . |
-| 121 | deploy-static-content:generate | Impossible de mettre à jour la version déployée | Impossible de mettre à jour le fichier `./pub/static/deployed_version.txt`. Vérifiez les autorisations de votre système de fichiers. |
+| 121 | deploy-static-content :generate | Impossible de mettre à jour la version déployée | Impossible de mettre à jour le fichier `./pub/static/deployed_version.txt`. Vérifiez les autorisations de votre système de fichiers. |
 | 122 | clean-static-content | Échec du nettoyage des fichiers de contenu statiques |  |
 | 123 | install-update : split-db | Échec de la `/bin/magento setup:db-schema:split` de commande | Pour plus d’informations, consultez la `cloud.log` . Pour une sortie de commande plus détaillée, ajoutez l’option `VERBOSE_COMMANDS: '-vvv'` au fichier `.magento.env.yaml`. |
 | 124 | clean-view-preprocessed | Échec du nettoyage du dossier `var/view_preprocessed` | Impossible de nettoyer le dossier `./var/view_preprocessed`. Vérifiez les autorisations de votre système de fichiers. |
@@ -78,7 +78,7 @@ Les erreurs critiques indiquent un problème de configuration du projet Commerce
 | 128 | disable-maintenance-mode | Échec de la `/bin/magento maintenance:disable` de commande | Pour plus d’informations, consultez la `cloud.log` . Ajoutez `VERBOSE_COMMANDS: '-vvv'` dans `.magento.env.yaml` pour une sortie de commande plus détaillée. |
 | 129 | install-update : reset-password | Impossible de lire le modèle de mot de passe de réinitialisation |  |
 | 130 | install-update : cache_type | Échec de la commande : `php ./bin/magento cache:enable` | La commande `php ./bin/magento cache:enable` s’exécute uniquement lors de l’installation d’Adobe Commerce, mais `./app/etc/env.php` fichier était absent ou vide au début du déploiement. Pour plus d’informations, consultez la `cloud.log` . Ajoutez `VERBOSE_COMMANDS: '-vvv'` dans `.magento.env.yaml` pour une sortie de commande plus détaillée. |
-| 131 | install-update | La valeur de clé `crypt/key` n’existe pas dans le fichier `./app/etc/env.php` ou la variable d’environnement cloud `CRYPT_KEY` | Cette erreur se produit si le fichier `./app/etc/env.php` n’est pas présent au début du déploiement d’Adobe Commerce ou si la valeur `crypt/key` est indéfinie. Si vous avez migré la base de données à partir d’un autre environnement, récupérez la valeur de la clé de chiffrement de cet environnement. Ajoutez ensuite la valeur à la variable d’environnement cloud [CRYPT_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#crypt_key) dans votre environnement actuel. Voir [Clé de chiffrement Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/overview.html?lang=fr#gather-credentials). Si vous avez accidentellement supprimé le fichier `./app/etc/env.php`, utilisez la commande suivante pour le restaurer à partir des fichiers de sauvegarde créés à partir d’un déploiement précédent : `./vendor/bin/ece-tools backup:restore` la commande CLI. » |
+| 131 | install-update | La valeur de clé `crypt/key` n’existe pas dans le fichier `./app/etc/env.php` ou la variable d’environnement cloud `CRYPT_KEY` | Cette erreur se produit si le fichier `./app/etc/env.php` n’est pas présent au début du déploiement d’Adobe Commerce ou si la valeur `crypt/key` est indéfinie. Si vous avez migré la base de données à partir d’un autre environnement, récupérez la valeur de la clé de chiffrement de cet environnement. Ajoutez ensuite la valeur à la variable d’environnement cloud [CRYPT_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#crypt_key) dans votre environnement actuel. Voir [Clé de chiffrement ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/overview.html#gather-credentials). Si vous avez accidentellement supprimé le fichier `./app/etc/env.php`, utilisez la commande suivante pour le restaurer à partir des fichiers de sauvegarde créés à partir d’un déploiement précédent : `./vendor/bin/ece-tools backup:restore` la commande CLI. » |
 | 132 |  | Impossible de se connecter au service Elasticsearch | Recherchez des informations d’identification Elasticsearch valides et vérifiez que le service est en cours d’exécution |
 | 137 |  | Connexion au service OpenSearch impossible | Recherchez des informations d’identification OpenSearch valides et vérifiez que le service fonctionne |
 | 133 | validate-config | Supprimez la configuration du module Magento Braintree qui n’est plus prise en charge dans Adobe Commerce ou Magento Open Source 2.4 et les versions ultérieures. | La prise en charge du module Braintree n’est plus incluse dans Adobe Commerce ou Magento Open Source 2.4.0 et versions ultérieures. Supprimez la variable CONFIG__STORES__DEFAULT__PAYMENT__BRAINTREE__CHANNEL de la section des variables du fichier `.magento.app.yaml`. Pour la prise en charge de Braintree, utilisez plutôt une extension Braintree Payments officielle depuis Commerce Marketplace. |
@@ -124,7 +124,7 @@ Les erreurs d’avertissement indiquent un problème de configuration du projet 
 | Code d’erreur | Étape de création | Description de l’erreur (titre) | Action suggérée |
 | - | - | - | - |
 | 1001 | validate-config | Le fichier app/etc/config.php n&#39;existe pas |  |
-| 1002 | validate-config | Le .Le fichier /build_options.ini n’est plus pris en charge |  |
+| 1002 | validate-config | Le fichier ./build_options.ini n’est plus pris en charge |  |
 | 1003 | validate-config | La section Modules est absente du fichier de configuration partagé |  |
 | 1004 | validate-config | La configuration n’est pas compatible avec cette version de Magento |  |
 | 1005 | validate-config | Options SCD ignorées |  |
@@ -135,11 +135,11 @@ Les erreurs d’avertissement indiquent un problème de configuration du projet 
 
 | Code d’erreur | Étape de déploiement | Description de l’erreur (titre) | Action suggérée |
 | - | - | - | - |
-| 2001 | pre-deploy:cache | Le cache est configuré pour un service Redis qui n’est pas disponible. La configuration est ignorée. |  |
-| 2032 | pre-deploy:cache | Le cache est configuré pour un service Valkey qui n&#39;est pas disponible. La configuration est ignorée. |  |
+| 2001 | pré-déploiement :cache | Le cache est configuré pour un service Redis qui n’est pas disponible. La configuration est ignorée. |  |
+| 2032 | pré-déploiement :cache | Le cache est configuré pour un service Valkey qui n&#39;est pas disponible. La configuration est ignorée. |  |
 | 2002 | validate-config | L’état configuré n’est pas idéal |  |
 | 2003 | validate-config | La valeur du niveau d’imbrication du répertoire pour les rapports d’erreur n’a pas été configurée |  |
-| 2004 | validate-config | Configuration non valide dans le .Fichier /pub/errors/local.xml. |  |
+| 2004 | validate-config | Configuration non valide dans le fichier ./pub/errors/local.xml. |  |
 | 2005 | validate-config | Les données d’administration sont utilisées pour créer un utilisateur administrateur lors de l’installation initiale uniquement. Toute modification apportée aux données d’administration est ignorée pendant le processus de mise à niveau. | Après l’installation initiale, vous pouvez supprimer les données d’administration de la configuration. |
 | 2006 | validate-config | L’utilisateur administrateur n’a pas été créé, car l’adresse électronique de l’administrateur n’était pas définie | Après l’installation, vous pouvez créer manuellement un utilisateur administrateur : utilisez ssh pour vous connecter à votre environnement. Exécutez ensuite la commande `bin/magento admin:user:create` . |
 | 2007 | validate-config | Mettre à jour la version php vers la version recommandée |  |
@@ -157,13 +157,13 @@ Les erreurs d’avertissement indiquent un problème de configuration du projet 
 | 2019 | validate-config | L’option de configuration de la recherche MySQL est obsolète | Utilisez plutôt Elasticsearch. |
 | 2029 | validate-config | La base de données fractionnée est obsolète dans Adobe Commerce et Magento Open Source 2.4.2 et sera supprimée dans la version 2.5. | Si vous utilisez une base de données fractionnée, vous devez commencer à planifier le retour à une base de données unique ou la migration vers cette base de données, ou utiliser une autre approche. |
 | 2020 | install-update | Installation d&#39;Adobe Commerce terminée, mais le fichier de configuration `app/etc/env.php` était manquant ou vide. | Les données requises sont restaurées à partir des configurations d’environnement et du fichier .magento.env.yaml. |
-| 2021 | install-update:db-connection | Pour les bases de données fractionnées, utiliser des connexions personnalisées |  |
-| 2022 | install-update:db-connection | La configuration de la base de données que vous avez modifiée est incompatible avec la connexion esclave. |  |
-| 2023 | install-update:split-db | L&#39;activation d&#39;une base de données fractionnée est ignorée. |  |
-| 2024 | install-update:split-db | La variable SPLIT_DB ne contient pas la configuration pour les types de connexion partagés. |  |
-| 2025 | install-update:split-db | Connexion esclave non définie. |  |
-| 2026 | pre-deploy:restore-writable-dirs | Impossible de restaurer certaines données générées pendant la phase de création dans les répertoires montés | Pour plus d’informations, consultez la `cloud.log` . |
-| 2027 | validate-config:image-mode-variable | Valeur de mode pour la variable d’environnement MAGE_MODE non prise en charge | Supprimez la variable d’environnement MAGE_MODE ou définissez sa valeur sur « production ». Adobe Commerce sur les infrastructures cloud prend uniquement en charge le mode « production ». |
+| 2021 | install-update :db-connection | Pour les bases de données fractionnées, utiliser des connexions personnalisées |  |
+| 2022 | install-update :db-connection | La configuration de la base de données que vous avez modifiée est incompatible avec la connexion esclave. |  |
+| 2023 | install-update :split-db | L&#39;activation d&#39;une base de données fractionnée est ignorée. |  |
+| 2024 | install-update :split-db | La variable SPLIT_DB ne contient pas la configuration pour les types de connexion partagés. |  |
+| 2025 | install-update :split-db | Connexion esclave non définie. |  |
+| 2026 | pré-déploiement :restore-writable-dirs | Impossible de restaurer certaines données générées pendant la phase de création dans les répertoires montés | Pour plus d’informations, consultez la `cloud.log` . |
+| 2027 | validate-config:mage-mode-variable | Valeur de mode pour la variable d’environnement MAGE_MODE non prise en charge | Supprimez la variable d’environnement MAGE_MODE ou définissez sa valeur sur « production ». Adobe Commerce sur les infrastructures cloud prend uniquement en charge le mode « production ». |
 | 2028 | stockage à distance | Impossible d&#39;activer le stockage distant. | Vérifiez les informations d&#39;identification de l&#39;enregistrement distant. |
 | 2030 | validate-config | Les services Elasticsearch et OpenSearch sont tous deux installés au niveau de la couche d’infrastructure. Adobe Commerce et Magento Open Source 2.4.4 et versions ultérieures utilisent OpenSearch par défaut | Envisagez de supprimer le service Elasticsearch ou OpenSearch de la couche d’infrastructure pour optimiser l’utilisation des ressources. |
 

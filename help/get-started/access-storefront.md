@@ -2,9 +2,10 @@
 title: Accès à votre panneau d’administration Commerce
 description: Découvrez comment accéder à votre panneau d’administration Commerce.
 recommendations: noDisplay, catalog
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 827417b0-9048-44d8-8c82-07befba476c7
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
@@ -19,14 +20,14 @@ Vous pouvez soumettre une demande de changement de mot de passe à l’aide de l
 
 - Recherchez l’e-mail de bienvenue envoyé à l’adresse e-mail du propriétaire de la licence, suivez le lien et modifiez votre mot de passe.
 
-- Copiez l’URL de la boutique depuis le [[!DNL Cloud Console]](../cloud-guide/project/overview.md) dans un navigateur. Ajoutez ensuite `/admin` à la fin de l’URL pour ouvrir la page de connexion. Cliquez sur le mot de passe **oublié ?** lien pour envoyer une demande de changement de mot de passe à l’adresse e-mail du propriétaire de la licence.
+- Copiez l’URL de la boutique depuis le [[!DNL Cloud Console]](../cloud-guide/project/overview.md) dans un navigateur. Ajoutez ensuite `/admin` à la fin de l’URL pour ouvrir la page de connexion. Cliquez sur le **Mot de passe oublié ?** lien permettant d’envoyer une demande de changement de mot de passe à l’adresse e-mail du propriétaire de la licence.
 
 Après avoir envoyé la demande de changement de mot de passe, recherchez dans votre e-mail la notification de réinitialisation de mot de passe. Si vous ne recevez pas l’e-mail, vérifiez votre dossier spam.
 
 >[!TIP]
 >
->Si la réinitialisation du mot de passe échoue ou si vous ne pouvez pas vous connecter au panneau d’administration, un utilisateur disposant d’un accès administrateur peut se connecter au projet à l’aide de SSH et ajouter un utilisateur administrateur à l’aide de la commande d’interface de ligne de commande `admin:user:create`. Voir [Créer, modifier ou déverrouiller un compte administrateur](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html?lang=fr) dans le _Guide d’installation_.
+>Si la réinitialisation du mot de passe échoue ou si vous ne pouvez pas vous connecter au panneau d’administration, un utilisateur disposant d’un accès administrateur peut se connecter au projet à l’aide de SSH et ajouter un utilisateur administrateur à l’aide de la commande d’interface de ligne de commande `admin:user:create`. Voir [Créer, modifier ou déverrouiller un compte administrateur](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html) dans le _Guide d’installation_.
 
 ## Surveiller l’intégrité du site
 
-L’[outil d’analyse à l’échelle du site](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/site-wide-analysis-tool/intro) est un outil en libre-service proactif et un référentiel central qui comprend des informations détaillées sur le système et des recommandations pour assurer la sécurité et l’opérabilité de votre installation Adobe Commerce. Il fournit une surveillance des performances en temps réel 24h/24 et 7j/7, des rapports et des conseils pour identifier les problèmes potentiels et une meilleure visibilité sur la santé, la sécurité et les configurations des applications du site. Cela permet de réduire le temps de résolution et d’améliorer la stabilité et les performances du site. Vous pouvez accéder à l’outil d’analyse à l’échelle du site directement à partir du [panneau d’administration](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/site-wide-analysis-tool/access#option-2-logging-in-to-your-site-wide-analysis-tool-dashboard-from-your-stores-admin-panel).
+L’[outil d’analyse à l’échelle du site](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/intro) est un outil en libre-service proactif et un référentiel central qui comprend des informations détaillées sur le système et des recommandations pour assurer la sécurité et l’opérabilité de votre installation Adobe Commerce. Il fournit une surveillance des performances en temps réel 24h/24 et 7j/7, des rapports et des conseils pour identifier les problèmes potentiels et une meilleure visibilité sur la santé, la sécurité et les configurations des applications du site. Cela permet de réduire le temps de résolution et d’améliorer la stabilité et les performances du site. Vous pouvez accéder à l’outil d’analyse à l’échelle du site directement à partir du [panneau d’administration](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access#option-2-logging-in-to-your-site-wide-analysis-tool-dashboard-from-your-stores-admin-panel).

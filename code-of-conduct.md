@@ -1,11 +1,11 @@
 ---
 source-git-commit: 0df07e865c3c4fc4ac14483972643eafa8814726
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
-# Code de conduite de l&#39;Adobe
+# Code de conduite d’Adobe
 
 ## Notre engagement
 
@@ -50,7 +50,7 @@ qui ne sont pas conformes au présent Code de conduite, ou à interdire temporai
 en permanence tout contributeur à d&#39;autres comportements qu&#39;il juge inappropriés,
 menaçant, offensant ou nuisible.
 
-## Champ d’application
+## Portée
 
 Ce code de conduite s’applique à la fois aux espaces de projet et aux espaces publics
 lorsqu’une personne représente le projet ou sa communauté. Exemples de
@@ -75,4 +75,4 @@ membres de la direction du projet.
 ## Attribution
 
 Le présent Code de conduite est adapté du [Pacte du contributeur](https://www.contributor-covenant.org/), version 1.4,
-disponible sur [https://www.contributor-covenant.org/version/1/4](https://www.contributor-covenant.org/version/1/4/)
+disponible à l’adresse [](https://www.contributor-covenant.org/version/1/4/)
