@@ -2,9 +2,10 @@
 title: Flux d’activité
 description: Découvrez comment lire le flux d’activités dans l [!DNL Cloud Console] interface de ligne de commande ou dans l’interface de ligne de commande cloud pour Adobe Commerce sur les infrastructures cloud.
 last-substantial-update: 2024-02-06T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 1acac76e-b088-44ad-9c93-ea27b686b6b4
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---

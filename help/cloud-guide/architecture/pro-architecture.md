@@ -3,9 +3,10 @@ title: Architecture pro
 description: Découvrez les environnements pris en charge par l’architecture Pro.
 feature: Cloud, Auto Scaling, Iaas, Paas, Storage
 topic: Architecture
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: a6eb562b-1b97-4285-a271-989d9fddc4f9
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1611'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ Le tableau suivant résume les différences entre les environnements :
 
 >[!NOTE]
 >
->Adobe fournit l’outil Cloud Docker for Commerce pour un déploiement sur un environnement Cloud Docker local afin que vous puissiez développer et tester des projets Adobe Commerce. Voir [Développement Docker](../dev-tools/cloud-docker.md).
+>Adobe fournit l’outil Cloud Docker pour Commerce qui permet d’effectuer un déploiement dans un environnement Cloud Docker local afin que vous puissiez développer et tester des projets Adobe Commerce. Voir [Développement Docker](../dev-tools/cloud-docker.md).
 
 ## Architecture de l’environnement
 
@@ -147,7 +148,7 @@ L’environnement de production dispose de trois machines virtuelles derrière u
 
 - **Redis** : un serveur par machine virtuelle avec un seul actif et les deux autres comme répliques.
 
-- **Elasticsearch**—recherchez Adobe Commerce sur les infrastructures cloud 2.2 à 2.4.3-p2
+- **** : recherchez Adobe Commerce sur les infrastructures cloud 2.2 à 2.4.3-p2.
 
 - **OpenSearch** : recherchez Adobe Commerce sur les infrastructures cloud 2.3.7-p3, 2.4.3-p2, 2.4.4 et versions ultérieures.
 
@@ -161,7 +162,7 @@ La figure suivante présente les technologies utilisées dans l’environnement 
 
 Plutôt que d’exécuter une `master` traditionnelle active-passive ou une configuration primaire-secondaire, Adobe Commerce sur l’infrastructure cloud exécute une _architecture redondante_ où les trois instances acceptent les lectures et les écritures. Cette architecture n’offre aucun temps d’arrêt lors de la mise à l’échelle et garantit l’intégrité transactionnelle.
 
-En raison du matériel unique et redondant, Adobe peut fournir trois serveurs de passerelle. La plupart des services externes vous permettent d’ajouter plusieurs adresses IP à une liste autorisée. Par conséquent, le fait d’avoir plusieurs adresses IP fixes ne pose pas de problème. Les trois passerelles se mappent aux trois serveurs de votre cluster d’environnement de production et conservent des adresses IP statiques. Il est entièrement redondant et hautement disponible à tous les niveaux :
+Grâce à son matériel redondant unique en son genre, Adobe peut fournir trois serveurs de passerelle. La plupart des services externes vous permettent d’ajouter plusieurs adresses IP à une liste autorisée. Par conséquent, le fait d’avoir plusieurs adresses IP fixes ne pose pas de problème. Les trois passerelles se mappent aux trois serveurs de votre cluster d’environnement de production et conservent des adresses IP statiques. Il est entièrement redondant et hautement disponible à tous les niveaux :
 
 - DNS
 - Réseau de diffusion de contenu (CDN)
@@ -176,11 +177,11 @@ Adobe Commerce sur les infrastructures cloud utilise une architecture à haute d
 
 >[!NOTE]
 >
->Les volumes montés ne comprennent/ne font référence qu&#39;aux [montages inscriptibles](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) et n&#39;incluent pas l&#39;ensemble de votre répertoire `app/`. Quant aux autres fichiers, ils sont créés/générés par le [processus de création et de déploiement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) et vous devrez également vérifier votre référentiel Git pour les fichiers restants.
+>Les volumes montés ne comprennent/ne font référence qu&#39;aux [montages inscriptibles](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) et n&#39;incluent pas l&#39;ensemble de votre répertoire `app/`. Quant aux autres fichiers, ils sont créés/générés par le [processus de création et de déploiement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) et vous devrez également vérifier votre référentiel Git pour les fichiers restants.
 
 {{pro-backups}}
 
-Vous pouvez créer une **sauvegarde manuelle** de la base de données pour vos environnements d’évaluation et de production à l’aide de commandes d’interface de ligne de commande. Pour plus d&#39;informations, consultez la section [&#x200B; Sauvegarder la base de données &#x200B;](../storage/database-dump.md). Pour les environnements `integration`, Adobe recommande de commencer par créer une sauvegarde après avoir accédé à votre projet d’infrastructure cloud Adobe Commerce et avant d’appliquer des modifications majeures. Voir [&#x200B; Gestion des sauvegardes &#x200B;](../storage/snapshots.md).
+Vous pouvez créer une **sauvegarde manuelle** de la base de données pour vos environnements d’évaluation et de production à l’aide de commandes d’interface de ligne de commande. Pour plus d&#39;informations, consultez la section [ Sauvegarder la base de données ](../storage/database-dump.md). Pour les environnements `integration`, Adobe recommande de créer une sauvegarde comme première étape après l’accès à votre projet d’infrastructure Adobe Commerce sur cloud et avant d’appliquer des modifications majeures. Voir [ Gestion des sauvegardes ](../storage/snapshots.md).
 
 ### Objectif du point de récupération
 
@@ -188,7 +189,7 @@ Contactez votre responsable du succès client Adobe pour plus d’informations s
 
 ### Politique de rétention
 
-L’Adobe conserve les sauvegardes automatiques conformément à la politique de conservation des données suivante :
+Adobe conserve les sauvegardes automatiques conformément à la politique de conservation des données suivante :
 
 | Période | Politique de conservation des sauvegardes |
 | ------------------ | ----------------------- |
@@ -202,12 +203,12 @@ Cette politique peut varier en fonction de votre plan d’infrastructure cloud.
 
 ### Objectif de temps de récupération
 
-Le RTO dépend de la taille du stockage. La restauration des gros volumes EBS prend plus de temps. Les délais de restauration peuvent varier en fonction de la taille de votre base de données. Pour plus d’informations, contactez votre responsable du succès client Adobe.
+Le RTO dépend de la taille du stockage. La restauration des gros volumes EBS prend plus de temps. Les délais de restauration peuvent varier en fonction de la taille de votre base de données. Contactez votre responsable du succès client Adobe pour plus d’informations.
 
 ## Mise à l’échelle de Pro Cluster
 
-Le dimensionnement du cluster Pro et les configurations _compute_ varient en fonction du fournisseur de cloud choisi (AWS, Azure), de la région et des dépendances de service. L&#39;infrastructure cloud d&#39;Adobe peut adapter les clusters Pro aux attentes en matière de trafic et aux exigences de service en fonction de l&#39;évolution des demandes.
+Le dimensionnement du cluster Pro et les configurations _compute_ varient en fonction du fournisseur de cloud choisi (AWS, Azure), de la région et des dépendances de service. L’infrastructure cloud d’Adobe peut adapter les grappes Pro aux attentes en matière de trafic et de service en fonction de l’évolution des demandes.
 
 L’architecture redondante permet à l’infrastructure cloud d’Adobe de se mettre à niveau sans temps d’arrêt. Lors de la mise à l’échelle, chacune des trois instances effectue une rotation pour mettre à niveau la capacité sans affecter le fonctionnement du site. Par exemple, vous pouvez ajouter des serveurs web supplémentaires à un cluster existant au cas où le niveau de restriction serait PHP plutôt qu&#39;au niveau de la base de données. Cette mise à l’échelle _horizontale_ complète la mise à l’échelle verticale fournie par des processeurs supplémentaires au niveau de la base de données. Pour plus d&#39;informations, consultez la section [Architecture évolutive](scaled-architecture.md).
 
-Si vous prévoyez une augmentation significative du trafic pour un événement ou pour une autre raison, vous pouvez demander une augmentation temporaire de la capacité. Consultez [Comment demander une mise à niveau temporaire](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=fr) dans le Centre d’aide de Commerce __.
+Si vous prévoyez une augmentation significative du trafic pour un événement ou pour une autre raison, vous pouvez demander une augmentation temporaire de la capacité. Consultez [Comment demander une mise à niveau temporaire](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html) dans le Centre d’aide de Commerce __.

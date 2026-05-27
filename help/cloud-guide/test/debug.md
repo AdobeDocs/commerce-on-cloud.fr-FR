@@ -4,7 +4,7 @@ description: Découvrez comment configurer l’extension Xdebug pour déboguer v
 exl-id: 32857c9c-4a49-4337-9c15-a6e46c328df7
 source-git-commit: d48b1844305e72b7b4a37568f2358f3aa4cf2e24
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1962'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ L’IDE [PhpStorm](https://www.jetbrains.com/phpstorm/) doit être configuré po
 
 1. Dans votre projet PhpStorm, ouvrez le panneau **Paramètres**.
 
-   - _macOS_—Sélectionnez **PhpStorm** > **Settings**.
+   - __—Sélectionnez **PhpStorm** > **Settings**.
    - _Windows/Linux_ : Sélectionnez **Fichier** > **Paramètres**.
 
 1. Dans le panneau _Paramètres_, développez la section **PHP** et cliquez sur **Serveurs**.
@@ -131,7 +131,7 @@ Cela permet à l’application de disposer des paramètres de débogage corrects
 1. Sélectionnez l’option **[!UICONTROL PHP Remote Debug]** .
 
    - Saisissez un nom unique, mais reconnaissable.
-   - Cochez la case [!UICONTROL Filter debug connection by IDE key]** .
+   - Cochez la case ** .[!UICONTROL Filter debug connection by IDE key]
    - Sélectionnez le serveur que vous avez créé dans la [section précédente](#configure-phpstorm-server). Si vous ne l’avez pas encore créé, vous pouvez le faire maintenant, mais reportez-vous à cette partie du guide de configuration.
    - Dans le champ de texte **[!UICONTROL IDE key(session id)]**, saisissez `PHPSTORM` en majuscules. Nous l’utiliserons dans d’autres parties de la configuration. Il est donc important de conserver la même chose. Si vous choisissez une autre chaîne, vous devez vous rappeler de l’utiliser ailleurs dans le processus d’installation et de configuration.
 
@@ -143,7 +143,7 @@ Cela permet à l’application de disposer des paramètres de débogage corrects
 
 Mappez la connexion `XDEBUG` du serveur à votre système local. Pour effectuer tout type de débogage, vous devez transférer le port 9000 de votre serveur Adobe Commerce on cloud infrastructure vers votre ordinateur local. Consultez l’une des sections suivantes :
 
-- [Transfert de port sous Mac ou UNIX](#port-forwarding-on-mac-or-unix)
+- [Transfert de port sous Mac ou UNIX®](#port-forwarding-on-mac-or-unix)
 - [Transfert de port sous Windows](#port-forwarding-on-windows)
 
 #### Transfert de port sous Mac ou UNIX®
@@ -306,7 +306,7 @@ Vous avez besoin des éléments suivants :
 
 **Pour commencer le débogage à l’aide de l’URL d’environnement** :
 
-Il s’agit d’une démonstration des configurations utilisées et du paramètre GET permettant de démarrer une session de débogage à distance.
+Il s’agit d’une démonstration des configurations utilisées, ainsi que du paramètre GET permettant de démarrer une session de débogage à distance.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3437417?learn=on)
 
