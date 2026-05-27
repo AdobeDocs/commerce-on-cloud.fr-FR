@@ -21,7 +21,7 @@ Si vous rencontrez des erreurs lors du déploiement ou d’autres problèmes lor
 
 Le journal de déploiement est en `/var/log/platform/<prodject-ID>/deploy.log`. La valeur de `<project-ID>` dépend de l’identifiant du projet et du statut de l’environnement : Évaluation ou Production. Par exemple, avec un ID de projet de `yw1unoukjcawe`, l’utilisateur intermédiaire est `yw1unoukjcawe_stg` et l’utilisateur de production est `yw1unoukjcawe`.
 
-Lors de l’accès aux journaux dans les environnements de production ou d’évaluation, utilisez SSH pour vous connecter à chacun des trois nœuds afin de localiser les journaux. Vous pouvez également utiliser la gestion des journaux de [](../monitor/log-management.md) pour afficher et interroger les données de journaux agrégées de tous les nœuds. Voir [ Afficher les journaux ](log-locations.md#application-logs).
+Lors de l’accès aux journaux dans les environnements de production ou d’évaluation, utilisez SSH pour vous connecter à chacun des trois nœuds afin de localiser les journaux. Vous pouvez également utiliser la gestion des journaux de [&#128279;](../monitor/log-management.md) pour afficher et interroger les données de journaux agrégées de tous les nœuds. Voir [&#x200B; Afficher les journaux &#x200B;](log-locations.md#application-logs).
 
 ## Vérifier la base de code
 
@@ -64,7 +64,7 @@ Vérifiez les paramètres de configuration via le panneau d’administration, y 
    - Évaluation : `dig https://mcstaging.<your-domain>.com`
    - Production : `dig https://mcprod.<your-domain>.com`
 
-   Pour des tests de `dig` supplémentaires, voir Tests de Fastly [ avant de modifier le DNS](https://docs.fastly.com/en/guides/working-with-domains).
+   Pour des tests de `dig` supplémentaires, voir Tests de Fastly [&#x200B; avant de modifier le DNS](https://docs.fastly.com/en/guides/working-with-domains).
 
 1. Utilisez `cURL` pour vérifier les informations d’en-tête de réponse.
 
@@ -207,7 +207,7 @@ Pour de meilleurs résultats, utilisez les outils suivants :
 - [Test de performance de l’application](../environment/variables-post-deploy.md#ttfb_tested_pages) : testez les performances de l’application en configurant la variable d’environnement `TTFB_TESTED_PAGES` pour tester le temps de réponse du site.
 - [Siege](https://www.joedog.org/siege-home/) : logiciel de test et de mise en forme du trafic pour pousser votre magasin à la limite. Accédez à votre site avec un nombre configurable de clients simulés. Siege prend en charge l’authentification de base, les cookies, les protocoles HTTP, HTTPS et FTP.
 - [Jmeter](https://jmeter.apache.org)—Excellent test de charge pour aider à évaluer les performances pour le trafic en pic, comme pour les ventes flash. Créez des tests personnalisés à exécuter sur votre site.
-- [](../monitor/new-relic-service.md) (fourni) : permet de localiser les processus et les zones du site, ce qui ralentit les performances grâce au suivi du temps passé par action, tel que la transmission de données, de requêtes, de Redis, etc.
+- [&#128279;](../monitor/new-relic-service.md) (fourni) : permet de localiser les processus et les zones du site, ce qui ralentit les performances grâce au suivi du temps passé par action, tel que la transmission de données, de requêtes, de Redis, etc.
 - [WebPageTest](https://www.webpagetest.org) et [Pingdom](https://www.pingdom.com) : analyse en temps réel du temps de chargement des pages de votre site avec différents emplacements d’origine. Pingdom peut exiger des frais. WebPageTest est un outil gratuit.
 
 ## Tests fonctionnels

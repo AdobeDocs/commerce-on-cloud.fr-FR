@@ -27,7 +27,7 @@ La mise à jour de la valeur de la propriété `enable_smtp` par [ligne de comma
 
 Utilisez le bouton **[!UICONTROL Outgoing emails]** dans la vue _Configurer l’environnement_ pour activer ou désactiver la prise en charge des e-mails.
 
-Si les e-mails sortants doivent être désactivés ou réactivés dans les environnements de production ou d’évaluation Pro, vous pouvez envoyer un [ticket d’assistance ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Si les e-mails sortants doivent être désactivés ou réactivés dans les environnements de production ou d’évaluation Pro, vous pouvez envoyer un [ticket d’assistance &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 >[!TIP]
 >

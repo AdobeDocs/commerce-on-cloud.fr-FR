@@ -248,7 +248,7 @@ Date de publication : 9 novembre 2020
 
       - Ajout de la prise en charge d’Elasticsearch 7.9 pour la compatibilité avec les prochaines versions d’Adobe Commerce.<!--MCLOUD-7190-->
 
-      - **Configuration du plug-in Elasticsearch**—Ajout de la prise en charge de l’utilisation des informations de configuration du plug-in Elasticsearch du fichier `services.yaml` pour générer le fichier `docker-compose.yaml` pour un environnement Cloud Docker pour Commerce. Voir [Plug-ins ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#elasticsearch-plugins).<!--MCLOUD-2789-->
+      - **Configuration du plug-in Elasticsearch**—Ajout de la prise en charge de l’utilisation des informations de configuration du plug-in Elasticsearch du fichier `services.yaml` pour générer le fichier `docker-compose.yaml` pour un environnement Cloud Docker pour Commerce. Voir [Plug-ins &#x200B;](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#elasticsearch-plugins).<!--MCLOUD-2789-->
 
       - **Prise en charge des modules externes Elasticsearch**—Ajout de la prise en charge des modules externes Elasticsearch suivants : `analysis-icu`, `analysis-phonetic`, `analysis-stempel` et `analysis-nori`. Les plug-ins `analysis-icu` et `analysis-phonetic` sont installés par défaut. Vous pouvez ajouter ou supprimer les modules externes `analysis-stempel` et `analysis-nori` selon vos besoins.<!--MCLOUD-2789-->
 
@@ -345,7 +345,7 @@ Date de publication : 25 juin 2020
 
       - Ajout de la prise en charge d’Elasticsearch 6.8, 7.2, 7.5 et 7.6.<!--MCLOUD-4050, MCLOUD-5855,MCLOUD-5860-->
 
-      - Ajout de la possibilité de personnaliser la configuration du conteneur [](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#elasticsearch-container) lorsque vous générez le fichier de configuration de composition Docker.<!--MCLOUD-3059-->
+      - Ajout de la possibilité de personnaliser la configuration du conteneur [&#128279;](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#elasticsearch-container) lorsque vous générez le fichier de configuration de composition Docker.<!--MCLOUD-3059-->
 
       - Ajout de l’option `--no-es` aux options de configuration du service pour générer le fichier de configuration Docker Compose. Utilisez cette option pour ignorer l’installation du conteneur Elasticsearch et utiliser plutôt la recherche MySQL. Cette option est prise en charge uniquement pour Adobe Commerce versions 2.3.5 et antérieures.<!--MCLOUD-3766-->
 
@@ -462,7 +462,7 @@ Date de publication : 5 février 2020
 
    - ![nouvelle icône](../../assets/new.svg) **Mises à jour de `build:compose` commande**—
 
-      - ![nouvelle icône](../../assets/new.svg) Ajout de l’option `--sync-engine="native"` à la commande `docker-build` pour désactiver la synchronisation des fichiers lorsque vous générez le fichier de configuration Docker Compose en mode développeur. Utilisez cette option lors du développement sur des systèmes Linux, qui ne nécessitent pas de synchronisation de fichiers pour le développement local de Docker. Voir [ Synchronisation des données dans l’environnement Docker ](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data).<!--MCLOUD-3231, MCLOUD-3890-->
+      - ![nouvelle icône](../../assets/new.svg) Ajout de l’option `--sync-engine="native"` à la commande `docker-build` pour désactiver la synchronisation des fichiers lorsque vous générez le fichier de configuration Docker Compose en mode développeur. Utilisez cette option lors du développement sur des systèmes Linux, qui ne nécessitent pas de synchronisation de fichiers pour le développement local de Docker. Voir [&#x200B; Synchronisation des données dans l’environnement Docker &#x200B;](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data).<!--MCLOUD-3231, MCLOUD-3890-->
 
    - ![nouvelle icône](../../assets/new.svg) Modification du paramètre de synchronisation de fichiers par défaut de `docker-sync` à `native`. [Correctif soumis par Mathew Beane de Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/124).<!--MAGECLOUD-5066-->
 

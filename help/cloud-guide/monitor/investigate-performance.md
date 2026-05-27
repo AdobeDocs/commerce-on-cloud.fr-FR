@@ -61,7 +61,7 @@ Lorsque l’infrastructure du site ou les conditions d’application déclenchen
 
 **Pour consulter la politique Alertes gérées pour Adobe Commerce** :
 
-1. Connectez-vous à votre compte [](https://login.newrelic.com/login).
+1. Connectez-vous à votre compte [&#128279;](https://login.newrelic.com/login).
 
 1. Recherchez la stratégie _Alertes gérées pour Adobe Commerce_ :
 
@@ -99,7 +99,7 @@ New Relic fournit des modèles pour la configuration de différents types de not
 
 **Pour configurer un workflow** :
 
-1. Connectez-vous à votre compte [](https://login.newrelic.com/login).
+1. Connectez-vous à votre compte [&#128279;](https://login.newrelic.com/login).
 
 1. Créez un workflow.
 
