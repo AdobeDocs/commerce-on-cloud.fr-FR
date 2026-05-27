@@ -19,12 +19,12 @@ Cet outil étend les fonctionnalités du [[!DNL Cloud Console]](../../get-starte
 >
 >Il s’agit d’un outil local qui n’est pris en charge que sur les systèmes d’exploitation Unix. Windows n’est pas pris en charge. Il ne peut pas être installé dans l’environnement Cloud (qui est en lecture seule) à l’aide de la méthode décrite sur cette page. Vous pouvez uniquement installer des modules dans l’environnement Cloud par le biais de l’un des **workflows de déploiement** suivants.
 >
->- [Workflow de déploiement Pro](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
->- [Démarrer le workflow de déploiement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
+>- [Workflow de déploiement Pro](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
+>- [Démarrer le workflow de déploiement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
 
 **Pour installer l’interface de ligne de commande `magento-cloud`** :
 
-1. Sur votre _station de travail locale_, accédez au répertoire dans lequel vous avez l’intention de cloner le projet cloud et dans lequel le [propriétaire du système de fichiers](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html) dispose d’un accès en _écriture_.
+1. Sur votre _station de travail locale_, accédez au répertoire dans lequel vous avez l’intention de cloner le projet cloud et dans lequel le [propriétaire du système de fichiers](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=fr) dispose d’un accès en _écriture_.
 
 1. Installez l’interface de ligne de commande `magento-cloud`.
 
@@ -137,7 +137,7 @@ Les étapes suivantes illustrent l’utilisation interchangeable des commandes C
 
 1. Sur votre station de travail locale, accédez au répertoire du projet.
 
-1. Passez au [propriétaire du système de fichiers](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html).
+1. Passez au [propriétaire du système de fichiers](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=fr).
 
 1. Connectez-vous à votre projet.
 
