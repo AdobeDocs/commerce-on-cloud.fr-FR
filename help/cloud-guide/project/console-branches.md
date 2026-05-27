@@ -88,13 +88,13 @@ Avant de pouvoir supprimer un environnement, vous devez le désactiver. Une fois
 
 1. Cliquez sur l’icône de configuration sur le côté droit de la barre de navigation supérieure, ce qui ouvre les paramètres de l’environnement.
 
-1. Dans l’onglet _[!UICONTROL General]_, faites défiler l’écran jusqu’à la section_[!UICONTROL Deactivate environment]_ , cliquez sur **[!UICONTROL Deactivate environment and delete data]** et suivez les instructions.
+1. Dans l’onglet _[!UICONTROL General]_, faites défiler l’écran jusqu’à la section&#x200B;_[!UICONTROL Deactivate environment]_ , cliquez sur **[!UICONTROL Deactivate environment and delete data]** et suivez les instructions.
 
 ## Synchroniser un environnement
 
 La synchronisation d’un environnement (ou d’une branche) est identique à la `git pull origin <parent>`. Vous pouvez synchroniser le code mis à jour à partir d’un environnement parent. Vous pouvez utiliser cette fonctionnalité via l’[!DNL Cloud Console] pour tous les environnements Starter et Pro.
 
-Pour le plan Pro, vous pouvez synchroniser les environnements d’évaluation et de production avec votre branche `master`. Cette synchronisation extrait et transmet uniquement le code, et non les données. Pour synchroniser les données, videz les données de la base de données et envoyez-les vers la base de données d’un autre environnement. Voir [ Migrer et déployer des fichiers et des données statiques](/help/cloud-guide/deploy/staging-production.md#migrate-static-files).
+Pour le plan Pro, vous pouvez synchroniser les environnements d’évaluation et de production avec votre branche `master`. Cette synchronisation extrait et transmet uniquement le code, et non les données. Pour synchroniser les données, videz les données de la base de données et envoyez-les vers la base de données d’un autre environnement. Voir [&#x200B; Migrer et déployer des fichiers et des données statiques](/help/cloud-guide/deploy/staging-production.md#migrate-static-files).
 
 **Pour synchroniser un environnement** :
 

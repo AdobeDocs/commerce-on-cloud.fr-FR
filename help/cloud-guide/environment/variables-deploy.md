@@ -479,7 +479,7 @@ Un service Redis doit être configuré dans le fichier `.magento.app.yaml` et da
 
 [ECE-Tools version 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) et versions ultérieures utilisent des réglages plus tolérants aux pannes. Si Adobe Commerce ne peut pas lire les données de l’instance Redis _esclave_, il lit les données de l’instance Redis _maître_.
 
-La connexion en lecture seule n’est pas disponible pour être utilisée dans l’environnement d’intégration ou si vous utilisez la variable ](#cache_configuration).[`CACHE_CONFIGURATION`
+La connexion en lecture seule n’est pas disponible pour être utilisée dans l’environnement d’intégration ou si vous utilisez la variable [&#128279;](#cache_configuration).`CACHE_CONFIGURATION`
 
 ## `VALKEY_BACKEND`
 
@@ -528,7 +528,7 @@ Un service Redis doit être configuré dans le fichier `.magento.app.yaml` et da
 
 [ECE-Tools version 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) et versions ultérieures utilisent des réglages plus tolérants aux pannes. Si Adobe Commerce ne peut pas lire les données de l’instance Valkey _esclave_, il lit les données de l’instance Redis _maître_.
 
-La connexion en lecture seule n’est pas disponible pour être utilisée dans l’environnement d’intégration ou si vous utilisez la variable ](#cache_configuration).[`CACHE_CONFIGURATION`
+La connexion en lecture seule n’est pas disponible pour être utilisée dans l’environnement d’intégration ou si vous utilisez la variable [&#128279;](#cache_configuration).`CACHE_CONFIGURATION`
 
 ## `RESOURCE_CONFIGURATION`
 
@@ -640,7 +640,7 @@ stage:
 - **Default**—`quick`
 - **Version**—Adobe Commerce 2.2.0 et versions ultérieures
 
-Permet de personnaliser la [stratégie de déploiement](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) pour le contenu statique. Voir [ Déploiement de fichiers de vue statiques ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
+Permet de personnaliser la [stratégie de déploiement](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) pour le contenu statique. Voir [&#x200B; Déploiement de fichiers de vue statiques &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
 
 Utilisez ces options _uniquement_ si vous disposez de plusieurs paramètres régionaux :
 
