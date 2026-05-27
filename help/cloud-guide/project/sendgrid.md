@@ -31,7 +31,7 @@ Vous pouvez activer ou désactiver les e-mails sortants pour chaque environnemen
 
 Par défaut, les e-mails sortants sont activés sur les environnements de production et d’évaluation Pro. Cependant, [!UICONTROL Outgoing emails] peut sembler désactivé dans les paramètres d’environnement jusqu’à ce que vous définissiez la propriété `enable_smtp` via [ligne de commande](outgoing-emails.md#enable-emails-in-the-cli) ou [console cloud](outgoing-emails.md#enable-emails-in-the-cloud-console). Vous pouvez activer les e-mails sortants pour les environnements d’intégration et d’évaluation afin d’envoyer une authentification à deux facteurs ou réinitialiser les e-mails de mot de passe pour les utilisateurs de projets cloud. Voir [Configuration des e-mails pour les tests](outgoing-emails.md).
 
-Si les e-mails sortants doivent être désactivés ou réactivés dans les environnements de production ou d’évaluation Pro, vous pouvez envoyer un [ticket d’assistance ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Si les e-mails sortants doivent être désactivés ou réactivés dans les environnements de production ou d’évaluation Pro, vous pouvez envoyer un [ticket d’assistance &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 >[!TIP]
 >
@@ -59,7 +59,7 @@ Pour mieux gérer les paramètres de diffusion par e-mail, utilisez votre propre
 
 ## Message identifié DomainKeys (DKIM)
 
-DKIM est une technologie d’authentification des e-mails qui permet aux fournisseurs d’accès Internet (FAI) d’identifier les adresses d’expéditeur légitimes et falsifiées. Cette technique est couramment utilisée dans les cas d’hameçonnage et d’escroquerie par e-mail. DKIM repose sur un propriétaire de domaine qui gère les enregistrements DNS. Lors de l’utilisation de DKIM, le serveur expéditeur utilise une clé privée pour signer les messages. En outre, le propriétaire du domaine ajoute un enregistrement DKIM, qui est un enregistrement `TXT` modifié, aux enregistrements DNS du domaine expéditeur. Cet enregistrement `TXT` contient une clé publique que les serveurs de messagerie des destinataires utilisent pour vérifier la signature d&#39;un message. La procédure de chiffrement à clé publique DKIM permet aux destinataires de vérifier l’authenticité d’un expéditeur. Voir [Explication Des Enregistrements ](https://docs.sendgrid.com/ui/account-and-settings/dkim-records).
+DKIM est une technologie d’authentification des e-mails qui permet aux fournisseurs d’accès Internet (FAI) d’identifier les adresses d’expéditeur légitimes et falsifiées. Cette technique est couramment utilisée dans les cas d’hameçonnage et d’escroquerie par e-mail. DKIM repose sur un propriétaire de domaine qui gère les enregistrements DNS. Lors de l’utilisation de DKIM, le serveur expéditeur utilise une clé privée pour signer les messages. En outre, le propriétaire du domaine ajoute un enregistrement DKIM, qui est un enregistrement `TXT` modifié, aux enregistrements DNS du domaine expéditeur. Cet enregistrement `TXT` contient une clé publique que les serveurs de messagerie des destinataires utilisent pour vérifier la signature d&#39;un message. La procédure de chiffrement à clé publique DKIM permet aux destinataires de vérifier l’authenticité d’un expéditeur. Voir [Explication Des Enregistrements &#x200B;](https://docs.sendgrid.com/ui/account-and-settings/dkim-records).
 
 >[!WARNING]
 >
@@ -75,11 +75,11 @@ Pour que SendGrid envoie des e-mails transactionnels en votre nom à partir d&#3
 
 >[!TIP]
 >
->Assurez-vous de configurer l’option **[!UICONTROLSstocker les adresses e-mail]** avec le domaine approprié dans **[!UICONTROL Stores > Configuration > General > Store Email Addresses]**. L’authentification de domaine est effectuée sur l’adresse e-mail de l’expéditeur. Si le paramètre par défaut (`example.com`) est configuré, les e-mails provenant de `example.com` sont bloqués par Sendgrid.
+>Assurez-vous de configurer l’option **[!UICONTROL Sstocker les adresses e-mail]** avec le domaine approprié dans **[!UICONTROL Stores > Configuration > General > Store Email Addresses]**. L’authentification de domaine est effectuée sur l’adresse e-mail de l’expéditeur. Si le paramètre par défaut (`example.com`) est configuré, les e-mails provenant de `example.com` sont bloqués par Sendgrid.
 
 **Pour activer l’authentification de domaine** :
 
-1. Envoyez un [ ticket d’assistance ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) pour demander l’activation de DKIM pour un domaine spécifique (**environnements d’évaluation et de production Pro uniquement**).
+1. Envoyez un [&#x200B; ticket d’assistance &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) pour demander l’activation de DKIM pour un domaine spécifique (**environnements d’évaluation et de production Pro uniquement**).
 1. Mettez à jour votre configuration DNS avec les enregistrements `TXT` et `CNAME` qui vous ont été fournis dans le ticket de support.
 
 **Exemple d&#39;enregistrement `TXT` avec l&#39;identifiant de compte** :

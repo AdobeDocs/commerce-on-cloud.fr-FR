@@ -63,7 +63,7 @@ magento-cloud ssh -e <environment-ID> "find /var/log -name '*.gz' -exec zgrep '4
 
 #### Méthode 3 : utilisation de New Relic (environnements Pro)
 
-Pour les environnements de production et d’évaluation Pro, utilisez les journaux New Relic pour rechercher des enregistrements d’erreurs spécifiques. Pour plus d’informations, consultez la section [Gestion des journaux ](../monitor/log-management.md).
+Pour les environnements de production et d’évaluation Pro, utilisez les journaux New Relic pour rechercher des enregistrements d’erreurs spécifiques. Pour plus d’informations, consultez la section [Gestion des journaux &#x200B;](../monitor/log-management.md).
 
 ### Affichage des journaux d’environnement distant
 
@@ -220,7 +220,7 @@ title: The configured state is not ideal
 type: warning
 ```
 
-La plupart des messages d’erreur contiennent une description et une action suggérée. Utilisez la référence [Message d&#39;erreur pour ECE-Tools](../dev-tools/error-reference.md) pour rechercher le code d&#39;erreur afin d&#39;obtenir d&#39;autres indications. Pour plus d’informations, utilisez l’utilitaire de dépannage du déploiement d’Adobe Commerce [](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
+La plupart des messages d’erreur contiennent une description et une action suggérée. Utilisez la référence [Message d&#39;erreur pour ECE-Tools](../dev-tools/error-reference.md) pour rechercher le code d&#39;erreur afin d&#39;obtenir d&#39;autres indications. Pour plus d’informations, utilisez l’utilitaire de dépannage du déploiement d’Adobe Commerce [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
 
 ## Logs de l&#39;application
 
@@ -286,6 +286,6 @@ Les journaux de service sont archivés et enregistrés pendant différentes pér
 
 ## Données de journal pour la production et l’évaluation Pro
 
-Dans les environnements de production et d’évaluation Pro, utilisez la gestion des journaux [](../monitor/log-management.md) intégrée à votre projet pour gérer les données de journaux agrégées à partir de tous les journaux associés à votre projet d’infrastructure Adobe Commerce sur le cloud.
+Dans les environnements de production et d’évaluation Pro, utilisez la gestion des journaux [&#128279;](../monitor/log-management.md) intégrée à votre projet pour gérer les données de journaux agrégées à partir de tous les journaux associés à votre projet d’infrastructure Adobe Commerce sur le cloud.
 
-L’application Journaux New Relic fournit un tableau de bord de gestion des journaux centralisé pour dépanner et surveiller Adobe Commerce sur les infrastructures cloud et les environnements d’évaluation et de production. Le tableau de bord permet également d’accéder aux données de journal pour les services Fast CDN, Image Optimization et Web Application Firewall (WAF). Voir [Services ](../monitor/new-relic-service.md).
+L’application Journaux New Relic fournit un tableau de bord de gestion des journaux centralisé pour dépanner et surveiller Adobe Commerce sur les infrastructures cloud et les environnements d’évaluation et de production. Le tableau de bord permet également d’accéder aux données de journal pour les services Fast CDN, Image Optimization et Web Application Firewall (WAF). Voir [Services &#x200B;](../monitor/new-relic-service.md).
