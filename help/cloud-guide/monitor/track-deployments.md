@@ -220,10 +220,10 @@ Suivez les événements de déploiement de votre projet Commerce dans New Relic 
    {"data":{"changeTrackingCreateDeployment":{"deploymentId":"some-deployment-id","entityGuid":"SomeGUIDhere"}}}
    ```
 
-1. Connectez-vous à votre compte [](https://login.newrelic.com/login).
+1. Connectez-vous à votre compte [&#128279;](https://login.newrelic.com/login).
 
 1. Dans le menu de navigation de l’Explorateur, cliquez sur **[!UICONTROL APM & Services]**. Sélectionnez le [!UICONTROL Name] et le [!UICONTROL Account] de votre environnement.
 
 1. Sous _Événements_, cliquez sur **[!UICONTROL Change tracking]**.
 
-   ![ Déploiements ](../../assets/new-relic/deployments.png)
+   ![&#x200B; Déploiements &#x200B;](../../assets/new-relic/deployments.png)
