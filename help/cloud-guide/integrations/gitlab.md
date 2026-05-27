@@ -2,9 +2,10 @@
 title: Intégration de GitLab
 description: Découvrez comment intégrer votre projet Adobe Commerce sur l’infrastructure cloud à GitLab.
 feature: Cloud, Integration
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 24c2156f-0629-4e89-b5b1-ca144d6bfdae
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ Vous devez obtenir un jeton GitLab et un webhook pour continuer le processus.
 ## Conditions préalables
 
 - Accès des administrateurs au projet d’infrastructure cloud d’Adobe Commerce
-- [`magento-cloud` de l’interface de ligne &#x200B;](../dev-tools/cloud-cli-overview.md) commande dans votre environnement local
+- [`magento-cloud` de l’interface de ligne ](../dev-tools/cloud-cli-overview.md) commande dans votre environnement local
 - Un compte GitLab
 - Un jeton d’accès personnel GitLab avec un accès en écriture au référentiel GitLab, les portées sélectionnées doivent être au moins : `api` et `read_repository`.
 

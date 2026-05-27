@@ -2,9 +2,10 @@
 title: Workflow du projet de démarrage
 description: Découvrez comment utiliser les workflows de développement et de déploiement de Starter.
 feature: Cloud, Paas
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 75d170b6-1ec2-4099-82c8-5c4df3442843
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '2103'
+source-wordcount: '2168'
 ht-degree: 0%
 
 ---
@@ -74,7 +75,7 @@ Le format de la commande Cloud CLI `branch` est le suivant :
 magento-cloud environment:branch <environment-name> <parent-environment-ID>
 ```
 
-![Branche du Principal &#x200B;](../../assets/starter/branching.png)
+![Branche du Principal ](../../assets/starter/branching.png)
 
 ### Développer du code
 
@@ -104,12 +105,12 @@ Lorsque vous êtes prêt à configurer votre boutique, envoyez l’ensemble de v
 Pour obtenir de meilleures informations sur les configurations, consultez la documentation relative à Adobe Commerce et aux extensions installées. Voici quelques liens et idées pour commencer :
 
 - [Bonnes pratiques relatives à la configuration du magasin](../store/best-practices.md) pour connaître les bonnes pratiques spécifiques en matière de cloud
-- [Configuration de base](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/setup/store-details) pour l’accès administrateur de boutique, le nom, les langues, les devises, le branding, les sites, les vues de boutique, etc
-- [Thème](https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/content-menu#design-features) pour l’aspect du site et des magasins, y compris les CSS et les mises en page
-- [Configuration du système](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/guide-overview) pour les rôles, les outils, les notifications et votre clé de chiffrement pour la base de données
+- [Configuration de base](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details) pour l’accès administrateur de boutique, le nom, les langues, les devises, le branding, les sites, les vues de boutique, etc
+- [Thème](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu#design-features) pour l’aspect du site et des magasins, y compris les CSS et les mises en page
+- [Configuration du système](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) pour les rôles, les outils, les notifications et votre clé de chiffrement pour la base de données
 - Paramètres d’extension utilisant leur documentation
 
-Outre les paramètres de la boutique, vous pouvez configurer plusieurs sites et boutiques, services configurés, etc. Voir [&#x200B; Configuration de votre boutique &#x200B;](../store/overview.md).
+Outre les paramètres de la boutique, vous pouvez configurer plusieurs sites et boutiques, services configurés, etc. Voir [ Configuration de votre boutique ](../store/overview.md).
 
 ### Générer des fichiers de gestion de la configuration
 
@@ -126,7 +127,7 @@ Générez le fichier dans l’environnement d’intégration où vous avez confi
 
 **Remarques importantes** sur la gestion de la configuration :
 
-- Tout paramètre de configuration inclus dans le fichier généré à partir de la commande `app:config:dump` est verrouillé contre la modification ou en lecture seule dans l’environnement déployé. C’est l’une des raisons pour lesquelles Adobe recommande d’utiliser la commande `.vendor/bin/ece-tools config:dump`.
+- Tout paramètre de configuration inclus dans le fichier généré à partir de la commande `app:config:dump` est verrouillé contre la modification ou en lecture seule dans l’environnement déployé. C’est l’une des raisons pour lesquelles Adobe recommande d’utiliser la commande `.vendor/bin/ece-tools config:dump` .
 
   Par exemple, vous installez un module pour Fastly dans votre environnement de développement. Vous ne pouvez configurer ce module que dans l’environnement d’évaluation et de production. Grâce à la commande `.vendor/bin/ece-tools config:dump`, ces champs par défaut restent modifiables lorsque vous déployez vos modifications de développement dans l’environnement d’évaluation et de production.
 
@@ -162,9 +163,9 @@ Lorsque vous développez des fonctionnalités, ajoutez des extensions et conceve
 
 Pour exporter des données de production en tant que données de test à utiliser dans les environnements d’évaluation et d’intégration :
 
-- [Exécutez les utilitaires d’assistance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=fr) commandes d’interface de ligne de commande (recommandé) lors de l’exportation d’une sauvegarde protégée des données client et de stockage à l’aide de votre clé de chiffrement Adobe Commerce
+- [Exécutez les utilitaires d’assistance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) commandes d’interface de ligne de commande (recommandé) lors de l’exportation d’une sauvegarde protégée des données client et de stockage à l’aide de votre clé de chiffrement Adobe Commerce
 
-- Outil [Collecte de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/support#data-collector) pour générer et exporter des données
+- Outil [Collecte de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) pour générer et exporter des données
 
 Pour migrer ces données, voir [Migrer et déployer des fichiers et des données statiques](../deploy/staging-production.md#migrate-static-files).
 
@@ -172,7 +173,7 @@ Pour migrer ces données, voir [Migrer et déployer des fichiers et des données
 
 >[!NOTE]
 >
->Avant de transférer les données vers un autre environnement, vous devez envisager de nettoyer vos données. Vous disposez de plusieurs options, notamment l’[utilisation d’utilitaires d’assistance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=fr) ou le développement d’un script pour nettoyer les données client.
+>Avant de transférer les données vers un autre environnement, vous devez envisager de nettoyer vos données. Vous disposez de plusieurs options, notamment l’[utilisation d’utilitaires d’assistance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) ou le développement d’un script pour nettoyer les données client.
 
 >[!WARNING]
 >
@@ -218,13 +219,13 @@ Envoyez toujours votre code par itérations vers l’environnement `staging` pou
 
 L’évaluation est un environnement de préproduction qui fournit tous les services et paramètres aussi proche que possible de la production. Testez minutieusement chaque service, vérifiez vos outils de test de performance, effectuez des tests UAT en tant qu’administrateur et client, jusqu’à ce que vous sentiez que votre boutique est prête pour la production.
 
-Voir [&#x200B; Déployer votre boutique &#x200B;](../deploy/staging-production.md).
+Voir [ Déployer votre boutique ](../deploy/staging-production.md).
 
 ### Intégrer à la production
 
 Lorsque vous effectuez une transmission de type push vers la branche `master`, vous effectuez une transmission de type push vers l’environnement `production`. Effectuez les activités de configuration et de test dans l’environnement de production comme vous l’avez fait dans l’environnement d’évaluation avec une différence importante. Dans l’environnement de production, utilisez les informations d’identification actives pour la configuration et les tests. Au moment où vous lancez votre site, les clients peuvent effectuer des achats et les administrateurs peuvent gérer la boutique en ligne.
 
-Voir [&#x200B; Déployer votre boutique &#x200B;](../deploy/staging-production.md).
+Voir [ Déployer votre boutique ](../deploy/staging-production.md).
 
 ### Lancement du site
 

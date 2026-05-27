@@ -4,9 +4,10 @@ description: Consultez la liste des variables d’environnement qui contrôlent 
 feature: Cloud, Configuration, Build, SCD, Upgrade
 recommendations: noDisplay, catalog
 role: Developer
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 67bc77da-d7f2-4a92-bc11-aa4673d733c1
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -68,7 +69,7 @@ stage:
       - MC-456345
 ```
 
-Voir [&#x200B; Application de correctifs](../development/apply-patches.md).
+Voir [ Application de correctifs](../development/apply-patches.md).
 
 ## `SCD_COMPRESSION_LEVEL`
 
@@ -185,7 +186,7 @@ stage:
 - **Default**—`quick`
 - **Version**—Adobe Commerce 2.2.0 et versions ultérieures
 
-Personnalisez la [stratégie de déploiement](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html?lang=fr) pour le contenu statique. Voir [&#x200B; Déploiement de fichiers de vue statiques &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=fr).
+Personnalisez la [stratégie de déploiement](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) pour le contenu statique. Voir [ Déploiement de fichiers de vue statiques ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
 
 Utilisez ces options _uniquement_ si vous disposez de plusieurs paramètres régionaux :
 

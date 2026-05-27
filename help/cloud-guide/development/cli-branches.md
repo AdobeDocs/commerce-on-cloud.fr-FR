@@ -3,9 +3,10 @@ title: Gestion des branches avec l’interface de ligne de commande
 description: Découvrez comment gérer les branches d’environnement pour Adobe Commerce sur les infrastructures cloud à l’aide de l’interface de ligne de commande cloud.
 role: Developer
 feature: Cloud, Install
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: d67e8802-8137-451f-b468-8b788afb01ea
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ Les instructions suivantes utilisent une combinaison de commandes d’interface 
 
 **Pour cloner un projet `master` un environnement** :
 
-1. Connectez-vous à votre station de travail locale avec un compte [propriétaire du système de fichiers](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=fr).
+1. Connectez-vous à votre station de travail locale avec un compte [propriétaire du système de fichiers](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html).
 
 1. Accédez au serveur web ou à l’hôte virtuel _répertoire docroot_.
 
