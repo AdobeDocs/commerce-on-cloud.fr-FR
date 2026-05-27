@@ -140,7 +140,7 @@ La taille de disque minimale recommandée est de 256 Mo. Si le `UserError: Error
 
 >[!NOTE]
 >
->Pour les environnements d’évaluation et de production Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour mettre à jour la configuration `mounts` et `disk` de votre application. Lorsque vous soumettez le ticket, indiquez les modifications de configuration requises et incluez une version mise à jour de votre fichier `.magento.app.yaml`.
+>Pour les environnements d’évaluation et de production Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour mettre à jour la configuration `mounts` et `disk` de votre application. Lorsque vous soumettez le ticket, indiquez les modifications de configuration requises et incluez une version mise à jour de votre fichier `.magento.app.yaml`.
 >
 >Il n’est pas possible d’augmenter temporairement l’espace de stockage du disque dans les environnements d’évaluation ou de production ; ce processus n’est pas réversible.
 
@@ -191,7 +191,7 @@ Le format d’ajout de votre montage à cette liste est le suivant :
 
 >[!NOTE]
 >
->Pour les environnements d’évaluation et de production Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour mettre à jour la configuration `mounts` et `disk` de votre application. Lorsque vous soumettez le ticket, indiquez les modifications de configuration requises et incluez une version mise à jour de votre fichier `.magento.app.yaml`.
+>Pour les environnements d’évaluation et de production Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour mettre à jour la configuration `mounts` et `disk` de votre application. Lorsque vous soumettez le ticket, indiquez les modifications de configuration requises et incluez une version mise à jour de votre fichier `.magento.app.yaml`.
 
 Vous pouvez rendre le montage web accessible en l’ajoutant au bloc d’emplacements [`web`](web-property.md).
 
