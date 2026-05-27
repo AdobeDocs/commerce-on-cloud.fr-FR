@@ -5,7 +5,7 @@ last-substantial-update: 2024-02-06T00:00:00Z
 exl-id: 8eed04c7-6469-45a4-aa89-dc594c977264
 source-git-commit: 00b1b6578c226a304697963d17ba349ea17da260
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ La vue _Tous les projets_ répertorie tous les projets auxquels vous avez accès
 
 Lorsque vous sélectionnez un projet dans la liste _Tous les projets_, vous accédez à la vue d’ensemble du projet. La présentation du projet affiche toujours une barre de navigation du projet, qui comprend un sélecteur d’environnement et un bouton de configuration :
 
-![&#x200B; Navigation dans le projet &#x200B;](../../assets/project-nav.png)
+![ Navigation dans le projet ](../../assets/project-nav.png)
 
 Tant que vous n’avez pas sélectionné d’environnement, la vue d’ensemble du projet affiche un résumé des détails du projet dans la zone de prévisualisation :
 
@@ -47,7 +47,7 @@ Et dans la présentation du projet principal :
 - Le [flux d’activités](activity-stream.md) affiche les activités en cours, en attente et récentes pour le projet.
 <!-- - Apps & Services—Shows a topology of service containers -->
 
-Pour les projets **de démarrage**, il existe une hiérarchie de branches commençant par `master` (production). Toute branche que vous créez s’affiche en tant qu’enfants à partir de la branche `master`. Adobe recommande de créer une branche `staging`, puis une branche `integration` pour le développement. Voir [&#x200B; Architecture de démarrage &#x200B;](../architecture/starter-architecture.md).
+Pour les projets **de démarrage**, il existe une hiérarchie de branches commençant par `master` (production). Toute branche que vous créez s’affiche en tant qu’enfants à partir de la branche `master`. Adobe recommande de créer une branche `staging`, puis une branche `integration` pour le développement. Voir [ Architecture de démarrage ](../architecture/starter-architecture.md).
 
 Pour **Pro**, il existe une hiérarchie de branches allant de `production` à `staging` et à `integration`. L’icône ![icône dédiée](../../assets/icon-dedicated.png){width="32"} indique que la branche se déploie vers un environnement dédié. Toutes les branches que vous créez s’affichent en tant qu’enfants de la branche `integration`. Voir [Architecture Pro](../architecture/pro-architecture.md).
 
@@ -73,7 +73,7 @@ Et dans la présentation de l’environnement principal :
 
 - Le [flux d’activités](activity-stream.md) constitue la présentation de l’environnement principal et affiche les activités en cours, en attente et récentes pour l’environnement sélectionné.
 <!-- - Services tab shows and Apps & Services menu, including overview and configuration tabs for each service. -->
-- L’onglet [&#x200B; Sauvegardes &#x200B;](../storage/snapshots.md#create-a-manual-backup) fournit une liste des sauvegardes stockées, un historique des actions de sauvegarde et le bouton Sauvegarder .
+- L’onglet [ Sauvegardes ](../storage/snapshots.md#create-a-manual-backup) fournit une liste des sauvegardes stockées, un historique des actions de sauvegarde et le bouton Sauvegarder .
 
 ### Accéder au storefront
 
@@ -87,7 +87,7 @@ https://<branch>-<unique-ID>-<project-ID>.<region>.magentosite.cloud/
 
 - **ID unique** = 7 caractères alphanumériques aléatoires
 - **ID de projet** = ID de projet de 13 caractères
-- **Region** = nom de la région AWS ou Azure. Voir [Adresses IP régionales](regional-ip-addresses.md)
+- **Region** = nom de la région AWS ou Azure, voir [Adresses IP régionales](regional-ip-addresses.md)
 
 Les environnements de production et d&#39;évaluation Pro comprennent trois nœuds auxquels vous pouvez accéder à l&#39;aide des liens suivants :
 
@@ -117,7 +117,7 @@ Ouvrez le panneau _Paramètres_ en cliquant sur l’icône ![Configurer le proje
 | Accès | Gérez l’[accès utilisateur](user-access.md) pour les types de projet et d’environnement. |
 | Certificats | Affichez une liste des certificats SSL associés au projet. |
 | Déployer la clé | Ajoutez et affichez la clé publique au référentiel de code du projet. |
-| Domaines | Ajoutez un nom de domaine au projet. Voir [&#x200B; Gestion des domaines &#x200B;](../cdn/fastly-custom-cache-configuration.md#manage-domains). |
+| Domaines | Ajoutez un nom de domaine au projet. Voir [ Gestion des domaines ](../cdn/fastly-custom-cache-configuration.md#manage-domains). |
 | Intégrations | Ajoutez et gérez les [intégrations](../integrations/overview.md), telles que les notifications d’intégrité et les webhooks. |
 | Variables | Ajoutez des [variables au niveau du projet](../environment/variable-levels.md) qui sont disponibles lors de la génération et de l’exécution dans tous les environnements. |
 
@@ -131,7 +131,7 @@ Cliquez sur **[!UICONTROL Environments]** et sélectionnez un environnement spé
 | --------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | Général | Configurez le nom d’affichage, le type d’environnement et l’environnement parent.<br>Activer/désactiver différents paramètres d’environnement : |
 |           | **Activer les e-mails sortants** : envoyez des [e-mails sortants](outgoing-emails.md) à partir de l’environnement à l’aide du protocole SMTP. |
-|           | **Masquer dans les moteurs de recherche** : bloquez les indexeurs et les robots d’exploration des moteurs de recherche du site. |
+|           | **Masquer dans les moteurs de recherche** : bloquez les indexeurs et les robots d&#39;exploration des moteurs de recherche du site. |
 |           | **Contrôle d’accès HTTP** : activez la configuration de la sécurité du [!DNL Cloud Console] à l’aide d’un contrôle d’accès par connexion et adresse IP. |
 |           | Le statut est `active` ou `inactive`. La majeure partie de votre travail se déroule dans un environnement actif. Vous pouvez désactiver ou supprimer l’environnement. |
 | Variables | Afficher, créer et gérer [variables au niveau de l’environnement](../environment/variable-levels.md) disponibles au moment de l’exécution. |
@@ -149,7 +149,7 @@ Votre projet comprend [Fastly](../cdn/fastly.md) et [New Relic](../monitor/new-r
 
 - [Fastly](https://www.fastly.com/) fournit des services de diffusion de contenu (CDN), d’optimisation des images et de sécurité (DDoS et WAF) pour vos projets d’infrastructure cloud Adobe Commerce. Voir [Obtention des informations d’identification Fastly](../cdn/fastly-configuration.md#get-fastly-credentials).
 
-- [New Relic](../monitor/new-relic-service.md) fournit des mesures d’application et des informations de performances pour les environnements d’évaluation et de production.
+- [](../monitor/new-relic-service.md) fournit des mesures d’application et des informations de performances pour les environnements d’évaluation et de production.
 
 Utilisez l’[interface de ligne de commande Cloud](../dev-tools/cloud-cli-overview.md) pour passer en revue vos jetons d’intégration, vos identifiants, etc. :
 

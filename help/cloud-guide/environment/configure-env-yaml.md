@@ -3,9 +3,10 @@ title: Configuration de l’environnement
 description: Découvrez comment configurer des actions de génération et de déploiement sur tous les environnements d’infrastructure cloud de Commerce, y compris l’évaluation et la production professionnelles, à l’aide de variables d’environnement.
 feature: Cloud, Build, Configuration, Deploy, SCD
 role: Developer
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: f39c73fc-351a-41ed-9e74-2c3f14871246
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Le fichier `.magento.env.yaml` contient deux sections : `stage` et `log`. La sec
    - `deploy` : contrôle les actions lors de la phase de déploiement uniquement. Si vous ne spécifiez pas de paramètres dans cette section, la phase de déploiement utilise les paramètres de la section globale.
    - `post-deploy` : contrôle les actions _après_ le déploiement de votre application et _après_ le conteneur commence à accepter les connexions.
 - `log` : utilisez la section journal pour configurer les [notifications](set-up-notifications.md), y compris les types de notification et le niveau de détail.
-   - `slack` : permet de configurer un message à envoyer à un robot de Slack.
+   - `slack` : permet de configurer un message à envoyer à un robot Slack.
    - `email` : configurez un e-mail à envoyer à un ou plusieurs destinataires d&#39;e-mail.
    - [gestionnaires de journaux](log-handlers.md) : configurez les messages des applications matérielles et logicielles envoyés à un serveur de journalisation distant.
 

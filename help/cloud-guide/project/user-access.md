@@ -8,7 +8,7 @@ topic: Security
 exl-id: 953593de-f675-49fd-988f-f11306f67fbd
 source-git-commit: c972d9f2029499cf53edc334c1d9a40b155a991d
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -190,9 +190,9 @@ Après avoir ajouté un utilisateur à un projet cloud, demandez à l’utilisat
 Adobe Commerce sur les infrastructures cloud prend en charge TFA à l’aide de l’une des applications suivantes :
 
 - [Authentificateur Google (Android/iPhone)](https://support.google.com/accounts/answer/1066447?hl=en)
-- [Authy (Android/iPhone)](https://authy.com/features/)
+- [Authentifier (Android/iPhone)](https://authy.com/features/)
 - [FreeOTP (Android)](https://play.google.com/store/apps/details?id=org.fedorahosted.freeotp)
-- [Authentificateur GAuth (système d’exploitation Firefox, ordinateur de bureau, autres)](https://github.com/gbraad-apps/gauth)
+- [Authentificateur GAuth (Firefox OS, desktop, autres)](https://github.com/gbraad-apps/gauth)
 
 Les instructions d’installation de l’application d’authentification et d’activation de TFA sont disponibles sur la page _Paramètres du compte_ de la [!DNL Cloud Console].
 
@@ -232,7 +232,7 @@ Les instructions d’installation de l’application d’authentification et d�
 
      >[!WARNING]
      >
-     >Si vous perdez l’accès à un compte avec TFA et que vous ne disposez pas de la liste des codes de récupération, vous devez contacter l’administrateur de votre projet ou [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour réinitialiser l’application TFA.
+     >Si vous perdez l’accès à un compte avec TFA et que vous ne disposez pas de la liste des codes de récupération, vous devez contacter l’administrateur de votre projet ou [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour réinitialiser l’application TFA.
 
 1. Une fois la configuration de l’AFE terminée, cliquez sur **Enregistrer** pour mettre à jour votre compte.
 
@@ -279,6 +279,6 @@ Dans les projets pour lesquels l’application MFA est activée, vous devez disp
 
 1. Cliquez sur **[!UICONTROL Create API token]** et saisissez un nom, par exemple, spécifiez un nom correspondant à l’utilisateur de la machine ou au processus automatisé qui utilise le jeton API.
 
-   ![&#x200B; Jetons API &#x200B;](../../assets/api-token-name.png)
+   ![ Jetons API ](../../assets/api-token-name.png)
 
 1. Cliquez sur **[!UICONTROL Create API token]**.

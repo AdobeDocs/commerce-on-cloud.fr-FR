@@ -4,18 +4,19 @@ description: Découvrez les options d’intégration tierces de votre projet d�
 role: Developer
 feature: Cloud, Integration
 last-substantial-update: 2024-02-06T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 97c5f70d-1465-46c9-bb33-98897262c5ef
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
 
 # Présentation des intégrations
 
-Les intégrations sont utiles pour utiliser des services externes, tels que l’hébergement Git ou les robots de Slack, et pour maintenir vos processus de développement actuels, tels que l’utilisation de la fonction de révision du code et de demande de tirage dans GitHub. Vous pouvez ajouter les intégrations suivantes à votre projet d’infrastructure cloud Adobe Commerce :
+Les intégrations sont utiles pour utiliser des services externes, tels que l’hébergement Git ou les robots Slack, et pour maintenir vos processus de développement actuels, tels que l’utilisation de la fonction de révision du code et de demande de tirage dans GitHub. Vous pouvez ajouter les intégrations suivantes à votre projet d’infrastructure cloud Adobe Commerce :
 
-![&#x200B; Intégrations &#x200B;](/help/assets/integrations.png)
+![ Intégrations ](/help/assets/integrations.png)
 
 >[!BEGINTABS]
 
