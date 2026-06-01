@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8abce85f5a2ed22e344e1489c592ac12415568d8
+source-git-commit: 3a36ada0dd3bdb4952b71f9ff851af20766c91ed
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 1%
+source-wordcount: '341'
+ht-degree: 2%
 
 ---
 # Nouveautés du modèle
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### 1er juin 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Suppression de l’instruction de prise en charge d’Elasticsearch pour On-Prem dans l’avertissement de prise en charge d’<a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/opensearch">Elasticsearch</a>.</p>
+</td>
+      <td>
+        Technique
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/65898d2007d69d5bd3b8a9eabb9872ced98b8ffc">validation</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 12 Mai 2026
 
