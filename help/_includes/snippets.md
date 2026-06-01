@@ -1,7 +1,7 @@
 ---
-source-git-commit: c8effbdb82060e2a2cbcbdef577fed7249a76799
+source-git-commit: 3006f8f7b3eb54f44cf2bda06403441d304b4b81
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1305'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Elasticsearch 7.11 et versions ultérieures ne sont pas prises en charge pour Adobe Commerce sur les infrastructures cloud. Les versions 2.3.7-p3, 2.4.3-p2 et 2.4.4 d’Adobe Commerce et ultérieures prennent en charge le service OpenSearch. Les installations sur site continuent à prendre en charge Elasticsearch.
+>Elasticsearch 7 et versions ultérieures ne sont pas prises en charge pour Adobe Commerce sur les infrastructures cloud. Les versions 2.3.7-p3, 2.4.3-p2 et 2.4.4 d’Adobe Commerce et ultérieures prennent en charge le service OpenSearch.
 
 ## Intégration améliorée {#enhanced-integration-envs}
 
