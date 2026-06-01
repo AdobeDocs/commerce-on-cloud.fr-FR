@@ -2,9 +2,10 @@
 title: Niveaux et options variables
 description: Découvrez les différents niveaux de variable et options utilisés pour personnaliser votre environnement d’exécution de projet Adobe Commerce on cloud infrastructure.
 feature: Cloud, Configuration, Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 6761cb45-9c8d-4a4e-940f-d62e0e15dcb4
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---

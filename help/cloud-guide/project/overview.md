@@ -5,7 +5,7 @@ last-substantial-update: 2024-02-06T00:00:00Z
 exl-id: 8eed04c7-6469-45a4-aa89-dc594c977264
 source-git-commit: 00b1b6578c226a304697963d17ba349ea17da260
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ https://<branch>-<unique-ID>-<project-ID>.<region>.magentosite.cloud/
 
 - **ID unique** = 7 caractères alphanumériques aléatoires
 - **ID de projet** = ID de projet de 13 caractères
-- **Region** = nom de la région AWS ou Azure. Voir [Adresses IP régionales](regional-ip-addresses.md)
+- **Region** = nom de la région AWS ou Azure, voir [Adresses IP régionales](regional-ip-addresses.md)
 
 Les environnements de production et d&#39;évaluation Pro comprennent trois nœuds auxquels vous pouvez accéder à l&#39;aide des liens suivants :
 
@@ -131,7 +131,7 @@ Cliquez sur **[!UICONTROL Environments]** et sélectionnez un environnement spé
 | --------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | Général | Configurez le nom d’affichage, le type d’environnement et l’environnement parent.<br>Activer/désactiver différents paramètres d’environnement : |
 |           | **Activer les e-mails sortants** : envoyez des [e-mails sortants](outgoing-emails.md) à partir de l’environnement à l’aide du protocole SMTP. |
-|           | **Masquer dans les moteurs de recherche** : bloquez les indexeurs et les robots d’exploration des moteurs de recherche du site. |
+|           | **Masquer dans les moteurs de recherche** : bloquez les indexeurs et les robots d&#39;exploration des moteurs de recherche du site. |
 |           | **Contrôle d’accès HTTP** : activez la configuration de la sécurité du [!DNL Cloud Console] à l’aide d’un contrôle d’accès par connexion et adresse IP. |
 |           | Le statut est `active` ou `inactive`. La majeure partie de votre travail se déroule dans un environnement actif. Vous pouvez désactiver ou supprimer l’environnement. |
 | Variables | Afficher, créer et gérer [variables au niveau de l’environnement](../environment/variable-levels.md) disponibles au moment de l’exécution. |
@@ -149,7 +149,7 @@ Votre projet comprend [Fastly](../cdn/fastly.md) et [New Relic](../monitor/new-r
 
 - [Fastly](https://www.fastly.com/) fournit des services de diffusion de contenu (CDN), d’optimisation des images et de sécurité (DDoS et WAF) pour vos projets d’infrastructure cloud Adobe Commerce. Voir [Obtention des informations d’identification Fastly](../cdn/fastly-configuration.md#get-fastly-credentials).
 
-- [New Relic](../monitor/new-relic-service.md) fournit des mesures d’application et des informations de performances pour les environnements d’évaluation et de production.
+- [&#128279;](../monitor/new-relic-service.md) fournit des mesures d’application et des informations de performances pour les environnements d’évaluation et de production.
 
 Utilisez l’[interface de ligne de commande Cloud](../dev-tools/cloud-cli-overview.md) pour passer en revue vos jetons d’intégration, vos identifiants, etc. :
 

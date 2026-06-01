@@ -3,9 +3,10 @@ title: Gérez les branches avec  [!DNL Cloud Console]
 description: Découvrez comment gérer les branches d’environnement pour Adobe Commerce sur les infrastructures cloud à l’aide de l’ [!DNL Cloud Console].
 role: Developer
 feature: Cloud, Install
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 2c254586-b670-4dd7-8f82-edcc139e9800
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '1589'
+source-wordcount: '1638'
 ht-degree: 0%
 
 ---
@@ -31,7 +32,7 @@ La stratégie d’embranchement utilise un workflow Git courant dans lequel vous
 - Pour Commencer, créez une branche `staging` à partir de la branche `master`, puis une branche à partir de `staging` pour le développement.
 - Pour Pro, créez une branche de développement à partir de l’environnement `Integration`.
 
-Votre compte prend en charge un nombre limité de branches de développement ![branche active](../../assets/icon-active.png){width="32"} (active) and an unlimited number of ![inactive branch](../../assets/icon-inactive.png){width="32"} (inactive). Gérez les branches actives et inactives en ajoutant ou en supprimant une branche à l’aide de l’interface de ligne de commande [!DNL Cloud Console] ou Cloud. Avant de pouvoir supprimer une branche, vous devez la désactiver, car elle reste dans la liste _Environnements_ marquée comme _inactive_. Vous pouvez réactiver la branche ultérieurement ou [supprimer la branche](../dev-tools/cloud-cli-overview.md#) dans les paramètres d’environnement ou à l’aide de l’interface de ligne de commande cloud.
+Votre compte prend en charge un nombre limité de branches de développement ![branche active](../../assets/icon-active.png){width="32"} (active) et ![branche inactive](../../assets/icon-inactive.png){width="32"} (inactive). Gérez les branches actives et inactives en ajoutant ou en supprimant une branche à l’aide de l’interface de ligne de commande [!DNL Cloud Console] ou Cloud. Avant de pouvoir supprimer une branche, vous devez la désactiver, car elle reste dans la liste _Environnements_ marquée comme _inactive_. Vous pouvez réactiver la branche ultérieurement ou [supprimer la branche](../dev-tools/cloud-cli-overview.md#) dans les paramètres d’environnement ou à l’aide de l’interface de ligne de commande cloud.
 
 Si vous avez besoin d’environnements actifs supplémentaires pour le développement, envoyez un ticket d’assistance [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket).
 
@@ -172,7 +173,7 @@ Si vous préférez que votre projet accède à plusieurs référentiels, vous po
 
 >[!INFO]
 >
->Adobe recommande d’ajouter et de fusionner ce code dans les référentiels Git de votre projet. Si vous ne configurez pas la connexion, vous pouvez rencontrer des problèmes de build.
+>Adobe recommande d’ajouter et de fusionner ce code dans vos référentiels Git de projet. Si vous ne configurez pas la connexion, vous pouvez rencontrer des problèmes de build.
 
 **Pour trouver votre clé publique SSH** :
 

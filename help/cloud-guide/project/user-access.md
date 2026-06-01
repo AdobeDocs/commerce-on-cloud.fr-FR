@@ -8,7 +8,7 @@ topic: Security
 exl-id: 953593de-f675-49fd-988f-f11306f67fbd
 source-git-commit: c972d9f2029499cf53edc334c1d9a40b155a991d
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -190,9 +190,9 @@ Après avoir ajouté un utilisateur à un projet cloud, demandez à l’utilisat
 Adobe Commerce sur les infrastructures cloud prend en charge TFA à l’aide de l’une des applications suivantes :
 
 - [Authentificateur Google (Android/iPhone)](https://support.google.com/accounts/answer/1066447?hl=en)
-- [Authy (Android/iPhone)](https://authy.com/features/)
+- [Authentifier (Android/iPhone)](https://authy.com/features/)
 - [FreeOTP (Android)](https://play.google.com/store/apps/details?id=org.fedorahosted.freeotp)
-- [Authentificateur GAuth (système d’exploitation Firefox, ordinateur de bureau, autres)](https://github.com/gbraad-apps/gauth)
+- [Authentificateur GAuth (Firefox OS, desktop, autres)](https://github.com/gbraad-apps/gauth)
 
 Les instructions d’installation de l’application d’authentification et d’activation de TFA sont disponibles sur la page _Paramètres du compte_ de la [!DNL Cloud Console].
 

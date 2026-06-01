@@ -2,16 +2,17 @@
 title: Bonnes pratiques relatives à la configuration du magasin
 description: Découvrez les bonnes pratiques relatives à la configuration de votre boutique sur Adobe Commerce sur les infrastructures cloud.
 feature: Cloud, Best Practices
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: ae7da73b-f874-4623-bf29-821ee0a00eb9
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1178'
 ht-degree: 0%
 
 ---
 
 # Bonnes pratiques relatives à la configuration du magasin
 
-Pour obtenir des informations détaillées sur la configuration de votre boutique, de vos sites et de vos sites Web, vous pouvez consulter le [Guide de l’utilisateur d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=fr). Cette page fournit des bonnes pratiques, des informations utiles et des instructions pour configurer vos magasins, sites et plus encore avec du contenu supplémentaire à publier au fil du temps et entre les versions.
+Pour obtenir des informations détaillées sur la configuration de votre boutique, de vos sites et de vos sites Web, vous pouvez consulter le [Guide de l’utilisateur d’](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=fr). Cette page fournit des bonnes pratiques, des informations utiles et des instructions pour configurer vos magasins, sites et plus encore avec du contenu supplémentaire à publier au fil du temps et entre les versions.
 
 ## Campagnes marketing et promotions
 
@@ -53,7 +54,7 @@ Pour effectuer d&#39;autres étapes, vous pouvez suivre les instructions suivant
 
 Les règles de prix peuvent inclure une logique et des conditions aussi illimitées que votre imagination marketing. Voici quelques exemples populaires : Achetez-en un gratuit, Achetez-en un avec une réduction de 50 %, une réduction de 25 $ sur les commandes de plus de 100 $, etc.
 
-Pour créer une règle de prix, consultez le [Guide de l’utilisateur d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog-create.html?lang=fr).
+Pour créer une règle de prix, consultez le [Guide de l’utilisateur d’](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog-create.html?lang=fr).
 
 Vous trouverez ci-dessous un exemple de création d&#39;une règle de prix pour une remise Première commande uniquement. Pour bénéficier de cette réduction, vous devez :
 

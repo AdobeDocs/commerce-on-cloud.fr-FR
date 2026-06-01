@@ -72,8 +72,7 @@ Lorsque vous êtes prêt à lancer votre site, vous devez mettre à jour la conf
 
 >[!IMPORTANT]
 >
->Les instructions DNS de [RFC1034](https://www.rfc-editor.org/rfc/rfc1912) (**section 2.4**) indiquent que :
->_Un enregistrement CNAME n’est pas autorisé à coexister avec d’autres données. En d’autres termes, si suzy.podunk.xx est un alias de sue.podunk.xx, vous ne pouvez pas non plus avoir d’enregistrement MX pour suzy.podunk.edu, ou un enregistrement A, ou même un enregistrement TXT._
+>Les instructions DNS de [&#128279;](https://www.rfc-editor.org/rfc/rfc1912) (**section 2.4**) indiquent que :>_Un enregistrement CNAME n’est pas autorisé à coexister avec d’autres données. En d’autres termes, si suzy.podunk.xx est un alias de sue.podunk.xx, vous ne pouvez pas non plus avoir d’enregistrement MX pour suzy.podunk.edu, ou un enregistrement A, ou même un enregistrement TXT._
 >
 >Pour cette raison, les enregistrements DNS doivent être de type `CNAME` pour les sous-domaines et de type `A` pour les domaines apex (domaines racines). L’abandon de cette règle peut entraîner des perturbations de votre service de messagerie ou de la propagation DNS, car vous perdez la possibilité d’ajouter d’autres enregistrements, tels que MX ou NS. Certains fournisseurs DNS peuvent contourner ce problème en utilisant des personnalisations internes, mais le respect de la norme assure la stabilité et la flexibilité (comme le changement de fournisseur DNS).
 
@@ -129,7 +128,7 @@ Vous pouvez également effectuer des tests à l’aide des options tierces suiva
 
 - [Jmeter](https://jmeter.apache.org/) : Excellent test de charge pour aider à évaluer les performances pour le trafic en pic, comme pour les ventes flash. Créez des tests personnalisés à exécuter sur votre site.
 
-- [New Relic](https://support.newrelic.com/s/) (fourni) : permet de localiser les processus et les zones du site, ce qui ralentit les performances avec le temps passé par action suivi, comme la transmission de données, de requêtes, de Redis, etc.
+- [&#128279;](https://support.newrelic.com/s/) (fourni) : permet de localiser les processus et les zones du site, ce qui ralentit les performances avec le temps passé par action suivi, comme la transmission de données, de requêtes, de Redis, etc.
 
 - [WebPageTest](https://www.webpagetest.org/) et [Pingdom](https://www.pingdom.com/) : analyse en temps réel du temps de chargement des pages de votre site avec différents emplacements d’origine. Pingdom peut coûter un supplément. WebPageTest est un outil gratuit.
 

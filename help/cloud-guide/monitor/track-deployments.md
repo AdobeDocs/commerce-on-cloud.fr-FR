@@ -4,9 +4,10 @@ description: Découvrez comment configurer New Relic pour effectuer le suivi des
 feature: Cloud, Deploy, Observability
 topic: Performance
 last-substantial-update: 2023-10-12T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 3344314e-bed5-4b98-a2a1-a3a97f61ac85
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -219,7 +220,7 @@ Suivez les événements de déploiement de votre projet Commerce dans New Relic 
    {"data":{"changeTrackingCreateDeployment":{"deploymentId":"some-deployment-id","entityGuid":"SomeGUIDhere"}}}
    ```
 
-1. Connectez-vous à votre compte [New Relic](https://login.newrelic.com/login).
+1. Connectez-vous à votre compte [&#128279;](https://login.newrelic.com/login).
 
 1. Dans le menu de navigation de l’Explorateur, cliquez sur **[!UICONTROL APM & Services]**. Sélectionnez le [!UICONTROL Name] et le [!UICONTROL Account] de votre environnement.
 

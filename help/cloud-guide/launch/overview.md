@@ -4,7 +4,7 @@ description: Découvrez comment commencer la préparation du lancement du site.
 exl-id: 95abc7aa-ed4d-44f7-96aa-517c646bc00d
 source-git-commit: 38ac38d4edd0f317155d0d4537021a29a21d5761
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '966'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Dans le cadre de l’abonnement à Adobe Commerce sur l’infrastructure cloud, 
 >
 >Ajoutez ces adresses IP à une liste autorisée dans les règles de pare-feu de votre réseau pour permettre à l’outil d’analyser votre site. L’outil affiche les requêtes sur les ports 80 et 443 uniquement.
 
-L&#39;outil Security Scan Tool vous permet de surveiller régulièrement les sites Web de votre boutique et de recevoir des mises à jour pour les risques de sécurité connus, les logiciels malveillants et les logiciels obsolètes. Cet outil est un service gratuit disponible pour toutes les implémentations et versions d’Adobe Commerce sur les infrastructures cloud. Vous accédez à l’outil via votre compte [Commerce Marketplace](https://account.magento.com/customer/account/login).
+L&#39;outil Security Scan Tool vous permet de surveiller régulièrement les sites Web de votre boutique et de recevoir des mises à jour pour les risques de sécurité connus, les logiciels malveillants et les logiciels obsolètes. Cet outil est un service gratuit disponible pour toutes les implémentations et versions d’Adobe Commerce sur les infrastructures cloud. Vous accédez à l’outil via votre compte [&#128279;](https://account.magento.com/customer/account/login).
 
 - Surveillance de l’état de sécurité de vos sites et des mises à jour de sécurité appliquées
 
@@ -84,7 +84,7 @@ Visbot/2.0 (+http://www.visvo.com/en/webmasters.jsp;bot@visvo.com)
 
 ## Analyser votre site
 
-1. Accédez à votre compte [Commerce Marketplace](https://account.magento.com/customer/account/login).
+1. Accédez à votre compte [&#128279;](https://account.magento.com/customer/account/login).
 
 1. Cliquez sur l’onglet Analyse de sécurité et sélectionnez **Accéder à l’analyse de sécurité**.
 

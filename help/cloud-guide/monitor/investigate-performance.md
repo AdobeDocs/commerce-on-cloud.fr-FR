@@ -3,9 +3,10 @@ title: Surveillance de New Relic
 description: Découvrez comment accéder à votre tableau de bord New Relic et analyser les données de votre projet d’infrastructure Adobe Commerce on cloud.
 feature: Cloud, Observability
 topic: Performance
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: b9d806c4-f659-4e10-8dcb-b320a61de5e1
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -60,7 +61,7 @@ Lorsque l’infrastructure du site ou les conditions d’application déclenchen
 
 **Pour consulter la politique Alertes gérées pour Adobe Commerce** :
 
-1. Connectez-vous à votre compte [New Relic](https://login.newrelic.com/login).
+1. Connectez-vous à votre compte [&#128279;](https://login.newrelic.com/login).
 
 1. Recherchez la stratégie _Alertes gérées pour Adobe Commerce_ :
 
@@ -82,7 +83,7 @@ Lorsque l’infrastructure du site ou les conditions d’application déclenchen
 
 ## Création de politiques d’alerte
 
-Ne modifiez aucune alerte incluse dans la stratégie Alertes gérées pour Adobe Commerce . L’Adobe met à jour et améliore les conditions d’alerte de cette politique au fil du temps, ce qui remplace toutes les personnalisations que vous ajoutez à la politique.
+Ne modifiez aucune alerte incluse dans la stratégie Alertes gérées pour Adobe Commerce . Adobe met à jour et améliore les conditions d’alerte de cette politique au fil du temps, ce qui remplace toutes les personnalisations que vous ajoutez à la politique.
 
 Au lieu de modifier une alerte existante, vous pouvez créer une politique d’alerte. Copiez ensuite les conditions d’alerte dans la nouvelle politique.
 
@@ -94,11 +95,11 @@ Au lieu de modifier une alerte existante, vous pouvez créer une politique d’a
 
 Vous pouvez désormais configurer un _workflow_, anciennement appelé canal de notification, pour recevoir des notifications sur les performances de votre site en fonction des données filtrées, telles qu’une politique d’alerte. Les notifications concernant les problèmes de performances sont envoyées à tous les workflows associés à une politique d’alerte lorsque les conditions de l’application ou de l’infrastructure déclenchent une alerte. Vous recevez également des notifications lorsqu’un problème est confirmé et clos.
 
-New Relic fournit des modèles pour la configuration de différents types de notifications de workflow, notamment les e-mails, les Slack, PagerDuty, les Webhooks, etc.
+New Relic fournit des modèles pour la configuration de différents types de notifications de workflow, notamment e-mail, Slack, PagerDuty, webhooks, etc.
 
 **Pour configurer un workflow** :
 
-1. Connectez-vous à votre compte [New Relic](https://login.newrelic.com/login).
+1. Connectez-vous à votre compte [&#128279;](https://login.newrelic.com/login).
 
 1. Créez un workflow.
 

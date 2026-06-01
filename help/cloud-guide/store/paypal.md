@@ -2,9 +2,10 @@
 title: Configurer les modes de paiement PayPal
 description: Configurez les modes de paiement PayPal pour Adobe Commerce sur l’infrastructure cloud.
 feature: Cloud, Checkout, Payments
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 577639f8-74a1-4bb2-96fc-72135252cbd1
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---

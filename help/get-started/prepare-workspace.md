@@ -2,9 +2,10 @@
 title: Préparation au développement
 description: Rassemblez les informations d’identification et découvrez les outils disponibles pour configurer un espace de travail de développement à utiliser avec votre projet d’infrastructure cloud Commerce.
 recommendations: noDisplay, catalog
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: adb7f74f-8007-4f23-bc07-46b0f7d0ebd9
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,7 @@ Avant de configurer un espace de travail, collectez les clés et l’accès au c
 
   Le propriétaire du projet doit vous inviter à rejoindre le projet d’infrastructure cloud d’Adobe Commerce. Lorsque vous recevez l’invitation par courrier électronique, cliquez sur le lien et suivez les invites pour créer votre compte. Voir [&#x200B; Intégration &#x200B;](onboarding.md).
 
-- **Clé de chiffrement Adobe Commerce**
+- **Clé de chiffrement**
 
   Lors de l’importation d’un système existant uniquement, capturez la clé de chiffrement utilisée pour protéger l’accès et les données de la base de données. Pour plus d’informations sur cette clé, voir [Résoudre les problèmes liés à la clé de chiffrement](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.html?lang=fr)
 
@@ -65,4 +66,4 @@ Une connexion sécurisée est essentielle pour interagir avec les environnements
 
 >[!TIP]
 >
->Adobe approvisionne votre environnement de projet initial à l’aide d’un référentiel de modèles qui inclut des instructions de package pour une version spécifique d’Adobe Commerce. Consultez la rubrique [structure de fichiers du projet](../cloud-guide/project/file-structure.md) et en savoir plus sur les fichiers de projet importants et les modèles cloud.
+>Adobe met en service votre environnement de projet initial à l’aide d’un référentiel de modèles qui inclut des instructions de package pour une version spécifique d’Adobe Commerce. Consultez la rubrique [structure de fichiers du projet](../cloud-guide/project/file-structure.md) et en savoir plus sur les fichiers de projet importants et les modèles cloud.

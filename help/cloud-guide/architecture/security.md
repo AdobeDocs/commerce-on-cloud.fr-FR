@@ -2,9 +2,10 @@
 title: Sécurité des infrastructures cloud
 description: Découvrez comment Adobe assure la sécurité d’Adobe Commerce sur les infrastructures cloud.
 feature: Cloud, Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: ae934401-2c32-427a-8162-98df9a047cd4
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '1665'
+source-wordcount: '1724'
 ht-degree: 0%
 
 ---
@@ -45,7 +46,7 @@ L’application Adobe Commerce ne prend pas en charge le chiffrement au niveau d
 
 ## Détection des points d’entrée et réponse
 
-[!DNL CrowdStrike Falcon], un agent léger de nouvelle génération de détection des points d’entrée et de réponse (EDR) est installé sur tous les points d’entrée (serveurs inclus) d’Adobe. Les agents EDR protègent les données et les systèmes des Adobes grâce à une surveillance et à une collecte continues en temps réel, qui permettent d&#39;identifier et de réagir rapidement aux menaces.
+[!DNL CrowdStrike Falcon], un agent de détection et de réponse de point d’entrée (EDR) de nouvelle génération et léger est installé sur tous les points d’entrée (serveurs inclus) d’Adobe. Les agents EDR protègent les données et les systèmes Adobe grâce à une surveillance et une collecte continues en temps réel, qui permettent d’identifier et de traiter rapidement les menaces.
 
 ## Test de pénétration
 
@@ -68,7 +69,7 @@ Adobe teste régulièrement le code de l’application principale pour détecter
 
 La base de code complète est analysée deux fois par semaine à l’aide de ces outils. Les clients sont informés des correctifs de sécurité par le biais d’e-mails directs, de notifications dans l’application et dans le [Centre de sécurité](https://helpx.adobe.com/fr/security.html).
 
-Les clients doivent s’assurer que ces correctifs sont appliqués à leur application personnalisée dans les 30 jours suivant leur publication, conformément aux directives PCI. Adobe propose également un [outil de numérisation de sécurité](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-scan) qui permet aux commerçants de surveiller régulièrement leurs sites et de recevoir des mises à jour sur les risques de sécurité connus, les logiciels malveillants et les accès non autorisés. L’outil Security Scan Tool est un service gratuit et peut être exécuté dans n’importe quelle version d’Adobe Commerce.
+Les clients doivent s’assurer que ces correctifs sont appliqués à leur application personnalisée dans les 30 jours suivant leur publication, conformément aux directives PCI. Adobe propose également un [outil de scan de sécurité](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-scan) qui permet aux commerçants de surveiller régulièrement leurs sites et de recevoir des mises à jour sur les risques de sécurité connus, les programmes malveillants et les accès non autorisés. L’outil Security Scan Tool est un service gratuit et peut être exécuté dans n’importe quelle version d’Adobe Commerce.
 
 Pour encourager les chercheurs en sécurité à identifier et à signaler les vulnérabilités, Adobe Commerce dispose d’un programme [&#x200B; bug-bounty](https://hackerone.com/magento) en plus des tests internes. En outre, le client reçoit le code source complet de l’application pour sa propre révision, si désiré.
 

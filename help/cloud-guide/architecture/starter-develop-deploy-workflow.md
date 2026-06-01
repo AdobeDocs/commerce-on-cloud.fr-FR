@@ -2,9 +2,10 @@
 title: Workflow du projet de démarrage
 description: Découvrez comment utiliser les workflows de développement et de déploiement de Starter.
 feature: Cloud, Paas
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 75d170b6-1ec2-4099-82c8-5c4df3442843
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '2103'
+source-wordcount: '2168'
 ht-degree: 0%
 
 ---
@@ -126,7 +127,7 @@ Générez le fichier dans l’environnement d’intégration où vous avez confi
 
 **Remarques importantes** sur la gestion de la configuration :
 
-- Tout paramètre de configuration inclus dans le fichier généré à partir de la commande `app:config:dump` est verrouillé contre la modification ou en lecture seule dans l’environnement déployé. C’est l’une des raisons pour lesquelles Adobe recommande d’utiliser la commande `.vendor/bin/ece-tools config:dump`.
+- Tout paramètre de configuration inclus dans le fichier généré à partir de la commande `app:config:dump` est verrouillé contre la modification ou en lecture seule dans l’environnement déployé. C’est l’une des raisons pour lesquelles Adobe recommande d’utiliser la commande `.vendor/bin/ece-tools config:dump` .
 
   Par exemple, vous installez un module pour Fastly dans votre environnement de développement. Vous ne pouvez configurer ce module que dans l’environnement d’évaluation et de production. Grâce à la commande `.vendor/bin/ece-tools config:dump`, ces champs par défaut restent modifiables lorsque vous déployez vos modifications de développement dans l’environnement d’évaluation et de production.
 

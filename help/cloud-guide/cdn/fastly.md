@@ -5,7 +5,7 @@ feature: Cloud, Configuration, Iaas, Paas, Cache, Security, Services
 exl-id: 429b6762-0b01-438b-a962-35376306895b
 source-git-commit: 0300930577959631a2331997ebb104381136f240
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1637'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ mywebsite.com/rest/default/V1/inventory/source-items
 #### Impact sur le comportement du service
 
 - **Les adresses IP sortantes ne changent pas.**
-- Les API **REST ne sont pas affectées.** Fastly ne met pas en cache les appels API.
+- **Les API REST ne sont pas affectées.** Fastly ne met pas en cache les appels API.
 - **Les déploiements et les temps d’arrêt ne sont pas affectés.**
 - Si un projet comporte plusieurs environnements d’évaluation, **le voilage d’origine s’applique à tous**.
 

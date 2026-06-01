@@ -5,7 +5,7 @@ feature: Cloud, Configuration, Iaas, Cache, Security
 exl-id: f9ce1e8b-4e9f-488e-8a4d-f866567c41d8
 source-git-commit: cfb9aa37ddb4220aa9ce0b2e876c99bcdd40ae5a
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2252'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Vous avez besoin des informations d’identification Fastly pour configurer les 
 
 Avec Adobe Commerce sur les infrastructures cloud, vous ne pouvez pas accéder directement au tableau de bord d’administration Fastly .
 
-Utilisez l’Administration d’Adobe Commerce pour examiner et mettre à jour la configuration Fastly pour vos environnements. Si vous ne pouvez pas résoudre un problème à l’aide des fonctionnalités Fastly dans l’administration, envoyez un [ticket d’assistance pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr).
+Utilisez l’Administration d’Adobe Commerce pour examiner et mettre à jour la configuration Fastly pour vos environnements. Si vous ne pouvez pas résoudre un problème à l’aide des fonctionnalités Fastly dans l’administration, envoyez un [ticket d’assistance pour &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr).
 
 ## Obtenir des informations d’identification Fastly
 

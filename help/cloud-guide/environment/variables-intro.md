@@ -2,9 +2,10 @@
 title: Variables d’environnement
 description: Consultez une liste des variables d’environnement spécifiques à Adobe Commerce sur l’infrastructure cloud.
 feature: Cloud, Build, Configuration, Deploy
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 38b2cdc2-1a98-48bd-90b2-13ef179da26f
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---

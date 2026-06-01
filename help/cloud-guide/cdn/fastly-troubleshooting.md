@@ -5,7 +5,7 @@ feature: Cloud, Configuration, Cache, Services
 exl-id: 69954ef9-9ece-411e-934e-814a56542290
 source-git-commit: f496a4a96936558e6808b3ce74eac32dfdb9db19
 workflow-type: tm+mt
-source-wordcount: '1834'
+source-wordcount: '1911'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Utilisez les informations suivantes pour résoudre les problèmes et gérer le module de réseau CDN Fastly pour Magento 2 dans vos environnements de projet d’infrastructure cloud Adobe Commerce. Par exemple, vous pouvez examiner les valeurs d’en-tête de réponse et le comportement de mise en cache pour résoudre les problèmes de service et de performances Fastly.
 
-Dans les environnements de production et d’évaluation Pro, vous pouvez utiliser les [journaux New Relic](../monitor/log-management.md) pour afficher et analyser les données des journaux Fastly CDN et WAF afin de résoudre les erreurs et les problèmes de performances.
+Dans les environnements de production et d’évaluation Pro, vous pouvez utiliser les [journaux &#x200B;](../monitor/log-management.md) pour afficher et analyser les données des journaux Fastly CDN et WAF afin de résoudre les erreurs et les problèmes de performances.
 
 >[!NOTE]
 >

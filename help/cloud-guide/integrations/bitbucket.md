@@ -2,9 +2,10 @@
 title: Intégration de l’intervalle de bits
 description: Découvrez comment intégrer votre projet d’infrastructure cloud Adobe Commerce on cloud avec Bitbucket.
 feature: Cloud, Integration
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 903c3064-1821-4f86-a468-4f0ccefb9b77
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1057'
 ht-degree: 0%
 
 ---
@@ -169,7 +170,7 @@ Pour communiquer des événements (une notification push, par exemple) avec votr
 
 1. Vérifiez le webhook avant de continuer.
 
-   Si le hook est actif, ignorez les étapes restantes et [Tester l’intégration](#test-the-integration). Le hook doit avoir un nom similaire à **»Adobe Commerce on cloud infrastructure &lt;project_id> »** et un format d’URL de hook similaire à : `https://<zone>.magento.cloud/api/projects/<project_id>/integrations/<id>/hook`
+   Si le hook est actif, ignorez les étapes restantes et [Tester l’intégration](#test-the-integration). Le hook doit avoir un nom similaire à **« Adobe Commerce on cloud infrastructure &lt;project_id>«** et un format d’URL de hook similaire à : `https://<zone>.magento.cloud/api/projects/<project_id>/integrations/<id>/hook`
 
 1. Cliquez sur **Ajouter un webhook**.
 

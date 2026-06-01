@@ -5,7 +5,7 @@ last-substantial-update: 2023-05-23T00:00:00Z
 exl-id: f0bb8830-8010-4764-ac23-d63d62dc0117
 source-git-commit: 445c5162f9d3436d9e5fe3df41af47189e344cfd
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1358'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ magento-cloud ssh -e <environment-ID> "find /var/log -name '*.gz' -exec zgrep '4
 
 #### Méthode 3 : utilisation de New Relic (environnements Pro)
 
-Pour les environnements de production et d’évaluation Pro, utilisez les journaux New Relic pour rechercher des enregistrements d’erreurs spécifiques. Pour plus d’informations, consultez la section [Gestion des journaux New Relic](../monitor/log-management.md).
+Pour les environnements de production et d’évaluation Pro, utilisez les journaux New Relic pour rechercher des enregistrements d’erreurs spécifiques. Pour plus d’informations, consultez la section [Gestion des journaux &#x200B;](../monitor/log-management.md).
 
 ### Affichage des journaux d’environnement distant
 
@@ -286,6 +286,6 @@ Les journaux de service sont archivés et enregistrés pendant différentes pér
 
 ## Données de journal pour la production et l’évaluation Pro
 
-Dans les environnements de production et d’évaluation Pro, utilisez la gestion des journaux [New Relic](../monitor/log-management.md) intégrée à votre projet pour gérer les données de journaux agrégées à partir de tous les journaux associés à votre projet d’infrastructure Adobe Commerce sur le cloud.
+Dans les environnements de production et d’évaluation Pro, utilisez la gestion des journaux [&#128279;](../monitor/log-management.md) intégrée à votre projet pour gérer les données de journaux agrégées à partir de tous les journaux associés à votre projet d’infrastructure Adobe Commerce sur le cloud.
 
-L’application Journaux New Relic fournit un tableau de bord de gestion des journaux centralisé pour dépanner et surveiller Adobe Commerce sur les infrastructures cloud et les environnements d’évaluation et de production. Le tableau de bord permet également d’accéder aux données de journal pour les services Fast CDN, Image Optimization et Web Application Firewall (WAF). Voir [Services New Relic](../monitor/new-relic-service.md).
+L’application Journaux New Relic fournit un tableau de bord de gestion des journaux centralisé pour dépanner et surveiller Adobe Commerce sur les infrastructures cloud et les environnements d’évaluation et de production. Le tableau de bord permet également d’accéder aux données de journal pour les services Fast CDN, Image Optimization et Web Application Firewall (WAF). Voir [Services &#x200B;](../monitor/new-relic-service.md).

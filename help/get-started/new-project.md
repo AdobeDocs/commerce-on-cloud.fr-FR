@@ -3,9 +3,10 @@ title: Configuration de Commerce sur le cloud
 description: Découvrez comment préparer un conseiller technique client Adobe à mettre en service votre projet d’infrastructure cloud Adobe Commerce.
 recommendations: noDisplay, catalog
 role: Admin
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: 77e8c9fb-8c4a-4c98-adbc-e57871c5bdbc
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '774'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 Commençons et initialisons votre projet Commerce sur l’infrastructure cloud.
 
-Avant qu’Adobe ne configure votre Commerce sur des environnements de projet cloud, il est recommandé de tenir compte des stratégies suivantes et de préparer les réponses pour votre première consultation avec l’équipe en charge de votre compte Adobe. Utilisez les sections suivantes comme liste de contrôle pour vous aider à préparer votre conversation avec un conseiller technique client en vue de la configuration d’un projet cloud :
+Avant qu’Adobe ne configure votre Commerce sur des environnements de projet cloud, il est recommandé de tenir compte des stratégies suivantes et de préparer des réponses pour votre première consultation avec l’équipe chargée de votre compte Adobe. Utilisez les sections suivantes comme liste de contrôle pour vous aider à préparer votre conversation avec un conseiller technique client en vue de la configuration d’un projet cloud :
 
 ## Définition du domaine
 
@@ -59,7 +60,7 @@ Voir [Gérer l’espace disque](../cloud-guide/storage/manage-disk-space.md) dan
 
 **Question 4** : _Quelle région de service cloud est la plus adaptée à votre proximité ?_
 
-Choisissez Amazon Web Services (AWS) ou Microsoft Azure comme base d’infrastructure en tant que service (IaaS) pour vos projets professionnels d’infrastructure cloud Adobe Commerce. Chaque fournisseur opère dans plusieurs régions et fournit plusieurs zones de disponibilité. Sélectionnez une région adaptée à votre emplacement et réduisez le risque de latence et d’augmentation des coûts.
+Choisissez Amazon Web Services (AWS) ou Microsoft Azure comme base d’infrastructure en tant que service (IaaS) pour vos projets Pro d’infrastructure cloud Adobe Commerce. Chaque fournisseur opère dans plusieurs régions et fournit plusieurs zones de disponibilité. Sélectionnez une région adaptée à votre emplacement et réduisez le risque de latence et d’augmentation des coûts.
 
 Voir [carte des régions cloud d’Adobe Commerce](../cloud-guide/overview.md).
 
@@ -75,7 +76,7 @@ Il est important de prendre en compte votre stratégie de service cloud (AWS ou 
 
 **Question 6** : _Quelle est la date de lancement prévue ?_
 
-Le lancement d’un site nécessite une configuration et des tests itératifs pour garantir la réussite du lancement. Définir une date cible vous aide, vous et l’équipe de votre compte d’Adobe, à vous préparer aux activités finales de prélancement, qui comprennent un appel pour coordonner les étapes finales.
+Le lancement d’un site nécessite une configuration et des tests itératifs pour garantir la réussite du lancement. La définition d’une date cible vous aide, vous et l’équipe de votre compte Adobe, à vous préparer aux activités finales de prélancement, qui comprennent un appel pour coordonner les étapes finales.
 
 Consultez la [présentation du site Launch](../cloud-guide/launch/overview.md) dans le guide _Commerce sur les infrastructures cloud_ pour consulter l’ensemble du processus et télécharger une copie de la liste de contrôle Launch.
 

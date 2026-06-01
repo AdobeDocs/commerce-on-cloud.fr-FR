@@ -1,9 +1,10 @@
 ---
 title: Configuration des emails sortants
 description: Découvrez comment activer les e-mails sortants pour Adobe Commerce sur les infrastructures cloud.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 616e287b-960a-4933-916e-37896ee6b533
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ La mise à jour de la valeur de la propriété `enable_smtp` par [ligne de comma
 
 Utilisez le bouton **[!UICONTROL Outgoing emails]** dans la vue _Configurer l’environnement_ pour activer ou désactiver la prise en charge des e-mails.
 
-Si les e-mails sortants doivent être désactivés ou réactivés dans les environnements de production ou d’évaluation Pro, vous pouvez envoyer un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Si les e-mails sortants doivent être désactivés ou réactivés dans les environnements de production ou d’évaluation Pro, vous pouvez envoyer un [ticket d’assistance &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 >[!TIP]
 >

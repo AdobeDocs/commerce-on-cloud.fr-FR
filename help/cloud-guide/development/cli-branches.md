@@ -3,9 +3,10 @@ title: Gestion des branches avec l’interface de ligne de commande
 description: Découvrez comment gérer les branches d’environnement pour Adobe Commerce sur les infrastructures cloud à l’aide de l’interface de ligne de commande cloud.
 role: Developer
 feature: Cloud, Install
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: d67e8802-8137-451f-b468-8b788afb01ea
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---

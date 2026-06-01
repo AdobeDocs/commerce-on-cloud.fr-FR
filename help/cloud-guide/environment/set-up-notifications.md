@@ -2,28 +2,29 @@
 title: Configurer des notifications
 description: Découvrez comment configurer des notifications pour Adobe Commerce sur les environnements d’infrastructure cloud.
 feature: Cloud, Configuration, Logs
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: dfbe1084-ad30-4489-af2d-d6f6b5eae1c4
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
 # Configurer des notifications
 
-Par défaut, Adobe Commerce sur l’infrastructure cloud écrit des actions de génération et de déploiement dans le fichier `app/var/log/cloud.log` situé dans le répertoire de l’application racine Adobe Commerce. Vous pouvez éventuellement envoyer des journaux à un système de messagerie, tel qu’un Slack et un e-mail, pour recevoir des notifications en temps réel.
+Par défaut, Adobe Commerce sur l’infrastructure cloud écrit des actions de génération et de déploiement dans le fichier `app/var/log/cloud.log` situé dans le répertoire de l’application racine Adobe Commerce. Vous pouvez éventuellement envoyer des journaux à un système de messagerie, tel que Slack et e-mail, pour recevoir des notifications en temps réel.
 
-Par exemple, vous pouvez envoyer un message de Slack pour alerter un groupe de personnes lorsqu’un déploiement échoue et demander une enquête sur ce qui s’est passé.
+Par exemple, vous pouvez envoyer un message Slack pour alerter un groupe de personnes lorsqu’un déploiement échoue et demander une enquête sur ce qui s’est passé.
 
 ## Notifications de plan
 
 Avant de configurer des notifications, tenez compte des points suivants :
 
-- Quels types de notifications voulez-vous recevoir (messages de Slack, e-mails, les deux) ?
+- Quels types de notifications voulez-vous recevoir (messages Slack, e-mail, les deux) ?
 - Quel niveau de détail voulez-vous voir dans les journaux ?
 - Où souhaitez-vous configurer les notifications (intégration, évaluation, production) ?
 
-Par exemple, pendant le développement initial, vous pouvez préférer les notifications par e-mail qui affichent des journaux détaillés sur votre environnement d’intégration pour vous aider à déboguer les problèmes avant le déploiement dans l’environnement d’évaluation. Lorsque vous êtes prêt à effectuer un déploiement dans l’environnement d’évaluation ou de production, vous pouvez préférer un message de Slack contenant des informations moins détaillées.
+Par exemple, pendant le développement initial, vous pouvez préférer les notifications par e-mail qui affichent des journaux détaillés sur votre environnement d’intégration pour vous aider à déboguer les problèmes avant le déploiement dans l’environnement d’évaluation. Lorsque vous êtes prêt à effectuer un déploiement dans l’environnement d’évaluation ou de production, vous pouvez préférer un message Slack contenant des informations moins détaillées.
 
 >[!NOTE]
 >
@@ -36,7 +37,7 @@ Pour configurer des notifications :
 1. Sur votre station de travail locale, accédez au répertoire du projet.
 1. Dans le fichier `.magento.env.yaml` de la racine de votre projet, ajoutez les paramètres de votre système de messagerie, y compris les notifications préférées [Niveaux de journal](log-handlers.md#log-levels).
 
-   Par exemple, pour configurer à la fois les configurations de Slack _et_ d’e-mail, utilisez ce qui suit :
+   Par exemple, pour configurer les configurations Slack _et_ d’e-mail, utilisez ce qui suit :
 
    ```yaml
    log:
@@ -66,9 +67,9 @@ Pour configurer des notifications :
    git push origin <branch-name>
    ```
 
-### Exemple de configuration de Slack
+### Exemple de configuration Slack
 
-L’exemple suivant illustre une configuration réservée au Slack :
+L’exemple suivant illustre une configuration Slack uniquement :
 
 ```yaml
 log:
@@ -81,7 +82,7 @@ log:
 
 - `token` : votre Slack [jeton utilisateur](https://api.slack.com/docs/token-types#user). Votre jeton d’utilisateur autorise Adobe Commerce sur l’infrastructure cloud à envoyer des messages.
 - `channel` : nom du canal Slack auquel Adobe Commerce sur l’infrastructure cloud envoie des notifications.
-- `username` : nom d’utilisateur qu’Adobe Commerce sur l’infrastructure cloud utilise pour envoyer des messages de notification en Slack.
+- `username` : nom d’utilisateur qu’Adobe Commerce sur l’infrastructure cloud utilise pour envoyer des messages de notification dans Slack.
 - `min_level` : niveau de journalisation minimal pour les messages de notification. Nous vous recommandons d’utiliser `info`.
 
 ### Exemple de configuration d’e-mail

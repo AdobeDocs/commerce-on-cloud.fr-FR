@@ -4,9 +4,10 @@ description: Consultez la liste des variables d’environnement qui contrôlent 
 feature: Cloud, Configuration, Build, Deploy, Eventing, Logs, SCD
 recommendations: noDisplay, catalog
 role: Developer
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 1f1ef6db-6836-4f71-b1e4-3629352d7e74
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '774'
 ht-degree: 0%
 
 ---
@@ -159,10 +160,10 @@ stage:
    - `false` : pour les versions antérieures d’`ece-tools`
 - **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
-Active ou désactive la copie de fichiers de vue statiques dans le répertoire `<magento_root>/init/` à la fin de l&#39;étape de création. Si le paramètre est défini sur `true`, les fichiers ne sont pas copiés et une minimisation d’HTML est disponible sur demande. Définissez cette valeur sur `true` afin de réduire les temps d’arrêt lors du déploiement dans les environnements d’évaluation et de production.
+Active ou désactive la copie de fichiers de vue statiques dans le répertoire `<magento_root>/init/` à la fin de l&#39;étape de création. Si le paramètre est défini sur `true`, les fichiers ne sont pas copiés et la minimisation d’HTML est disponible sur demande. Définissez cette valeur sur `true` afin de réduire les temps d’arrêt lors du déploiement dans les environnements d’évaluation et de production.
 
 - **`false`** : copie le répertoire `view_preprocessed` dans le répertoire `<magento_root>/init/` à la fin de la phase de création et restaure le répertoire dans le répertoire `<magento_root>/var` au début de la phase de déploiement.
-- **`true`** : permet la minimisation de l&#39;HTML à la demande ; ne copie _pas_ le `<magento_root>var/view_preprocessed` dans le répertoire `<magento_root>/init/` à l&#39;issue de la phase de création.
+- **`true`** : permet la minimisation d&#39;HTML à la demande ; ne copie _pas_ le `<magento_root>var/view_preprocessed` dans le répertoire `<magento_root>/init/` à la fin de la phase de création.
 
 Ajoutez la variable d’environnement `SKIP_HTML_MINIFICATION` à l’étape `global` dans le fichier `.magento.env.yaml` :
 
