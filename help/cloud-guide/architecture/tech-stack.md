@@ -3,9 +3,9 @@ title: Pile technologique
 description: Découvrez la pile technologique qui constitue Commerce sur l’infrastructure cloud.
 feature: Cloud, Iaas, Paas
 exl-id: 3fac1ab7-6440-4bf9-8169-9fadf51d70dd
-source-git-commit: 5fc2082ca2aae8a1466821075c01ce756ba382cc
+source-git-commit: 77d316fd53e477a2b45277db503ea8e5ede78930
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Considérez Adobe Commerce sur les infrastructures cloud comme cinq couches fonctionnelles, comme illustré ci-dessous :
 
-![Pile cloud](../../assets/CloudStack.svg)
+![Pile cloud](../../assets/CloudStack.png)
 
-1. [**Infrastructure cloud**](pro-architecture.md) : choisissez Amazon Web Services (AWS) ou Microsoft Azure comme base d’infrastructure as a Service (IaaS) pour vos projets Pro d’infrastructure cloud Adobe Commerce.
+1. [**Infrastructure cloud**](pro-architecture.md) : choisissez Amazon Web Services (AWS) ou Microsoft Azure comme base d’infrastructure en tant que service (IaaS) pour vos projets Pro d’infrastructure cloud Adobe Commerce.
 
-   Adobe analyse régulièrement l’utilisation de votre processeur virtuel (vCPU) et alloue automatiquement les ressources pour optimiser l’utilisation à long terme et atténuer le risque de dépasser votre quota annuel maximal de jours alloués aux processeurs virtuels. Si vous prévoyez une augmentation du trafic sur le site pour des périodes spécifiques, vous devez continuer à ouvrir un ticket d’assistance pour [demander une mise à niveau temporaire](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=fr).
+   Adobe analyse régulièrement l’utilisation de votre processeur virtuel (vCPU) et alloue automatiquement les ressources pour optimiser l’utilisation à long terme et atténuer le risque de dépasser votre quota annuel maximal de jours alloués aux processeurs virtuels. Si vous prévoyez une augmentation du trafic sur le site pour des périodes spécifiques, vous devez continuer à ouvrir un ticket d’assistance pour [demander une mise à niveau temporaire](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html).
 
 1. [**Platform as a Service**](cloud-architecture.md) : chaque projet d’infrastructure cloud d’Adobe Commerce fournit un environnement d’intégration PaaS (Platform as a Service) pour le développement, le test et l’intégration de services.
 1. [**Adobe Commerce**](../project/overview.md) : Adobe Commerce sur l’infrastructure cloud fournit une infrastructure préconfigurée qui inclut PHP, MySQL (MariaDB), Redis, les services de file d’attente des messages ([!DNL RabbitMQ] ou [!DNL ActiveMQ]) et les technologies de moteurs de recherche prises en charge.
@@ -31,4 +31,4 @@ Considérez Adobe Commerce sur les infrastructures cloud comme cinq couches fonc
 
 Les applications monolithiques sont gourmandes en ressources et difficiles à mettre à l’échelle et à diffuser rapidement. Grâce à l’infrastructure cloud, les clients Commerce bénéficient d’un accès inégalé aux microservices SaaS, riches, intelligents et performants. Voir [Logiciels et services pris en charge](cloud-architecture.md#supported-software-and-services).
 
-Utilisez le guide de prise en main de [Commerce](../../get-started/overview.md) pour configurer votre nouveau programme cloud et commencer à gérer votre application [!DNL Commerce] dans un environnement conçu pour le cloud.
+Utilisez le guide de prise en main de [](../../get-started/overview.md) pour configurer votre nouveau programme cloud et commencer à gérer votre application [!DNL Commerce] dans un environnement conçu pour le cloud.
