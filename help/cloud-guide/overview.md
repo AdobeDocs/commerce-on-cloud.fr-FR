@@ -2,7 +2,7 @@
 title: Commerce sur les infrastructures cloud
 description: Découvrez comment créer, déployer et gérer Commerce sur les infrastructures cloud.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
-source-git-commit: 8abce85f5a2ed22e344e1489c592ac12415568d8
+source-git-commit: 37505db0488204c40ca37356c4d496bba73c537f
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 3%
@@ -40,7 +40,7 @@ Les sections suivantes fournissent des détails sur les différentes régions d�
 
 ## Régions AWS
 
-![Diagramme montrant les régions AWS](../assets/aws-regions.svg){zoomable="yes"}
+![Diagramme montrant les régions AWS](../assets/aws-regions.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Les sections suivantes fournissent des détails sur les différentes régions d�
 
 ## Régions Azure
 
-![Diagramme montrant les régions Azure](../assets/azure-regions.svg){zoomable="yes"}
+![Diagramme montrant les régions Azure](../assets/azure-regions.png){zoomable="yes"}
 
 >[!NOTE]
 >

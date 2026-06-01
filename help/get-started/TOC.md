@@ -1,12 +1,13 @@
 ---
 user-guide-title: Prise en main de Commerce
+breadcrumb-title: Prise en main
 user-guide-description: Commencez la configuration initiale de l’application  [!DNL Commerce]  l’infrastructure cloud.
 feature: Cloud
 product: magento
 recommendations: noDisplay, noCatalog
-source-git-commit: 6860d79d243e3a96a9d544f5811854b7c7f55c48
+source-git-commit: 77d316fd53e477a2b45277db503ea8e5ede78930
 workflow-type: tm+mt
-source-wordcount: '43'
+source-wordcount: '52'
 ht-degree: 0%
 
 ---
