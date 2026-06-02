@@ -6,9 +6,12 @@ recommendations: noDisplay, catalog
 role: Developer
 exl-id: 82923b6f-221d-4902-a1b8-5ba6c7b3339a
 TQID: https://experienceleague.adobe.com/Zk52OMqjrB74v9djO1PVOYd3wOS8EbdfL1rnqIdA8B4
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: ab64bb5a3cc159844015072738404274fdea97cd
 workflow-type: tm+mt
 source-wordcount: 343
@@ -38,7 +41,7 @@ Les variables d’environnement spécifiques à Adobe Commerce sur les infrastru
 >
 >Pour ajouter des variables d’environnement à [remplacer les paramètres de configuration](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html) à l’aide de l’[[!DNL Cloud Console]](../project/overview.md), vous devez ajouter le préfixe `env:` au nom de la variable, comme dans l’exemple suivant :
 >
->![ Exemple de variable d’environnement ](../../assets/set-env-variable-ui.png)
+>![&#x200B; Exemple de variable d’environnement &#x200B;](../../assets/set-env-variable-ui.png)
 
 Comme les valeurs peuvent changer au fil du temps, il est préférable d’inspecter la variable au moment de l’exécution et de l’utiliser pour configurer votre application. Par exemple, utilisez la variable `MAGENTO_CLOUD_RELATIONSHIPS` pour récupérer les relations liées à l’environnement comme suit :
 
