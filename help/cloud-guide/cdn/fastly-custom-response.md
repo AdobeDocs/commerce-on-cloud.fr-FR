@@ -2,9 +2,21 @@
 title: Personnaliser les pages d’erreur et de maintenance
 description: Découvrez comment personnaliser la page d’erreur par défaut qui s’affiche lorsque les requêtes au serveur d’origine Fastly échouent.
 feature: Cloud, Configuration, Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 960195c7-5ee9-4134-8b0a-a251c5e6adf9
+TQID: https://experienceleague.adobe.com/EhK04rgGdkT3Tvd6wbefYjY9Yqozkzra4-ELdkH8sMo
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: 803
 ht-degree: 0%
 
 ---
@@ -15,7 +27,7 @@ Lorsqu’une requête à l’origine Fastly échoue, Fastly renvoie les pages de
 
 ![Page d’erreur par défaut Fastly](../../assets/cdn/fastly-503-example.png)
 
-Vous pouvez mettre à jour la configuration de votre boutique Adobe Commerce pour remplacer certaines pages de réponse par défaut par des pages proposant une messagerie plus conviviale et un style d’HTML amélioré, comme illustré dans l’exemple suivant.
+Vous pouvez mettre à jour la configuration de votre boutique Adobe Commerce pour remplacer certaines pages de réponse par défaut par des pages proposant une messagerie plus conviviale et un style HTML amélioré, comme illustré dans l’exemple suivant.
 
 ![Page d’erreur personnalisée Fastly](../../assets/cdn/fastly-new-error-page.png)
 
@@ -24,12 +36,12 @@ Actuellement, vous pouvez personnaliser les pages de réponse Fastly suivantes p
 - [Erreurs du serveur : erreur interne du serveur, dépassement de délai ou pannes de maintenance du site (code d’erreur 500 ou supérieur).](#customize-the-503-error-page)
 - [Événements de blocage WAF qui se produisent lorsque le WAF détecte un trafic de requête suspect (403 Interdit)](#customize-the-waf-error-page)
 
-**Exigences de codage d’HTML :**
+**Exigences en matière de codage HTML :**
 
-Le code d’HTML de la page personnalisée doit répondre aux exigences suivantes :
+Le code HTML de la page personnalisée doit répondre aux exigences suivantes :
 
 - Le contenu peut contenir jusqu’à 65 535 caractères.
-- Spécifiez tous les CSS intégrés dans la source d’HTML.
+- Spécifiez tous les CSS intégrés dans la source HTML.
 - Regroupez les images dans la page HTML à l’aide de base64 afin qu’elles s’affichent même si Fastly est hors ligne. Voir [URI de données sur le site CSS-tricks](https://css-tricks.com/data-uris/).
 
 ## Personnaliser la page d’erreur 503
@@ -39,7 +51,7 @@ Les clients voient la page d’erreur 503 par défaut dans les cas suivants :
 - Lorsqu’une requête à l’origine Fastly renvoie un statut de réponse supérieur à 500
 - Lorsque l’origine Fastly est inactive, comme une temporisation, une activité de maintenance ou des problèmes d’intégrité
 
-Vous pouvez personnaliser la page par défaut en adaptant le code d’HTML ci-après pour inclure le style afin qu’il corresponde au thème de votre boutique Adobe Commerce, puis en modifiant le titre et le message selon vos besoins.
+Vous pouvez personnaliser la page par défaut en adaptant le code HTML suivant afin d’inclure le style correspondant à votre thème de boutique Adobe Commerce et en modifiant le titre et le message selon vos besoins.
 
 ```html
 <!DOCTYPE html>
@@ -53,7 +65,7 @@ Vous pouvez personnaliser la page par défaut en adaptant le code d’HTML ci-ap
    </body></html>
 ```
 
-Vérifiez que la source modifiée s’affiche correctement dans le navigateur. Ajoutez ensuite le code d’HTML personnalisé à la configuration Fastly .
+Vérifiez que la source modifiée s’affiche correctement dans le navigateur. Ajoutez ensuite le code HTML personnalisé à la configuration Fastly .
 
 Pour ajouter la page de réponse personnalisée à la configuration Fastly :
 
@@ -65,13 +77,13 @@ Pour ajouter la page de réponse personnalisée à la configuration Fastly :
 
    ![Modifier la page d’erreur 503](../../assets/cdn/fastly-custom-synthetic-pages-edit-html.png)
 
-1. Sélectionnez **Définir l’HTML**.
+1. Sélectionnez **Définir HTML**.
 
 1. Copiez et collez le code source de votre page de réponse personnalisée dans le champ HTML .
 
    ![Mise à jour de la page d’erreur 503](../../assets/cdn/fastly-customize-503-response.png)
 
-1. Sélectionnez **Charger** en haut de la page pour charger la source d’HTML personnalisée sur le serveur Fastly.
+1. Sélectionnez **Télécharger** en haut de la page pour télécharger la source HTML personnalisée sur le serveur Fastly.
 
 1. Sélectionnez **Enregistrer la configuration** en haut de la page pour enregistrer le fichier de configuration mis à jour.
 
@@ -79,15 +91,15 @@ Pour ajouter la page de réponse personnalisée à la configuration Fastly :
 
    - Dans la notification en haut de la page, cliquez sur le lien *Gestion du cache*.
 
-   - Sur la page Gestion du cache, sélectionnez **Vider le cache du Magento**.
+   - Sur la page Gestion du cache, sélectionnez **Vider le cache Magento**.
 
 ## Personnaliser la page d’erreur WAF
 
 Les clients voient la page d’erreur WAF suivante par défaut lorsqu’une demande de l’origine Fastly échoue avec une erreur `403 Forbidden` due à un événement de blocage [WAF](fastly-waf-service.md).
 
-![Page d&#39;erreur WAF](../../assets/cdn/fastly-waf-403-error.png)
+![Page d&#39;erreur &#x200B;](../../assets/cdn/fastly-waf-403-error.png)
 
-L’exemple de code suivant montre la source d’HTML de la page par défaut :
+L’exemple de code suivant montre la source HTML de la page par défaut :
 
 ```html
 <html>
@@ -125,15 +137,15 @@ Vous pouvez utiliser l’option **Pages synthétiques personnalisées** > **Modi
 
 1. Sélectionnez **Modifier la page WAF**.
 
-1. Renseignez les champs pour mettre à jour l’HTML.
+1. Renseignez les champs pour mettre à jour HTML.
 
    ![Page d’erreur de mise à jour de WAF](../../assets/cdn/fastly-edit-waf-html.png)
 
    - **Statut** — Sélectionnez le statut du `403 Forbidden`.
    - **Type MIME** — Type `text/html`.
-   - **Contenu** — Modifiez la réponse d’HTML par défaut pour ajouter un CSS personnalisé et mettre à jour le titre et le message selon les besoins.
+   - **Contenu** — Modifiez la réponse HTML par défaut pour ajouter un CSS personnalisé et mettre à jour le titre et le message selon les besoins.
 
-1. Sélectionnez **Charger** en haut de la page pour charger la source d’HTML personnalisée sur le serveur Fastly.
+1. Sélectionnez **Télécharger** en haut de la page pour télécharger la source HTML personnalisée sur le serveur Fastly.
 
 1. Sélectionnez **Enregistrer la configuration** en haut de la page pour enregistrer le fichier de configuration mis à jour.
 
@@ -141,7 +153,7 @@ Vous pouvez utiliser l’option **Pages synthétiques personnalisées** > **Modi
 
    - Dans la notification en haut de la page, cliquez sur le lien **Gestion du cache**.
 
-   - Sur la page Gestion du cache, sélectionnez **Vider le cache du Magento**.
+   - Sur la page Gestion du cache, sélectionnez **Vider le cache Magento**.
 
 ## Afficher le numéro de rapport d’erreur
 

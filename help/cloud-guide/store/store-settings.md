@@ -2,9 +2,20 @@
 title: Gestion de la configuration de la boutique
 description: Découvrez comment gérer et synchroniser les paramètres de configuration des magasins dans tous les environnements Adobe Commerce sur les infrastructures cloud.
 feature: Cloud, Configuration, SCD
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 01850a7b-2c03-45e8-8051-b24ae95c5f87
+TQID: https://experienceleague.adobe.com/TF-K8g48q2fnuldOLdnwxjAJrxGzsRJlongd7cRqV9U
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: 1507
 ht-degree: 0%
 
 ---
@@ -43,7 +54,7 @@ Si le même paramètre est configuré à plusieurs endroits, l’application s�
 | Priorité | Configuration<br>Method | Description |
 | -------- | ------------------------ | ----------- |
 | 1 | [!DNL Cloud Console]<br>variables d’environnement | Valeurs ajoutées à partir de l’onglet _Variables_ de la configuration de l’environnement dans le [!DNL Cloud Console]. Spécifiez ici des valeurs pour les configurations sensibles ou spécifiques à un environnement. Les paramètres spécifiés ici ne peuvent pas être modifiés à partir de l’administrateur. Voir [Variables de configuration d’environnement](../project/overview.md#configure-environment). |
-| 2 | `.magento.app.yaml` | Valeurs ajoutées dans la section `variables` du fichier `.magento.app.yaml`. Spécifiez les valeurs ici pour garantir une configuration cohérente dans tous les environnements. **Ne spécifiez pas de valeurs sensibles dans le fichier `.magento.app.yaml`.** Voir [Paramètres de l’application](../application/configure-app-yaml.md). |
+| 2 | `.magento.app.yaml` | Valeurs ajoutées dans la section `variables` du fichier `.magento.app.yaml`. Spécifiez les valeurs ici pour garantir une configuration cohérente dans tous les environnements. **Ne spécifiez pas de valeurs sensibles dans le fichier `.magento.app.yaml`.** Voir [Paramètres d’application](../application/configure-app-yaml.md). |
 | 3 | `app/etc/env.php` | Les valeurs de configuration spécifiques à un environnement stockées ici sont ajoutées à l’aide de la commande `app:config:dump`. Définissez les valeurs sensibles et spécifiques au système à l’aide de variables d’environnement ou de l’interface de ligne de commande. Voir [&#x200B; Données sensibles &#x200B;](#sensitive-data). Le fichier `env.php` n **est pas inclus** contrôle de code source. |
 | 4 | `app/etc/config.php` | Les valeurs stockées ici sont ajoutées à l’aide de la commande `app:config:dump`. Les valeurs de configuration partagées sont ajoutées aux `config.php`. Définissez la configuration partagée depuis l’interface de ligne de commande de l’administrateur ou en utilisant l’interface de ligne de commande. Le fichier `config.php` est inclus dans le contrôle de code source. |
 | 5 | Base de données | Les valeurs stockées ici sont ajoutées en définissant des configurations dans l’Admin. Les configurations définies à l’aide de l’une des méthodes précédentes sont verrouillées (grisées) et ne peuvent pas être modifiées à partir de l’Administration. |

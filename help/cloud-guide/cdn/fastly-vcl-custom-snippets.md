@@ -3,9 +3,20 @@ title: Prise en main des fragments de code VCL personnalisés
 description: Découvrez comment utiliser des fragments de code du langage de contrôle Varnish pour personnaliser la configuration du service Fastly pour Adobe Commerce.
 feature: Cloud, Configuration, Services
 exl-id: 90f0bea6-4365-4657-94e9-92a0fd1145fd
-source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
+TQID: https://experienceleague.adobe.com/1grH8E6w-CgPS2ANraTxdM1NZ6Jjb8G4i7tgSswcuJE
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: 2179
 ht-degree: 0%
 
 ---
@@ -30,7 +41,7 @@ Fastly prend en charge deux types de fragments de code VCL personnalisés :
 
 Nous vous recommandons d’utiliser des fragments de code VCL personnalisés avec les dictionnaires Edge et les listes de contrôle d’accès (ACL) pour stocker les données utilisées dans votre code personnalisé.
 
-- [**Dictionnaire Edge**](https://docs.fastly.com/guides/edge-dictionaries/about-edge-dictionaries)—Stocke les données sous forme de paires clé-valeur dans un conteneur de dictionnaire qui peut être référencé à partir de fragments de code VCL personnalisés
+- [**Dictionnaire**](https://docs.fastly.com/guides/edge-dictionaries/about-edge-dictionaries)—Stocke les données sous forme de paires clé-valeur dans un conteneur de dictionnaire qui peut être référencé à partir de fragments de code VCL personnalisés
 
 - [**Edge ACL**](https://docs.fastly.com/guides/access-control-lists/about-acls) : stocke les données d’adresse IP du client qui définissent la liste de contrôle d’accès pour les règles de blocage ou d’autorisation implémentées à l’aide de fragments de code VCL personnalisés
 

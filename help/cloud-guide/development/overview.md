@@ -4,11 +4,21 @@ description: Préparez-vous au développement local avec un projet d’infrastru
 role: Developer
 feature: Cloud, Install
 topic: Development
-last-substantial-update: 2024-02-06T00:00:00Z
+last-substantial-update: 2024-02-06T00:00:00.000Z
 exl-id: 14fb0b41-1c3a-4abc-8726-cea16ab00ba8
-source-git-commit: 0d84d29c470a098c7238b6ca7cc9538463dda695
+TQID: https://experienceleague.adobe.com/VrOBK4bPYTxzRz10ZaHYDOdISw0lSl6WPAHcnEI1J-w
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: 580
 ht-degree: 0%
 
 ---
@@ -55,7 +65,7 @@ Par exemple, pour utiliser la dernière version d’Adobe Commerce, la version 2
 
 Les principaux packages de ce métapaquet sont les suivants :
 
-- **fournisseur/magento/ece-tools** : le package `ece-tools` est compatible avec Adobe Commerce version 2.1.4 et ultérieure. Il fournit un ensemble riche de fonctionnalités que vous pouvez utiliser pour gérer votre projet d’infrastructure Adobe Commerce sur cloud. Il contient des scripts et des commandes d’infrastructure cloud d’Adobe Commerce conçues pour vous aider à gérer votre code et à créer et déployer automatiquement vos projets. Voir la présentation du package [`ece-tools`](../dev-tools/package-overview.md).
+- **fournisseur/magento/ece-tools** : le package `ece-tools` est compatible avec Adobe Commerce version 2.1.4 et ultérieure. Il fournit un ensemble riche de fonctionnalités que vous pouvez utiliser pour gérer votre projet d’infrastructure Adobe Commerce sur cloud. Il contient des scripts et des commandes d’infrastructure cloud d’Adobe Commerce conçues pour vous aider à gérer votre code et à créer et déployer automatiquement vos projets. Voir la présentation du package [&#128279;](../dev-tools/package-overview.md).`ece-tools`
 - **chez le fournisseur/magento/product-enterprise-edition** : ce métapaquet nécessite des composants d’application, notamment des modules, des structures, des thèmes, etc.
 - **fournisseur/fastly2/magento2** : ce module gère le réseau CDN et les services Fastly pour les environnements d’évaluation et de production Pro et de production de démarrage. Voir [Services Fastly](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2).
 - **fournisseur/magento/module-paypal-on-boarding**—Ce module permet de passer en caisse la passerelle de paiement PayPal en se connectant à votre compte marchand PayPal. Voir [Outil d’intégration PayPal](../store/paypal.md).

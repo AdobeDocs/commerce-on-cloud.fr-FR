@@ -1,16 +1,25 @@
 ---
 title: Deuxième environnement d’évaluation
 description: Découvrez les avantages et les utilisations d’un deuxième environnement d’évaluation pour les tests parallèles, l’isolation des problèmes, le contrôle de version, etc.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 300019bd-07cb-4efb-8740-a49a5a3cf01b
+TQID: https://experienceleague.adobe.com/GFIisldCx779874WoAb0gmXHlE52dN-3COiIsfYDYCU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: 719
 ht-degree: 0%
 
 ---
 
 # Deuxième environnement d’évaluation
 
-Dans l’infrastructure de Adobe Commerce Cloud, l’environnement d’évaluation assure des tests et une validation complets dans un paramètre qui peut refléter l’environnement de production. Cet environnement vous permet d’identifier et de résoudre les bogues en toute sécurité, tout en veillant à ce que toutes les nouvelles fonctionnalités ou modifications soient intégrées de manière transparente avant qu’elles n’affectent votre site en ligne.
+Dans l’infrastructure cloud d’Adobe Commerce, l’environnement d’évaluation assure des tests et une validation complets dans un paramètre qui peut refléter l’environnement de production. Cet environnement vous permet d’identifier et de résoudre les bogues en toute sécurité, tout en veillant à ce que toutes les nouvelles fonctionnalités ou modifications soient intégrées de manière transparente avant qu’elles n’affectent votre site en ligne.
 
 Certains projets exigent un processus de développement plus sophistiqué. Pour répondre à ce besoin, Adobe propose un environnement d’évaluation supplémentaire en tant qu’option complémentaire de votre infrastructure cloud. Disposer de deux environnements d’évaluation est avantageux pour les projets complexes et la collaboration simultanée entre les équipes.
 
@@ -40,7 +49,7 @@ Disposer de deux environnements d’évaluation peut améliorer considérablemen
 
 Si votre projet comporte déjà un environnement d’évaluation supplémentaire ou si vous envisagez de mettre à niveau votre projet actuel, tenez compte des responsabilités et du calendrier d’approvisionnement suivants :
 
-- Le processus de provisionnement peut prendre jusqu’à deux semaines après la confirmation de la demande auprès de votre représentant commercial d’Adobe.
+- Le processus d’approvisionnement peut prendre jusqu’à deux semaines après la confirmation de la demande auprès de votre représentant commercial Adobe.
 
 - Les nouveaux environnements d’évaluation ne sont disponibles que dans la même région que vos environnements d’évaluation et de production actuels.
 
@@ -58,7 +67,7 @@ Pour faciliter votre requête, procédez comme suit :
 
 1. Contactez votre représentant commercial.
 
-   Contactez votre représentant commercial d’Adobe et indiquez-lui la branche spécifique que vous souhaitez utiliser comme base pour votre nouvel environnement d’évaluation (intégration ou Principal).
+   Contactez votre représentant commercial Adobe et indiquez-lui la branche spécifique que vous souhaitez utiliser comme base pour votre nouvel environnement d’évaluation (intégration ou Principal).
 
 1. Confirmer les détails.
 

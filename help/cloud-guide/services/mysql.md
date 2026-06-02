@@ -2,9 +2,21 @@
 title: Configuration du service MySQL
 description: Découvrez comment gérer le service MySQL pour le stockage persistant des données avec Adobe Commerce sur les infrastructures cloud.
 feature: Cloud, Services, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 37b893ef-43cf-466b-9d18-ee3b80fdf2d8
+TQID: https://experienceleague.adobe.com/xPikS7qhOEhhWDRuUYBJEqL7EUPObzPDxJEZ4xjKkuE
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: 921
 ht-degree: 1%
 
 ---
@@ -220,5 +232,5 @@ Consultez les articles d’assistance Adobe Commerce suivants pour obtenir de l�
 
 - [Vérification des requêtes lentes et des processus MySQL](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql.html?lang=fr)
 - [Créer une image mémoire de base de données sur le cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html?lang=fr)
-- [&#x200B; Dépannage de l’outil de migration de données &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=fr)
+- [Dépannage de l’outil de migration de données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=fr)
 - [Mise à niveau d’Adobe Commerce : tableaux compacts à dynamiques 2.2.x, 2.3.x vers 2.4.x](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=fr)

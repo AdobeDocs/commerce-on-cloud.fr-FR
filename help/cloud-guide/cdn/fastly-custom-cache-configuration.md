@@ -3,9 +3,20 @@ title: Personnalisation de la configuration du cache
 description: Découvrez comment vérifier et personnaliser les paramètres de configuration du cache une fois la configuration du service Fastly terminée.
 feature: Cloud, Configuration, Iaas, Cache
 exl-id: f6901931-7b3f-40a8-9514-168c6243cc43
-source-git-commit: a2f5e2f67c7739302a87eaa27df25a62fca1acb7
+TQID: https://experienceleague.adobe.com/X7N0dITHF7mzdFUrwQ1JlUYKweLcTibTclWETf3P5SU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: 2126
 ht-degree: 0%
 
 ---
@@ -32,7 +43,7 @@ Fastly fournit l’option _Forcer TLS_ pour rediriger les requêtes non chiffré
 
 La configuration du service Fastly spécifie un délai d’expiration par défaut de 180 secondes pour les requêtes HTTPS à l’administrateur. Tout traitement de requête qui dépasse le délai d’expiration renvoie une erreur 503. Par conséquent, vous pouvez recevoir des erreurs 503 en réponse à des requêtes qui nécessitent un traitement long ou lors d’une tentative d’exécution d’opérations en bloc.
 
-Pour effectuer des actions en masse qui prennent plus de 3 minutes, modifiez la valeur_ _Délai d’expiration du chemin d’administration__ afin d’éviter les erreurs 503.
+Pour effectuer des actions en masse qui prennent plus de 3 minutes, modifiez la valeur __ Délai d’expiration du chemin d’administration __ afin d’éviter les erreurs 503.
 
 >[!NOTE]
 >
@@ -191,7 +202,7 @@ Pour les projets Starter et Pro, vous pouvez utiliser l’option [!UICONTROL Dom
 
 - Pour les projets de démarrage, accédez à l’URL du projet sous l’onglet [!UICONTROL Domains] dans la [!DNL Cloud Console] pour ajouter votre URL de projet.
 
-- Pour les projets Pro, envoyez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour ajouter le domaine à la configuration de votre projet cloud. L’équipe d’assistance met également à jour la configuration du compte Fastly Adobe Commerce pour ajouter le domaine.
+- Pour les projets Pro, envoyez un [ticket d’assistance &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour ajouter le domaine à la configuration de votre projet cloud. L’équipe d’assistance met également à jour la configuration du compte Fastly Adobe Commerce pour ajouter le domaine.
 
 **Pour gérer la configuration de domaine Fastly à partir de l’administrateur** :
 
@@ -223,7 +234,7 @@ Utilisez l’option _Mode de maintenance_ pour autoriser l’accès administrati
 
 1. Ouvrez la section _Configuration Fastly_ dans l’interface d’administration.
 
-1. Dans la section _ACL Edge_, mettez à jour la liste de contrôle d’accès (ACL) `maint_allow` avec les adresses IP d’administration qui peuvent accéder à votre magasin lorsqu’il est en mode de maintenance.
+1. Dans la section _ACL_, mettez à jour la liste de contrôle d’accès (ACL) `maint_allow` avec les adresses IP d’administration qui peuvent accéder à votre magasin lorsqu’il est en mode de maintenance.
 
    ![Mettre à jour la liste autorisée du mode de maintenance IP](../../assets/cdn/fastly-maint-allowlist.png)
 

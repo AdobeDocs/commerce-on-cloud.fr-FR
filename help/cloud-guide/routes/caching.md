@@ -3,9 +3,17 @@ title: Mise en cache
 description: Découvrez comment activer la mise en cache pour votre Adobe Commerce sur les environnements d’infrastructure cloud.
 feature: Cloud, Cache, Routes
 exl-id: e73c36d6-9a58-45c0-9220-86074c1f46f0
-source-git-commit: a1ed2818cbaf5adf8b673df0ee9b9218e6f700a2
+TQID: https://experienceleague.adobe.com/dCr0px-0XWXIznsg1w8tUnBaAeXvanY1h-mwiu6GfzU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: 430
 ht-degree: 0%
 
 ---
@@ -76,7 +84,7 @@ La durée du cache est déterminée par la valeur de l’en-tête de réponse `C
 
 ## Clé de cache
 
-Pour décider comment mettre en cache une réponse, Adobe Commerce crée une clé de cache qui dépend de plusieurs facteurs et stocke la réponse associée à cette clé. Lorsqu’une requête est fournie avec la même clé de cache, la réponse est réutilisée. Son objectif est similaire à celui de l’en-tête HTTP [`Vary`](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.44).
+Pour décider comment mettre en cache une réponse, Adobe Commerce crée une clé de cache qui dépend de plusieurs facteurs et stocke la réponse associée à cette clé. Lorsqu’une requête est fournie avec la même clé de cache, la réponse est réutilisée. Son objectif est similaire à celui de l’en-tête HTTP [&#128279;](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.44).`Vary`
 
 Les paramètres `headers` et clés de `cookies` permettent de modifier cette clé de cache.
 

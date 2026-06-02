@@ -4,9 +4,22 @@ description: Découvrez comment gérer les branches d’environnement pour Adobe
 role: Developer
 feature: Cloud, Install
 exl-id: 2c254586-b670-4dd7-8f82-edcc139e9800
-source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
+TQID: https://experienceleague.adobe.com/-9EfBaTgSBPQa6HspiaqngBtwURAeUGlNP9hREcXrQQ
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1638'
+source-wordcount: 1638
 ht-degree: 0%
 
 ---

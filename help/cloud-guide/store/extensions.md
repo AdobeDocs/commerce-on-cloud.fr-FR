@@ -2,16 +2,28 @@
 title: Gestion des extensions
 description: Découvrez comment installer et gérer des extensions dans Adobe Commerce sur l’infrastructure cloud.
 feature: Cloud, Extensions, Upgrade
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 88c5ea06-fe79-4105-8b67-f16e9ef06210
+TQID: https://experienceleague.adobe.com/7ZNXOai-hYkUS4ff3bNW32Ny63DfJLMBG2Zti5OVxRM
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: 672
 ht-degree: 0%
 
 ---
 
 # Gestion des extensions
 
-Vous pouvez étendre les fonctionnalités de votre application Adobe Commerce en ajoutant une extension à partir du Commerce Marketplace [&#128279;](https://marketplace.magento.com). Par exemple, vous pouvez ajouter un thème pour modifier l’aspect de votre storefront ou vous pouvez ajouter un package de langue pour localiser votre storefront et votre administrateur.
+Vous pouvez étendre les fonctionnalités de votre application Adobe Commerce en ajoutant une extension à partir de [Commerce Marketplace](https://marketplace.magento.com). Par exemple, vous pouvez ajouter un thème pour modifier l’aspect de votre storefront ou vous pouvez ajouter un package de langue pour localiser votre storefront et votre administrateur.
 
 >[!NOTE]
 >
@@ -19,11 +31,11 @@ Vous pouvez étendre les fonctionnalités de votre application Adobe Commerce en
 
 ## Nom du compositeur d’une extension
 
-Bien que cette section explique comment obtenir le nom et la version du compositeur d’une extension à partir du Commerce Marketplace, vous pouvez retrouver le nom et la version du module _any_ dans le fichier Compositeur du module. Ouvrez le fichier `composer.json` dans un éditeur de texte et notez les valeurs `"name"` et `"version"`.
+Bien que cette section explique comment obtenir le nom du compositeur et la version d’une extension à partir de Commerce Marketplace, vous pouvez trouver le nom et la version du module _any_ dans le fichier Compositeur du module. Ouvrez le fichier `composer.json` dans un éditeur de texte et notez les valeurs `"name"` et `"version"`.
 
 **Pour obtenir le nom du compositeur d’un module à partir du Commerce Marketplace** :
 
-1. Connectez-vous au Commerce Marketplace [&#128279;](https://marketplace.magento.com) avec le nom d&#39;utilisateur et le mot de passe que vous avez utilisés pour acheter le composant.
+1. Connectez-vous à [&#128279;](https://marketplace.magento.com) avec le nom d&#39;utilisateur et le mot de passe utilisés pour acheter le composant.
 
 1. Dans le coin supérieur droit, cliquez sur votre nom d’utilisateur et sélectionnez **Mon profil**.
 
