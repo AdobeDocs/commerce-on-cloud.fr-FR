@@ -4,10 +4,17 @@ description: Rassemblez les informations d’identification et découvrez les ou
 recommendations: noDisplay, catalog
 exl-id: adb7f74f-8007-4f23-bc07-46b0f7d0ebd9
 TQID: https://experienceleague.adobe.com/al-kKS6wmNpCQt5tDRMIO2L10UEShSC2kOf66eThcfw
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: cc250cf1-34eb-4863-80d0-d170d45ea067id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 498
@@ -25,11 +32,11 @@ Avant de configurer un espace de travail, collectez les clés et l’accès au c
 
 - **Clés d’authentification (clés du compositeur)**
 
-  Les clés d’authentification sont des jetons d’authentification de 32 caractères qui fournissent un accès sécurisé au référentiel du compositeur d’Adobe Commerce (`repo.magento.com`) et à tout autre service Git requis pour le développement d’applications, tel que GitHub. Votre compte peut avoir plusieurs clés d’authentification. Pour la configuration de l’espace de travail, commencez par une clé spécifique pour votre référentiel de code. Si vous ne disposez d’aucune clé, contactez le propriétaire du projet ou créez vous-même les [ clés d’authentification ](../cloud-guide/development/authentication-keys.md).
+  Les clés d’authentification sont des jetons d’authentification de 32 caractères qui fournissent un accès sécurisé au référentiel du compositeur d’Adobe Commerce (`repo.magento.com`) et à tout autre service Git requis pour le développement d’applications, tel que GitHub. Votre compte peut avoir plusieurs clés d’authentification. Pour la configuration de l’espace de travail, commencez par une clé spécifique pour votre référentiel de code. Si vous ne disposez d’aucune clé, contactez le propriétaire du projet ou créez vous-même les [&#x200B; clés d’authentification &#x200B;](../cloud-guide/development/authentication-keys.md).
 
 - **Compte de projet cloud**
 
-  Le propriétaire du projet doit vous inviter à rejoindre le projet d’infrastructure cloud d’Adobe Commerce. Lorsque vous recevez l’invitation par courrier électronique, cliquez sur le lien et suivez les invites pour créer votre compte. Voir [ Intégration ](onboarding.md).
+  Le propriétaire du projet doit vous inviter à rejoindre le projet d’infrastructure cloud d’Adobe Commerce. Lorsque vous recevez l’invitation par courrier électronique, cliquez sur le lien et suivez les invites pour créer votre compte. Voir [&#x200B; Intégration &#x200B;](onboarding.md).
 
 - **Clé de chiffrement**
 
@@ -51,7 +58,7 @@ Avant de configurer un espace de travail, collectez les clés et l’accès au c
 
 - **Intégration de services basés sur Git**
 
-  Vous pouvez éventuellement intégrer un service d’hébergement basé sur Git, tel que GitHub ou GitLab, à Adobe Commerce sur l’infrastructure cloud. Pour plus d&#39;informations, consultez la section [ Intégrations ](../cloud-guide/integrations/overview.md).
+  Vous pouvez éventuellement intégrer un service d’hébergement basé sur Git, tel que GitHub ou GitLab, à Adobe Commerce sur l’infrastructure cloud. Pour plus d&#39;informations, consultez la section [&#x200B; Intégrations &#x200B;](../cloud-guide/integrations/overview.md).
 
 ## Code du projet
 

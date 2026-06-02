@@ -3,9 +3,13 @@ title: Configuration des emails sortants
 description: Découvrez comment activer les e-mails sortants pour Adobe Commerce sur les infrastructures cloud.
 exl-id: 616e287b-960a-4933-916e-37896ee6b533
 TQID: https://experienceleague.adobe.com/qTZHcNU58ZVNRE9FgaIdcVsRg6--ae6dL-hKCjpUt3w
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 402
@@ -31,7 +35,7 @@ La mise à jour de la valeur de la propriété `enable_smtp` par [ligne de comma
 
 Utilisez le bouton **[!UICONTROL Outgoing emails]** dans la vue _Configurer l’environnement_ pour activer ou désactiver la prise en charge des e-mails.
 
-Si les e-mails sortants doivent être désactivés ou réactivés dans les environnements de production ou d’évaluation Pro, vous pouvez envoyer un [ticket d’assistance ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Si les e-mails sortants doivent être désactivés ou réactivés dans les environnements de production ou d’évaluation Pro, vous pouvez envoyer un [ticket d’assistance &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 >[!TIP]
 >

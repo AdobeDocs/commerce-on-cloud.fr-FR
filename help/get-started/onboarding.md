@@ -5,9 +5,12 @@ role: Admin
 recommendations: noDisplay, catalog
 exl-id: 9b48212a-2560-4090-b483-a8b04471de95
 TQID: https://experienceleague.adobe.com/y1WQfRLHOhgyZfCISQEsIRju7g79oq-ikJH1Tl7z420
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 517
@@ -53,5 +56,5 @@ Cette page fournit un statut pour les composants et services Adobe Commerce, sui
 >
 > Ouvrez la nouvelle [!DNL Cloud Console] et affichez les activités du projet et de l’environnement.
 >
->**Étape suivante** : [Connectez-vous à la console CI[!DNL ]oud](cloud-console.md)
+>**Étape suivante** : [Connectez-vous à la console CIoud](cloud-console.md)
 

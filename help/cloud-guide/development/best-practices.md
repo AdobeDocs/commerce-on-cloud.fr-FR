@@ -4,9 +4,13 @@ description: Consultez une liste des bonnes pratiques pour mettre à niveau vos 
 feature: Cloud, Best Practices, Upgrade
 exl-id: 64f92739-9170-4cbf-90ef-aab6593a37ca
 TQID: https://experienceleague.adobe.com/Nnr9fNMT210WTnaLTWyRM-YCWRXrZuOv0m-EZYpzKVw
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 696
@@ -16,9 +20,9 @@ ht-degree: 0%
 
 # Bonnes pratiques pour mettre à niveau votre projet
 
-Suivez les bonnes pratiques en matière de versions et de déploiement, et utilisez le workflow [ Mises à niveau et correctifs ](../development/commerce-version.md) pour mettre à niveau votre application. Suivez les instructions suivantes pour planifier votre travail de mise à niveau et après la mise à niveau :
+Suivez les bonnes pratiques en matière de versions et de déploiement, et utilisez le workflow [&#x200B; Mises à niveau et correctifs &#x200B;](../development/commerce-version.md) pour mettre à niveau votre application. Suivez les instructions suivantes pour planifier votre travail de mise à niveau et après la mise à niveau :
 
-- **Sauvegardez votre projet**-Avant de mettre à niveau Adobe Commerce et toute extension tierce ou personnalisée, sauvegardez la base de données dans les environnements d’intégration, d’évaluation et de production. Pour plus d&#39;informations, consultez la section [ Sauvegarder la base de données ](../development/commerce-version.md#project-backup).
+- **Sauvegardez votre projet**-Avant de mettre à niveau Adobe Commerce et toute extension tierce ou personnalisée, sauvegardez la base de données dans les environnements d’intégration, d’évaluation et de production. Pour plus d&#39;informations, consultez la section [&#x200B; Sauvegarder la base de données &#x200B;](../development/commerce-version.md#project-backup).
 
 - **Rechercher les problèmes de compatibilité**-
 
@@ -40,7 +44,7 @@ Suivez les bonnes pratiques en matière de versions et de déploiement, et utili
 
    - Utilisez SSH pour vous connecter au serveur distant et vérifier la connexion à la base de données MySQL. Voir [Connexion à la base de données](../services/mysql.md#connect-to-the-database).
 
-   - Vérifier le stockage disponible dans l’environnement distant : utilisez la commande `disk free` pour afficher et gérer l’espace disque disponible dans vos environnements cloud. Voir [ Gérer l’espace disque ](../storage/manage-disk-space.md).
+   - Vérifier le stockage disponible dans l’environnement distant : utilisez la commande `disk free` pour afficher et gérer l’espace disque disponible dans vos environnements cloud. Voir [&#x200B; Gérer l’espace disque &#x200B;](../storage/manage-disk-space.md).
 
       - Vérifiez la taille de la base de données mise à niveau et que le fichier `services.yaml` dispose de suffisamment d&#39;espace disque alloué.
 

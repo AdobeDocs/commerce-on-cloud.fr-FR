@@ -4,9 +4,14 @@ description: Découvrez comment intégrer votre projet d’infrastructure cloud 
 feature: Cloud, Integration
 exl-id: 903c3064-1821-4f86-a468-4f0ccefb9b77
 TQID: https://experienceleague.adobe.com/S4fSM5ytzpoB1FWMTIlICGHeBPx7LC7CeBt6YzqzXk8
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 1057
@@ -23,7 +28,7 @@ Vous pouvez configurer votre référentiel Bitbucket pour créer et déployer au
 ## Conditions préalables
 
 - Accès des administrateurs au projet d’infrastructure cloud d’Adobe Commerce
-- [`magento-cloud` de l’interface de ligne ](../dev-tools/cloud-cli-overview.md) commande dans votre environnement local
+- [`magento-cloud` de l’interface de ligne &#x200B;](../dev-tools/cloud-cli-overview.md) commande dans votre environnement local
 - Un compte Bitbucket
 - Accès de l’administrateur au référentiel Bitbucket
 - Clé d’accès SSH pour le référentiel Bitbucket
@@ -87,7 +92,7 @@ L’intégration de Bitbucket nécessite un client [OAuth](https://support.atlas
 
 **Pour créer un client OAuth dans Bitbucket** :
 
-1. Connectez-vous à votre compte [ Bitbucket ](https://id.atlassian.com/login).
+1. Connectez-vous à votre compte [&#x200B; Bitbucket &#x200B;](https://id.atlassian.com/login).
 
 1. Cliquez sur **Paramètres** > **Gestion des accès** > **OAuth**.
 
@@ -166,7 +171,7 @@ L’intégration de Bitbucket nécessite un client [OAuth](https://support.atlas
 
 Pour communiquer des événements (une notification push, par exemple) avec votre serveur Git Cloud, est-il nécessaire de disposer d’un webhook pour votre référentiel BitBucket ? La méthode de configuration d’une intégration Bitbucket présentée sur cette page, lorsqu’elle est correctement suivie, crée automatiquement un webhook. Il est important de vérifier le webhook pour éviter de créer plusieurs intégrations.
 
-1. Connectez-vous à votre compte [ Bitbucket ](https://id.atlassian.com/login).
+1. Connectez-vous à votre compte [&#x200B; Bitbucket &#x200B;](https://id.atlassian.com/login).
 
 1. Cliquez sur **Référentiels** et sélectionnez votre projet.
 
@@ -278,7 +283,7 @@ Vous pouvez également supprimer l’intégration Bitbucket en vous connectant �
 Pour utiliser l’intégration du serveur Bitbucket, vous avez besoin des éléments suivants :
 
 - [Jeton d’accès Bitbucket](https://confluence.atlassian.com/bitbucketserver/http-access-tokens-939515499.html) : générez un jeton qui accorde l’accès à Project `read` et à Repository `admin`
-- [ URL du serveur Bitbucket ](https://confluence.atlassian.com/bitbucketserver/specify-the-bitbucket-base-url-776640392.html) : ajoutez l’URL de base de votre instance Bitbucket
+- [&#x200B; URL du serveur Bitbucket &#x200B;](https://confluence.atlassian.com/bitbucketserver/specify-the-bitbucket-base-url-776640392.html) : ajoutez l’URL de base de votre instance Bitbucket
 
 Bien que vous puissiez utiliser l’interface de ligne de commande Cloud pour suivre les étapes d’intégration du serveur Bitbucket, la commande complète ressemble à ce qui suit :
 

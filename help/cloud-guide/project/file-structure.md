@@ -3,10 +3,16 @@ title: Structure du projet
 description: Découvrez la structure de fichiers et les modèles de projet pour Adobe Commerce sur l’infrastructure cloud.
 exl-id: 364e40e4-a5b3-4d23-b86d-74fc0696ac19
 TQID: https://experienceleague.adobe.com/B6fTvmHLFa5THSgLKsjl1smPC8ekPdXB9A-vyqFVwG8
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 473
@@ -23,7 +29,7 @@ Le tableau suivant décrit les fichiers inclus dans un projet cloud :
 | Fichier | Description |
 | ------------------------- | ------------ |
 | `/.magento/routes.yaml` | Fichier de configuration qui redirige le `www` vers le domaine apex et `php` application vers le HTTP. Voir [Configurer les itinéraires](../routes/routes-yaml.md). |
-| `/.magento/services.yaml` | Un fichier de configuration qui définit une instance MySQL (MariaDB), Redis et OpenSearch ou Elasticsearch. Voir [ Configuration des services ](../services/services-yaml.md). |
+| `/.magento/services.yaml` | Un fichier de configuration qui définit une instance MySQL (MariaDB), Redis et OpenSearch ou Elasticsearch. Voir [&#x200B; Configuration des services &#x200B;](../services/services-yaml.md). |
 | `/app` | Le dossier `code` est utilisé pour les modules personnalisés. Le dossier `design` est utilisé pour les [thèmes personnalisés](../store/custom-theme.md). Le dossier `etc` contient les fichiers de configuration de l’application. |
 | `/m2-hotfixes` | Utilisé pour les correctifs personnalisés. |
 | `/update` | Dossier de service utilisé par le module de support. |

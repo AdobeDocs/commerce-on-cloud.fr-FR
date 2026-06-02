@@ -4,10 +4,21 @@ description: Lisez une présentation d’Adobe Commerce sur l’infrastructure c
 last-substantial-update: 2024-02-06T00:00:00.000Z
 exl-id: 8eed04c7-6469-45a4-aa89-dc594c977264
 TQID: https://experienceleague.adobe.com/I7odylklFhMfZP0R43bY6LXyXXT6Pk5-vFsGsbSrqOk
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c32adafa-ed01-4b31-997e-2413013911b0id: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 1022
@@ -37,7 +48,7 @@ La vue _Tous les projets_ répertorie tous les projets auxquels vous avez accès
 
 Lorsque vous sélectionnez un projet dans la liste _Tous les projets_, vous accédez à la vue d’ensemble du projet. La présentation du projet affiche toujours une barre de navigation du projet, qui comprend un sélecteur d’environnement et un bouton de configuration :
 
-![ Navigation dans le projet ](../../assets/project-nav.png)
+![&#x200B; Navigation dans le projet &#x200B;](../../assets/project-nav.png)
 
 Tant que vous n’avez pas sélectionné d’environnement, la vue d’ensemble du projet affiche un résumé des détails du projet dans la zone de prévisualisation :
 
@@ -52,7 +63,7 @@ Et dans la présentation du projet principal :
 - Le [flux d’activités](activity-stream.md) affiche les activités en cours, en attente et récentes pour le projet.
 <!-- - Apps & Services—Shows a topology of service containers -->
 
-Pour les projets **de démarrage**, il existe une hiérarchie de branches commençant par `master` (production). Toute branche que vous créez s’affiche en tant qu’enfants à partir de la branche `master`. Adobe recommande de créer une branche `staging`, puis une branche `integration` pour le développement. Voir [ Architecture de démarrage ](../architecture/starter-architecture.md).
+Pour les projets **de démarrage**, il existe une hiérarchie de branches commençant par `master` (production). Toute branche que vous créez s’affiche en tant qu’enfants à partir de la branche `master`. Adobe recommande de créer une branche `staging`, puis une branche `integration` pour le développement. Voir [&#x200B; Architecture de démarrage &#x200B;](../architecture/starter-architecture.md).
 
 Pour **Pro**, il existe une hiérarchie de branches allant de `production` à `staging` et à `integration`. L’icône ![icône dédiée](../../assets/icon-dedicated.png){width="32"} indique que la branche se déploie vers un environnement dédié. Toutes les branches que vous créez s’affichent en tant qu’enfants de la branche `integration`. Voir [Architecture Pro](../architecture/pro-architecture.md).
 
@@ -78,7 +89,7 @@ Et dans la présentation de l’environnement principal :
 
 - Le [flux d’activités](activity-stream.md) constitue la présentation de l’environnement principal et affiche les activités en cours, en attente et récentes pour l’environnement sélectionné.
 <!-- - Services tab shows and Apps & Services menu, including overview and configuration tabs for each service. -->
-- L’onglet [ Sauvegardes ](../storage/snapshots.md#create-a-manual-backup) fournit une liste des sauvegardes stockées, un historique des actions de sauvegarde et le bouton Sauvegarder .
+- L’onglet [&#x200B; Sauvegardes &#x200B;](../storage/snapshots.md#create-a-manual-backup) fournit une liste des sauvegardes stockées, un historique des actions de sauvegarde et le bouton Sauvegarder .
 
 ### Accéder au storefront
 
@@ -122,7 +133,7 @@ Ouvrez le panneau _Paramètres_ en cliquant sur l’icône ![Configurer le proje
 | Accès | Gérez l’[accès utilisateur](user-access.md) pour les types de projet et d’environnement. |
 | Certificats | Affichez une liste des certificats SSL associés au projet. |
 | Déployer la clé | Ajoutez et affichez la clé publique au référentiel de code du projet. |
-| Domaines | Ajoutez un nom de domaine au projet. Voir [ Gestion des domaines ](../cdn/fastly-custom-cache-configuration.md#manage-domains). |
+| Domaines | Ajoutez un nom de domaine au projet. Voir [&#x200B; Gestion des domaines &#x200B;](../cdn/fastly-custom-cache-configuration.md#manage-domains). |
 | Intégrations | Ajoutez et gérez les [intégrations](../integrations/overview.md), telles que les notifications d’intégrité et les webhooks. |
 | Variables | Ajoutez des [variables au niveau du projet](../environment/variable-levels.md) qui sont disponibles lors de la génération et de l’exécution dans tous les environnements. |
 
@@ -154,7 +165,7 @@ Votre projet comprend [Fastly](../cdn/fastly.md) et [New Relic](../monitor/new-r
 
 - [Fastly](https://www.fastly.com/) fournit des services de diffusion de contenu (CDN), d’optimisation des images et de sécurité (DDoS et WAF) pour vos projets d’infrastructure cloud Adobe Commerce. Voir [Obtention des informations d’identification Fastly](../cdn/fastly-configuration.md#get-fastly-credentials).
 
-- [](../monitor/new-relic-service.md) fournit des mesures d’application et des informations de performances pour les environnements d’évaluation et de production.
+- [&#128279;](../monitor/new-relic-service.md) fournit des mesures d’application et des informations de performances pour les environnements d’évaluation et de production.
 
 Utilisez l’[interface de ligne de commande Cloud](../dev-tools/cloud-cli-overview.md) pour passer en revue vos jetons d’intégration, vos identifiants, etc. :
 

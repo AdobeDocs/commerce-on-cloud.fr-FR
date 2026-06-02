@@ -4,10 +4,17 @@ description: Identifiez les types de fichiers journaux disponibles dans l’infr
 last-substantial-update: 2023-05-23T00:00:00.000Z
 exl-id: f0bb8830-8010-4764-ac23-d63d62dc0117
 TQID: https://experienceleague.adobe.com/VAsmOv6sBa37A2IAubUnWd4UAMRIuKTNt8JGKNJlrCI
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 1287
@@ -68,7 +75,7 @@ magento-cloud ssh -e <environment-ID> "find /var/log -name '*.gz' -exec zgrep '4
 
 #### Méthode 3 : utilisation de New Relic (environnements Pro)
 
-Pour les environnements de production et d’évaluation Pro, utilisez les journaux New Relic pour rechercher des enregistrements d’erreurs spécifiques. Pour plus d’informations, consultez la section [Gestion des journaux ](../monitor/log-management.md).
+Pour les environnements de production et d’évaluation Pro, utilisez les journaux New Relic pour rechercher des enregistrements d’erreurs spécifiques. Pour plus d’informations, consultez la section [Gestion des journaux &#x200B;](../monitor/log-management.md).
 
 ### Affichage des journaux d’environnement distant
 
@@ -225,7 +232,7 @@ title: The configured state is not ideal
 type: warning
 ```
 
-La plupart des messages d’erreur contiennent une description et une action suggérée. Utilisez la référence [Message d&#39;erreur pour ECE-Tools](../dev-tools/error-reference.md) pour rechercher le code d&#39;erreur afin d&#39;obtenir d&#39;autres indications. Pour plus d’informations, utilisez l’utilitaire de dépannage du déploiement d’Adobe Commerce [](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
+La plupart des messages d’erreur contiennent une description et une action suggérée. Utilisez la référence [Message d&#39;erreur pour ECE-Tools](../dev-tools/error-reference.md) pour rechercher le code d&#39;erreur afin d&#39;obtenir d&#39;autres indications. Pour plus d’informations, utilisez l’utilitaire de dépannage du déploiement d’Adobe Commerce [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
 
 ## Logs de l&#39;application
 
@@ -291,6 +298,6 @@ Les journaux de service sont archivés et enregistrés pendant différentes pér
 
 ## Données de journal pour la production et l’évaluation Pro
 
-Dans les environnements de production et d’évaluation Pro, utilisez la gestion des journaux [](../monitor/log-management.md) intégrée à votre projet pour gérer les données de journaux agrégées à partir de tous les journaux associés à votre projet d’infrastructure Adobe Commerce sur le cloud.
+Dans les environnements de production et d’évaluation Pro, utilisez la gestion des journaux [&#128279;](../monitor/log-management.md) intégrée à votre projet pour gérer les données de journaux agrégées à partir de tous les journaux associés à votre projet d’infrastructure Adobe Commerce sur le cloud.
 
-L’application Journaux New Relic fournit un tableau de bord de gestion des journaux centralisé pour dépanner et surveiller Adobe Commerce sur les infrastructures cloud et les environnements d’évaluation et de production. Le tableau de bord permet également d’accéder aux données de journal pour les services Fast CDN, Image Optimization et Web Application Firewall (WAF). Voir [Services ](../monitor/new-relic-service.md).
+L’application Journaux New Relic fournit un tableau de bord de gestion des journaux centralisé pour dépanner et surveiller Adobe Commerce sur les infrastructures cloud et les environnements d’évaluation et de production. Le tableau de bord permet également d’accéder aux données de journal pour les services Fast CDN, Image Optimization et Web Application Firewall (WAF). Voir [Services &#x200B;](../monitor/new-relic-service.md).

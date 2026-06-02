@@ -4,9 +4,13 @@ description: Découvrez les paramètres PHP optimaux pour la configuration de l'
 feature: Cloud, Configuration, Extensions
 exl-id: 83094c16-7407-41fa-ba1c-46b206aa160d
 TQID: https://experienceleague.adobe.com/2UjlXGZV6AJQuNf0XOdzZ09aF-23TSk7Q0NqvLyhGRs
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 605
@@ -25,7 +29,7 @@ type: php:<version>
 
 >[!TIP]
 >
->Si vous effectuez une mise à niveau vers PHP 8.1 et versions ultérieures, supprimez JSON de la propriété ](properties.md#runtime) dans le fichier `.magento.app.yaml` et redéployez. [`runtime: extensions:`L’extension JSON est installée dans un environnement cloud depuis PHP 8.0.
+>Si vous effectuez une mise à niveau vers PHP 8.1 et versions ultérieures, supprimez JSON de la propriété [&#128279;](properties.md#runtime) dans le fichier `.magento.app.yaml` et redéployez. `runtime: extensions:`L’extension JSON est installée dans un environnement cloud depuis PHP 8.0.
 
 ## Configuration de PHP
 

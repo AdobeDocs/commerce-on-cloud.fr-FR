@@ -4,10 +4,16 @@ description: Découvrez comment personnaliser la page d’erreur par défaut qui
 feature: Cloud, Configuration, Security
 exl-id: 960195c7-5ee9-4134-8b0a-a251c5e6adf9
 TQID: https://experienceleague.adobe.com/EhK04rgGdkT3Tvd6wbefYjY9Yqozkzra4-ELdkH8sMo
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 803
@@ -91,7 +97,7 @@ Pour ajouter la page de réponse personnalisée à la configuration Fastly :
 
 Les clients voient la page d’erreur WAF suivante par défaut lorsqu’une demande de l’origine Fastly échoue avec une erreur `403 Forbidden` due à un événement de blocage [WAF](fastly-waf-service.md).
 
-![Page d&#39;erreur ](../../assets/cdn/fastly-waf-403-error.png)
+![Page d&#39;erreur &#x200B;](../../assets/cdn/fastly-waf-403-error.png)
 
 L’exemple de code suivant montre la source HTML de la page par défaut :
 
@@ -127,7 +133,7 @@ Vous pouvez utiliser l’option **Pages synthétiques personnalisées** > **Modi
 
 1. Dans le volet de droite, développez **Cache de page complet** > **Configuration rapide** > **Pages synthétiques personnalisées**.
 
-   ![Option Modifier la page d’erreur WAF ](../../assets/cdn/fastly-custom-synthetic-pages-edit-waf.png)
+   ![Option Modifier la page d’erreur WAF &#x200B;](../../assets/cdn/fastly-custom-synthetic-pages-edit-waf.png)
 
 1. Sélectionnez **Modifier la page WAF**.
 

@@ -4,8 +4,11 @@ description: Découvrez comment appliquer des correctifs dans le projet d’infr
 feature: Cloud, Upgrade
 exl-id: 923c1e43-45da-450f-bdfc-de84a901400d
 TQID: https://experienceleague.adobe.com/SyS-AIRHp0LW7Z4JwZw2FNtbvy9FVzISUID12MjlMrc
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 910
@@ -36,7 +39,7 @@ Lorsque vous déployez des modifications dans l’environnement distant, le pack
 
 >[!NOTE]
 >
->Lorsque vous mettez à jour le package `ece-tools` ou le package Correctifs cloud pour Commerce, les derniers correctifs requis sont appliqués la prochaine fois que vous déployez votre projet. Vous pouvez également les déployer immédiatement à l’aide de la commande de l’interface de ligne de commande `ece-patches apply` et redéployer votre environnement Cloud. Vous ne pouvez pas ignorer [ correctifs requis](https://github.com/magento/magento-cloud-patches/tree/develop/patches) pendant le processus de déploiement.
+>Lorsque vous mettez à jour le package `ece-tools` ou le package Correctifs cloud pour Commerce, les derniers correctifs requis sont appliqués la prochaine fois que vous déployez votre projet. Vous pouvez également les déployer immédiatement à l’aide de la commande de l’interface de ligne de commande `ece-patches apply` et redéployer votre environnement Cloud. Vous ne pouvez pas ignorer [&#x200B; correctifs requis](https://github.com/magento/magento-cloud-patches/tree/develop/patches) pendant le processus de déploiement.
 
 ## Conditions préalables
 

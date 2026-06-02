@@ -4,10 +4,19 @@ description: Découvrez comment utiliser le service PrivateLink pour établir un
 feature: Cloud, Iaas, Security
 exl-id: 13a7899f-9eb5-4c84-b4c9-993c39d611cc
 TQID: https://experienceleague.adobe.com/AxpzTY-Nb7UoKhW-wzAOuWLm5O7XS4OFxjSaIfFUR-I
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 1798
@@ -114,7 +123,7 @@ Le workflow suivant décrit le processus d’activation de l’intégration de P
 
 1. **Client** envoie un ticket d’assistance demandant l’activation de PrivateLink avec l’objet `PrivateLink support for <company>`. Incluez les [données requises pour l’activation](#prerequisites) dans le ticket. Adobe utilise le ticket d’assistance pour coordonner la communication pendant le processus d’activation.
 
-1. **** permet au compte client d’accéder au service de point d’entrée dans Adobe VPC.
+1. **&#x200B;**&#x200B;permet au compte client d’accéder au service de point d’entrée dans Adobe VPC.
 
    - Mettez à jour la configuration du service de point d’entrée Adobe pour accepter les requêtes lancées à partir du compte AWS ou Azure du client.
    - Mettez à jour le ticket d’assistance pour fournir le nom du service auquel le point d’entrée Adobe VPC doit se connecter, par exemple `com.amazonaws.vpce.<cloud-region>.vpce-svc-<service-id>`.
@@ -124,13 +133,13 @@ Le workflow suivant décrit le processus d’activation de l’intégration de P
    - Pour AWS, voir [Acceptation et rejet des demandes de connexion de point d’entrée de l’interface].
    - Pour Azure, voir [Gestion des demandes de connexion].
 
-1. **** approuve la demande de connexion.
+1. **&#x200B;**&#x200B;approuve la demande de connexion.
 
-1. Après la validation de la demande de connexion, **le client** [ vérifie la connexion](#test-vpc-endpoint-service-connection) entre son VPC et le VPC Adobe.
+1. Après la validation de la demande de connexion, **le client** [&#x200B; vérifie la connexion](#test-vpc-endpoint-service-connection) entre son VPC et le VPC Adobe.
 
 1. Étapes supplémentaires pour activer les connexions bidirectionnelles :
 
-   - **** fournit l’entité de sécurité du compte Adobe (utilisateur racine du compte AWS ou Azure) et demande l’accès au service de point d’entrée VPC du client.
+   - **&#x200B;**&#x200B;fournit l’entité de sécurité du compte Adobe (utilisateur racine du compte AWS ou Azure) et demande l’accès au service de point d’entrée VPC du client.
    - **Client** permet à Adobe d’accéder au service de point d’entrée dans le VPC client. Cela suppose que l’entité de sécurité du compte Adobe a accès à `arn:aws:iam::402592597372:root`, comme décrit précédemment dans la condition préalable **Accès au service de point d’entrée accordé**.
 
       - Mettez à jour la configuration du service de point d’entrée client pour accepter les requêtes lancées à partir du compte Adobe. Consultez la documentation relative à la plateforme cloud pour obtenir des instructions :
@@ -140,7 +149,7 @@ Le workflow suivant décrit le processus d’activation de l’intégration de P
 
       - Indiquez à Adobe le nom du service de point d’entrée pour le VPC client.
 
-   - **** ajoute le service de point d’entrée client au compte de plateforme Adobe (AWS ou Azure), ce qui déclenche une demande de connexion à VPC client.
+   - **&#x200B;**&#x200B;ajoute le service de point d’entrée client au compte de plateforme Adobe (AWS ou Azure), ce qui déclenche une demande de connexion à VPC client.
    - **Client** approuve la demande de connexion d’Adobe pour terminer la configuration.
    - **Client** [vérifie la connexion](#test-vpc-endpoint-service-connection) à partir du VPC Adobe.
 

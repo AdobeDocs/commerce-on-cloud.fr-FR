@@ -3,10 +3,20 @@ title: Tests d’évaluation et de production
 description: Découvrez comment effectuer des tests dans les environnements d’évaluation et de production.
 exl-id: 39625c97-5eb0-4039-ac5f-ddaeb43156de
 TQID: https://experienceleague.adobe.com/kcmgbPlj1Pa0JW6daRzbr40HMfoy64ETmowCiWzXD-A
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c32adafa-ed01-4b31-997e-2413013911b0id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 1368
@@ -26,7 +36,7 @@ Si vous rencontrez des erreurs lors du déploiement ou d’autres problèmes lor
 
 Le journal de déploiement est en `/var/log/platform/<prodject-ID>/deploy.log`. La valeur de `<project-ID>` dépend de l’identifiant du projet et du statut de l’environnement : Évaluation ou Production. Par exemple, avec un ID de projet de `yw1unoukjcawe`, l’utilisateur intermédiaire est `yw1unoukjcawe_stg` et l’utilisateur de production est `yw1unoukjcawe`.
 
-Lors de l’accès aux journaux dans les environnements de production ou d’évaluation, utilisez SSH pour vous connecter à chacun des trois nœuds afin de localiser les journaux. Vous pouvez également utiliser la gestion des journaux de [](../monitor/log-management.md) pour afficher et interroger les données de journaux agrégées de tous les nœuds. Voir [ Afficher les journaux ](log-locations.md#application-logs).
+Lors de l’accès aux journaux dans les environnements de production ou d’évaluation, utilisez SSH pour vous connecter à chacun des trois nœuds afin de localiser les journaux. Vous pouvez également utiliser la gestion des journaux de [&#128279;](../monitor/log-management.md) pour afficher et interroger les données de journaux agrégées de tous les nœuds. Voir [&#x200B; Afficher les journaux &#x200B;](log-locations.md#application-logs).
 
 ## Vérifier la base de code
 
@@ -69,7 +79,7 @@ Vérifiez les paramètres de configuration via le panneau d’administration, y 
    - Évaluation : `dig https://mcstaging.<your-domain>.com`
    - Production : `dig https://mcprod.<your-domain>.com`
 
-   Pour des tests de `dig` supplémentaires, voir Tests de Fastly [ avant de modifier le DNS](https://docs.fastly.com/en/guides/working-with-domains).
+   Pour des tests de `dig` supplémentaires, voir Tests de Fastly [&#x200B; avant de modifier le DNS](https://docs.fastly.com/en/guides/working-with-domains).
 
 1. Utilisez `cURL` pour vérifier les informations d’en-tête de réponse.
 
@@ -212,7 +222,7 @@ Pour de meilleurs résultats, utilisez les outils suivants :
 - [Test de performance de l’application](../environment/variables-post-deploy.md#ttfb_tested_pages) : testez les performances de l’application en configurant la variable d’environnement `TTFB_TESTED_PAGES` pour tester le temps de réponse du site.
 - [Siege](https://www.joedog.org/siege-home/) : logiciel de test et de mise en forme du trafic pour pousser votre magasin à la limite. Accédez à votre site avec un nombre configurable de clients simulés. Siege prend en charge l’authentification de base, les cookies, les protocoles HTTP, HTTPS et FTP.
 - [Jmeter](https://jmeter.apache.org)—Excellent test de charge pour aider à évaluer les performances pour le trafic en pic, comme pour les ventes flash. Créez des tests personnalisés à exécuter sur votre site.
-- [](../monitor/new-relic-service.md) (fourni) : permet de localiser les processus et les zones du site, ce qui ralentit les performances grâce au suivi du temps passé par action, tel que la transmission de données, de requêtes, de Redis, etc.
+- [&#128279;](../monitor/new-relic-service.md) (fourni) : permet de localiser les processus et les zones du site, ce qui ralentit les performances grâce au suivi du temps passé par action, tel que la transmission de données, de requêtes, de Redis, etc.
 - [WebPageTest](https://www.webpagetest.org) et [Pingdom](https://www.pingdom.com) : analyse en temps réel du temps de chargement des pages de votre site avec différents emplacements d’origine. Pingdom peut exiger des frais. WebPageTest est un outil gratuit.
 
 ## Tests fonctionnels
