@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: ab64bb5a3cc159844015072738404274fdea97cd
 workflow-type: tm+mt
-source-wordcount: 2551
+source-wordcount: 2575
 ht-degree: 0%
 
 ---
@@ -357,18 +357,18 @@ stage:
 
 ## `LOCK_PROVIDER`
 
-- **Default**—`file`
+- **Par défaut**— Dans les environnements de production et d’évaluation, la valeur par défaut est `file`. Pour l&#39;intégration Pro et les environnements de démarrage, la valeur par défaut est `db`.
 - **Version**—Adobe Commerce 2.2.5 et versions ultérieures
 
-Le fournisseur de verrous empêche le lancement de tâches et de groupes cron en double. Utilisez le fournisseur de verrou `file` dans l’environnement de production. Les environnements de démarrage et l&#39;environnement d&#39;intégration Pro n&#39;utilisent pas la variable [MAGENTO_CLOUD_LOCKS_DIR](variables-cloud.md). Par conséquent, `ece-tools` applique automatiquement le fournisseur de verrous `db`.
+Le fournisseur de verrous empêche le lancement de tâches et de groupes cron en double. Commerce on Cloud ne prend en charge que les fournisseurs de verrous `file` et `db`.
+
+Pour les environnements de production et d’évaluation, la valeur par défaut `file` est définie par [MAGENTO_CLOUD_LOCKS_DIR](variables-cloud.md) et ne peut pas être remplacée. Pour les environnements de démarrage et l’environnement d’intégration Pro, `ece-tools` définit automatiquement le fournisseur de verrouillage de `db`. Dans ces environnements, vous pouvez modifier la valeur par défaut en `file` afin d’optimiser les performances locales et l’architecture de production miroir.
 
 ```yaml
 stage:
   deploy:
     LOCK_PROVIDER: "db"
 ```
-
-Voir [Configuration du verrou](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/lock-provider.html?lang=fr) dans le _Guide d’installation_.
 
 ## `MYSQL_USE_SLAVE_CONNECTION`
 
