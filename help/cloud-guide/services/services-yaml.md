@@ -50,7 +50,7 @@ L’infrastructure cloud prend en charge et déploie les services suivants :
 - [OpenSearch](opensearch.md)
 
 >[!NOTE]
->Vous devez [mettre à niveau RabbitMQ de manière séquentielle entre les versions disponibles](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service) par exemple, vous ne pouvez pas effectuer directement une mise à niveau de la version 3.9 vers la version 4.1
+>Vous devez [mettre à niveau RabbitMQ de manière séquentielle entre les versions disponibles](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service) par exemple, vous ne pouvez pas effectuer directement une mise à niveau de la version 3.9 vers la version 4.1
 >
 >Après la mise à niveau vers une nouvelle version de RabbitMQ, déclenchez un déploiement complet pour vous assurer que vos files d’attente de messages personnalisées sont recréées dans RabbitMQ.
 
@@ -192,7 +192,7 @@ Vous pouvez récupérer les données de configuration pour toutes les relations 
 
 ## Versions des services
 
-La prise en charge des versions de service et de la compatibilité pour Adobe Commerce sur l’infrastructure cloud est déterminée par les versions déployées et testées sur l’infrastructure cloud et diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Consultez [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) dans le guide _Installation_ pour obtenir une liste des dépendances logicielles tierces qu’Adobe a testées avec des versions spécifiques d’Adobe Commerce et de Magento Open Source.
+La prise en charge des versions de service et de la compatibilité pour Adobe Commerce sur l’infrastructure cloud est déterminée par les versions déployées et testées sur l’infrastructure cloud et diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Consultez [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) dans le guide _Installation_ pour obtenir une liste des dépendances logicielles tierces qu’Adobe a testées avec des versions spécifiques d’Adobe Commerce et de Magento Open Source.
 
 ### Vérifications de fin de vie du logiciel
 
