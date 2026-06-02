@@ -2,16 +2,20 @@
 title: Gestion des journaux New Relic
 description: Découvrez comment utiliser le journal New Relic
 feature: Cloud, Logs, Observability
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: b7636075-56fd-4227-b7e8-67acbe1defc5
+TQID: https://experienceleague.adobe.com/gh3OUHKvbN462Z4w-2qnTwVQHA0IbwWNvRBfdrQKkrE
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: 382
 ht-degree: 0%
 
 ---
 
 # Gestion des journaux New Relic
 
-Tous les projets d’infrastructure cloud incluent la [gestion des journaux New Relic](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/). Le service est préconfiguré pour agréger toutes les données de journal de vos environnements d’évaluation et de production et les afficher dans un tableau de bord de gestion des journaux centralisé.
+Tous les projets d’infrastructure cloud incluent la [gestion des journaux ](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/). Le service est préconfiguré pour agréger toutes les données de journal de vos environnements d’évaluation et de production et les afficher dans un tableau de bord de gestion des journaux centralisé.
 
 Les données agrégées incluent des informations provenant des journaux suivants :
 
@@ -32,7 +36,7 @@ Utilisez l’application Journaux New Relic pour rechercher dans les données de
 
 **Pour utiliser l’application Journaux New Relic** :
 
-1. Connectez-vous à votre compte [New Relic](https://login.newrelic.com/login).
+1. Connectez-vous à votre compte [](https://login.newrelic.com/login).
 
 1. Sélectionnez **Journaux** dans le menu de navigation de l’Explorateur.
 

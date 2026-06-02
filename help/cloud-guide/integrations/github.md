@@ -2,10 +2,15 @@
 title: Intégration de GitHub
 description: Découvrez comment intégrer votre projet d’infrastructure cloud Adobe Commerce avec GitHub.
 feature: Cloud, Integration
-last-substantial-update: 2023-05-25T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+last-substantial-update: 2023-05-25T00:00:00.000Z
+exl-id: 08e569fa-5ab4-45c0-82e6-476f25c17fe0
+TQID: https://experienceleague.adobe.com/7Lt2uWkU1kD8VoZAX--lGcJawdg3VEy9U39IS45dBvY
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: 972
 ht-degree: 0%
 
 ---
@@ -167,7 +172,7 @@ Pour communiquer des événements (une notification push, par exemple) avec votr
    - **URL de payload** : saisissez l’URL renvoyée lorsque vous avez activé l’intégration GitHub.
    - **Type de contenu** : sélectionnez **application/json** dans la liste.
    - **Secret** : saisissez un secret de vérification.
-   - **Quels événements souhaitez-vous déclencher ce webhook ?** : Sélectionnez **Envoyer-moi tout**.
+   - **Quels événements souhaitez-vous déclencher ce webhook ?** : sélectionnez **Tout m’envoyer**.
    - Cochez la case **Actif**.
 
 1. Cliquez sur **Ajouter un webhook**.

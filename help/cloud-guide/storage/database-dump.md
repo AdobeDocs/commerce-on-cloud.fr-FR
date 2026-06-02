@@ -3,9 +3,13 @@ title: Sauvegarde de la base de données
 description: Découvrez comment utiliser les outils ECE pour créer une sauvegarde de la base de données pour un projet d'infrastructure Adobe Commerce on cloud.
 feature: Cloud, Iaas, Storage
 exl-id: 351f7691-3153-4b8a-83af-8b8895b93d98
-source-git-commit: 3a3b0cd6e28f3e6ed3521a86f7c7c8868be0cf83
+TQID: https://experienceleague.adobe.com/bT80HnUguAzsYdVx-kNcxJUyggLzzyfomXHdZvUAcrY
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: 364
 ht-degree: 0%
 
 ---
@@ -19,7 +23,7 @@ Tenez compte des instructions suivantes pour l’image mémoire de la base de do
 - Pour les environnements de production, Adobe recommande d’effectuer les opérations de vidage de la base de données pendant les heures creuses afin de minimiser les interruptions de service qui se produisent lorsque le site est en mode de maintenance.
 - Si une erreur se produit lors de l’opération de vidage, la commande supprime le fichier de vidage pour préserver l’espace disque. Consultez les journaux pour plus de détails (`var/log/cloud.log`).
 - Pour les environnements de production Pro, cette commande n’effectue le vidage qu’à partir de _un_ des trois nœuds à haute disponibilité, de sorte que les données de production écrites sur un autre nœud au cours du vidage peuvent ne pas être copiées. La commande génère un fichier `var/dbdump.lock` pour empêcher l’exécution de la commande sur plusieurs nœuds.
-- Pour une sauvegarde de tous les services d’environnement, Adobe recommande de créer une [&#x200B; sauvegarde &#x200B;](snapshots.md).
+- Pour une sauvegarde de tous les services d’environnement, Adobe recommande de créer une [ sauvegarde ](snapshots.md).
 
 Vous pouvez choisir de sauvegarder plusieurs bases de données en ajoutant les noms de base de données à la commande . L&#39;exemple suivant sauvegarde deux bases de données : `main` et `sales` :
 

@@ -2,11 +2,16 @@
 title: Composants cloud pour Commerce
 description: Consultez la liste des dernières améliorations apportées au package Composants cloud .
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-08-07T00:00:00Z
+last-substantial-update: 2025-08-07T00:00:00.000Z
 exl-id: 34aec593-e2ea-4060-a6b9-6f4cb95a11c0
-source-git-commit: d31037e9afa4223165b208d5eb7714103a1d3e87
+TQID: https://experienceleague.adobe.com/8vlWv-N4EaBbzemw60LYmE3MuVpFyKn4b1ZU081WriU
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: 740
 ht-degree: 0%
 
 ---
@@ -73,7 +78,7 @@ Date de publication : 10 mars 2023
 
 Date de publication : 13 septembre 2022
 
-- ![Icône de correction](../../assets/fix.svg) **Erreurs lors du préchauffage**—Correction d’un problème qui tentait d’effectuer un [préchauffage](../environment/variables-post-deploy.md#warm_up_pages) lorsque la visibilité de la page était définie sur [**Non visible individuellement**](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure) dans l’administration, ce qui entraînait des erreurs `ERROR: Warming up failed: <link to page>` dans le journal de déploiement.<!-- MCLOUD-9134 -->
+- ![Icône de correction](../../assets/fix.svg) **Erreurs lors du préchauffage**—Correction d’un problème qui tentait d’effectuer un [préchauffage](../environment/variables-post-deploy.md#warm_up_pages) lorsque la visibilité de la page était définie sur [**Non visible individuellement**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure) dans l’administration, ce qui entraînait des erreurs `ERROR: Warming up failed: <link to page>` dans le journal de déploiement.<!-- MCLOUD-9134 -->
 
 ## v1.0.11
 

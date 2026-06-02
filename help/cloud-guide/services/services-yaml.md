@@ -3,9 +3,14 @@ title: Configuration des services
 description: Découvrez comment configurer les services utilisés par Adobe Commerce sur les infrastructures cloud.
 feature: Cloud, Configuration, Services
 exl-id: ddf44b7c-e4ae-48f0-97a9-a219e6012492
-source-git-commit: 4ea85b008e2ea9d1c9ab623c413ff9c3c3aaffd2
+TQID: https://experienceleague.adobe.com/qvCjqNc8E9QGme-zM42vMg-kb1WjwTlWUqjbm-NI2bg
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: 1136
 ht-degree: 0%
 
 ---
@@ -39,7 +44,7 @@ L’infrastructure cloud prend en charge et déploie les services suivants :
 - [OpenSearch](opensearch.md)
 
 >[!NOTE]
->Vous devez [mettre à niveau RabbitMQ de manière séquentielle entre les versions disponibles](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service) par exemple, vous ne pouvez pas effectuer directement une mise à niveau de la version 3.9 vers la version 4.1
+>Vous devez [mettre à niveau RabbitMQ de manière séquentielle entre les versions disponibles](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service) par exemple, vous ne pouvez pas effectuer directement une mise à niveau de la version 3.9 vers la version 4.1
 >
 >Après la mise à niveau vers une nouvelle version de RabbitMQ, déclenchez un déploiement complet pour vous assurer que vos files d’attente de messages personnalisées sont recréées dans RabbitMQ.
 
@@ -181,7 +186,7 @@ Vous pouvez récupérer les données de configuration pour toutes les relations 
 
 ## Versions des services
 
-La prise en charge des versions de service et de la compatibilité pour Adobe Commerce sur l’infrastructure cloud est déterminée par les versions déployées et testées sur l’infrastructure cloud et diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Consultez [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) dans le guide _Installation_ pour obtenir une liste des dépendances logicielles tierces qu’Adobe a testées avec des versions spécifiques d’Adobe Commerce et de Magento Open Source.
+La prise en charge des versions de service et de la compatibilité pour Adobe Commerce sur l’infrastructure cloud est déterminée par les versions déployées et testées sur l’infrastructure cloud et diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Consultez [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) dans le guide _Installation_ pour obtenir une liste des dépendances logicielles tierces qu’Adobe a testées avec des versions spécifiques d’Adobe Commerce et de Magento Open Source.
 
 ### Vérifications de fin de vie du logiciel
 

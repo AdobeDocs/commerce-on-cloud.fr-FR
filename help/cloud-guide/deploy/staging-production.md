@@ -3,9 +3,15 @@ title: Déploiement dans les environnements d’évaluation et de production
 description: Découvrez comment déployer votre code d’infrastructure cloud Adobe Commerce sur les environnements d’évaluation et de production pour des tests supplémentaires.
 feature: Cloud, Console, Deploy, SCD, Storage
 exl-id: 1cfeb472-c6ec-44ff-9b32-516ffa1b30d2
-source-git-commit: fe634412c6de8325faa36c07e9769cde0eb76c48
+TQID: https://experienceleague.adobe.com/SJZ2BuPEe6QsgkPyODiZx6118qd6vxh72r3nVuPrLnM
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: b01a71b7-d17a-42b2-a9ac-af4b8d9d2ef5
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: 1374
 ht-degree: 0%
 
 ---
@@ -18,7 +24,7 @@ Lorsque vous êtes prêt à déployer votre magasin, vous devez terminer le dép
 
 >[!TIP]
 >
->Adobe recommande de créer une [&#x200B; sauvegarde &#x200B;](../storage/snapshots.md) l’environnement avant les déploiements.
+>Adobe recommande de créer une [ sauvegarde ](../storage/snapshots.md) l’environnement avant les déploiements.
 
 En outre, vous pouvez activer le [suivi des déploiements avec New Relic](../monitor/track-deployments.md) pour surveiller les événements de déploiement et vous aider à analyser les performances entre les déploiements.
 
@@ -140,7 +146,7 @@ L’interface de ligne de commande Cloud fournit des commandes pour déployer le
 
 ## Migration de fichiers statiques
 
-Les [fichiers statiques](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/glossary) sont stockés dans `mounts`. Il existe deux méthodes pour migrer des fichiers d’un emplacement de montage source, tel que votre environnement local, vers un emplacement de montage de destination. Les deux méthodes utilisent l’utilitaire `rsync`, mais Adobe recommande d’utiliser l’interface de ligne de commande `magento-cloud` pour déplacer les fichiers entre l’environnement local et l’environnement distant. Adobe recommande également d’utiliser la méthode `rsync` lors du déplacement de fichiers d’une source distante vers un autre emplacement distant.
+Les [fichiers statiques](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) sont stockés dans `mounts`. Il existe deux méthodes pour migrer des fichiers d’un emplacement de montage source, tel que votre environnement local, vers un emplacement de montage de destination. Les deux méthodes utilisent l’utilitaire `rsync`, mais Adobe recommande d’utiliser l’interface de ligne de commande `magento-cloud` pour déplacer les fichiers entre l’environnement local et l’environnement distant. Adobe recommande également d’utiliser la méthode `rsync` lors du déplacement de fichiers d’une source distante vers un autre emplacement distant.
 
 ### Migration de fichiers à l’aide de l’interface de ligne de commande
 

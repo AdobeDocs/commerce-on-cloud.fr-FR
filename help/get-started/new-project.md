@@ -4,9 +4,14 @@ description: Découvrez comment préparer un conseiller technique client Adobe �
 recommendations: noDisplay, catalog
 role: Admin
 exl-id: 77e8c9fb-8c4a-4c98-adbc-e57871c5bdbc
-source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
+TQID: https://experienceleague.adobe.com/GzCPqYxn0-ACS34UfvHypqv6BveTRpbLJNN2jNmCL-E
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: 774
 ht-degree: 0%
 
 ---
@@ -32,7 +37,7 @@ Exemples pour les domaines de production et d’évaluation :
 
 Voir [Configuration de plusieurs sites web ou magasins](../cloud-guide/store/multiple-sites.md) dans le guide _Commerce sur les infrastructures cloud_ pour obtenir des conseils supplémentaires sur les domaines multiples ou uniques.
 
-Voir [Comptes Fastly multiples et domaines attribués](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/fastly#multiple-fastly-accounts-and-assigned-domains){target="_blank"} si vous disposez d’un compte Fastly existant qui lie les mêmes apex et sous-domaines utilisés sur votre site Adobe Commerce.
+Voir [Comptes Fastly multiples et domaines attribués](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly#multiple-fastly-accounts-and-assigned-domains){target="_blank"} si vous disposez d’un compte Fastly existant qui lie les mêmes apex et sous-domaines utilisés sur votre site Adobe Commerce.
 
 ## Domaine d’e-mail transactionnel
 

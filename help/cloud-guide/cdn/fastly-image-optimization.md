@@ -2,9 +2,15 @@
 title: Optimisation rapide des images
 description: Découvrez comment optimiser la diffusion d’images et simplifier la gestion des images pour le site Adobe Commerce en activant et en configurant l’optimisation rapide des images.
 feature: Cloud, Configuration, Media
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 3457ebb0-dbb4-4cb0-b6ab-837b15dce03e
+TQID: https://experienceleague.adobe.com/n3BJ-fU6SwFrRJGvqpF07cZ1XVTDkXqLRIRv46MQotI
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: 1211
 ht-degree: 0%
 
 ---
@@ -50,7 +56,7 @@ Activez l’optimisation des images Fastly IO (Fastly IO) à partir du panneau d
 
 ## Configuration des E/S Fastly
 
-Vérifiez et mettez à jour les paramètres de configuration d’E/S par défaut pour l’optimisation des images si nécessaire. Par exemple, vous pouvez modifier les niveaux de qualité du WebP et du JPEG pour les formats avec perte, ou modifier le format de diffusion des images du JPEG en _Progressif_ ou _Ligne de base_. En outre, vous pouvez utiliser Fastly IO pour des fonctionnalités d’optimisation d’image plus granulaires, telles que :
+Vérifiez et mettez à jour les paramètres de configuration d’E/S par défaut pour l’optimisation des images si nécessaire. Par exemple, vous pouvez modifier les niveaux de qualité WebP et JPEG pour les formats avec perte ou modifier le format de diffusion des images JPEG en _Progressif_ ou _Ligne de base_. En outre, vous pouvez utiliser Fastly IO pour des fonctionnalités d’optimisation d’image plus granulaires, telles que :
 
 - Forcer la conversion avec perte
 - Optimisation des images profondes
@@ -66,19 +72,19 @@ Vérifiez et mettez à jour les paramètres de configuration d’E/S par défaut
 
    ![Revoir la configuration d’E/S Fastly](../../assets/cdn/fastly-io-config-options.png)
 
-   - **Auto WebP ?** : conservez le paramètre par défaut (`Yes`) pour convertir les images au format WebP dans les navigateurs qui le prennent en charge. Si vous définissez le paramètre sur **Non**, Fastly utilise le type de fichier image au lieu de convertir l’image au format WebP.
+   - **Auto WebP?** : laissez le paramètre par défaut (`Yes`) pour convertir les images au format WebP dans les navigateurs qui le prennent en charge. Si vous définissez le paramètre sur **Non**, Fastly utilise le type de fichier image au lieu de convertir l’image au format WebP.
 
    - **Qualité WebP par défaut (avec perte)**—conservez le paramètre par défaut (`85`) ou tapez le niveau de compression des images avec perte au format fichier. Vous pouvez indiquer tout nombre entier compris entre 1 et 100.
 
-   - **Contrôles de format de JPEG par défaut** — conservez le paramètre par défaut (`Auto`) ou sélectionnez le type de JPEG à utiliser lors de la diffusion d&#39;une image. Si la valeur est définie sur _Auto_, Fastly diffuse des images dont le type de sortie correspond au type d’entrée. Sélectionnez _Ligne de base_ pour afficher les images ligne par ligne, en commençant par le coin supérieur gauche et en descendant vers le coin inférieur droit. Sélectionnez _Progressif_ pour afficher une image floue qui devient claire au chargement.
+   - **Contrôles de format JPEG par défaut** — conservez le paramètre par défaut (`Auto`) ou sélectionnez le type de JPEG à utiliser lors de la diffusion d&#39;une image. Si la valeur est définie sur _Auto_, Fastly diffuse des images dont le type de sortie correspond au type d’entrée. Sélectionnez _Ligne de base_ pour afficher les images ligne par ligne, en commençant par le coin supérieur gauche et en descendant vers le coin inférieur droit. Sélectionnez _Progressif_ pour afficher une image floue qui devient claire au chargement.
 
-   - **Qualité du JPEG par défaut** : conservez le paramètre par défaut (`85`) ou saisissez le niveau de compression pour la qualité des formats de fichiers avec perte. Spécifiez un nombre entier compris entre 1 et 100.
+   - **Qualité JPEG par défaut** : conservez le paramètre par défaut (`85`) ou saisissez le niveau de compression pour la qualité des formats de fichiers avec perte. Spécifiez un nombre entier compris entre 1 et 100.
 
-   - **Autoriser la mise à l’échelle ?** : laissez le paramètre par défaut (`No`) ou sélectionnez `Yes` pour renvoyer des images plus grandes que le fichier source d&#39;origine afin qu&#39;elles puissent s&#39;adapter aux dimensions demandées.
+   - **Autoriser la mise à l’échelle ?** : laissez le paramètre par défaut (`No`) ou sélectionnez `Yes` pour renvoyer des images plus grandes que le fichier source d’origine afin qu’elles puissent s’adapter aux dimensions demandées.
 
    - **Redimensionner le filtre** : conservez le paramètre par défaut (`Lancsoz3`) ou sélectionnez une autre option. Ce paramètre spécifie le filtre utilisé pour diffuser une image redimensionnée. Selon le filtre sélectionné, l’image redimensionnée peut avoir un nombre de pixels plus ou moins élevé.
 
-      - `Lanczos3` (par défaut) : fournit une image de la meilleure qualité. Il augmente la capacité à détecter les contours et les caractéristiques linéaires dans une image et utilise le rééchantillonnage _[!DNL sinc]_&#x200B;pour fournir la meilleure reconstruction possible.
+      - `Lanczos3` (par défaut) : fournit une image de la meilleure qualité. Il augmente la capacité à détecter les contours et les caractéristiques linéaires dans une image et utilise le rééchantillonnage _[!DNL sinc]_pour fournir la meilleure reconstruction possible.
       - `Lanczos2` : utilise le même filtre que `Lancsoz3`, mais avec une approximation moins précise de la fonction de rééchantillonnage _[!DNL sinc]_.
       - `Bicubic` : a un effet d&#39;accentuation naturel lors de la réduction de la taille d&#39;une image.
       - `Bilinear` : produit un effet de lissage naturel lorsque vous agrandissez une image.
@@ -110,7 +116,7 @@ Par exemple, en utilisant le format JPEG ou WEBp au lieu du format PNG, la taill
 
 Selon le niveau de qualité sélectionné pour l’optimisation des images, vous pouvez percevoir des différences visuelles dans les images. Par exemple, les canaux/transparences Alpha sont supprimés et remplacés par un arrière-plan blanc, sauf si vous utilisez l’optimisation d’image profonde qui utilise la couleur d’arrière-plan de votre thème.
 
-Si vous désactivez la conversion avec perte (`WebP Auto? = No`), Fastly IO ne modifie les images du JPEG qu’au format WEBP pour les navigateurs compatibles. Aucun autre type d’image n’est modifié. Par exemple, si l’image d’origine est au format PNG, la sortie du service Fastly IO est au format PNG.
+Si vous désactivez la conversion avec perte (`WebP Auto? = No`), Fastly IO ne modifie les images JPEG qu’au format WEBP pour les navigateurs compatibles. Aucun autre type d’image n’est modifié. Par exemple, si l’image d’origine est au format PNG, la sortie du service Fastly IO est au format PNG.
 
 ### Optimisation des images profondes
 

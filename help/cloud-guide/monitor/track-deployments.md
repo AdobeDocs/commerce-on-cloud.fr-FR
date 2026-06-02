@@ -3,11 +3,16 @@ title: Suivi des déploiements
 description: Découvrez comment configurer New Relic pour effectuer le suivi des déploiements dans votre projet d’infrastructure cloud Adobe Commerce et analyser les modifications de performances.
 feature: Cloud, Deploy, Observability
 topic: Performance
-last-substantial-update: 2023-10-12T00:00:00Z
+last-substantial-update: 2023-10-12T00:00:00.000Z
 exl-id: 3344314e-bed5-4b98-a2a1-a3a97f61ac85
-source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
+TQID: https://experienceleague.adobe.com/-zFiZWxwqEGvapQNrAYL6qgdqW6bzHDw1a1xoBVyJcE
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: 324
 ht-degree: 0%
 
 ---
@@ -220,10 +225,10 @@ Suivez les événements de déploiement de votre projet Commerce dans New Relic 
    {"data":{"changeTrackingCreateDeployment":{"deploymentId":"some-deployment-id","entityGuid":"SomeGUIDhere"}}}
    ```
 
-1. Connectez-vous à votre compte [&#128279;](https://login.newrelic.com/login).
+1. Connectez-vous à votre compte [](https://login.newrelic.com/login).
 
 1. Dans le menu de navigation de l’Explorateur, cliquez sur **[!UICONTROL APM & Services]**. Sélectionnez le [!UICONTROL Name] et le [!UICONTROL Account] de votre environnement.
 
 1. Sous _Événements_, cliquez sur **[!UICONTROL Change tracking]**.
 
-   ![&#x200B; Déploiements &#x200B;](../../assets/new-relic/deployments.png)
+   ![ Déploiements ](../../assets/new-relic/deployments.png)

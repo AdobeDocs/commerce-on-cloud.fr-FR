@@ -3,9 +3,14 @@ title: Gestion de l’espace disque
 description: Découvrez comment gérer l’espace disque à l’aide de l’interface de ligne de commande.
 feature: Cloud, Storage
 exl-id: 1d13dc4e-56eb-4153-a8b1-48d2263ebc4c
-source-git-commit: 45d5a54bfd02fe9e61ca92789689dabf634d4bbe
+TQID: https://experienceleague.adobe.com/645o-d3ZvMtaYOwy0IKwAjSxUyUgkrI36OGLWtZR--g
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: 801
 ht-degree: 0%
 
 ---
@@ -132,7 +137,7 @@ Deux [fichiers de configuration](../environment/overview.md) contrôlent l’all
 
 >[!IMPORTANT]
 >
->- Pour les environnements de production et d’évaluation Pro, vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour modifier l’allocation de l’espace disque. Une augmentation de la taille des environnements de production et d&#39;évaluation Pro ne peut se produire qu&#39;à certains intervalles. Par conséquent, en fonction de l&#39;utilisation actuelle de votre espace disque, le support peut recommander d&#39;augmenter l&#39;allocation d&#39;espace disque d&#39;un minimum de 10 Go. Une fois alloué, l’augmentation du stockage pour l’évaluation et la production Pro ne peut pas être rétablie. Le stockage ne peut pas être réaffecté ou redistribué entre les ressources. Pour ajouter plus d’espace de stockage de fichiers, réduisez l’espace disque alloué à MySQL.
+>- Pour les environnements de production et d’évaluation Pro, vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour modifier l’allocation de l’espace disque. Une augmentation de la taille des environnements de production et d&#39;évaluation Pro ne peut se produire qu&#39;à certains intervalles. Par conséquent, en fonction de l&#39;utilisation actuelle de votre espace disque, le support peut recommander d&#39;augmenter l&#39;allocation d&#39;espace disque d&#39;un minimum de 10 Go. Une fois alloué, l’augmentation du stockage pour l’évaluation et la production Pro ne peut pas être rétablie. Le stockage ne peut pas être réaffecté ou redistribué entre les ressources. Pour ajouter plus d’espace de stockage de fichiers, réduisez l’espace disque alloué à MySQL.
 >- Les environnements de production et d’évaluation Pro hébergés sur AWS disposent d’un [temps de recharge obligatoire de 6 heures](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVolume.html) qui s’applique aux augmentations de l’espace disque. Une fois que l’espace disque a été augmenté sur un montage, vous devez attendre 6 heures avant de pouvoir à nouveau augmenter l’espace disque sur ce montage.
 
 ### Espace disque de l’application
@@ -189,7 +194,7 @@ Le fichier `.magento/services.yaml` contrôle l’espace disque disponible pour 
 
 ## Surveiller l’espace disque
 
-Sur les environnements de production Pro, vous pouvez surveiller l’espace disque et d’autres indicateurs de performances à l’aide de la politique d’alerte Alertes gérées pour Adobe Commerce pour New Relic. Pour plus d’informations, consultez [Surveillance des performances avec des alertes gérées](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Pour plus d’informations, voir [Bonnes pratiques pour résoudre les problèmes de performances des bases de données](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=fr).
+Sur les environnements de production Pro, vous pouvez surveiller l’espace disque et d’autres indicateurs de performances à l’aide de la politique d’alerte Alertes gérées pour Adobe Commerce pour New Relic. Pour plus d’informations, consultez [Surveillance des performances avec des alertes gérées](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Pour plus d’informations, voir [Bonnes pratiques pour résoudre les problèmes de performances des bases de données](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html).
 
 ## Pas d’espace restant
 

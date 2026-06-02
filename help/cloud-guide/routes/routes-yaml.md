@@ -2,9 +2,14 @@
 title: Configuration des itinéraires
 description: Découvrez comment définir les itinéraires des requêtes HTTPS entrantes pour Adobe Commerce sur les environnements d’infrastructure cloud.
 feature: Cloud, Configuration, Routes
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: f0d6eefa-1122-4753-8a7c-1fa0c77590f0
+TQID: https://experienceleague.adobe.com/4EUSHNE6YAfXk4e7ooGRjZiICgHueLKrEA-tDskIPl0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: 910
 ht-degree: 0%
 
 ---
@@ -100,7 +105,7 @@ https://refactorcss-oy3m2pq-mswy7hzcuhcjw.us.magentosite.cloud/
 
 >[!NOTE]
 >
->Si votre projet cloud prend en charge plusieurs magasins, suivez les instructions de configuration d’itinéraire pour [&#x200B; plusieurs sites web ou magasins &#x200B;](../store/multiple-sites.md).
+>Si votre projet cloud prend en charge plusieurs magasins, suivez les instructions de configuration d’itinéraire pour [ plusieurs sites web ou magasins ](../store/multiple-sites.md).
 
 ### Barre oblique de fin
 
@@ -167,7 +172,7 @@ Diffuser toutes les pages via TLS. Pour cette configuration, vous devez configur
       upstream: "mymagento:http"
   ```
 
-- Pour les environnements d’évaluation et de production, activez l’option [&#x200B; Forcer TLS sur Fastly &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls.html?lang=fr) à partir de l’interface utilisateur d’administration. Lorsque vous utilisez cette option, Fastly gère la redirection vers HTTPS, de sorte que vous n’ayez pas à mettre à jour la configuration `routes.yaml`.
+- Pour les environnements d’évaluation et de production, activez l’option [ Forcer TLS sur Fastly ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls.html) à partir de l’interface utilisateur d’administration. Lorsque vous utilisez cette option, Fastly gère la redirection vers HTTPS, de sorte que vous n’ayez pas à mettre à jour la configuration `routes.yaml`.
 
 ## Options d’itinéraire
 

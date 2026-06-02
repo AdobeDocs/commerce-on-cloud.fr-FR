@@ -4,9 +4,13 @@ description: Découvrez comment configurer des gestionnaires de journaux pour Ad
 feature: Cloud, Logs, Configuration
 role: Developer
 exl-id: 0d7fb653-468b-432c-9830-582b0fed8512
-source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
+TQID: https://experienceleague.adobe.com/4dowk2oMMCROVmEc8muHE7CzaZ-T3SaQi4sANVnMeWQ
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: 235
 ht-degree: 0%
 
 ---

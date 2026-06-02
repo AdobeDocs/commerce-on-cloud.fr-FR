@@ -2,13 +2,18 @@
 title: Commerce sur les infrastructures cloud
 description: Découvrez comment créer, déployer et gérer Commerce sur les infrastructures cloud.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
-source-git-commit: 37505db0488204c40ca37356c4d496bba73c537f
+TQID: https://experienceleague.adobe.com/-sgz85xapPKNipyFVB4yMrLilEku3ff5IJg3OddymsA
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: efe0f95c16d9aab9af6a9c263034b08dce4d7c93
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: 323
 ht-degree: 3%
 
 ---
-
 
 # Commerce sur les infrastructures cloud
 
@@ -23,7 +28,7 @@ Adobe Commerce sur les infrastructures cloud fournit une plateforme d’héberge
 
 >[!NOTE]
 >
->Pour plus d’informations sur la sécurité, consultez la [liste de contrôle de lancement de la sécurité](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
+>Pour plus d’informations sur la sécurité, consultez la [liste de contrôle de lancement de la sécurité](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
 
 Affichez la [pile technologique](architecture/tech-stack.md) en détail ou découvrez en détail les fonctionnalités spécifiques et les produits pris en charge dans [Architecture cloud pour Commerce](architecture/cloud-architecture.md).
 
@@ -58,9 +63,9 @@ Les sections suivantes fournissent des détails sur les différentes régions d�
 
 Le guide Commerce sur les infrastructures cloud suppose que vous avez une connaissance pratique et une compréhension de l’application Adobe Commerce. Consultez les guides de l’utilisateur et du développeur [!DNL Commerce] ci-dessous :
 
-- [Documentation pour les développeurs Adobe Commerce &#x200B;](https://developer.adobe.com/commerce/docs/) (site Adobe Developer) : développez, personnalisez, intégrez, étendez et utilisez des fonctionnalités avancées
+- [Documentation pour les développeurs Adobe Commerce ](https://developer.adobe.com/commerce/docs/) (site Adobe Developer) : développez, personnalisez, intégrez, étendez et utilisez des fonctionnalités avancées
 
-- [Documentation Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce.html?lang=fr) (Adobe Experience League) : planification, implémentation, exploitation, mise à niveau et maintenance de vos projets [!DNL Commerce]
+- [Documentation Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce.html) (Adobe Experience League) : planification, implémentation, exploitation, mise à niveau et maintenance de vos projets [!DNL Commerce]
 
 {{$include /help/_includes/templated/whats-new.md}}
 

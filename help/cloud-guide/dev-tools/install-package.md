@@ -3,9 +3,13 @@ title: Projet de mise à niveau pour l'utilisation des outils de la CEE
 description: Découvrez comment mettre à niveau votre projet Adobe Commerce sur l'infrastructure cloud pour utiliser le package ECE-Tools et tirer parti des derniers correctifs et fonctionnalités.
 feature: Cloud, Install
 exl-id: 164c47e4-c871-41a3-b268-581d426e7a7f
-source-git-commit: 1cea1cdebf3aba2a1b43f305a61ca6b55e3b9d08
+TQID: https://experienceleague.adobe.com/CH-wgIk-5aM6qIO7tdHI2jHlx1YgaEbLvfp4cEpSqTc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: 376
 ht-degree: 0%
 
 ---
@@ -42,7 +46,7 @@ Chaque version d’Adobe Commerce nécessite une contrainte différente basée s
 
 Si vous souhaitez installer Adobe Commerce `2.3.5-p2`, définissez `current_version` sur `2.3.5` et le `next_version` sur `2.3.6`. La contrainte `">=2.3.5 <2.3.6"` installe le dernier package disponible pour la version 2.3.5.
 
-Vous pouvez toujours trouver la dernière contrainte de métapaquet dans le modèle de [`magento-cloud`](https://github.com/magento/magento-cloud/blob/master/composer.json).
+Vous pouvez toujours trouver la dernière contrainte de métapaquet dans le modèle de ](https://github.com/magento/magento-cloud/blob/master/composer.json).[`magento-cloud`
 
 L’exemple suivant place une contrainte pour le métapaquet Adobe Commerce sur l’infrastructure cloud sur toute version supérieure ou égale à la version actuelle 2.4.8 et inférieure à la version suivante 2.4.9 :
 

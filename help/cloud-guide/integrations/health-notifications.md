@@ -3,9 +3,12 @@ title: Notifications d’intégrité
 description: Découvrez comment configurer les notifications Slack, e-mail et PagerDuty pour l’utilisation de l’espace disque sur votre projet d’infrastructure cloud Adobe Commerce.
 feature: Cloud, Observability, Integration
 exl-id: 5a7f37e9-e8f9-4b6b-b628-60dcaa60cc64
-source-git-commit: c3c708656e3d79c0893d1c02e60dcdf2ad8d7c7c
+TQID: https://experienceleague.adobe.com/Tt4zWTqehO4SLsimUv3IE5VvjJ1OwAA27tT9Mot24FU
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: 386
 ht-degree: 0%
 
 ---
@@ -32,7 +35,7 @@ magento-cloud integration:add --type health.email --from-address you@example.com
 
 ## Notifications du canal Slack
 
-Slack est un service externe qui utilise des applications interactives appelées robots pour publier des messages dans un salon de chat. Avant de pouvoir recevoir des notifications d’intégrité dans Slack, vous devez créer un [utilisateur de robot](https://api.slack.com/bot-users) personnalisé pour votre groupe Slack. Après avoir configuré l’utilisateur de robot pour votre ou vos canaux, enregistrez le [&#x200B; jeton de robot &#x200B;](https://api.slack.com/docs/token-types#bot) fourni par Slack pour enregistrer votre intégration. L’exemple suivant enregistre les notifications d’intégrité dans un canal Slack :
+Slack est un service externe qui utilise des applications interactives appelées robots pour publier des messages dans un salon de chat. Avant de pouvoir recevoir des notifications d’intégrité dans Slack, vous devez créer un [utilisateur de robot](https://api.slack.com/bot-users) personnalisé pour votre groupe Slack. Après avoir configuré l’utilisateur de robot pour votre ou vos canaux, enregistrez le [ jeton de robot ](https://api.slack.com/docs/token-types#bot) fourni par Slack pour enregistrer votre intégration. L’exemple suivant enregistre les notifications d’intégrité dans un canal Slack :
 
 ```bash
 magento-cloud integration:add --type health.slack --token SLACK_BOT_TOKEN --channel '#slack-channel-name'

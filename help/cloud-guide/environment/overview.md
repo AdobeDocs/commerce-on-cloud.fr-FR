@@ -2,9 +2,14 @@
 title: Présentation des fichiers de configuration
 description: Découvrez comment configurer l’environnement de l’infrastructure cloud pour prendre en charge le déploiement et la gestion de votre boutique Adobe Commerce personnalisée.
 feature: Cloud, Configuration, Services, Iaas, Paas
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 305380b0-1920-4037-a1db-80e72c6af333
+TQID: https://experienceleague.adobe.com/mFjzrTN6R7LC3e9ADnzzulcWAwun4k-g3aCjc9Bo3gQ
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: 280
 ht-degree: 0%
 
 ---
@@ -17,17 +22,17 @@ Vous pouvez configurer les paramètres d’application, les itinéraires, les ac
 
 | Configuration | Nom de fichier | Description |
 | ------------- | -------- | ----------- |
-| [&#x200B; Application &#x200B;](../application/configure-app-yaml.md) | `.magento.app.yaml` | Définit comment créer et déployer Adobe Commerce, y compris les services, les hooks et les tâches cron. |
-| [&#x200B; Environnement &#x200B;](configure-env-yaml.md) | `.magento.env.yaml` | Centralise la gestion des actions de génération et de déploiement dans tous vos environnements, y compris l’évaluation et la production professionnelles, à l’aide de variables d’environnement. |
+| [ Application ](../application/configure-app-yaml.md) | `.magento.app.yaml` | Définit comment créer et déployer Adobe Commerce, y compris les services, les hooks et les tâches cron. |
+| [ Environnement ](configure-env-yaml.md) | `.magento.env.yaml` | Centralise la gestion des actions de génération et de déploiement dans tous vos environnements, y compris l’évaluation et la production professionnelles, à l’aide de variables d’environnement. |
 | [Itinéraires](../routes/routes-yaml.md) | `.magento/routes.yaml` | Configurez la mise en cache, les redirections et les inclusions côté serveur. |
-| [Service &#x200B;](../services/services-yaml.md) | `.magento/services.yaml` | Définit les services utilisés par Adobe Commerce par nom et par version. Par exemple, ce fichier peut inclure des versions de MariaDB, des extensions PHP, Redis, RabbitMQ et Elasticsearch ou OpenSearch. Vous devez ouvrir un ticket d’assistance pour pousser ces modifications vers les environnements d’évaluation et de production ProPlan. |
+| [Service ](../services/services-yaml.md) | `.magento/services.yaml` | Définit les services utilisés par Adobe Commerce par nom et par version. Par exemple, ce fichier peut inclure des versions de MariaDB, des extensions PHP, Redis, RabbitMQ et Elasticsearch ou OpenSearch. Vous devez ouvrir un ticket d’assistance pour pousser ces modifications vers les environnements d’évaluation et de production ProPlan. |
 | [Paramètres PHP](../application/php-settings.md#configure-php) | `php.ini` | Fichier facultatif qui peut être ajouté au projet. Les paramètres contenus dans ce fichier sont ajoutés à ceux gérés par l’infrastructure cloud. |
 
 {style="table-layout:auto"}
 
 ## Mises à jour de configuration des environnements Pro
 
-Pour les environnements d’évaluation et de production d’Adobe Commerce sur les infrastructures cloud Pro, vous pouvez mettre à jour de nombreuses options de configuration dans votre environnement de développement local et valider les modifications afin de les appliquer à ces environnements. Cependant, vous devez [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour mettre à jour les options de configuration suivantes :
+Pour les environnements d’évaluation et de production d’Adobe Commerce sur les infrastructures cloud Pro, vous pouvez mettre à jour de nombreuses options de configuration dans votre environnement de développement local et valider les modifications afin de les appliquer à ces environnements. Cependant, vous devez [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour mettre à jour les options de configuration suivantes :
 
 - Installez ou mettez à jour les services dans le fichier `.magento/services.yaml`.
 - Modifiez la configuration des propriétés `mounts` et `disk` dans le fichier `.magento.app.yaml`.

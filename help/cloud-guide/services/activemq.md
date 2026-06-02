@@ -2,16 +2,22 @@
 title: Configuration du service ActiveMQ
 description: Découvrez comment activer le service ActiveMQ Artemis pour gérer les files d’attente de messages pour Adobe Commerce sur l’infrastructure cloud.
 feature: Cloud, Services
-source-git-commit: ef22de6873b49f0fb9adfa9fc343a8d738a543e9
+exl-id: 39eb03a7-3345-4db9-88fa-dd7c422228f9
+TQID: https://experienceleague.adobe.com/YYGonI3614QouFjVftfShC1Mq7IJB7YcrxynBt6AnuY
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: 631
 ht-degree: 0%
 
 ---
 
 # Configuration du service [!DNL ActiveMQ]
 
-Le [Message Queue Framework (MQF)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html?lang=fr) est un système d’Adobe Commerce qui permet à un [module](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/glossary#module) de publier des messages dans les files d’attente. Il définit également les consommateurs qui reçoivent les messages de manière asynchrone.
+Le [Message Queue Framework (MQF)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) est un système d’Adobe Commerce qui permet à un [module](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module) de publier des messages dans les files d’attente. Il définit également les consommateurs qui reçoivent les messages de manière asynchrone.
 
 Le MQF peut utiliser [ActiveMQ Artemis](https://activemq.apache.org/components/artemis/) comme courtier de messagerie, ce qui fournit une plateforme évolutive pour envoyer et recevoir des messages. Il comprend également un mécanisme de stockage des messages non diffusés. [!DNL ActiveMQ Artemis] prend en charge le protocole STOMP (Streaming Text Oriented Messaging Protocol) pour la messagerie.
 
@@ -174,4 +180,3 @@ Lorsqu’ActiveMQ Artemis est configuré en tant que service, Adobe Commerce con
 ```
 
 Si nécessaire, vous pouvez remplacer cette configuration à l’aide de la variable d’environnement [`QUEUE_CONFIGURATION`](../environment/variables-deploy.md#queue_configuration).
-

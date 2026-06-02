@@ -2,9 +2,14 @@
 title: Assistants intelligents
 description: Découvrez comment utiliser des Assistants intelligents pour évaluer si votre projet d’infrastructure cloud Adobe Commerce respecte les bonnes pratiques de déploiement.
 feature: Cloud, Build, Deploy, SCD
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: a9f042cd-861f-4b1c-b80f-2569f12bcde8
+TQID: https://experienceleague.adobe.com/hgBYQsTM3WkX2p9SJ4UeWM1IGRwiPOUTwWBEwSnPq5A
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: 326
 ht-degree: 0%
 
 ---
@@ -59,7 +64,7 @@ Ideal state is not configured
 
 En fonction de la sortie, vous devez apporter les corrections suivantes à votre configuration :
 
-1. Activez la variable de minimisation Ignorer l’HTML .
+1. Activez la variable de minimisation Ignorer HTML .
 
    > .magento.env.yaml
 

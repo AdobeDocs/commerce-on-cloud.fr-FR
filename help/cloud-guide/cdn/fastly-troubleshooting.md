@@ -3,9 +3,14 @@ title: Résolution rapide des problèmes
 description: Découvrez comment dépanner et gérer le module et les services Fastly CDN pour Adobe Commerce.
 feature: Cloud, Configuration, Cache, Services
 exl-id: 69954ef9-9ece-411e-934e-814a56542290
-source-git-commit: f496a4a96936558e6808b3ce74eac32dfdb9db19
+TQID: https://experienceleague.adobe.com/2TJ-5byRz5seZ1tpd4FXjZ6JfeaqtKs6ZQlv81Lkr7c
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: 1911
 ht-degree: 0%
 
 ---
@@ -14,7 +19,7 @@ ht-degree: 0%
 
 Utilisez les informations suivantes pour résoudre les problèmes et gérer le module de réseau CDN Fastly pour Magento 2 dans vos environnements de projet d’infrastructure cloud Adobe Commerce. Par exemple, vous pouvez examiner les valeurs d’en-tête de réponse et le comportement de mise en cache pour résoudre les problèmes de service et de performances Fastly.
 
-Dans les environnements de production et d’évaluation Pro, vous pouvez utiliser les [journaux &#x200B;](../monitor/log-management.md) pour afficher et analyser les données des journaux Fastly CDN et WAF afin de résoudre les erreurs et les problèmes de performances.
+Dans les environnements de production et d’évaluation Pro, vous pouvez utiliser les [journaux ](../monitor/log-management.md) pour afficher et analyser les données des journaux Fastly CDN et WAF afin de résoudre les erreurs et les problèmes de performances.
 
 >[!NOTE]
 >
@@ -166,7 +171,7 @@ Si les en-têtes n’ont pas les valeurs correctes, consultez les informations s
 
 ### Contournement du cache Fastly pour vérifier les sites Adobe Commerce
 
-Si le service Fastly renvoie des en-têtes incorrects, vous pouvez créer un fragment de code VCL qui vous permet d’envoyer des requêtes qui contournent le cache Fastly. Voir [&#x200B; Contournement du cache Fastly &#x200B;](fastly-vcl-bypass-to-origin.md).
+Si le service Fastly renvoie des en-têtes incorrects, vous pouvez créer un fragment de code VCL qui vous permet d’envoyer des requêtes qui contournent le cache Fastly. Voir [ Contournement du cache Fastly ](fastly-vcl-bypass-to-origin.md).
 
 Après avoir ajouté le fragment de code VCL, utilisez les commandes cURL pour envoyer des requêtes au serveur d’origine à partir de l’adresse IP spécifiée. Vérifiez ensuite les réponses pour détecter les erreurs.
 
@@ -237,7 +242,7 @@ php bin/magento module:status Fastly_Cdn
 
 En fonction du statut renvoyé, utilisez les instructions suivantes pour mettre à jour la configuration Fastly .
 
-- `Module does not exist` : si le module n’existe pas [installer et configurer](https://github.com/fastly/fastly-magento2/blob/master/Documentation/INSTALLATION.md) le module Fastly CDN pour Magento 2 dans une branche d’intégration. Une fois l’installation terminée, activez et configurez le module . Voir [&#x200B; Configuration rapide &#x200B;](fastly-configuration.md).
+- `Module does not exist` : si le module n’existe pas [installer et configurer](https://github.com/fastly/fastly-magento2/blob/master/Documentation/INSTALLATION.md) le module Fastly CDN pour Magento 2 dans une branche d’intégration. Une fois l’installation terminée, activez et configurez le module . Voir [ Configuration rapide ](fastly-configuration.md).
 
 - `Module is disabled` : si le module Fastly est désactivé, mettez à jour la configuration de l’environnement sur une branche `integration` de votre environnement local pour l’activer. Ensuite, poussez les modifications vers les environnements d’évaluation et de production. Voir [Gestion des extensions](../store/extensions.md#install-an-extension).
 
@@ -259,7 +264,7 @@ Si l’en-tête `X-Cache` contient des `HIT` (`HIT, HIT` ou `HIT, MISS`), cela i
 
 Si l’en-tête `X-Cache` est `MISS, MISS` et ne contient pas de `HIT`, exécutez à nouveau la commande `curl` pour vous assurer que la page n’a pas été récemment purgée du cache.
 
-Si vous obtenez le même résultat, utilisez les commandes [`curl` et vérifiez &#x200B;](#check-live-site-through-fastly)en-têtes de réponse [&#128279;](#check-cache-hit-and-miss-response-headers) :
+Si vous obtenez le même résultat, utilisez les commandes [`curl` et vérifiez ](#check-live-site-through-fastly)en-têtes de réponse [](#check-cache-hit-and-miss-response-headers) :
 
 - `Pragma` est `cache`
 - `X-Magento-Tags` existe
@@ -285,7 +290,7 @@ Si le problème persiste, une autre extension réinitialise probablement ces en-
 
    - Activez une extension à la fois, enregistrez la configuration et videz le cache d’Adobe Commerce.
 
-   - Exécutez les commandes [`curl` pour vérifier &#x200B;](#check-live-site-through-fastly) en-têtes de réponse [&#128279;](#check-cache-hit-and-miss-response-headers).
+   - Exécutez les commandes [`curl` pour vérifier ](#check-live-site-through-fastly) en-têtes de réponse [](#check-cache-hit-and-miss-response-headers).
 
    Répétez ce processus pour chaque extension. Si les en-têtes de réponse Fastly ne s’affichent plus, vous avez identifié l’extension à l’origine des problèmes liés à Fastly.
 

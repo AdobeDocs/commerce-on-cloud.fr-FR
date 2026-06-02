@@ -3,9 +3,13 @@ title: Propriété web
 description: Consultez des exemples sur la façon de configurer la propriété web dans le fichier  [!DNL Commerce]  configuration de l’application .
 feature: Cloud, Configuration
 exl-id: 6ecf6fb5-57a8-435c-8de3-f66dc56837fe
-source-git-commit: 94a7748348ba590bb4fed740df658c5bac4c31e9
+TQID: https://experienceleague.adobe.com/IFmzGyuOpqIc9Fq4vLp1JEgrfSWORDtERWdisL4dyT8
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: 462
 ht-degree: 0%
 
 ---
@@ -43,7 +47,7 @@ La configuration par défaut permet ce qui suit :
 - À partir du chemin d’accès racine (`/`), seuls le web et les médias sont accessibles
 - À partir des chemins d’accès `~/pub/media` et `~/pub/static`, n’importe quel fichier est accessible
 
-L’exemple suivant illustre la configuration par défaut dans le fichier `.magento.app.yaml` pour un ensemble d’emplacements accessibles sur le web associés à une entrée dans la propriété [`mounts` &#x200B;](properties.md#mounts)
+L’exemple suivant illustre la configuration par défaut dans le fichier `.magento.app.yaml` pour un ensemble d’emplacements accessibles sur le web associés à une entrée dans la propriété [`mounts` ](properties.md#mounts)
 
 ```yaml
  # The configuration of app when it is exposed to the web.

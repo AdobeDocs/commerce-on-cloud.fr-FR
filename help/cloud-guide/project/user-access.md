@@ -3,12 +3,17 @@ title: Gérer l’accès utilisateur
 description: Découvrez comment gérer l’accès des utilisateurs et utilisatrices à Adobe Commerce dans les projets et environnements d’infrastructure cloud.
 role: Admin
 feature: Cloud, Roles/Permissions
-last-substantial-update: 2023-06-27T00:00:00Z
+last-substantial-update: 2023-06-27T00:00:00.000Z
 topic: Security
 exl-id: 953593de-f675-49fd-988f-f11306f67fbd
-source-git-commit: c972d9f2029499cf53edc334c1d9a40b155a991d
+TQID: https://experienceleague.adobe.com/hoRda1DXcWU5ZfsEnOf0JSe-JbCQy0GkXQ4Tw3HIU0g
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: 1518
 ht-degree: 0%
 
 ---
@@ -232,7 +237,7 @@ Les instructions d’installation de l’application d’authentification et d�
 
      >[!WARNING]
      >
-     >Si vous perdez l’accès à un compte avec TFA et que vous ne disposez pas de la liste des codes de récupération, vous devez contacter l’administrateur de votre projet ou [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour réinitialiser l’application TFA.
+     >Si vous perdez l’accès à un compte avec TFA et que vous ne disposez pas de la liste des codes de récupération, vous devez contacter l’administrateur de votre projet ou [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour réinitialiser l’application TFA.
 
 1. Une fois la configuration de l’AFE terminée, cliquez sur **Enregistrer** pour mettre à jour votre compte.
 
@@ -279,6 +284,6 @@ Dans les projets pour lesquels l’application MFA est activée, vous devez disp
 
 1. Cliquez sur **[!UICONTROL Create API token]** et saisissez un nom, par exemple, spécifiez un nom correspondant à l’utilisateur de la machine ou au processus automatisé qui utilise le jeton API.
 
-   ![&#x200B; Jetons API &#x200B;](../../assets/api-token-name.png)
+   ![ Jetons API ](../../assets/api-token-name.png)
 
 1. Cliquez sur **[!UICONTROL Create API token]**.

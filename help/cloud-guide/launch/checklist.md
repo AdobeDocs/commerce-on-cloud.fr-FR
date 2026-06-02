@@ -2,9 +2,14 @@
 title: Liste de contrôle de Launch
 description: Consultez les éléments de la liste de contrôle pour le lancement du site.
 exl-id: efc97d4a-a9f3-49fa-b977-061282765e90
-source-git-commit: ca2d94364787695398b2b8af559733fe52ec2949
+TQID: https://experienceleague.adobe.com/-27J2-qKGpa71AJliIomIC7heTbTelOnFf960NODt0E
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: 1155
 ht-degree: 0%
 
 ---
@@ -35,7 +40,7 @@ Lorsque vous êtes prêt à lancer votre site, vous devez mettre à jour la conf
 
   En règle générale, vous travaillez avec votre conseiller technique client pour ajouter tous les domaines et sous-domaines de niveau supérieur requis pour vos magasins. Pour ajouter ou modifier les domaines de votre environnement de production, [Envoyez un ticket d’assistance Adobe Commerce](https://support.magento.com/hc/en-us/articles/360019088251). Attendez la confirmation que la configuration de votre projet a été mise à jour.
 
-  Dans les projets de démarrage, vous devez ajouter les domaines à votre projet. Voir [&#x200B; Gestion des domaines &#x200B;](../cdn/fastly-custom-cache-configuration.md#manage-domains).
+  Dans les projets de démarrage, vous devez ajouter les domaines à votre projet. Voir [ Gestion des domaines ](../cdn/fastly-custom-cache-configuration.md#manage-domains).
 
 - Certificat SSL/TLS configuré pour vos environnements de production.
 
@@ -72,7 +77,7 @@ Lorsque vous êtes prêt à lancer votre site, vous devez mettre à jour la conf
 
 >[!IMPORTANT]
 >
->Les instructions DNS de [&#128279;](https://www.rfc-editor.org/rfc/rfc1912) (**section 2.4**) indiquent que :>_Un enregistrement CNAME n’est pas autorisé à coexister avec d’autres données. En d’autres termes, si suzy.podunk.xx est un alias de sue.podunk.xx, vous ne pouvez pas non plus avoir d’enregistrement MX pour suzy.podunk.edu, ou un enregistrement A, ou même un enregistrement TXT._
+>Les instructions DNS dans [](https://www.rfc-editor.org/rfc/rfc1912) (**section 2.4**) indiquent que :>_Un enregistrement CNAME n’est pas autorisé à coexister avec d’autres données. En d’autres termes, si suzy.podunk.xx est un alias de sue.podunk.xx, vous ne pouvez pas non plus avoir d’enregistrement MX pour suzy.podunk.edu, ou un enregistrement A, ou même un enregistrement TXT._
 >
 >Pour cette raison, les enregistrements DNS doivent être de type `CNAME` pour les sous-domaines et de type `A` pour les domaines apex (domaines racines). L’abandon de cette règle peut entraîner des perturbations de votre service de messagerie ou de la propagation DNS, car vous perdez la possibilité d’ajouter d’autres enregistrements, tels que MX ou NS. Certains fournisseurs DNS peuvent contourner ce problème en utilisant des personnalisations internes, mais le respect de la norme assure la stabilité et la flexibilité (comme le changement de fournisseur DNS).
 
@@ -90,7 +95,7 @@ Lorsque vous êtes prêt à lancer votre site, vous devez mettre à jour la conf
      php bin/magento setup:store-config:set --base-url="https://www.<domain-name>.com/"
      ```
 
-   **REMARQUE** : vous pouvez également mettre à jour l’URL de base à partir de l’Administration. Voir [URL des magasins](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html?lang=fr) dans le _Guide des magasins et de l’expérience d’achat Adobe Commerce_.
+   **REMARQUE** : vous pouvez également mettre à jour l’URL de base à partir de l’Administration. Voir [URL des magasins](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html) dans le _Guide des magasins et de l’expérience d’achat Adobe Commerce_.
 
 1. Patientez quelques minutes pour que le site se mette à jour.
 
@@ -104,7 +109,7 @@ Les modifications et vérifications recommandées sont les suivantes :
 
 - [Test des e-mails sortants terminé](../project/outgoing-emails.md)
 
-- [Configuration sécurisée des informations d’identification des administrateurs et de l’URL de l’administrateur de base](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-admin)
+- [Configuration sécurisée des informations d’identification des administrateurs et de l’URL de l’administrateur de base](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)
 
 - [Optimiser toutes les images pour le web](../cdn/fastly-image-optimization.md)
 
@@ -128,7 +133,7 @@ Vous pouvez également effectuer des tests à l’aide des options tierces suiva
 
 - [Jmeter](https://jmeter.apache.org/) : Excellent test de charge pour aider à évaluer les performances pour le trafic en pic, comme pour les ventes flash. Créez des tests personnalisés à exécuter sur votre site.
 
-- [&#128279;](https://support.newrelic.com/s/) (fourni) : permet de localiser les processus et les zones du site, ce qui ralentit les performances avec le temps passé par action suivi, comme la transmission de données, de requêtes, de Redis, etc.
+- [](https://support.newrelic.com/s/) (fourni) : permet de localiser les processus et les zones du site, ce qui ralentit les performances avec le temps passé par action suivi, comme la transmission de données, de requêtes, de Redis, etc.
 
 - [WebPageTest](https://www.webpagetest.org/) et [Pingdom](https://www.pingdom.com/) : analyse en temps réel du temps de chargement des pages de votre site avec différents emplacements d’origine. Pingdom peut coûter un supplément. WebPageTest est un outil gratuit.
 
@@ -136,9 +141,9 @@ Vous pouvez également effectuer des tests à l’aide des options tierces suiva
 
 - [Configuration de l’analyse de sécurité](overview.md#set-up-the-security-scan-tool)
 
-- [Configuration sécurisée pour l’utilisateur administrateur](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-admin)
+- [Configuration sécurisée pour l’utilisateur administrateur](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)
 
-- [Configuration sécurisée de l’URL d’administration](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url)
+- [Configuration sécurisée de l’URL d’administration](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url)
 
 - [Supprimez tous les utilisateurs qui ne participent plus au projet d’infrastructure cloud d’Adobe Commerce](../project/user-access.md)
 

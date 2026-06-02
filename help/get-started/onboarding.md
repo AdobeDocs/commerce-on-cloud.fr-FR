@@ -4,9 +4,13 @@ description: Accédez à votre compte cloud et configurez un projet d’infrastr
 role: Admin
 recommendations: noDisplay, catalog
 exl-id: 9b48212a-2560-4090-b483-a8b04471de95
-source-git-commit: db34528be490f92cc61c609ca143c01ef3284157
+TQID: https://experienceleague.adobe.com/y1WQfRLHOhgyZfCISQEsIRju7g79oq-ikJH1Tl7z420
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: 517
 ht-degree: 0%
 
 ---
@@ -21,7 +25,7 @@ Pour intégrer rapidement votre projet afin de pouvoir commencer à développer 
 
 ## S’inscrire à un compte Cloud
 
-Si vous ne disposez pas d’un compte Adobe Commerce sur l’infrastructure cloud, contactez [Ventes](https://business.adobe.com/fr/products/magento/get-demo.html). Lorsque vous vous inscrivez, Adobe crée votre compte et vous envoie un e-mail de bienvenue qui vous explique comment accéder à l’interface du projet. L’e-mail contient un lien afin que vous puissiez vous connecter à votre compte et terminer la configuration initiale du projet.
+Si vous ne disposez pas d’un compte Adobe Commerce sur l’infrastructure cloud, contactez [Ventes](https://business.adobe.com/products/magento/get-demo.html). Lorsque vous vous inscrivez, Adobe crée votre compte et vous envoie un e-mail de bienvenue qui vous explique comment accéder à l’interface du projet. L’e-mail contient un lien afin que vous puissiez vous connecter à votre compte et terminer la configuration initiale du projet.
 
 ## Accéder au projet et ajouter des utilisateurs
 
@@ -33,7 +37,7 @@ Vous pouvez uniquement ajouter des utilisateurs enregistrés à votre Adobe Comm
 
 ### Accès au compte partagé
 
-Le propriétaire de la licence peut configurer l’accès partagé pour le compte. L’accès partagé permet aux employés et aux fournisseurs de services de confiance d’utiliser le centre d’aide pour envoyer et suivre les tickets d’assistance liés à votre Adobe Commerce sur les projets d’infrastructure cloud. Pour obtenir des instructions de configuration, reportez-vous à l&#39;article [Accès partagé](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#shared-access) dans le Centre d&#39;aide.
+Le propriétaire de la licence peut configurer l’accès partagé pour le compte. L’accès partagé permet aux employés et aux fournisseurs de services de confiance d’utiliser le centre d’aide pour envoyer et suivre les tickets d’assistance liés à votre Adobe Commerce sur les projets d’infrastructure cloud. Pour obtenir des instructions de configuration, reportez-vous à l&#39;article [Accès partagé](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access) dans le Centre d&#39;aide.
 
 ### [!DNL Cloud Console]
 
@@ -41,7 +45,7 @@ Vous pouvez utiliser le [[!DNL Cloud Console]](cloud-console.md) pour gérer vot
 
 ## S’inscrire au statut Adobe
 
-Obtenez des mises à jour sur Adobe Commerce sur les environnements de plateforme d’infrastructure cloud et les services associés à partir de la page [Statut](https://status.adobe.com/fr/products/503473).
+Obtenez des mises à jour sur Adobe Commerce sur les environnements de plateforme d’infrastructure cloud et les services associés à partir de la page [Statut](https://status.adobe.com/products/503473).
 
 Cette page fournit un statut pour les composants et services Adobe Commerce, suivi de notifications sur les rapports d’incident, les mises à niveau de service, les pannes planifiées et les opérations de maintenance planifiées. Toute personne travaillant sur votre projet peut s’abonner au site Statut d’Adobe Commerce pour recevoir des notifications et des mises à jour d’événement par e-mail ou Slack. Vous pouvez personnaliser votre abonnement au statut d’Adobe pour effectuer le suivi de produits spécifiques par région et événement.
 
@@ -49,5 +53,5 @@ Cette page fournit un statut pour les composants et services Adobe Commerce, sui
 >
 > Ouvrez la nouvelle [!DNL Cloud Console] et affichez les activités du projet et de l’environnement.
 >
->**Étape suivante** : [Connectez-vous à la console CIoud](cloud-console.md)
+>**Étape suivante** : [Connectez-vous à la console CI[!DNL ]oud](cloud-console.md)
 

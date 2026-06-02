@@ -3,9 +3,13 @@ title: Intégration de GitLab
 description: Découvrez comment intégrer votre projet Adobe Commerce sur l’infrastructure cloud à GitLab.
 feature: Cloud, Integration
 exl-id: 24c2156f-0629-4e89-b5b1-ca144d6bfdae
-source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
+TQID: https://experienceleague.adobe.com/WMHyRgeTet95WG-mQ8gqIxLMY4kwKRUop94MQ3mjtXc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: 791
 ht-degree: 0%
 
 ---
@@ -27,7 +31,7 @@ Vous devez obtenir un jeton GitLab et un webhook pour continuer le processus.
 ## Conditions préalables
 
 - Accès des administrateurs au projet d’infrastructure cloud d’Adobe Commerce
-- [`magento-cloud` de l’interface de ligne &#x200B;](../dev-tools/cloud-cli-overview.md) commande dans votre environnement local
+- [`magento-cloud` de l’interface de ligne ](../dev-tools/cloud-cli-overview.md) commande dans votre environnement local
 - Un compte GitLab
 - Un jeton d’accès personnel GitLab avec un accès en écriture au référentiel GitLab, les portées sélectionnées doivent être au moins : `api` et `read_repository`.
 

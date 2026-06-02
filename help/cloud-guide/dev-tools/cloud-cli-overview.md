@@ -2,9 +2,13 @@
 title: Cloud CLI
 description: Découvrez l’interface de ligne de commande magento-cloud et comment elle vous aide à gérer les environnements de développement locaux pour votre projet d’infrastructure cloud Adobe Commerce.
 exl-id: 71a705f2-8672-4125-b539-b7b1621f2f64
-source-git-commit: 82d89f442792baec995dd0be40f2a49cba168f76
+TQID: https://experienceleague.adobe.com/cp-mG1bOtIxmm4bKKFmABa-vrudh-paS7E6x6IlWHmU
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: 860
 ht-degree: 0%
 
 ---
@@ -19,12 +23,12 @@ Cet outil étend les fonctionnalités du [[!DNL Cloud Console]](../../get-starte
 >
 >Il s’agit d’un outil local qui n’est pris en charge que sur les systèmes d’exploitation Unix. Windows n’est pas pris en charge. Il ne peut pas être installé dans l’environnement Cloud (qui est en lecture seule) à l’aide de la méthode décrite sur cette page. Vous pouvez uniquement installer des modules dans l’environnement Cloud par le biais de l’un des **workflows de déploiement** suivants.
 >
->- [Workflow de déploiement Pro](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
->- [Démarrer le workflow de déploiement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
+>- [Workflow de déploiement Pro](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
+>- [Démarrer le workflow de déploiement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
 
 **Pour installer l’interface de ligne de commande `magento-cloud`** :
 
-1. Sur votre _station de travail locale_, accédez au répertoire dans lequel vous avez l’intention de cloner le projet cloud et dans lequel le [propriétaire du système de fichiers](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=fr) dispose d’un accès en _écriture_.
+1. Sur votre _station de travail locale_, accédez au répertoire dans lequel vous avez l’intention de cloner le projet cloud et dans lequel le [propriétaire du système de fichiers](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html) dispose d’un accès en _écriture_.
 
 1. Installez l’interface de ligne de commande `magento-cloud`.
 
@@ -137,7 +141,7 @@ Les étapes suivantes illustrent l’utilisation interchangeable des commandes C
 
 1. Sur votre station de travail locale, accédez au répertoire du projet.
 
-1. Passez au [propriétaire du système de fichiers](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=fr).
+1. Passez au [propriétaire du système de fichiers](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html).
 
 1. Connectez-vous à votre projet.
 

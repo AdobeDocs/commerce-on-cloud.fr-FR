@@ -1,11 +1,16 @@
 ---
 title: Affichage et gestion des journaux
 description: Identifiez les types de fichiers journaux disponibles dans l’infrastructure cloud et où les trouver.
-last-substantial-update: 2023-05-23T00:00:00Z
+last-substantial-update: 2023-05-23T00:00:00.000Z
 exl-id: f0bb8830-8010-4764-ac23-d63d62dc0117
-source-git-commit: 445c5162f9d3436d9e5fe3df41af47189e344cfd
+TQID: https://experienceleague.adobe.com/VAsmOv6sBa37A2IAubUnWd4UAMRIuKTNt8JGKNJlrCI
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: 1287
 ht-degree: 0%
 
 ---
@@ -63,7 +68,7 @@ magento-cloud ssh -e <environment-ID> "find /var/log -name '*.gz' -exec zgrep '4
 
 #### Méthode 3 : utilisation de New Relic (environnements Pro)
 
-Pour les environnements de production et d’évaluation Pro, utilisez les journaux New Relic pour rechercher des enregistrements d’erreurs spécifiques. Pour plus d’informations, consultez la section [Gestion des journaux &#x200B;](../monitor/log-management.md).
+Pour les environnements de production et d’évaluation Pro, utilisez les journaux New Relic pour rechercher des enregistrements d’erreurs spécifiques. Pour plus d’informations, consultez la section [Gestion des journaux ](../monitor/log-management.md).
 
 ### Affichage des journaux d’environnement distant
 
@@ -108,13 +113,13 @@ ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
 >[!TIP]
 >
 >Pour les environnements d’évaluation et de production Pro, la rotation, la compression et la suppression automatiques des journaux sont activées pour les fichiers journaux ayant un nom de fichier fixe. Chaque type de fichier journal possède un modèle rotatif et une durée de vie.
->Vous trouverez des détails complets sur la rotation des journaux de l’environnement et la durée de vie des journaux compressés dans : `/etc/logrotate.conf` et `/etc/logrotate.d/<various>`.
->Pour les environnements d’évaluation et de production Pro, vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour demander des modifications dans la configuration de la rotation du journal.
+>Vous trouverez des détails complets sur la rotation du journal de l’environnement et la durée de vie des journaux compressés dans : `/etc/logrotate.conf` et `/etc/logrotate.d/<various>`.
+>Pour les environnements d’évaluation et de production Pro, vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour demander des modifications dans la configuration de la rotation du journal.
 
 >[!TIP]
 >
 >La rotation de journal ne peut pas être configurée dans les environnements d&#39;intégration Pro.
->Pour l’intégration Pro, vous devez mettre en œuvre une solution/un script personnalisé et [configurer votre cron](../application/crons-property.md) pour exécuter le script si nécessaire.
+>Pour l’intégration Pro, vous devez implémenter une solution/un script personnalisé(e) et [configurer votre cron](../application/crons-property.md) pour exécuter le script si nécessaire.
 
 >[!NOTE]
 >
@@ -220,7 +225,7 @@ title: The configured state is not ideal
 type: warning
 ```
 
-La plupart des messages d’erreur contiennent une description et une action suggérée. Utilisez la référence [Message d&#39;erreur pour ECE-Tools](../dev-tools/error-reference.md) pour rechercher le code d&#39;erreur afin d&#39;obtenir d&#39;autres indications. Pour plus d’informations, utilisez l’utilitaire de dépannage du déploiement d’Adobe Commerce [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=fr).
+La plupart des messages d’erreur contiennent une description et une action suggérée. Utilisez la référence [Message d&#39;erreur pour ECE-Tools](../dev-tools/error-reference.md) pour rechercher le code d&#39;erreur afin d&#39;obtenir d&#39;autres indications. Pour plus d’informations, utilisez l’utilitaire de dépannage du déploiement d’Adobe Commerce [](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
 
 ## Logs de l&#39;application
 
@@ -258,7 +263,7 @@ Les journaux d’application sont compressés et archivés une fois par jour et 
 
 Les fichiers journaux archivés sont toujours stockés dans le répertoire où se trouvait le fichier d’origine avant la compression.
 
-Vous pouvez [envoyer un ticket d’assistance](https://experienceleague.adobe.com/home?lang=fr&support-tab=home#support) pour demander des modifications de votre période de conservation des journaux ou de la configuration de la connexion. Vous pouvez augmenter la période de rétention jusqu’à un maximum de 365 jours, la réduire pour conserver le quota de stockage ou ajouter des chemins de journal supplémentaires à la configuration de logrotate. Ces modifications sont disponibles pour les clusters d’évaluation et de production Pro.
+Vous pouvez [envoyer un ticket d’assistance](https://experienceleague.adobe.com/home?support-tab=home#support) pour demander des modifications de votre période de conservation des journaux ou de la configuration de la connexion. Vous pouvez augmenter la période de rétention jusqu’à un maximum de 365 jours, la réduire pour conserver le quota de stockage ou ajouter des chemins de journal supplémentaires à la configuration de logrotate. Ces modifications sont disponibles pour les clusters d’évaluation et de production Pro.
 
 Par exemple, si vous créez un chemin personnalisé pour stocker les journaux dans le répertoire `var/log/mymodule`, vous pouvez demander la rotation des journaux pour ce chemin. Toutefois, l’infrastructure actuelle nécessite des noms de fichiers cohérents pour qu’Adobe configure correctement la rotation des journaux. Adobe recommande de conserver la cohérence des noms de journal afin d’éviter des problèmes de configuration.
 
@@ -286,6 +291,6 @@ Les journaux de service sont archivés et enregistrés pendant différentes pér
 
 ## Données de journal pour la production et l’évaluation Pro
 
-Dans les environnements de production et d’évaluation Pro, utilisez la gestion des journaux [&#128279;](../monitor/log-management.md) intégrée à votre projet pour gérer les données de journaux agrégées à partir de tous les journaux associés à votre projet d’infrastructure Adobe Commerce sur le cloud.
+Dans les environnements de production et d’évaluation Pro, utilisez la gestion des journaux [](../monitor/log-management.md) intégrée à votre projet pour gérer les données de journaux agrégées à partir de tous les journaux associés à votre projet d’infrastructure Adobe Commerce sur le cloud.
 
-L’application Journaux New Relic fournit un tableau de bord de gestion des journaux centralisé pour dépanner et surveiller Adobe Commerce sur les infrastructures cloud et les environnements d’évaluation et de production. Le tableau de bord permet également d’accéder aux données de journal pour les services Fast CDN, Image Optimization et Web Application Firewall (WAF). Voir [Services &#x200B;](../monitor/new-relic-service.md).
+L’application Journaux New Relic fournit un tableau de bord de gestion des journaux centralisé pour dépanner et surveiller Adobe Commerce sur les infrastructures cloud et les environnements d’évaluation et de production. Le tableau de bord permet également d’accéder aux données de journal pour les services Fast CDN, Image Optimization et Web Application Firewall (WAF). Voir [Services ](../monitor/new-relic-service.md).

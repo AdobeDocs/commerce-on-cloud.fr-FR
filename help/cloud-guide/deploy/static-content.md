@@ -3,9 +3,14 @@ title: Déploiement de contenu statique
 description: Découvrez les stratégies de déploiement de contenu statique, tel que des images, des scripts et des feuilles CSS, sur Adobe Commerce dans les projets d’infrastructure cloud.
 feature: Cloud, Build, Deploy, SCD
 exl-id: 8f30cae7-a3a0-4ce4-9c73-d52649ef4d7a
-source-git-commit: 325b7584daa38ad788905a6124e6d037cf679332
+TQID: https://experienceleague.adobe.com/bl2z1YM8u-HNuBYuQH3uqoRwiU4lfHGOQyr8Vbwyef8
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: 768
 ht-degree: 0%
 
 ---
@@ -41,9 +46,9 @@ La génération de contenu statique pendant la phase de création avec HTML mini
 La génération de contenu statique nécessite l’accès aux thèmes et aux paramètres régionaux. Adobe Commerce stocke les thèmes dans le système de fichiers, qui est accessible pendant la phase de création. Toutefois, Adobe Commerce stocke les paramètres régionaux dans la base de données. La base de données n’est _pas_ disponible pendant la phase de création. Pour générer le contenu statique pendant la phase de création, vous devez utiliser la commande `config:dump` du package de `ece-tools` pour déplacer les paramètres régionaux vers le système de fichiers. Il lit les paramètres régionaux et les enregistre dans le fichier `app/etc/config.php`.
 
 >[!NOTE]
->Après avoir exécuté la commande `config:dump` dans le package `ece-tools`, les configurations qui sont vidées dans le fichier `config.php` [sont verrouillées (grisées) dans le tableau de bord Admin](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/locked-fields-in-magento-admin). la seule façon de mettre à jour ces configurations dans l’administration consiste à les supprimer du fichier localement et à redéployer le projet.
->&#x200B;>En outre, chaque fois que vous ajoutez un nouveau magasin/groupe de magasins/site web à votre instance, vous devez penser à exécuter la commande `config:dump` pour vous assurer que la base de données est synchronisée. Vous pouvez également choisir [les configurations à vider](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) dans le fichier `config.php`.
->&#x200B;>Si vous supprimez la configuration magasin/groupe de magasins/site web du fichier `config.php` parce que les champs sont grisés mais que vous négligez d’effectuer cette étape, les nouvelles entités qui n’ont pas été extraites sont supprimées de la base de données lors du déploiement suivant.
+>Après avoir exécuté la commande `config:dump` dans le package `ece-tools`, les configurations qui sont vidées dans le fichier `config.php` [sont verrouillées (grisées) dans le tableau de bord Admin](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/locked-fields-in-magento-admin). La seule façon de mettre à jour ces configurations dans Admin est de les supprimer du fichier localement et de redéployer le projet.
+>En outre, chaque fois que vous ajoutez un nouveau magasin/groupe de magasins/site web à votre instance, vous devez penser à exécuter la commande `config:dump` pour vous assurer que la base de données est synchronisée. Vous pouvez également choisir [les configurations à vider](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) dans le fichier `config.php`.
+>Si vous supprimez la configuration magasin/groupe de magasins/site web du fichier `config.php` parce que les champs sont grisés mais que vous négligez d’effectuer cette étape, les nouvelles entités qui n’ont pas été extraites sont supprimées de la base de données lors du déploiement suivant.
 
 **Pour configurer votre projet afin de générer un SCD sur la version** :
 
@@ -54,7 +59,7 @@ La génération de contenu statique nécessite l’accès aux thèmes et aux par
    magento-cloud ssh
    ```
 
-1. Déplacez les paramètres régionaux vers le système de fichiers, puis mettez à jour le fichier [`config.php`](../development/commerce-version.md#create-a-configphp-file).
+1. Déplacez les paramètres régionaux vers le système de fichiers, puis mettez à jour le fichier ](../development/commerce-version.md#create-a-configphp-file).[`config.php`
 
 1. Le fichier de configuration `.magento.env.yaml` doit contenir les valeurs suivantes :
 
@@ -64,7 +69,7 @@ La génération de contenu statique nécessite l’accès aux thèmes et aux par
 
 1. Vérifiez la configuration du hook [Post-déploiement](../application/hooks-property.md) dans le fichier `.magento.app.yaml`.
 
-1. Vérifiez vos paramètres en exécutant l’assistant [&#x200B; Smart pour obtenir l’état idéal](smart-wizards.md).
+1. Vérifiez vos paramètres en exécutant l’assistant [ Smart pour obtenir l’état idéal](smart-wizards.md).
 
    ```bash
    php ./vendor/bin/ece-tools wizard:ideal-state

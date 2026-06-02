@@ -5,9 +5,14 @@ feature: Cloud, Configuration, Build, Deploy, Eventing, Logs, SCD
 recommendations: noDisplay, catalog
 role: Developer
 exl-id: 1f1ef6db-6836-4f71-b1e4-3629352d7e74
-source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
+TQID: https://experienceleague.adobe.com/2aBPh7We4-KqoUVDfd4B-ZNWoaUVO-3mWVbqErdgyoQ
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: 774
 ht-degree: 0%
 
 ---
@@ -86,7 +91,7 @@ stage:
 
 Activez la génération de contenu statique lorsqu’un utilisateur ou une utilisatrice (SCD) le demande. Le contenu statique à la demande est idéal pour le workflow de développement et de test, car il réduit le temps de déploiement.
 
-Le préchargement du cache à l’aide du hook [`post_deploy` réduit &#x200B;](../application/hooks-property.md) temps d’arrêt du site. Le réchauffement du cache n’est disponible que pour les projets Pro contenant des environnements d’évaluation et de production dans les projets [!DNL Cloud Console] et de démarrage. Ajoutez la variable d’environnement `SCD_ON_DEMAND` à l’étape `global` dans le fichier `.magento.env.yaml` :
+Le préchargement du cache à l’aide du hook [`post_deploy` réduit ](../application/hooks-property.md) temps d’arrêt du site. Le réchauffement du cache n’est disponible que pour les projets Pro contenant des environnements d’évaluation et de production dans les projets [!DNL Cloud Console] et de démarrage. Ajoutez la variable d’environnement `SCD_ON_DEMAND` à l’étape `global` dans le fichier `.magento.env.yaml` :
 
 ```yaml
 stage:
@@ -178,7 +183,7 @@ stage:
 - **Par défaut**—_Non défini_
 - **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
-Utilisez la variable `X_FRAME_CONFIGURATION` pour modifier la configuration de l’en-tête [`X-Frame-Options`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html?lang=fr) de votre site Adobe Commerce. Cette configuration contrôle la manière dont le navigateur effectue le rendu d’une page dans une `<frame>`, un `<iframe>` ou un `<object>`. Utilisez l’une des options suivantes :
+Utilisez la variable `X_FRAME_CONFIGURATION` pour modifier la configuration de l’en-tête [`X-Frame-Options`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html) de votre site Adobe Commerce. Cette configuration contrôle la manière dont le navigateur effectue le rendu d’une page dans une `<frame>`, un `<iframe>` ou un `<object>`. Utilisez l’une des options suivantes :
 
 - `DENY` : la page ne peut pas être affichée dans un cadre.
 - `SAMEORIGIN` : (paramètre Adobe Commerce par défaut). La page ne peut être affichée que dans un cadre de la même origine que la page elle-même.

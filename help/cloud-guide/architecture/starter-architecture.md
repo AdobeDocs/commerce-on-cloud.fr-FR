@@ -3,9 +3,14 @@ title: Architecture de démarrage
 description: Découvrez les environnements pris en charge par l’architecture Starter.
 feature: Cloud, Paas
 exl-id: 2f16cc60-b5f7-4331-b80e-43042a3f9b8f
-source-git-commit: 2236d0b853e2f2b8d1bafcbefaa7c23ebd5d26b3
+TQID: https://experienceleague.adobe.com/NZ2ea2-D3coPcwXTEHL7viNlgpIBSVA0zO2-iVUIhB0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: 1011
 ht-degree: 0%
 
 ---
@@ -126,7 +131,7 @@ Adobe Commerce sur les infrastructures cloud utilise le système d&#39;exploitat
 
 - [OpenSearch](../services/opensearch.md)
 
-Dans les environnements d’évaluation et de production, vous utilisez Fastly pour le CDN et la mise en cache. La dernière version de l’extension Fastly CDN s’installe lors de l’approvisionnement initial de votre projet. Vous pouvez mettre à niveau l’extension pour obtenir les derniers correctifs et améliorations. Voir [Module de réseau CDN Fastly pour Magento 2](https://github.com/fastly/fastly-magento2). Vous avez également accès à [New Relic](../monitor/account-management.md) pour le suivi des performances.
+Dans les environnements d’évaluation et de production, vous utilisez Fastly pour le CDN et la mise en cache. La dernière version de l’extension Fastly CDN s’installe lors de l’approvisionnement initial de votre projet. Vous pouvez mettre à niveau l’extension pour obtenir les derniers correctifs et améliorations. Voir [Module de réseau CDN Fastly pour Magento 2](https://github.com/fastly/fastly-magento2). Vous avez également accès à [](../monitor/account-management.md) pour le suivi des performances.
 
 Utilisez les fichiers suivants pour configurer les versions de logiciels que vous souhaitez utiliser dans votre implémentation.
 
@@ -138,7 +143,7 @@ Utilisez les fichiers suivants pour configurer les versions de logiciels que vou
 
 ### Sauvegarde et reprise après sinistre
 
-Vous pouvez créer une sauvegarde de votre base de données et de votre système de fichiers à l’aide du [!DNL Cloud Console] ou de l’interface de ligne de commande. Voir [&#x200B; Gestion des sauvegardes &#x200B;](../storage/snapshots.md).
+Vous pouvez créer une sauvegarde de votre base de données et de votre système de fichiers à l’aide du [!DNL Cloud Console] ou de l’interface de ligne de commande. Voir [ Gestion des sauvegardes ](../storage/snapshots.md).
 
 ## Préparation au développement
 
