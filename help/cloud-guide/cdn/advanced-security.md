@@ -2,9 +2,10 @@
 title: Sécurité avancée Adobe Commerce
 description: Découvrez comment Advanced Security ajoute la gestion des robots, la limitation de débit avancée et la protection DDoS de couche 7 à Adobe Commerce sur les infrastructures cloud.
 feature: Cloud, Configuration, Security
-source-git-commit: 8a7c1c297092fdf2b75d22ce99c360c85eac0495
+exl-id: 7aeb189f-be69-45d5-8163-4748424083c0
+source-git-commit: 0b3ef117f85c990c2a01ecb655c930b8c4f61acb
 workflow-type: tm+mt
-source-wordcount: '1986'
+source-wordcount: '2474'
 ht-degree: 0%
 
 ---
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Advanced Security] est un produit qui fonctionne avec [!DNL Adobe Commerce on Cloud Infrastructure] pour que votre boutique en ligne soit rapide, disponible et sécurisée. Cela permet de protéger le chiffre d’affaires, de réduire les temps d’arrêt et de maintenir la confiance des clients pendant les pics de trafic et les attaques automatisées.
 
-[!DNL Adobe Commerce on Cloud Infrastructure] comprend une protection DDoS de couche 3 et 4 intégrée [&#128279;](./fastly.md#ddos-protection) et un [pare-feu d’application web (WAF)](./fastly-waf-service.md). Dans le cadre du [modèle de responsabilité partagée](https://experienceleague.adobe.com/fr/docs/commerce-operations/security-and-compliance/shared-responsibility), la détection DDoS de couche 7, la protection des robots et le blocage proactif des adresses IP sont des responsabilités des commerçants, que [!DNL Adobe Commerce Advanced Security] est conçu pour traiter.
+[!DNL Adobe Commerce on Cloud Infrastructure] comprend une protection DDoS de couche 3 et 4 intégrée [](./fastly.md#ddos-protection) et un [pare-feu d’application web (WAF)](./fastly-waf-service.md). Dans le cadre du [modèle de responsabilité partagée](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility), la détection DDoS de couche 7, la protection des robots et le blocage proactif des adresses IP sont des responsabilités des commerçants, que [!DNL Adobe Commerce Advanced Security] est conçu pour traiter.
 
 [!DNL Advanced Security] étend la protection du storefront grâce à des fonctionnalités de sécurité de périphérie optimisées par Fastly, qui offre une gestion des robots, une limitation de débit avancée et une protection DDoS de couche 7 dans le cadre d&#39;une plateforme de périphérie unifiée qui combine l&#39;évolutivité, les performances et la sécurité à la périphérie du réseau.
 
@@ -34,6 +35,80 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Les configurations [!DNL Advanced Security] nécessitent actuellement l’envoi d’un ticket d’assistance. La configuration en libre-service via l’interface utilisateur d’administration est prévue pour une version ultérieure. Pour plus d’informations, voir [Demande [!DNL Advanced Security]](#request-advanced-security).
+
+>[!IMPORTANT]
+>
+>**Limites actuelles**
+>
+>Jusqu’à la fin du 3e trimestre 2026, les clients ne peuvent pas modifier ni gérer directement les règles de gestion des robots.
+>
+>Pour ajouter, modifier ou ajuster une règle, contactez l’assistance Adobe Commerce au moyen d’un ticket d’assistance [](https://experienceleague.adobe.com/home?support-tab=home#support). L’équipe d’assistance mettra en œuvre les modifications demandées.
+>
+>À compter du 4e trimestre 2026, Fastly prévoit de publier une fonctionnalité complémentaire qui permettra aux clients de gérer les règles de gestion des robots dans le panneau d’administration Commerce.
+
+## Règles et protections par défaut
+
+Les règles et protections par défaut suivantes sont disponibles avec [!DNL Advanced Security].
+
+### DDoS de couche 7
+
+- Les seuils DDoS sont intégrés à la plateforme CDN Fastly et ne peuvent actuellement pas être personnalisés par client.
+- Les journaux du trafic bloqué par les protections DDoS ne sont pas directement visibles par les clients.
+- Sur demande, l’assistance Adobe Commerce peut fournir des détails relatifs au trafic DDoS bloqué.
+- Des fonctionnalités natives de transfert de journal DDoS sont attendues dans une prochaine version.
+
+### Gestion des robots
+
+Les protections de base suivantes pour la gestion des robots sont disponibles via le tableau de bord Signal Sciences de Fastly.
+
+| Type de règle | Statut | Visibilité |
+|---|---|---|
+| Bloquer le trafic marqué comme ROBOT suspect incorrect | Activé par défaut lors de l’intégration | Visible dans les journaux New Relic sous `sigsci_tags` |
+| Bloquer le trafic en fonction d’une balise spécifique (balise &lt;sigsci>) | Configuré uniquement lorsque cela est nécessaire en collaboration avec le client | Visible dans les journaux New Relic sous `sigsci_tags` |
+| Limitation du débit pour des API ou des modèles d’URL spécifiques | Configuré uniquement lorsque cela est nécessaire en collaboration avec le client | Le trafic bloqué est visible dans les journaux New Relic sous `Agent_response` |
+| Défi dynamique pour des API ou des modèles d’URL spécifiques | Configuré uniquement lorsque cela est nécessaire en collaboration avec le client | Le trafic bloqué est visible dans les journaux New Relic sous `Agent_response` |
+| Défi du navigateur | Configuré uniquement lorsque cela est nécessaire en collaboration avec le client | Le trafic bloqué est visible dans les journaux New Relic sous `Agent_response` |
+
+## Observability — surveillance de la protection des robots et de l’activité du FANG
+
+Les journaux CDN sont automatiquement transférés au compte New Relic du client. Pour plus d’informations, consultez la section [Gestion des journaux](../monitor/log-management.md).
+
+Les journaux du réseau CDN incluent la télémétrie intégrée de Signal Sciences (protection des robots/WAF de nouvelle génération), ce qui permet aux clients de surveiller les événements de sécurité directement dans New Relic.
+
+Les champs clés sont les suivants :
+
+- **`Sigsci_Tags`** : indique les classifications et les balises appliquées par Signal Sciences.
+- **`Agent_response`** : indique l&#39;action entreprise par l&#39;agent de protection des robots/NGWAF.
+
+Exemples :
+
+- Pour identifier le trafic bloqué par les règles de protection des robots ou NGWAF :
+
+  `Agent_response:"406"`
+
+  Un code de réponse 406 indique que la requête a été bloquée par les contrôles de sécurité.
+
+- Pour identifier les requêtes marquées comme robots suspects :
+
+  `Sigsci_Tags:"*SUSPECTED-BAD-BOT*"`
+
+Vous pouvez utiliser ces champs pour créer des tableaux de bord, des alertes et des investigations dans New Relic afin de surveiller l’activité des robots, les demandes bloquées et d’autres événements liés à la sécurité.
+
+## Les fonctionnalités VCL existantes restent inchangées
+
+L’activation du module complémentaire [!DNL Advanced Security] ne modifie ni ne remplace les contrôles de sécurité Fastly basés sur VCL existants.
+
+Les fonctionnalités de blocage de VCL existantes suivantes continuent à fonctionner sans aucune modification :
+
+- Blocage par IP
+- Blocage géographique
+- Blocage basé sur l’agent utilisateur
+- Blocage basé sur les signatures JA3
+- Blocage basé sur les signatures JA4
+
+Les clients peuvent continuer à utiliser les configurations VCL personnalisées existantes et les règles de sécurité parallèlement aux fonctionnalités de module complémentaire [!DNL Advanced Security].
+
+Le module complémentaire [!DNL Advanced Security] fonctionne en plus du réseau CDN Fastly standard et des protections VCL existantes déjà disponibles dans [!DNL Adobe Commerce on Cloud Infrastructure].
 
 ## Couverture des menaces
 
@@ -141,7 +216,7 @@ Les scénarios suivants sont mieux gérés avec des protections alternatives qui
 - **Outils de conformité** : analyses PCI, rapports de conformité SOC et outils d’audit réglementaire.
 - **Renforcement au niveau de l’application** : authentification de l’API basée sur les jetons, normalisation des paramètres de requête et conception de stratégie de mise en cache.
 
-Pour obtenir un aperçu complet des responsabilités d’Adobe et de la sécurité des clients, reportez-vous au [modèle de responsabilité partagée](https://experienceleague.adobe.com/fr/docs/commerce-operations/security-and-compliance/shared-responsibility).
+Pour obtenir un aperçu complet des responsabilités d’Adobe et de la sécurité des clients, reportez-vous au [modèle de responsabilité partagée](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility).
 
 ## Schémas et protections d’attaque courants
 
@@ -179,7 +254,7 @@ Pour demander une [!DNL Advanced Security] :
 
 1. Contactez votre équipe de compte Adobe ou votre représentant commercial Adobe pour discuter des [!DNL Advanced Security] de votre projet.
 
-1. Après l’achat de [!DNL Advanced Security], [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) demandant l’activation du [!DNL Advanced Security]. Incluez votre ID de projet [!DNL Adobe Commerce on Cloud Infrastructure] et les environnements nécessitant une activation (par exemple, Production et Évaluation).
+1. Après l’achat de [!DNL Advanced Security], [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) demandant l’activation du [!DNL Advanced Security]. Incluez votre ID de projet [!DNL Adobe Commerce on Cloud Infrastructure] et les environnements nécessitant une activation (par exemple, Production et Évaluation).
 
 1. Adobe active [!DNL Advanced Security] sur votre service Fastly et configure les politiques de protection initiales. L’activation est généralement effectuée dans les jours ouvrables suivant l’envoi du ticket.
 
@@ -187,7 +262,7 @@ Pour demander une [!DNL Advanced Security] :
 
 >[!NOTE]
 >
->Les modifications de configuration apportées à [!DNL Advanced Security] nécessitent actuellement [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket). La configuration en libre-service via l’interface utilisateur d’administration est prévue pour une version ultérieure.
+>Les modifications de configuration apportées à [!DNL Advanced Security] nécessitent actuellement [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). La configuration en libre-service via l’interface utilisateur d’administration est prévue pour une version ultérieure.
 
 ## Restrictions
 
