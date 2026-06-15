@@ -21,9 +21,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: e0e1d3994a6b9ceef9e45b55cc9946bc62203ddb
 workflow-type: tm+mt
-source-wordcount: 1637
+source-wordcount: 1667
 ht-degree: 0%
 
 ---
@@ -114,7 +114,7 @@ Lors de l’approvisionnement initial ou de la mise à niveau de votre projet Ad
 
 ## Compte de service et informations d’identification Fastly
 
-Adobe Commerce sur les projets d’infrastructure cloud ne dispose pas d’un compte Fastly dédié. Le service Fastly est géré dans un compte centralisé, enregistré auprès d’Adobe, et le tableau de bord de gestion n’est accessible qu’à l’équipe d’assistance cloud.
+Adobe Commerce sur les projets d’infrastructure cloud ne dispose pas d’un compte Fastly dédié. Le service Fastly est géré dans un compte centralisé, enregistré auprès d’Adobe, et l’accès aux tableaux de bord est limité à l’équipe d’assistance cloud. Pour cette raison, l’assistance ne peut pas fournir d’accès au tableau de bord Fastly en réponse aux demandes des clients. Utilisez l’administration Adobe Commerce et vos informations d’identification Fastly spécifiques à l’environnement pour effectuer les tâches de configuration et de gestion Fastly prises en charge.
 
 Au lieu de cela, chaque environnement d’évaluation et de production dispose d’informations d’identification Fastly uniques (jeton API et ID de service) pour configurer et gérer les services Fastly à partir de l’administrateur Commerce. L’API Fastly est disponible pour effectuer une gestion avancée du service Fastly, qui nécessitera les informations d’identification pour envoyer ces requêtes.
 
