@@ -1,7 +1,7 @@
 ---
-source-git-commit: a15ae4e0e11a84662c980ad351e32362f14e69e1
+source-git-commit: e0e4b21e76a5c1fa9e146695a183a29ec79e6cc1
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '376'
 ht-degree: 2%
 
 ---
@@ -147,28 +147,6 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
         Technique
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/3546f15b4e1d4e192177064c3c72652d8ae7b5cb">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 10 Avril 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout d’une note de sécurité à la référence <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">Configuration des propriétés web</a> pour Adobe Commerce sur l’infrastructure cloud afin de clarifier que la configuration par défaut de la propriété web utilise <code>scripts:false</code> pour les emplacements de médias afin d’empêcher l’exécution des fichiers chargés.</p>
-</td>
-      <td>
-        Technique, commentaires
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/f3fa8339961505f9c8ac2612d7a89e83553eee37">validation</a></td>
     </tr>
   </tbody>
 </table>
