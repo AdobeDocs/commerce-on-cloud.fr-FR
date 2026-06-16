@@ -5,12 +5,17 @@ role: Admin
 feature: Cloud, Roles/Permissions
 level: Beginner
 short-description: Ajoutez des utilisateurs et attribuez des rôles de projet et d’environnement dans Cloud Console ou l’interface de ligne de commande.
-last-substantial-update: 2026-06-11T00:00:00Z
+last-substantial-update: 2026-06-11
 topic: Security
 exl-id: 953593de-f675-49fd-988f-f11306f67fbd
-source-git-commit: de324897e87232393f20d95b2867d8a95605fa23
+TQID: https://experienceleague.adobe.com/hoRda1DXcWU5ZfsEnOf0JSe-JbCQy0GkXQ4Tw3HIU0g
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 30e6d068126e2713dcaa23292db5704c23c272ad
 workflow-type: tm+mt
-source-wordcount: '1690'
+source-wordcount: 1690
 ht-degree: 0%
 
 ---
@@ -246,7 +251,7 @@ Les instructions d’installation de l’application d’authentification et d�
 
      >[!WARNING]
      >
-     >Si vous perdez l’accès à un compte avec TFA et que vous ne disposez pas de la liste des codes de récupération, vous devez contacter l’administrateur de votre projet ou [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour réinitialiser l’application TFA.
+     >Si vous perdez l’accès à un compte avec TFA et que vous ne disposez pas de la liste des codes de récupération, vous devez contacter l’administrateur de votre projet ou [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour réinitialiser l’application TFA.
 
 1. Une fois la configuration de l’AFE terminée, cliquez sur **Enregistrer** pour mettre à jour votre compte.
 
@@ -293,10 +298,10 @@ Dans les projets pour lesquels l’application MFA est activée, vous devez disp
 
 1. Cliquez sur **[!UICONTROL Create API token]** et saisissez un nom, par exemple, spécifiez un nom correspondant à l’utilisateur de la machine ou au processus automatisé qui utilise le jeton API.
 
-   ![Onglet Jetons API de la console Cloud avec le champ Créer un nom de jeton API &#x200B;](../../assets/api-token-name.png)
+   ![Onglet Jetons API de la console Cloud avec le champ Créer un nom de jeton API ](../../assets/api-token-name.png)
 
 1. Cliquez sur **[!UICONTROL Create API token]**.
 
 ## Plus d’aide sur cette rubrique
 
-- [Impossible d’ajouter un utilisateur ou une utilisatrice au projet cloud Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/unable-add-user-adobe-commerce-cloud-project) — résolution des problèmes lors de l’échec de l’ajout d’un utilisateur.
+- [Impossible d’ajouter un utilisateur ou une utilisatrice au projet cloud Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/unable-add-user-adobe-commerce-cloud-project) — résolution des problèmes lors de l’échec de l’ajout d’un utilisateur.
