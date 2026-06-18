@@ -15,7 +15,7 @@ role_v2:
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 029e44cd82c07d692dbbfacb4573763dbb4b579a
 workflow-type: tm+mt
 source-wordcount: 393
 ht-degree: 0%
@@ -42,7 +42,7 @@ Les fonctionnalités nouvelles ou améliorées sont les suivantes :
 - Formulaires simples et conseils pour ajouter des intégrations
 - Conformité aux directives d’accessibilité du contenu web (WCAG)
 
-![[!DNL Cloud Console]](../assets/CloudConsole.svg)
+![[!DNL Cloud Console]](../assets/CloudConsole.png)
 
 Les fonctionnalités nouvelles ou améliorées sont les suivantes :
 
