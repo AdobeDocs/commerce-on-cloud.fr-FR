@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3006f8f7b3eb54f44cf2bda06403441d304b4b81
+source-git-commit: 020a2699befa042a37170a638ded9657a72933e8
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1382'
 ht-degree: 0%
 
 ---
@@ -143,6 +143,16 @@ Utilisez les instructions suivantes pour la configuration du service sur les env
 >[!TIP]
 >
 >Avant de commencer une mise à niveau ou un processus d’application de correctifs, créez une branche active à partir de l’environnement d’intégration et extrayez la nouvelle branche sur votre station de travail locale. Dédier une branche à la mise à niveau ou au processus de correctif permet d’éviter toute interférence avec votre travail en cours.
+
+## Valkey dans New Relic {#valkey-newrelic}
+
+>[!NOTE]
+>
+>New Relic peut toujours afficher Redis même après la migration vers Valkey
+>
+>Il est prévu que New Relic puisse continuer à faire référence au service de cache en tant que Redis même après la migration de l’environnement vers Valkey.
+>
+>Valkey est une forme open source de Redis, et certains outils et intégrations continuent à identifier le service à l’aide de l’appellation Redis plutôt que d’un libellé Valkey distinct. Cela n’indique pas nécessairement que Redis est toujours installé.
 
 <!-- Fastly-related snippets begin -->
 
