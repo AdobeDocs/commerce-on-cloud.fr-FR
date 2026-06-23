@@ -11,7 +11,7 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 462
 ht-degree: 0%
@@ -92,3 +92,4 @@ web:
 >[!NOTE]
 >
 >Cet exemple illustre la configuration web par défaut d’un projet cloud configuré pour prendre en charge un seul domaine. Pour un projet qui nécessite la prise en charge de plusieurs sites web ou magasins, la configuration `web` doit être configurée pour prendre en charge les domaines partagés. Voir [Configuration des emplacements pour les domaines partagés](../store/multiple-sites.md#configure-locations-for-shared-domains).
+

@@ -11,7 +11,7 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 605
 ht-degree: 0%
@@ -151,3 +151,4 @@ Voir [section 3.5 de la documentation de SourceGuardian](https://sourceguardian.
 >PHP compilé avec débogage n&#39;est pas pris en charge et la sonde peut entrer en conflit avec [!DNL XDebug] ou [!DNL XHProf]. Désactivez ces extensions lors de l’activation de la sonde. La sonde est en conflit avec certaines extensions PHP comme [!DNL Pinba] ou IonCube.
 
 <!-- Last updated from includes: 2026-04-24 14:50:02 -->
+

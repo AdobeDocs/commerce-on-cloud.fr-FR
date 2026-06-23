@@ -12,7 +12,7 @@ feature_v2:
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 688
 ht-degree: 0%
@@ -205,3 +205,4 @@ Lorsque vous supprimez un environnement, celui-ci est défini sur _inactif_. Le 
 ## Interaction avec des environnements distants
 
 Après avoir [configuré les clés SSH](../development/secure-connections.md), vous pouvez [vous connecter de votre espace de travail local à un environnement distant](../development/secure-connections.md#connect-to-a-remote-environment) interagir avec les services de votre projet et modifier les paramètres.
+

@@ -15,7 +15,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 125
 ht-degree: 0%
@@ -31,3 +31,4 @@ Adobe fournit une suite d’outils cloud pour Commerce, qui comprend des package
 - [Correctifs cloud](../development/apply-patches.md) : appliquez des correctifs pour intégrer les versions de Commerce aux environnements cloud et fournir rapidement des correctifs critiques.
 - [Package ECE-Tools](package-overview.md)—Gérez les configurations, créez et déployez l&#39;application Adobe Commerce dans les environnements cloud distants.
 - [Intégrations](../integrations/overview.md) : intégrez des outils de développement courants, tels que les notifications, les webhooks et les services basés sur Git.
+

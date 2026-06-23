@@ -13,7 +13,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 230
 ht-degree: 0%
@@ -40,3 +40,4 @@ Le package `ece-tools` fournit les commandes de l’assistant intelligent pour �
 
 - [Suivi des déploiements avec New Relic](../monitor/track-deployments.md)
 Utilisez le service New Relic pour surveiller les événements de déploiement et analyser l’impact du déploiement sur les performances globales.
+

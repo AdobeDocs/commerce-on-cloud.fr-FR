@@ -14,7 +14,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 605
 ht-degree: 0%
@@ -91,3 +91,4 @@ Par exemple :
 - Si la liste autorisée contient les adresses IP de vos nœuds de service (1, 2 et 3), aucune action n’est requise.
 - Si la place sur la liste autorisée contient les adresses IP de vos nœuds de service (1, 2 et 3) et de vos nœuds web (4, 5 et 6) (dans ce cas, les six nœuds), aucune action n’est requise.
 - Si la place sur la liste autorisée contient les adresses IP _uniquement_ pour vos nœuds web (4, 5 et 6), vous devez mettre à jour la liste autorisée afin d’inclure les adresses IP des nœuds de service.
+

@@ -14,7 +14,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 2179
 ht-degree: 0%
@@ -345,3 +345,4 @@ Ces exemples de requête API utilisent des variables d’environnement exportée
   Créez un fragment de code avec des valeurs mises à jour et attribuez-lui une priorité de `100`.
 
 <!-- Last updated from includes: 2025-01-27 17:16:28 -->
+
