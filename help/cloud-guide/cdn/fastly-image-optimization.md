@@ -4,10 +4,15 @@ description: Découvrez comment optimiser la diffusion d’images et simplifier 
 feature: Cloud, Configuration, Media
 exl-id: 3457ebb0-dbb4-4cb0-b6ab-837b15dce03e
 TQID: https://experienceleague.adobe.com/n3BJ-fU6SwFrRJGvqpF07cZ1XVTDkXqLRIRv46MQotI
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 1211
@@ -84,7 +89,7 @@ Vérifiez et mettez à jour les paramètres de configuration d’E/S par défaut
 
    - **Redimensionner le filtre** : conservez le paramètre par défaut (`Lancsoz3`) ou sélectionnez une autre option. Ce paramètre spécifie le filtre utilisé pour diffuser une image redimensionnée. Selon le filtre sélectionné, l’image redimensionnée peut avoir un nombre de pixels plus ou moins élevé.
 
-      - `Lanczos3` (par défaut) : fournit une image de la meilleure qualité. Il augmente la capacité à détecter les contours et les caractéristiques linéaires dans une image et utilise le rééchantillonnage _[!DNL sinc]_pour fournir la meilleure reconstruction possible.
+      - `Lanczos3` (par défaut) : fournit une image de la meilleure qualité. Il augmente la capacité à détecter les contours et les caractéristiques linéaires dans une image et utilise le rééchantillonnage _[!DNL sinc]_&#x200B;pour fournir la meilleure reconstruction possible.
       - `Lanczos2` : utilise le même filtre que `Lancsoz3`, mais avec une approximation moins précise de la fonction de rééchantillonnage _[!DNL sinc]_.
       - `Bicubic` : a un effet d&#39;accentuation naturel lors de la réduction de la taille d&#39;une image.
       - `Bilinear` : produit un effet de lissage naturel lorsque vous agrandissez une image.

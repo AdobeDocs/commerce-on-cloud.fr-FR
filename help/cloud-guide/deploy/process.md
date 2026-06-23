@@ -4,10 +4,15 @@ description: Découvrez comment fonctionne le déploiement pour Adobe Commerce s
 feature: Cloud, Build, Deploy, SCD
 exl-id: 76806381-0ecc-4d76-974a-f203d3bf44da
 TQID: https://experienceleague.adobe.com/mSJOsLfNVGbkSNSrUzJgszxsqc07c-4KFhrJxm5I72U
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 413
@@ -27,7 +32,7 @@ La phase _build_ assemble les conteneurs pour les services définis dans les fic
 
 ## ![Phase de déploiement](../../assets/status-deploy.png) Phase de déploiement
 
-La phase _déploiement_ place une suspension temporaire sur les requêtes entrantes et fait passer le site en [mode de maintenance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html). La phase de déploiement utilise les nouveaux conteneurs et, après le montage du système de fichiers, ouvre les connexions réseau, active les services définis dans la section `relationships` du fichier `.magento.app.yaml` et exécute les hooks de déploiement définis dans le fichier `.magento.app.yaml`. Tout est _lecture seule_, à l’exception des répertoires définis dans le fichier `.magento.app.yaml`. Par défaut, la propriété ](../application/properties.md#mounts) comprend les répertoires suivants :[`mounts`
+La phase _déploiement_ place une suspension temporaire sur les requêtes entrantes et fait passer le site en [mode de maintenance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html). La phase de déploiement utilise les nouveaux conteneurs et, après le montage du système de fichiers, ouvre les connexions réseau, active les services définis dans la section `relationships` du fichier `.magento.app.yaml` et exécute les hooks de déploiement définis dans le fichier `.magento.app.yaml`. Tout est _lecture seule_, à l’exception des répertoires définis dans le fichier `.magento.app.yaml`. Par défaut, la propriété [&#128279;](../application/properties.md#mounts) comprend les répertoires suivants :`mounts`
 
 - `app/etc` : contient les fichiers de configuration `env.php` et `config.php`
 - `pub/media` : contient toutes les données multimédia, telles que les produits ou les catégories
@@ -44,7 +49,7 @@ La phase _post-déploiement_ exécute les hooks de post-déploiement définis da
 
 ## ![Vérification de l’état](../../assets/status-verify.png) Vérification des configurations
 
-Vous pouvez tester la configuration optimale pour l’état de votre projet en exécutant les [ Assistants intelligents ](smart-wizards.md).
+Vous pouvez tester la configuration optimale pour l’état de votre projet en exécutant les [&#x200B; Assistants intelligents &#x200B;](smart-wizards.md).
 
 >[!NOTE]
 >
