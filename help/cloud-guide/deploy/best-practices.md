@@ -4,21 +4,11 @@ description: Découvrez les bonnes pratiques de déploiement d’Adobe Commerce 
 feature: Cloud, Deploy, Best Practices
 exl-id: 87aabee7-4629-4a3c-9587-dbde4cf268e1
 TQID: https://experienceleague.adobe.com/sXtq-V7nDHm5IvDX0CqpxLcO3eQXem-YlMPG-kxTsmc
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c32adafa-ed01-4b31-997e-2413013911b0id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 1979
 ht-degree: 0%
@@ -37,9 +27,9 @@ Le processus de création et de déploiement est légèrement différent pour ch
 
 ## Suivre le processus
 
-Vous pouvez effectuer le suivi des actions de génération et de déploiement en temps réel à l’aide du terminal ou des messages de statut de [!DNL Cloud Console] (`in-progress`, `pending`, `success` ou `failed`) affichés pendant le processus de déploiement. Vous pouvez afficher les détails dans les fichiers journaux. Voir [&#x200B; Afficher les journaux &#x200B;](../test/log-locations.md).
+Vous pouvez effectuer le suivi des actions de génération et de déploiement en temps réel à l’aide du terminal ou des messages de statut de [!DNL Cloud Console] (`in-progress`, `pending`, `success` ou `failed`) affichés pendant le processus de déploiement. Vous pouvez afficher les détails dans les fichiers journaux. Voir [ Afficher les journaux ](../test/log-locations.md).
 
-Si vous utilisez des référentiels GitHub externes, le journal des opérations ne s’affiche pas dans la session GitHub. Cependant, vous pouvez toujours suivre l’activité dans l’interface pour le référentiel externe et le [!DNL Cloud Console]. Pour plus d&#39;informations, consultez la section [&#x200B; Intégrations &#x200B;](../integrations/overview.md).
+Si vous utilisez des référentiels GitHub externes, le journal des opérations ne s’affiche pas dans la session GitHub. Cependant, vous pouvez toujours suivre l’activité dans l’interface pour le référentiel externe et le [!DNL Cloud Console]. Pour plus d&#39;informations, consultez la section [ Intégrations ](../integrations/overview.md).
 
 >[!NOTE]
 >
@@ -53,7 +43,7 @@ Examinez ces bonnes pratiques et considérations concernant votre processus de d
 
 - **Assurez-vous d’exécuter la version la plus récente du package `ece-tools`**
 
-  Voir [&#x200B; Notes de mise à jour pour les outils CEE](../release-notes/ece-tools-package.md).
+  Voir [ Notes de mise à jour pour les outils CEE](../release-notes/ece-tools-package.md).
 
 - **Suivez le processus de création et de déploiement**
 
@@ -77,7 +67,7 @@ Examinez ces bonnes pratiques et considérations concernant votre processus de d
 
 - **Vérifier les versions et les relations des services et la possibilité de se connecter**
 
-  Vérifiez les services disponibles pour votre application et assurez-vous que vous utilisez la version la plus récente et compatible. Voir [Relations de service](../services/services-yaml.md#service-relationships) et [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) dans le _Guide d’installation_ pour obtenir les versions recommandées.
+  Vérifiez les services disponibles pour votre application et assurez-vous que vous utilisez la version la plus récente et compatible. Voir [Relations de service](../services/services-yaml.md#service-relationships) et [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) dans le _Guide d’installation_ pour obtenir les versions recommandées.
 
 - **Testez localement et dans l’environnement d’intégration avant le déploiement dans les environnements d’évaluation et de production**
 
@@ -89,7 +79,7 @@ Examinez ces bonnes pratiques et considérations concernant votre processus de d
 
 - **Après avoir effectué les tests dans les environnements locaux et d’intégration, déployez et testez-les dans l’environnement d’évaluation**
 
-  Voir [&#x200B; Test d’évaluation et de production &#x200B;](../test/staging-and-production.md).
+  Voir [ Test d’évaluation et de production ](../test/staging-and-production.md).
 
 - **Vérifiez la configuration de l’environnement de production**
 
@@ -133,8 +123,8 @@ Cette phase s’exécute également `composer install` pour récupérer les dép
 Cette phase crée la base de code et exécute les crochets dans la section `build` de `.magento.app.yaml`. Le hook de build par défaut est la commande `php ./vendor/bin/ece-tools` et effectue les opérations suivantes :
 
 - Application de correctifs dans `vendor/magento/ece-patches` et de correctifs facultatifs spécifiques au projet dans `m2-hotfixes`
-- Régénère le code et la configuration [injection de dépendance](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/glossary) (c’est-à-dire le répertoire `generated/`, qui comprend `generated/code` et `generated/metapackage`) à l’aide de `bin/magento setup:di:compile`.
-- Vérifie si le fichier [`app/etc/config.php`](../store/store-settings.md) existe dans la base de code. Adobe Commerce génère automatiquement ce fichier s’il ne le détecte pas lors de la phase de création et inclut une liste de modules et d’extensions. S’il existe, la phase de création se poursuit normalement, comprime les fichiers statiques à l’aide de GZIP et se déploie, ce qui réduit le temps d’arrêt dans la phase de déploiement. Pour en savoir plus sur la personnalisation ou la désactivation de la compression de fichiers[&#128279;](../environment/variables-build.md) voir Options de création.
+- Régénère le code et la configuration [injection de dépendance](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) (c’est-à-dire le répertoire `generated/`, qui comprend `generated/code` et `generated/metapackage`) à l’aide de `bin/magento setup:di:compile`.
+- Vérifie si le fichier [`app/etc/config.php`](../store/store-settings.md) existe dans la base de code. Adobe Commerce génère automatiquement ce fichier s’il ne le détecte pas lors de la phase de création et inclut une liste de modules et d’extensions. S’il existe, la phase de création se poursuit normalement, comprime les fichiers statiques à l’aide de GZIP et se déploie, ce qui réduit le temps d’arrêt dans la phase de déploiement. Pour en savoir plus sur la personnalisation ou la désactivation de la compression de fichiers](../environment/variables-build.md) voir [Options de création.
 
 >[!WARNING]
 >
@@ -160,7 +150,7 @@ Le slug comprend tous les fichiers et dossiers **à l’exclusion des éléments
 
 ### Phase 4 : déploiement des slugs et du cluster
 
-Vos applications et tous les services [principaux](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/glossary) sont configurés comme suit :
+Vos applications et tous les services [principaux](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) sont configurés comme suit :
 
 - Monte chaque service dans un conteneur, tel qu’un serveur web, OpenSearch, [!DNL RabbitMQ]
 - Monte le système de fichiers en lecture-écriture (monté sur une grille de stockage distribuée à haute disponibilité)
@@ -186,13 +176,13 @@ Si le fichier `app/etc/config.php` n’existe pas dans le codebase, les fichiers
 
 Il existe deux hooks de déploiement. Le hook `pre-deploy.php` effectue le nettoyage et la récupération nécessaires des ressources et du code générés dans le hook de build. Le hook `php ./vendor/bin/ece-tools deploy` exécute une série de commandes et de scripts :
 
-- Si Adobe Commerce n’est **pas installé**, il s’installe avec `bin/magento setup:install` et met à jour la configuration du déploiement, les `app/etc/env.php` et la base de données pour l’environnement spécifié, tel que Redis et les URL de site web. **Important :** lorsque vous avez terminé le [premier déploiement](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/launch/overview.html?lang=fr) lors de la configuration, Adobe Commerce a été installé et déployé dans tous les environnements.
+- Si Adobe Commerce n’est **pas installé**, il s’installe avec `bin/magento setup:install` et met à jour la configuration du déploiement, les `app/etc/env.php` et la base de données pour l’environnement spécifié, tel que Redis et les URL de site web. **Important :** lorsque vous avez terminé le [premier déploiement](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/launch/overview.html) lors de la configuration, Adobe Commerce a été installé et déployé dans tous les environnements.
 
 - Si Adobe Commerce **est installé**, effectuez les mises à niveau nécessaires. Le script de déploiement exécute `bin/magento setup:upgrade` pour mettre à jour le schéma et les données de la base de données (ce qui est nécessaire après les mises à jour de l’extension ou du code principal). Il met également à jour la configuration du déploiement, les `app/etc/env.php` et la base de données pour votre environnement. Enfin, le script de déploiement efface le cache d’Adobe Commerce.
 
 - Le script génère éventuellement du contenu web statique à l’aide de la `magento setup:static-content:deploy` de commande .
 
-- Utilise des portées (indicateur `-s` dans les scripts de version) avec un paramètre par défaut de `quick` pour la stratégie de déploiement de contenu statique. Vous pouvez personnaliser la stratégie à l’aide de la variable d’environnement [`SCD_STRATEGY`](../environment/variables-deploy.md#scd_strategy). Pour plus d’informations sur ces options et fonctionnalités, consultez [Stratégies de déploiement de fichiers statiques](../deploy/static-content.md) et l’indicateur de `-s` pour [Déployer des fichiers d’affichage statiques](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=fr).
+- Utilise des portées (indicateur `-s` dans les scripts de version) avec un paramètre par défaut de `quick` pour la stratégie de déploiement de contenu statique. Vous pouvez personnaliser la stratégie à l’aide de la variable d’environnement [`SCD_STRATEGY`](../environment/variables-deploy.md#scd_strategy). Pour plus d’informations sur ces options et fonctionnalités, consultez [Stratégies de déploiement de fichiers statiques](../deploy/static-content.md) et l’indicateur de `-s` pour [Déployer des fichiers d’affichage statiques](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
 
 >[!NOTE]
 >
@@ -207,3 +197,4 @@ Un déploiement réussi supprime le mode de maintenance pour permettre un accès
 Activez la génération de contenu statique à l’aide de la variable `SCD_ON_DEMAND` et configurez le hook [`post_deploy`](../application/hooks-property.md) de sorte qu’il vide le cache et précharge (réchauffe) le cache _une fois que_ le conteneur commence à accepter les connexions et _pendant_ le trafic entrant normal.
 
 Pour consulter les journaux de génération et de déploiement, voir [Afficher les journaux](../test/log-locations.md#view-and-manage-logs).
+

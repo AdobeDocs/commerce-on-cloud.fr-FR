@@ -4,14 +4,10 @@ description: Découvrez comment réduire le temps d’arrêt global lors du dép
 feature: Cloud, Deploy, SCD, Themes
 exl-id: c216c5e9-d787-4428-b67a-b6aee814ded5
 TQID: https://experienceleague.adobe.com/wYFZNd42AoVZxdlWWG6Jr-K6FV2XhTdWp-9HFoof4rE
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 502
 ht-degree: 0%
@@ -20,7 +16,7 @@ ht-degree: 0%
 
 # Déploiement sans temps d’arrêt
 
-Adobe Commerce sur l’infrastructure cloud exécute l’application en mode [_maintenance_ pendant la phase de déploiement](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=fr#production-mode) qui met votre site hors ligne jusqu’à ce que le déploiement soit terminé. La durée pendant laquelle votre site de production est en mode de maintenance dépend de la taille du site, du nombre de modifications appliquées pendant le déploiement et de la configuration pour le déploiement de contenu statique. Il est possible de configurer votre projet afin qu’il se déploie avec un effet de temps d’arrêt **nul**.
+Adobe Commerce sur l’infrastructure cloud exécute l’application en mode [_maintenance_ pendant la phase de déploiement](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode) qui met votre site hors ligne jusqu’à ce que le déploiement soit terminé. La durée pendant laquelle votre site de production est en mode de maintenance dépend de la taille du site, du nombre de modifications appliquées pendant le déploiement et de la configuration pour le déploiement de contenu statique. Il est possible de configurer votre projet afin qu’il se déploie avec un effet de temps d’arrêt **nul**.
 
 Pendant le processus de déploiement, toutes les connexions sont mises en file d’attente pendant 5 minutes au maximum, ce qui permet de préserver les sessions actives et les actions en attente, telles que l’ajout au panier ou le passage en caisse. Après le déploiement, la file d’attente est libérée et les connexions continuent sans interruption. Pour tirer parti de cette _suspension de la connexion_ et réduire le temps d’arrêt du déploiement à _zéro_, vous devez configurer votre projet afin d’utiliser la stratégie de déploiement la plus efficace.
 
@@ -54,3 +50,4 @@ Vous pouvez accélérer le processus de déploiement en mettant à jour la varia
 >[!NOTE]
 >
 >Vous pouvez valider la configuration de votre projet pour un déploiement optimal en [exécutant l’assistant d’état idéal](smart-wizards.md#verifying-an-ideal-configuration).
+

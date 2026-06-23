@@ -5,16 +5,11 @@ feature: Cloud, Auto Scaling
 topic: Architecture
 exl-id: 11bfde40-79d1-4d51-9233-150c4cfb80fd
 TQID: https://experienceleague.adobe.com/uL--0lHHJ-4SN3BkFU8reAefWhpMQOLBRVG7fX3jTM8
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: db6b6496-d1b5-4ad4-9e18-dea78dae3aa8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: db6b6496-d1b5-4ad4-9e18-dea78dae3aa8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 605
 ht-degree: 0%
@@ -38,7 +33,7 @@ Les seuils minimum et maximum sont déterminés et fixés en fonction des limite
 
 ## Surveillance des seuils avec New Relic
 
-Vous pouvez utiliser le service [&#128279;](../monitor/new-relic-service.md) pour surveiller certains seuils, tels que le nombre d&#39;hôtes et l&#39;utilisation de CPU. Les requêtes New Relic suivantes utilisent une notation de variable à des fins d’`cluster-id` uniquement.
+Vous pouvez utiliser le service [](../monitor/new-relic-service.md) pour surveiller certains seuils, tels que le nombre d&#39;hôtes et l&#39;utilisation de CPU. Les requêtes New Relic suivantes utilisent une notation de variable à des fins d’`cluster-id` uniquement.
 
 >[!TIP]
 >
@@ -55,7 +50,7 @@ SELECT uniqueCount(SystemSample.entityId) AS 'Infrastructure hosts', uniqueCount
 
 Dans la capture d’écran suivante, **hôtes APM vus** fait référence au nombre d’hôtes avec des transactions consignées pendant la période sélectionnée.
 
-![Nombre d’hôtes &#x200B;](../../assets/new-relic/host-count.png)
+![Nombre d’hôtes ](../../assets/new-relic/host-count.png)
 
 ### Utilisation de CPU
 
@@ -69,14 +64,14 @@ SELECT average(cpuPercent) FROM SystemSample FACET hostname, apmApplicationNames
 
 ## Activer la mise à l’échelle automatique
 
-Pour activer ou désactiver la mise à l’échelle automatique pour votre projet d’infrastructure cloud Adobe Commerce, [Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket). Sélectionnez les raisons suivantes dans le ticket :
+Pour activer ou désactiver la mise à l’échelle automatique pour votre projet d’infrastructure cloud Adobe Commerce, [Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Sélectionnez les raisons suivantes dans le ticket :
 
 - **Motif du contact** : demande de modification de l’infrastructure
 - **Motif de contact de l’infrastructure Adobe Commerce** : autre demande de modification de l’infrastructure
 
 >[!IMPORTANT]
 >
->La fonction de mise à l’échelle automatique capture les événements inattendus. Même si la mise à l’échelle automatique est activée, Adobe vous recommande de continuer à [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) si vous prévoyez un événement à venir.
+>La fonction de mise à l’échelle automatique capture les événements inattendus. Même si la mise à l’échelle automatique est activée, Adobe vous recommande de continuer à [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) si vous prévoyez un événement à venir.
 
 ### Test de charge
 
@@ -91,3 +86,4 @@ Par exemple :
 - Si la liste autorisée contient les adresses IP de vos nœuds de service (1, 2 et 3), aucune action n’est requise.
 - Si la place sur la liste autorisée contient les adresses IP de vos nœuds de service (1, 2 et 3) et de vos nœuds web (4, 5 et 6) (dans ce cas, les six nœuds), aucune action n’est requise.
 - Si la place sur la liste autorisée contient les adresses IP _uniquement_ pour vos nœuds web (4, 5 et 6), vous devez mettre à jour la liste autorisée afin d’inclure les adresses IP des nœuds de service.
+
