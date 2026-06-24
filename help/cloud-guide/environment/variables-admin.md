@@ -65,7 +65,7 @@ Dans la [console cloud](https://experienceleague.adobe.com/docs/commerce-cloud-s
 - **Name:** `ADMIN_URL`
 - **Valeur :** votre nouvelle URL d’administrateur (par exemple, `magento_A8v10`)
 
-- Pour obtenir des instructions détaillées, consultez [ajout de variables d’environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-environment) ou [variables d’environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html?lang=fr) dans notre documentation destinée aux développeurs.
+- Pour obtenir des instructions détaillées, consultez [ajout de variables d’environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=fr#configure-environment) ou [variables d’environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html?lang=fr) dans notre documentation destinée aux développeurs.
 
 ##### Définissez l’URL d’administration dans le [!DNL Cloud Console]
 
