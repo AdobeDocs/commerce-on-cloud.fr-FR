@@ -14,9 +14,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: c43a709ee9c3b974cef08e36170dbb2ab240564f
 workflow-type: tm+mt
-source-wordcount: 541
+source-wordcount: 572
 ht-degree: 0%
 
 ---
@@ -170,5 +170,7 @@ Voir [Impossible de se connecter à RabbitMQ dans Adobe Commerce Cloud](https://
 >[!IMPORTANT]
 >
 >Lors de la mise à niveau de [!DNL RabbitMQ] dans un environnement d’intégration, n’ignorez pas les versions. Seules les [mises à niveau séquentielles](https://www.rabbitmq.com/docs/upgrade#rabbitmq-version-upgradability) sont prises en charge (par exemple, 3.8 → 3.9 → 3.10 → 3.11 → 3.12 → 3.13 → 4.0 → 4.1) et chaque bogue de version doit correspondre à un déploiement réussi de votre environnement Cloud.
+>
+>Après avoir modifié la version du service RabbitMQ, y compris une mise à niveau ou une rétrogradation, redéployez l’environnement. Pendant le déploiement, Adobe Commerce exécute les tâches de configuration qui recréent les files d’attente, échanges et liaisons RabbitMQ requises.
 >
 >Pour obtenir des instructions générales sur la mise à niveau du service, voir [Modifier la version du service](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version).
