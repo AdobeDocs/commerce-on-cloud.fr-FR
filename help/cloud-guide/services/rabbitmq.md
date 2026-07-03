@@ -23,7 +23,7 @@ ht-degree: 0%
 
 # Configuration du service [!DNL RabbitMQ]
 
-Le [Message Queue Framework (MQF)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) est un système d’Adobe Commerce qui permet à un [module](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module) de publier des messages dans les files d’attente. Il définit également les consommateurs qui reçoivent les messages de manière asynchrone.
+Le [Message Queue Framework (MQF)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html?lang=fr) est un système d’Adobe Commerce qui permet à un [module](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/glossary#module) de publier des messages dans les files d’attente. Il définit également les consommateurs qui reçoivent les messages de manière asynchrone.
 
 Le MQF utilise [RabbitMQ](https://www.rabbitmq.com/) comme courtier de messagerie, ce qui fournit une plateforme évolutive pour envoyer et recevoir des messages. Il comprend également un mécanisme de stockage des messages non diffusés. [!DNL RabbitMQ] est basé sur la spécification AMQP (Advanced Message Queuing Protocol) 0.9.1.
 
@@ -163,7 +163,7 @@ Pour vous connecter à RabbitMQ à l&#39;aide de votre application PHP, ajoutez 
 
 ## Résolution des problèmes liés au service [!DNL RabbitMQ]
 
-Voir [Impossible de se connecter à RabbitMQ dans Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27688).
+Voir [Impossible de se connecter à RabbitMQ dans Adobe Commerce Cloud](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27688).
 
 ## Mettre à niveau le service [!DNL RabbitMQ]
 
@@ -173,4 +173,4 @@ Voir [Impossible de se connecter à RabbitMQ dans Adobe Commerce Cloud](https://
 >
 >Après avoir modifié la version du service RabbitMQ, y compris une mise à niveau ou une rétrogradation, redéployez l’environnement. Pendant le déploiement, Adobe Commerce exécute les tâches de configuration qui recréent les files d’attente, échanges et liaisons RabbitMQ requises.
 >
->Pour obtenir des instructions générales sur la mise à niveau du service, voir [Modifier la version du service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version).
+>Pour obtenir des instructions générales sur la mise à niveau du service, voir [Modifier la version du service](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version).
