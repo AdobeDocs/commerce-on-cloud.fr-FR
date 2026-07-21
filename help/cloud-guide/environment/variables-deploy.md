@@ -6,10 +6,16 @@ recommendations: noDisplay, catalog
 role: Developer
 exl-id: 980ec809-8c68-450a-9db5-29c5674daa16
 TQID: https://experienceleague.adobe.com/TNuUxXzCiXnKefww0DmKbjfJygEz2HFG-0PjCsCy2nA
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: c16f4ad68bb3d57f021c552f7aca2d2ee2e8c365
 workflow-type: tm+mt
 source-wordcount: 2798
@@ -484,7 +490,7 @@ Un service Redis doit être configuré dans le fichier `.magento.app.yaml` et da
 
 [ECE-Tools version 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) et versions ultérieures utilisent des réglages plus tolérants aux pannes. Si Adobe Commerce ne peut pas lire les données de l’instance Redis _esclave_, il lit les données de l’instance Redis _maître_.
 
-La connexion en lecture seule n’est pas disponible pour être utilisée dans l’environnement d’intégration ou si vous utilisez la variable ](#cache_configuration).[`CACHE_CONFIGURATION`
+La connexion en lecture seule n’est pas disponible pour être utilisée dans l’environnement d’intégration ou si vous utilisez la variable [&#128279;](#cache_configuration).`CACHE_CONFIGURATION`
 
 ## `VALKEY_BACKEND`
 
@@ -533,7 +539,7 @@ Un service Redis doit être configuré dans le fichier `.magento.app.yaml` et da
 
 [ECE-Tools version 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) et versions ultérieures utilisent des réglages plus tolérants aux pannes. Si Adobe Commerce ne peut pas lire les données de l’instance Valkey _esclave_, il lit les données de l’instance Redis _maître_.
 
-La connexion en lecture seule n’est pas disponible pour être utilisée dans l’environnement d’intégration ou si vous utilisez la variable ](#cache_configuration).[`CACHE_CONFIGURATION`
+La connexion en lecture seule n’est pas disponible pour être utilisée dans l’environnement d’intégration ou si vous utilisez la variable [&#128279;](#cache_configuration).`CACHE_CONFIGURATION`
 
 ## `RESOURCE_CONFIGURATION`
 
@@ -645,7 +651,7 @@ stage:
 - **Default**—`quick`
 - **Version**—Adobe Commerce 2.2.0 et versions ultérieures
 
-Permet de personnaliser la [stratégie de déploiement](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) pour le contenu statique. Voir [ Déploiement de fichiers de vue statiques ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
+Permet de personnaliser la [stratégie de déploiement](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) pour le contenu statique. Voir [&#x200B; Déploiement de fichiers de vue statiques &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
 
 Utilisez ces options _uniquement_ si vous disposez de plusieurs paramètres régionaux :
 
@@ -806,7 +812,7 @@ stage:
 >
 >Sur Adobe Commerce 2.4.7 et 2.4.8, la définition de `USE_LUA: true` peut entraîner des problèmes de corruption du cache et d’absence du cache GraphQL.
 >
->À partir d’Adobe Commerce 2.4.9, utilisez les conseils de configuration du cache Valkey pour votre version de Commerce et ne comptez pas sur `USE_LUA` pour les nouveaux déploiements. Voir [ Configuration de Redis pour le cache de page et par défaut](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache).
+>À partir d’Adobe Commerce 2.4.9, utilisez les conseils de configuration du cache Valkey pour votre version de Commerce et ne comptez pas sur `USE_LUA` pour les nouveaux déploiements. Voir [&#x200B; Configuration de Redis pour le cache de page et par défaut](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache).
 
 ## `LUA_KEY`
 
