@@ -86,9 +86,9 @@ Image optimization complete!
 ## Instructions relatives aux images
 
 - **PNG** : à utiliser pour les captures d’écran et les éléments d’interface utilisateur (sera optimisé automatiquement)
-- **** : utiliser pour les photos (sera optimisé automatiquement)
-- **** : à utiliser pour les animations (sera optimisé automatiquement)
-- **** : à utiliser pour les icônes et les graphiques simples (non optimisés, mais vérifiés par rapport à une limite de taille ; la validation échoue si la limite est dépassée)
+- **&#x200B;**&#x200B;: utiliser pour les photos (sera optimisé automatiquement)
+- **&#x200B;**&#x200B;: à utiliser pour les animations (sera optimisé automatiquement)
+- **&#x200B;**&#x200B;: à utiliser pour les icônes et les graphiques simples (non optimisés, mais vérifiés par rapport à une limite de taille ; la validation échoue si la limite est dépassée)
 
 Les hooks de prévalidation optimisent automatiquement les images PNG, JPEG et GIF lors de la validation et comparent les SVG intermédiaires à une taille maximale (140 Ko).
 
@@ -113,8 +113,8 @@ bundle exec rake images:optimize path=../path/to/images
 Les points d’extension utilisent le fichier de configuration `_jekyll/.image_optim.yml` pour personnaliser les paramètres d’optimisation :
 
 - **PNG** : utilise `advpng`, `optipng` et `pngquant`
-- **** : utilise `jhead`, `jpegoptim` et `jpegtran`
-- **** : Utilise `gifsicle`
+- **&#x200B;**&#x200B;: utilise `jhead`, `jpegoptim` et `jpegtran`
+- **&#x200B;**&#x200B;: Utilise `gifsicle`
 - **SVG** : non optimisé (exclu de `image_optim` pour conserver les graphiques et animations vectoriels), mais vérifié par rapport à une taille limite de 140 Ko
 
 ## Dépannage
@@ -154,9 +154,9 @@ Les points d’extension utilisent le fichier de configuration `_jekyll/.image_o
 ## Formats d’image pris en charge
 
 - **PNG** (`.png`) - Compression sans perte et avec perte
-- **** (`.jpg`, `.jpeg`) - Compression avec perte avec nettoyage des métadonnées
-- **** (`.gif`) - Animation et optimisation statique
-- **** (`.svg`) - Non optimisé (validation en l’état pour préserver la qualité), mais vérifié par rapport à une taille limite de 140 Ko ; la validation est abandonnée si la limite est dépassée.
+- **&#x200B;**&#x200B;(`.jpg`, `.jpeg`) - Compression avec perte avec nettoyage des métadonnées
+- **&#x200B;**&#x200B;(`.gif`) - Animation et optimisation statique
+- **&#x200B;**&#x200B;(`.svg`) - Non optimisé (validation en l’état pour préserver la qualité), mais vérifié par rapport à une taille limite de 140 Ko ; la validation est abandonnée si la limite est dépassée.
 
 ## Bonnes pratiques
 
