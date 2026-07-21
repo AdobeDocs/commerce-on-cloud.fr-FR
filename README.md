@@ -1,7 +1,7 @@
 ---
-source-git-commit: 55206749cd121ef6d6139a71af6ff905d4109859
+source-git-commit: 7c3f2965f89503cc94a31aabca3d317a9330a4f6
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -9,8 +9,8 @@ ht-degree: 0%
 
 Ce site contient la documentation la plus récente pour les développeurs de Commerce sur les infrastructures cloud.
 
-- [Guide de Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/overview)
-- [Prise en main de Commerce](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/start/overview) sur les infrastructures cloud
+- [Guide de Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+- [Prise en main de Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/overview) sur les infrastructures cloud
 
 ## Code de conduite d’Adobe Open Source
 
@@ -18,7 +18,7 @@ Ce projet a adopté le [code de conduite d’Adobe Open Source](code-of-conduct.
 
 ## À propos de vos contributions au contenu d’Adobe
 
-Consultez le Guide du contributeur aux documents Adobe [&#128279;](https://experienceleague.adobe.com/fr/docs/contributor/contributor-guide/introduction).
+Consultez le Guide du contributeur aux documents Adobe [](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
 
 La façon dont vous contribuez dépend de qui vous êtes et du type de modifications que vous souhaitez apporter :
 
@@ -34,13 +34,13 @@ Si vous faites partie de la communauté Adobe et que vous souhaitez rédiger un 
 
 ### Modifications majeures apportées par les employés d’Adobe
 
-Si vous êtes rédacteur technique, responsable de programme ou développeur au sein de l’équipe produit d’une solution Adobe Experience Cloud et qu’il vous incombe de contribuer ou de rédiger des articles techniques, vous devez utiliser le référentiel privé à l’adresse `https://github.com/Adobe-Enterprise-Docs/commerce-on-cloud.fr-FR`.
+Si vous êtes rédacteur technique, responsable de programme ou développeur au sein de l’équipe produit d’une solution Adobe Experience Cloud et qu’il vous incombe de contribuer ou de rédiger des articles techniques, vous devez utiliser le référentiel privé à l’adresse `https://github.com/Adobe-Enterprise-Docs/commerce-on-cloud.en`.
 
 ## Outils et configuration
 
 Les contributeurs de la communauté peuvent utiliser l’interface utilisateur de GitHub pour apporter des modifications mineures, ou dupliquer le référentiel pour apporter des contributions majeures.
 
-Pour plus d’informations, consultez le Guide du contributeur aux documents Adobe [&#128279;](https://experienceleague.adobe.com/fr/docs/contributor/contributor-guide/introduction).
+Pour plus d’informations, consultez le Guide du contributeur aux documents Adobe [](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
 
 ## Comment utiliser Markdown pour formater votre rubrique
 
@@ -70,7 +70,7 @@ En règle générale, la plupart des auteurs et des autrices n’ont besoin d’
 >**REMARQUE :**
 >
 >- La génération de contenu modélisé nécessite de travailler sur la ligne de commande dans un terminal.
->- Ruby doit être installé pour exécuter le script de rendu. Voir [_jekyll/.ruby-version] (_jekyll/.ruby-version) pour la version requise.
+>- Ruby doit être installé pour exécuter le script de rendu. Voir [_jekyll/.ruby-version](_jekyll/.ruby-version) pour la version requise.
 
 Pour obtenir une description de la structure de fichiers pour le contenu modélisé, reportez-vous aux sections suivantes :
 
@@ -134,7 +134,9 @@ Consultez la documentation Jekyll pour plus d’informations sur [Fichiers de do
 
 ## Tâches de classement disponibles
 
-Ce référentiel utilise les tâches rake fournies par `adobe-comdox-exl-rake-tasks` gem. Pour afficher toutes les tâches disponibles, exécutez :
+Ce référentiel utilise les tâches principales fournies par le
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+gem. Pour afficher toutes les tâches disponibles, exécutez :
 
 ```bash
 cd _jekyll
@@ -155,10 +157,11 @@ Après avoir cloné le référentiel, exécutez :
 
 ### Ce que font les crochets
 
-- Détecter automatiquement les fichiers image intermédiaires (PNG, JPG, JPEG, GIF, SVG)
-- Exécutez `image_optim` pour compresser et optimiser les images.
+- Détecter automatiquement les fichiers image intermédiaires (PNG, JPEG, GIF, SVG)
+- Exécutez `image_optim` pour compresser et optimiser les images pixellisées (PNG, JPEG, GIF).
 - Réévaluation automatique des images optimisées
-- Vérifiez que toutes les images validées sont correctement optimisées.
+- Assurez-vous que toutes les images pixellisées validées sont correctement optimisées
+- Vérifiez les SVG intermédiaires par rapport à une limite de taille et abandonnez la validation si un SVG la dépasse.
 
 ### Avantages
 

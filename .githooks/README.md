@@ -1,7 +1,7 @@
 ---
-source-git-commit: ee2ed3a78939af36572f0baa6672b2e9f9a2557f
+source-git-commit: 7c3f2965f89503cc94a31aabca3d317a9330a4f6
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -11,10 +11,11 @@ Ce répertoire contient des hooks de prévalidation qui optimisent automatiqueme
 
 ## Ce que font les crochets
 
-- **Détection automatique** fichiers image intermédiaires (PNG, JPG, JPEG, GIF)
-- **Exécuter des`image_optim`** pour compresser et optimiser les images
+- **Détection automatique** fichiers image intermédiaires (PNG, JPEG, GIF, SVG)
+- **Exécutez des`image_optim`** pour compresser et optimiser les images pixellisées (PNG, JPEG, GIF).
 - **Réorganiser automatiquement les images optimisées**
-- **Vérifiez que toutes les images validées** sont correctement optimisées.
+- **Assurez-vous que toutes les images pixellisées validées** sont correctement optimisées
+- **Vérifiez les SVG intermédiaires** par rapport à une limite de taille et abandonnez la validation si un SVG la dépasse.
 
 ## Avantages
 
@@ -85,11 +86,18 @@ Image optimization complete!
 ## Instructions relatives aux images
 
 - **PNG** : à utiliser pour les captures d’écran et les éléments d’interface utilisateur (sera optimisé automatiquement)
-- **JPEG** : utiliser pour les photos (sera optimisé automatiquement)
-- **GIF** : à utiliser pour les animations (sera optimisé automatiquement)
-- **SVG** : à utiliser pour les icônes et les graphiques simples (non traités par des points d&#39;extension, validation en l&#39;état)
+- **** : utiliser pour les photos (sera optimisé automatiquement)
+- **** : à utiliser pour les animations (sera optimisé automatiquement)
+- **** : à utiliser pour les icônes et les graphiques simples (non optimisés, mais vérifiés par rapport à une limite de taille ; la validation échoue si la limite est dépassée)
 
-Les hooks de prévalidation optimisent automatiquement les images PNG, JPEG et GIF lors de la validation.
+Les hooks de prévalidation optimisent automatiquement les images PNG, JPEG et GIF lors de la validation et comparent les SVG intermédiaires à une taille maximale (140 Ko).
+
+Si un SVG intermédiaire dépasse la limite, la validation est abandonnée. Convertissez-le plutôt en PNG :
+
+```bash
+cd _jekyll
+bundle exec rake images:svg_to_png path=path/to/image.svg
+```
 
 ## Optimisation manuelle
 
@@ -105,9 +113,9 @@ bundle exec rake images:optimize path=../path/to/images
 Les points d’extension utilisent le fichier de configuration `_jekyll/.image_optim.yml` pour personnaliser les paramètres d’optimisation :
 
 - **PNG** : utilise `advpng`, `optipng` et `pngquant`
-- **JPEG** : utilise `jhead`, `jpegoptim` et `jpegtran`
-- **GIF** : Utilise `gifsicle`
-- **SVG** : non traité (exclu de la détection pour conserver les graphiques vectoriels et les animations)
+- **** : utilise `jhead`, `jpegoptim` et `jpegtran`
+- **** : Utilise `gifsicle`
+- **SVG** : non optimisé (exclu de `image_optim` pour conserver les graphiques et animations vectoriels), mais vérifié par rapport à une taille limite de 140 Ko
 
 ## Dépannage
 
@@ -123,6 +131,12 @@ Les points d’extension utilisent le fichier de configuration `_jekyll/.image_o
 - Vérifiez que le `adobe-comdox-exl-rake-tasks` gem est installé (fournit des `image_optim`)
 - Vérifier le fichier de configuration `.image_optim.yml`
 
+### SVG dépasse la limite de taille.
+
+- La validation est abandonnée si un SVG intermédiaire dépasse 140 Ko
+- Convertir le SVG en PNG : `cd _jekyll && bundle exec rake images:svg_to_png path=path/to/image.svg`
+- Ensuite, préparez le fichier PNG à la place du SVG et validez à nouveau
+
 ### Problèmes de performances
 
 - Ajuster le nombre de threads dans `_jekyll/.image_optim.yml`
@@ -132,16 +146,17 @@ Les points d’extension utilisent le fichier de configuration `_jekyll/.image_o
 
 1. **Déclencheur de pré-validation** : lorsque vous exécutez `git commit`, le hook s’exécute automatiquement
 2. **Détection d’images** : recherche les extensions d’image dans les fichiers intermédiaires
-3. **Optimisation** : s’exécute `image_optim` sur chaque image intermédiaire
+3. **Optimisation** : s’exécute `image_optim` sur chaque fichier PNG, JPEG ou GIF intermédiaire
 4. **Réévaluation** : ajoute automatiquement les images optimisées à la zone d’évaluation
-5. **La validation se poursuit** : si l’optimisation réussit, la validation se poursuit normalement
+5. **Vérification de la taille de SVG** : vérifie la taille maximale de 140 Ko de chaque SVG intermédiaire
+6. **La validation se poursuit** : si l’optimisation réussit et qu’aucun SVG ne dépasse la limite de taille, la validation se poursuit normalement, sinon la validation est abandonnée
 
 ## Formats d’image pris en charge
 
 - **PNG** (`.png`) - Compression sans perte et avec perte
-- **JPEG** (`.jpg`, `.jpeg`) - Compression avec perte avec nettoyage des métadonnées
-- **GIF** (`.gif`) - Animation et optimisation statique
-- **SVG** (`.svg`) - Non traité par les hooks (valider en l&#39;état pour préserver la qualité)
+- **** (`.jpg`, `.jpeg`) - Compression avec perte avec nettoyage des métadonnées
+- **** (`.gif`) - Animation et optimisation statique
+- **** (`.svg`) - Non optimisé (validation en l’état pour préserver la qualité), mais vérifié par rapport à une taille limite de 140 Ko ; la validation est abandonnée si la limite est dépassée.
 
 ## Bonnes pratiques
 
