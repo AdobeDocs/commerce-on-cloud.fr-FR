@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: ab64bb5a3cc159844015072738404274fdea97cd
+source-git-commit: c16f4ad68bb3d57f021c552f7aca2d2ee2e8c365
 workflow-type: tm+mt
-source-wordcount: 2575
+source-wordcount: 2798
 ht-degree: 0%
 
 ---
@@ -792,6 +792,52 @@ stage:
   deploy:
     UPDATE_URLS: false
 ```
+
+## `USE_LUA`
+
+- **Default**—`false`
+- **Version**—Adobe Commerce 2.4.7 et versions ultérieures
+
+Contrôle l’option du serveur principal du cache `use_lua` dans `env.php` pour le serveur principal du cache par défaut (et, lors de l’utilisation du serveur principal `symfony_l2`, les options du serveur principal distant du serveur principal du `stale_cache_enabled`). Cette option n’est pas appliquée au serveur frontal `page_cache`.
+
+Utilisez la valeur par défaut `false` sauf indication contraire explicite de la part de la prise en charge d’Adobe.
+
+```yaml
+stage:
+  deploy:
+    USE_LUA: false
+```
+
+>[!WARNING]
+>
+>Sur Adobe Commerce 2.4.7 et 2.4.8, la définition de `USE_LUA: true` peut entraîner des problèmes de corruption du cache et d’absence du cache GraphQL.
+>
+>À partir d’Adobe Commerce 2.4.9, utilisez les conseils de configuration du cache Valkey pour votre version de Commerce et ne comptez pas sur `USE_LUA` pour les nouveaux déploiements. Voir [&#x200B; Configuration de Redis pour le cache de page et par défaut](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache).
+
+## `LUA_KEY`
+
+La variable `LUA_KEY` est obsolète. Si `LUA_KEY` est inclus dans `.magento.env.yaml`, supprimez-le lors de la migration. Utilisez plutôt les variables `USE_LUA` et `USE_LUA_ON_GC` .
+
+## `USE_LUA_ON_GC`
+
+- **Default**—`true`
+- **Version**—Adobe Commerce 2.4.8 et versions ultérieures
+
+Contrôle l’option du serveur principal du cache `use_lua_on_gc` dans `env.php` pour le serveur principal du cache par défaut (et, lors de l’utilisation du serveur principal `symfony_l2`, les options du serveur principal distant du serveur principal `stale_cache_enabled`) pour le nettoyage. Cette option n’est pas appliquée au serveur frontal `page_cache`.
+
+Utilisez l’`true` de valeur par défaut pour conserver le nettoyage atomique des balises de cache pendant la tâche cron `backend_clean_cache`.
+
+```yaml
+stage:
+  deploy:
+    USE_LUA_ON_GC: true
+```
+
+>[!WARNING]
+>
+>Sous Adobe Commerce 2.4.8, la définition de `USE_LUA_ON_GC: false` peut entraîner l’échec silencieux de l’invalidation du cache basé sur les balises et nécessiter un vidage complet du cache pour la récupération.
+>
+>Sur 2.4.9 et les versions ultérieures, suivez les [conseils de service de cache](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache) correspondant à la version installée.
 
 ## `VERBOSE_COMMANDS`
 

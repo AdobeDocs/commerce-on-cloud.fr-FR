@@ -1,7 +1,7 @@
 ---
-source-git-commit: 55206749cd121ef6d6139a71af6ff905d4109859
+source-git-commit: 7c3f2965f89503cc94a31aabca3d317a9330a4f6
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,9 @@ Consultez la documentation Jekyll pour plus d’informations sur [Fichiers de do
 
 ## Tâches de classement disponibles
 
-Ce référentiel utilise les tâches rake fournies par `adobe-comdox-exl-rake-tasks` gem. Pour afficher toutes les tâches disponibles, exécutez :
+Ce référentiel utilise les tâches principales fournies par le
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+gem. Pour afficher toutes les tâches disponibles, exécutez :
 
 ```bash
 cd _jekyll
@@ -155,10 +157,11 @@ Après avoir cloné le référentiel, exécutez :
 
 ### Ce que font les crochets
 
-- Détecter automatiquement les fichiers image intermédiaires (PNG, JPG, JPEG, GIF, SVG)
-- Exécutez `image_optim` pour compresser et optimiser les images.
+- Détecter automatiquement les fichiers image intermédiaires (PNG, JPEG, GIF, SVG)
+- Exécutez `image_optim` pour compresser et optimiser les images pixellisées (PNG, JPEG, GIF).
 - Réévaluation automatique des images optimisées
-- Vérifiez que toutes les images validées sont correctement optimisées.
+- Assurez-vous que toutes les images pixellisées validées sont correctement optimisées
+- Vérifiez les SVG intermédiaires par rapport à une limite de taille et abandonnez la validation si un SVG la dépasse.
 
 ### Avantages
 
