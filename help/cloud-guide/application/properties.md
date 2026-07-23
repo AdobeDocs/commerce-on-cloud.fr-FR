@@ -4,16 +4,12 @@ description: Utilisez la liste des propriétés comme référence lors de la con
 feature: Cloud, Configuration, Build, Deploy, Roles/Permissions, Storage
 exl-id: 32bd1f64-43d6-48a3-84b7-bea22f125bb0
 TQID: https://experienceleague.adobe.com/5HoI8DnJqL6pyBZRt3u-jVlQvhP1UGqN70B9fq2c9-Y
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: de2e5072775d032d46f91394ed870768271fa9a1
 workflow-type: tm+mt
-source-wordcount: 855
+source-wordcount: 849
 ht-degree: 0%
 
 ---
@@ -28,7 +24,6 @@ Le fichier `.magento.app.yaml` utilise des propriétés pour gérer la prise en 
 | [`crons`](crons-property.md) | Mise à jour des spécifications et planification des tâches cron | — | Non |
 | [`dependencies`](#dependencies) | Activer les dépendances supplémentaires | `php:composer/composer: '2.2.4'` | Non |
 | [`disk`](#disk) | Définition de la taille du disque persistant | `5120` | Oui |
-| [`firewall`](firewall-property.md) | (Démarrage uniquement) Contrôle du trafic sortant | — | Non |
 | [`hooks`](hooks-property.md) | Personnaliser les commandes shell pour les phases de création, de déploiement et de post-déploiement | — | Non |
 | [`mounts`](#mounts) | Définir les chemins d’accès | Chemins d’accès :<ul><li>`"var": "shared:files/var"`</li><li>`"app/etc": "shared:files/etc"`</li><li>`"pub/media": "shared:files/media"`</li><li>`"pub/static": "shared:files/static"`</li></ul> | Non |
 | [`name`](#name) | Définition du nom de l’application | `mymagento` | Oui |
@@ -148,7 +143,7 @@ La taille de disque minimale recommandée est de 256 Mo. Si le `UserError: Error
 
 >[!NOTE]
 >
->Pour les environnements d’évaluation et de production Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour mettre à jour la configuration `mounts` et `disk` de votre application. Lorsque vous soumettez le ticket, indiquez les modifications de configuration requises et incluez une version mise à jour de votre fichier `.magento.app.yaml`.
+>Pour les environnements d’évaluation et de production Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour mettre à jour la configuration `mounts` et `disk` de votre application. Lorsque vous soumettez le ticket, indiquez les modifications de configuration requises et incluez une version mise à jour de votre fichier `.magento.app.yaml`.
 >
 >Il n’est pas possible d’augmenter temporairement l’espace de stockage du disque dans les environnements d’évaluation ou de production ; ce processus n’est pas réversible.
 
@@ -199,7 +194,7 @@ Le format d’ajout de votre montage à cette liste est le suivant :
 
 >[!NOTE]
 >
->Pour les environnements d’évaluation et de production Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour mettre à jour la configuration `mounts` et `disk` de votre application. Lorsque vous soumettez le ticket, indiquez les modifications de configuration requises et incluez une version mise à jour de votre fichier `.magento.app.yaml`.
+>Pour les environnements d’évaluation et de production Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour mettre à jour la configuration `mounts` et `disk` de votre application. Lorsque vous soumettez le ticket, indiquez les modifications de configuration requises et incluez une version mise à jour de votre fichier `.magento.app.yaml`.
 
 Vous pouvez rendre le montage web accessible en l’ajoutant au bloc d’emplacements [`web`](web-property.md).
 
