@@ -4,16 +4,12 @@ description: Découvrez comment configurer et optimiser Valkey en tant que solut
 feature: Cloud, Cache, Services
 exl-id: f8933e0d-a308-4c75-8547-cb26ab6df947
 TQID: https://experienceleague.adobe.com/-aBnwClJGQlRkEfugtChxbjLObLzTu0xl1IvkYUVRsk
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 988a098ec800616898a4ad0ab460a09ec64c4fc3
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: a12aa37d41a68df2fd4c84b589a08e128e5ec103
 workflow-type: tm+mt
-source-wordcount: 259
+source-wordcount: 286
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 [Valkey](https://valkey.io) est une solution de cache d’arrière-plan facultative qui remplace le `Zend Framework Zend_Cache_Backend_File` utilisé par défaut par Adobe Commerce. Si vous remplacez la valeur par défaut sur les versions de Commerce 2.4.9+ ou les versions de correctif ultérieures aux lignes de version 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 et 2.4.8-p4, vous devez utiliser Valkey.
 
-Voir [Configurer Valkey](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration){target="_blank"} dans le _Guide des bonnes pratiques du playbook d’implémentation_.
+Voir [Configurer Valkey](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration){target="_blank"} dans le _Guide des bonnes pratiques du playbook d’implémentation_.
 
 {{service-instruction}}
 
@@ -57,6 +53,10 @@ Voir [Configurer Valkey](https://experienceleague.adobe.com/fr/docs/commerce-ope
         VALKEY_USE_SLAVE_CONNECTION: true
         VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
    ```
+
+   >[!TIP]
+   >
+   >Pour Adobe Commerce version 2.4.9 et ultérieure, vous pouvez utiliser l’implémentation moderne du cache L2 basé sur Symfony Cache au lieu de `RemoteSynchronizedCache` en définissant `VALKEY_BACKEND: symfony_l2`. Voir [`VALKEY_BACKEND`](../environment/variables-deploy.md#valkey_backend) dans la référence _Déployer les variables_.
 
 1. Ajouter, valider et transmettre vos modifications de code.
 
