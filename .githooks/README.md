@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7c3f2965f89503cc94a31aabca3d317a9330a4f6
+source-git-commit: 3d3df68ab5e1781974348190b30372c0b8169d1d
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -11,11 +11,11 @@ Ce répertoire contient des hooks de prévalidation qui optimisent automatiqueme
 
 ## Ce que font les crochets
 
-- **Détection automatique** fichiers image intermédiaires (PNG, JPEG, GIF, SVG)
-- **Exécutez des`image_optim`** pour compresser et optimiser les images pixellisées (PNG, JPEG, GIF).
+- **Détection automatique** fichiers image intermédiaires (`.png`, `.jpeg`, `.jpg`, `.gif`, `.svg`)
+- **Exécutez des`image_optim`** pour compresser et optimiser les images pixellisées (`.png`, `.jpeg`, `.jpg`, `.gif`)
 - **Réorganiser automatiquement les images optimisées**
 - **Assurez-vous que toutes les images pixellisées validées** sont correctement optimisées
-- **Vérifiez les SVG intermédiaires** par rapport à une limite de taille et abandonnez la validation si un SVG la dépasse.
+- **Vérifiez les SVG intermédiaires par rapport à une limite de taille et abandonnez la validation si un SVG surdimensionné est référencé à partir de n’importe quel fichier dans `help/` (sinon, avertissez simplement).**
 
 ## Avantages
 
@@ -78,26 +78,37 @@ chmod +x .githooks/*
 
 ```bash
 Found 1 staged image(s). Running optimization...
-Optimizing: path/to/your/image.png
-Re-staged optimized image: path/to/your/image.png
-Image optimization complete!
+
+Checking images ...
+path/to/your/image.png    100.00%
+Pre-commit image checks complete!
+```
+
+### Tests unitaires
+
+La logique de détection des liens SVG du hook (qui décide si un SVG surdimensionné est référencé à partir de `help/`) est couverte par des tests unitaires qui n’ont besoin que des `minitest` groupées de Ruby, sans gems ni configuration `_jekyll` :
+
+```bash
+ruby .githooks/test/svg_link_checker_test.rb
 ```
 
 ## Instructions relatives aux images
 
 - **PNG** : à utiliser pour les captures d’écran et les éléments d’interface utilisateur (sera optimisé automatiquement)
-- **&#x200B;**&#x200B;: utiliser pour les photos (sera optimisé automatiquement)
-- **&#x200B;**&#x200B;: à utiliser pour les animations (sera optimisé automatiquement)
-- **&#x200B;**&#x200B;: à utiliser pour les icônes et les graphiques simples (non optimisés, mais vérifiés par rapport à une limite de taille ; la validation échoue si la limite est dépassée)
+- **** : utiliser pour les photos (sera optimisé automatiquement)
+- **** : à utiliser pour les animations (sera optimisé automatiquement)
+- **SVG** : à utiliser pour les icônes et les graphiques simples (non optimisés, mais vérifiés par rapport à une limite de taille ; la validation échoue uniquement si le SVG surdimensionné est lié par `help/`)
 
-Les hooks de prévalidation optimisent automatiquement les images PNG, JPEG et GIF lors de la validation et comparent les SVG intermédiaires à une taille maximale (140 Ko).
+Les hooks de pré-validation optimisent automatiquement les images `.png`, `.jpeg`/`.jpg` et `.gif` lors de la validation, et vérifient les SVG intermédiaires par rapport à une limite de taille (140 Ko).
 
-Si un SVG intermédiaire dépasse la limite, la validation est abandonnée. Convertissez-le plutôt en PNG :
+Si un SVG intermédiaire dépasse la limite et est référencé à partir d’un fichier dans `help/`, la validation est abandonnée. Si le SVG surdimensionné n’est référencé nulle part dans `help/`, le hook imprime uniquement un avertissement et la validation se poursuit. Convertissez plutôt les SVG surdimensionnés en PNG :
 
 ```bash
 cd _jekyll
-bundle exec rake images:svg_to_png path=path/to/image.svg
+bundle exec rake images:svg_to_png path=../help/assets/image.svg
 ```
+
+Le chemin étant relatif à `_jekyll`, les images sous `help/` sont référencées comme `../help/...`.
 
 ## Optimisation manuelle
 
@@ -113,8 +124,8 @@ bundle exec rake images:optimize path=../path/to/images
 Les points d’extension utilisent le fichier de configuration `_jekyll/.image_optim.yml` pour personnaliser les paramètres d’optimisation :
 
 - **PNG** : utilise `advpng`, `optipng` et `pngquant`
-- **&#x200B;**&#x200B;: utilise `jhead`, `jpegoptim` et `jpegtran`
-- **&#x200B;**&#x200B;: Utilise `gifsicle`
+- **** : utilise `jhead`, `jpegoptim` et `jpegtran`
+- **** : Utilise `gifsicle`
 - **SVG** : non optimisé (exclu de `image_optim` pour conserver les graphiques et animations vectoriels), mais vérifié par rapport à une taille limite de 140 Ko
 
 ## Dépannage
@@ -128,13 +139,13 @@ Les points d’extension utilisent le fichier de configuration `_jekyll/.image_o
 ### Échecs d’optimisation
 
 - Vérifiez `bundle install` a été exécuté dans le répertoire `_jekyll`
-- Vérifiez que le `adobe-comdox-exl-rake-tasks` gem est installé (fournit des `image_optim`)
+- Vérifiez que le `adobe-comdox-exl-rake-tasks` gem est installé (fournit les tâches `images:optimize`, `images:check_size` et `images:svg_to_png` que le hook exécute)
 - Vérifier le fichier de configuration `.image_optim.yml`
 
 ### SVG dépasse la limite de taille.
 
-- La validation est abandonnée si un SVG intermédiaire dépasse 140 Ko
-- Convertir le SVG en PNG : `cd _jekyll && bundle exec rake images:svg_to_png path=path/to/image.svg`
+- La validation est abandonnée si un SVG intermédiaire dépasse 140 Ko et est référencé à partir d’un fichier dans `help/` (sinon le hook n’affiche qu’un avertissement et la validation se poursuit)
+- Convertissez le SVG en PNG : `cd _jekyll && bundle exec rake images:svg_to_png path=../help/assets/image.svg` (le chemin d’accès est relatif à `_jekyll`, de sorte que les images sous `help/` sont référencées comme `../help/...`)
 - Ensuite, préparez le fichier PNG à la place du SVG et validez à nouveau
 
 ### Problèmes de performances
@@ -149,14 +160,14 @@ Les points d’extension utilisent le fichier de configuration `_jekyll/.image_o
 3. **Optimisation** : s’exécute `image_optim` sur chaque fichier PNG, JPEG ou GIF intermédiaire
 4. **Réévaluation** : ajoute automatiquement les images optimisées à la zone d’évaluation
 5. **Vérification de la taille de SVG** : vérifie la taille maximale de 140 Ko de chaque SVG intermédiaire
-6. **La validation se poursuit** : si l’optimisation réussit et qu’aucun SVG ne dépasse la limite de taille, la validation se poursuit normalement, sinon la validation est abandonnée
+6. **La validation se poursuit** : si l’optimisation réussit et qu’aucun SVG surdimensionné n’est référencé depuis `help/`, la validation se poursuit normalement, sinon elle est abandonnée (un SVG surdimensionné non référencé depuis `help/` déclenche uniquement un avertissement)
 
 ## Formats d’image pris en charge
 
 - **PNG** (`.png`) - Compression sans perte et avec perte
-- **&#x200B;**&#x200B;(`.jpg`, `.jpeg`) - Compression avec perte avec nettoyage des métadonnées
-- **&#x200B;**&#x200B;(`.gif`) - Animation et optimisation statique
-- **&#x200B;**&#x200B;(`.svg`) - Non optimisé (validation en l’état pour préserver la qualité), mais vérifié par rapport à une taille limite de 140 Ko ; la validation est abandonnée si la limite est dépassée.
+- **** (`.jpg`, `.jpeg`) - Compression avec perte avec nettoyage des métadonnées
+- **** (`.gif`) - Animation et optimisation statique
+- **** (`.svg`) - Non optimisé (validation en l’état pour préserver la qualité), mais vérifié par rapport à une taille limite de 140 Ko ; la validation est abandonnée si la limite est dépassée et le SVG est référencé à partir de `help/` (sinon le hook affiche uniquement un avertissement).
 
 ## Bonnes pratiques
 
