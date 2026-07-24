@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: fb61610380b7b60e274ce8c89f7dda41674f1107
 workflow-type: tm+mt
-source-wordcount: 1011
+source-wordcount: 1007
 ht-degree: 0%
 
 ---
@@ -107,7 +107,6 @@ Les environnements de production et d’évaluation incluent les technologies su
 - Serveur Redis
 - Recherche catalogue dans Elasticsearch pour Adobe Commerce 2.2 à 2.4.3-p2
 - OpenSearch pour la recherche catalogue dans Adobe Commerce 2.3.7-p3, 2.4.3-p2, 2.4.4 et versions ultérieures
-- Filtrage des sorties (pare-feu sortant)
 
 ### Services tertiaires
 

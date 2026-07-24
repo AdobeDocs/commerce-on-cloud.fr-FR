@@ -19,9 +19,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: a7cd55b31bf909047e449e5f984fcb082706c2b9
+source-git-commit: 9f2b598b52d26b3d9239c54c778f07a5b10f9a60
 workflow-type: tm+mt
-source-wordcount: 2904
+source-wordcount: 2965
 ht-degree: 0%
 
 ---
@@ -44,7 +44,13 @@ Le package de `magento/magento-cloud-patches` utilise la séquence de version su
 
 <!--Add release notes below-->
 
-## v1.1.15 {#latest}
+## v1.1.16 {#latest}
+
+Date de publication : 23 juillet 2026
+
+- ![Icône de correction](../../assets/fix.svg) **Amélioration des performances et de la fiabilité du cache Symfony L2** : stockage optimisé des balises de cache pour symfony_l2, invalidation améliorée du cache avec des verrous de régénération basés sur TTL et un nettoyage correct des balises L1 pour éliminer les entrées de cache obsolètes, et activation par défaut de la compression Redis/Valkey (compress_data) pour réduire la consommation de mémoire et le trafic réseau tout en s’alignant sur l’implémentation de cache héritée.<!-- ACP2E-5132 -->
+
+## v1.1.15
 
 Date de publication : 14 juillet 2026
 
@@ -185,8 +191,8 @@ Date de publication : 19 juin 2023
 
 - **Assistant/sortie de l’interface de ligne de commande QPT amélioré**—Ajout d’un avertissement à l’assistant/sortie de l’interface de ligne de commande QPT qui vous rappelle de vérifier les détails et les exigences du correctif s’il existe des dépendances.<!-- ACP2E-1963 -->
 - **Correctifs ajoutés pour Commerce 2.4.6:**
-   - Correction de la validation du `regexp cache tag`.<!-- MCLOUD-10226 -->
-   - Amélioration des performances en réduisant le nombre de fois où les mêmes configurations de déploiement se chargent.<!-- MCLOUD-10604 -->
+  - Correction de la validation du `regexp cache tag`.<!-- MCLOUD-10226 -->
+  - Amélioration des performances en réduisant le nombre de fois où les mêmes configurations de déploiement se chargent.<!-- MCLOUD-10604 -->
 - **Correctifs ajoutés pour Commerce 2.3.7 à 2.4.6**—Correction d’un problème qui entraînait un incrément par une valeur aléatoire au lieu d’un incrément par 1 pour les tables `catalog_product_entity_*`.<!-- MCLOUD-10032 -->
 - **Correctifs ajoutés pour Commerce 2.4.0 à 2.4.6**—Correction d’une erreur indiquant que `The file can't be deleted. Warning!unlink: No such file or directory`, qui se produisait lors du vidage du cache JS/CSS d’Admin.<!-- MCLOUD-10279 -->
 
@@ -315,17 +321,17 @@ Date de publication : 14 octobre 2020
 Date de publication :
 
 - **Correctifs Redis pour Adobe Commerce 2.3.0 - 2.3.4** : optimisez la communication et améliorez les performances.
-   - Réduction de la taille des transferts réseau entre Redis et Adobe Commerce
-   - Correction des conditions de concurrence sur les opérations de rechargement et d’écriture
-   - Adaptateur de cache de base de réécriture pour gérer les erreurs lors de l&#39;enregistrement
-   - Diminuez la consommation de Redis <!--MCLOUD-6139-->
+  - Réduction de la taille des transferts réseau entre Redis et Adobe Commerce
+  - Correction des conditions de concurrence sur les opérations de rechargement et d’écriture
+  - Adaptateur de cache de base de réécriture pour gérer les erreurs lors de l&#39;enregistrement
+  - Diminuez la consommation de Redis <!--MCLOUD-6139-->
 
 - **Correctifs Redis pour Adobe Commerce 2.3.0 - 2.3.5**—Amélioration des performances et correction des erreurs
-   - Correction de l’implémentation du verrou de cache pour éviter des verrous infinis
-   - Améliorer le mécanisme de verrouillage actuel
-   - Implémenter des verrous signés pour empêcher le déverrouillage des requêtes parallèles
-   - Corrigez l&#39;erreur suivante qui se produit lors de l&#39;opération d&#39;écriture Redis : `OOM command not allowed when used memory > maxmemory`
-   - Correction du traitement du cache propre par `cat_p` balise qui s’exécute lors des mises à jour du produit<!--MCLOUD-6110-->
+  - Correction de l’implémentation du verrou de cache pour éviter des verrous infinis
+  - Améliorer le mécanisme de verrouillage actuel
+  - Implémenter des verrous signés pour empêcher le déverrouillage des requêtes parallèles
+  - Corrigez l&#39;erreur suivante qui se produit lors de l&#39;opération d&#39;écriture Redis : `OOM command not allowed when used memory > maxmemory`
+  - Correction du traitement du cache propre par `cat_p` balise qui s’exécute lors des mises à jour du produit<!--MCLOUD-6110-->
 
 - Correction d’un problème qui provoquait une erreur lors de l’application du correctif `amzn/amazon-pay-module` requis à Adobe Commerce sur les projets d’infrastructure cloud avec Adobe Commerce v2.2.6 ou 2.3.5, qui n’incluent pas ce module. Désormais, le processus d’application de correctifs ignore le correctif `amzn/amazon-pay-module` si le module n’est pas installé.<!--MCLOUD-6588-->
 
@@ -369,9 +375,9 @@ Cette version comprend les correctifs et correctifs critiques suivants :
 
 - **Mises à jour de compatibilité pour les correctifs magento/magento-cloud**
 
-   - Mise à jour des contraintes de version `symfony` et `semver` dans le fichier `composer.json` pour des raisons de compatibilité avec Adobe Commerce 2.4 et versions ultérieures.<!--MAGECLOUD-5127-->
+  - Mise à jour des contraintes de version `symfony` et `semver` dans le fichier `composer.json` pour des raisons de compatibilité avec Adobe Commerce 2.4 et versions ultérieures.<!--MAGECLOUD-5127-->
 
-   - Mise à jour des contraintes dans `composer.json` pour la compatibilité avec les versions `ece-tools` 2002.0.22 et ultérieures 2002.0.x.
+  - Mise à jour des contraintes dans `composer.json` pour la compatibilité avec les versions `ece-tools` 2002.0.22 et ultérieures 2002.0.x.
 
 - **PayPal Express Checkout** - Publié le 12 février 2020, ce correctif résout un problème qui affecte les commandes passées avec PayPal Express Checkout lorsque l’adresse d’expédition de la commande indique une région de pays qui a été saisie manuellement dans le champ de texte plutôt que sélectionnée dans le menu déroulant de la page Expédition. Voir la description complète du correctif sur la page de téléchargement des correctifs.
 
@@ -389,9 +395,9 @@ Cette version comprend les correctifs et correctifs critiques suivants :
 
 - **Réparer les blocages cron et améliorer le verrouillage cron**—
 
-   - Correction d’un problème en raison duquel certaines tâches cron ne s’exécutaient pas en raison d’une valeur de statut incorrecte dans le tableau `cron_schedule`. Désormais, nous utilisons le framework de verrouillage d’Adobe Commerce pour vérifier et mettre à jour l’état de la tâche cron au lieu d’utiliser la table `cron_schedule`. Les tâches cron qui se sont terminées avec un statut d’erreur sont retentées lors de la prochaine exécution cron au lieu d’attendre 24 heures.
+  - Correction d’un problème en raison duquel certaines tâches cron ne s’exécutaient pas en raison d’une valeur de statut incorrecte dans le tableau `cron_schedule`. Désormais, nous utilisons le framework de verrouillage d’Adobe Commerce pour vérifier et mettre à jour l’état de la tâche cron au lieu d’utiliser la table `cron_schedule`. Les tâches cron qui se sont terminées avec un statut d’erreur sont retentées lors de la prochaine exécution cron au lieu d’attendre 24 heures.
 
-   - Ajoute une opération _retry_ pour éviter tout blocage lors des mises à jour des données dans la table `cron_schedule`.
+  - Ajoute une opération _retry_ pour éviter tout blocage lors des mises à jour des données dans la table `cron_schedule`.
 
 - **Mise à jour du `magento/magento-cloud-patches` pour inclure tous les correctifs disponibles pour Magento Open Source 2.x**—Mise à jour du package magento/magento-cloud-patches pour inclure tous les correctifs Magento Open Source 2.x disponibles sur la page des téléchargements de logiciels. Si vous avez déjà copié des correctifs Magento Open Source dans votre projet d’infrastructure cloud Adobe Commerce, supprimez-les pour éviter les conflits.<!--MAGECLOUD-4606-->
 
