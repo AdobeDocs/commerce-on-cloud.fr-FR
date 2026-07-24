@@ -95,8 +95,8 @@ ruby .githooks/test/svg_link_checker_test.rb
 ## Instructions relatives aux images
 
 - **PNG** : à utiliser pour les captures d’écran et les éléments d’interface utilisateur (sera optimisé automatiquement)
-- **** : utiliser pour les photos (sera optimisé automatiquement)
-- **** : à utiliser pour les animations (sera optimisé automatiquement)
+- **&#x200B;**&#x200B;: utiliser pour les photos (sera optimisé automatiquement)
+- **&#x200B;**&#x200B;: à utiliser pour les animations (sera optimisé automatiquement)
 - **SVG** : à utiliser pour les icônes et les graphiques simples (non optimisés, mais vérifiés par rapport à une limite de taille ; la validation échoue uniquement si le SVG surdimensionné est lié par `help/`)
 
 Les hooks de pré-validation optimisent automatiquement les images `.png`, `.jpeg`/`.jpg` et `.gif` lors de la validation, et vérifient les SVG intermédiaires par rapport à une limite de taille (140 Ko).
@@ -124,8 +124,8 @@ bundle exec rake images:optimize path=../path/to/images
 Les points d’extension utilisent le fichier de configuration `_jekyll/.image_optim.yml` pour personnaliser les paramètres d’optimisation :
 
 - **PNG** : utilise `advpng`, `optipng` et `pngquant`
-- **** : utilise `jhead`, `jpegoptim` et `jpegtran`
-- **** : Utilise `gifsicle`
+- **&#x200B;**&#x200B;: utilise `jhead`, `jpegoptim` et `jpegtran`
+- **&#x200B;**&#x200B;: Utilise `gifsicle`
 - **SVG** : non optimisé (exclu de `image_optim` pour conserver les graphiques et animations vectoriels), mais vérifié par rapport à une taille limite de 140 Ko
 
 ## Dépannage
@@ -165,9 +165,9 @@ Les points d’extension utilisent le fichier de configuration `_jekyll/.image_o
 ## Formats d’image pris en charge
 
 - **PNG** (`.png`) - Compression sans perte et avec perte
-- **** (`.jpg`, `.jpeg`) - Compression avec perte avec nettoyage des métadonnées
-- **** (`.gif`) - Animation et optimisation statique
-- **** (`.svg`) - Non optimisé (validation en l’état pour préserver la qualité), mais vérifié par rapport à une taille limite de 140 Ko ; la validation est abandonnée si la limite est dépassée et le SVG est référencé à partir de `help/` (sinon le hook affiche uniquement un avertissement).
+- **&#x200B;**&#x200B;(`.jpg`, `.jpeg`) - Compression avec perte avec nettoyage des métadonnées
+- **&#x200B;**&#x200B;(`.gif`) - Animation et optimisation statique
+- **&#x200B;**&#x200B;(`.svg`) - Non optimisé (validation en l’état pour préserver la qualité), mais vérifié par rapport à une taille limite de 140 Ko ; la validation est abandonnée si la limite est dépassée et le SVG est référencé à partir de `help/` (sinon le hook affiche uniquement un avertissement).
 
 ## Bonnes pratiques
 
