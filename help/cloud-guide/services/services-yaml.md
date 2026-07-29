@@ -14,9 +14,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: ce1afe358fc8596fa6eba1c2cf76a721060164c6
 workflow-type: tm+mt
-source-wordcount: 1136
+source-wordcount: 1186
 ht-degree: 0%
 
 ---
@@ -27,9 +27,13 @@ Le fichier `services.yaml` définit les services pris en charge et utilisés par
 
 >[!NOTE]
 >
->Le fichier `.magento/services.yaml` est géré localement dans le répertoire `.magento` de votre projet. La configuration est accessible pendant le processus de création afin de définir les versions de service requises dans l’environnement d’intégration uniquement. Elle est supprimée une fois le déploiement terminé. Vous ne les trouverez donc pas sur le serveur.
+>Le fichier `.magento/services.yaml` est géré localement dans le répertoire `.magento` de votre projet. Lors du déploiement, Adobe Commerce sur l’infrastructure cloud utilise cette configuration pour fournir des services pris en charge pour l’environnement cible. Le répertoire `.magento` est supprimé du serveur distant après le déploiement. Vous ne trouverez donc pas de `services.yaml` sur l’environnement déployé.
 
 Le script de déploiement utilise les fichiers de configuration du répertoire `.magento` pour fournir à l’environnement les services configurés. Un service devient disponible pour votre application s’il est inclus dans la propriété [`relationships`](../application/properties.md#relationships) du fichier `.magento.app.yaml`. Le fichier `services.yaml` contient les valeurs _type_ et _disk_. Le type de service définit le service _nom_ et _version_.
+
+La configuration du service dans `.magento/services.yaml` est distincte des dépendances des packages PHP et Composer définies dans `composer.json` et verrouillées dans `composer.lock`.
+
+## Lorsque des modifications de service s’appliquent
 
 La modification d’une configuration de service entraîne la mise en service de l’environnement par un déploiement avec les services mis à jour, ce qui affecte les environnements suivants :
 
@@ -40,10 +44,11 @@ La modification d’une configuration de service entraîne la mise en service de
 
 ## Services par défaut et pris en charge
 
-L’infrastructure cloud prend en charge et déploie les services suivants :
+Adobe Commerce sur l’infrastructure cloud prend en charge les services suivants, qui peuvent être configurés pour votre projet :
 
 - [ActiveMQ](activemq.md)
 - [MySQL](mysql.md)
+- [Valkey](valkey.md)
 - [Redis](redis.md)
 - [RabbitMQ](rabbitmq.md)
 - [Elasticsearch](elasticsearch.md)
@@ -54,22 +59,26 @@ L’infrastructure cloud prend en charge et déploie les services suivants :
 >
 >Après la mise à niveau vers une nouvelle version de RabbitMQ, déclenchez un déploiement complet pour vous assurer que vos files d’attente de messages personnalisées sont recréées dans RabbitMQ.
 
-Vous pouvez afficher les versions par défaut et les valeurs de disque dans le fichier `services.yaml` actuel [par défaut](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). L’exemple suivant montre les services `mysql`, `redis`, `opensearch` ou `elasticsearch`, `rabbitmq` et `activemq-artemis` définis dans le fichier de configuration `services.yaml` :
+## Affichage des services et des versions configurés
+
+Vous pouvez afficher des exemples de définitions de service et de valeurs de disque dans le fichier de [`services.yaml` de modèle actuel](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Les versions de service par défaut et prises en charge dépendent de votre version d’Adobe Commerce et du modèle cloud actuel.
+
+L’exemple suivant illustre les définitions de service dans le fichier de configuration `services.yaml` :
 
 ```yaml
 mysql:
-    type: mysql:10.4
+    type: mysql:11.8
     disk: 5120
 
-redis:
-    type: redis:6.2
+cache:
+    type: valkey:9.0
 
 opensearch:
-    type: opensearch:2  # minor version not required; uses latest
+    type: opensearch:3  # minor version not required; uses latest
     disk: 1024
 
 rabbitmq:
-    type: rabbitmq:3.9
+    type: rabbitmq:4.3
     disk: 1024
 
 activemq-artemis:
@@ -142,9 +151,9 @@ Dans Adobe Commerce sur les projets d’infrastructure cloud, les services [rela
 
 Vous pouvez récupérer les données de configuration pour toutes les relations de service à partir de la variable d’environnement [`$MAGENTO_CLOUD_RELATIONSHIPS`](../environment/variables-cloud.md). Les données de configuration incluent le nom, le type et la version du service, ainsi que tous les détails de connexion requis tels que le numéro de port et les informations d’identification.
 
-**Pour vérifier les relations dans l’environnement local** :
+**Pour vérifier les relations à partir de votre environnement de développement local** :
 
-1. Dans votre environnement local, afficher les relations pour l’environnement actif.
+1. Dans votre environnement de développement local, affichez les relations pour l’environnement actif.
 
    ```bash
    magento-cloud relationships
@@ -160,7 +169,7 @@ Vous pouvez récupérer les données de configuration pour toutes les relations 
    ...
            type: 'redis:7.0'
            port: 6379
-   elasticsearch:
+   opensearch:
        -
    ...
            type: 'opensearch:2'
@@ -168,7 +177,7 @@ Vous pouvez récupérer les données de configuration pour toutes les relations 
    database:
        -
    ...
-           type: 'mysql:10.6'
+           type: 'mysql:11.8'
            port: 3306
    ```
 
@@ -225,7 +234,7 @@ Vous pouvez mettre à niveau la version du service installée en mettant à jour
 
    ```yaml
    mysql:
-       type: mysql:10.3
+       type: mysql:11.8
        disk: 2048
    ```
 
@@ -233,7 +242,7 @@ Vous pouvez mettre à niveau la version du service installée en mettant à jour
 
    ```yaml
    mysql:
-       type: mysql:10.4
+       type: mysql:12.3
        disk: 5120
    ```
 
@@ -244,7 +253,7 @@ Vous pouvez mettre à niveau la version du service installée en mettant à jour
    ```
 
    ```bash
-   git commit -m "Upgrade MySQL from MariaDB 10.3 to 10.4."
+   git commit -m "Upgrade MySQL from MariaDB 11.8 to 12.3."
    ```
 
    ```bash
