@@ -4,7 +4,7 @@ description: Consultez un exemple de gestion et de synchronisation des paramètr
 hidefromtoc: true
 source-git-commit: 0df07e865c3c4fc4ac14483972643eafa8814726
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '888'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Par exemple, vous pouvez définir les paramètres suivants :
 * Activation de l’optimisation des fichiers statiques dans les environnements d’évaluation et de production
 * Configurez Fastly dans les environnements d’évaluation et de production avec des informations d’identification spécifiques pour chacun
 
-_Optimisation de fichiers statiques_ signifie fusionner et réduire des feuilles de style JavaScript et en cascade, et réduire des modèles d’HTML. Voir [Stratégies de déploiement de contenu statique](../deploy/static-content.md).
+_Optimisation de fichiers statiques_ signifie fusionner et réduire des feuilles de style en cascade (CSS) et JavaScript, et réduire des modèles HTML. Voir [Stratégies de déploiement de contenu statique](../deploy/static-content.md).
 
 ## Conditions préalables
 
@@ -44,7 +44,7 @@ Pour effectuer ces tâches de gestion de la configuration, vous devez disposer d
 
 ## Configuration de l’administration Commerce
 
-Dans l’environnement d’intégration, vous pouvez vous connecter à l’administrateur pour modifier les paramètres de configuration système des magasins, des sites web, des modules ou des extensions, l’optimisation des fichiers statiques et les valeurs système liées au déploiement de contenu statique. Voir [&#x200B; Données de configuration &#x200B;](store-settings.md#scd-performance).
+Dans l’environnement d’intégration, vous pouvez vous connecter à l’administrateur pour modifier les paramètres de configuration système des magasins, des sites web, des modules ou des extensions, l’optimisation des fichiers statiques et les valeurs système liées au déploiement de contenu statique. Voir [ Données de configuration ](store-settings.md#scd-performance).
 
 **Pour modifier les paramètres régionaux et les paramètres d’optimisation des fichiers statiques** :
 
@@ -56,7 +56,7 @@ Dans l’environnement d’intégration, vous pouvez vous connecter à l’admin
    ![Modifier le paramètre régional](../../assets/locale-options.png)
 
 1. Cliquez sur **Enregistrer la configuration**.
-1. Si vous y êtes invité, [&#x200B; videz le cache](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/cache-management).
+1. Si vous y êtes invité, [ videz le cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
 1. Déconnectez-vous de l’administrateur.
 
 ## Exporter les valeurs et transférer config.php à votre système local
@@ -156,10 +156,10 @@ Pour ajouter des valeurs de configuration dans l’environnement d’intégratio
 1. Déconnectez-vous de l’administrateur d’intégration.
 1. Connectez-vous à nouveau à l’administrateur d’intégration.
 1. Cliquez sur **Magasins** > Paramètres > **Configuration** > **Avancé** > **Développeur**.
-1. Dans le volet de droite, développez **Paramètres JavaScript**.
+1. Dans le volet de droite, développez **Paramètres**.
 1. Dans la liste **Fusionner des fichiers JavaScript**, cliquez sur **Oui**.
 1. Cliquez sur **Enregistrer la configuration**.
-1. Si vous y êtes invité, [&#x200B; videz le cache](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/cache-management).
+1. Si vous y êtes invité, [ videz le cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
 1. Déconnectez-vous de l’administrateur.
 
 En exécutant à nouveau la commande de vidage, la nouvelle configuration est ajoutée au fichier .
