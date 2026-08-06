@@ -1,8 +1,8 @@
 ---
 source-git-commit: fddcfdb97aede07b2cd6ef12bda6d7998f941951
 workflow-type: tm+mt
-source-wordcount: '13880'
-ht-degree: 0%
+source-wordcount: '14749'
+ht-degree: 6%
 
 ---
 # magento-cloud (Adobe Commerce sur les infrastructures cloud)
@@ -819,7 +819,7 @@ Connectez-vous à Magento Cloud à l’aide d’un jeton API
 Use this command to log in to your Magento Cloud account using an API token.
 
 You can create an account at:
-    https://business.adobe.com/fr/products/magento/magento-commerce.html
+    https://business.adobe.com/products/magento/magento-commerce.html
 
 If you have an account, but you do not already have an API token, you can create one here:
     https://accounts.magento.cloud/user/api-tokens
@@ -1429,7 +1429,7 @@ Afficher les détails de validation
 
 #### `commit`
 
-La validation SHA. Cette méthode accepte également les suffixes « HEAD », et signe d’insertion (^) ou tilde (~) pour les validations parentes.
+La validation SHA. Vous pouvez également accepter des suffixes « HEAD », et caret (^) ou tilde (~) pour les validations parentes.
 
 - Valeur par défaut : `HEAD`
 
@@ -1475,7 +1475,7 @@ Liste des validations
 
 #### `commit`
 
-La validation Git de départ SHA. Cette méthode accepte également les suffixes « HEAD », et signe d’insertion (^) ou tilde (~) pour les validations parentes.
+La validation Git de départ SHA. Vous pouvez également accepter des suffixes « HEAD », et caret (^) ou tilde (~) pour les validations parentes.
 
 ### Options
 
@@ -4430,7 +4430,7 @@ Copiez dans un répertoire de build, au lieu de créer un lien symbolique depuis
 
 #### `--clone`
 
-Utilisez Git pour cloner l’HEAD active dans le répertoire de build
+Utilisez Git pour cloner l’HEAD actuel vers le répertoire de build
 
 - Valeur par défaut : `false`
 - N’accepte aucune valeur
@@ -5589,7 +5589,7 @@ Pour les options globales, voir [Options globales](#global-options).
 
 #### `--commit`, `-c`
 
-La validation SHA. Cette méthode accepte également les suffixes « HEAD », et signe d’insertion (^) ou tilde (~) pour les validations parentes.
+La validation SHA. Vous pouvez également accepter des suffixes « HEAD », et caret (^) ou tilde (~) pour les validations parentes.
 
 - Requiert une valeur
 
@@ -5647,7 +5647,7 @@ Sortie de style similaire à « git-tree »
 
 #### `--commit`, `-c`
 
-La validation SHA. Cette méthode accepte également les suffixes « HEAD », et signe d’insertion (^) ou tilde (~) pour les validations parentes.
+La validation SHA. Vous pouvez également accepter des suffixes « HEAD », et caret (^) ou tilde (~) pour les validations parentes.
 
 - Requiert une valeur
 
@@ -5684,7 +5684,7 @@ Pour les options globales, voir [Options globales](#global-options).
 
 #### `--commit`, `-c`
 
-La validation SHA. Cette méthode accepte également les suffixes « HEAD », et signe d’insertion (^) ou tilde (~) pour les validations parentes.
+La validation SHA. Vous pouvez également accepter des suffixes « HEAD », et caret (^) ou tilde (~) pour les validations parentes.
 
 - Requiert une valeur
 
