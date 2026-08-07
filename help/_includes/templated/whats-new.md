@@ -23,7 +23,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">référence CLI</a> après la version 2002.2.12 des outils ECE. Aucune autre modification n’a été apportée à part le numéro de version.</p>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">référence CLI</a> après la version 2002.2.12 des outils ECE. Aucune autre modification n’a été apportée à part le numéro de version.</p>
 </td>
       <td>
         Technique
@@ -45,7 +45,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access">Gérer l’accès utilisateur</a> avec des conditions préalables plus claires, les états d’invitation de la console Cloud, des conseils de redéploiement et la résolution des problèmes associés.</p>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/project/user-access">Gérer l’accès utilisateur</a> avec des conditions préalables plus claires, les états d’invitation de la console Cloud, des conseils de redéploiement et la résolution des problèmes associés.</p>
 </td>
       <td>
         Feedback
