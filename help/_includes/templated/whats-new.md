@@ -1,8 +1,8 @@
 ---
-source-git-commit: d552a3e05d9cc81ceb546815c12aa52e7a9b1b40
+source-git-commit: c99769c36020dea4b7321c791fd47ee162075ef3
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 2%
+source-wordcount: '122'
+ht-degree: 3%
 
 ---
 # Nouveautés du modèle
@@ -51,50 +51,6 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
         Feedback
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/747367a8808b0b22f810f4e26b94a06ee995281d">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 4 Juin 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Mise à jour de la rubrique <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/advanced-security"> Sécurité avancée </a> avec des informations sur les limites et l’observabilité.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/54fcde91fb6fd159edadf85146da375692cce0d6">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2 Juin 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Clarification de la configuration de verrouillage par défaut et de l’impact des variables d’environnement <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud"><code>MAGENTO_CLOUD_LOCKS_DIR</code></a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#lock_provider"><code>LOCK_PROVIDER</code></a> sur les environnements Pro et Starter.</p>
-</td>
-      <td>
-        Technique
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/17ecf47f8cad5dcb53ef92b32377a7074e16bb52">validation</a></td>
     </tr>
   </tbody>
 </table>
