@@ -19,9 +19,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 898bbc1b96478de6693d7634d4f0cff359ccc12f
+source-git-commit: 643134d5bf2ab03b0c9cace884e9a020a2aebdb7
 workflow-type: tm+mt
-source-wordcount: 3019
+source-wordcount: 3054
 ht-degree: 0%
 
 ---
@@ -44,7 +44,14 @@ Le package de `magento/magento-cloud-patches` utilise la séquence de version su
 
 <!--Add release notes below-->
 
-## v1.1.17 {#latest}
+## v1.1.18 {#latest}
+
+Date de publication : 11 août 2026
+
+- ![Icône de correction](../../assets/fix.svg) **Amélioration de la gestion des correctifs**—Les correctifs ignorent désormais les modules de ciblage supprimés via `composer.json` `replace` et continuent à appliquer les portions installées restantes.<!-- MCLOUD-15325 -->
+- ![icône de correction](../../assets/fix.svg) **améliorations de la sécurité**-Application des derniers correctifs de sécurité.<!--MCLOUD-15035 -->
+
+## v1.1.17
 
 Date de publication : 29 juillet 2026
 

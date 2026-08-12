@@ -14,7 +14,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 898bbc1b96478de6693d7634d4f0cff359ccc12f
+source-git-commit: 0e5b6814a6e081fea4084579fb71f7257ad2bdb7
 workflow-type: tm+mt
 source-wordcount: 220
 ht-degree: 3%
@@ -28,7 +28,7 @@ Ces informations de mise à jour présentent les dernières améliorations appor
 | Notes de mise à jour | Version | Description | Source |
 | ----------------- |----------| ---------------------------------------- | --------------------------- |
 | [package ece-tools](ece-tools-package.md) | 2002.2.12 | Ensemble de scripts et d’outils conçu pour gérer et déployer des projets cloud. | [`magento/ece-tools`](https://github.com/magento/ece-tools/tree/2002.2.12) |
-| [Correctifs cloud pour Commerce](cloud-patches.md) | 1.1.17 | Un ensemble de correctifs qui améliorent l’intégration de toutes les versions d’Adobe Commerce avec les environnements cloud. Ce package comprend les correctifs Adobe Commerce et les correctifs disponibles qui sont appliqués lorsque vous utilisez `ece-tools` pour le déploiement | [`magento/magento-cloud-patches`](https://github.com/magento/magento-cloud-patches/tree/1.1.17) |
+| [Correctifs cloud pour Commerce](cloud-patches.md) | 1.1.18 | Un ensemble de correctifs qui améliorent l’intégration de toutes les versions d’Adobe Commerce avec les environnements cloud. Ce package comprend les correctifs Adobe Commerce et les correctifs disponibles qui sont appliqués lorsque vous utilisez `ece-tools` pour le déploiement | [`magento/magento-cloud-patches`](https://github.com/magento/magento-cloud-patches/tree/1.1.18) |
 | [&#x200B; Cloud Docker pour Commerce &#x200B;](cloud-docker.md) | 1.4.9 | Fichiers de fonctionnalité et de configuration pour les images Docker afin de déployer Adobe Commerce dans un environnement cloud local | [`magento/magento-cloud-docker`](https://github.com/magento/magento-cloud-docker/tree/1.4.9) |
 | [Composants cloud de Commerce](cloud-components.md) | 1.1.4 | Fonctionnalité principale Adobe Commerce étendue pour les sites déployés sur l’infrastructure cloud | [`magento/magento-cloud-components`](https://github.com/magento/magento-cloud-components/tree/1.1.4) |
 
