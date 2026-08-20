@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: e7db7e06142322898d7d9a28ae0dd06458fdcf6d
+source-git-commit: 58dbe1e1135c77d7061deec91246f1657b6e91c6
 workflow-type: tm+mt
-source-wordcount: 3580
+source-wordcount: 3631
 ht-degree: 0%
 
 ---
@@ -40,7 +40,13 @@ Les notes de mise à jour incluent les éléments suivants :
 
 <!--Add release notes below-->
 
-## v2002.2.12 {#latest}
+## v2002.2.13 {#latest}
+
+Date de publication : 19 août 2026
+
+- ![icône de correction](../../assets/fix.svg) **Améliorations de la mise en cache** Prise en charge améliorée du cache Symfony_l2 pour les connexions esclaves Redis et Valkey et résolution des problèmes de cache, d’index de balise, de préchargement et de déploiement statique associés..<!-- MCLOUD-15433 -->
+
+## v2002.2.12
 
 Date de publication : 20 juillet 2026
 

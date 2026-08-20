@@ -19,9 +19,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 956405dea6be29d239b663f5eebb19a8e043354d
+source-git-commit: 58dbe1e1135c77d7061deec91246f1657b6e91c6
 workflow-type: tm+mt
-source-wordcount: 2927
+source-wordcount: 2969
 ht-degree: 0%
 
 ---
@@ -44,12 +44,19 @@ Le package de `magento/magento-cloud-patches` utilise la séquence de version su
 
 <!--Add release notes below-->
 
-## v1.1.18 {#latest}
+## v1.1.19 {#latest}
+
+Date de publication : 19 août 2026
+
+- ![icône de correction](../../assets/fix.svg) **Fiabilité des correctifs** : amélioration de la gestion des correctifs pour des déploiements cloud fiables.<!-- MCLOUD-15325/ACSEC-561/MCLOUD-15451/MCLOUD-15455 -->
+- ![icône de correction](../../assets/fix.svg) **Améliorations de la mise en cache**—Amélioration de la prise en charge du cache Symfony_l2 pour les connexions esclaves Redis et Valkey et résolution des problèmes de cache, d’index de balises, de préchargement et de déploiement statique associés..<!-- MCLOUD-15433 -->
+
+## v1.1.18
 
 Date de publication : 11 août 2026
 
 - ![Icône de correction](../../assets/fix.svg) **Amélioration de la gestion des correctifs**—Les correctifs ignorent désormais les modules de ciblage supprimés via `composer.json` `replace` et continuent à appliquer les portions installées restantes.<!-- MCLOUD-15325 -->
-- ![icône de correctif](../../assets/fix.svg) **Améliorations de la sécurité** : application des correctifs de sécurité référencés dans la [Mise à jour de sécurité d’Adobe Commerce APSB26-92](https://helpx.adobe.com/fr/security/products/magento/apsb26-92.html).<!--MCLOUD-15035 -->
+- ![icône de correctif](../../assets/fix.svg) **Améliorations de la sécurité** : application des correctifs de sécurité référencés dans la [Mise à jour de sécurité d’Adobe Commerce APSB26-92](https://helpx.adobe.com/security/products/magento/apsb26-92.html).<!--MCLOUD-15035 -->
 
 ## v1.1.17
 
@@ -252,7 +259,7 @@ Correctif critique pour Adobe Commerce 2.3.3-p1 et les versions ultérieures :
 
 Mise à jour des correctifs pour résoudre une vulnérabilité **critique** entraînant l’exécution de code à distance non authentifié.<!-- MCLOUD-8479 -->
 
-Voir [Bulletin de sécurité Adobe APSB22-12](https://helpx.adobe.com/fr/security/products/magento/apsb22-12.html).
+Voir [Bulletin de sécurité Adobe APSB22-12](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
 
 ## v1.0.15
 
@@ -269,7 +276,7 @@ Correctif critique pour Adobe Commerce 2.3.3-p1 et les versions ultérieures :
 
 Ajout d’un correctif pour résoudre une vulnérabilité **critique** qui entraîne l’exécution de code distant non authentifié.<!-- MCLOUD-8461 -->
 
-Voir [Bulletin de sécurité Adobe APSB22-12](https://helpx.adobe.com/fr/security/products/magento/apsb22-12.html).
+Voir [Bulletin de sécurité Adobe APSB22-12](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
 
 ## v1.0.13
 
