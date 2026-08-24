@@ -31,14 +31,14 @@ La mise à l’échelle automatique ajoute ou supprime automatiquement des resso
 
 ## Activer la mise à l’échelle automatique
 
-Pour activer ou désactiver la mise à l’échelle automatique horizontale ou verticale de votre projet [!DNL Adobe Commerce on cloud infrastructure], [Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). Sélectionnez les raisons suivantes dans le ticket :
+Pour activer ou désactiver la mise à l’échelle automatique horizontale ou verticale de votre projet [!DNL Adobe Commerce on cloud infrastructure], [Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). Sélectionnez les raisons suivantes dans le ticket :
 
 - **Motif du contact** : demande de modification de l’infrastructure
 - **Motif de contact de l’infrastructure Adobe Commerce** : autre demande de modification de l’infrastructure
 
 >[!IMPORTANT]
 >
->La fonction de mise à l’échelle automatique capture les événements inattendus. Même si la mise à l’échelle automatique est activée, Adobe vous recommande de continuer à [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) si vous prévoyez un événement à venir.
+>La fonction de mise à l’échelle automatique capture les événements inattendus. Même si la mise à l’échelle automatique est activée, Adobe vous recommande de continuer à [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) si vous prévoyez un événement à venir.
 
 ### Test de charge
 
