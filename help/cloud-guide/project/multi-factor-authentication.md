@@ -5,21 +5,13 @@ feature: Cloud, Security
 topic: Security
 exl-id: 90458fa8-42b0-4825-948e-56ef7884eb82
 TQID: https://experienceleague.adobe.com/KWGl-ZyF5aKZ-XxOOmL85ip8arBeH-G1pN5ckUdAqNw
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1080
+source-wordcount: 1084
 ht-degree: 0%
 
 ---
@@ -32,7 +24,7 @@ Lorsque l’authentification multifacteur est activée sur un projet, tous les c
 
 >[!NOTE]
 >
->Par défaut, MFA n’est pas activé sur les projets cloud . Le propriétaire du compte pour le projet d’infrastructure cloud d’Adobe Commerce doit [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour l’activer. Lorsque l’authentification multifacteur est activée, tous les utilisateurs doivent disposer de l’authentification à deux facteurs (TFA) activée sur leur compte d’infrastructure Adobe Commerce sur le cloud pour pouvoir accéder aux environnements de projet via SSH.
+>Par défaut, MFA n’est pas activé sur les projets cloud . Le propriétaire du compte pour le projet d’infrastructure cloud d’Adobe Commerce doit [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour l’activer. Lorsque l’authentification multifacteur est activée, tous les utilisateurs doivent disposer de l’authentification à deux facteurs (TFA) activée sur leur compte d’infrastructure Adobe Commerce sur le cloud pour pouvoir accéder aux environnements de projet via SSH.
 
 ## Certificats pour l’accès SSH
 
@@ -102,7 +94,7 @@ Vous pouvez configurer votre environnement local pour générer automatiquement 
 
 ## Connexion à un environnement à l’aide de SSH avec TFA
 
-Lorsque MFA est activé sur un projet, TFA doit être activé sur votre compte avant de pouvoir vous connecter à un environnement distant à l’aide d’un SSH. Voir [&#x200B; Activer TFA &#x200B;](user-access.md#enable-tfa-for-cloud-accounts).
+Lorsque MFA est activé sur un projet, TFA doit être activé sur votre compte avant de pouvoir vous connecter à un environnement distant à l’aide d’un SSH. Voir [ Activer TFA ](user-access.md#enable-tfa-for-cloud-accounts).
 
 >[!BEGINSHADEBOX]
 
@@ -307,7 +299,7 @@ Essayez les procédures de dépannage suivantes pour résoudre le problème de c
 
    Si TFA est activé, la section Sécurité fournit des options pour gérer la configuration TFA.
 
-1. Si TFA n’est pas configuré, cliquez sur **[!UICONTROL Set up application]** et suivez les instructions pour l’activer. Voir [&#x200B; Activer TFA &#x200B;](user-access.md#enable-tfa-for-cloud-accounts).
+1. Si TFA n’est pas configuré, cliquez sur **[!UICONTROL Set up application]** et suivez les instructions pour l’activer. Voir [ Activer TFA ](user-access.md#enable-tfa-for-cloud-accounts).
 
 1. Si TFA est configuré, essayez de vous authentifier à nouveau.
 

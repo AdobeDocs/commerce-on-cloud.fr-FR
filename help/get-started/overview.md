@@ -4,14 +4,11 @@ description: Commencez avec votre nouveau libre-service Adobe Commerce sur l’i
 recommendations: noDisplay, catalog
 exl-id: be93ef73-ae10-4d87-83ed-8da90bb5527c
 TQID: https://experienceleague.adobe.com/Dc7EadNPF5I2NrEZKD2TvV9otmLoN6-gnTF-c2k20wA
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 745b243d165ba3a7695dea2827ddff37573ba8d0
 workflow-type: tm+mt
-source-wordcount: 172
+source-wordcount: 173
 ht-degree: 0%
 
 ---
@@ -24,9 +21,9 @@ La section Prise en main vous guide tout au long des procédures d’initialisat
 
 Ce guide suppose que vous avez une connaissance pratique et une compréhension de l’application [!DNL Commerce]. Reportez-vous aux derniers guides de l’utilisateur et du développeur de Commerce :
 
-- [Documentation pour les développeurs Adobe Commerce &#x200B;](https://developer.adobe.com/commerce/docs/) (site Adobe Developer) : développez, personnalisez, intégrez, étendez et utilisez des fonctionnalités avancées
+- [Documentation pour les développeurs Adobe Commerce ](https://developer.adobe.com/commerce/docs/) (site Adobe Developer) : développez, personnalisez, intégrez, étendez et utilisez des fonctionnalités avancées
 
-- [Documentation Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce.html?lang=fr) (Adobe Experience League) : planification, implémentation, exploitation, mise à niveau et maintenance de vos projets Commerce
+- [Documentation Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce) (Adobe Experience League) : planification, implémentation, exploitation, mise à niveau et maintenance de vos projets Commerce
 
 >[!TIP]
 >

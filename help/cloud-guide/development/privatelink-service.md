@@ -4,22 +4,13 @@ description: Découvrez comment utiliser le service PrivateLink pour établir un
 feature: Cloud, Iaas, Security
 exl-id: 13a7899f-9eb5-4c84-b4c9-993c39d611cc
 TQID: https://experienceleague.adobe.com/AxpzTY-Nb7UoKhW-wzAOuWLm5O7XS4OFxjSaIfFUR-I
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1798
+source-wordcount: 1799
 ht-degree: 0%
 
 ---
@@ -30,7 +21,7 @@ Adobe Commerce sur les infrastructures cloud prend en charge l’intégration au
 
 >[!TIP]
 >
->PrivateLink est idéal pour sécuriser les connexions pour les intégrations non HTTP(S), telles que les transferts de base de données ou de fichiers. Si vous prévoyez d’intégrer votre application aux API Adobe Commerce, consultez la section Création d’un [maillage API Adobe](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) dans _maillage API pour Adobe Developer App Builder_.
+>PrivateLink est idéal pour sécuriser les connexions pour les intégrations non HTTP(S), telles que les transferts de base de données ou de fichiers. Si vous prévoyez d’intégrer votre application aux API Adobe Commerce, consultez la section Création d’un [maillage API Adobe](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) dans _maillage API pour Adobe Developer App Builder_.
 
 ## Fonctionnalités et assistance
 
@@ -40,9 +31,9 @@ L’intégration du service PrivateLink pour Adobe Commerce dans les projets d�
 - Prise en charge d’une communication unidirectionnelle ou bidirectionnelle entre les services de point d’entrée disponibles sur Adobe et les ordinateurs virtuels clients.
 - Activation du service :
 
-   - Ouvrez les ports requis dans l’environnement Adobe Commerce on cloud infrastructure
-   - Établir la connexion initiale entre les ordinateurs virtuels du client et d’Adobe
-   - Résolution des problèmes de connexion lors de l’activation
+  - Ouvrez les ports requis dans l’environnement Adobe Commerce on cloud infrastructure
+  - Établir la connexion initiale entre les ordinateurs virtuels du client et d’Adobe
+  - Résolution des problèmes de connexion lors de l’activation
 
 ## Restrictions
 
@@ -51,8 +42,8 @@ L’intégration du service PrivateLink pour Adobe Commerce dans les projets d�
 - Au-delà de l’activation initiale, la prise en charge d’Adobe Commerce ne couvre pas le dépannage des problèmes AWS PrivateLink.
 - Les clients sont responsables des coûts associés à la gestion de leur propre VPC.
 - **Prise en charge du protocole HTTPS (port 443) par la plateforme :**
-   - **Lien privé** : vous ne pouvez pas utiliser le protocole HTTPS (port 443) pour vous connecter à Adobe Commerce sur une infrastructure cloud en raison du [cloaking d’origine rapide](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html?lang=fr).
-   - **AWS PrivateLink** : les connexions avec le protocole HTTPS (port 443) sont prises en charge.
+  - **Lien privé** : vous ne pouvez pas utiliser le protocole HTTPS (port 443) pour vous connecter à Adobe Commerce sur une infrastructure cloud en raison du [cloaking d’origine rapide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly).
+  - **AWS PrivateLink** : les connexions avec le protocole HTTPS (port 443) sont prises en charge.
 - PrivateDNS non disponible.
 
 ## Types de connexion PrivateLink
@@ -66,8 +57,8 @@ Choisissez l’un des types de connexion PrivateLink les mieux adaptés à votre
 - **Lien privé unidirectionnel**-sélectionnez cette configuration pour récupérer en toute sécurité des données d’un magasin d’infrastructure cloud Adobe Commerce.
 - **Lien privé bidirectionnel**-Sélectionnez cette configuration pour établir des connexions sécurisées vers et depuis des systèmes en dehors d’Adobe Commerce sur l’environnement d’infrastructure cloud. L&#39;option bidirectionnelle requiert deux connexions :
 
-   - Une connexion entre le VPC client et le VPC Adobe
-   - Une connexion entre le VPC Adobe et le VPC client
+  - Une connexion entre le VPC client et le VPC Adobe
+  - Une connexion entre le VPC Adobe et le VPC client
 
 >[!TIP]
 >
@@ -106,12 +97,12 @@ Collectez les données suivantes requises pour l’activation de PrivateLink :
 - Indiquez l’identifiant du cluster ; à l’aide de SSH, connectez-vous à l’instance distante et utilisez la commande : `cat /etc/platform_cluster`
 - Pour qu’un service externe puisse se connecter à votre cluster Adobe Commerce Pro, vous devez disposer des éléments suivants :
 
-   - Liste des ports de votre cluster Pro à exposer au nouveau point d&#39;entrée privé externe
-   - Liste des ID d’abonnement Azure pour les connexions de point d’entrée privé
+  - Liste des ports de votre cluster Pro à exposer au nouveau point d&#39;entrée privé externe
+  - Liste des ID d’abonnement Azure pour les connexions de point d’entrée privé
 
 - Pour connecter votre cluster Adobe Commerce Pro à un service externe, vous avez besoin des éléments suivants :
 
-   - Liste des identifiants des ressources pour les services cibles. Les ID de service de lien privé externe ressemblent à ce qui suit :
+  - Liste des identifiants des ressources pour les services cibles. Les ID de service de lien privé externe ressemblent à ce qui suit :
 
   ```text
   /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/privateLinkServices/{svcNameID}
@@ -123,7 +114,7 @@ Le workflow suivant décrit le processus d’activation de l’intégration de P
 
 1. **Client** envoie un ticket d’assistance demandant l’activation de PrivateLink avec l’objet `PrivateLink support for <company>`. Incluez les [données requises pour l’activation](#prerequisites) dans le ticket. Adobe utilise le ticket d’assistance pour coordonner la communication pendant le processus d’activation.
 
-1. **&#x200B;**&#x200B;permet au compte client d’accéder au service de point d’entrée dans Adobe VPC.
+1. **** permet au compte client d’accéder au service de point d’entrée dans Adobe VPC.
 
    - Mettez à jour la configuration du service de point d’entrée Adobe pour accepter les requêtes lancées à partir du compte AWS ou Azure du client.
    - Mettez à jour le ticket d’assistance pour fournir le nom du service auquel le point d’entrée Adobe VPC doit se connecter, par exemple `com.amazonaws.vpce.<cloud-region>.vpce-svc-<service-id>`.
@@ -133,23 +124,23 @@ Le workflow suivant décrit le processus d’activation de l’intégration de P
    - Pour AWS, voir [Acceptation et rejet des demandes de connexion de point d’entrée de l’interface].
    - Pour Azure, voir [Gestion des demandes de connexion].
 
-1. **&#x200B;**&#x200B;approuve la demande de connexion.
+1. **** approuve la demande de connexion.
 
-1. Après la validation de la demande de connexion, **le client** [&#x200B; vérifie la connexion](#test-vpc-endpoint-service-connection) entre son VPC et le VPC Adobe.
+1. Après la validation de la demande de connexion, **le client** [ vérifie la connexion](#test-vpc-endpoint-service-connection) entre son VPC et le VPC Adobe.
 
 1. Étapes supplémentaires pour activer les connexions bidirectionnelles :
 
-   - **&#x200B;**&#x200B;fournit l’entité de sécurité du compte Adobe (utilisateur racine du compte AWS ou Azure) et demande l’accès au service de point d’entrée VPC du client.
+   - **** fournit l’entité de sécurité du compte Adobe (utilisateur racine du compte AWS ou Azure) et demande l’accès au service de point d’entrée VPC du client.
    - **Client** permet à Adobe d’accéder au service de point d’entrée dans le VPC client. Cela suppose que l’entité de sécurité du compte Adobe a accès à `arn:aws:iam::402592597372:root`, comme décrit précédemment dans la condition préalable **Accès au service de point d’entrée accordé**.
 
-      - Mettez à jour la configuration du service de point d’entrée client pour accepter les requêtes lancées à partir du compte Adobe. Consultez la documentation relative à la plateforme cloud pour obtenir des instructions :
+     - Mettez à jour la configuration du service de point d’entrée client pour accepter les requêtes lancées à partir du compte Adobe. Consultez la documentation relative à la plateforme cloud pour obtenir des instructions :
 
-         - Pour AWS, voir [Ajout et suppression d’autorisations pour votre service de point d’entrée].
-         - Pour Azure, voir [Gérer une connexion de point d’entrée privé]
+       - Pour AWS, voir [Ajout et suppression d’autorisations pour votre service de point d’entrée].
+       - Pour Azure, voir [Gérer une connexion de point d’entrée privé]
 
-      - Indiquez à Adobe le nom du service de point d’entrée pour le VPC client.
+     - Indiquez à Adobe le nom du service de point d’entrée pour le VPC client.
 
-   - **&#x200B;**&#x200B;ajoute le service de point d’entrée client au compte de plateforme Adobe (AWS ou Azure), ce qui déclenche une demande de connexion à VPC client.
+   - **** ajoute le service de point d’entrée client au compte de plateforme Adobe (AWS ou Azure), ce qui déclenche une demande de connexion à VPC client.
    - **Client** approuve la demande de connexion d’Adobe pour terminer la configuration.
    - **Client** [vérifie la connexion](#test-vpc-endpoint-service-connection) à partir du VPC Adobe.
 
@@ -219,7 +210,7 @@ Vous pouvez utiliser l’application Telnet pour tester la connexion au service 
 
 ## Modifier la configuration de PrivateLink
 
-[Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour modifier une configuration de lien privé existante. Par exemple, vous pouvez demander des modifications comme celles-ci :
+[Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour modifier une configuration de lien privé existante. Par exemple, vous pouvez demander des modifications comme celles-ci :
 
 - Supprimez la connexion PrivateLink d’Adobe Commerce sur l’infrastructure cloud dans l’environnement de production ou d’évaluation Pro.
 - Modifiez le numéro de compte de la plateforme cloud client pour accéder au service de point d’entrée Adobe.
@@ -241,14 +232,14 @@ Si ces ressources ne sont pas disponibles dans le VPC client, vous devez vous co
 Consultez la documentation de votre plateforme cloud pour obtenir des instructions sur la configuration de PrivateLink :
 
 - **Documentation AWS PrivateLink**
-   - [Créer une répartition de charge réseau]
-   - [Créer une configuration de service de point d’entrée]
-   - [Créer un point d’entrée d’interface]
-   - [Cycle de vie du point d’entrée de l’interface]
+  - [Créer une répartition de charge réseau]
+  - [Créer une configuration de service de point d’entrée]
+  - [Créer un point d’entrée d’interface]
+  - [Cycle de vie du point d’entrée de l’interface]
 
 - **Documentation Azure PrivateLink**
-   - [Créer une répartition de charge]
-   - [Workflow Lien privé ]
+  - [Créer une répartition de charge]
+  - [Workflow Lien privé ]
 
 <!--Link definitions-->
 

@@ -1,8 +1,8 @@
 ---
-source-git-commit: 305df8acb8c41369b34e2c20d9c7df6824222931
+source-git-commit: eab32e2f5155e3aa6c0924fa332cbef6e4dc502d
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 1%
+source-wordcount: '600'
+ht-degree: 0%
 
 ---
 # Contribution
@@ -13,13 +13,13 @@ Voici un ensemble de directives à suivre lorsque vous contribuez à ce projet.
 
 ## Code de conduite
 
-Ce projet respecte le [code de conduite](code-of-conduct.md) d’Adobe. En participant,
+Ce projet respecte le code de conduite dAdobe](code-of-conduct.md). [En participant,
 vous devez respecter ce code. Veuillez signaler tout comportement inacceptable à
-[Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
+[](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Documentation du guide du contributeur
 
-Voir le [Guide du contributeur](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr).
+Voir le [Guide du contributeur](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## Vous avez une question ?
 
@@ -38,7 +38,7 @@ tout est fin prêt !
 ## Révisions du code
 
 Toutes les soumissions doivent prendre la forme de demandes d’extraction et doivent être examinées
-par les responsables de projet. Lisez la documentation relative à la demande d’extraction de [GitHub](https://docs.github.com/articles/about-pull-requests/)
+par les responsables de projet. Lire la documentation sur les demandes d’extraction de [GitHub)](https://docs.github.com/articles/about-pull-requests/)
 pour plus d’informations sur l’envoi de requêtes d’extraction.
 
 Enfin, suivez le modèle [demande d’extraction](PULL_REQUEST_TEMPLATE.md) lorsque
@@ -55,11 +55,11 @@ n’hésitez pas à contacter les responsables existants pour en discuter.
 
 ## Problèmes de sécurité
 
-Les problèmes de sécurité ne doivent pas être signalés dans ce dispositif de suivi de problèmes. Soumettez plutôt [&#x200B; problème à nos experts en sécurité](https://helpx.adobe.com/fr/security/alertus.html)
+Les problèmes de sécurité ne doivent pas être signalés dans ce dispositif de suivi de problèmes. Soumettez plutôt [ problème à nos experts en sécurité](https://helpx.adobe.com/security/alertus.html)
 
 ## Nouveautés
 
-Si vos modifications introduisent de nouvelles rubriques, des mises à jour importantes ou des corrections qui doivent être mises en évidence, vous pouvez ajouter une brève description à la section [Quoi de neuf &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/overview#whats-new) directement à partir du corps de votre requête d’extraction.
+Si vos modifications introduisent de nouvelles rubriques, des mises à jour importantes ou des corrections qui doivent être mises en évidence, vous pouvez ajouter une brève description à la section [Quoi de neuf ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview#whats-new) directement à partir du corps de votre requête d’extraction.
 
 Pour ajouter une mise en surbrillance Nouveautés :
 
@@ -67,29 +67,29 @@ Pour ajouter une mise en surbrillance Nouveautés :
 
    ```text
    whatsnew
-   Short description of the change in the [target topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/target-topic.html).
+   Short description of the change in the [target topic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/target-topic.html).
    ```
 
    ou, s’il existe plusieurs rubriques :
 
    ```text
    whatsnew
-   Short description of the changes in the [first target topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/target-topic.html), [second target topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/second-target-topic.html), and [third target topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/third-target-topic.html).
+   Short description of the changes in the [first target topic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/target-topic.html), [second target topic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/second-target-topic.html), and [third target topic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/third-target-topic.html).
    ```
 
    vous pouvez également utiliser des listes pour plusieurs mises en surbrillance :
 
    ```text
    whatsnew
-   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/first-topic.html).
-   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/second-topic.html).
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/second-topic.html).
    ```
 
    ```text
    whatsnew
    The following changes were made to the documentation:
-   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/first-topic.html).
-   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/second-topic.html).
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/second-topic.html).
    ```
 
 1. Ajoutez des libellés pris en charge qui indiquent le type de modification. Les libellés pris en charge comprennent les libellés de chaque type de modification, tels que :
@@ -103,4 +103,4 @@ Pour ajouter une mise en surbrillance Nouveautés :
 1. La partie `whatsnew` doit commencer à partir de la balise `whatsnew` et se trouver à la toute fin du corps de la demande d’extraction.
 1. Les descriptions des modifications doivent inclure des liens de travail. Assurez-vous que les liens sont corrects et mènent aux sujets prévus. Si la rubrique est nouvelle, vérifiez que les liens fonctionnent après la fusion de la demande d’extraction et la publication de la nouvelle rubrique. Vous pouvez corriger les liens après la fusion de la demande d’extraction.
 
-Par exemple, recherchez dans les demandes d’extraction fermées du référentiel pour voir comment les mises en surbrillance existantes sont formatées, puis comparez-les à la section [Nouveautés](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/overview#whats-new) pour voir comment elles apparaissent dans la documentation.
+Par exemple, recherchez dans les demandes d’extraction fermées du référentiel pour voir comment les mises en surbrillance existantes sont formatées, puis comparez-les à la section [Nouveautés](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview#whats-new) pour voir comment elles apparaissent dans la documentation.

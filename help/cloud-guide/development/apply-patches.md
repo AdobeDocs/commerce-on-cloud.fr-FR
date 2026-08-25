@@ -4,14 +4,11 @@ description: Découvrez comment appliquer des correctifs dans le projet d’infr
 feature: Cloud, Upgrade
 exl-id: 923c1e43-45da-450f-bdfc-de84a901400d
 TQID: https://experienceleague.adobe.com/SyS-AIRHp0LW7Z4JwZw2FNtbvy9FVzISUID12MjlMrc
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 910
+source-wordcount: 911
 ht-degree: 0%
 
 ---
@@ -21,15 +18,15 @@ ht-degree: 0%
 Les correctifs [Cloud pour Commerce](https://github.com/magento/magento-cloud-patches) et l’outil de correctifs de la qualité [Quality Patches Tool](https://github.com/magento/quality-patches) fournissent des correctifs à votre application Adobe Commerce installée.
 
 - Le package Correctifs cloud pour Commerce fournit les correctifs requis avec des correctifs critiques
-- Les correctifs de qualité fournissent des correctifs de qualité facultatifs et à faible impact sous la forme de [correctifs individuels](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/versioning-policy.html?lang=fr#individual-patch) qui ne contiennent pas de modifications non rétrocompatibles
+- Les correctifs de qualité fournissent des correctifs de qualité facultatifs et à faible impact sous la forme de [correctifs individuels](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/versioning-policy#individual-patch) qui ne contiennent pas de modifications non rétrocompatibles
 
-Consultez [Correctifs disponibles](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le _Guide des outils d’exploitation Commerce_ pour obtenir une liste complète des correctifs publiés.
+Consultez [Correctifs disponibles](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le _Guide des outils d’exploitation Commerce_ pour obtenir une liste complète des correctifs publiés.
 
 Les deux packages améliorent l’intégration de toutes les versions d’Adobe Commerce avec les environnements cloud et prennent en charge la diffusion rapide de correctifs critiques, facultatifs et personnalisés. Vous pouvez utiliser ces packages pour appliquer, rétablir et afficher des informations générales sur tous les correctifs individuels disponibles pour Commerce.
 
 >[!TIP]
 >
->Vous pouvez utiliser l’[outil de correctifs de qualité](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) et les correctifs cloud pour Commerce en tant que packages autonomes pour les projets Magento Open Source et Adobe Commerce. Nous vous recommandons d’utiliser l’outil de correctifs de qualité pour les projets non cloud.
+>Vous pouvez utiliser l’[outil de correctifs de qualité](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) et les correctifs cloud pour Commerce en tant que packages autonomes pour les projets Magento Open Source et Adobe Commerce. Nous vous recommandons d’utiliser l’outil de correctifs de qualité pour les projets non cloud.
 
 Lorsque vous déployez des modifications dans l’environnement distant, le package `ece-tools` utilise `magento/magento-cloud-patches` et `magento/quality-patches` pour rechercher les correctifs en attente et les applique automatiquement dans l’ordre suivant :
 
@@ -39,7 +36,7 @@ Lorsque vous déployez des modifications dans l’environnement distant, le pack
 
 >[!NOTE]
 >
->Lorsque vous mettez à jour le package `ece-tools` ou le package Correctifs cloud pour Commerce, les derniers correctifs requis sont appliqués la prochaine fois que vous déployez votre projet. Vous pouvez également les déployer immédiatement à l’aide de la commande de l’interface de ligne de commande `ece-patches apply` et redéployer votre environnement Cloud. Vous ne pouvez pas ignorer [&#x200B; correctifs requis](https://github.com/magento/magento-cloud-patches/tree/develop/patches) pendant le processus de déploiement.
+>Lorsque vous mettez à jour le package `ece-tools` ou le package Correctifs cloud pour Commerce, les derniers correctifs requis sont appliqués la prochaine fois que vous déployez votre projet. Vous pouvez également les déployer immédiatement à l’aide de la commande de l’interface de ligne de commande `ece-patches apply` et redéployer votre environnement Cloud. Vous ne pouvez pas ignorer [ correctifs requis](https://github.com/magento/magento-cloud-patches/tree/develop/patches) pendant le processus de déploiement.
 
 ## Conditions préalables
 
@@ -98,20 +95,20 @@ Magento 2 Enterprise Edition, version 2.3.5.0
 Le tableau d&#39;état contient les types d&#39;informations suivants :
 
 - **Type** :
-   - `Optional` : tous les correctifs de l’outil de correctifs de la qualité et du package de correctifs cloud sont facultatifs pour les installations Adobe Commerce et Magento Open Source. Pour Adobe Commerce sur les infrastructures cloud, tous les correctifs sont facultatifs.
-   - `Required` : tous les correctifs du package Correctifs cloud pour Commerce sont requis pour les clients cloud.
-   - `Deprecated` : le correctif individuel est marqué comme obsolète et nous vous recommandons de le rétablir si vous l’avez appliqué. Une fois que vous avez rétabli un correctif obsolète, il ne s’affiche plus dans le tableau d’état.
-   - `Custom` : tous les correctifs du répertoire « m2-hotfix ».
+  - `Optional` : tous les correctifs de l’outil de correctifs de la qualité et du package de correctifs cloud sont facultatifs pour les installations Adobe Commerce et Magento Open Source. Pour Adobe Commerce sur les infrastructures cloud, tous les correctifs sont facultatifs.
+  - `Required` : tous les correctifs du package Correctifs cloud pour Commerce sont requis pour les clients cloud.
+  - `Deprecated` : le correctif individuel est marqué comme obsolète et nous vous recommandons de le rétablir si vous l’avez appliqué. Une fois que vous avez rétabli un correctif obsolète, il ne s’affiche plus dans le tableau d’état.
+  - `Custom` : tous les correctifs du répertoire « m2-hotfix ».
 
 - **Statut** :
-   - `Applied` : le correctif a été appliqué.
-   - `Not applied` : le correctif n&#39;a pas été appliqué.
-   - `N/A` : impossible de définir l&#39;état du correctif en raison de conflits.
+  - `Applied` : le correctif a été appliqué.
+  - `Not applied` : le correctif n&#39;a pas été appliqué.
+  - `N/A` : impossible de définir l&#39;état du correctif en raison de conflits.
 
 - **Détails** :
-   - `Affected components` : liste des modules concernés.
-   - `Required patches` : liste des patchs requis (dépendances).
-   - `Recommended replacement` : correctif qui est le remplacement recommandé d&#39;un correctif obsolète.
+  - `Affected components` : liste des modules concernés.
+  - `Required patches` : liste des patchs requis (dépendances).
+  - `Recommended replacement` : correctif qui est le remplacement recommandé d&#39;un correctif obsolète.
 
 ## Application d’un correctif dans un environnement local
 

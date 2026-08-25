@@ -6,14 +6,10 @@ feature: Cloud, Integration
 last-substantial-update: 2024-02-06T00:00:00.000Z
 exl-id: 97c5f70d-1465-46c9-bb33-98897262c5ef
 TQID: https://experienceleague.adobe.com/07ozUcb8SWNcyRzgxClhaG5S-cOHqywkYWfke1rJB1g
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
 source-wordcount: 574
 ht-degree: 0%
@@ -24,7 +20,7 @@ ht-degree: 0%
 
 Les intégrations sont utiles pour utiliser des services externes, tels que l’hébergement Git ou les robots Slack, et pour maintenir vos processus de développement actuels, tels que l’utilisation de la fonction de révision du code et de demande de tirage dans GitHub. Vous pouvez ajouter les intégrations suivantes à votre projet d’infrastructure cloud Adobe Commerce :
 
-![&#x200B; Intégrations &#x200B;](/help/assets/integrations.png)
+![ Intégrations ](/help/assets/integrations.png)
 
 >[!BEGINTABS]
 
@@ -74,7 +70,7 @@ Exemple de réponse :
 
 ## Webhooks Commerce
 
-Vous pouvez configurer les Webhooks Commerce dans votre projet cloud avec la variable globale [ENABLE_WEBHOOKS](../environment/variables-global.md#enable_webhooks). Les webhooks Commerce envoient des requêtes à un serveur externe en réponse aux événements générés par Commerce. Le [_guide des Webhooks_](https://developer.adobe.com/commerce/extensibility/webhooks) décrit cette fonctionnalité en détail.
+Vous pouvez configurer les Webhooks Commerce dans votre projet cloud avec la variable globale [ENABLE_WEBHOOKS](../environment/variables-global.md#enable_webhooks). Les webhooks Commerce envoient des requêtes à un serveur externe en réponse aux événements générés par Commerce. Le [_guide des Webhooks_](https://developer.adobe.com/commerce/extensibility/webhooks/) décrit cette fonctionnalité en détail.
 
 ## Webhooks génériques
 

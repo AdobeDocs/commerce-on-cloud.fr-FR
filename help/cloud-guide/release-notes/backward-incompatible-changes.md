@@ -5,17 +5,12 @@ feature: Cloud, Release Notes
 recommendations: noDisplay, catalog
 exl-id: 3f3c1036-bfd0-4c70-8309-6c5e442134cd
 TQID: https://experienceleague.adobe.com/ekS7f5swOsG2xgXP6ybN6hzwYm2xBbPWvl5oabv7Crc
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 822
+source-wordcount: 823
 ht-degree: 0%
 
 ---
@@ -67,7 +62,7 @@ Dans les versions antérieures de ECE-Tools, vous pouviez utiliser les commandes
 
 ## Modifications des correctifs cloud
 
-- **Supprimer les correctifs téléchargés**-Le package `magento/magento-cloud-patches` regroupe tous les correctifs disponibles à partir de la page [téléchargements de logiciels](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/commerce.html?lang=fr) et les applique automatiquement lorsque vous effectuez un déploiement sur le cloud. Pour éviter les conflits de correctifs après la mise à niveau vers ECE-Tools 2002.1.0 ou une version ultérieure, supprimez tous les correctifs fournis par Adobe que vous avez téléchargés et ajoutés manuellement à votre projet.
+- **Supprimer les correctifs téléchargés**-Le package `magento/magento-cloud-patches` regroupe tous les correctifs disponibles à partir de la page [téléchargements de logiciels](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/commerce) et les applique automatiquement lorsque vous effectuez un déploiement sur le cloud. Pour éviter les conflits de correctifs après la mise à niveau vers ECE-Tools 2002.1.0 ou une version ultérieure, supprimez tous les correctifs fournis par Adobe que vous avez téléchargés et ajoutés manuellement à votre projet.
 
 - **Mise à jour de la commande apply patches**-Nous avons déplacé la commande pour appliquer des correctifs du répertoire `vendor/bin/ece-tools` au répertoire `vendor/bin/ece-patches`. Si vous utilisez cette commande pour appliquer manuellement des correctifs, utilisez le nouveau chemin d&#39;accès.
 
@@ -83,45 +78,45 @@ Dans les versions antérieures de ECE-Tools, vous pouviez utiliser les commandes
 
 - **Modifications de la commande Cloud Docker for Commerce**-
 
-   - **Mise à jour des commandes de Cloud Docker pour Commerce pour les opérations de build de Docker**-Nous avons déplacé les commandes de Cloud Docker pour Commerce du répertoire `vendor/bin/ece-tools` vers le répertoire `vendor/bin/ece-docker`. Mettez à jour vos scripts et commandes pour utiliser le nouveau chemin d’accès.
+  - **Mise à jour des commandes de Cloud Docker pour Commerce pour les opérations de build de Docker**-Nous avons déplacé les commandes de Cloud Docker pour Commerce du répertoire `vendor/bin/ece-tools` vers le répertoire `vendor/bin/ece-docker`. Mettez à jour vos scripts et commandes pour utiliser le nouveau chemin d’accès.
 
-     Après la mise à niveau vers `ece-tools` 2002.1.0, utilisez la commande suivante pour afficher les commandes `ece-docker` disponibles.
+    Après la mise à niveau vers `ece-tools` 2002.1.0, utilisez la commande suivante pour afficher les commandes `ece-docker` disponibles.
 
-     ```bash
-     php ./vendor/bin/ece-docker list
-     ```
+    ```bash
+    php ./vendor/bin/ece-docker list
+    ```
 
-   - **Mise à jour des commandes Cloud docker-compose**-Nous avons renommé le chemin d’accès au fichier de commandes de `./bin/docker` à `./bin/magento-docker`. Mettez à jour vos scripts et commandes pour utiliser le nouveau chemin d’accès.
+  - **Mise à jour des commandes Cloud docker-compose**-Nous avons renommé le chemin d’accès au fichier de commandes de `./bin/docker` à `./bin/magento-docker`. Mettez à jour vos scripts et commandes pour utiliser le nouveau chemin d’accès.
 
-   - **Le conteneur Cron n’est plus inclus dans la configuration Docker par défaut**-Maintenant, vous devez ajouter l’option `--with-cron` à la commande `ece-docker build:compose` pour inclure le conteneur Cron dans la configuration de l’environnement Docker. Voir [Gestion des tâches cron](https://developer.adobe.com/commerce/cloud-tools/docker/configure/manage-cron-jobs) dans le guide _Cloud Docker for Commerce_ .
+  - **Le conteneur Cron n’est plus inclus dans la configuration Docker par défaut**-Maintenant, vous devez ajouter l’option `--with-cron` à la commande `ece-docker build:compose` pour inclure le conteneur Cron dans la configuration de l’environnement Docker. Voir [Gestion des tâches cron](https://developer.adobe.com/commerce/cloud-tools/docker/configure/manage-cron-jobs) dans le guide _Cloud Docker for Commerce_ .
 
-     Les scripts qui généraient auparavant des conteneurs avec des tâches cron ne disposent plus du conteneur cron.
+    Les scripts qui généraient auparavant des conteneurs avec des tâches cron ne disposent plus du conteneur cron.
 
-   - **Utilisation de conteneurs temporaires**-Dans les versions précédentes, les conteneurs créés par `bin/magento-docker` opérations de commande n’étaient pas supprimés. Vous pouviez donc les utiliser pour d’autres opérations. Désormais, les commandes `magento-docker` suppriment tous les conteneurs qu’elles créent une fois la commande terminée.
+  - **Utilisation de conteneurs temporaires**-Dans les versions précédentes, les conteneurs créés par `bin/magento-docker` opérations de commande n’étaient pas supprimés. Vous pouviez donc les utiliser pour d’autres opérations. Désormais, les commandes `magento-docker` suppriment tous les conteneurs qu’elles créent une fois la commande terminée.
 
-     Si vous souhaitez conserver un conteneur créé par une opération docker-compose, utilisez la commande `docker-compose run` au lieu de la commande `bin/magento-docker`.
+    Si vous souhaitez conserver un conteneur créé par une opération docker-compose, utilisez la commande `docker-compose run` au lieu de la commande `bin/magento-docker`.
 
-   - **Exécution des hooks de post-déploiement**-La commande `cloud-deploy` n’exécute plus les hooks de post-déploiement. Utilisez la nouvelle commande `cloud-post-deploy` pour exécuter les hooks de post-déploiement après le déploiement. Mettez à jour vos scripts pour ajouter la commande permettant d’exécuter les hooks de post-déploiement.
+  - **Exécution des hooks de post-déploiement**-La commande `cloud-deploy` n’exécute plus les hooks de post-déploiement. Utilisez la nouvelle commande `cloud-post-deploy` pour exécuter les hooks de post-déploiement après le déploiement. Mettez à jour vos scripts pour ajouter la commande permettant d’exécuter les hooks de post-déploiement.
 
-     ```shell
-     bin/magento-docker ece-deploy
-     bin/magento-docker ece-post-deploy
-     ```
+    ```shell
+    bin/magento-docker ece-deploy
+    bin/magento-docker ece-post-deploy
+    ```
 
-     Si vous utilisez directement des commandes `docker-compose`, vous pouvez également exécuter la commande `docker-compose run deploy cloud-post-deploy` après la commande de déploiement.
+    Si vous utilisez directement des commandes `docker-compose`, vous pouvez également exécuter la commande `docker-compose run deploy cloud-post-deploy` après la commande de déploiement.
 
 - **Actualisation de la base de données**-Le conteneur Base de données est désormais stocké dans le volume Docker persistant `magento-db`. Lorsque vous actualisez l’environnement Docker, la base de données n’est plus automatiquement supprimée. Si nécessaire, utilisez l’une des commandes suivantes pour la supprimer manuellement.
 
-   - Supprimez le conteneur `magento-db` :
+  - Supprimez le conteneur `magento-db` :
 
-     ```bash
-     docker volume rm magento-db
-     ```
+    ```bash
+    docker volume rm magento-db
+    ```
 
-   - Supprimez tous les volumes associés lors de l&#39;arrêt des conteneurs Docker :
+  - Supprimez tous les volumes associés lors de l&#39;arrêt des conteneurs Docker :
 
-     ```bash
-     docker-compose down -v
-     ```
+    ```bash
+    docker-compose down -v
+    ```
 
 - **Remplacer les paramètres de synchronisation de fichier pour les fichiers d’archive et de sauvegarde**-Les fichiers d’archive et de sauvegarde avec les extensions suivantes ne sont plus synchronisés lors de l’utilisation de docker-sync ou de mutagen : SQL, GZ, ZIP et BZ2. Vous pouvez remplacer la synchronisation de fichiers par défaut pour ces types de fichiers en renommant le fichier pour qu’il se termine par une extension différente. Par exemple : `synchronize-me.zip-backup`
