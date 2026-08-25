@@ -193,7 +193,7 @@ stage:
 - **Default**—`quick`
 - **Version**—Adobe Commerce 2.2.0 et versions ultérieures
 
-Personnalisez la [stratégie de déploiement](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy) pour le contenu statique. Voir [&#x200B; Déploiement de fichiers de vue statiques &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment).
+Personnalisez la [stratégie de déploiement](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy) pour le contenu statique. Voir [&#x200B; Déploiement de fichiers de vue statiques &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment).
 
 Utilisez ces options _uniquement_ si vous disposez de plusieurs paramètres régionaux :
 

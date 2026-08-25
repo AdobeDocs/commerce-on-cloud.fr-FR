@@ -51,7 +51,7 @@ L’intégration du service PrivateLink pour Adobe Commerce dans les projets d�
 - Au-delà de l’activation initiale, la prise en charge d’Adobe Commerce ne couvre pas le dépannage des problèmes AWS PrivateLink.
 - Les clients sont responsables des coûts associés à la gestion de leur propre VPC.
 - **Prise en charge du protocole HTTPS (port 443) par la plateforme :**
-  - **Lien privé** : vous ne pouvez pas utiliser le protocole HTTPS (port 443) pour vous connecter à Adobe Commerce sur une infrastructure cloud en raison du [cloaking d’origine rapide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly).
+  - **Lien privé** : vous ne pouvez pas utiliser le protocole HTTPS (port 443) pour vous connecter à Adobe Commerce sur une infrastructure cloud en raison du [cloaking d’origine rapide](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/fastly).
   - **AWS PrivateLink** : les connexions avec le protocole HTTPS (port 443) sont prises en charge.
 - PrivateDNS non disponible.
 
@@ -219,7 +219,7 @@ Vous pouvez utiliser l’application Telnet pour tester la connexion au service 
 
 ## Modifier la configuration de PrivateLink
 
-[Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour modifier une configuration de lien privé existante. Par exemple, vous pouvez demander des modifications comme celles-ci :
+[Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour modifier une configuration de lien privé existante. Par exemple, vous pouvez demander des modifications comme celles-ci :
 
 - Supprimez la connexion PrivateLink d’Adobe Commerce sur l’infrastructure cloud dans l’environnement de production ou d’évaluation Pro.
 - Modifiez le numéro de compte de la plateforme cloud client pour accéder au service de point d’entrée Adobe.

@@ -57,7 +57,7 @@ Cela nécessite ECE-Tools version 2002.0.12 et ultérieure avec un fichier `.mag
 
 >[!NOTE]
 >
->Si le fichier `<domain.your.project>/robots.txt` génère un `404 error`, [Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour supprimer la redirection de `/robots.txt` vers `/media/robots.txt`.
+>Si le fichier `<domain.your.project>/robots.txt` génère un `404 error`, [Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour supprimer la redirection de `/robots.txt` vers `/media/robots.txt`.
 
 ## Réécrire à l’aide du fragment de code VCL Fastly
 

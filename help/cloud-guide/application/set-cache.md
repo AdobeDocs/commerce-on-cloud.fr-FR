@@ -24,7 +24,7 @@ La durée de vie (TTL) du cache pour vos médias et fichiers statiques est défi
 
 >[!NOTE]
 >
->Avant de mettre à jour votre environnement de production, il est important de tester les modifications dans votre environnement d’évaluation. [Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour obtenir de l’aide sur la mise à jour de la configuration sur ces environnements.
+>Avant de mettre à jour votre environnement de production, il est important de tester les modifications dans votre environnement d’évaluation. [Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour obtenir de l’aide sur la mise à jour de la configuration sur ces environnements.
 
 1. Spécifiez la durée de vie (en secondes) dans la propriété [&#128279;](web-property.md) du fichier `.magento.app.yaml`. `web`Vous pouvez ajouter la clé `expires` sous `locations` ou sous `"/media"` et `"/static"`.
 
