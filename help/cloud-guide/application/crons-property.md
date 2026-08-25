@@ -4,10 +4,15 @@ description: Consultez des exemples sur la façon de configurer la propriété �
 feature: Cloud, Configuration
 exl-id: ff176cb1-5b6c-48a0-ad3c-56cc1d606c97
 TQID: https://experienceleague.adobe.com/E7qXe1VmZezG9AqJ2rchTUmbTibU0pNaGdqb00MkcXo
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
 source-wordcount: 1190
@@ -17,7 +22,7 @@ ht-degree: 0%
 
 # Propriété Cron
 
-Adobe Commerce utilise la propriété `crons` pour planifier des activités répétitives. Il est idéal pour planifier l’exécution d’une tâche spécifique à certains moments de la journée. En raison de la nature des environnements en lecture seule, une seule tâche cron peut s’exécuter à la fois sur l’instance web pour Adobe Commerce dans les projets d’infrastructure cloud. Il est recommandé de ventiler les tâches de longue durée en tâches plus petites et en file d’attente. Vous pouvez également créer une [ instance de travail ](workers-property.md).
+Adobe Commerce utilise la propriété `crons` pour planifier des activités répétitives. Il est idéal pour planifier l’exécution d’une tâche spécifique à certains moments de la journée. En raison de la nature des environnements en lecture seule, une seule tâche cron peut s’exécuter à la fois sur l’instance web pour Adobe Commerce dans les projets d’infrastructure cloud. Il est recommandé de ventiler les tâches de longue durée en tâches plus petites et en file d’attente. Vous pouvez également créer une [&#x200B; instance de travail &#x200B;](workers-property.md).
 
 Adobe vous recommande d’exécuter `crons` en tant que [propriétaire du système de fichiers](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions). N’exécutez __ `crons` en tant que `root` ou utilisateur du serveur web.
 
@@ -41,7 +46,7 @@ crons:
         cmd: "php bin/magento cron:run"
 ```
 
-Si votre projet nécessite des tâches cron personnalisées, vous pouvez les ajouter à la configuration `crons` par défaut. Voir [ Création d’une tâche cron ](#build-a-cron-job).
+Si votre projet nécessite des tâches cron personnalisées, vous pouvez les ajouter à la configuration `crons` par défaut. Voir [&#x200B; Création d’une tâche cron &#x200B;](#build-a-cron-job).
 
 ### `crontab`
 

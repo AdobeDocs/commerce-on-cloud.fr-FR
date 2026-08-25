@@ -4,10 +4,15 @@ description: Découvrez comment gérer et synchroniser les paramètres de config
 feature: Cloud, Configuration, SCD
 exl-id: 01850a7b-2c03-45e8-8051-b24ae95c5f87
 TQID: https://experienceleague.adobe.com/TF-K8g48q2fnuldOLdnwxjAJrxGzsRJlongd7cRqV9U
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
 source-wordcount: 1512
@@ -28,7 +33,7 @@ Les paramètres de la boutique, qui font référence aux configurations de la se
 >
 >Comme Adobe Commerce sur les infrastructures cloud ne prend en charge que les modes de production et de maintenance, la section **Avancé** > **Développeur** n’est pas accessible dans l’administration. Vous devez disposer des [privilèges d’administration d’environnement](../project/user-access.md) pour effectuer les tâches de gestion de la configuration. Vous pouvez configurer des paramètres supplémentaires à l’aide de [variables d’environnement](../environment/configure-env-yaml.md).
 
-La gestion de la configuration permet de déployer des paramètres de magasin cohérents dans vos environnements avec un temps d’arrêt minimal à l’aide du déploiement du pipeline. Le projet d’infrastructure d’Adobe Commerce sur le cloud comprend le serveur de génération, les scripts de génération et de déploiement, ainsi que les environnements de déploiement conçus en tenant compte de la [ stratégie de déploiement du pipeline ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/deployment/technical-details).
+La gestion de la configuration permet de déployer des paramètres de magasin cohérents dans vos environnements avec un temps d’arrêt minimal à l’aide du déploiement du pipeline. Le projet d’infrastructure d’Adobe Commerce sur le cloud comprend le serveur de génération, les scripts de génération et de déploiement, ainsi que les environnements de déploiement conçus en tenant compte de la [&#x200B; stratégie de déploiement du pipeline &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/deployment/technical-details).
 
 ## Schéma de remplacement de configuration
 
@@ -50,7 +55,7 @@ Si le même paramètre est configuré à plusieurs endroits, l’application s�
 | -------- | ------------------------ | ----------- |
 | 1 | [!DNL Cloud Console]<br>variables d’environnement | Valeurs ajoutées à partir de l’onglet _Variables_ de la configuration de l’environnement dans le [!DNL Cloud Console]. Spécifiez ici des valeurs pour les configurations sensibles ou spécifiques à un environnement. Les paramètres spécifiés ici ne peuvent pas être modifiés à partir de l’administrateur. Voir [Variables de configuration d’environnement](../project/overview.md#configure-environment). |
 | 2 | `.magento.app.yaml` | Valeurs ajoutées dans la section `variables` du fichier `.magento.app.yaml`. Spécifiez les valeurs ici pour garantir une configuration cohérente dans tous les environnements. **Ne spécifiez pas de valeurs sensibles dans le fichier `.magento.app.yaml`.** Voir [Paramètres d’application](../application/configure-app-yaml.md). |
-| 3 | `app/etc/env.php` | Les valeurs de configuration spécifiques à un environnement stockées ici sont ajoutées à l’aide de la commande `app:config:dump`. Définissez les valeurs sensibles et spécifiques au système à l’aide de variables d’environnement ou de l’interface de ligne de commande. Voir [ Données sensibles ](#sensitive-data). Le fichier `env.php` n **est pas inclus** contrôle de code source. |
+| 3 | `app/etc/env.php` | Les valeurs de configuration spécifiques à un environnement stockées ici sont ajoutées à l’aide de la commande `app:config:dump`. Définissez les valeurs sensibles et spécifiques au système à l’aide de variables d’environnement ou de l’interface de ligne de commande. Voir [&#x200B; Données sensibles &#x200B;](#sensitive-data). Le fichier `env.php` n **est pas inclus** contrôle de code source. |
 | 4 | `app/etc/config.php` | Les valeurs stockées ici sont ajoutées à l’aide de la commande `app:config:dump`. Les valeurs de configuration partagées sont ajoutées aux `config.php`. Définissez la configuration partagée depuis l’interface de ligne de commande de l’administrateur ou en utilisant l’interface de ligne de commande. Le fichier `config.php` est inclus dans le contrôle de code source. |
 | 5 | Base de données | Les valeurs stockées ici sont ajoutées en définissant des configurations dans l’Admin. Les configurations définies à l’aide de l’une des méthodes précédentes sont verrouillées (grisées) et ne peuvent pas être modifiées à partir de l’Administration. |
 | 6 | `config.xml` | De nombreuses configurations comportent des valeurs par défaut définies dans le fichier `config.xml` d’un module. Si Adobe Commerce ne trouve aucune valeur définie par l’une des méthodes précédentes, il revient à la valeur par défaut, si elle est définie. |
@@ -79,9 +84,9 @@ Consultez une liste des [paramètres sensibles ou spécifiques au système](http
 
 ### Performances SCD
 
-Selon la taille de votre boutique, vous pouvez avoir un grand nombre de fichiers de contenu statique à déployer. Normalement, le contenu statique se déploie pendant la phase de déploiement lorsque l’application est en mode de maintenance. La configuration la plus optimale consiste à générer du contenu statique pendant la phase de création. Voir [ Choix d’une stratégie de déploiement](../deploy/static-content.md).
+Selon la taille de votre boutique, vous pouvez avoir un grand nombre de fichiers de contenu statique à déployer. Normalement, le contenu statique se déploie pendant la phase de déploiement lorsque l’application est en mode de maintenance. La configuration la plus optimale consiste à générer du contenu statique pendant la phase de création. Voir [&#x200B; Choix d’une stratégie de déploiement](../deploy/static-content.md).
 
-Si vous avez activé la gestion de la configuration après avoir vidé les configurations, vous devez déplacer les variables SCD_* de l’étape de déploiement à l’étape de création afin d’activer correctement la génération de contenu statique pendant la phase de création. Voir [ Variables d’environnement ](../environment/configure-env-yaml.md#environment-variables).
+Si vous avez activé la gestion de la configuration après avoir vidé les configurations, vous devez déplacer les variables SCD_* de l’étape de déploiement à l’étape de création afin d’activer correctement la génération de contenu statique pendant la phase de création. Voir [&#x200B; Variables d’environnement &#x200B;](../environment/configure-env-yaml.md#environment-variables).
 
 **Avant la gestion de la configuration** :
 
@@ -179,7 +184,7 @@ env.php
 ...
 ```
 
-Les anciennes configurations utilisaient le fichier `app/etc/config.local.php`. Voir [ Migration des anciennes configurations ](#migrate-older-configurations).
+Les anciennes configurations utilisaient le fichier `app/etc/config.local.php`. Voir [&#x200B; Migration des anciennes configurations &#x200B;](#migrate-older-configurations).
 
 **Pour restaurer des fichiers de configuration** :
 
