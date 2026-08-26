@@ -20,9 +20,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 30e6d068126e2713dcaa23292db5704c23c272ad
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1690
+source-wordcount: 1694
 ht-degree: 0%
 
 ---
@@ -258,7 +258,7 @@ Les instructions d’installation de l’application d’authentification et d�
 
      >[!WARNING]
      >
-     >Si vous perdez l’accès à un compte avec TFA et que vous ne disposez pas de la liste des codes de récupération, vous devez contacter l’administrateur de votre projet ou [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour réinitialiser l’application TFA.
+     >Si vous perdez l’accès à un compte avec TFA et que vous ne disposez pas de la liste des codes de récupération, vous devez contacter l’administrateur de votre projet ou [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour réinitialiser l’application TFA.
 
 1. Une fois la configuration de l’AFE terminée, cliquez sur **Enregistrer** pour mettre à jour votre compte.
 

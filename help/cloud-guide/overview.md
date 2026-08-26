@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
 last-update: 2026-08-14
-source-git-commit: 95e742c5e1fcdc3f95457a70527a41a5b5a3b677
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 323
+source-wordcount: 324
 ht-degree: 3%
 
 ---
@@ -74,7 +74,7 @@ Le guide Commerce sur les infrastructures cloud suppose que vous avez une connai
 
 - [Documentation pour les développeurs Adobe Commerce &#x200B;](https://developer.adobe.com/commerce/docs/) (site Adobe Developer) : développez, personnalisez, intégrez, étendez et utilisez des fonctionnalités avancées
 
-- [Documentation Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce.html?lang=fr) (Adobe Experience League) : planification, implémentation, exploitation, mise à niveau et maintenance de vos projets [!DNL Commerce]
+- [Documentation Adobe Commerce &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce) (Adobe Experience League) : planification, implémentation, exploitation, mise à niveau et maintenance de vos projets [!DNL Commerce]
 
 {{$include /help/_includes/templated/whats-new.md}}
 

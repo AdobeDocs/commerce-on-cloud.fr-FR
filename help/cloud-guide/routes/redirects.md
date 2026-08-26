@@ -13,9 +13,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 705
+source-wordcount: 706
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Vous trouverez ci-dessous comment gérer les règles de redirection sur vos proj
 
 >[!WARNING]
 >
->Pour Adobe Commerce sur les projets d’infrastructure cloud, la configuration de nombreuses redirections et réécritures non regex dans le fichier `routes.yaml` peut entraîner des problèmes de performances. Si votre fichier `routes.yaml` fait 32 Ko ou plus, déchargez vos redirections non regex et vos réécritures vers Fastly. Voir [Déchargement des redirections non regex vers Fastly au lieu de Nginx (itinéraires)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.html?lang=fr) dans le _Centre d’aide d’Adobe Commerce_.
+>Pour Adobe Commerce sur les projets d’infrastructure cloud, la configuration de nombreuses redirections et réécritures non regex dans le fichier `routes.yaml` peut entraîner des problèmes de performances. Si votre fichier `routes.yaml` fait 32 Ko ou plus, déchargez vos redirections non regex et vos réécritures vers Fastly. Voir [Déchargement des redirections non regex vers Fastly au lieu de Nginx (itinéraires)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes) dans le _Centre d’aide d’Adobe Commerce_.
 
 ## Redirections de l’ensemble de l’itinéraire
 

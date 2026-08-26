@@ -9,9 +9,9 @@ product_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 745b243d165ba3a7695dea2827ddff37573ba8d0
 workflow-type: tm+mt
-source-wordcount: 172
+source-wordcount: 173
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Ce guide suppose que vous avez une connaissance pratique et une compréhension d
 
 - [Documentation pour les développeurs Adobe Commerce &#x200B;](https://developer.adobe.com/commerce/docs/) (site Adobe Developer) : développez, personnalisez, intégrez, étendez et utilisez des fonctionnalités avancées
 
-- [Documentation Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce.html?lang=fr) (Adobe Experience League) : planification, implémentation, exploitation, mise à niveau et maintenance de vos projets Commerce
+- [Documentation Adobe Commerce &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce) (Adobe Experience League) : planification, implémentation, exploitation, mise à niveau et maintenance de vos projets Commerce
 
 >[!TIP]
 >

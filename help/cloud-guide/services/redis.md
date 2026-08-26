@@ -14,9 +14,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 9e1fd3699623816ea3368816820daf799a43284f
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 388
+source-wordcount: 392
 ht-degree: 0%
 
 ---
@@ -147,6 +147,6 @@ Exemple de réponse :
 Consultez les articles d’assistance Adobe Commerce suivants pour obtenir de l’aide sur la résolution des problèmes Redis :
 
 - [Retraiter le délai de l’événement Connexion ou passage en caisse de l’administrateur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redis-issue-delay-magento-admin-login-or-checkout.html)
-- [Implémentation étendue du cache Redis dans Adobe Commerce 2.3.5+](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html?lang=fr)
-- [Alertes gérées sur Adobe Commerce : alerte d’avertissement de mémoire Redis](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-warning-alert.html?lang=fr)
-- [Alertes gérées sur Adobe Commerce : alerte Redis avec mémoire critique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-critical-alert.html?lang=fr)
+- [Implémentation étendue du cache Redis dans Adobe Commerce 2.3.5+](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)
+- [Alertes gérées sur Adobe Commerce : alerte d’avertissement de mémoire Redis](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert)
+- [Alertes gérées sur Adobe Commerce : alerte Redis avec mémoire critique](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert)

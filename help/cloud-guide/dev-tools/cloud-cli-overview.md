@@ -13,9 +13,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 860
+source-wordcount: 862
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Cet outil étend les fonctionnalités du [[!DNL Cloud Console]](../../get-starte
 
 **Pour installer l’interface de ligne de commande `magento-cloud`** :
 
-1. Sur votre _station de travail locale_, accédez au répertoire dans lequel vous avez l’intention de cloner le projet cloud et dans lequel le [propriétaire du système de fichiers](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=fr) dispose d’un accès en _écriture_.
+1. Sur votre _station de travail locale_, accédez au répertoire dans lequel vous avez l’intention de cloner le projet cloud et dans lequel le [propriétaire du système de fichiers](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions) dispose d’un accès en _écriture_.
 
 1. Installez l’interface de ligne de commande `magento-cloud`.
 
@@ -148,7 +148,7 @@ Les étapes suivantes illustrent l’utilisation interchangeable des commandes C
 
 1. Sur votre station de travail locale, accédez au répertoire du projet.
 
-1. Passez au [propriétaire du système de fichiers](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=fr).
+1. Passez au [propriétaire du système de fichiers](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions).
 
 1. Connectez-vous à votre projet.
 

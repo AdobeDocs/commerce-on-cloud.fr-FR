@@ -14,9 +14,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1071
+source-wordcount: 1079
 ht-degree: 0%
 
 ---
@@ -164,10 +164,10 @@ Selon le client, des options supplémentaires peuvent être nécessaires pour te
 
 Pour les **environnements de démarrage et les environnements d’intégration Pro**, vous pouvez également envisager d’ajouter [un `mount`](../application/properties.md#mounts) d’accès à un répertoire spécifique. Ajoutez le montage à votre fichier `.magento.app.yaml`. Pour obtenir une liste des répertoires accessibles en écriture, voir [Structure du projet](../project/file-structure.md). Ce point de montage ne fonctionne que dans ces environnements.
 
-Pour les environnements d’évaluation et de production **Pro**, si vous ne disposez pas d’un accès SSH à l’environnement, vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour demander un accès sFTP et un point de montage pour accéder au dossier spécifique, par exemple `pub/media`.
+Pour les environnements d’évaluation et de production **Pro**, si vous ne disposez pas d’un accès SSH à l’environnement, vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour demander un accès sFTP et un point de montage pour accéder au dossier spécifique, par exemple `pub/media`.
 
 >[!NOTE]
->Pour l’évaluation et la production Pro, si la connexion sFTP est destinée à un utilisateur _générique_ qui n’a **pas** besoin d’être [ajouté au projet cloud](../project/user-access.md), vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) avec sa clé **publique** jointe. **Ne fournissez jamais votre clé SSH privée.**
+>Pour l’évaluation et la production Pro, si la connexion sFTP est destinée à un utilisateur _générique_ qui n’a **pas** besoin d’être [ajouté au projet cloud](../project/user-access.md), vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) avec sa clé **publique** jointe. **Ne fournissez jamais votre clé SSH privée.**
 
 ## Tunneling SSH
 

@@ -14,9 +14,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 90e23f5f38ceeb0e1c48a83e43f942a30aa743b8
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1186
+source-wordcount: 1187
 ht-degree: 0%
 
 ---
@@ -201,7 +201,7 @@ Vous pouvez récupérer les données de configuration pour toutes les relations 
 
 ## Versions des services
 
-La prise en charge des versions de service et de la compatibilité pour Adobe Commerce sur l’infrastructure cloud est déterminée par les versions déployées et testées sur l’infrastructure cloud et diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Consultez [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) dans le guide _Installation_ pour obtenir une liste des dépendances logicielles tierces qu’Adobe a testées avec des versions spécifiques d’Adobe Commerce et de Magento Open Source.
+La prise en charge des versions de service et de la compatibilité pour Adobe Commerce sur l’infrastructure cloud est déterminée par les versions déployées et testées sur l’infrastructure cloud et diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Consultez [Configuration requise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements) dans le guide _Installation_ pour obtenir une liste des dépendances logicielles tierces qu’Adobe a testées avec des versions spécifiques d’Adobe Commerce et de Magento Open Source.
 
 ### Vérifications de fin de vie du logiciel
 

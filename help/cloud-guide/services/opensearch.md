@@ -11,9 +11,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 90e23f5f38ceeb0e1c48a83e43f942a30aa743b8
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 788
+source-wordcount: 799
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ OpenSearch vous permet de prendre des données de n’importe quelle source, n�
        disk: 1024
    ```
 
-   Pour les projets Pro, vous devez [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour modifier la version OpenSearch dans les environnements d’évaluation et de production.
+   Pour les projets Pro, vous devez [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour modifier la version OpenSearch dans les environnements d’évaluation et de production.
 
 1. Définissez ou vérifiez la propriété `relationships` dans le fichier `.magento.app.yaml`.
 
@@ -100,7 +100,7 @@ Lorsque vous installez ou mettez à niveau votre projet d’infrastructure Adobe
 
 - **Mise à niveau du projet**-Vérifiez que le client PHP OpenSearch dans la nouvelle version de l’application est compatible avec la version du service OpenSearch installée sur l’infrastructure cloud.
 
-La prise en charge des versions de service et de la compatibilité est déterminée par les versions testées et déployées sur l’infrastructure cloud et diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Consultez [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) dans le _Guide d’installation_ pour obtenir la liste des versions prises en charge.
+La prise en charge des versions de service et de la compatibilité est déterminée par les versions testées et déployées sur l’infrastructure cloud et diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Consultez [Configuration requise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements) dans le _Guide d’installation_ pour obtenir la liste des versions prises en charge.
 
 **Pour vérifier la compatibilité du logiciel OpenSearch** :
 
@@ -192,7 +192,7 @@ Vous pouvez éventuellement ajouter des modules externes pour OpenSearch en ajou
 
 >[!NOTE]
 >
->Cela s’applique uniquement aux environnements d’intégration et de démarrage. Pour installer les modules externes dans un cluster d’évaluation ou de production Pro, [envoyez une demande d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
+>Cela s’applique uniquement aux environnements d’intégration et de démarrage. Pour installer les modules externes dans un cluster d’évaluation ou de production Pro, [envoyez une demande d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
 
 
 ```yaml
@@ -216,7 +216,7 @@ La suppression des entrées du module externe de la section `opensearch:` du fic
 
 >[!NOTE]
 >
->Cette modification s’applique uniquement aux environnements d’intégration et de démarrage. Vous devrez [soumettre un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) pour supprimer le plug-in dans un cluster d’évaluation ou de production Pro.
+>Cette modification s’applique uniquement aux environnements d’intégration et de démarrage. Vous devrez [soumettre un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) pour supprimer le plug-in dans un cluster d’évaluation ou de production Pro.
 
 1. Supprimez les entrées du module externe OpenSearch de votre fichier `.magento/services.yaml`.
 1. Ajouter, valider et transmettre vos modifications de code.

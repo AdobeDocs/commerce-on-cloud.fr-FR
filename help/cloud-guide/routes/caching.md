@@ -11,9 +11,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 430
+source-wordcount: 431
 ht-degree: 0%
 
 ---
@@ -139,7 +139,7 @@ Il existe un cas particulier si la clé `cookies` a la valeur `["*"]`. Cette val
 
 Les cookies présentent les restrictions suivantes :
 
-- Le système contient un maximum défini de **50 cookies**. Dans le cas contraire, l’application renvoie une exception `Unable to send the cookie. Maximum number of cookies would be exceeded`. Pour augmenter le nombre de cookies à 200, appliquez le correctif [MDVA-12304](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=fr) à l’aide de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/tools/quality-patch-tool).
+- Le système contient un maximum défini de **50 cookies**. Dans le cas contraire, l’application renvoie une exception `Unable to send the cookie. Maximum number of cookies would be exceeded`. Pour augmenter le nombre de cookies à 200, appliquez le correctif [MDVA-12304](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/release-notes) à l’aide de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/tools/quality-patch-tool).
 - La taille maximale des cookies est de **4 096 octets**. Dans le cas contraire, l’application renvoie une exception `Unable to send the cookie. Size of '%name' is %size bytes`.
 
 ### `default_ttl`

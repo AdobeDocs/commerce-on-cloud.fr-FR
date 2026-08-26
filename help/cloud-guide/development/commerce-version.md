@@ -15,24 +15,24 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1020
+source-wordcount: 1024
 ht-degree: 0%
 
 ---
 
 # Mettre à niveau la version de Commerce
 
-Vous pouvez mettre à niveau la base de code Adobe Commerce vers une version plus récente. Avant de mettre à niveau l’environnement, consultez la section [&#x200B; Configuration requise &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) dans le guide _Installation_ pour connaître la configuration requise pour la dernière version du logiciel.
+Vous pouvez mettre à niveau la base de code Adobe Commerce vers une version plus récente. Avant de mettre à niveau l’environnement, consultez la section [&#x200B; Configuration requise &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements) dans le guide _Installation_ pour connaître la configuration requise pour la dernière version du logiciel.
 
 Selon le type d’environnement (Développement, Évaluation ou Production), vos tâches de mise à niveau peuvent inclure les éléments suivants :
 
 - Mettez à niveau les extensions tierces vers la dernière version prise en charge.
 - Pour les projets Pro, vous devez envoyer un ticket d’assistance Adobe Commerce pour installer ou mettre à jour les services dans les environnements d’évaluation et de production.
 - Pour les branches de développement/intégration/RP :
-   - Mettez à jour le fichier `.magento/services.yaml` avec les nouvelles versions de MariaDB (MySQL), OpenSearch, RabbitMQ et Redis pour garantir la compatibilité avec les nouvelles versions d’Adobe Commerce.
-   - Mettez à jour le fichier `.magento.app.yaml` avec de nouveaux paramètres pour les hooks et les variables d’environnement.
+  - Mettez à jour le fichier `.magento/services.yaml` avec les nouvelles versions de MariaDB (MySQL), OpenSearch, RabbitMQ et Redis pour garantir la compatibilité avec les nouvelles versions d’Adobe Commerce.
+  - Mettez à jour le fichier `.magento.app.yaml` avec de nouveaux paramètres pour les hooks et les variables d’environnement.
 
 {{upgrade-tip}}
 
@@ -156,7 +156,7 @@ Consultez les informations [versions de service](../services/services-yaml.md#se
 
 1. Examinez les correctifs actuellement appliqués :
 
-   - Si des correctifs sont installés dans le répertoire `m2-hotfixes`, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) et contactez l’assistance Adobe Commerce pour vérifier quels correctifs peuvent toujours être appliqués à la nouvelle version. Supprimez le ou les correctifs non applicables du répertoire `m2-hotfixes`.
+   - Si des correctifs sont installés dans le répertoire `m2-hotfixes`, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) et contactez l’assistance Adobe Commerce pour vérifier quels correctifs peuvent toujours être appliqués à la nouvelle version. Supprimez le ou les correctifs non applicables du répertoire `m2-hotfixes`.
 
    - Si des [correctifs de qualité] sont appliqués dans le fichier `.magento.env.yaml`, vérifiez s’ils peuvent toujours être appliqués à la nouvelle version. Supprimez le ou les correctifs non applicables de la section `QUALITY_PATCHES` du fichier `.magento.env.yaml`.
 

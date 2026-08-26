@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
 last-update: 2025-01-29
-source-git-commit: b9272078492b9240c8a4bee6216dd4987d95794f
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 873
+source-wordcount: 874
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Le code de fragment de code VCL personnalisé suivant (format JSON) montre la lo
 }
 ```
 
-Avant de [créer un extrait de code personnalisé](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html?lang=fr#add-the-custom-vcl-snippet) à partir de cet exemple, passez en revue les valeurs pour déterminer si vous devez apporter des modifications. Saisissez ensuite chaque valeur dans les champs respectifs, par exemple `type` dans le champ Type `content` dans le champ Contenu .
+Avant de [créer un extrait de code personnalisé](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist#add-the-custom-vcl-snippet) à partir de cet exemple, passez en revue les valeurs pour déterminer si vous devez apporter des modifications. Saisissez ensuite chaque valeur dans les champs respectifs, par exemple `type` dans le champ Type `content` dans le champ Contenu .
 
 - `name` — Nom du fragment de code VCL. Pour cet exemple, `allowlist`.
 

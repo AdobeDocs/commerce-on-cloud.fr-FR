@@ -11,9 +11,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 280
+source-wordcount: 284
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Vous pouvez configurer les paramètres d’application, les itinéraires, les ac
 
 ## Mises à jour de configuration des environnements Pro
 
-Pour les environnements d’évaluation et de production d’Adobe Commerce sur les infrastructures cloud Pro, vous pouvez mettre à jour de nombreuses options de configuration dans votre environnement de développement local et valider les modifications afin de les appliquer à ces environnements. Cependant, vous devez [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour mettre à jour les options de configuration suivantes :
+Pour les environnements d’évaluation et de production d’Adobe Commerce sur les infrastructures cloud Pro, vous pouvez mettre à jour de nombreuses options de configuration dans votre environnement de développement local et valider les modifications afin de les appliquer à ces environnements. Cependant, vous devez [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour mettre à jour les options de configuration suivantes :
 
 - Installez ou mettez à jour les services dans le fichier `.magento/services.yaml`.
 - Modifiez la configuration des propriétés `mounts` et `disk` dans le fichier `.magento.app.yaml`.

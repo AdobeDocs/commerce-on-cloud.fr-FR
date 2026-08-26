@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 901
+source-wordcount: 896
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Toutes les données collectées indiquent le temps passé sur les actions qui tr
 
 >[!TIP]
 >
->Pour plus d’informations sur l’utilisation de ces données pour résoudre les problèmes de performances des applications, voir [Résolution des problèmes de performances à l’aide de New Relic](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=fr) dans le _Centre d’aide Adobe Commerce_.
+>Pour plus d’informations sur l’utilisation de ces données pour résoudre les problèmes de performances des applications, voir [Résolution des problèmes de performances à l’aide de New Relic](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-40830) dans le _Centre d’aide Adobe Commerce_.
 
 ## Surveillance des performances à l’aide d’alertes gérées
 
@@ -58,7 +58,7 @@ Adobe fournit la stratégie d’alerte _Alertes gérées pour Adobe Commerce_ po
 | Chargement des requêtes MariaDB | NRI | Pro |
 | Mémoire Redis | NRI | Pro |
 
-Lorsque l’infrastructure du site ou les conditions d’application déclenchent un seuil d’alerte, New Relic envoie des notifications d’alerte afin que vous puissiez résoudre le problème de manière proactive. Voir [Alertes gérées pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html?lang=fr) dans le _Centre d’aide d’Adobe Commerce_ pour plus d’informations sur les seuils d’alerte et les étapes de dépannage afin de résoudre les problèmes qui ont déclenché l’alerte.
+Lorsque l’infrastructure du site ou les conditions d’application déclenchent un seuil d’alerte, New Relic envoie des notifications d’alerte afin que vous puissiez résoudre le problème de manière proactive. Voir [Alertes gérées pour Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce) dans le _Centre d’aide d’Adobe Commerce_ pour plus d’informations sur les seuils d’alerte et les étapes de dépannage afin de résoudre les problèmes qui ont déclenché l’alerte.
 
 >[!TIP]
 >
@@ -88,7 +88,7 @@ Lorsque l’infrastructure du site ou les conditions d’application déclenchen
 
      >[!NOTE]
      >
-     >Si la stratégie _Alertes gérées pour Adobe Commerce_ n’est pas disponible, consultez la section [Alertes gérées pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html?lang=fr) dans le _Centre d’aide d’Adobe Commerce_.
+     >Si la stratégie _Alertes gérées pour Adobe Commerce_ n’est pas disponible, consultez la section [Alertes gérées pour Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce) dans le _Centre d’aide d’Adobe Commerce_.
 
 1. Cliquez sur l’onglet **[!UICONTROL Alert conditions]** pour consulter les conditions d’alerte définies dans la politique.
 

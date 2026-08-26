@@ -14,9 +14,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 768
+source-wordcount: 860
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ La génération de contenu statique pendant la phase de création avec HTML mini
 La génération de contenu statique nécessite l’accès aux thèmes et aux paramètres régionaux. Adobe Commerce stocke les thèmes dans le système de fichiers, qui est accessible pendant la phase de création. Toutefois, Adobe Commerce stocke les paramètres régionaux dans la base de données. La base de données n’est _pas_ disponible pendant la phase de création. Pour générer le contenu statique pendant la phase de création, vous devez utiliser la commande `config:dump` du package de `ece-tools` pour déplacer les paramètres régionaux vers le système de fichiers. Il lit les paramètres régionaux et les enregistre dans le fichier `app/etc/config.php`.
 
 >[!NOTE]
->Après avoir exécuté la commande `config:dump` dans le package `ece-tools`, les configurations qui sont vidées dans le fichier `config.php` [sont verrouillées (grisées) dans le tableau de bord Admin](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/locked-fields-in-magento-admin). La seule façon de mettre à jour ces configurations dans Admin est de les supprimer du fichier localement et de redéployer le projet.
+>Après avoir exécuté la commande `config:dump` dans le package `ece-tools`, les configurations qui sont vidées dans le fichier `config.php` [sont verrouillées (grisées) dans le tableau de bord Admin](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26879). la seule façon de mettre à jour ces configurations dans l’administration consiste à les supprimer du fichier localement et à redéployer le projet.
 >En outre, chaque fois que vous ajoutez un nouveau magasin/groupe de magasins/site web à votre instance, vous devez penser à exécuter la commande `config:dump` pour vous assurer que la base de données est synchronisée. Vous pouvez également choisir [les configurations à vider](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) dans le fichier `config.php`.
 >Si vous supprimez la configuration magasin/groupe de magasins/site web du fichier `config.php` parce que les champs sont grisés mais que vous négligez d’effectuer cette étape, les nouvelles entités qui n’ont pas été extraites sont supprimées de la base de données lors du déploiement suivant.
 

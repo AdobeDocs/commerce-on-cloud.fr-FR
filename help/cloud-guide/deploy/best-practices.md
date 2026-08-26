@@ -18,9 +18,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1979
+source-wordcount: 1982
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Examinez ces bonnes pratiques et considérations concernant votre processus de d
 
 - **Vérifier les versions et les relations des services et la possibilité de se connecter**
 
-  Vérifiez les services disponibles pour votre application et assurez-vous que vous utilisez la version la plus récente et compatible. Voir [Relations de service](../services/services-yaml.md#service-relationships) et [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) dans le _Guide d’installation_ pour obtenir les versions recommandées.
+  Vérifiez les services disponibles pour votre application et assurez-vous que vous utilisez la version la plus récente et compatible. Voir [Relations de service](../services/services-yaml.md#service-relationships) et [Configuration requise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements) dans le _Guide d’installation_ pour obtenir les versions recommandées.
 
 - **Testez localement et dans l’environnement d’intégration avant le déploiement dans les environnements d’évaluation et de production**
 
@@ -95,11 +95,11 @@ Examinez ces bonnes pratiques et considérations concernant votre processus de d
 
   Avant le déploiement en production, effectuez les tâches suivantes :
 
-   - Assurez-vous que vous pouvez vous connecter aux trois nœuds de l’environnement de production à l’aide de [SSH](../development/secure-connections.md).
+  - Assurez-vous que vous pouvez vous connecter aux trois nœuds de l’environnement de production à l’aide de [SSH](../development/secure-connections.md).
 
-   - Vérifiez que les indexeurs sont définis sur _Mise à jour selon le calendrier_. Voir [Modes d’indexation](https://developer.adobe.com/commerce/php/development/components/indexing/) dans le _Guide du développeur de l’extension_.
+  - Vérifiez que les indexeurs sont définis sur _Mise à jour selon le calendrier_. Voir [Modes d’indexation](https://developer.adobe.com/commerce/php/development/components/indexing/) dans le _Guide du développeur de l’extension_.
 
-   - Préparez l’environnement en mettant à jour les variables spécifiques à l’environnement dans le code de production, en vérifiant la disponibilité et la compatibilité du service et en apportant toute autre modification de configuration requise.
+  - Préparez l’environnement en mettant à jour les variables spécifiques à l’environnement dans le code de production, en vérifiant la disponibilité et la compatibilité du service et en apportant toute autre modification de configuration requise.
 
 - **Surveiller le processus de déploiement**
 
@@ -186,13 +186,13 @@ Si le fichier `app/etc/config.php` n’existe pas dans le codebase, les fichiers
 
 Il existe deux hooks de déploiement. Le hook `pre-deploy.php` effectue le nettoyage et la récupération nécessaires des ressources et du code générés dans le hook de build. Le hook `php ./vendor/bin/ece-tools deploy` exécute une série de commandes et de scripts :
 
-- Si Adobe Commerce n’est **pas installé**, il s’installe avec `bin/magento setup:install` et met à jour la configuration du déploiement, les `app/etc/env.php` et la base de données pour l’environnement spécifié, tel que Redis et les URL de site web. **Important :** lorsque vous avez terminé le [premier déploiement](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/launch/overview.html?lang=fr) lors de la configuration, Adobe Commerce a été installé et déployé dans tous les environnements.
+- Si Adobe Commerce n’est **pas installé**, il s’installe avec `bin/magento setup:install` et met à jour la configuration du déploiement, les `app/etc/env.php` et la base de données pour l’environnement spécifié, tel que Redis et les URL de site web. **Important :** lorsque vous avez terminé le [premier déploiement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/launch/overview) lors de la configuration, Adobe Commerce a été installé et déployé dans tous les environnements.
 
 - Si Adobe Commerce **est installé**, effectuez les mises à niveau nécessaires. Le script de déploiement exécute `bin/magento setup:upgrade` pour mettre à jour le schéma et les données de la base de données (ce qui est nécessaire après les mises à jour de l’extension ou du code principal). Il met également à jour la configuration du déploiement, les `app/etc/env.php` et la base de données pour votre environnement. Enfin, le script de déploiement efface le cache d’Adobe Commerce.
 
 - Le script génère éventuellement du contenu web statique à l’aide de la `magento setup:static-content:deploy` de commande .
 
-- Utilise des portées (indicateur `-s` dans les scripts de version) avec un paramètre par défaut de `quick` pour la stratégie de déploiement de contenu statique. Vous pouvez personnaliser la stratégie à l’aide de la variable d’environnement [`SCD_STRATEGY`](../environment/variables-deploy.md#scd_strategy). Pour plus d’informations sur ces options et fonctionnalités, consultez [Stratégies de déploiement de fichiers statiques](../deploy/static-content.md) et l’indicateur de `-s` pour [Déployer des fichiers d’affichage statiques](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=fr).
+- Utilise des portées (indicateur `-s` dans les scripts de version) avec un paramètre par défaut de `quick` pour la stratégie de déploiement de contenu statique. Vous pouvez personnaliser la stratégie à l’aide de la variable d’environnement [`SCD_STRATEGY`](../environment/variables-deploy.md#scd_strategy). Pour plus d’informations sur ces options et fonctionnalités, consultez [Stratégies de déploiement de fichiers statiques](../deploy/static-content.md) et l’indicateur de `-s` pour [Déployer des fichiers d’affichage statiques](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment).
 
 >[!NOTE]
 >

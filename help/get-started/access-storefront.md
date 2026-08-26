@@ -1,6 +1,6 @@
 ---
 title: Accès à votre panneau d’administration Commerce
-description: Découvrez comment accéder à votre panneau d’administration Commerce.
+description: Découvrez comment sécuriser l’accès administrateur à votre projet d’infrastructure cloud Adobe Commerce, réinitialiser le mot de passe du propriétaire de la licence et vous connecter au panneau d’administration.
 recommendations: noDisplay, catalog
 exl-id: 827417b0-9048-44d8-8c82-07befba476c7
 TQID: https://experienceleague.adobe.com/V3BXuCc9aqT5YuyIS8WAZgUdPAYNhQunAgg2i2FCaOs
@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 285a91916015e03b506195f3cb027c779976fdf0
 workflow-type: tm+mt
-source-wordcount: 361
+source-wordcount: 379
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Après avoir envoyé la demande de changement de mot de passe, recherchez dans v
 
 >[!TIP]
 >
->Si la réinitialisation du mot de passe échoue ou si vous ne pouvez pas vous connecter au panneau d’administration, un utilisateur disposant d’un accès administrateur peut se connecter au projet à l’aide de SSH et ajouter un utilisateur administrateur à l’aide de la commande d’interface de ligne de commande `admin:user:create`. Voir [Créer, modifier ou déverrouiller un compte administrateur](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html?lang=fr) dans le _Guide d’installation_.
+>Si la réinitialisation du mot de passe échoue ou si vous ne pouvez pas vous connecter au panneau d’administration, un utilisateur disposant d’un accès administrateur peut se connecter au projet à l’aide de SSH et ajouter un utilisateur administrateur à l’aide de la commande d’interface de ligne de commande `admin:user:create`. Voir [Créer, modifier ou déverrouiller un compte administrateur](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/admin) dans le _Guide d’installation_.
 
 ## Surveiller l’intégrité du site
 

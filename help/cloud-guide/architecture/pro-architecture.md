@@ -18,9 +18,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1587
+source-wordcount: 1619
 ht-degree: 0%
 
 ---
@@ -155,10 +155,10 @@ L’environnement de production dispose de trois machines virtuelles derrière u
 
 - **GlusterFS** : serveur de fichiers pour gérer tous les déploiements de fichiers statiques et la synchronisation avec quatre montages de répertoire :
 
-   - `var`
-   - `pub/media`
-   - `pub/static`
-   - `app/etc`
+  - `var`
+  - `pub/media`
+  - `pub/static`
+  - `app/etc`
 
 - **Redis** : un serveur par machine virtuelle avec un seul actif et les deux autres comme répliques.
 
@@ -225,4 +225,4 @@ Le dimensionnement du cluster Pro et les configurations _compute_ varient en fon
 
 L’architecture redondante permet à l’infrastructure cloud d’Adobe de se mettre à niveau sans temps d’arrêt. Lors de la mise à l’échelle, chacune des trois instances effectue une rotation pour mettre à niveau la capacité sans affecter le fonctionnement du site. Par exemple, vous pouvez ajouter des serveurs web supplémentaires à un cluster existant au cas où le niveau de restriction serait PHP plutôt qu&#39;au niveau de la base de données. Cette mise à l’échelle _horizontale_ complète la mise à l’échelle verticale fournie par des processeurs supplémentaires au niveau de la base de données. Pour plus d&#39;informations, consultez la section [Architecture évolutive](scaled-architecture.md).
 
-Si vous prévoyez une augmentation significative du trafic pour un événement ou pour une autre raison, vous pouvez demander une augmentation temporaire de la capacité. Consultez [Comment demander une mise à niveau temporaire](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=fr) dans le Centre d’aide de Commerce __.
+Si vous prévoyez une augmentation significative du trafic pour un événement ou pour une autre raison, vous pouvez demander une augmentation temporaire de la capacité. Consultez [Comment demander une mise à niveau temporaire](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize) dans le Centre d’aide de Commerce __.

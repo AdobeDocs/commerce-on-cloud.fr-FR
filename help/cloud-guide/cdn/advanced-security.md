@@ -3,9 +3,9 @@ title: Sécurité avancée Adobe Commerce
 description: Découvrez comment Advanced Security ajoute la gestion des robots, la limitation de débit avancée et la protection DDoS de couche 7 à Adobe Commerce sur les infrastructures cloud.
 feature: Cloud, Configuration, Security
 exl-id: 7aeb189f-be69-45d5-8163-4748424083c0
-source-git-commit: 0b3ef117f85c990c2a01ecb655c930b8c4f61acb
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2482'
 ht-degree: 0%
 
 ---
@@ -254,7 +254,7 @@ Pour demander une [!DNL Advanced Security] :
 
 1. Contactez votre équipe de compte Adobe ou votre représentant commercial Adobe pour discuter des [!DNL Advanced Security] de votre projet.
 
-1. Après l’achat de [!DNL Advanced Security], [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) demandant l’activation du [!DNL Advanced Security]. Incluez votre ID de projet [!DNL Adobe Commerce on Cloud Infrastructure] et les environnements nécessitant une activation (par exemple, Production et Évaluation).
+1. Après l’achat de [!DNL Advanced Security], [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) demandant l’activation du [!DNL Advanced Security]. Incluez votre ID de projet [!DNL Adobe Commerce on Cloud Infrastructure] et les environnements nécessitant une activation (par exemple, Production et Évaluation).
 
 1. Adobe active [!DNL Advanced Security] sur votre service Fastly et configure les politiques de protection initiales. L’activation est généralement effectuée dans les jours ouvrables suivant l’envoi du ticket.
 
@@ -262,7 +262,7 @@ Pour demander une [!DNL Advanced Security] :
 
 >[!NOTE]
 >
->Les modifications de configuration apportées à [!DNL Advanced Security] nécessitent actuellement [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket). La configuration en libre-service via l’interface utilisateur d’administration est prévue pour une version ultérieure.
+>Les modifications de configuration apportées à [!DNL Advanced Security] nécessitent actuellement [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). La configuration en libre-service via l’interface utilisateur d’administration est prévue pour une version ultérieure.
 
 ## Restrictions
 

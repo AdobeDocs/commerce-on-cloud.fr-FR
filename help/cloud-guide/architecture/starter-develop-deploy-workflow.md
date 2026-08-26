@@ -15,9 +15,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 2168
+source-wordcount: 2170
 ht-degree: 0%
 
 ---
@@ -175,7 +175,7 @@ Lorsque vous développez des fonctionnalités, ajoutez des extensions et conceve
 
 Pour exporter des données de production en tant que données de test à utiliser dans les environnements d’évaluation et d’intégration :
 
-- [Exécutez les utilitaires d’assistance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=fr) commandes d’interface de ligne de commande (recommandé) lors de l’exportation d’une sauvegarde protégée des données client et de stockage à l’aide de votre clé de chiffrement Adobe Commerce
+- [Exécutez les utilitaires d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/run-support-utilities) commandes d’interface de ligne de commande (recommandé) lors de l’exportation d’une sauvegarde protégée des données client et de stockage à l’aide de votre clé de chiffrement Adobe Commerce
 
 - Outil [Collecte de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/support#data-collector) pour générer et exporter des données
 
@@ -185,7 +185,7 @@ Pour migrer ces données, voir [Migrer et déployer des fichiers et des données
 
 >[!NOTE]
 >
->Avant de transférer les données vers un autre environnement, vous devez envisager de nettoyer vos données. Vous disposez de plusieurs options, notamment l’[utilisation d’utilitaires d’assistance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=fr) ou le développement d’un script pour nettoyer les données client.
+>Avant de transférer les données vers un autre environnement, vous devez envisager de nettoyer vos données. Vous disposez de plusieurs options, notamment l’[utilisation d’utilitaires d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/run-support-utilities) ou le développement d’un script pour nettoyer les données client.
 
 >[!WARNING]
 >
