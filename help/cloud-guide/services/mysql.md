@@ -232,5 +232,5 @@ Consultez les articles d’assistance Adobe Commerce suivants pour obtenir de l�
 
 - [Vérification des requêtes lentes et des processus MySQL](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql)
 - [Créer une image mémoire de base de données sur le cloud](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud)
-- [Dépannage de l’outil de migration de données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
+- [Dépannage de l’outil de migration de données](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=fr)
 - [Mise à niveau d’Adobe Commerce : tableaux compacts à dynamiques 2.2.x, 2.3.x vers 2.4.x](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade)
