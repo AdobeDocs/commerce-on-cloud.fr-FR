@@ -4,10 +4,17 @@ description: Découvrez l’architecture à deux niveaux et sa mise à l’éche
 feature: Cloud, Auto Scaling, Iaas, Logs
 exl-id: 45c0cf14-99e6-4643-88f0-98ebcdb3a98c
 TQID: https://experienceleague.adobe.com/jbO3zavC7ZZs6nlYlMC0Isj0QLl-wlr-opAfxOKCNao
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2: id: db6b6496-d1b5-4ad4-9e18-dea78dae3aa8id: df5e974b-6742-4873-a687-a6bedaafdaa2
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: db6b6496-d1b5-4ad4-9e18-dea78dae3aa8
+  - id: df5e974b-6742-4873-a687-a6bedaafdaa2
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 2defc3f82cdada4e9576721ae7a7b3dd25a84adc
 workflow-type: tm+mt
 source-wordcount: 807
@@ -39,7 +46,7 @@ Vous pouvez optimiser davantage les performances du niveau de service en achemin
 
 ### Niveau web
 
-Il existe trois nœuds web pour le traitement des requêtes et du trafic web : **php-fpm** et **NGINX**. En plus de la mise à l’échelle verticale en augmentant la puissance et la mémoire, le niveau web peut être mis à l’échelle horizontale en ajoutant des serveurs web à un cluster existant lorsqu’il est limité au niveau PHP. Pour découvrir comment les nœuds web se mettent à l’échelle automatiquement, consultez [ Mise à l’échelle automatique ](autoscaling.md).
+Il existe trois nœuds web pour le traitement des requêtes et du trafic web : **php-fpm** et **NGINX**. En plus de la mise à l’échelle verticale en augmentant la puissance et la mémoire, le niveau web peut être mis à l’échelle horizontale en ajoutant des serveurs web à un cluster existant lorsqu’il est limité au niveau PHP. Pour découvrir comment les nœuds web se mettent à l’échelle automatiquement, consultez [&#x200B; Mise à l’échelle automatique &#x200B;](autoscaling.md).
 
 ![Mise à l’échelle de niveau web](../../assets/scaling-web.png)
 
@@ -55,7 +62,7 @@ Les projets Pro avec l&#39;architecture à l&#39;échelle ont six nœuds disponi
 
 - 3 nœuds de service m5.2xlarge (8 CPU, 32 Go de RAM)
 
-Cependant, chaque projet est unique et nécessite une surveillance des performances pour analyser correctement la gestion des ressources. Chaque compte comprend le service [](../monitor/new-relic-service.md), qui se connecte automatiquement aux données de l’application et à l’analyse des performances pour fournir une surveillance dynamique du serveur. Plus précisément, vous pouvez utiliser le service New Relic pour surveiller l’utilisation de CPU et de la RAM afin de déterminer les nœuds qui nécessitent des ressources supplémentaires. Lorsqu’une ressource atteint sa capacité maximale ou que vous constatez une dégradation des performances en fonction des analyses, vous pouvez créer une demande afin d’adapter votre infrastructure en fonction de la demande.
+Cependant, chaque projet est unique et nécessite une surveillance des performances pour analyser correctement la gestion des ressources. Chaque compte comprend le service [&#128279;](../monitor/new-relic-service.md), qui se connecte automatiquement aux données de l’application et à l’analyse des performances pour fournir une surveillance dynamique du serveur. Plus précisément, vous pouvez utiliser le service New Relic pour surveiller l’utilisation de CPU et de la RAM afin de déterminer les nœuds qui nécessitent des ressources supplémentaires. Lorsqu’une ressource atteint sa capacité maximale ou que vous constatez une dégradation des performances en fonction des analyses, vous pouvez créer une demande afin d’adapter votre infrastructure en fonction de la demande.
 
 ### Accès SSH
 
@@ -109,4 +116,4 @@ project-id@server-id:~$
 
 Les emplacements des journaux varient légèrement en fonction du nœud. Par exemple, le **journal des erreurs MySQL** (`/var/log/mysql/mysql-error.log`) est disponible sur un nœud de service, mais pas sur un nœud web.
 
-Chaque compte Pro inclut le service [Journaux ](../monitor/new-relic-service.md), qui se connecte automatiquement aux données de journal de l&#39;application pour fournir une gestion dynamique des journaux. Les données de journal agrégées de tous les nœuds s’affichent dans l’application Journaux New Relic afin que vous puissiez résoudre les problèmes de performances sur des nœuds spécifiques à partir d’un seul tableau de bord.
+Chaque compte Pro inclut le service [Journaux &#x200B;](../monitor/new-relic-service.md), qui se connecte automatiquement aux données de journal de l&#39;application pour fournir une gestion dynamique des journaux. Les données de journal agrégées de tous les nœuds s’affichent dans l’application Journaux New Relic afin que vous puissiez résoudre les problèmes de performances sur des nœuds spécifiques à partir d’un seul tableau de bord.
