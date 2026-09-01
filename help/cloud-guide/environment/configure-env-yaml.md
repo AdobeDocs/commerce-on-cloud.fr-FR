@@ -5,15 +5,11 @@ feature: Cloud, Build, Configuration, Deploy, SCD
 role: Developer
 exl-id: f39c73fc-351a-41ed-9e74-2c3f14871246
 TQID: https://experienceleague.adobe.com/Ub0FWkUN9uOVzLhVbNbPhUV5kj808ODlbjVrRDDA-4E
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: c754e69243236bbf862ea636261c6d2a6cae9eb7
 workflow-type: tm+mt
 source-wordcount: 706
 ht-degree: 0%
@@ -33,14 +29,14 @@ Le fichier `.magento.env.yaml` utilise des variables d’environnement pour cent
 Le fichier `.magento.env.yaml` contient deux sections : `stage` et `log`. La section `stage` contrôle les actions qui se produisent au cours des phases du processus de déploiement [Cloud](../deploy/process.md).
 
 - `stage` : utilisez la section étape pour définir certaines actions pour les étapes suivantes du déploiement :
-   - `global` : contrôle les actions au cours des phases de création, de déploiement et de post-déploiement. Vous pouvez remplacer ces paramètres dans les sections Créer, déployer et post-déployer.
-   - `build` : contrôle uniquement les actions de la phase de création. Si vous ne spécifiez pas de paramètres dans cette section, la phase de création utilise les paramètres de la section globale.
-   - `deploy` : contrôle les actions lors de la phase de déploiement uniquement. Si vous ne spécifiez pas de paramètres dans cette section, la phase de déploiement utilise les paramètres de la section globale.
-   - `post-deploy` : contrôle les actions _après_ le déploiement de votre application et _après_ le conteneur commence à accepter les connexions.
+  - `global` : contrôle les actions au cours des phases de création, de déploiement et de post-déploiement. Vous pouvez remplacer ces paramètres dans les sections Créer, déployer et post-déployer.
+  - `build` : contrôle uniquement les actions de la phase de création. Si vous ne spécifiez pas de paramètres dans cette section, la phase de création utilise les paramètres de la section globale.
+  - `deploy` : contrôle les actions lors de la phase de déploiement uniquement. Si vous ne spécifiez pas de paramètres dans cette section, la phase de déploiement utilise les paramètres de la section globale.
+  - `post-deploy` : contrôle les actions _après_ le déploiement de votre application et _après_ le conteneur commence à accepter les connexions.
 - `log` : utilisez la section journal pour configurer les [notifications](set-up-notifications.md), y compris les types de notification et le niveau de détail.
-   - `slack` : permet de configurer un message à envoyer à un robot Slack.
-   - `email` : configurez un e-mail à envoyer à un ou plusieurs destinataires d&#39;e-mail.
-   - [gestionnaires de journaux](log-handlers.md) : configurez les messages des applications matérielles et logicielles envoyés à un serveur de journalisation distant.
+  - `slack` : permet de configurer un message à envoyer à un robot Slack.
+  - `email` : configurez un e-mail à envoyer à un ou plusieurs destinataires d&#39;e-mail.
+  - [gestionnaires de journaux](log-handlers.md) : configurez les messages des applications matérielles et logicielles envoyés à un serveur de journalisation distant.
 
 ### Variables d’environnement
 
@@ -172,7 +168,7 @@ Si vous avez activé la gestion de la configuration après avoir vidé les confi
     SCD_STRATEGY: compact
     SCD_MATRIX:
       ...
-    REDIS_USE_SLAVE_CONNECTION: 1
+    MYSQL_USE_SLAVE_CONNECTION: 1
 ```
 
 >Après avoir activé la gestion de la configuration, déplacez les variables SCD_* vers l’étape de création :
@@ -182,10 +178,9 @@ Si vous avez activé la gestion de la configuration après avoir vidé les confi
     CRON_CONSUMERS_RUNNER:
       cron_run: true
       consumers: []
-    REDIS_USE_SLAVE_CONNECTION: 1
+    MYSQL_USE_SLAVE_CONNECTION: 1
   build:
     SCD_STRATEGY: compact
     SCD_MATRIX:
       ...
 ```
-

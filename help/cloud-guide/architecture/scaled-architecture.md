@@ -4,20 +4,13 @@ description: Découvrez l’architecture à deux niveaux et sa mise à l’éche
 feature: Cloud, Auto Scaling, Iaas, Logs
 exl-id: 45c0cf14-99e6-4643-88f0-98ebcdb3a98c
 TQID: https://experienceleague.adobe.com/jbO3zavC7ZZs6nlYlMC0Isj0QLl-wlr-opAfxOKCNao
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: db6b6496-d1b5-4ad4-9e18-dea78dae3aa8
-  - id: df5e974b-6742-4873-a687-a6bedaafdaa2
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: db6b6496-d1b5-4ad4-9e18-dea78dae3aa8id: df5e974b-6742-4873-a687-a6bedaafdaa2
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 2defc3f82cdada4e9576721ae7a7b3dd25a84adc
 workflow-type: tm+mt
-source-wordcount: 828
+source-wordcount: 807
 ht-degree: 0%
 
 ---
@@ -36,7 +29,7 @@ Historiquement, l’architecture Pro se composait de trois nœuds, chacun conten
 
 ### Niveau de service
 
-Il existe trois nœuds de service pour le stockage des données, le cache et les services : **OpenSearch** ou **Elasticsearch**, **MariaDB**, **Redis**, etc. Lorsque le niveau de service approche de la capacité, la seule façon de procéder consiste à augmenter la taille du serveur, par exemple en augmentant l’alimentation et la mémoire du CPU. La capacité est limitée à la taille du nœud disponible. Le cluster de base de données étant conçu pour une haute disponibilité, vous ne pouvez pas effectuer une mise à l’échelle horizontale de manière fiable avec les technologies utilisées.
+Chacun des trois nœuds de service exécute le même ensemble de services : **OpenSearch** ou **Elasticsearch** pour la recherche, **MariaDB** pour la base de données et **Redis** ou **Valkey** pour la mise en cache, entre autres. Lorsque le niveau de service approche de la capacité, vous ne pouvez effectuer une mise à l’échelle que verticalement, en augmentant la taille du serveur (CPU et mémoire). La capacité est limitée à la plus grande taille de nœud disponible. Le cluster de base de données étant conçu pour offrir une haute disponibilité, vous ne pouvez pas mettre à l’échelle les nœuds de base de données de manière fiable avec les technologies utilisées.
 
 ![Mise à l’échelle du niveau de service](../../assets/scaling-service.png)
 
@@ -46,23 +39,23 @@ Vous pouvez optimiser davantage les performances du niveau de service en achemin
 
 ### Niveau web
 
-Il existe trois nœuds web pour le traitement des requêtes et du trafic web : **php-fpm** et **NGINX**. En plus de la mise à l’échelle verticale en augmentant la puissance et la mémoire, le niveau web peut être mis à l’échelle horizontale en ajoutant des serveurs web à un cluster existant lorsqu’il est limité au niveau PHP. Voir [&#x200B; Mise à l’échelle automatique &#x200B;](autoscaling.md) pour savoir comment les nœuds web sont automatiquement mis à l’échelle.
+Il existe trois nœuds web pour le traitement des requêtes et du trafic web : **php-fpm** et **NGINX**. En plus de la mise à l’échelle verticale en augmentant la puissance et la mémoire, le niveau web peut être mis à l’échelle horizontale en ajoutant des serveurs web à un cluster existant lorsqu’il est limité au niveau PHP. Pour découvrir comment les nœuds web se mettent à l’échelle automatiquement, consultez [ Mise à l’échelle automatique ](autoscaling.md).
 
 ![Mise à l’échelle de niveau web](../../assets/scaling-web.png)
 
-Cela complète la mise à l’échelle verticale fournie par le niveau de service. À mesure que le niveau de service évolue en taille et en puissance pour s’adapter à une utilisation croissante des bases de données et des services, le niveau web évolue en taille, en puissance et en instances pour s’adapter à une augmentation des demandes de processus et à des exigences de trafic plus élevées.
+Cela complète la mise à l’échelle verticale fournie par le niveau de service. À mesure que le niveau de service s’adapte à l’augmentation de la taille de la base de données, le niveau web s’adapte à l’augmentation des demandes et du trafic.
 
-Prenons un exemple où le type d’instance de nœud web est _C5.2xlarge avec huit processeurs et 16 Go de RAM_. Le nombre de requêtes sur le site a considérablement augmenté. Vous pouvez ajouter un nœud C5.2xlarge pour gérer l’augmentation des processus php-fpm ou changer chaque type d’instance en _C5.4xlarge avec 16 CPU et 32 Go de RAM_. L’ajout d’un nœud réduit le risque d’une capacité de pointe insuffisante.
+Prenons un exemple où le type d’instance de nœud web est _C5.2xlarge avec huit processeurs et 16 Go de RAM_. Le nombre de requêtes sur le site a considérablement augmenté. Pour gérer l&#39;augmentation des processus php-fpm, vous pouvez ajouter un nœud C5.2xlarge ou changer chaque type d&#39;instance en _C5.4xlarge avec 16 CPU et 32 Go de RAM_. L’ajout d’un nœud réduit le risque d’une capacité de pointe insuffisante.
 
 ## Structure du projet
 
-Au minimum, les projets Pro avec l&#39;architecture à l&#39;échelle ont six nœuds disponibles.
+Les projets Pro avec l&#39;architecture à l&#39;échelle ont six nœuds disponibles.
 
 - 3 nœuds web c5.2xlarge (8 CPU, 16 Go de RAM)
 
 - 3 nœuds de service m5.2xlarge (8 CPU, 32 Go de RAM)
 
-Cependant, chaque projet est unique et nécessite une surveillance des performances pour analyser correctement la gestion des ressources. Chaque compte comprend le service [&#128279;](../monitor/new-relic-service.md), qui se connecte automatiquement aux données de l’application et à l’analyse des performances pour fournir une surveillance dynamique du serveur. Plus précisément, vous pouvez utiliser le service New Relic pour surveiller l’utilisation de CPU et de la RAM afin de déterminer les nœuds qui nécessitent des ressources supplémentaires. Lorsqu’une ressource atteint sa capacité maximale ou que vous constatez une dégradation des performances en fonction des analyses, vous pouvez créer une demande afin d’adapter votre infrastructure en fonction de la demande.
+Cependant, chaque projet est unique et nécessite une surveillance des performances pour analyser correctement la gestion des ressources. Chaque compte comprend le service [](../monitor/new-relic-service.md), qui se connecte automatiquement aux données de l’application et à l’analyse des performances pour fournir une surveillance dynamique du serveur. Plus précisément, vous pouvez utiliser le service New Relic pour surveiller l’utilisation de CPU et de la RAM afin de déterminer les nœuds qui nécessitent des ressources supplémentaires. Lorsqu’une ressource atteint sa capacité maximale ou que vous constatez une dégradation des performances en fonction des analyses, vous pouvez créer une demande afin d’adapter votre infrastructure en fonction de la demande.
 
 ### Accès SSH
 
@@ -114,7 +107,6 @@ project-id@server-id:~$
 
 ### Emplacements du journal
 
-Les emplacements des journaux varient légèrement en fonction du nœud. Par exemple, un journal de base de données, tel que le journal d’erreurs **MySQL**, est disponible sur un nœud de service (`/var/log/mysql/mysql-error.log`), mais il n’est pas disponible sur un nœud web.
+Les emplacements des journaux varient légèrement en fonction du nœud. Par exemple, le **journal des erreurs MySQL** (`/var/log/mysql/mysql-error.log`) est disponible sur un nœud de service, mais pas sur un nœud web.
 
-Chaque compte Pro inclut le service [Journaux &#x200B;](../monitor/new-relic-service.md), qui se connecte automatiquement aux données de journal de l&#39;application pour fournir une gestion dynamique des journaux. Les données de journal agrégées de tous les nœuds s’affichent dans l’application Journaux New Relic afin que vous puissiez résoudre les problèmes de performances sur des nœuds spécifiques à partir d’un seul tableau de bord.
-
+Chaque compte Pro inclut le service [Journaux ](../monitor/new-relic-service.md), qui se connecte automatiquement aux données de journal de l&#39;application pour fournir une gestion dynamique des journaux. Les données de journal agrégées de tous les nœuds s’affichent dans l’application Journaux New Relic afin que vous puissiez résoudre les problèmes de performances sur des nœuds spécifiques à partir d’un seul tableau de bord.

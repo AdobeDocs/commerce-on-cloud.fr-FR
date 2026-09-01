@@ -4,16 +4,12 @@ description: Utilisez la liste des propriétés comme référence lors de la con
 feature: Cloud, Configuration, Build, Deploy, Roles/Permissions, Storage
 exl-id: 32bd1f64-43d6-48a3-84b7-bea22f125bb0
 TQID: https://experienceleague.adobe.com/5HoI8DnJqL6pyBZRt3u-jVlQvhP1UGqN70B9fq2c9-Y
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 330a8bbd9298a28b5c007f4a79f684ce7adca9ff
 workflow-type: tm+mt
-source-wordcount: 857
+source-wordcount: 858
 ht-degree: 0%
 
 ---
@@ -31,7 +27,7 @@ Le fichier `.magento.app.yaml` utilise des propriétés pour gérer la prise en 
 | [`hooks`](hooks-property.md) | Personnaliser les commandes shell pour les phases de création, de déploiement et de post-déploiement | — | Non |
 | [`mounts`](#mounts) | Définir les chemins d’accès | Chemins d’accès :<ul><li>`"var": "shared:files/var"`</li><li>`"app/etc": "shared:files/etc"`</li><li>`"pub/media": "shared:files/media"`</li><li>`"pub/static": "shared:files/static"`</li></ul> | Non |
 | [`name`](#name) | Définition du nom de l’application | `mymagento` | Oui |
-| [`relationships`](#relationships) | Services de carte | Services :<ul><li>`database: "mysql:mysql"`</li><li>`redis: "redis:redis"`</li><li>`opensearch: "opensearch:opensearch"`</li></ul> | Non |
+| [`relationships`](#relationships) | Services de carte | Services :<ul><li>`database: "mysql:mysql"`</li><li>`redis: "redis:redis"` ou `valkey: "cache:valkey"`</li><li>`opensearch: "opensearch:opensearch"`</li></ul> | Non |
 | [`runtime`](#runtime) | La propriété d’exécution inclut les extensions requises par l’application [!DNL Commerce]. | Extensions :<ul><li>`xsl`</li><li>`newrelic`</li><li>`sodium`</li></ul> | Oui |
 | [`type`](#type-and-build) | Définir l’image du conteneur de base | `php:8.3` | Oui |
 | [`variables`](variables-property.md) | Application d’une variable d’environnement à une version de Commerce spécifique | — | Non |
@@ -147,7 +143,7 @@ La taille de disque minimale recommandée est de 256 Mo. Si le `UserError: Error
 
 >[!NOTE]
 >
->Pour les environnements d’évaluation et de production Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour mettre à jour la configuration `mounts` et `disk` de votre application. Lorsque vous soumettez le ticket, indiquez les modifications de configuration requises et incluez une version mise à jour de votre fichier `.magento.app.yaml`.
+>Pour les environnements d’évaluation et de production Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour mettre à jour la configuration `mounts` et `disk` de votre application. Lorsque vous soumettez le ticket, indiquez les modifications de configuration requises et incluez une version mise à jour de votre fichier `.magento.app.yaml`.
 >
 >Il n’est pas possible d’augmenter temporairement l’espace de stockage du disque dans les environnements d’évaluation ou de production ; ce processus n’est pas réversible.
 
@@ -198,7 +194,7 @@ Le format d’ajout de votre montage à cette liste est le suivant :
 
 >[!NOTE]
 >
->Pour les environnements d’évaluation et de production Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour mettre à jour la configuration `mounts` et `disk` de votre application. Lorsque vous soumettez le ticket, indiquez les modifications de configuration requises et incluez une version mise à jour de votre fichier `.magento.app.yaml`.
+>Pour les environnements d’évaluation et de production Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour mettre à jour la configuration `mounts` et `disk` de votre application. Lorsque vous soumettez le ticket, indiquez les modifications de configuration requises et incluez une version mise à jour de votre fichier `.magento.app.yaml`.
 
 Vous pouvez rendre le montage web accessible en l’ajoutant au bloc d’emplacements [`web`](web-property.md).
 
