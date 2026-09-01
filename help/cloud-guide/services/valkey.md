@@ -98,7 +98,7 @@ Une fois le déploiement terminé, vérifiez que la relation de service Valkey e
 
 ## Personnalisation de la configuration Valkey
 
-Pour les recommandations relatives au cache, à la session, à L2 et à la connexion de réplica, consultez [Bonnes pratiques pour la configuration de service Valkey et Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) dans le _Guide des bonnes pratiques du playbook d’implémentation_.
+Pour les recommandations relatives au cache, à la session, à L2 et à la connexion de réplica, consultez [Bonnes pratiques pour la configuration de service Valkey et Redis](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) dans le _Guide des bonnes pratiques du playbook d’implémentation_.
 
 ## Vérifier la relation de service
 
