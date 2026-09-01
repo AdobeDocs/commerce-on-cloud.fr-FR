@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Les projets configurés avant le 5 juin 2020 disposaient de plusieurs environnements d’intégration plus petits. Si vous avez besoin d’un environnement d’intégration plus grand pour les tests et le développement, demandez une mise à niveau vers les environnements d’intégration améliorés. Pour plus d’informations, consultez l’article [Demande d’environnement d’intégration](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) dans le Centre d’aide d’_Adobe Commerce_.
+>Les projets configurés avant le 5 juin 2020 disposaient de plusieurs environnements d’intégration plus petits. Si vous avez besoin d’un environnement d’intégration plus grand pour les tests et le développement, demandez une mise à niveau vers les environnements d’intégration améliorés. Pour plus d’informations, consultez l’article [Demande d’environnement d’intégration](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27242) dans le Centre d’aide d’_Adobe Commerce_.
 
 ## Options de fusion {#merge-options}
 
@@ -41,15 +41,15 @@ Définissez l’option `_merge` sur l’une des options suivantes :
 >Certains projets **Pro** nécessitent l’assistance de l’assistance Adobe pour mettre à jour les configurations d’itinéraire dans le fichier `routes.yaml` et les configurations cron dans le fichier `.magento.app.yaml`. Adobe recommande d’effectuer et de valider toutes les modifications de configuration YAML dans un environnement d’intégration avant de les déployer dans l’environnement d’évaluation.
 >
 >
->Si vos modifications ne sont pas répercutées sur les sites d’évaluation après le redéploiement et qu’il n’existe aucun message d’erreur associé dans le journal, vous **devez** [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). Dans le ticket, décrivez clairement les modifications de configuration que vous avez tentées et joignez tout fichier de configuration YAML mis à jour dans le ticket.
+>Si vos modifications ne sont pas répercutées sur les sites d’évaluation après le redéploiement et qu’il n’existe aucun message d’erreur associé dans le journal, vous **devez** [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). Dans le ticket, décrivez clairement les modifications de configuration que vous avez tentées et joignez tout fichier de configuration YAML mis à jour dans le ticket.
 
 ## Sauvegardes Pro {#pro-backups}
 
 >[!TIP]
 >
->Pour récupérer une sauvegarde spécifique sur les environnements d’évaluation et de production Pro, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) en indiquant la date, l’heure et le fuseau horaire dans le ticket.
+>Pour récupérer une sauvegarde spécifique sur les environnements d’évaluation et de production Pro, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) en indiquant la date, l’heure et le fuseau horaire dans le ticket.
 >
->Adobe ne restaure **pas** les environnements à partir d’une sauvegarde automatique. Consultez [Restaurer un instantané de base de données à partir de l&#39;évaluation ou de la production](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production) pour choisir une méthode de restauration d&#39;un instantané d&#39;évaluation ou de production.
+>Adobe ne restaure **pas** les environnements à partir d’une sauvegarde automatique. Consultez [Restaurer un instantané de base de données à partir de l&#39;évaluation ou de la production](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production) pour choisir une méthode de restauration d&#39;un instantané d&#39;évaluation ou de production.
 
 ## Avertissement de redéploiement {#redeploy-warning}
 
@@ -87,7 +87,7 @@ Utilisez les instructions suivantes pour la configuration du service sur les env
 
 >[!NOTE]
 >
->Pour modifier la configuration du service dans les environnements de production et d’évaluation Pro, [Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). Pour les exigences de planification et les conseils de disponibilité du client, consultez [Assistance des services Pro](https://experienceleague.adobe.com/en/docs/cloud-guide/services/services-yaml.md#pro-services-support) dans _Configurer les services_.
+>Pour modifier la configuration du service dans les environnements de production et d’évaluation Pro, [Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). Pour les exigences de planification et les conseils de disponibilité du client, consultez [Assistance des services Pro](https://experienceleague.adobe.com/en/docs/cloud-guide/services/services-yaml.md#pro-services-support) dans _Configurer les services_.
 
 ## Changement de service {#service-change-tip}
 
@@ -99,7 +99,7 @@ Utilisez les instructions suivantes pour la configuration du service sur les env
 
 >[!TIP]
 >
->Pour obtenir de l’aide sur les déploiements bloqués, utilisez l’utilitaire de dépannage de déploiement [&#128279;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29640) dans le Centre d’aide de _Commerce_.
+>Pour obtenir de l’aide sur les déploiements bloqués, utilisez l’utilitaire de dépannage de déploiement [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-29640) dans le Centre d’aide de _Commerce_.
 
 ## Mise à jour des outils de la CEE {#ece-tools-package}
 

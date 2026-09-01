@@ -11,11 +11,11 @@ ht-degree: 0%
 
 Pour demander et effectuer une mise à niveau du service Pro dans les environnements d&#39;évaluation ou de production, procédez comme suit :
 
-1. **Pour installer ou mettre à jour les [services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) dans les environnements `Staging` et `Production` uniquement**, envoyez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+1. **Pour installer ou mettre à jour les [services](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) dans les environnements `Staging` et `Production` uniquement**, envoyez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
    Dans le ticket, spécifiez les changements de service requis, incluez les fichiers `.magento.app.yaml` et `.magento/services.yaml` mis à jour et notez la version PHP cible.
 
-   La version PHP, les mises à jour du compositeur, les extensions et les paramètres d&#39;environnement sont des changements en libre-service. Adobe peut avoir besoin de mettre à jour l’agent New Relic pour assurer la compatibilité des versions PHP. Voir [Paramètres PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) dans _Configuration des applications_.
+   La version PHP, les mises à jour du compositeur, les extensions et les paramètres d&#39;environnement sont des changements en libre-service. Adobe peut avoir besoin de mettre à jour l’agent New Relic pour assurer la compatibilité des versions PHP. Voir [Paramètres PHP](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/php-settings) dans _Configuration des applications_.
 
    >[!IMPORTANT]
    >
