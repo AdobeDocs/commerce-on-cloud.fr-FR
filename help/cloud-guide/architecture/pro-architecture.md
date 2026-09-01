@@ -1,26 +1,18 @@
 ---
 title: Architecture pro
-description: Découvrez les environnements pris en charge par l’architecture Pro.
+description: Découvrez l’architecture de l’environnement Pro, notamment les environnements de Principal, d’intégration, d’évaluation et de production, ainsi que la mise à l’échelle des clusters et les sauvegardes.
 feature: Cloud, Auto Scaling, Iaas, Paas, Storage
 topic: Architecture
 exl-id: a6eb562b-1b97-4285-a271-989d9fddc4f9
 TQID: https://experienceleague.adobe.com/Es-cmVlUrzd4xMf9unOJD-Z-h0OvL-ycoullKVO-yRA
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: db6b6496-d1b5-4ad4-9e18-dea78dae3aa8
-  - id: df5e974b-6742-4873-a687-a6bedaafdaa2
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: db6b6496-d1b5-4ad4-9e18-dea78dae3aa8id: df5e974b-6742-4873-a687-a6bedaafdaa2
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: bdc2bedd2696e7dde0ffb55f846a8bced2dbd25d
 workflow-type: tm+mt
-source-wordcount: 1619
+source-wordcount: 1621
 ht-degree: 0%
 
 ---
@@ -46,6 +38,8 @@ Le tableau suivant résume les différences entre les environnements :
 | Inclut le service New Relic | Non | APM | APM + NRI |
 | Sauvegardes automatiques | Non | Oui | Oui |
 
+**APM** fait référence à la surveillance des performances des applications [!DNL New Relic's].
+
 >[!NOTE]
 >
 >Adobe fournit l’outil Cloud Docker pour Commerce qui permet d’effectuer un déploiement dans un environnement Cloud Docker local afin que vous puissiez développer et tester des projets Adobe Commerce. Voir [Développement Docker](../dev-tools/cloud-docker.md).
@@ -64,7 +58,7 @@ Dans les projets Pro, la branche `master` fournit un environnement PaaS actif av
 
 - Ne créez **pas** une branche basée sur la branche `master`. Utilisez l’environnement d’intégration pour créer des branches actives pour le développement.
 
-- N’utilisez pas l’environnement `master` pour le développement, l’UAT ou les tests de performance
+- N’utilisez pas l’environnement `master` pour le développement, les tests d’acceptation utilisateur (UAT) ou les tests de performance
 
 ### Environnement d’intégration
 
@@ -99,11 +93,11 @@ Pour vérifier le nombre de produits dans le catalogue, exécutez la requête My
 
 - L&#39;architecture de l&#39;environnement d&#39;intégration ne correspond pas à l&#39;architecture d&#39;évaluation et de production
 
-- N’utilisez pas l’environnement `integration` pour les tests de développement, les tests de performance ou les tests d’acceptation utilisateur (UAT)
+- N’utilisez pas l’environnement `integration` pour les tests de développement, les tests de performance ou l’UAT
 
 - N’utilisez pas l’environnement `integration` pour tester la fonctionnalité B2B d’Adobe Commerce
 
-- Vous ne pouvez pas restaurer la base de données dans l&#39;environnement d&#39;intégration à partir de la base de données de production ou d&#39;évaluation
+- Vous ne pouvez pas restaurer la base de données dans l&#39;environnement d&#39;intégration à partir de la base de données de production ou intermédiaire
 
 {{enhanced-integration-envs}}
 
@@ -160,11 +154,9 @@ L’environnement de production dispose de trois machines virtuelles derrière u
   - `pub/static`
   - `app/etc`
 
-- **Redis** : un serveur par machine virtuelle avec un seul actif et les deux autres comme répliques.
+- **Redis** ou **Valkey** : un serveur par machine virtuelle avec un seul serveur actif et les deux autres comme répliques.
 
-- **&#x200B;**&#x200B;: recherchez Adobe Commerce sur les infrastructures cloud 2.2 à 2.4.3-p2.
-
-- **OpenSearch** : recherchez Adobe Commerce sur les infrastructures cloud 2.3.7-p3, 2.4.3-p2, 2.4.4 et versions ultérieures.
+- **OpenSearch** : recherchez Adobe Commerce sur les infrastructures cloud 2.4.4 et ultérieures.
 
 - **Galera**—cluster de bases de données avec une base de données MariaDB MySQL par nœud avec un paramètre d’incrémentation automatique de trois pour les identifiants uniques dans chaque base de données
 
@@ -191,11 +183,11 @@ Adobe Commerce sur les infrastructures cloud utilise une architecture à haute d
 
 >[!NOTE]
 >
->Les volumes montés ne comprennent/ne font référence qu&#39;aux [montages inscriptibles](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) et n&#39;incluent pas l&#39;ensemble de votre répertoire `app/`. Quant aux autres fichiers, ils sont créés/générés par le [processus de création et de déploiement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) et vous devrez également vérifier votre référentiel Git pour les fichiers restants.
+>Les volumes montés incluent uniquement ou font référence aux [montages inscriptibles](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) et n’incluent pas l’ensemble de votre répertoire `app/`. Quant aux autres fichiers, ils sont créés/générés par le [processus de création et de déploiement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) et vous devrez également vérifier votre référentiel Git pour les fichiers restants.
 
 {{pro-backups}}
 
-Vous pouvez créer une **sauvegarde manuelle** de la base de données pour vos environnements d’évaluation et de production à l’aide de commandes d’interface de ligne de commande. Pour plus d&#39;informations, consultez la section [&#x200B; Sauvegarder la base de données &#x200B;](../storage/database-dump.md). Pour les environnements `integration`, Adobe recommande de créer une sauvegarde comme première étape après l’accès à votre projet d’infrastructure Adobe Commerce sur cloud et avant d’appliquer des modifications majeures. Voir [&#x200B; Gestion des sauvegardes &#x200B;](../storage/snapshots.md).
+Vous pouvez créer une **sauvegarde manuelle** de la base de données pour vos environnements d’évaluation et de production à l’aide de commandes d’interface de ligne de commande. Pour plus d&#39;informations, consultez la section [ Sauvegarder la base de données ](../storage/database-dump.md). Pour les environnements `integration`, Adobe recommande de créer une sauvegarde comme première étape après l’accès à votre projet d’infrastructure Adobe Commerce sur cloud et avant d’appliquer des modifications majeures. Voir [ Gestion des sauvegardes ](../storage/snapshots.md).
 
 ### Objectif du point de récupération
 
@@ -213,11 +205,11 @@ Adobe conserve les sauvegardes automatiques conformément à la politique de con
 | Semaines 8 à 12 | Une sauvegarde toutes les deux semaines |
 | Mois 3 à 5 | Une sauvegarde par mois |
 
-Cette politique peut varier en fonction de votre plan d’infrastructure cloud.
+Cette politique varie en fonction de votre plan d’infrastructure cloud.
 
 ### Objectif de temps de récupération
 
-Le RTO dépend de la taille du stockage. La restauration des gros volumes EBS prend plus de temps. Les délais de restauration peuvent varier en fonction de la taille de votre base de données. Contactez votre responsable du succès client Adobe pour plus d’informations.
+Le RTO dépend de la taille du stockage. La restauration des gros volumes EBS prend plus de temps. Les délais de restauration varient en fonction de la taille de votre base de données. Contactez votre responsable du succès client Adobe pour plus d’informations.
 
 ## Mise à l’échelle de Pro Cluster
 
@@ -225,4 +217,4 @@ Le dimensionnement du cluster Pro et les configurations _compute_ varient en fon
 
 L’architecture redondante permet à l’infrastructure cloud d’Adobe de se mettre à niveau sans temps d’arrêt. Lors de la mise à l’échelle, chacune des trois instances effectue une rotation pour mettre à niveau la capacité sans affecter le fonctionnement du site. Par exemple, vous pouvez ajouter des serveurs web supplémentaires à un cluster existant au cas où le niveau de restriction serait PHP plutôt qu&#39;au niveau de la base de données. Cette mise à l’échelle _horizontale_ complète la mise à l’échelle verticale fournie par des processeurs supplémentaires au niveau de la base de données. Pour plus d&#39;informations, consultez la section [Architecture évolutive](scaled-architecture.md).
 
-Si vous prévoyez une augmentation significative du trafic pour un événement ou pour une autre raison, vous pouvez demander une augmentation temporaire de la capacité. Consultez [Comment demander une mise à niveau temporaire](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize) dans le Centre d’aide de Commerce __.
+Si vous prévoyez une augmentation significative du trafic pour un événement ou pour une autre raison, vous pouvez demander une augmentation temporaire de la capacité. Consultez [Comment demander une mise à niveau temporaire](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize) dans le Centre d’aide de Commerce __.

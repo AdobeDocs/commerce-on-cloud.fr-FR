@@ -3,19 +3,12 @@ title: Cloud CLI
 description: Découvrez l’interface de ligne de commande magento-cloud et comment elle vous aide à gérer les environnements de développement locaux pour votre projet d’infrastructure cloud Adobe Commerce.
 exl-id: 71a705f2-8672-4125-b539-b7b1621f2f64
 TQID: https://experienceleague.adobe.com/cp-mG1bOtIxmm4bKKFmABa-vrudh-paS7E6x6IlWHmU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 60adcf7e68659eb76895208cec80a93ddf690a2e
 workflow-type: tm+mt
-source-wordcount: 862
+source-wordcount: 859
 ht-degree: 0%
 
 ---
@@ -28,14 +21,14 @@ Cet outil étend les fonctionnalités du [[!DNL Cloud Console]](../../get-starte
 
 >[!NOTE]
 >
->Il s’agit d’un outil local qui n’est pris en charge que sur les systèmes d’exploitation Unix. Windows n’est pas pris en charge. Il ne peut pas être installé dans l’environnement Cloud (qui est en lecture seule) à l’aide de la méthode décrite sur cette page. Vous pouvez uniquement installer des modules dans l’environnement Cloud par le biais de l’un des **workflows de déploiement** suivants.
+>Cet outil local n’est pris en charge que sur les systèmes d’exploitation Unix. Windows n’est pas pris en charge. Il ne peut pas être installé dans l’environnement Cloud (qui est en lecture seule) à l’aide de la méthode décrite sur cette page. Vous pouvez uniquement installer des modules dans l’environnement Cloud par le biais de l’un des **workflows de déploiement** suivants.
 >
->- [Workflow de déploiement Pro](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
->- [Démarrer le workflow de déploiement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
+>- [Workflow de déploiement Pro](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
+>- [Démarrer le workflow de déploiement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
 
 **Pour installer l’interface de ligne de commande `magento-cloud`** :
 
-1. Sur votre _station de travail locale_, accédez au répertoire dans lequel vous avez l’intention de cloner le projet cloud et dans lequel le [propriétaire du système de fichiers](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions) dispose d’un accès en _écriture_.
+1. Sur votre _station de travail locale_, accédez au répertoire dans lequel vous avez l’intention de cloner le projet cloud et dans lequel le [propriétaire du système de fichiers](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions) dispose d’un accès en _écriture_.
 
 1. Installez l’interface de ligne de commande `magento-cloud`.
 
@@ -105,7 +98,11 @@ magento-cloud environment:list
 
 ### Redéploiement de l’environnement
 
-Déclenchez un redéploiement sans utiliser de notification push. Vérifiez et confirmez l’environnement à redéployer. N’utilisez pas le redéploiement si une version est en attente.
+Déclenchez un redéploiement sans utiliser de notification push. Vérifiez et confirmez l’environnement à redéployer.
+
+>[!CAUTION]
+>
+>N’utilisez pas le redéploiement si une version est en attente.
 
 ```bash
 magento-cloud environment:redeploy
@@ -121,7 +118,7 @@ Are you sure you want to redeploy the environment <environment-name>? [Y/n]
 
 ## Commandes Git
 
-Vous remarquerez peut-être que certaines de ces commandes sont similaires aux commandes Git. Les commandes `magento-cloud` se connectent directement au projet cloud basé sur Git avec des fonctionnalités supplémentaires. Si vous créez une branche sans utiliser l’interface de ligne de commande `magento-cloud`, elle n’est pas « activée » et ne se crée pas automatiquement lorsque vous envoyez des modifications à l’environnement distant. La commande de l’interface de ligne de commande `magento-cloud` inclut l’activation.
+Certaines de ces commandes sont similaires aux commandes Git. Les commandes `magento-cloud` se connectent directement au projet cloud basé sur Git avec des fonctionnalités supplémentaires. Si vous créez une branche sans utiliser l’interface de ligne de commande `magento-cloud`, elle n’est pas « activée » et ne se crée pas automatiquement lorsque vous envoyez des modifications à l’environnement distant. La commande de l’interface de ligne de commande `magento-cloud` inclut l’activation.
 
 Pour créer une branche, utilisez la commande `magento-cloud` afin que la branche soit activée.
 
@@ -148,7 +145,7 @@ Les étapes suivantes illustrent l’utilisation interchangeable des commandes C
 
 1. Sur votre station de travail locale, accédez au répertoire du projet.
 
-1. Passez au [propriétaire du système de fichiers](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions).
+1. Passez au [propriétaire du système de fichiers](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions).
 
 1. Connectez-vous à votre projet.
 
@@ -190,7 +187,7 @@ Les étapes suivantes illustrent l’utilisation interchangeable des commandes C
    >
    >Vous pouvez créer une branche d’environnement à l’aide de la syntaxe de commande `magento-cloud environment:branch <environment-name> <parent-environment-ID>`. La création et l’activation d’une branche d’environnement peuvent prendre un certain temps supplémentaire.
 
-1. Utilisez l’ID d’environnement pour extraire le code mis à jour vers votre fichier local . Cela n’est pas nécessaire si la branche d’environnement est nouvelle.
+1. Utilisez l’ID d’environnement pour extraire le code mis à jour vers votre environnement local. Cette étape n’est pas nécessaire si la branche d’environnement est nouvelle.
 
    ```bash
    git pull origin <environment-ID>
