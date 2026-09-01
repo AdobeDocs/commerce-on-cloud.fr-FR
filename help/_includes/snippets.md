@@ -99,7 +99,7 @@ Utilisez les instructions suivantes pour la configuration du service sur les env
 
 >[!TIP]
 >
->Pour obtenir de l’aide sur les déploiements bloqués, utilisez l’utilitaire de dépannage de déploiement [](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29640) dans le Centre d’aide de _Commerce_.
+>Pour obtenir de l’aide sur les déploiements bloqués, utilisez l’utilitaire de dépannage de déploiement [&#128279;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29640) dans le Centre d’aide de _Commerce_.
 
 ## Mise à jour des outils de la CEE {#ece-tools-package}
 
