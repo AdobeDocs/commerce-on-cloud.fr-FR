@@ -4,43 +4,36 @@ description: Découvrez comment mettre à niveau la version d’Adobe Commerce d
 feature: Cloud, Upgrade
 exl-id: 0cc070cf-ab25-4269-b18c-b2680b895c17
 TQID: https://experienceleague.adobe.com/XCHw9c0bX8UE8LLmFOYjMFRLTaIk8sT57dESptRTUXs
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: a8c3a083e7003b63452961925e0a7c1aa185b8da
 workflow-type: tm+mt
-source-wordcount: 1024
+source-wordcount: 1050
 ht-degree: 0%
 
 ---
 
 # Mettre à niveau la version de Commerce
 
-Vous pouvez mettre à niveau la base de code Adobe Commerce vers une version plus récente. Avant de mettre à niveau l’environnement, consultez la section [&#x200B; Configuration requise &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements) dans le guide _Installation_ pour connaître la configuration requise pour la dernière version du logiciel.
+Vous pouvez mettre à niveau la base de code Adobe Commerce vers une version plus récente. Avant de mettre à niveau l’environnement, consultez la section [ Configuration requise ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) dans le guide _Installation_ pour connaître la configuration requise pour la dernière version du logiciel.
 
 Selon le type d’environnement (Développement, Évaluation ou Production), vos tâches de mise à niveau peuvent inclure les éléments suivants :
 
 - Mettez à niveau les extensions tierces vers la dernière version prise en charge.
-- Pour les projets Pro, vous devez envoyer un ticket d’assistance Adobe Commerce pour installer ou mettre à jour les services dans les environnements d’évaluation et de production.
-- Pour les branches de développement/intégration/RP :
-  - Mettez à jour le fichier `.magento/services.yaml` avec les nouvelles versions de MariaDB (MySQL), OpenSearch, RabbitMQ et Redis pour garantir la compatibilité avec les nouvelles versions d’Adobe Commerce.
-  - Mettez à jour le fichier `.magento.app.yaml` avec de nouveaux paramètres pour les hooks et les variables d’environnement.
+- Mettez à jour le fichier `.magento/services.yaml` avec les versions de service requises pour MariaDB (MySQL), OpenSearch, RabbitMQ et Redis ou Valkey afin qu’elles restent compatibles avec la version Adobe Commerce cible.
+  - Pour les branches de développement/intégration/RP, ces modifications sont directement utilisées dans le cadre de la configuration de l’environnement.
+  - Pour les environnements d’évaluation et de production Pro, l’assistance Adobe Commerce effectue l’installation ou la mise à jour proprement dite du service, mais vous devez conserver `.magento/services.yaml` à jour, son intégralité et sa validité, car son contenu est validé lors du déploiement.
+- Mettez à jour le fichier `.magento.app.yaml` avec de nouveaux paramètres pour les hooks et les variables d’environnement.
 
 {{upgrade-tip}}
 
-{{pro-update-service}}
+{{$include /help/_includes/pro-services-support.md}}
 
 ## Fichiers de configuration
 
-Avant de mettre à niveau l’application, vous devez mettre à jour les fichiers de configuration de votre projet afin de tenir compte des modifications apportées aux paramètres de configuration par défaut d’Adobe Commerce sur l’infrastructure cloud ou l’application. Les dernières valeurs par défaut se trouvent dans le référentiel GitHub [magento-cloud](https://github.com/magento/magento-cloud).
+Pour tenir compte des modifications apportées aux paramètres de configuration par défaut d’Adobe Commerce sur l’infrastructure cloud ou l’application, mettez à jour les fichiers de configuration de votre projet avant de mettre à niveau l’application. Les dernières valeurs par défaut se trouvent dans le référentiel GitHub [magento-cloud](https://github.com/magento/magento-cloud).
 
 ### composer.json
 
@@ -84,7 +77,7 @@ Pour mettre à jour le fichier `composer.json` pour Adobe Commerce version 2.4.4
 
 ## Sauvegarde de l’environnement
 
-Nous vous recommandons de créer une sauvegarde de l’instance avant une mise à niveau. Suivez les étapes ci-après pour sauvegarder vos environnements d’intégration, d’évaluation et de production.
+Adobe recommande de créer une sauvegarde de l’instance avant une mise à niveau. Suivez les étapes ci-après pour sauvegarder vos environnements d’intégration, d’évaluation et de production.
 
 **Pour sauvegarder la base de données et le code de votre environnement d’intégration** :
 
@@ -142,7 +135,7 @@ Consultez les informations [versions de service](../services/services-yaml.md#se
    composer require-commerce magento/product-enterprise-edition 2.4.8 --no-update
    ```
 
-1. Si vous utilisez le B2B, mettez à jour votre fichier `composer.json` avec la [version prise en charge](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/product-availability#adobe-authored-extensions) pour Commerce.
+1. Si vous utilisez le B2B, mettez à jour votre fichier `composer.json` avec la [version prise en charge](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#adobe-authored-extensions) pour Commerce.
 
    ```bash
    composer require-commerce magento/extension-b2b 1.5.2 --no-update
@@ -156,15 +149,15 @@ Consultez les informations [versions de service](../services/services-yaml.md#se
 
 1. Examinez les correctifs actuellement appliqués :
 
-   - Si des correctifs sont installés dans le répertoire `m2-hotfixes`, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) et contactez l’assistance Adobe Commerce pour vérifier quels correctifs peuvent toujours être appliqués à la nouvelle version. Supprimez le ou les correctifs non applicables du répertoire `m2-hotfixes`.
+   - Si des correctifs sont installés dans le répertoire `m2-hotfixes`, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) et contactez l’assistance Adobe Commerce pour vérifier quels correctifs peuvent toujours être appliqués à la nouvelle version. Supprimez le ou les correctifs non applicables du répertoire `m2-hotfixes`.
 
    - Si des [correctifs de qualité] sont appliqués dans le fichier `.magento.env.yaml`, vérifiez s’ils peuvent toujours être appliqués à la nouvelle version. Supprimez le ou les correctifs non applicables de la section `QUALITY_PATCHES` du fichier `.magento.env.yaml`.
 
-   **Méthode 1** : [vérifiez les versions applicables dans les notes de mise à jour des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+   **Méthode 1** : [vérifiez les versions applicables dans les notes de mise à jour des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
 
-   **Méthode 2** : [affichage des correctifs et de l’état disponibles](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
+   **Méthode 2** : [affichage des correctifs et de l’état disponibles](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 
-   **Méthode 3** : [Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr)
+   **Méthode 3** : [Rechercher des correctifs](https://experienceleague.adobe.com/en/tools/commerce-quality-patches)
 
 
 1. Ajout, validation et modifications de code push.
@@ -185,7 +178,7 @@ Consultez les informations [versions de service](../services/services-yaml.md#se
 
    Les fichiers que le compositeur marshale appartiennent à la nouvelle version d’Adobe Commerce, afin de remplacer la version obsolète de ces mêmes fichiers. Actuellement, le marshalling est désactivé dans Adobe Commerce, vous devez donc ajouter les fichiers marshalés au contrôle de code source.
 
-1. Attendez la fin du déploiement.
+1. Pour terminer la mise à niveau, attendez le déploiement.
 
 1. Vérifiez la mise à niveau dans votre environnement d’intégration, d’évaluation ou de production à l’aide de SSH pour vous connecter et vérifier la version.
 
@@ -213,9 +206,9 @@ Passez en revue vos pages d’extension et de module tiers sur Marketplace ou d�
 
 1. Envoyez et testez dans votre environnement d’intégration.
 
-1. Push vers l’environnement d’évaluation pour effectuer des tests dans un environnement de pré-production.
+1. Pour effectuer des tests dans un environnement de pré-production, effectuez des transferts vers l’environnement d’évaluation.
 
-Adobe recommande vivement de mettre à niveau votre environnement de production _avant_ y compris les extensions mises à niveau dans le processus de lancement de votre site.
+Adobe recommande de mettre à niveau votre environnement de production _avant_ y compris les extensions mises à niveau dans le processus de lancement de votre site.
 
 >[!NOTE]
 >
@@ -223,7 +216,7 @@ Adobe recommande vivement de mettre à niveau votre environnement de production 
 
 ## Résolution des problèmes de mise à niveau
 
-Si la mise à niveau a échoué, vous recevez un message d’erreur dans le navigateur indiquant que vous ne pouvez pas accéder à votre storefront ou au panneau d’administration :
+Si la mise à niveau échoue, vous recevez un message d’erreur dans le navigateur indiquant que vous ne pouvez pas accéder à votre storefront ou au panneau d’administration :
 
 ```
 There has been an error processing your request
