@@ -1,6 +1,6 @@
 ---
 title: Correctifs cloud pour Commerce
-description: Consultez la liste des dernières améliorations apportées au package Cloud Patches.
+description: Découvrez les dernières améliorations apportées au package Correctifs cloud pour Commerce, notamment les correctifs de sécurité, les améliorations du cache et les mises à jour de fiabilité des correctifs.
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00.000Z
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
@@ -19,9 +19,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 58dbe1e1135c77d7061deec91246f1657b6e91c6
+source-git-commit: 60adcf7e68659eb76895208cec80a93ddf690a2e
 workflow-type: tm+mt
-source-wordcount: 2969
+source-wordcount: 2978
 ht-degree: 0%
 
 ---
@@ -300,7 +300,7 @@ Date de publication : 29 juillet 2021
 
 - **Correction d’un problème lié à l’application du correctif de navigation en couches B2B** : ce correctif résout une erreur `Undefined offset` qui s’affiche sur la page Rechercher après avoir basculé sur la vue Stocker<!--MCLOUD-5287-->.
 
-- **Paypal Checkout patch** : corrige un problème d’Adobe Commerce 2.3.7 avec PayPal Express en raison duquel le prix de la commande précédemment passée s’affiche.<!--MC-42674-->
+- **PayPal Checkout patch** : corrige un problème d’Adobe Commerce 2.3.7 avec PayPal Express en raison duquel le prix de la commande précédemment passée s’affiche.<!--MC-42674-->
 
 - **Prise en charge des catégories de correctifs**—Ajout de la prise en charge du traitement des catégories de correctifs et des sources d&#39;origine affectées aux correctifs de qualité. Les catégories permettent aux clients d&#39;utiliser des filtres et un tri pour trouver des correctifs plus rapidement lors de l&#39;utilisation de l&#39;outil [Quality Patches Tool](https://github.com/magento/quality-patches) et de l&#39;outil d&#39;analyse à l&#39;échelle du site (SWAT). <!--MC-38577-->
 

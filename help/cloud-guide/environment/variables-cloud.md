@@ -12,9 +12,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+source-git-commit: bdc2bedd2696e7dde0ffb55f846a8bced2dbd25d
 workflow-type: tm+mt
-source-wordcount: 344
+source-wordcount: 340
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Les variables d’environnement spécifiques à Adobe Commerce sur les infrastru
 | `MAGENTO_CLOUD_ROUTES` | Décrire les itinéraires définis dans le fichier de `.magento/routes.yaml` d’environnement. |
 | `MAGENTO_CLOUD_TREE_ID` | Identifiant d’arborescence de l’application, qui correspond au SHA de l’arborescence dans Git. |
 | `MAGENTO_CLOUD_VARIABLES` | Objet JSON codé en base64 avec des paires clé-valeur, telles que `"key":"value"`. |
-| `MAGENTO_CLOUD_LOCKS_DIR` | Fournit le chemin d’accès au point de montage pour le fournisseur de verrouillage sur l’infrastructure cloud. Le fournisseur de verrous empêche le lancement de tâches et de groupes cron en double.<br><br>Seuls les fournisseurs de verrous `file` et `db` sont pris en charge.<br><br>**Environnements de production et d’évaluation Pro** par défaut, le fournisseur de verrous `file`. Cette valeur ne peut pas être modifiée.<br><br>**Intégration de Pro et environnements de démarrage**, n’utilisez pas la variable `MAGENTO_CLOUD_LOCKS_DIR` . Le fournisseur de verrous `db` est appliqué par défaut. Vous pouvez modifier la valeur par défaut en mettant à jour la variable de déploiement de l’environnement `[LOCK_PROVIDER](variables-deploy.md#lock_provider` dans le fichier `.magento.env.yaml`. |
+| `MAGENTO_CLOUD_LOCKS_DIR` | Fournit le chemin d’accès au point de montage pour le fournisseur de verrouillage sur l’infrastructure cloud. Le fournisseur de verrous empêche le lancement de tâches et de groupes cron en double.<br><br>Seuls les fournisseurs de verrous `file` et `db` sont pris en charge.<br><br>**Environnements de production et d’évaluation Pro** par défaut, le fournisseur de verrous `file`. Cette valeur ne peut pas être modifiée.<br><br>**Intégration de Pro et environnements de démarrage**, n’utilisez pas la variable `MAGENTO_CLOUD_LOCKS_DIR` . Le fournisseur de verrous `db` est appliqué par défaut. Vous pouvez modifier la valeur par défaut en mettant à jour la variable de déploiement de l’environnement [`LOCK_PROVIDER`](variables-deploy.md#lock_provider) dans le fichier `.magento.env.yaml`. |
 
 >[!WARNING]
 >
@@ -43,7 +43,7 @@ Les variables d’environnement spécifiques à Adobe Commerce sur les infrastru
 >
 >![&#x200B; Exemple de variable d’environnement &#x200B;](../../assets/set-env-variable-ui.png)
 
-Comme les valeurs peuvent changer au fil du temps, il est préférable d’inspecter la variable au moment de l’exécution et de l’utiliser pour configurer votre application. Par exemple, utilisez la variable `MAGENTO_CLOUD_RELATIONSHIPS` pour récupérer les relations liées à l’environnement comme suit :
+Comme les valeurs peuvent changer au fil du temps, inspectez la variable au moment de l’exécution et utilisez-la pour configurer votre application. Par exemple, utilisez la variable `MAGENTO_CLOUD_RELATIONSHIPS` pour récupérer les relations liées à l’environnement comme suit :
 
 ```php
 <?php

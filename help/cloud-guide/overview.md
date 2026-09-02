@@ -1,6 +1,6 @@
 ---
 title: Commerce sur les infrastructures cloud
-description: Découvrez comment créer, déployer et gérer Commerce sur les infrastructures cloud.
+description: Découvrez comment créer, déployer et gérer Adobe Commerce sur une infrastructure cloud, une plateforme sécurisée en tant que service (PaaS) hébergée dans les régions AWS et Azure.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
 TQID: https://experienceleague.adobe.com/-sgz85xapPKNipyFVB4yMrLilEku3ff5IJg3OddymsA
 product_v2:
@@ -16,11 +16,11 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-last-update: 2026-08-25
-source-git-commit: ccff84c55425e8e4f91812b54f5e6ccf9a700104
+last-update: 2026-08-28
+source-git-commit: d5d947f9858ab15e2e5daed7848163846580f883
 workflow-type: tm+mt
-source-wordcount: 324
-ht-degree: 3%
+source-wordcount: 356
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 3%
 
 Adobe Commerce sur les infrastructures cloud fournit une plateforme d’hébergement automatisée avec une approche **en libre-service** permettant de créer, de déployer et de gérer votre application [!DNL Commerce] dans un environnement conçu pour le cloud. Adobe Commerce sur les infrastructures cloud est fourni avec des fonctionnalités supplémentaires qui le distinguent des plateformes Adobe Commerce et Magento Open Source sur site :
 
-- Une infrastructure préconfigurée qui inclut PHP, MySQL (MariaDB), Redis, des services de file d’attente de messages ([!DNL RabbitMQ] ou [!DNL ActiveMQ]) et des technologies de moteurs de recherche prises en charge.
+- Une infrastructure préconfigurée qui inclut PHP, MySQL (MariaDB), Redis ou Valkey, des services de file d’attente de messages ([!DNL RabbitMQ] ou [!DNL ActiveMQ]) et des technologies de moteurs de recherche prises en charge.
 - Workflow basé sur Git avec création et déploiement automatiques pour un développement rapide et un déploiement continu efficaces, chaque fois que vous poussez des modifications de code dans un environnement Platform as a Service (PaaS).
 - Fichiers de configuration d’environnement hautement personnalisables et outils de gestion et de déploiement d’interface de ligne de commande (CLI).
 - L’hébergement Amazon Web Services (AWS) qui offre un environnement évolutif et sécurisé pour la vente et la vente en ligne.
@@ -58,7 +58,7 @@ Les sections suivantes fournissent des détails sur les différentes régions d�
 
 >[!NOTE]
 >
-> Uniquement sur site en Chine et en Russie.
+> Adobe Commerce sur les infrastructures cloud n’est pas disponible en Chine ni en Russie. Seuls les déploiements sur site sont pris en charge dans ces pays.
 
 ## Régions Azure
 
@@ -66,7 +66,7 @@ Les sections suivantes fournissent des détails sur les différentes régions d�
 
 >[!NOTE]
 >
-> Uniquement sur site en Chine et en Russie. Tous les commerçants qui nécessitent des environnements d’intégration doivent utiliser les régions des États-Unis.
+> Seuls les déploiements sur site sont pris en charge en Chine et en Russie. Tous les commerçants qui nécessitent des environnements d’intégration doivent utiliser les régions des États-Unis.
 
 ## Documentation Adobe Commerce
 

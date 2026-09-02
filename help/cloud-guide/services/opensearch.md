@@ -11,9 +11,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+source-git-commit: a8c3a083e7003b63452961925e0a7c1aa185b8da
 workflow-type: tm+mt
-source-wordcount: 799
+source-wordcount: 816
 ht-degree: 0%
 
 ---
@@ -174,7 +174,7 @@ La prise en charge des versions de service et de la compatibilité est détermin
    }
    ```
 
-{{pro-update-service}}
+Pour connaître les exigences de planification de la mise à niveau du service Pro et les conseils de disponibilité client, consultez [Assistance des services Pro](services-yaml.md#pro-services-support) dans _Configuration des services_.
 
 ## Redémarrez le service OpenSearch
 

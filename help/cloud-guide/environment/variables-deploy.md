@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+source-git-commit: bdc2bedd2696e7dde0ffb55f846a8bced2dbd25d
 workflow-type: tm+mt
-source-wordcount: 3049
+source-wordcount: 3106
 ht-degree: 0%
 
 ---
@@ -41,24 +41,41 @@ Pour plus d’informations sur la personnalisation du processus de création et 
 ## `CACHE_CONFIGURATION`
 
 - **Par défaut**—_Non défini_
-- **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
-Configurez la page Redis et la mise en cache par défaut. Lors de la définition du paramètre `cm_cache_backend_redis` , vous devez spécifier les options `server`, `port` et `database`.
+Utilisez `CACHE_CONFIGURATION` pour fusionner ou remplacer les options frontales et principales du cache générées lors du déploiement.
+
+Pour Adobe Commerce sur les infrastructures cloud, ne modifiez pas directement les `app/etc/env.php`. Le package de `ece-tools` génère la configuration de déploiement à partir des `.magento.env.yaml`, des relations de service et des variables de déploiement prises en charge.
+
+Utilisez `VALKEY_BACKEND` ou `REDIS_BACKEND` pour sélectionner le cache pris en charge ou l’implémentation L2 pour la version exacte d’Adobe Commerce. Utilisez des `CACHE_CONFIGURATION` pour personnaliser des options telles que les reprises de connexion, les délais de lecture, les préfixes de cache ou les clés de préchargement.
+
+La combinaison back-end et cache-service prise en charge dépend de la version de Commerce et du niveau de correctif. Redis n’est pas pris en charge pour Adobe Commerce 2.4.9 ou pour les versions de correctif ultérieures à 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 et 2.4.8-p4. Utilisez Valkey pour les versions où la [configuration requise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements) le requiert.
+
+>[!NOTE]
+>
+>Pour obtenir des conseils plus détaillés sur la configuration des services Redis et Valkey, voir [&#x200B; Bonnes pratiques pour la configuration des services Valkey et Redis &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)
+
+Par défaut, le processus de déploiement remplace la configuration de cache correspondante. Pour fusionner les valeurs spécifiées avec la configuration générée, définissez `_merge` sur `true` :
 
 ```yaml
 stage:
   deploy:
     CACHE_CONFIGURATION:
+      _merge: true
       frontend:
         default:
-          backend: file
-        page_cache:
-          backend: file
+          backend_options:
+            connect_retries: 3
+          remote_backend_options:
+            read_timeout: 10
 ```
 
-{{merge-options}}
+Pour remplacer la configuration existante avec les valeurs spécifiées dans `CACHE_CONFIGURATION`, définissez `_merge` sur `false`.
 
-L’exemple suivant fusionne de nouvelles valeurs dans une configuration existante :
+>[!IMPORTANT]
+>
+> Ne copiez pas les options de `bin/magento setup:config:set` sur site, telles que `cm_cache_backend_redis`, directement dans `CACHE_CONFIGURATION`. Dans les projets cloud, `ece-tools` obtient les détails de connexion au service à partir des relations configurées. Utilisez la structure décrite pour la version de Commerce sélectionnée et l’implémentation du cache.
+
+L&#39;exemple suivant fusionne les affectations de base de données dans une configuration de cache existante. Utilisez ce type de remplacement uniquement lorsque le serveur principal et la version Commerce sélectionnés le prennent en charge. Appliquez les paramètres frontend à `symfony_l2` uniquement si la documentation actuelle de Symfony L2 prend explicitement en charge l’option.
 
 ```yaml
 stage:
@@ -74,7 +91,7 @@ stage:
             database: 11
 ```
 
-L’exemple suivant utilise la fonction de préchargement [Redis](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache#redis-preload-feature) telle que définie dans le _Guide de configuration_ :
+L’exemple suivant utilise la fonction de préchargement [Redis](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache#redis-preload-feature) telle que définie dans le _Guide de configuration_. Utilisez les instructions Valkey correspondantes pour les versions qui utilisent Valkey.
 
 ```yaml
 stage:
@@ -92,7 +109,7 @@ stage:
               - '061_SYSTEM_DEFAULT:hash'
 ```
 
-Pour utiliser un modèle [REDIS_BACKEND](#redis_backend) personnalisé (et pas seulement à partir de la liste autorisée de données), définissez l’option `_custom_redis_backend` sur `true` afin d’activer la validation correcte, comme dans l’exemple suivant :
+Pour utiliser un modèle [REDIS_BACKEND](#redis_backend) personnalisé qui n’est pas dans la liste autorisée, définissez `_custom_redis_backend` sur `true` afin que ece-tools applique la validation appropriée :
 
 ```yaml
 stage:
@@ -107,7 +124,6 @@ stage:
 ## `CLEAN_STATIC_FILES`
 
 - **Default**—`true`
-- **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
 Active ou désactive le nettoyage [fichiers de contenu statique](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment) généré pendant la phase de build ou de déploiement. Utilisez la valeur par défaut _true_ en développement comme bonne pratique.
 
@@ -127,21 +143,19 @@ Si vous ne nettoyez pas les fichiers d&#39;affichage statique avant de les dépl
 ## `CRON_CONSUMERS_RUNNER`
 
 - **Default**—`cron_run = false`, `max_messages = 1000`
-- **Version**—Adobe Commerce 2.2.0 et versions ultérieures
 
 Utilisez cette variable d’environnement pour confirmer que les files d’attente de messages sont en cours d’exécution après un déploiement.
 
-- `cron_run` : valeur booléenne qui active ou désactive la tâche cron `consumers_runner` (par défaut = `false`).
-- `max_messages` : nombre spécifiant le nombre maximal de messages que chaque client doit traiter avant de s&#39;arrêter (par défaut = `1000`). Vous pouvez définir la valeur sur `0` pour empêcher l’arrêt du client.
-- `consumers` : tableau de chaînes spécifiant les consommateurs à exécuter. Un tableau vide s’exécute _tous_ les consommateurs.
-
-- `multiple_processes`-Nombre spécifiant le nombre de processus à générer pour chaque client. Pris en charge dans Commerce **2.4.4** ou version ultérieure.
+- `cron_run` : valeur booléenne qui active ou désactive la tâche cron `consumers_runner`. La valeur par défaut est `false`.
+- `max_messages` : nombre maximal de messages que chaque client traite avant de s&#39;arrêter. La valeur par défaut est `1000`. Pour empêcher le client de s’arrêter, définissez-le sur `0`.
+- `consumers` : tableau de chaînes spécifiant les noms des consommateurs à exécuter. Un tableau vide s’exécute _tous_ les consommateurs.
+- `multiple_processes`-Nombre de processus à générer pour chaque client. Cette option est prise en charge dans Adobe Commerce 2.4.4 et les versions ultérieures.
 
 >[!NOTE]
 >
->Pour renvoyer une liste des `consumers` de file d&#39;attente de messages, exécutez la commande `./bin/magento queue:consumers:list` dans l&#39;environnement distant.
+>Pour répertorier les clients de file d’attente de messages disponibles, exécutez la commande `./bin/magento queue:consumers:list` dans l’environnement distant.
 
-Exemple de tableau qui exécute des `consumers` spécifiques et le `multiple_processes` à générer pour chaque client :
+L’exemple suivant exécute les consommateurs sélectionnés et lance plusieurs processus pour chacun d’eux :
 
 ```yaml
 stage:
@@ -150,14 +164,14 @@ stage:
       cron_run: true
       max_messages: 1000
       consumers:
-        - example_consumer_1
-        - example_consumer_2
--     multiple_processes:
+       example_consumer_1
+       example_consumer_2
+      multiple_processes:
         example_consumer_1: 4
         example_consumer_2: 3
 ```
 
-Exemple de tableau vide qui exécute toutes les `consumers` :
+L’exemple suivant exécute tous les consommateurs :
 
 ```yaml
 stage:
@@ -168,16 +182,15 @@ stage:
       consumers: []
 ```
 
-Par défaut, le processus de déploiement remplace tous les paramètres du fichier `env.php`. Voir [Gérer les files d’attente de messages](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues) dans le _Guide de configuration de Commerce_ pour Adobe Commerce On-Premise.
+Par défaut, le processus de déploiement remplace les paramètres correspondants dans le fichier `env.php`. Voir [Gérer les files d’attente de messages](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues) dans le _Guide de configuration de Commerce_ pour Adobe Commerce On-Premise.
 
 ## `CONSUMERS_WAIT_FOR_MAX_MESSAGES`
 
 - **Default**—`false`
-- **Version**—Adobe Commerce 2.2.0 et versions ultérieures
 
 Configurez le traitement `consumers` messages de la file d&#39;attente des messages en choisissant l&#39;une des options suivantes :
 
-- `false` : `Consumers` traiter les messages disponibles dans la file d&#39;attente, fermer la connexion TCP et terminer. `Consumers` n’attendez pas que d’autres messages rejoignent la file d’attente, même si le nombre de messages traités est inférieur à la valeur `max_messages` spécifiée dans la variable de déploiement `CRON_CONSUMERS_RUNNER` .
+- `false` : `Consumers` traiter les messages disponibles, fermer la connexion TCP et s&#39;arrêter quelle que soit la limite de `max_messages` spécifiée dans la variable de déploiement `CRON_CONSUMERS_RUNNER`.
 
 - `true`—`Consumers` continuer à traiter les messages de la file d&#39;attente des messages jusqu&#39;à atteindre le nombre maximal de messages (`max_messages`) spécifié dans la variable de déploiement `CRON_CONSUMERS_RUNNER` avant de fermer la connexion TCP et d&#39;arrêter le traitement du client. Si la file d’attente se vide avant d’atteindre `max_messages`, le client attend l’arrivée d’autres messages.
 
@@ -194,18 +207,16 @@ stage:
 ## `CRYPT_KEY`
 
 - **Par défaut**—_Non défini_
-- **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
 >[!WARNING]
 >
->Définissez la valeur de `CRYPT_KEY` via le [!DNL Cloud Console] au lieu du fichier `.magento.env.yaml` pour éviter d’exposer la clé dans le référentiel de code source pour votre environnement. Voir [Définition des variables d’environnement et de projet](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/project/overview#configure-environment).
+>Pour éviter d’exposer la clé dans le référentiel de code source, définissez la valeur `CRYPT_KEY` via le [!DNL Cloud Console] au lieu du fichier `.magento.env.yaml`. Voir [Définition des variables d’environnement et de projet](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/project/overview#configure-environment).
 
 Lorsque vous déplacez la base de données d’un environnement à un autre sans processus d’installation, vous avez besoin des informations cryptographiques correspondantes. Adobe Commerce utilise la valeur de la clé de chiffrement définie dans le [!DNL Cloud Console] comme valeur `crypt/key` dans le fichier `env.php`.
 
 ## `DATABASE_CONFIGURATION`
 
 - **Par défaut**—_Non défini_
-- **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
 Si vous avez défini une base de données dans la propriété [relations](../application/properties.md#relationships) du fichier `.magento.app.yaml`, vous pouvez personnaliser vos connexions à la base de données pour le déploiement.
 
@@ -272,7 +283,6 @@ MariaDB [main]> SHOW TABLES;
 ## `ELASTICSUITE_CONFIGURATION`
 
 - **Par défaut**—_Non défini_
-- **Version**—Adobe Commerce 2.2.0 et versions ultérieures
 
 Conserve les paramètres de service [!DNL Elastic Suite] personnalisés entre les déploiements et les utilise dans la section « system/default/smile_elasticsuite_core_base_settings » de la configuration [!DNL Elastic Suite] principale. Si le package du compositeur de [!DNL Elastic Suite] est installé, il est configuré automatiquement.
 
@@ -289,7 +299,7 @@ stage:
 
 >[!NOTE]
 >
->Sur un cluster Pro Staging/Production qui comporte trois nœuds (ou trois nœuds de service sur [Scaled Architecture](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture#service-tier), la `indices_settings` doit être définie comme suit :
+>Sur un cluster d’évaluation/de production Pro qui comporte trois nœuds (ou trois nœuds de service sur [Scaled Architecture](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture#service-tier)), le `indices_settings` doit être défini comme suit :
 >
 >```yaml
 >           indices_settings:
@@ -323,9 +333,8 @@ stage:
 ## `ENABLE_GOOGLE_ANALYTICS`
 
 - **Default**—`false`
-- **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
-Active et désactive Google Analytics lors du déploiement dans les environnements d’évaluation et d’intégration. Par défaut, Google Analytics est défini uniquement sur l’environnement de production. Définissez cette valeur sur `true` pour activer Google Analytics dans les environnements d’évaluation et d’intégration.
+Active et désactive Google Analytics lors du déploiement dans les environnements d’évaluation et d’intégration. Par défaut, Google Analytics est défini uniquement sur l’environnement de production. Pour activer Google Analytics dans les environnements d’évaluation et d’intégration, définissez cette valeur sur `true`.
 
 - **`true`** : active Google Analytics dans les environnements d’évaluation et d’intégration.
 - **`false`** : désactive Google Analytics dans les environnements d&#39;évaluation et d&#39;intégration.
@@ -345,9 +354,8 @@ stage:
 ## `FORCE_UPDATE_URLS`
 
 - **Default**—`true`
-- **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
-Lors du déploiement dans des environnements d’évaluation et de production Pro ou Starter, cette variable remplace les URL de base d’Adobe Commerce dans la base de données par les URL de projet spécifiées par la variable [`MAGENTO_CLOUD_ROUTES`](variables-cloud.md) . Utilisez ce paramètre pour remplacer le comportement par défaut de la variable de déploiement [UPDATE_URLS](#update_urls), qui est ignorée lors du déploiement dans les environnements d’évaluation ou de production.
+Lors du déploiement dans des environnements d’évaluation et de production Pro ou Starter, cette variable remplace les URL de base d’Adobe Commerce dans la base de données par les URL de projet spécifiées par la variable [`MAGENTO_CLOUD_ROUTES`](variables-cloud.md) . Pour remplacer le comportement par défaut de la variable de déploiement [UPDATE_URLS](#update_urls), utilisez ce paramètre.
 
 ```yaml
 stage:
@@ -358,28 +366,26 @@ stage:
 ## `LOCK_PROVIDER`
 
 - **Par défaut**— Dans les environnements de production et d’évaluation, la valeur par défaut est `file` et ne peut pas être modifiée. Pour l&#39;intégration Pro et les environnements de démarrage, la valeur par défaut est `db`.
-- **Version**—Adobe Commerce 2.2.5 et versions ultérieures
 
-Le fournisseur de verrous empêche le lancement de tâches et de groupes cron en double. Commerce on Cloud ne prend en charge que les fournisseurs de verrous `file` et `db`.
+Le fournisseur de verrous empêche l’exécution des tâches et des groupes cron en double. Adobe Commerce on Cloud prend en charge les fournisseurs de verrous `file` et `db`.
 
-Pour les environnements de production et d’évaluation, la valeur par défaut `file` est définie par [MAGENTO_CLOUD_LOCKS_DIR](variables-cloud.md) et ne peut pas être remplacée. Pour les environnements de démarrage et l’environnement d’intégration Pro, `ece-tools` définit automatiquement le fournisseur de verrouillage de `db`. Dans ces environnements, vous pouvez modifier la valeur par défaut en `file` afin d’optimiser les performances locales et l’architecture de production miroir.
+Dans les environnements d’évaluation et de production Pro, `MAGENTO_CLOUD_LOCKS_DIR` configure le fournisseur de `file`. Impossible de remplacer ce paramètre. Dans les environnements Pro Integration et Starter, `ece-tools` définit le fournisseur de `db` par défaut. Pour optimiser les performances locales et refléter l’architecture de production, définissez le fournisseur sur `file` dans ces environnements.
 
 ```yaml
 stage:
   deploy:
-    LOCK_PROVIDER: "file"
+    LOCK_PROVIDER: 'file'
 ```
 
 ## `MYSQL_USE_SLAVE_CONNECTION`
 
 - **Default**—`false`
-- **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
 >[!TIP]
 >
->La variable `MYSQL_USE_SLAVE_CONNECTION` est prise en charge uniquement sur Adobe Commerce dans les environnements de cluster d’évaluation et de production Pro de l’infrastructure cloud et n’est pas prise en charge sur les projets de démarrage.
+>La variable `MYSQL_USE_SLAVE_CONNECTION` est prise en charge uniquement sur les clusters Adobe Commerce on cloud infrastructure Staging et Production Pro. Il n’est pas pris en charge sur les projets de démarrage.
 
-Adobe Commerce peut lire plusieurs bases de données de manière asynchrone. Définissez cette valeur sur `true` pour utiliser automatiquement une connexion _lecture seule_ à la base de données afin de recevoir le trafic en lecture seule sur un nœud non principal. Cette connexion améliore les performances grâce à l’équilibrage de charge, car un seul nœud gère le trafic en lecture-écriture. Définissez sur `false` pour supprimer tout tableau de connexion en lecture seule existant du fichier `env.php`.
+Adobe Commerce peut lire plusieurs bases de données de manière asynchrone. Définissez cette variable sur `true` pour utiliser automatiquement une connexion _lecture seule_ à la base de données afin de recevoir le trafic en lecture seule sur un nœud non principal. Cette connexion améliore les performances grâce à l’équilibrage de charge, car un seul nœud gère le trafic en lecture-écriture. Pour supprimer un tableau de connexion en lecture seule existant du fichier `env.php`, définissez sur `false`.
 
 ```yaml
 stage:
@@ -387,12 +393,11 @@ stage:
     MYSQL_USE_SLAVE_CONNECTION: true
 ```
 
-Lorsque la variable `MYSQL_USE_SLAVE_CONNECTION` est définie sur `true`, le paramètre `synchronous_replication` est défini sur `true` par défaut dans le fichier `env.php` dans les environnements d’évaluation et de production Pro. Lorsque la `MYSQL_USE_SLAVE_CONNECTION` est définie sur `false`, le paramètre `synchronous_replication` n’est pas configuré.
+Lorsque la variable `MYSQL_USE_SLAVE_CONNECTION` est définie sur `true`, le système définit le paramètre `synchronous_replication` sur `true` par défaut dans le fichier `env.php` dans les environnements d’évaluation et de production Pro. Lorsque la `MYSQL_USE_SLAVE_CONNECTION` est définie sur `false`, le paramètre `synchronous_replication` n’est pas configuré.
 
 ## `QUEUE_CONFIGURATION`
 
 - **Par défaut**—_Non défini_
-- **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
 Utilisez cette variable d’environnement pour conserver les paramètres personnalisés du service de file d’attente entre les déploiements. Cette variable prend en charge les protocoles AMQP (pour RabbitMQ) et STOMP (pour ActiveMQ Artemis). Par exemple, si vous préférez utiliser un service de file d’attente de messages existant au lieu de vous fier à l’infrastructure cloud pour le créer, utilisez la variable d’environnement `QUEUE_CONFIGURATION` pour le connecter à votre site :
 
@@ -447,17 +452,18 @@ stage:
 ## `REDIS_BACKEND`
 
 - **Default**—`Cm_Cache_Backend_Redis`
-- **Version**—Adobe Commerce 2.3.0 et versions ultérieures
 
 Spécifie la configuration du modèle principal pour le cache Redis.
 
-Les versions 2.3.0 et ultérieures d’Adobe Commerce incluent les modèles principaux suivants :
+Le cache Redis n’est pas pris en charge pour Adobe Commerce 2.4.9 ou pour les versions de correctif ultérieures à 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 et 2.4.8-p4. Pour ces versions, utilisez Valkey et la configuration `VALKEY_BACKEND` correspondante. Vérifiez toujours le service de cache pris en charge dans la [configuration requise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements).
+
+Pour les versions prises en charge par Redis, les modèles principaux disponibles sont les suivants :
 
 - `Cm_Cache_Backend_Redis`
 - `\Magento\Framework\Cache\Backend\Redis`
 - `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache`
 
-Exemple de définition de `REDIS_BACKEND`
+L’exemple suivant active le serveur principal du cache synchronisé à distance et le cache L2 :
 
 ```yaml
 stage:
@@ -467,18 +473,17 @@ stage:
 
 >[!NOTE]
 >
->Si vous spécifiez `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` comme modèle principal Redis pour activer le cache [L2](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/level-two-cache), `ece-tools` génère automatiquement la configuration du cache. Consultez un exemple [fichier de configuration](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/level-two-cache#configuration-example) dans le _Guide de configuration d’Adobe Commerce_. Pour remplacer la configuration de cache générée, utilisez la variable de déploiement [CACHE_CONFIGURATION](#cache_configuration).
+> Lorsque `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` est sélectionné, `ece-tools` génère automatiquement la configuration du cache L2. Pour personnaliser la configuration générée, utilisez [`CACHE_CONFIGURATION`](#cache_configuration).
 
 ## `REDIS_USE_SLAVE_CONNECTION`
 
 - **Default**—`false`
-- **Version**—Adobe Commerce 2.1.16 et versions ultérieures
 
 >[!TIP]
 >
->La variable `REDIS_USE_SLAVE_CONNECTION` est prise en charge uniquement sur Adobe Commerce dans les environnements de cluster d’évaluation et de production Pro de l’infrastructure cloud et n’est pas prise en charge sur les projets de démarrage.
+>`REDIS_USE_SLAVE_CONNECTION` est pris en charge uniquement sur les clusters Adobe Commerce on Cloud Staging et Production Pro. Il n’est pas pris en charge sur les projets de démarrage.
 
-Adobe Commerce peut lire plusieurs instances Redis de manière asynchrone. Définissez cette variable sur `true` pour utiliser automatiquement une connexion _lecture seule_ à une instance Redis afin de recevoir le trafic en lecture seule sur un nœud non maître. Cette connexion améliore les performances grâce à l’équilibrage de charge, car un seul nœud gère le trafic en lecture-écriture. Définissez sur `false` pour supprimer tout tableau de connexion en lecture seule existant du fichier `env.php`.
+Adobe Commerce peut lire plusieurs instances Redis de manière asynchrone. Définissez cette variable sur `true` pour utiliser une connexion en lecture seule à un réplica Redis pour le trafic de lecture tandis que l’instance principale gère le trafic de lecture-écriture. Pour supprimer un tableau de connexion en lecture seule existant de `env.php`, définissez-le sur `false`.
 
 ```yaml
 stage:
@@ -486,55 +491,54 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-Un service Redis doit être configuré dans le fichier `.magento.app.yaml` et dans le fichier `services.yaml`.
+Un service [Redis](../services/redis.md) doit être configuré dans les fichiers `.magento.app.yaml` et `services.yaml`.
 
-[ECE-Tools version 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) et versions ultérieures utilisent des réglages plus tolérants aux pannes. Si Adobe Commerce ne peut pas lire les données de l’instance Redis _esclave_, il lit les données de l’instance Redis _maître_.
+[ECE-Tools version 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) et versions ultérieures utilisent des réglages plus tolérants aux pannes. Si Adobe Commerce ne peut pas lire les données du réplica Redis, il retourne à l’instance Redis principale.
 
-La connexion en lecture seule n’est pas disponible pour être utilisée dans l’environnement d’intégration ou si vous utilisez la variable [&#128279;](#cache_configuration).`CACHE_CONFIGURATION`
+La connexion en lecture seule n’est pas disponible dans l’environnement d’intégration. Si vous utilisez [`CACHE_CONFIGURATION`](#cache_configuration), fusionnez les modifications dans la configuration générée et vérifiez que la configuration obtenue conserve la connexion de réplica.
 
 ## `VALKEY_BACKEND`
 
 - **Default**—`Cm_Cache_Backend_Redis`
-- **Version**—Adobe Commerce 2.4.8 et versions ultérieures
+- **Version** : versions d’Adobe Commerce prenant en charge Valkey.
 
-`VALKEY_BACKEND` spécifie la configuration du modèle principal pour le cache Valkey.
+`VALKEY_BACKEND` spécifie le modèle principal pour la configuration du cache Valkey. La valeur par défaut utilise un nom de classe hérité compatible avec Redis ; cela ne signifie pas que le service doit être Redis.
 
-Les versions 2.4.8 et ultérieures d’Adobe Commerce incluent les modèles principaux suivants :
+Pour les versions d’Adobe Commerce antérieures à la version 2.4.9 qui prennent en charge Valkey, les modèles principaux incluent :
 
 - `Cm_Cache_Backend_Redis`
 - `\Magento\Framework\Cache\Backend\Redis`
 - `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache`
 
-Adobe Commerce version 2.4.9 et ultérieure prend également en charge le modèle principal `symfony_l2`, qui permet l’implémentation moderne du cache L2 basé sur Symfony Cache.
+Adobe Commerce version 2.4.9 et ultérieure prend également en charge `symfony_l2`, l’implémentation L2 basée sur le cache de Symfony. `symfony_l2` est pris en charge avec Valkey uniquement.
 
 ### Configuration du cache synchronisé à distance
 
-Pour Adobe Commerce 2.4.8, l’exemple suivant décrit comment définir `VALKEY_BACKEND` sur le cache synchronisé distant :
+Pour Adobe Commerce 2.4.8, utilisez la configuration suivante lorsque l’implémentation du cache synchronisé à distance est appropriée :
 
 ```yaml
 stage:
   deploy:
-  VALKEY_USE_SLAVE_CONNECTION: true
-  VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-La spécification du cache synchronisé distant en tant que modèle principal Valkey active le cache [L2](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/level-two-cache) et génère `ece-tools` automatiquement la configuration du cache. Voir [exemple de fichier de configuration](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/level-two-cache#configuration-example). Pour remplacer la configuration, utilisez la variable de déploiement [CACHE_CONFIGURATION](#cache_configuration).
+La spécification du serveur principal synchronisé à distance active le cache L2 et `ece-tools` génère automatiquement la configuration du cache. Voir [exemple de fichier de configuration](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration#customize-the-symfony-l2-cache-configuration). Pour personnaliser la configuration générée, utilisez [`CACHE_CONFIGURATION`](#cache_configuration).
 
 ### Configurer l’implémentation moderne du cache L2 de Symfony
 
-Pour Adobe Commerce 2.4.9 et les versions ultérieures, l’exemple suivant décrit comment définir `VALKEY_BACKEND` à l’implémentation moderne du cache Symfony L2 :
+Pour Adobe Commerce version 2.4.9 et ultérieure, utilisez l’implémentation de Symfony L2 :
 
 ```yaml
 stage:
   deploy:
-    VALKEY_BACKEND: symfony_l2
+    VALKEY_BACKEND: 'symfony_l2'
 ```
 
-La spécification de `symfony_l2` en tant que modèle principal Valkey active le cache [L2](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/level-two-cache){target="_blank"} et génère `ece-tools` automatiquement la configuration du cache L2 à partir des détails de connexion au service Valkey, y compris un front-end `default` et un front-end `stale_cache_enabled`. La définition de `CACHE_CONFIGURATION` est facultative et nécessaire uniquement pour personnaliser des options d’arrière-plan spécifiques, telles que le répertoire du cache local. Consultez les sections [Implémentation du cache moderne Symfony L2](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/level-two-cache#modern-symfony-l2-cache-implementation){target="_blank"} dans le _Guide de configuration d’Adobe Commerce_ et [Configuration du cache Symfony L2](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration#configure-symfony-l2-cache){target="_blank"} dans le _Manuel d’implémentation_ pour un exemple de personnalisation.
+La spécification de `symfony_l2` comme modèle principal Valkey active le cache L2 et génère `ece-tools` automatiquement la configuration de cache L2 à partir des détails de connexion au service Valkey, y compris les fronts `default` et `stale_cache_enabled`. Définissez des `CACHE_CONFIGURATION` uniquement lorsque vous devez personnaliser les options principales prises en charge, telles que le répertoire du cache local. Voir [Implémentation du cache Symfony L2](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration#configure-symfony-l2-cache){target="_blank"} dans le _Guide de configuration d’Adobe Commerce_.
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.9 comprend des améliorations du cache Symfony L2 (notamment le stockage, l’invalidation et la compression des balises de cache) avec le correctif ACP2E-5132, ce qui réduit les E/S de disque, élimine les entrées de cache obsolètes et réduit la mémoire et la surcharge réseau. Voir [Performances et fiabilité améliorées du cache Symfony L2](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/level-two-cache#enhanced-symfony-l2-cache-performance-and-reliability) dans le _Guide de configuration d’Adobe Commerce_.
+>Adobe Commerce 2.4.9 comprend des améliorations du cache Symfony L2 (notamment le stockage, l’invalidation et la compression des balises de cache) avec le correctif ACP2E-5132, ce qui réduit les E/S de disque, élimine les entrées de cache obsolètes et réduit la mémoire et la surcharge réseau.
 
 ## `VALKEY_USE_SLAVE_CONNECTION`
 
@@ -543,9 +547,9 @@ La spécification de `symfony_l2` en tant que modèle principal Valkey active le
 
 >[!TIP]
 >
->La variable `VALKEY_USE_SLAVE_CONNECTION` est prise en charge uniquement sur Adobe Commerce dans les environnements de cluster d’évaluation et de production Pro de l’infrastructure cloud et n’est pas prise en charge sur les projets de démarrage.
+>`VALKEY_USE_SLAVE_CONNECTION` est pris en charge uniquement sur les clusters Adobe Commerce on Cloud Staging et Production Pro. Il n’est pas pris en charge sur les projets de démarrage.
 
-Adobe Commerce peut lire plusieurs instances Redis de manière asynchrone. `VALKEY_USE_SLAVE_CONNECTION` Définissez cette variable sur `true` pour utiliser automatiquement une connexion _lecture seule_ à une instance Redis afin de recevoir le trafic en lecture seule sur un nœud non maître. Cette connexion améliore les performances grâce à l’équilibrage de charge, car un seul nœud gère le trafic en lecture-écriture. Définissez `VALKEY_USE_SLAVE_CONNECTION` sur `false` pour supprimer tout tableau de connexion en lecture seule existant du fichier `env.php`.
+Adobe Commerce peut lire plusieurs instances Valkey de manière asynchrone. Définissez `VALKEY_USE_SLAVE_CONNECTION` sur `true` pour utiliser une connexion _lecture seule_ à un réplica Valkey pour le trafic en lecture seule, tandis que l’instance principale gère le trafic en lecture-écriture. Cette connexion améliore les performances grâce à l’équilibrage de charge, car un seul nœud gère le trafic en lecture-écriture. Pour supprimer un tableau de connexion en lecture seule existant de `env.php`, définissez-le sur `false`.
 
 ```yaml
 stage:
@@ -553,16 +557,21 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-Un service Redis doit être configuré dans le fichier `.magento.app.yaml` et dans le fichier `services.yaml`.
+Vous devez avoir configuré un service [Valkey](../services/valkey.md) en `.magento.app.yaml` et `.magento/services.yaml`. La disponibilité d’une connexion de réplication dépend de la topologie du projet et de la version de `ece-tools` installée.
 
-[ECE-Tools version 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) et versions ultérieures utilisent des réglages plus tolérants aux pannes. Si Adobe Commerce ne peut pas lire les données de l’instance Valkey _esclave_, il lit les données de l’instance Redis _maître_.
+Avant de vous fier à ce paramètre, examinez la valeur de `MAGENTO_CLOUD_RELATIONSHIPS` décodée et confirmez qu’une relation de réplication est présente. Par exemple :
 
-La connexion en lecture seule n’est pas disponible pour être utilisée dans l’environnement d’intégration ou si vous utilisez la variable [&#128279;](#cache_configuration).`CACHE_CONFIGURATION`
+```bash
+echo "$MAGENTO_CLOUD_RELATIONSHIPS" | base64 -d | json_pp
+```
+
+Par `symfony_l2`, la prise en charge des réplications nécessite les mises à jour appropriées des correctifs `ece-tools` et Cloud. Effectuez la mise à jour vers la dernière version de `ece-tools` avant d’activer ce paramètre. Si aucune relation de réplication n’est présente après le redéploiement, contactez l’assistance Adobe Commerce.
+
+Lors de l’utilisation de [`CACHE_CONFIGURATION`](#cache_configuration), fusionner les remplacements pris en charge dans la configuration générée au lieu de remplacer la structure de connexion générée.
 
 ## `RESOURCE_CONFIGURATION`
 
 - **Par défaut** : non défini
-- **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
 Mappe un nom de ressource à une connexion à la base de données. Cette configuration correspond à la section `resource` du fichier `env.php`.
 
@@ -582,9 +591,8 @@ stage:
 ## `SCD_COMPRESSION_LEVEL`
 
 - **Default**—`4`
-- **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
-Indique le niveau de compression [gzip](https://www.gnu.org/software/gzip) (`0` à `9`) à utiliser lors de la compression du contenu statique ; `0` désactive la compression.
+Indique le niveau de compression [gzip](https://www.gnu.org/software/gzip) (`0` à `9`) à utiliser lors de la compression du contenu statique. Définissez-le sur `0` pour désactiver la compression.
 
 ```yaml
 stage:
@@ -595,7 +603,6 @@ stage:
 ## `SCD_COMPRESSION_TIMEOUT`
 
 - **Default**—`600`
-- **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
 Lorsque le temps nécessaire à la compression des ressources statiques dépasse le délai d’expiration de la compression, le processus de déploiement est interrompu. Définissez la durée d’exécution maximale, en secondes, de la commande de compression de contenu statique.
 
@@ -608,7 +615,6 @@ stage:
 ## `SCD_MATRIX`
 
 - **Par défaut**—_Non défini_
-- **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
 Vous pouvez configurer plusieurs paramètres régionaux par thème. Cette personnalisation accélère le processus de déploiement en réduisant le nombre de fichiers de thème inutiles. Par exemple, vous pouvez déployer le thème _magento/backend_ en anglais et un thème personnalisé dans d’autres langues.
 
@@ -637,11 +643,10 @@ stage:
 ## `SCD_MAX_EXECUTION_TIME`
 
 - **Par défaut**—_Non défini_
-- **Version**—Adobe Commerce 2.2.0 et versions ultérieures
 
 Permet d’augmenter le temps d’exécution maximal attendu pour le déploiement de contenu statique.
 
-Par défaut, Adobe Commerce définit l’exécution maximale prévue sur 900 secondes, mais dans certains scénarios, vous aurez peut-être besoin de plus de temps pour terminer le déploiement du contenu statique pour un projet cloud.
+Par défaut, Adobe Commerce définit l’exécution maximale prévue sur 900 secondes, mais certains scénarios nécessitent plus de temps pour terminer le déploiement du contenu statique pour un projet cloud.
 
 ```yaml
 stage:
@@ -654,7 +659,6 @@ stage:
 ## `SCD_NO_PARENT`
 
 - **Default**—`false`
-- **Version**—Adobe Commerce 2.4.2 et versions ultérieures
 
 Lors de la phase de déploiement, définissez `SCD_NO_PARENT: true` afin que la génération de contenu statique pour les thèmes parents ne se produise pas pendant la phase de déploiement. Ce paramètre réduit le temps de déploiement et évite les temps d’arrêt du site qui peuvent se produire si la création de contenu statique échoue pendant le déploiement. Voir [Déploiement de contenu statique](../deploy/static-content.md).
 
@@ -667,7 +671,6 @@ stage:
 ## `SCD_STRATEGY`
 
 - **Default**—`quick`
-- **Version**—Adobe Commerce 2.2.0 et versions ultérieures
 
 Permet de personnaliser la [stratégie de déploiement](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy) pour le contenu statique. Voir [&#x200B; Déploiement de fichiers de vue statiques &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment).
 
@@ -675,7 +678,7 @@ Utilisez ces options _uniquement_ si vous disposez de plusieurs paramètres rég
 
 - `standard` : déploie tous les fichiers de vue statiques pour tous les packages.
 - `quick`—(_par défaut_) réduit le temps de déploiement.
-- `compact` : permet de conserver de l&#39;espace disque sur le serveur. Dans Adobe Commerce version 2.2.4 et antérieure, ce paramètre remplace la valeur de `scd_threads` par une valeur de `1`.
+- `compact` : permet de conserver de l&#39;espace disque sur le serveur.
 
 ```yaml
 stage:
@@ -686,9 +689,8 @@ stage:
 ## `SCD_THREADS`
 
 - **Default**—Automatique
-- **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
-Définit le nombre de threads pour le déploiement de contenu statique. La valeur par défaut est définie en fonction du nombre de threads CPU détectés et ne dépasse pas une valeur de 4. L’augmentation du nombre de threads accélère le déploiement de contenu statique ; la diminution du nombre de threads le ralentit. Vous pouvez définir la valeur du thread, par exemple :
+Définit le nombre de threads pour le déploiement de contenu statique. La valeur par défaut est définie en fonction du nombre de threads CPU détectés et ne dépasse pas une valeur de 4. L’augmentation du nombre de threads accélère le déploiement de contenu statique. La diminution du nombre de threads le ralentit. Vous pouvez définir la valeur du thread, par exemple :
 
 ```yaml
 stage:
@@ -701,7 +703,6 @@ Pour réduire davantage le temps de déploiement, utilisez [Gestion de la config
 ## `SEARCH_CONFIGURATION`
 
 - **Par défaut**—_Non défini_
-- **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
 Utilisez cette variable d’environnement pour conserver les paramètres de service de recherche personnalisés entre les déploiements. Par exemple :
 
@@ -747,9 +748,10 @@ stage:
 ## `SESSION_CONFIGURATION`
 
 - **Par défaut**—_Non défini_
-- **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
-Configurez le stockage de session Redis. Nécessite les options `save`, `redis`, `host`, `port` et `database` pour la variable de stockage de session. Par exemple :
+Utilisez `SESSION_CONFIGURATION` pour configurer le stockage de session. L’exemple ci-dessous utilise la structure de configuration de session compatible avec Redis. Utilisez-le uniquement avec la combinaison de noms et de services de stockage de sessions prise en charge par la version exacte de Commerce. Pour les sessions soutenues par Valkey, suivez l’exemple [Valkey session-storage example](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration#apply-all-best-practice-recommendations).
+
+Ne supposez pas que les variables de cache telles que `VALKEY_BACKEND` ou `REDIS_BACKEND` configurent des sessions. Le cache et la configuration de session sont indépendants. Sur les projets cloud, utilisez la relation de service et la configuration générée si possible ; ne codez pas en dur des valeurs spécifiques à un environnement sans remplacer l’exemple d’hôte et de port.
 
 ```yaml
 stage:
@@ -760,13 +762,15 @@ stage:
         bot_lifetime: 10001
         database: 0
         disable_locking: 1
-        host: redis.internal
+        host: 'redis.internal'
         max_concurrency: 10
         max_lifetime: 10001
         min_lifetime: 100
         port: 6379
       save: redis
 ```
+
+Remplacez `redis.internal` et `6379` par l’hôte et le port du service de session pour l’environnement cible lorsque la configuration de déploiement nécessite des détails de connexion explicites.
 
 {{merge-options}}
 
@@ -784,7 +788,6 @@ stage:
 ## `SKIP_SCD`
 
 - **Par défaut**— _Non défini_
-- **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
 Définissez sur `true` pour ignorer le déploiement du contenu statique pendant la phase de déploiement.
 
@@ -799,7 +802,6 @@ stage:
 ## `UPDATE_URLS`
 
 - **Default**—`true`
-- **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
 Lors du déploiement, remplacez les URL de base d’Adobe Commerce dans la base de données par les URL de projet spécifiées par la variable [`MAGENTO_CLOUD_ROUTES`](variables-cloud.md) . Cette configuration est utile pour le développement local, où les URL de base sont configurées pour votre environnement local. Lorsque vous effectuez un déploiement dans un environnement cloud, les URL sont mises à jour afin que vous puissiez accéder à votre storefront et à votre administrateur à l’aide des URL du projet.
 
@@ -830,7 +832,7 @@ stage:
 >
 >Sur Adobe Commerce 2.4.7 et 2.4.8, la définition de `USE_LUA: true` peut entraîner des problèmes de corruption du cache et d’absence du cache GraphQL.
 >
->À partir d’Adobe Commerce 2.4.9, utilisez les conseils de configuration du cache Valkey pour votre version de Commerce et ne comptez pas sur `USE_LUA` pour les nouveaux déploiements. Voir [&#x200B; Configuration de Redis pour le cache de page et par défaut](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache).
+>À partir d’Adobe Commerce 2.4.9, utilisez les conseils de configuration du cache Valkey pour votre version de Commerce et ne comptez pas sur `USE_LUA` pour les nouveaux déploiements.
 
 ## `LUA_KEY`
 
@@ -860,7 +862,6 @@ stage:
 ## `VERBOSE_COMMANDS`
 
 - **Par défaut**—_Non défini_
-- **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
 Activez ou désactivez le niveau de détail de débogage [Symfony](https://symfony.com/doc/current/console/verbosity.html) pour `bin/magento` commandes d’interface de ligne de commande exécutées lors de la phase de déploiement.
 

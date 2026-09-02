@@ -11,9 +11,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: d85c65f2c8c6fdb0ce016e894dd10d882525cc38
 workflow-type: tm+mt
-source-wordcount: 326
+source-wordcount: 328
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 Les assistants intelligents peuvent vous aider à déterminer si votre configuration cloud suit les bonnes pratiques. Les assistants disponibles vous aident à effectuer les configurations suivantes :
 
 - État idéal pour un temps d’arrêt de déploiement minimal
-- Configuration de l’équilibrage de charge pour la base de données et Redis
+- Configuration de l’équilibrage de charge pour la base de données et Redis ou Valkey
 - Déploiement de contenu statique (SCD) pour la demande, l’étape de création ou l’étape de déploiement
 
 Chacune des commandes de l’assistant intelligent fournit une réponse de vérification et, le cas échéant, une recommandation pour la configuration appropriée.

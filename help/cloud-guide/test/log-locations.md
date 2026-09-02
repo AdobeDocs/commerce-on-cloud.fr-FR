@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+source-git-commit: 50c653aa6f78056f3fa8fe300fd224693a4460b0
 workflow-type: tm+mt
-source-wordcount: 1369
+source-wordcount: 1371
 ht-degree: 0%
 
 ---
@@ -283,6 +283,7 @@ Par exemple, si vous créez un chemin personnalisé pour stocker les journaux da
 Comme chaque service s’exécute dans un conteneur distinct, les journaux de service ne sont pas disponibles dans l’environnement d’intégration. Adobe Commerce sur les infrastructures cloud permet d’accéder au conteneur du serveur web dans l’environnement d’intégration uniquement. Les emplacements de journaux de service suivants sont destinés aux environnements de production et d&#39;évaluation Pro :
 
 - **Journal Redis** : `/var/log/platform/<project-ID>*/redis-server-<project-ID>*.log`
+- **Log Valkey** : `/var/log/platform/<project-ID>*/valkey-server-<project-ID>*.log`
 - **Journal Elasticsearch** : `/var/log/elasticsearch/elasticsearch.log`
 - **Journal de nettoyage de la mémoire Java** : `/var/log/elasticsearch/gc.log`
 - **Journal des e-mails** : `/var/log/mail.log`

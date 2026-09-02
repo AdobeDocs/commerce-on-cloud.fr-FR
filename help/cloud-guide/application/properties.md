@@ -11,9 +11,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+source-git-commit: 330a8bbd9298a28b5c007f4a79f684ce7adca9ff
 workflow-type: tm+mt
-source-wordcount: 857
+source-wordcount: 858
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Le fichier `.magento.app.yaml` utilise des propriétés pour gérer la prise en 
 | [`hooks`](hooks-property.md) | Personnaliser les commandes shell pour les phases de création, de déploiement et de post-déploiement | — | Non |
 | [`mounts`](#mounts) | Définir les chemins d’accès | Chemins d’accès :<ul><li>`"var": "shared:files/var"`</li><li>`"app/etc": "shared:files/etc"`</li><li>`"pub/media": "shared:files/media"`</li><li>`"pub/static": "shared:files/static"`</li></ul> | Non |
 | [`name`](#name) | Définition du nom de l’application | `mymagento` | Oui |
-| [`relationships`](#relationships) | Services de carte | Services :<ul><li>`database: "mysql:mysql"`</li><li>`redis: "redis:redis"`</li><li>`opensearch: "opensearch:opensearch"`</li></ul> | Non |
+| [`relationships`](#relationships) | Services de carte | Services :<ul><li>`database: "mysql:mysql"`</li><li>`redis: "redis:redis"` ou `valkey: "cache:valkey"`</li><li>`opensearch: "opensearch:opensearch"`</li></ul> | Non |
 | [`runtime`](#runtime) | La propriété d’exécution inclut les extensions requises par l’application [!DNL Commerce]. | Extensions :<ul><li>`xsl`</li><li>`newrelic`</li><li>`sodium`</li></ul> | Oui |
 | [`type`](#type-and-build) | Définir l’image du conteneur de base | `php:8.3` | Oui |
 | [`variables`](variables-property.md) | Application d’une variable d’environnement à une version de Commerce spécifique | — | Non |
