@@ -4,17 +4,12 @@ description: Découvrez comment configurer les services utilisés par Adobe Comm
 feature: Cloud, Configuration, Services
 exl-id: ddf44b7c-e4ae-48f0-97a9-a219e6012492
 TQID: https://experienceleague.adobe.com/qvCjqNc8E9QGme-zM42vMg-kb1WjwTlWUqjbm-NI2bg
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 660f62d8bb809675ec872da2e87301308d333ba8
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+last-update: 2026-09-01
+source-git-commit: 0f88ef7d75bc2a02eb7988dc815071c5894a4662
 workflow-type: tm+mt
 source-wordcount: 1176
 ht-degree: 0%
@@ -54,7 +49,7 @@ Adobe Commerce sur l’infrastructure cloud prend en charge les services suivant
 - [OpenSearch](opensearch.md)
 
 >[!NOTE]
->[Mettez à niveau RabbitMQ de manière séquentielle entre les versions disponibles](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service). Par exemple, ne mettez pas directement à niveau la version 3.9 vers la version 4.1.
+>[Mettez à niveau RabbitMQ de manière séquentielle entre les versions disponibles](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service). Par exemple, ne mettez pas directement à niveau la version 3.9 vers la version 4.1.
 >
 >Pour vous assurer que vos files d’attente de messages personnalisées sont recréées dans RabbitMQ après la mise à niveau vers une nouvelle version, déclenchez un déploiement complet.
 
@@ -200,7 +195,7 @@ Vous pouvez récupérer les données de configuration pour toutes les relations 
 
 ## Versions des services
 
-Les versions déployées et testées sur l’infrastructure cloud déterminent la prise en charge de la version du service et de la compatibilité pour Adobe Commerce sur l’infrastructure cloud, qui diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Consultez [Configuration requise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements) dans le guide _Installation_ pour obtenir une liste des dépendances logicielles tierces qu’Adobe a testées avec des versions spécifiques d’Adobe Commerce et de Magento Open Source.
+Les versions déployées et testées sur l’infrastructure cloud déterminent la prise en charge de la version du service et de la compatibilité pour Adobe Commerce sur l’infrastructure cloud, qui diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Consultez [Configuration requise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) dans le guide _Installation_ pour obtenir une liste des dépendances logicielles tierces qu’Adobe a testées avec des versions spécifiques d’Adobe Commerce et de Magento Open Source.
 
 ### Vérifications de fin de vie du logiciel
 
