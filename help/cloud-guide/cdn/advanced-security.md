@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >Utilisez l’application [Adobe Commerce Traffic Insights](../monitor/traffic-insights/overview.md) dans New Relic pour analyser votre trafic Fastly et vos modèles de robots, et déterminer si Advanced Security vous convient.
 
-[!DNL Adobe Commerce on Cloud Infrastructure] comprend une protection DDoS de couche 3 et 4 intégrée [](./fastly.md#ddos-protection) et un [pare-feu d’application web (WAF)](./fastly-waf-service.md). Dans le cadre du [modèle de responsabilité partagée](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility), la détection DDoS de couche 7, la protection des robots et le blocage proactif des adresses IP sont des responsabilités des commerçants, que [!DNL Adobe Commerce Advanced Security] est conçu pour traiter.
+[!DNL Adobe Commerce on Cloud Infrastructure] comprend une protection DDoS de couche 3 et 4 intégrée [&#128279;](./fastly.md#ddos-protection) et un [pare-feu d’application web (WAF)](./fastly-waf-service.md). Dans le cadre du [modèle de responsabilité partagée](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility), la détection DDoS de couche 7, la protection des robots et le blocage proactif des adresses IP sont des responsabilités des commerçants, que [!DNL Adobe Commerce Advanced Security] est conçu pour traiter.
 
 [!DNL Advanced Security] étend la protection du storefront grâce à des fonctionnalités de sécurité de périphérie optimisées par Fastly, qui offre une gestion des robots, une limitation de débit avancée et une protection DDoS de couche 7 dans le cadre d&#39;une plateforme de périphérie unifiée qui combine l&#39;évolutivité, les performances et la sécurité à la périphérie du réseau.
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 >
 >Jusqu’à la fin du 3e trimestre 2026, les clients ne peuvent pas modifier ni gérer directement les règles de gestion des robots.
 >
->Pour ajouter, modifier ou ajuster une règle, contactez l’assistance Adobe Commerce au moyen d’un ticket d’assistance [](https://experienceleague.adobe.com/home?support-tab=home#support). L’équipe d’assistance mettra en œuvre les modifications demandées.
+>Pour ajouter, modifier ou ajuster une règle, contactez l’assistance Adobe Commerce au moyen d’un ticket d’assistance [&#128279;](https://experienceleague.adobe.com/home?support-tab=home#support). L’équipe d’assistance mettra en œuvre les modifications demandées.
 >
 >À compter du 4e trimestre 2026, Fastly prévoit de publier une fonctionnalité complémentaire qui permettra aux clients de gérer les règles de gestion des robots dans le panneau d’administration Commerce.
 

@@ -22,7 +22,7 @@ Traffic Insights est conçu pour vous aider à résoudre trois problèmes couran
 - **Robot de recherche et charge de robot d&#39;exploration** — robot d&#39;exploration de recherche ou d’IA générant une part disproportionnée de requêtes, ce qui nuit à l’efficacité du cache et à la charge d’origine. Identifiez les robots nommés les plus actifs et ce qu’ils récupèrent exactement.
 - **Scripts et scrapers malveillants** — Grattage, bourrage d&#39;informations d&#39;identification, test de cartes, création de faux comptes ou abus de couche 7. Affichez les signaux Fastly Next-Gen WAF et les adresses IP, les sous-réseaux et les pays derrière le trafic suspect.
 
-Dans chaque cas, l’application identifie le *qui, quoi et où* du trafic. Agir sur ces informations par le biais des règles VCL Fastly, de l’optimisation des images, de l’optimisation du cache, de la limitation de débit ou du module complémentaire Adobe [Sécurité avancée](../../cdn/advanced-security.md) dans votre configuration Commerce et Fastly. Le [ guide des enquêtes](investigation-playbook.md) couvre chacun de ces problèmes.
+Dans chaque cas, l’application identifie le *qui, quoi et où* du trafic. Agir sur ces informations par le biais des règles VCL Fastly, de l’optimisation des images, de l’optimisation du cache, de la limitation de débit ou du module complémentaire Adobe [Sécurité avancée](../../cdn/advanced-security.md) dans votre configuration Commerce et Fastly. Le [&#x200B; guide des enquêtes](investigation-playbook.md) couvre chacun de ces problèmes.
 
 ## Accès à l’application
 
