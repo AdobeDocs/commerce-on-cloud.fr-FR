@@ -23,7 +23,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la documentation du service Redis et Valkey afin de prendre en compte la prise en charge de la version actuelle et du niveau de correctif, et ajout de références Valkey dans les pages d’architecture et de services du guide cloud, y compris <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/redis">Configuration du service Redis</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey">Configuration du service Valkey</a> et <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/environment/variables-deploy">Déploiement de variables</a>.</p>
+      <td><p>Mise à jour de la documentation du service Redis et Valkey afin de prendre en compte la prise en charge de la version actuelle et du niveau de correctif, et ajout de références Valkey dans les pages d’architecture et de services du guide cloud, y compris <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/redis">Configuration du service Redis</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/valkey">Configuration du service Valkey</a> et <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/environment/variables-deploy">Déploiement de variables</a>.</p>
 </td>
       <td>
         Commentaires, mise à jour majeure
@@ -31,7 +31,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/89a9594b50dfeacc4e0e7765f195d9bade00413d">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout de conseils sur les exigences de disponibilité des clients pendant les fenêtres de mise à niveau de Commerce, et clarification du processus de demande et de planification de mise à niveau du service Pro, dans <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version">Mise à niveau de la version de Commerce</a> et <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml">Configuration des services</a>.</p>
+      <td><p>Ajout de conseils sur les exigences de disponibilité des clients pendant les fenêtres de mise à niveau de Commerce, et clarification du processus de demande et de planification de mise à niveau du service Pro, dans <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version">Mise à niveau de la version de Commerce</a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/services-yaml">Configuration des services</a>.</p>
 </td>
       <td>
         Feedback
@@ -53,7 +53,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">référence CLI</a> après la version 2002.2.13 de ECE-Tools.</p>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">référence CLI</a> après la version 2002.2.13 de ECE-Tools.</p>
 </td>
       <td>
         Technique
@@ -61,7 +61,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/0ac31574952505e92744535f861591abcdd8ac56">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout de la disponibilité <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/autoscaling#vertical-auto-scaling">mise à l’échelle automatique verticale</a> à Adobe Commerce sur les infrastructures cloud.</p>
+      <td><p>Ajout de la disponibilité <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/autoscaling#vertical-auto-scaling">mise à l’échelle automatique verticale</a> à Adobe Commerce sur les infrastructures cloud.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -83,7 +83,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">référence CLI</a> après la version 2002.2.12 des outils ECE. Aucune autre modification n’a été apportée à part le numéro de version.</p>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">référence CLI</a> après la version 2002.2.12 des outils ECE. Aucune autre modification n’a été apportée à part le numéro de version.</p>
 </td>
       <td>
         Technique
