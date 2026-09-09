@@ -6,9 +6,9 @@ breadcrumb-title: Commerce sur le cloud
 user-guide-description: Découvrez comment gérer l’application Adobe Commerce sur l’infrastructure cloud.
 product: magento
 feature: Cloud
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+source-git-commit: 6bab2df0240c8b74a455de73fbf7a7645a46e904
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '398'
 ht-degree: 8%
 
 ---
@@ -183,3 +183,7 @@ ht-degree: 8%
       + [Ingestion des données](monitor/ingest-data.md)
       + [Suivi des déploiements](monitor/track-deployments.md)
     + [Gestion des logs](monitor/log-management.md)
+    + Insights de trafic {#traffic-insights}
+      + [Vue d’ensemble](monitor/traffic-insights/overview.md)
+      + [Présentation de l’application](monitor/traffic-insights/understanding-the-app.md)
+      + [Manuel d’investigation](monitor/traffic-insights/investigation-playbook.md)

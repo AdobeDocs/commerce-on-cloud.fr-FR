@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+source-git-commit: 86a182b19d49cb7abd91a716f6f403cd44ecc0ae
 workflow-type: tm+mt
-source-wordcount: 3631
+source-wordcount: 3685
 ht-degree: 0%
 
 ---
@@ -40,11 +40,19 @@ Les notes de mise à jour incluent les éléments suivants :
 
 <!--Add release notes below-->
 
-## v2002.2.13 {#latest}
+## v2002.2.14 {#latest}
+
+Date de publication : 8 septembre 2026
+
+- ![icône de correction](../../assets/fix.svg) **couverture de test fonctionnel Valkey 8.5** : couverture améliorée pour la configuration du cache Symfony L2.<!-- MCLOUD-15487 -->
+- ![Icône de correction](../../assets/fix.svg) **Améliorations de la mise en cache**—Résolution d’un problème d’isolation du cache de page.<!-- MCLOUD-15509 -->
+- ![icône de correction](../../assets/fix.svg) **améliorations de Redis et Valkey** : amélioration de la gestion des `REDIS_BACKEND` et des `VALKEY_BACKEND` pour prendre en charge les configurations de cache Redis et Valkey héritées et modernes (Symfony Cache, 2.4.9+).<!-- MCLOUD-15546 -->
+
+## v2002.2.13
 
 Date de publication : 19 août 2026
 
-- ![icône de correction](../../assets/fix.svg) **Améliorations de la mise en cache** Prise en charge améliorée du cache Symfony_l2 pour les connexions esclaves Redis et Valkey et résolution des problèmes de cache, d’index de balise, de préchargement et de déploiement statique associés..<!-- MCLOUD-15433 -->
+- ![icône de correction](../../assets/fix.svg) **Améliorations de la mise en cache**—Amélioration de la prise en charge du cache Symfony_l2 pour les connexions esclaves Redis et Valkey et résolution des problèmes de cache, d’index de balises, de préchargement et de déploiement statique associés..<!-- MCLOUD-15433 -->
 
 ## v2002.2.12
 
