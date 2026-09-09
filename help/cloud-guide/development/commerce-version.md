@@ -4,19 +4,12 @@ description: Découvrez comment mettre à niveau la version d’Adobe Commerce d
 feature: Cloud, Upgrade
 exl-id: 0cc070cf-ab25-4269-b18c-b2680b895c17
 TQID: https://experienceleague.adobe.com/XCHw9c0bX8UE8LLmFOYjMFRLTaIk8sT57dESptRTUXs
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
 last-update: 2026-09-01
-source-git-commit: 0f88ef7d75bc2a02eb7988dc815071c5894a4662
+source-git-commit: 205287e813ec7358273f95df87189b9b663679f5
 workflow-type: tm+mt
 source-wordcount: 1050
 ht-degree: 0%
@@ -25,7 +18,7 @@ ht-degree: 0%
 
 # Mettre à niveau la version de Commerce
 
-Vous pouvez mettre à niveau la base de code Adobe Commerce vers une version plus récente. Avant de mettre à niveau l’environnement, consultez la section [&#x200B; Configuration requise &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements) dans le guide _Installation_ pour connaître la configuration requise pour la dernière version du logiciel.
+Vous pouvez mettre à niveau la base de code Adobe Commerce vers une version plus récente. Avant de mettre à niveau l’environnement, consultez la section [ Configuration requise ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) dans le guide _Installation_ pour connaître la configuration requise pour la dernière version du logiciel.
 
 Selon le type d’environnement (Développement, Évaluation ou Production), vos tâches de mise à niveau peuvent inclure les éléments suivants :
 
@@ -143,7 +136,7 @@ Consultez les informations [versions de service](../services/services-yaml.md#se
    composer require-commerce magento/product-enterprise-edition 2.4.8 --no-update
    ```
 
-1. Si vous utilisez le B2B, mettez à jour votre fichier `composer.json` avec la [version prise en charge](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/product-availability#adobe-authored-extensions) pour Commerce.
+1. Si vous utilisez le B2B, mettez à jour votre fichier `composer.json` avec la [version prise en charge](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#adobe-authored-extensions) pour Commerce.
 
    ```bash
    composer require-commerce magento/extension-b2b 1.5.2 --no-update
@@ -157,15 +150,15 @@ Consultez les informations [versions de service](../services/services-yaml.md#se
 
 1. Examinez les correctifs actuellement appliqués :
 
-   - Si des correctifs sont installés dans le répertoire `m2-hotfixes`, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) et contactez l’assistance Adobe Commerce pour vérifier quels correctifs peuvent toujours être appliqués à la nouvelle version. Supprimez le ou les correctifs non applicables du répertoire `m2-hotfixes`.
+   - Si des correctifs sont installés dans le répertoire `m2-hotfixes`, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) et contactez l’assistance Adobe Commerce pour vérifier quels correctifs peuvent toujours être appliqués à la nouvelle version. Supprimez le ou les correctifs non applicables du répertoire `m2-hotfixes`.
 
    - Si des [correctifs de qualité] sont appliqués dans le fichier `.magento.env.yaml`, vérifiez s’ils peuvent toujours être appliqués à la nouvelle version. Supprimez le ou les correctifs non applicables de la section `QUALITY_PATCHES` du fichier `.magento.env.yaml`.
 
-   **Méthode 1** : [vérifiez les versions applicables dans les notes de mise à jour des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+   **Méthode 1** : [vérifiez les versions applicables dans les notes de mise à jour des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
 
-   **Méthode 2** : [affichage des correctifs et de l’état disponibles](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
+   **Méthode 2** : [affichage des correctifs et de l’état disponibles](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 
-   **Méthode 3** : [Rechercher des correctifs](https://experienceleague.adobe.com/fr/tools/commerce-quality-patches)
+   **Méthode 3** : [Rechercher des correctifs](https://experienceleague.adobe.com/en/tools/commerce-quality-patches)
 
 
 1. Ajout, validation et modifications de code push.
@@ -251,3 +244,5 @@ Exception printing is disabled by default for security reasons.
    ```bash
    git add -A && git commit -m "Fixed deployment failure" && git push origin <branch-name>
    ```
+
+<!-- Last updated from includes: 2026-09-01 10:27:54 -->
