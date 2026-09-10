@@ -19,16 +19,20 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 9e10bdbdc726a85bea99a9b5f23d9211ac09c661
+source-git-commit: 1195121d2c83da858744839e82e14bd423ea5528
 workflow-type: tm+mt
-source-wordcount: 3043
+source-wordcount: 3067
 ht-degree: 0%
 
 ---
 
 # Correctifs cloud pour Commerce
 
-Le package [Correctifs cloud](https://github.com/magento/magento-cloud-patches) fournit un ensemble de correctifs requis qui améliorent l’intégration de toutes les versions d’Adobe Commerce avec les environnements cloud et prend en charge la diffusion rapide de correctifs critiques.
+Le package `magento/magento-cloud-patches` Composer fournit un ensemble de correctifs requis qui améliorent l’intégration de toutes les versions d’Adobe Commerce avec les environnements cloud et prend en charge la diffusion rapide de correctifs critiques. Adobe distribue ce package par le biais du référentiel du compositeur Commerce à l’adresse `repo.magento.com`.
+
+>[!NOTE]
+>
+>À partir de la version 1.1.15, Adobe distribue le package `magento/magento-cloud-patches` exclusivement par le biais du référentiel du compositeur Commerce à l’adresse `repo.magento.com`. Vous devez disposer des droits Adobe Commerce EE pour télécharger ce package.
 
 Le package Cloud Patches for Commerce dépend du package ECE-Tools et est installé et mis à jour lorsque vous installez ou mettez à jour le package ECE-Tools. Vous pouvez également utiliser et gérer les correctifs cloud pour Commerce sous la forme d’un package autonome permettant d’appliquer des correctifs à un projet Adobe Commerce qui ne se trouve pas sur la plateforme cloud. Ces notes de mise à jour décrivent les dernières améliorations apportées à ce package.
 
@@ -68,7 +72,7 @@ Date de publication : 19 août 2026
 Date de publication : 11 août 2026
 
 - ![Icône de correction](../../assets/fix.svg) **Amélioration de la gestion des correctifs**—Les correctifs ignorent désormais les modules de ciblage supprimés via `composer.json` `replace` et continuent à appliquer les portions installées restantes.<!-- MCLOUD-15325 -->
-- ![icône de correctif](../../assets/fix.svg) **Améliorations de la sécurité** : application des correctifs de sécurité référencés dans la [Mise à jour de sécurité d’Adobe Commerce APSB26-92](https://helpx.adobe.com/security/products/magento/apsb26-92.html).<!--MCLOUD-15035 -->
+- ![icône de correctif](../../assets/fix.svg) **Améliorations de la sécurité** : application des correctifs de sécurité référencés dans la [Mise à jour de sécurité d’Adobe Commerce APSB26-92](https://helpx.adobe.com/fr/security/products/magento/apsb26-92.html).<!--MCLOUD-15035 -->
 
 ## v1.1.17
 
@@ -141,7 +145,7 @@ Date de publication : 3 juin 2025
 
 Date de publication : 5 mai 2025
 
-- ![nouvelle icône](../../assets/new.svg) **Correctif mis à jour pour Commerce 2.4.4 à 2.4.8**—Il s’agit d’un correctif mis à jour pour [CVE-2025-24434](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27148), publié dans la version 1.1.7<!-- MCLOUD-13619 -->
+- ![nouvelle icône](../../assets/new.svg) **correctif mis à jour pour Commerce 2.4.4 vers 2.4.8**—Cette mise à jour révise le correctif pour [CVE-2025-24434](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27148), publié dans la version 1.1.7<!-- MCLOUD-13619 -->
 
 ## v1.1.6
 
@@ -271,7 +275,7 @@ Correctif critique pour Adobe Commerce 2.3.3-p1 et les versions ultérieures :
 
 Mise à jour des correctifs pour résoudre une vulnérabilité **critique** entraînant l’exécution de code à distance non authentifié.<!-- MCLOUD-8479 -->
 
-Voir [Bulletin de sécurité Adobe APSB22-12](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
+Voir [Bulletin de sécurité Adobe APSB22-12](https://helpx.adobe.com/fr/security/products/magento/apsb22-12.html).
 
 ## v1.0.15
 
@@ -288,7 +292,7 @@ Correctif critique pour Adobe Commerce 2.3.3-p1 et les versions ultérieures :
 
 Ajout d’un correctif pour résoudre une vulnérabilité **critique** qui entraîne l’exécution de code distant non authentifié.<!-- MCLOUD-8461 -->
 
-Voir [Bulletin de sécurité Adobe APSB22-12](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
+Voir [Bulletin de sécurité Adobe APSB22-12](https://helpx.adobe.com/fr/security/products/magento/apsb22-12.html).
 
 ## v1.0.13
 
@@ -436,7 +440,7 @@ Cette version comprend les correctifs et correctifs critiques suivants :
 
 - **Correctif de pagination de catalogue Elasticsearch** —A remplacé le correctif de pagination de catalogue Elasticsearch fourni dans magento/magento-cloud-patches v1.0 par un correctif plus efficace.<!--MAGECLOUD-4847-->
 
-- **Correctifs Page Builder** : dans Cloud Patches pour Commerce 1.0.0, les correctifs Page Builder ont été regroupés pour répondre à une vulnérabilité connue de type exécution de code à distance (RCE) Page Builder, avec le correctif initial basé sur Adobe Commerce 2.3.3. Ces correctifs ont été mis à jour avec une implémentation plus stable basée sur Adobe Commerce 2.3.4., qui inclut plusieurs optimisations pour résoudre le problème.<!--MAGECLOUD-4884-->
+- **Correctifs Page Builder** : dans Cloud Patches pour Commerce 1.0.0, les correctifs Page Builder ont été regroupés pour répondre à une vulnérabilité connue de type exécution de code à distance (RCE) Page Builder, avec le correctif initial basé sur Adobe Commerce 2.3.3. Ces correctifs ont été mis à jour avec une implémentation plus stable basée sur Adobe Commerce 2.3.4, qui inclut plusieurs optimisations pour résoudre le problème.<!--MAGECLOUD-4884-->
 
   Si vous disposez du package magento/magento-cloud-patches 1.0.0, vous êtes toujours protégé contre les problèmes de vulnérabilité RCE de Page Builder. Si vous effectuez une mise à jour vers la version 1.0.1 ou ultérieure, vous bénéficiez d’une meilleure implémentation du même correctif.
 
@@ -444,7 +448,7 @@ Cette version comprend les correctifs et correctifs critiques suivants :
 
 Date de publication : 14 novembre 2019
 
-Cette version est la première version du package [`magento/magento-cloud-patches`](https://github.com/magento/magento-cloud-patches), qui est une nouvelle dépendance pour le package `ece-tools` version 2002.0.22 ou ultérieure.
+Cette version est la première version du package `magento/magento-cloud-patches`, qui est une nouvelle dépendance pour le package `ece-tools` version 2002.0.22 ou ultérieure.
 
 Cette version comprend les correctifs et correctifs critiques suivants :
 
