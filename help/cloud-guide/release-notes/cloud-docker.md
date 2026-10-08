@@ -8,23 +8,29 @@ exl-id: 95cf4f30-6bce-4bac-8e11-cfe53cac2c70
 TQID: https://experienceleague.adobe.com/H-A-2jStZ7GuPn2oE-OrZWhScp1GsjEUU1NHDQKhRBU
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Security
+source-git-commit: e8754280e9df523442d29f0a6d203a183407cff5
 workflow-type: tm+mt
-source-wordcount: 4509
+source-wordcount: '4535'
 ht-degree: 0%
-
 ---
-
 # Package Cloud Docker
 
 Le package [`magento/magento-cloud-docker`](https://github.com/magento/magento-cloud-docker) fournit des fonctionnalités et des images Docker pour déployer Adobe Commerce dans un environnement cloud local. Ces notes de mise à jour décrivent les dernières améliorations apportées à ce package, qui est un composant de [Cloud Tools Suite for Commerce](cloud-tools-suite.md).
@@ -38,7 +44,13 @@ Les notes de mise à jour incluent les éléments suivants :
 
 <!--Add release notes below-->
 
-## v1.4.9 {#latest}
+## v1.4.10 {#latest}
+
+Date de publication : 8 octobre 2026
+
+- ![nouvelle icône](../../assets/new.svg) **Tests fonctionnels pour les services**-Ajout de la couverture de test fonctionnel Magento 2.4.10 pour ActiveMQ Artemis, OpenSearch, RabbitMQ, MariaDB et Valkey.<!-- MCLOUD-15399 -->
+
+## v1.4.9
 
 Date de publication : 20 juillet 2026
 
@@ -267,7 +279,7 @@ Date de publication : 9 novembre 2020
 
     - Ajout de la prise en charge d’Elasticsearch 7.9 pour la compatibilité avec les prochaines versions d’Adobe Commerce.<!--MCLOUD-7190-->
 
-    - **Configuration du plug-in Elasticsearch**—Ajout de la prise en charge de l’utilisation des informations de configuration du plug-in Elasticsearch du fichier `services.yaml` pour générer le fichier `docker-compose.yaml` pour un environnement Cloud Docker pour Commerce. Voir [Plug-ins &#x200B;](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#elasticsearch-plugins).<!--MCLOUD-2789-->
+    - **Configuration du plug-in Elasticsearch**—Ajout de la prise en charge de l’utilisation des informations de configuration du plug-in Elasticsearch du fichier `services.yaml` pour générer le fichier `docker-compose.yaml` pour un environnement Cloud Docker pour Commerce. Voir [Plug-ins ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#elasticsearch-plugins).<!--MCLOUD-2789-->
 
     - **Prise en charge des modules externes Elasticsearch**—Ajout de la prise en charge des modules externes Elasticsearch suivants : `analysis-icu`, `analysis-phonetic`, `analysis-stempel` et `analysis-nori`. Les plug-ins `analysis-icu` et `analysis-phonetic` sont installés par défaut. Vous pouvez ajouter ou supprimer les modules externes `analysis-stempel` et `analysis-nori` selon vos besoins.<!--MCLOUD-2789-->
 
@@ -364,7 +376,7 @@ Date de publication : 25 juin 2020
 
     - Ajout de la prise en charge d’Elasticsearch 6.8, 7.2, 7.5 et 7.6.<!--MCLOUD-4050, MCLOUD-5855,MCLOUD-5860-->
 
-    - Ajout de la possibilité de personnaliser la configuration du conteneur [&#128279;](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#elasticsearch-container) lorsque vous générez le fichier de configuration de composition Docker.<!--MCLOUD-3059-->
+    - Ajout de la possibilité de personnaliser la configuration du conteneur [](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#elasticsearch-container) lorsque vous générez le fichier de configuration de composition Docker.<!--MCLOUD-3059-->
 
     - Ajout de l’option `--no-es` aux options de configuration du service pour générer le fichier de configuration Docker Compose. Utilisez cette option pour ignorer l’installation du conteneur Elasticsearch et utiliser plutôt la recherche MySQL. Cette option est prise en charge uniquement pour Adobe Commerce versions 2.3.5 et antérieures.<!--MCLOUD-3766-->
 
@@ -433,7 +445,7 @@ Date de publication : 5 février 2020
 
     - ![nouvelle icône](../../assets/new.svg) **Certificats NGINX générés automatiquement**—Le fichier de configuration Docker inclut désormais la configuration permettant de générer automatiquement des certificats NGINX pour le conteneur Web.<!--MAGECLOUD-4258-->
 
-  - ![nouvelle icône](../../assets/new.svg) **Nouveau conteneur Selenium**—Ajout d’un [conteneur Selenium](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#selenium-container) pour prendre en charge les tests d’application Adobe Commerce à l’aide de la structure de test fonctionnel de Magento (MFTF).<!--MAGECLOUD-4040-->
+  - ![nouvelle icône](../../assets/new.svg) **Nouveau conteneur Selenium**—Ajout d’un [conteneur Selenium](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#selenium-container) pour prendre en charge les tests d’application Adobe Commerce à l’aide de la structure de test fonctionnel Magento (MFTF).<!--MAGECLOUD-4040-->
 
   - ![nouvelle icône](../../assets/new.svg) prise en charge de la version **[!DNL RabbitMQ]**—Mise à jour de la configuration du conteneur [!DNL RabbitMQ] pour prendre en charge [!DNL RabbitMQ] version 3.8.<!--MAGECLOUD-4674-->
 
@@ -481,7 +493,7 @@ Date de publication : 5 février 2020
 
   - ![nouvelle icône](../../assets/new.svg) **Mises à jour de `build:compose` commande**—
 
-    - ![nouvelle icône](../../assets/new.svg) Ajout de l’option `--sync-engine="native"` à la commande `docker-build` pour désactiver la synchronisation des fichiers lorsque vous générez le fichier de configuration Docker Compose en mode développeur. Utilisez cette option lors du développement sur des systèmes Linux, qui ne nécessitent pas de synchronisation de fichiers pour le développement local de Docker. Voir [&#x200B; Synchronisation des données dans l’environnement Docker &#x200B;](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data).<!--MCLOUD-3231, MCLOUD-3890-->
+    - ![nouvelle icône](../../assets/new.svg) Ajout de l’option `--sync-engine="native"` à la commande `docker-build` pour désactiver la synchronisation des fichiers lorsque vous générez le fichier de configuration Docker Compose en mode développeur. Utilisez cette option lors du développement sur des systèmes Linux, qui ne nécessitent pas de synchronisation de fichiers pour le développement local de Docker. Voir [ Synchronisation des données dans l’environnement Docker ](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data).<!--MCLOUD-3231, MCLOUD-3890-->
 
   - ![nouvelle icône](../../assets/new.svg) Modification du paramètre de synchronisation de fichiers par défaut de `docker-sync` à `native`. [Correctif soumis par Mathew Beane de Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/124).<!--MAGECLOUD-5066-->
 

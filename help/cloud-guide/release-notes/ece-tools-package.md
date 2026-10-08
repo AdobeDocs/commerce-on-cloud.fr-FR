@@ -7,22 +7,27 @@ exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
 TQID: https://experienceleague.adobe.com/pa4D-RsauRtCBS7puKWVBQtA37-Mcv9IZG4lah41l1U
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 9e21b435447f7b87b1105f9d435314b5a3efb072
+    internal-label: Data management
+source-git-commit: a0962ad43c0f496dbd687460ef1d4dbd0da4dacb
 workflow-type: tm+mt
-source-wordcount: 3676
+source-wordcount: '3715'
 ht-degree: 0%
-
 ---
-
 # Notes de mise à jour des outils de la CEE
 
 Le package [ece-tools](https://github.com/magento/ece-tools) est un ensemble de scripts et d’outils conçus pour gérer et déployer des projets Cloud. Ces notes de mise à jour décrivent les dernières améliorations apportées à ce package, qui fait partie de la [suite d’outils cloud pour Commerce](cloud-tools-suite.md).
@@ -40,7 +45,14 @@ Les notes de mise à jour incluent les éléments suivants :
 
 <!--Add release notes below-->
 
-## v2002.2.14 {#latest}
+## v2002.2.15 {#latest}
+
+Date de publication : 8 octobre 2026
+
+- ![nouvelle icône](../../assets/new.svg) **Tests fonctionnels pour les services**-Ajout de la couverture de test fonctionnel Magento 2.4.10 pour ActiveMQ Artemis, OpenSearch, RabbitMQ, MariaDB et Valkey.<!-- MCLOUD-15399 -->
+- ![icône de correction](../../assets/fix.svg) **validateur de fin de vie**-dates de services de fin de vie mises à jour pour Opensearch.<!-- MCLOUD-15384 -->
+
+## v2002.2.14
 
 Date de publication : 8 septembre 2026
 
@@ -214,7 +226,7 @@ Date de publication : 10 mars 2023
 
 Date de publication : 27 octobre 2022
 
-- ![nouvelle icône](../../assets/new.svg) **Ajout de la prise en charge de Adobe I/O Events pour Adobe Commerce**. Les développeurs d’extensions peuvent désormais utiliser le framework [&#128279;](https://developer.adobe.com/events/docs/) pour envoyer des informations d’événement Commerce depuis des instances Cloud à leurs applications écrites pour [Adobe App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/). Adobe I/O Events pour Adobe Commerce est en version préliminaire pour les partenaires.<!-- CEXT-932 -->
+- ![nouvelle icône](../../assets/new.svg) **Ajout de la prise en charge de Adobe I/O Events pour Adobe Commerce**. Les développeurs d’extensions peuvent désormais utiliser le framework [](https://developer.adobe.com/events/docs/) pour envoyer des informations d’événement Commerce depuis des instances Cloud à leurs applications écrites pour [Adobe App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/). Adobe I/O Events pour Adobe Commerce est en version préliminaire pour les partenaires.<!-- CEXT-932 -->
 - ![nouvelle icône](../../assets/new.svg) **Validateur pour la configuration du cache OP**—Ajout d&#39;un validateur pour vérifier la configuration du cache OPpour les chemins exclus.<!-- MCLOUD-9485 -->
 - ![icône de correction](../../assets/fix.svg) **correction d’un problème lié à la configuration du cache de GraphQL**—ECE-Tools conserve désormais la valeur de `id_salt` de GraphQL dans `cache` configuration dans le fichier `app/etc/env.php`.<!-- MCLOUD-9486 -->
 
@@ -501,7 +513,7 @@ Date de publication : 6 février 2020
 
 - ![nouvelle icône](../../assets/new.svg) **mises à jour des commandes CLI**—
 
-  - ![nouvelle icône](../../assets/new.svg) **Nouvelle commande cron**—Vous pouvez désormais gérer manuellement le traitement cron dans votre environnement Adobe Commerce sur l&#39;infrastructure cloud à l&#39;aide des commandes `cron:disable` et `cron:enable`. Utilisez la commande disable pour arrêter tous les processus cron actifs et désactiver toutes les tâches cron. Utilisez la commande d’activation pour réactiver les tâches cron lorsque vous êtes prêt. Voir [&#x200B; Désactiver les tâches cron &#x200B;](../application/crons-property.md#disable-cron-jobs).
+  - ![nouvelle icône](../../assets/new.svg) **Nouvelle commande cron**—Vous pouvez désormais gérer manuellement le traitement cron dans votre environnement Adobe Commerce sur l&#39;infrastructure cloud à l&#39;aide des commandes `cron:disable` et `cron:enable`. Utilisez la commande disable pour arrêter tous les processus cron actifs et désactiver toutes les tâches cron. Utilisez la commande d’activation pour réactiver les tâches cron lorsque vous êtes prêt. Voir [ Désactiver les tâches cron ](../application/crons-property.md#disable-cron-jobs).
 
   - ![nouvelle icône](../../assets/new.svg) **Amélioration des rapports d&#39;erreur**—Ajout d&#39;une meilleure journalisation pour les défaillances de commande CLI qui se produisent pendant le traitement ECE-Tools.<!--MAGECLOUD-4849-->
 
