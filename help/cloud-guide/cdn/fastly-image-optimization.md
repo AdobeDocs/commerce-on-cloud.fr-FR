@@ -3,23 +3,30 @@ title: Optimisation rapide des images
 description: Découvrez comment optimiser la diffusion d’images et simplifier la gestion des images pour le site Adobe Commerce en activant et en configurant l’optimisation rapide des images.
 feature: Cloud, Configuration, Media
 exl-id: 3457ebb0-dbb4-4cb0-b6ab-837b15dce03e
-TQID: https://experienceleague.adobe.com/n3BJ-fU6SwFrRJGvqpF07cZ1XVTDkXqLRIRv46MQotI
+TQID: 'https://experienceleague.adobe.com/n3BJ-fU6SwFrRJGvqpF07cZ1XVTDkXqLRIRv46MQotI'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+    internal-label: Optimization
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1211
+source-wordcount: '1290'
 ht-degree: 0%
-
 ---
-
 # Optimisation rapide des images
 
 Fastly image optimization (Fastly IO) permet une manipulation et une optimisation des images en temps réel afin d’accélérer la diffusion des images et de simplifier la maintenance des ensembles de sources d’images pour les applications web réactives. Une fois configurée, Fastly IO offre les fonctionnalités d’optimisation d’image suivantes :
@@ -89,11 +96,11 @@ Vérifiez et mettez à jour les paramètres de configuration d’E/S par défaut
 
    - **Redimensionner le filtre** : conservez le paramètre par défaut (`Lancsoz3`) ou sélectionnez une autre option. Ce paramètre spécifie le filtre utilisé pour diffuser une image redimensionnée. Selon le filtre sélectionné, l’image redimensionnée peut avoir un nombre de pixels plus ou moins élevé.
 
-      - `Lanczos3` (par défaut) : fournit une image de la meilleure qualité. Il augmente la capacité à détecter les contours et les caractéristiques linéaires dans une image et utilise le rééchantillonnage _[!DNL sinc]_&#x200B;pour fournir la meilleure reconstruction possible.
-      - `Lanczos2` : utilise le même filtre que `Lancsoz3`, mais avec une approximation moins précise de la fonction de rééchantillonnage _[!DNL sinc]_.
-      - `Bicubic` : a un effet d&#39;accentuation naturel lors de la réduction de la taille d&#39;une image.
-      - `Bilinear` : produit un effet de lissage naturel lorsque vous agrandissez une image.
-      - `Nearest` : produit un effet de pixellisation naturel lors du redimensionnement de l&#39;image au pixel.
+     - `Lanczos3` (par défaut) : fournit une image de la meilleure qualité. Il augmente la capacité à détecter les contours et les caractéristiques linéaires dans une image et utilise le rééchantillonnage _[!DNL sinc]_&#x200B;pour fournir la meilleure reconstruction possible.
+     - `Lanczos2` : utilise le même filtre que `Lancsoz3`, mais avec une approximation moins précise de la fonction de rééchantillonnage _[!DNL sinc]_.
+     - `Bicubic` : a un effet d&#39;accentuation naturel lors de la réduction de la taille d&#39;une image.
+     - `Bilinear` : produit un effet de lissage naturel lorsque vous agrandissez une image.
+     - `Nearest` : produit un effet de pixellisation naturel lors du redimensionnement de l&#39;image au pixel.
 
 1. Après avoir spécifié les paramètres de configuration d’E/S pour le service Fastly, sélectionnez **Annuler** pour revenir aux paramètres de configuration Fastly.
 
@@ -119,7 +126,7 @@ Par défaut, le service d’E/S Fastly force la conversion de formats sans perte
 L’avantage de forcer la conversion avec perte est que les images plus petites sont diffusées.
 Par exemple, en utilisant le format JPEG ou WEBp au lieu du format PNG, la taille peut être réduite de 60 à 70 % en fonction du niveau de qualité spécifié dans la configuration d’E/S Fastly.
 
-Selon le niveau de qualité sélectionné pour l’optimisation des images, vous pouvez percevoir des différences visuelles dans les images. Par exemple, les canaux/transparences Alpha sont supprimés et remplacés par un arrière-plan blanc, sauf si vous utilisez l’optimisation d’image profonde qui utilise la couleur d’arrière-plan de votre thème.
+Selon le niveau de qualité sélectionné pour l’optimisation des images, vous pouvez percevoir des différences visuelles dans les images. Par exemple, le canal alpha/les transparences sont supprimés et remplacés par un arrière-plan blanc, sauf si vous utilisez l’optimisation d’image profonde qui utilise la couleur d’arrière-plan de votre thème.
 
 Si vous désactivez la conversion avec perte (`WebP Auto? = No`), Fastly IO ne modifie les images JPEG qu’au format WEBP pour les navigateurs compatibles. Aucun autre type d’image n’est modifié. Par exemple, si l’image d’origine est au format PNG, la sortie du service Fastly IO est au format PNG.
 

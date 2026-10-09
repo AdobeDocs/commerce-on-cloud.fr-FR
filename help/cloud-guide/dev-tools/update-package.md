@@ -3,19 +3,25 @@ title: Mise à jour du module ECE-Tools
 description: Découvrez comment mettre à niveau le package ECE-Tools pour tirer parti des derniers correctifs et fonctionnalités appliqués à Adobe Commerce sur l'infrastructure cloud.
 feature: Cloud, Upgrade
 exl-id: acb4fd0d-6ffb-4094-8dd4-83bb7735d64f
-TQID: https://experienceleague.adobe.com/WqcVa0BJN0ot6yg2unhzeEB8nkjKXM7o26tOwmrg5mU
+TQID: 'https://experienceleague.adobe.com/WqcVa0BJN0ot6yg2unhzeEB8nkjKXM7o26tOwmrg5mU'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 172
+source-wordcount: '172'
 ht-degree: 0%
-
 ---
-
 # Mise à jour du module ECE-Tools
 
 Une mise à jour du package `ece-tools` met également à jour les autres packages [Cloud Tools Suite for Commerce](../release-notes/cloud-tools-suite.md), qui sont des dépendances de `ece-tools`. Par conséquent, vous devez utiliser une version d’Adobe Commerce sur l’infrastructure cloud qui prend en charge le package `ece-tools`.

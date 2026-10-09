@@ -4,22 +4,33 @@ description: Découvrez comment configurer des actions de génération et de dé
 feature: Cloud, Build, Configuration, Deploy, SCD
 role: Developer
 exl-id: f39c73fc-351a-41ed-9e74-2c3f14871246
-TQID: https://experienceleague.adobe.com/Ub0FWkUN9uOVzLhVbNbPhUV5kj808ODlbjVrRDDA-4E
+TQID: 'https://experienceleague.adobe.com/Ub0FWkUN9uOVzLhVbNbPhUV5kj808ODlbjVrRDDA-4E'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: d05f97c9-0a96-5792-92cf-f66ce7326e3a
+    internal-label: SCD
+subfeature_v2:
+  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: c754e69243236bbf862ea636261c6d2a6cae9eb7
+    internal-label: Optimization
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 706
+source-wordcount: '706'
 ht-degree: 0%
-
 ---
-
 # Configuration des variables d’environnement pour le déploiement
 
 Le fichier `.magento.env.yaml` utilise des variables d’environnement pour centraliser la gestion des actions de création et de déploiement dans tous vos environnements, y compris l’évaluation et la production de pro. Pour configurer des actions uniques dans chaque environnement, vous devez modifier ce fichier dans chaque environnement.
@@ -44,7 +55,7 @@ Le fichier `.magento.env.yaml` contient deux sections : `stage` et `log`. La sec
 
 ### Variables d’environnement
 
-Le package `ece-tools` définit les valeurs du fichier `env.php` en fonction des valeurs des [variables cloud](variables-cloud.md), des variables définies dans le [!DNL Cloud Console] et du fichier de configuration `.magento.env.yaml`. Les variables d’environnement du fichier `.magento.env.yaml` personnalisent l’environnement cloud en remplaçant votre configuration Commerce existante. Si une valeur par défaut est `Not Set`, le package de `ece-tools` exécute l’action **NON** et utilise la valeur par défaut [!DNL Commerce] ou la valeur de la configuration MAGENTO_CLOUD_RELATIONSHIPS. Si la valeur par défaut est définie, le package `ece-tools` agit pour définir cette valeur par défaut.
+Le package `ece-tools` définit les valeurs du fichier `env.php` en fonction des valeurs des [variables cloud](variables-cloud.md), des variables définies dans le [!DNL Cloud Console] et du fichier de configuration `.magento.env.yaml`. Les variables d’environnement du fichier `.magento.env.yaml` personnalisent l’environnement cloud en remplaçant votre configuration Commerce existante. Si une valeur par défaut est `Not Set`, le package `ece-tools` exécute l’action **NON** et utilise la valeur par défaut [!DNL Commerce] ou la valeur de la configuration MAGENTO_CLOUD_RELATIONSHIPS. Si la valeur par défaut est définie, le package `ece-tools` agit pour définir cette valeur par défaut.
 
 Les rubriques suivantes contiennent des définitions détaillées, indiquant par exemple si une valeur par défaut est définie ou non, de toutes les variables que vous pouvez utiliser dans le fichier `.magento.env.yaml` :
 

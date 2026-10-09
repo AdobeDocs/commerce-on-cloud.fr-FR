@@ -1,25 +1,30 @@
 ---
 title: Propriété Cron
-description: Consultez des exemples sur la façon de configurer la propriété « crons » dans le fichier  [!DNL Commerce]  configuration de l’application.
+description: Consultez des exemples de configuration de la propriété « crons » dans le fichier de configuration de l’application [!DNL Commerce].
 feature: Cloud, Configuration
 exl-id: ff176cb1-5b6c-48a0-ad3c-56cc1d606c97
-TQID: https://experienceleague.adobe.com/E7qXe1VmZezG9AqJ2rchTUmbTibU0pNaGdqb00MkcXo
+TQID: 'https://experienceleague.adobe.com/E7qXe1VmZezG9AqJ2rchTUmbTibU0pNaGdqb00MkcXo'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Troubleshooting
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1190
+source-wordcount: '1191'
 ht-degree: 0%
-
 ---
-
 # Propriété Cron
 
 Adobe Commerce utilise la propriété `crons` pour planifier des activités répétitives. Il est idéal pour planifier l’exécution d’une tâche spécifique à certains moments de la journée. En raison de la nature des environnements en lecture seule, une seule tâche cron peut s’exécuter à la fois sur l’instance web pour Adobe Commerce dans les projets d’infrastructure cloud. Il est recommandé de ventiler les tâches de longue durée en tâches plus petites et en file d’attente. Vous pouvez également créer une [&#x200B; instance de travail &#x200B;](workers-property.md).
