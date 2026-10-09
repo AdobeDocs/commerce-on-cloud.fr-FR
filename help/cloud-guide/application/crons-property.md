@@ -1,32 +1,37 @@
 ---
 title: Propriété Cron
-description: Consultez des exemples sur la façon de configurer la propriété « crons » dans le fichier  [!DNL Commerce]  configuration de l’application.
+description: Consultez des exemples de configuration de la propriété « crons » dans le fichier de configuration de l’application [!DNL Commerce].
 feature: Cloud, Configuration
 exl-id: ff176cb1-5b6c-48a0-ad3c-56cc1d606c97
-TQID: https://experienceleague.adobe.com/E7qXe1VmZezG9AqJ2rchTUmbTibU0pNaGdqb00MkcXo
+TQID: 'https://experienceleague.adobe.com/E7qXe1VmZezG9AqJ2rchTUmbTibU0pNaGdqb00MkcXo'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Troubleshooting
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1190
+source-wordcount: '1191'
 ht-degree: 0%
-
 ---
-
 # Propriété Cron
 
-Adobe Commerce utilise la propriété `crons` pour planifier des activités répétitives. Il est idéal pour planifier l’exécution d’une tâche spécifique à certains moments de la journée. En raison de la nature des environnements en lecture seule, une seule tâche cron peut s’exécuter à la fois sur l’instance web pour Adobe Commerce dans les projets d’infrastructure cloud. Il est recommandé de ventiler les tâches de longue durée en tâches plus petites et en file d’attente. Vous pouvez également créer une [&#x200B; instance de travail &#x200B;](workers-property.md).
+Adobe Commerce utilise la propriété `crons` pour planifier des activités répétitives. Il est idéal pour planifier l’exécution d’une tâche spécifique à certains moments de la journée. En raison de la nature des environnements en lecture seule, une seule tâche cron peut s’exécuter à la fois sur l’instance web pour Adobe Commerce dans les projets d’infrastructure cloud. Il est recommandé de ventiler les tâches de longue durée en tâches plus petites et en file d’attente. Vous pouvez également créer une [ instance de travail ](workers-property.md).
 
-Adobe vous recommande d’exécuter `crons` en tant que [propriétaire du système de fichiers](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions). N’exécutez __ `crons` en tant que `root` ou utilisateur du serveur web.
+Adobe vous recommande d’exécuter `crons` en tant que [propriétaire du système de fichiers](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions). N’exécutez __ `crons` en tant que `root` ou utilisateur du serveur web.
 
-Cette configuration est différente des déploiements sur site d’Adobe Commerce, qui comportent plusieurs tâches cron par défaut. Voir [Configuration des tâches cron](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) dans le _Guide de configuration_.
+Cette configuration est différente des déploiements sur site d’Adobe Commerce, qui comportent plusieurs tâches cron par défaut. Voir [Configuration des tâches cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) dans le _Guide de configuration_.
 
 ## Configurer les tâches cron
 
@@ -46,7 +51,7 @@ crons:
         cmd: "php bin/magento cron:run"
 ```
 
-Si votre projet nécessite des tâches cron personnalisées, vous pouvez les ajouter à la configuration `crons` par défaut. Voir [&#x200B; Création d’une tâche cron &#x200B;](#build-a-cron-job).
+Si votre projet nécessite des tâches cron personnalisées, vous pouvez les ajouter à la configuration `crons` par défaut. Voir [ Création d’une tâche cron ](#build-a-cron-job).
 
 ### `crontab`
 
@@ -66,7 +71,7 @@ Bien que vous puissiez utiliser `crontab` pour passer en revue la configuration 
 
    >[!NOTE]
    >
-   >Si la commande `crontab -l` renvoie une erreur `Command not found` (dans les environnements d’évaluation et de production Pro uniquement), vous devez [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour activer l’option de configuration en libre-service auto-crons sur votre projet.
+   >Si la commande `crontab -l` renvoie une erreur `Command not found` (dans les environnements d’évaluation et de production Pro uniquement), vous devez [Envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour activer l’option de configuration en libre-service auto-crons sur votre projet.
 
 L’exemple suivant illustre la sortie `crontab` pour un environnement qui ne dispose que de la configuration `crons` par défaut :
 
@@ -134,7 +139,7 @@ Sur la plateforme d’Adobe Commerce sur l’infrastructure cloud, vous pouvez a
 >
 >Pour les environnements Starter et Pro `integration`, l’intervalle minimum est d’une fois toutes les cinq minutes. Pour les environnements d’évaluation et de production Pro, l’intervalle minimum est d’une fois par minute. Vous ne pouvez pas configurer d’intervalles plus fréquents que les intervalles minimaux par défaut.
 
-Dans les projets Adobe Commerce Pro, la fonction [auto-crons](#set-up-cron-jobs) doit être activée sur votre projet avant que vous puissiez ajouter des tâches cron personnalisées aux environnements d’évaluation et de production à l’aide du fichier `.magento.app.yaml`. Si cette fonctionnalité n’est pas activée, [Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour activer les crons automatiques.
+Dans les projets Adobe Commerce Pro, la fonction [auto-crons](#set-up-cron-jobs) doit être activée sur votre projet avant que vous puissiez ajouter des tâches cron personnalisées aux environnements d’évaluation et de production à l’aide du fichier `.magento.app.yaml`. Si cette fonctionnalité n’est pas activée, [Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour activer les crons automatiques.
 
 **Pour ajouter des tâches cron personnalisées** :
 
@@ -208,7 +213,7 @@ Vous pouvez consulter les informations de traitement cron dans les fichiers jour
 
 Consultez les articles d’assistance Adobe Commerce suivants pour obtenir de l’aide sur la résolution des problèmes liés à cron :
 
-- [Les tâches cron verrouillent les tâches d&#39;autres groupes](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups)
+- [Les tâches cron verrouillent les tâches d&#39;autres groupes](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups)
 
-- [Réinitialiser manuellement les tâches cron bloquées sur le cloud](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/reset-stuck-magento-cron-jobs-manually-on-cloud)
+- [Réinitialiser manuellement les tâches cron bloquées sur le cloud](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/reset-stuck-magento-cron-jobs-manually-on-cloud)
 

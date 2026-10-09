@@ -1,29 +1,38 @@
 ---
-title: Gérez les branches avec  [!DNL Cloud Console]
-description: Découvrez comment gérer les branches d’environnement pour Adobe Commerce sur les infrastructures cloud à l’aide de l’ [!DNL Cloud Console].
+title: Gérer les branches avec le [!DNL Cloud Console]
+description: Découvrez comment gérer les branches d’environnement pour Adobe Commerce sur les infrastructures cloud à l’aide de l’[!DNL Cloud Console].
 role: Developer
 feature: Cloud, Install
 exl-id: 2c254586-b670-4dd7-8f82-edcc139e9800
-TQID: https://experienceleague.adobe.com/-9EfBaTgSBPQa6HspiaqngBtwURAeUGlNP9hREcXrQQ
+TQID: 'https://experienceleague.adobe.com/-9EfBaTgSBPQa6HspiaqngBtwURAeUGlNP9hREcXrQQ'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
 subfeature_v2:
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1642
+source-wordcount: '1642'
 ht-degree: 0%
-
 ---
-
 # Gérer les branches avec le [!DNL Cloud Console]
 
 Vous pouvez gérer vos environnements à l’aide de l’interface de ligne de commande [!DNL Cloud Console] ou `magento-cloud`. Les fichiers de votre projet sont stockés dans un référentiel Git. Vous pouvez utiliser des commandes Git pour gérer votre code, mais l’interface de ligne de commande `magento-cloud` est conçue pour interagir avec les fonctionnalités de Platform, contrairement aux commandes Git. Voir [Commandes Git](../dev-tools/cloud-cli-overview.md#git-commands) dans la rubrique relative à l’interface de ligne de commande cloud.
@@ -47,7 +56,7 @@ La stratégie d’embranchement utilise un workflow Git courant dans lequel vous
 
 Votre compte prend en charge un nombre limité de branches de développement ![branche active](../../assets/icon-active.png){width="32"} (active) et ![branche inactive](../../assets/icon-inactive.png){width="32"} (inactive). Gérez les branches actives et inactives en ajoutant ou en supprimant une branche à l’aide de l’interface de ligne de commande [!DNL Cloud Console] ou Cloud. Avant de pouvoir supprimer une branche, vous devez la désactiver, car elle reste dans la liste _Environnements_ marquée comme _inactive_. Vous pouvez réactiver la branche ultérieurement ou [supprimer la branche](../dev-tools/cloud-cli-overview.md#) dans les paramètres d’environnement ou à l’aide de l’interface de ligne de commande cloud.
 
-Si vous avez besoin d’environnements actifs supplémentaires pour le développement, envoyez un ticket d’assistance [Support](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+Si vous avez besoin d’environnements actifs supplémentaires pour le développement, envoyez un ticket d’assistance [Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 **Pour ajouter une branche** :
 
@@ -101,13 +110,13 @@ Avant de pouvoir supprimer un environnement, vous devez le désactiver. Une fois
 
 1. Cliquez sur l’icône de configuration sur le côté droit de la barre de navigation supérieure, ce qui ouvre les paramètres de l’environnement.
 
-1. Dans l’onglet _[!UICONTROL General]_, faites défiler l’écran jusqu’à la section&#x200B;_[!UICONTROL Deactivate environment]_ , cliquez sur **[!UICONTROL Deactivate environment and delete data]** et suivez les instructions.
+1. Dans l’onglet _[!UICONTROL General]_, faites défiler l’écran jusqu’à la section_[!UICONTROL Deactivate environment]_ , cliquez sur **[!UICONTROL Deactivate environment and delete data]** et suivez les instructions.
 
 ## Synchroniser un environnement
 
 La synchronisation d’un environnement (ou d’une branche) est identique à la `git pull origin <parent>`. Vous pouvez synchroniser le code mis à jour à partir d’un environnement parent. Vous pouvez utiliser cette fonctionnalité via l’[!DNL Cloud Console] pour tous les environnements Starter et Pro.
 
-Pour le plan Pro, vous pouvez synchroniser les environnements d’évaluation et de production avec votre branche `master`. Cette synchronisation extrait et transmet uniquement le code, et non les données. Pour synchroniser les données, videz les données de la base de données et envoyez-les vers la base de données d’un autre environnement. Voir [&#x200B; Migrer et déployer des fichiers et des données statiques](/help/cloud-guide/deploy/staging-production.md#migrate-static-files).
+Pour le plan Pro, vous pouvez synchroniser les environnements d’évaluation et de production avec votre branche `master`. Cette synchronisation extrait et transmet uniquement le code, et non les données. Pour synchroniser les données, videz les données de la base de données et envoyez-les vers la base de données d’un autre environnement. Voir [ Migrer et déployer des fichiers et des données statiques](/help/cloud-guide/deploy/staging-production.md#migrate-static-files).
 
 **Pour synchroniser un environnement** :
 

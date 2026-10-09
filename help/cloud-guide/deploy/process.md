@@ -3,23 +3,35 @@ title: Processus de déploiement
 description: Découvrez comment fonctionne le déploiement pour Adobe Commerce sur les projets d’infrastructure cloud.
 feature: Cloud, Build, Deploy, SCD
 exl-id: 76806381-0ecc-4d76-974a-f203d3bf44da
-TQID: https://experienceleague.adobe.com/mSJOsLfNVGbkSNSrUzJgszxsqc07c-4KFhrJxm5I72U
+TQID: 'https://experienceleague.adobe.com/mSJOsLfNVGbkSNSrUzJgszxsqc07c-4KFhrJxm5I72U'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: d05f97c9-0a96-5792-92cf-f66ce7326e3a
+    internal-label: SCD
+subfeature_v2:
+  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Optimization
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 414
+source-wordcount: '414'
 ht-degree: 0%
-
 ---
-
 # Processus de déploiement
 
 Le processus de déploiement commence lorsque vous effectuez une fusion, une notification push ou une synchronisation de votre environnement, ou lorsque vous déclenchez un [redéploiement manuel](../dev-tools/cloud-cli-overview.md#redeploy-the-environment). Le processus de déploiement prend du temps, mais il existe des moyens d’optimiser le déploiement, selon que vous développez et testez ou travaillez sur un site en ligne. Vous pouvez notamment contrôler le [déploiement de contenu statique](static-content.md).
@@ -32,7 +44,7 @@ La phase _build_ assemble les conteneurs pour les services définis dans les fic
 
 ## ![Phase de déploiement](../../assets/status-deploy.png) Phase de déploiement
 
-La phase _déploiement_ place une suspension temporaire sur les requêtes entrantes et fait passer le site en [mode de maintenance](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/setup/application-modes). La phase de déploiement utilise les nouveaux conteneurs et, après le montage du système de fichiers, ouvre les connexions réseau, active les services définis dans la section `relationships` du fichier `.magento.app.yaml` et exécute les hooks de déploiement définis dans le fichier `.magento.app.yaml`. Tout est _lecture seule_, à l’exception des répertoires définis dans le fichier `.magento.app.yaml`. Par défaut, la propriété [&#128279;](../application/properties.md#mounts) comprend les répertoires suivants :`mounts`
+La phase _déploiement_ place une suspension temporaire sur les requêtes entrantes et fait passer le site en [mode de maintenance](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/setup/application-modes). La phase de déploiement utilise les nouveaux conteneurs et, après le montage du système de fichiers, ouvre les connexions réseau, active les services définis dans la section `relationships` du fichier `.magento.app.yaml` et exécute les hooks de déploiement définis dans le fichier `.magento.app.yaml`. Tout est _lecture seule_, à l’exception des répertoires définis dans le fichier `.magento.app.yaml`. Par défaut, la propriété ](../application/properties.md#mounts) comprend les répertoires suivants :[`mounts`
 
 - `app/etc` : contient les fichiers de configuration `env.php` et `config.php`
 - `pub/media` : contient toutes les données multimédia, telles que les produits ou les catégories
@@ -49,7 +61,7 @@ La phase _post-déploiement_ exécute les hooks de post-déploiement définis da
 
 ## ![Vérification de l’état](../../assets/status-verify.png) Vérification des configurations
 
-Vous pouvez tester la configuration optimale pour l’état de votre projet en exécutant les [&#x200B; Assistants intelligents &#x200B;](smart-wizards.md).
+Vous pouvez tester la configuration optimale pour l’état de votre projet en exécutant les [ Assistants intelligents ](smart-wizards.md).
 
 >[!NOTE]
 >

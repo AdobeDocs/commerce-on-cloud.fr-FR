@@ -4,23 +4,32 @@ description: Consultez une liste des variables d’environnement utilisées lors
 feature: Cloud, Configuration, Install, Roles/Permissions
 role: Developer
 exl-id: d2746185-bc59-4d30-a088-73df1bd2c0b2
-TQID: https://experienceleague.adobe.com/gCq40IqrBWMNPSy8eLBQhXFIXmgmUWQjQ8bWZK7fIcQ
+TQID: 'https://experienceleague.adobe.com/gCq40IqrBWMNPSy8eLBQhXFIXmgmUWQjQ8bWZK7fIcQ'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: e439352c-5b67-587d-b34e-d2a0aa5a0242
+    internal-label: Roles/Permissions
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 792
+source-wordcount: '792'
 ht-degree: 0%
-
 ---
-
 # Variables admin
 
 Les utilisateurs disposant d’un accès administratif au projet d’infrastructure d’Adobe Commerce sur le cloud peuvent utiliser les variables d’environnement de projet suivantes pour remplacer les paramètres de configuration du compte utilisateur d’administration afin d’accéder à l’interface utilisateur d’administration.
@@ -29,7 +38,7 @@ Les utilisateurs disposant d’un accès administratif au projet d’infrastruct
 
 Vous pouvez remplacer les informations d’identification de l’utilisateur administrateur lors de l’installation de Commerce par les variables ADMIN dans le tableau suivant.
 
-Si vous souhaitez modifier les valeurs après l’installation, connectez-vous à votre environnement à l’aide de SSH et utilisez la commande de [`admin:user` de l’interface de ligne de commande Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/admin) pour créer ou modifier les informations d’identification de l’utilisateur administrateur.
+Si vous souhaitez modifier les valeurs après l’installation, connectez-vous à votre environnement à l’aide de SSH et utilisez la commande de [`admin:user` de l’interface de ligne de commande Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/admin) pour créer ou modifier les informations d’identification de l’utilisateur administrateur.
 
 | Variable | Par défaut | Description |
 | -------------- | --------------------------- | ----------- |
@@ -48,9 +57,9 @@ Utilisez la variable d’environnement suivante pour sécuriser l’accès à vo
 
 ### Modifier l’URL d’administration
 
-Par défaut, l’URL [Commerce Admin](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/admin/admin) est définie sur *&lt;nom_domaine>/admin*. Pour des raisons de sécurité, Adobe recommande de modifier ce champ en une URL d’administration personnalisée et unique, difficile à deviner.
+Par défaut, l’URL [Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin) est définie sur *&lt;nom_domaine>/admin*. Pour des raisons de sécurité, Adobe recommande de modifier ce champ en une URL d’administration personnalisée et unique, difficile à deviner.
 
-**Dans [!DNL Adobe Commerce] sur l’infrastructure cloud**, vous devez modifier l’URL d’administration à l’aide de la variable d’environnement `ADMIN_URL` dans le ([!DNL Cloud Console] ou [!DNL Cloud CLI]). La modification du paramètre à partir du [!DNL Admin] s’applique uniquement aux installations sur site. Pour les installations sur site, suivez [utiliser une URL d’administration personnalisée](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url).
+**Dans [!DNL Adobe Commerce] sur l’infrastructure cloud**, vous devez modifier l’URL d’administration à l’aide de la variable d’environnement `ADMIN_URL` dans le ([!DNL Cloud Console] ou [!DNL Cloud CLI]). La modification du paramètre à partir du [!DNL Admin] s’applique uniquement aux installations sur site. Pour les installations sur site, suivez [utiliser une URL d’administration personnalisée](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url).
 
 Adobe recommande de modifier la variable au niveau de l’environnement pour l’URL d’administration après l’installation. Configurez ce paramètre pour des raisons de sécurité avant d’effectuer une ramification à partir de l’environnement de `master` cloné. Toutes les branches créées à partir de la branche `master` héritent des variables au niveau de l’environnement et de leurs valeurs, sauf si vous définissez l’héritage sur false.
 
@@ -60,12 +69,12 @@ Utilisez l’[!DNL Cloud Console] ou l’[!DNL Cloud CLI] pour définir ou mettr
 
 ##### Environnement d’intégration
 
-Dans la [console cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/project/overview), ajoutez une nouvelle variable avec :
+Dans la [console cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview), ajoutez une nouvelle variable avec :
 
 - **Name:** `ADMIN_URL`
 - **Valeur :** votre nouvelle URL d’administrateur (par exemple, `magento_A8v10`)
 
-- Pour obtenir des instructions détaillées, consultez [ajout de variables d’environnement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/project/overview#configure-environment) ou [variables d’environnement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin) dans notre documentation destinée aux développeurs.
+- Pour obtenir des instructions détaillées, consultez [ajout de variables d’environnement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#configure-environment) ou [variables d’environnement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin) dans notre documentation destinée aux développeurs.
 
 ##### Définissez l’URL d’administration dans le [!DNL Cloud Console]
 
@@ -83,7 +92,7 @@ Dans la [console cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-c
 
 ##### Lorsque les environnements d’évaluation et de production ne sont pas disponibles dans le [!DNL Cloud Console]
 
-[Envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) en demandant à ajouter la variable `ADMIN_URL` pour votre environnement d’évaluation ou de production. Si l’évaluation et la production sont accessibles à partir du [!DNL Cloud Console], ajoutez la variable comme décrit dans [Environnement d’intégration](#integration-environment).
+[Envoyez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) en demandant à ajouter la variable `ADMIN_URL` pour votre environnement d’évaluation ou de production. Si l’évaluation et la production sont accessibles à partir du [!DNL Cloud Console], ajoutez la variable comme décrit dans [Environnement d’intégration](#integration-environment).
 
 #### Option B : modifier l’URL d’administration à l’aide de l’[!DNL Cloud CLI]
 
@@ -96,7 +105,7 @@ magento-cloud variable:update ADMIN_URL --value newAdmin_A8v10 -e master --inher
 ```
 
 - **Redéploiement :** la modification de la variable `ADMIN_URL` dans l’[!DNL Cloud CLI] déclenche un redéploiement de l’environnement.
-- **Héritage :** les variables peuvent être héritées par défaut. Pour empêcher que la valeur ne soit héritée par les environnements enfants, utilisez l’option `--inheritable false` comme illustré ci-dessous. Pour plus de détails, voir [visibilité au niveau des variables](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/variable-levels#visibility).
+- **Héritage :** les variables peuvent être héritées par défaut. Pour empêcher que la valeur ne soit héritée par les environnements enfants, utilisez l’option `--inheritable false` comme illustré ci-dessous. Pour plus de détails, voir [visibilité au niveau des variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/variable-levels#visibility).
 
 >[!NOTE]
 >

@@ -3,24 +3,37 @@ title: Déploiement de contenu statique
 description: Découvrez les stratégies de déploiement de contenu statique, tel que des images, des scripts et des feuilles CSS, sur Adobe Commerce dans les projets d’infrastructure cloud.
 feature: Cloud, Build, Deploy, SCD
 exl-id: 8f30cae7-a3a0-4ce4-9c73-d52649ef4d7a
-TQID: https://experienceleague.adobe.com/bl2z1YM8u-HNuBYuQH3uqoRwiU4lfHGOQyr8Vbwyef8
+TQID: 'https://experienceleague.adobe.com/bl2z1YM8u-HNuBYuQH3uqoRwiU4lfHGOQyr8Vbwyef8'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: d05f97c9-0a96-5792-92cf-f66ce7326e3a
+    internal-label: SCD
+subfeature_v2:
+  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Troubleshooting
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 860
+source-wordcount: '860'
 ht-degree: 0%
-
 ---
-
 # Stratégies de déploiement de contenu statique
 
 Le déploiement de contenu statique (SCD) a un impact significatif sur le processus de déploiement du magasin. Cela dépend de la quantité de contenu à générer (images, scripts, CSS, vidéos, thèmes, paramètres régionaux et pages web) et du moment où le contenu doit être généré. Par exemple, la stratégie par défaut génère du contenu statique pendant la [phase de déploiement](process.md#deploy-phase-deploy-phase) lorsque le site est en mode de maintenance. Toutefois, cette stratégie de déploiement prend du temps pour écrire le contenu directement dans le répertoire de `pub/static` monté. Plusieurs options ou stratégies vous permettent d’améliorer le temps de déploiement en fonction de vos besoins.
@@ -52,8 +65,8 @@ La génération de contenu statique pendant la phase de création avec HTML mini
 La génération de contenu statique nécessite l’accès aux thèmes et aux paramètres régionaux. Adobe Commerce stocke les thèmes dans le système de fichiers, qui est accessible pendant la phase de création. Toutefois, Adobe Commerce stocke les paramètres régionaux dans la base de données. La base de données n’est _pas_ disponible pendant la phase de création. Pour générer le contenu statique pendant la phase de création, vous devez utiliser la commande `config:dump` du package de `ece-tools` pour déplacer les paramètres régionaux vers le système de fichiers. Il lit les paramètres régionaux et les enregistre dans le fichier `app/etc/config.php`.
 
 >[!NOTE]
->Après avoir exécuté la commande `config:dump` dans le package `ece-tools`, les configurations qui sont vidées dans le fichier `config.php` [sont verrouillées (grisées) dans le tableau de bord Admin](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26879). la seule façon de mettre à jour ces configurations dans l’administration consiste à les supprimer du fichier localement et à redéployer le projet.
->En outre, chaque fois que vous ajoutez un nouveau magasin/groupe de magasins/site web à votre instance, vous devez penser à exécuter la commande `config:dump` pour vous assurer que la base de données est synchronisée. Vous pouvez également choisir [les configurations à vider](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) dans le fichier `config.php`.
+>Après avoir exécuté la commande `config:dump` dans le package `ece-tools`, les configurations qui sont vidées dans le fichier `config.php` [sont verrouillées (grisées) dans le tableau de bord Admin](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26879). la seule façon de mettre à jour ces configurations dans l’administration consiste à les supprimer du fichier localement et à redéployer le projet.
+>En outre, chaque fois que vous ajoutez un nouveau magasin/groupe de magasins/site web à votre instance, vous devez penser à exécuter la commande `config:dump` pour vous assurer que la base de données est synchronisée. Vous pouvez également choisir [les configurations à vider](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) dans le fichier `config.php`.
 >Si vous supprimez la configuration magasin/groupe de magasins/site web du fichier `config.php` parce que les champs sont grisés mais que vous négligez d’effectuer cette étape, les nouvelles entités qui n’ont pas été extraites sont supprimées de la base de données lors du déploiement suivant.
 
 **Pour configurer votre projet afin de générer un SCD sur la version** :
@@ -65,7 +78,7 @@ La génération de contenu statique nécessite l’accès aux thèmes et aux par
    magento-cloud ssh
    ```
 
-1. Déplacez les paramètres régionaux vers le système de fichiers, puis mettez à jour le fichier [&#128279;](../development/commerce-version.md#create-a-configphp-file).`config.php`
+1. Déplacez les paramètres régionaux vers le système de fichiers, puis mettez à jour le fichier ](../development/commerce-version.md#create-a-configphp-file).[`config.php`
 
 1. Le fichier de configuration `.magento.env.yaml` doit contenir les valeurs suivantes :
 
@@ -75,7 +88,7 @@ La génération de contenu statique nécessite l’accès aux thèmes et aux par
 
 1. Vérifiez la configuration du hook [Post-déploiement](../application/hooks-property.md) dans le fichier `.magento.app.yaml`.
 
-1. Vérifiez vos paramètres en exécutant l’assistant [&#x200B; Smart pour obtenir l’état idéal](smart-wizards.md).
+1. Vérifiez vos paramètres en exécutant l’assistant [ Smart pour obtenir l’état idéal](smart-wizards.md).
 
    ```bash
    php ./vendor/bin/ece-tools wizard:ideal-state

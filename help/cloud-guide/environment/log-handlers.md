@@ -4,20 +4,26 @@ description: Découvrez comment configurer des gestionnaires de journaux pour Ad
 feature: Cloud, Logs, Configuration
 role: Developer
 exl-id: 0d7fb653-468b-432c-9830-582b0fed8512
-TQID: https://experienceleague.adobe.com/4dowk2oMMCROVmEc8muHE7CzaZ-T3SaQi4sANVnMeWQ
+TQID: 'https://experienceleague.adobe.com/4dowk2oMMCROVmEc8muHE7CzaZ-T3SaQi4sANVnMeWQ'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+subfeature_v2:
+  - id: 3c398179-d35a-51ba-b317-6c5b95feef5e
+    internal-label: Logs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 235
+source-wordcount: '235'
 ht-degree: 0%
-
 ---
-
 # Gestionnaires de journaux
 
 Vous pouvez configurer des gestionnaires de journaux pour envoyer des messages à un serveur de journalisation distant. Un gestionnaire de journaux envoie les journaux de version et de déploiement à d’autres systèmes, de la même manière que vous envoyez les journaux à Slack et aux e-mails. Vous pouvez activer un gestionnaire _syslog_, idéal pour la journalisation des messages liés au matériel, ou un gestionnaire GELF (Graylog Extended Log Format), idéal pour la journalisation des messages provenant d’applications logicielles.

@@ -3,27 +3,37 @@ title: Workflow de pro-projet
 description: Découvrez comment utiliser les workflows de développement et de déploiement Pro.
 feature: Cloud, Iaas, Paas
 exl-id: efe41991-8940-4d5c-a720-80369274bee3
-TQID: https://experienceleague.adobe.com/bRmbWxABneX08LwTxhlUMFX2H7WbCqVg8DDS9RRxQNI
+TQID: 'https://experienceleague.adobe.com/bRmbWxABneX08LwTxhlUMFX2H7WbCqVg8DDS9RRxQNI'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
 subfeature_v2:
   - id: df5e974b-6742-4873-a687-a6bedaafdaa2
+    internal-label: IaaS
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 904
+source-wordcount: '904'
 ht-degree: 0%
-
 ---
-
 # Workflow de pro-projet
 
 Le projet Pro comprend un référentiel Git unique avec une branche de `master` globale et trois environnements principaux :
@@ -115,7 +125,7 @@ Combinez toutes les modifications de code vérifiées en fusionnant votre branch
 
 L’évaluation est un environnement de préproduction qui fournit tous les services et paramètres aussi proche que possible de l’environnement de production. Envoyez toujours vos modifications de code de l’environnement `integration` vers l’environnement `staging` afin de pouvoir effectuer des tests approfondis avec tous les services. La première fois que vous utilisez l’environnement d’évaluation, vous devez configurer des services, tels que [Fast CDN](../cdn/fastly.md) et [New Relic](../monitor/new-relic-service.md). Configurez les passerelles de paiement, l’expédition, les notifications et d’autres services essentiels avec des informations d’identification de test ou de sandbox.
 
-Il est préférable de tester minutieusement chaque service, de vérifier vos outils de test de performance et d’effectuer des tests UAT en tant qu’administrateur et client, jusqu’à ce que vous sentiez que votre boutique est prête pour l’environnement de production. Voir [&#x200B; Déployer votre boutique &#x200B;](../deploy/staging-production.md).
+Il est préférable de tester minutieusement chaque service, de vérifier vos outils de test de performance et d’effectuer des tests UAT en tant qu’administrateur et client, jusqu’à ce que vous sentiez que votre boutique est prête pour l’environnement de production. Voir [ Déployer votre boutique ](../deploy/staging-production.md).
 
 {{second-staging}}
 

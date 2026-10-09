@@ -3,26 +3,36 @@ title: Architecture de démarrage
 description: Découvrez les environnements pris en charge par l’architecture Starter.
 feature: Cloud, Paas
 exl-id: 2f16cc60-b5f7-4331-b80e-43042a3f9b8f
-TQID: https://experienceleague.adobe.com/NZ2ea2-D3coPcwXTEHL7viNlgpIBSVA0zO2-iVUIhB0
+TQID: 'https://experienceleague.adobe.com/NZ2ea2-D3coPcwXTEHL7viNlgpIBSVA0zO2-iVUIhB0'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 8465292300c871aaa85e57cbb25e7ae5358bcd2f
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1010
+source-wordcount: '1010'
 ht-degree: 0%
-
 ---
-
 # Architecture de démarrage
 
 Votre architecture de démarrage d’Adobe Commerce sur l’infrastructure cloud prend en charge jusqu’à **quatre** environnements, y compris un environnement `master` qui contient le code du projet initial, l’environnement d’évaluation et jusqu’à deux environnements d’intégration.
@@ -137,7 +147,7 @@ Adobe Commerce sur les infrastructures cloud utilise le système d&#39;exploitat
 
 - [OpenSearch](../services/opensearch.md)
 
-Dans les environnements d’évaluation et de production, vous utilisez Fastly pour le CDN et la mise en cache. La dernière version de l’extension Fastly CDN s’installe lors de l’approvisionnement initial de votre projet. Vous pouvez mettre à niveau l’extension pour obtenir les derniers correctifs et améliorations. Voir [Module de réseau CDN Fastly pour Magento 2](https://github.com/fastly/fastly-magento2). Vous avez également accès à [&#128279;](../monitor/account-management.md) pour le suivi des performances.
+Dans les environnements d’évaluation et de production, vous utilisez Fastly pour le CDN et la mise en cache. La dernière version de l’extension Fastly CDN s’installe lors de l’approvisionnement initial de votre projet. Vous pouvez mettre à niveau l’extension pour obtenir les derniers correctifs et améliorations. Voir [Module de réseau CDN Fastly pour Magento 2](https://github.com/fastly/fastly-magento2). Vous avez également accès à [](../monitor/account-management.md) pour le suivi des performances.
 
 Utilisez les fichiers suivants pour configurer les versions de logiciels que vous souhaitez utiliser dans votre implémentation.
 
@@ -149,7 +159,7 @@ Utilisez les fichiers suivants pour configurer les versions de logiciels que vou
 
 ### Sauvegarde et reprise après sinistre
 
-Vous pouvez créer une sauvegarde de votre base de données et de votre système de fichiers à l’aide du [!DNL Cloud Console] ou de l’interface de ligne de commande. Voir [&#x200B; Gestion des sauvegardes &#x200B;](../storage/snapshots.md).
+Vous pouvez créer une sauvegarde de votre base de données et de votre système de fichiers à l’aide du [!DNL Cloud Console] ou de l’interface de ligne de commande. Voir [ Gestion des sauvegardes ](../storage/snapshots.md).
 
 ## Préparation au développement
 

@@ -3,33 +3,47 @@ title: Sécurité des infrastructures cloud
 description: Découvrez comment Adobe assure la sécurité d’Adobe Commerce sur les infrastructures cloud.
 feature: Cloud, Security
 exl-id: ae934401-2c32-427a-8162-98df9a047cd4
-TQID: https://experienceleague.adobe.com/3qXIdZWVJ-jxSodN8YGSzE2TOvMzlMKXHgRizgLVoHk
+TQID: 'https://experienceleague.adobe.com/3qXIdZWVJ-jxSodN8YGSzE2TOvMzlMKXHgRizgLVoHk'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 subfeature_v2:
   - id: bcbf87e7-9b75-4596-bffe-0f376b4c73a7
+    internal-label: GDPR
   - id: f2261633-201d-46c5-8a66-999e70527a83
+    internal-label: PCI
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+    internal-label: Privacy
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1724
+source-wordcount: '1724'
 ht-degree: 0%
-
 ---
-
 # Sécurité
 
 L’architecture du plan Adobe Commerce [Pro](pro-architecture.md) est conçue pour fournir un environnement hautement sécurisé. Chaque client est déployé dans son propre environnement de serveur isolé, séparé des autres clients. Les détails de sécurité de l’environnement de production sont décrits ci-dessous.
@@ -50,7 +64,7 @@ Le pare-feu d’application web Fastly (WAF) est utilisé pour fournir une prote
 
 Les règles WAF sont mises à jour par Adobe Commerce si de nouvelles vulnérabilités sont détectées, ce qui permet à Managed Services de corriger virtuellement les problèmes de sécurité avant d’appliquer les correctifs logiciels. Fastly WAF ne fournit pas de services de limitation de débit ni de détection de robots. Si vous le souhaitez, les clients peuvent obtenir une licence pour un service de détection de robots tiers compatible avec Fastly.
 
-Voir [&#x200B; Pare-feu d’application web (WAF)](../cdn/fastly-waf-service.md).
+Voir [ Pare-feu d’application web (WAF)](../cdn/fastly-waf-service.md).
 
 ## Cloud privé virtuel
 
@@ -87,11 +101,11 @@ Adobe teste régulièrement le code de l’application principale pour détecter
 - OWASPZAP
 - etSqlMap
 
-La base de code complète est analysée deux fois par semaine à l’aide de ces outils. Les clients sont informés des correctifs de sécurité par le biais d’e-mails directs, de notifications dans l’application et dans le [Centre de sécurité](https://helpx.adobe.com/fr/security.html).
+La base de code complète est analysée deux fois par semaine à l’aide de ces outils. Les clients sont informés des correctifs de sécurité par le biais d’e-mails directs, de notifications dans l’application et dans le [Centre de sécurité](https://helpx.adobe.com/security.html).
 
-Les clients doivent s’assurer que ces correctifs sont appliqués à leur application personnalisée dans les 30 jours suivant leur publication, conformément aux directives PCI. Adobe propose également un [outil de scan de sécurité](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-scan) qui permet aux commerçants de surveiller régulièrement leurs sites et de recevoir des mises à jour sur les risques de sécurité connus, les programmes malveillants et les accès non autorisés. L’outil Security Scan Tool est un service gratuit et peut être exécuté dans n’importe quelle version d’Adobe Commerce.
+Les clients doivent s’assurer que ces correctifs sont appliqués à leur application personnalisée dans les 30 jours suivant leur publication, conformément aux directives PCI. Adobe propose également un [outil de scan de sécurité](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) qui permet aux commerçants de surveiller régulièrement leurs sites et de recevoir des mises à jour sur les risques de sécurité connus, les programmes malveillants et les accès non autorisés. L’outil Security Scan Tool est un service gratuit et peut être exécuté dans n’importe quelle version d’Adobe Commerce.
 
-Pour encourager les chercheurs en sécurité à identifier et à signaler les vulnérabilités, Adobe Commerce dispose d’un programme [&#x200B; bug-bounty](https://hackerone.com/magento) en plus des tests internes. En outre, le client reçoit le code source complet de l’application pour sa propre révision, si désiré.
+Pour encourager les chercheurs en sécurité à identifier et à signaler les vulnérabilités, Adobe Commerce dispose d’un programme [ bug-bounty](https://hackerone.com/magento) en plus des tests internes. En outre, le client reçoit le code source complet de l’application pour sa propre révision, si désiré.
 
 ## Système de fichiers en lecture seule
 
@@ -129,7 +143,7 @@ Le RGPD exige que toutes les informations d’identification personnelle (telles
 
 >[!NOTE]
 >
->Cette page donne un aperçu général des éléments à prendre en compte pour le RGPD. Consultez le _[Guide de sécurité et de conformité &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/security-and-compliance/overview)_ pour plus d’informations sur la manière dont Adobe Commerce stocke les informations personnelles. Pour déterminer comment votre entreprise devrait se conformer aux obligations légales, consultez votre conseiller juridique ou reportez-vous au [texte officiel](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+>Cette page donne un aperçu général des éléments à prendre en compte pour le RGPD. Consultez le _[Guide de sécurité et de conformité ](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)_ pour plus d’informations sur la manière dont Adobe Commerce stocke les informations personnelles. Pour déterminer comment votre entreprise devrait se conformer aux obligations légales, consultez votre conseiller juridique ou reportez-vous au [texte officiel](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
 ## Sauvegardes
 

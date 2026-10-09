@@ -3,25 +3,34 @@ title: Paramètres PHP
 description: Découvrez les paramètres PHP optimaux pour la configuration de l'application Commerce dans l'infrastructure cloud.
 feature: Cloud, Configuration, Extensions
 exl-id: 83094c16-7407-41fa-ba1c-46b206aa160d
-TQID: https://experienceleague.adobe.com/2UjlXGZV6AJQuNf0XOdzZ09aF-23TSk7Q0NqvLyhGRs
+last-update: 2026-08-25T00:00:00.000Z
+TQID: 'https://experienceleague.adobe.com/2UjlXGZV6AJQuNf0XOdzZ09aF-23TSk7Q0NqvLyhGRs'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
+subfeature_v2:
+  - id: dad884f1-e840-49a1-970e-2f965bdbc410
+    internal-label: Extensions
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-last-update: 2026-08-25
-source-git-commit: ccff84c55425e8e4f91812b54f5e6ccf9a700104
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 612
+source-wordcount: '612'
 ht-degree: 0%
-
 ---
-
 # Paramètres PHP
 
-Vous pouvez choisir la [version de PHP](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements) à exécuter dans votre fichier `.magento.app.yaml` :
+Vous pouvez choisir la [version de PHP](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) à exécuter dans votre fichier `.magento.app.yaml` :
 
 ```yaml
 name: mymagento
@@ -30,7 +39,7 @@ type: php:<version>
 
 >[!TIP]
 >
->Si vous effectuez une mise à niveau vers PHP 8.1 et versions ultérieures, supprimez JSON de la propriété [&#128279;](properties.md#runtime) dans le fichier `.magento.app.yaml` et redéployez. `runtime: extensions:`L’extension JSON est installée dans un environnement cloud depuis PHP 8.0.
+>Si vous effectuez une mise à niveau vers PHP 8.1 et versions ultérieures, supprimez JSON de la propriété ](properties.md#runtime) dans le fichier `.magento.app.yaml` et redéployez. [`runtime: extensions:`L’extension JSON est installée dans un environnement cloud depuis PHP 8.0.
 
 ## Configuration de PHP
 
@@ -72,7 +81,7 @@ Ces paramètres permettent aux processus PHP de mettre en cache les chemins vers
 
 >[!NOTE]
 >
->Pour obtenir une liste des paramètres de configuration PHP recommandés, voir [Paramètres PHP requis](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/php-settings) dans le _Guide d&#39;installation_.
+>Pour obtenir une liste des paramètres de configuration PHP recommandés, voir [Paramètres PHP requis](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) dans le _Guide d&#39;installation_.
 
 ### Vérifier les paramètres PHP personnalisés
 
@@ -127,7 +136,7 @@ Le tableau suivant présente les extensions PHP prises en charge lors du déploi
 
 {{$include /help/_includes/templated/php-extensions-cloud.md}}
 
-Les exigences du module PHP sont liées à la version Adobe Commerce. Voir [Exigences PHP](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/php-settings).
+Les exigences du module PHP sont liées à la version Adobe Commerce. Voir [Exigences PHP](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings).
 
 ### Prise en charge des extensions
 
@@ -145,7 +154,7 @@ sourceguardian.restrict_unencoded = "1"
 
 Voir [section 3.5 de la documentation de SourceGuardian](https://sourceguardian.com/demofiles/files/SourceGuardian%20for%20Linux%20User%20Manual.pdf). _Il s’agit d’un lien vers un PDF_.
 
-[Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour obtenir de l’aide sur l’installation de ces extensions PHP dans tous les environnements de production et environnements d’évaluation Pro. Incluez votre fichier `.magento/services.yaml` mis à jour, `.magento.app.yaml` fichier avec la version PHP mise à jour et toutes les extensions PHP supplémentaires. Pour apporter des modifications à un environnement de production actif, vous devez fournir un préavis minimal de 48 heures. La mise à jour de votre projet par l’équipe en charge de l’infrastructure cloud peut prendre jusqu’à 48 heures.
+[Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour obtenir de l’aide sur l’installation de ces extensions PHP dans tous les environnements de production et environnements d’évaluation Pro. Incluez votre fichier `.magento/services.yaml` mis à jour, `.magento.app.yaml` fichier avec la version PHP mise à jour et toutes les extensions PHP supplémentaires. Pour apporter des modifications à un environnement de production actif, vous devez fournir un préavis minimal de 48 heures. La mise à jour de votre projet par l’équipe en charge de l’infrastructure cloud peut prendre jusqu’à 48 heures.
 
 >[!WARNING]
 >

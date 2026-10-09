@@ -3,24 +3,32 @@ title: Gestion de l’espace disque
 description: Découvrez comment gérer l’espace disque à l’aide de l’interface de ligne de commande.
 feature: Cloud, Storage
 exl-id: 1d13dc4e-56eb-4153-a8b1-48d2263ebc4c
-TQID: https://experienceleague.adobe.com/645o-d3ZvMtaYOwy0IKwAjSxUyUgkrI36OGLWtZR--g
+TQID: 'https://experienceleague.adobe.com/645o-d3ZvMtaYOwy0IKwAjSxUyUgkrI36OGLWtZR--g'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Implementation
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 806
+source-wordcount: '806'
 ht-degree: 0%
-
 ---
-
 # Gestion de l’espace disque
 
 La capacité de stockage totale de votre projet cloud figure dans votre contrat d’infrastructure cloud Adobe Commerce et sur la page [Compte](https://accounts.magento.cloud/user). Chaque carte de projet de votre compte indique le nombre d’_environnements_, la capacité de _stockage_ en Go et le nombre d’_utilisateurs_. Vous pouvez également utiliser la commande cloud suivante :
@@ -143,7 +151,7 @@ Deux [fichiers de configuration](../environment/overview.md) contrôlent l’all
 
 >[!IMPORTANT]
 >
->- Pour les environnements de production et d’évaluation Pro, vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour modifier l’allocation de l’espace disque. Une augmentation de la taille des environnements de production et d&#39;évaluation Pro ne peut se produire qu&#39;à certains intervalles. Par conséquent, en fonction de l&#39;utilisation actuelle de votre espace disque, le support peut recommander d&#39;augmenter l&#39;allocation d&#39;espace disque d&#39;un minimum de 10 Go. Une fois alloué, l’augmentation du stockage pour l’évaluation et la production Pro ne peut pas être rétablie. Le stockage ne peut pas être réaffecté ou redistribué entre les ressources. Pour ajouter plus d’espace de stockage de fichiers, réduisez l’espace disque alloué à MySQL.
+>- Pour les environnements de production et d’évaluation Pro, vous devez [soumettre un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour modifier l’allocation de l’espace disque. Une augmentation de la taille des environnements de production et d&#39;évaluation Pro ne peut se produire qu&#39;à certains intervalles. Par conséquent, en fonction de l&#39;utilisation actuelle de votre espace disque, le support peut recommander d&#39;augmenter l&#39;allocation d&#39;espace disque d&#39;un minimum de 10 Go. Une fois alloué, l’augmentation du stockage pour l’évaluation et la production Pro ne peut pas être rétablie. Le stockage ne peut pas être réaffecté ou redistribué entre les ressources. Pour ajouter plus d’espace de stockage de fichiers, réduisez l’espace disque alloué à MySQL.
 >- Les environnements de production et d’évaluation Pro hébergés sur AWS disposent d’un [temps de recharge obligatoire de 6 heures](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVolume.html) qui s’applique aux augmentations de l’espace disque. Une fois que l’espace disque a été augmenté sur un montage, vous devez attendre 6 heures avant de pouvoir à nouveau augmenter l’espace disque sur ce montage.
 
 ### Espace disque de l’application
@@ -200,7 +208,7 @@ Le fichier `.magento/services.yaml` contrôle l’espace disque disponible pour 
 
 ## Surveiller l’espace disque
 
-Sur les environnements de production Pro, vous pouvez surveiller l’espace disque et d’autres indicateurs de performances à l’aide de la politique d’alerte Alertes gérées pour Adobe Commerce pour New Relic. Pour plus d’informations, consultez [Surveillance des performances avec des alertes gérées](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Pour plus d’informations, voir [Bonnes pratiques pour résoudre les problèmes de performances des bases de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues).
+Sur les environnements de production Pro, vous pouvez surveiller l’espace disque et d’autres indicateurs de performances à l’aide de la politique d’alerte Alertes gérées pour Adobe Commerce pour New Relic. Pour plus d’informations, consultez [Surveillance des performances avec des alertes gérées](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Pour plus d’informations, voir [Bonnes pratiques pour résoudre les problèmes de performances des bases de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues).
 
 ## Pas d’espace restant
 

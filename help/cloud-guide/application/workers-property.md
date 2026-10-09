@@ -1,23 +1,27 @@
 ---
 title: Travailleurs
-description: Découvrez comment configurer la propriété workers dans le fichier  [!DNL Commerce]  configuration de l’application.
+description: Découvrez comment configurer la propriété workers dans le fichier de configuration de l’application [!DNL Commerce].
 feature: Cloud, Configuration
 exl-id: 62d9dfaf-6265-4016-8d68-26362cf6a63a
-TQID: https://experienceleague.adobe.com/sLfoGU5aolWVm6p-jHMC6VkF-DgNGdt7Wk40oALTj0o
+TQID: 'https://experienceleague.adobe.com/sLfoGU5aolWVm6p-jHMC6VkF-DgNGdt7Wk40oALTj0o'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 361
+source-wordcount: '362'
 ht-degree: 0%
-
 ---
-
 # Propriété des collaborateurs
 
 Vous pouvez définir un programme de travail qui s’exécute indépendamment de l’instance web sans instance Nginx en cours d’exécution. Cependant, le programme de travail utilise le même stockage réseau que celui utilisé par l’application [!DNL Commerce]. Vous n’avez pas besoin de configurer un serveur web sur l’instance de travail (à l’aide de Node.js ou de Go), car le routeur ne peut pas diriger les requêtes publiques vers l’instance de travail. Cela rend l’instance de travail idéale pour les tâches en arrière-plan ou les tâches en cours d’exécution qui risquent de bloquer un déploiement.
@@ -26,7 +30,7 @@ Vous pouvez définir un programme de travail qui s’exécute indépendamment de
 
 Les programmes de travail sont disponibles uniquement pour les environnements d’évaluation et de production Pro. Les environnements d’intégration Pro et de démarrage peuvent choisir d’utiliser la variable [CRON_CONSUMERS_RUNNER](../environment/variables-deploy.md#cron_consumers_runner).
 
-Pour configurer un programme de travail dans Pro Staging ou Production, [Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) et renseignez les informations suivantes :
+Pour configurer un programme de travail dans Pro Staging ou Production, [Envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) et renseignez les informations suivantes :
 
 - ID de projet
 - Identifiant de l’environnement

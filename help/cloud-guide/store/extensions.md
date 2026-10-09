@@ -3,24 +3,37 @@ title: Gestion des extensions
 description: Découvrez comment installer et gérer des extensions dans Adobe Commerce sur l’infrastructure cloud.
 feature: Cloud, Extensions, Upgrade
 exl-id: 88c5ea06-fe79-4105-8b67-f16e9ef06210
-TQID: https://experienceleague.adobe.com/7ZNXOai-hYkUS4ff3bNW32Ny63DfJLMBG2Zti5OVxRM
+TQID: 'https://experienceleague.adobe.com/7ZNXOai-hYkUS4ff3bNW32Ny63DfJLMBG2Zti5OVxRM'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
+subfeature_v2:
+  - id: dad884f1-e840-49a1-970e-2f965bdbc410
+    internal-label: Extensions
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Implementation
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 675
+source-wordcount: '675'
 ht-degree: 0%
-
 ---
-
 # Gestion des extensions
 
 Vous pouvez étendre les fonctionnalités de votre application Adobe Commerce en ajoutant une extension à partir de [Commerce Marketplace](https://marketplace.magento.com). Par exemple, vous pouvez ajouter un thème pour modifier l’aspect de votre storefront ou vous pouvez ajouter un package de langue pour localiser votre storefront et votre administrateur.
@@ -35,7 +48,7 @@ Bien que cette section explique comment obtenir le nom du compositeur et la vers
 
 **Pour obtenir le nom du compositeur d’un module à partir du Commerce Marketplace** :
 
-1. Connectez-vous à [&#128279;](https://marketplace.magento.com) avec le nom d&#39;utilisateur et le mot de passe utilisés pour acheter le composant.
+1. Connectez-vous à [](https://marketplace.magento.com) avec le nom d&#39;utilisateur et le mot de passe utilisés pour acheter le composant.
 
 1. Dans le coin supérieur droit, cliquez sur votre nom d’utilisateur et sélectionnez **Mon profil**.
 
@@ -61,7 +74,7 @@ Bien que cette section explique comment obtenir le nom du compositeur et la vers
 
 ## Installation d’une extension
 
-Adobe recommande de travailler dans une branche de développement lors de l’ajout d’une extension à votre implémentation. Lors de l’installation d’une extension, le nom de l’extension (`<VendorName>_<ComponentName>`) est automatiquement inséré dans le fichier [`app/etc/config.php`](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/files/deployment-files). Il n’est pas nécessaire de modifier directement le fichier.
+Adobe recommande de travailler dans une branche de développement lors de l’ajout d’une extension à votre implémentation. Lors de l’installation d’une extension, le nom de l’extension (`<VendorName>_<ComponentName>`) est automatiquement inséré dans le fichier [`app/etc/config.php`](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/deployment-files). Il n’est pas nécessaire de modifier directement le fichier.
 
 **Pour installer une extension** :
 
@@ -167,7 +180,7 @@ N’activez ou ne désactivez jamais une extension lorsque vous êtes connecté 
 
 ## Mettre à niveau une extension
 
-Avant de continuer, vous avez besoin du nom et de la version du compositeur pour l’extension. Vérifiez également que l’extension est compatible avec votre projet et la version d’Adobe Commerce. En particulier, [vérifiez la version PHP requise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements) avant de commencer.
+Avant de continuer, vous avez besoin du nom et de la version du compositeur pour l’extension. Vérifiez également que l’extension est compatible avec votre projet et la version d’Adobe Commerce. En particulier, [vérifiez la version PHP requise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) avant de commencer.
 
 **Pour mettre à jour une extension** :
 
@@ -201,4 +214,4 @@ Avant de continuer, vous avez besoin du nom et de la version du compositeur pour
    git push origin <branch-names>
    ```
 
-Si vous rencontrez des erreurs, reportez-vous à la section [Récupération après une défaillance de composant](../deploy/recover-failed-deployment.md). Pour en savoir plus sur l’utilisation des extensions avec Adobe Commerce, voir [Extensions](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/resources/extensions) dans le _Guide d’administration_.
+Si vous rencontrez des erreurs, reportez-vous à la section [Récupération après une défaillance de composant](../deploy/recover-failed-deployment.md). Pour en savoir plus sur l’utilisation des extensions avec Adobe Commerce, voir [Extensions](https://experienceleague.adobe.com/en/docs/commerce-admin/start/resources/extensions) dans le _Guide d’administration_.

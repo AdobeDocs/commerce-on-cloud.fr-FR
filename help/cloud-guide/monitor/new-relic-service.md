@@ -4,19 +4,25 @@ description: Découvrez le service New Relic disponible avec votre projet d’in
 feature: Cloud, Observability
 last-substantial-update: 2023-09-06T00:00:00.000Z
 exl-id: 10966241-311d-4b68-804d-4c9569bf933d
-TQID: https://experienceleague.adobe.com/TzgxuxAgzcExYd8BsFh5FTsgFAMy5-qjAOmUdlwqMME
+TQID: 'https://experienceleague.adobe.com/TzgxuxAgzcExYd8BsFh5FTsgFAMy5-qjAOmUdlwqMME'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 83bab481da52667e8ffb81563109429c7c6b65dd
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 457
+source-wordcount: '457'
 ht-degree: 0%
-
 ---
-
 # Présentation du service New Relic
 
 Tous les projets Adobe Commerce sur les infrastructures cloud incluent l’accès au service New Relic pour surveiller les performances et enquêter sur les événements de l’application [!DNL Commerce] et de l’infrastructure cloud.
@@ -24,8 +30,8 @@ Tous les projets Adobe Commerce sur les infrastructures cloud incluent l’accè
 Les fonctionnalités New Relic suivantes sont disponibles pour une utilisation avec les environnements de production et d’évaluation :
 
 - [New Relic APM](#new-relic-apm) (Pro et Starter)
-- [Infrastructure &#x200B;](#new-relic-infrastructure) (Pro uniquement)
-- [Gestion des journaux &#x200B;](#new-relic-log-management) (Pro uniquement)
+- [Infrastructure ](#new-relic-infrastructure) (Pro uniquement)
+- [Gestion des journaux ](#new-relic-log-management) (Pro uniquement)
 
 >[!INFO]
 >
@@ -41,8 +47,8 @@ Les fonctionnalités New Relic suivantes sont disponibles pour une utilisation a
 - **Surveillance des requêtes de base de données** : localisez et surveillez les requêtes de base de données qui affectent les performances.
 - **App Map** : permet d’afficher toutes les dépendances d’applications au sein de votre site, de vos extensions et de vos services externes.
 - **[!DNL Apdex]les scores**—Évaluez les performances et créez des alertes qui identifient les problèmes et vous informent lorsqu&#39;ils se produisent, par exemple les performances du site affectées par une vente flash ou un événement web. Voir [Score Apdex](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction/).
-- **Alertes gérées pour Adobe Commerce**-utilisez cette stratégie d’alerte New Relic pour surveiller les performances des applications et de l’infrastructure en fonction des bonnes pratiques du secteur. Voir [&#x200B; Surveillance des performances avec la politique d’alerte Alertes gérées pour Adobe Commerce](investigate-performance.md#monitor-performance-with-managed-alerts).
-- **Suivi des déploiements** : surveillez les événements de déploiement et analysez l’impact du déploiement sur les performances globales. Voir [&#x200B; Suivi des déploiements &#x200B;](track-deployments.md).
+- **Alertes gérées pour Adobe Commerce**-utilisez cette stratégie d’alerte New Relic pour surveiller les performances des applications et de l’infrastructure en fonction des bonnes pratiques du secteur. Voir [ Surveillance des performances avec la politique d’alerte Alertes gérées pour Adobe Commerce](investigate-performance.md#monitor-performance-with-managed-alerts).
+- **Suivi des déploiements** : surveillez les événements de déploiement et analysez l’impact du déploiement sur les performances globales. Voir [ Suivi des déploiements ](track-deployments.md).
 
 Votre projet d’infrastructure cloud d’Adobe Commerce comprend le logiciel pour le service New Relic APM ainsi qu’une clé de licence. Vous n&#39;avez pas besoin d&#39;acheter ou d&#39;installer un logiciel supplémentaire.
 
@@ -52,4 +58,4 @@ Les projets professionnels incluent le service [New Relic Infrastructure (NRI)](
 
 ## Gestion des journaux New Relic
 
-Tous les projets d&#39;infrastructure cloud Pro incluent la [gestion des journaux &#x200B;](log-management.md). Le service est préconfiguré pour agréger toutes les données de journal de vos environnements d’évaluation et de production et les afficher dans un tableau de bord de gestion des journaux centralisé.
+Tous les projets d&#39;infrastructure cloud Pro incluent la [gestion des journaux ](log-management.md). Le service est préconfiguré pour agréger toutes les données de journal de vos environnements d’évaluation et de production et les afficher dans un tableau de bord de gestion des journaux centralisé.

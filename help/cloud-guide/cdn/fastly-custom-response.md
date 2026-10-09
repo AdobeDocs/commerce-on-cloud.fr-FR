@@ -3,24 +3,30 @@ title: Personnaliser les pages d’erreur et de maintenance
 description: Découvrez comment personnaliser la page d’erreur par défaut qui s’affiche lorsque les requêtes au serveur d’origine Fastly échouent.
 feature: Cloud, Configuration, Security
 exl-id: 960195c7-5ee9-4134-8b0a-a251c5e6adf9
-TQID: https://experienceleague.adobe.com/EhK04rgGdkT3Tvd6wbefYjY9Yqozkzra4-ELdkH8sMo
+TQID: 'https://experienceleague.adobe.com/EhK04rgGdkT3Tvd6wbefYjY9Yqozkzra4-ELdkH8sMo'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 803
+source-wordcount: '803'
 ht-degree: 0%
-
 ---
-
 # Personnaliser les pages d’erreur et de maintenance
 
 Lorsqu’une requête à l’origine Fastly échoue, Fastly renvoie les pages de réponse par défaut avec une mise en forme de base et un message générique qui peut être déroutant pour les utilisateurs et les utilisatrices. Par exemple, Fastly renvoie la page d’erreur par défaut suivante lorsqu’une requête vers l’origine Fastly échoue en raison d’une erreur 503.
@@ -91,13 +97,13 @@ Pour ajouter la page de réponse personnalisée à la configuration Fastly :
 
    - Dans la notification en haut de la page, cliquez sur le lien *Gestion du cache*.
 
-   - Sur la page Gestion du cache, sélectionnez **Vider le cache Magento**.
+   - Sur la page Gestion du cache , sélectionnez **Vider le cache Magento**.
 
 ## Personnaliser la page d’erreur WAF
 
 Les clients voient la page d’erreur WAF suivante par défaut lorsqu’une demande de l’origine Fastly échoue avec une erreur `403 Forbidden` due à un événement de blocage [WAF](fastly-waf-service.md).
 
-![Page d&#39;erreur &#x200B;](../../assets/cdn/fastly-waf-403-error.png)
+![Page d&#39;erreur ](../../assets/cdn/fastly-waf-403-error.png)
 
 L’exemple de code suivant montre la source HTML de la page par défaut :
 
@@ -133,7 +139,7 @@ Vous pouvez utiliser l’option **Pages synthétiques personnalisées** > **Modi
 
 1. Dans le volet de droite, développez **Cache de page complet** > **Configuration rapide** > **Pages synthétiques personnalisées**.
 
-   ![Option Modifier la page d’erreur WAF &#x200B;](../../assets/cdn/fastly-custom-synthetic-pages-edit-waf.png)
+   ![Option Modifier la page d’erreur WAF ](../../assets/cdn/fastly-custom-synthetic-pages-edit-waf.png)
 
 1. Sélectionnez **Modifier la page WAF**.
 
@@ -153,7 +159,7 @@ Vous pouvez utiliser l’option **Pages synthétiques personnalisées** > **Modi
 
    - Dans la notification en haut de la page, cliquez sur le lien **Gestion du cache**.
 
-   - Sur la page Gestion du cache, sélectionnez **Vider le cache Magento**.
+   - Sur la page Gestion du cache , sélectionnez **Vider le cache Magento**.
 
 ## Afficher le numéro de rapport d’erreur
 

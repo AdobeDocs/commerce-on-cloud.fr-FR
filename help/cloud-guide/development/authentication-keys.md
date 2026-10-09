@@ -4,29 +4,35 @@ description: Découvrez comment appliquer des clés d’authentification à un p
 feature: Cloud, Security
 topic: Security
 exl-id: b5a24fcd-9b43-4ec9-8a0c-52956a74e45e
-TQID: https://experienceleague.adobe.com/nYBr0uvw1SZPSQqAU6uHTiitjZ0kcudsLdWagiWRLP8
+TQID: 'https://experienceleague.adobe.com/nYBr0uvw1SZPSQqAU6uHTiitjZ0kcudsLdWagiWRLP8'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 319
+source-wordcount: '319'
 ht-degree: 0%
-
 ---
-
 # Clés d’authentification
 
 Vous devez disposer d’une clé d’authentification pour accéder au référentiel Adobe Commerce et activer les commandes d’installation et de mise à jour pour votre projet d’infrastructure cloud Adobe Commerce. Il existe deux méthodes pour spécifier les informations d’identification d’autorisation du compositeur.
 
-- **fichier d’authentification** : fichier qui contient vos informations d’identification d’Adobe Commerce [informations d’autorisation](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) dans votre répertoire racine d’Adobe Commerce sur l’infrastructure cloud.
+- **fichier d’authentification** : fichier qui contient vos informations d’identification d’Adobe Commerce [informations d’autorisation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) dans votre répertoire racine d’Adobe Commerce sur l’infrastructure cloud.
 - **variable d’environnement** : variable d’environnement permettant de configurer des clés d’authentification dans votre projet d’infrastructure Adobe Commerce sur le cloud afin d’éviter toute exposition accidentelle.
 
 >[!BEGINSHADEBOX]
@@ -46,7 +52,7 @@ La méthode du fichier d’authentification est idéale lors de l’utilisation 
 1. Si votre répertoire racine de projet ne contient pas de fichier `auth.json`, créez-en un.
 
    - À l’aide d’un éditeur de texte, créez un fichier `auth.json` dans le répertoire racine du projet.
-   - Copiez le contenu de l’exemple de `auth.json`[&#128279;](https://github.com/magento/magento2/blob/2.3/auth.json.sample)  dans le nouveau fichier `auth.json`.
+   - Copiez le contenu de l’exemple de `auth.json`](https://github.com/magento/magento2/blob/2.3/auth.json.sample) [ dans le nouveau fichier `auth.json`.
 
 1. Remplacez `<public-key>` et `<private-key>` par vos informations d’authentification Adobe Commerce.
 

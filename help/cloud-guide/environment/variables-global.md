@@ -5,24 +5,41 @@ feature: Cloud, Configuration, Build, Deploy, Eventing, Logs, SCD
 recommendations: noDisplay, catalog
 role: Developer
 exl-id: 1f1ef6db-6836-4f71-b1e4-3629352d7e74
-TQID: https://experienceleague.adobe.com/2aBPh7We4-KqoUVDfd4B-ZNWoaUVO-3mWVbqErdgyoQ
+TQID: 'https://experienceleague.adobe.com/2aBPh7We4-KqoUVDfd4B-ZNWoaUVO-3mWVbqErdgyoQ'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: 5594f40c-5dc7-522f-a0e0-f84045197b3c
+    internal-label: Eventing
+  - id: d05f97c9-0a96-5792-92cf-f66ce7326e3a
+    internal-label: SCD
+subfeature_v2:
+  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
+  - id: 3c398179-d35a-51ba-b317-6c5b95feef5e
+    internal-label: Logs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 775
+source-wordcount: '775'
 ht-degree: 0%
-
 ---
-
 # Variables globales
 
 Les variables globales contrôlent les actions à chaque phase du processus de déploiement [!DNL Commerce] : création, déploiement et post-déploiement. Les variables globales ayant un impact sur chaque phase, vous devez les définir à l’étape `global` du fichier `.magento.env.yaml` :
@@ -97,7 +114,7 @@ stage:
 
 Activez la génération de contenu statique lorsqu’un utilisateur ou une utilisatrice (SCD) le demande. Le contenu statique à la demande est idéal pour le workflow de développement et de test, car il réduit le temps de déploiement.
 
-Le préchargement du cache à l’aide du hook [`post_deploy` réduit &#x200B;](../application/hooks-property.md) temps d’arrêt du site. Le réchauffement du cache n’est disponible que pour les projets Pro contenant des environnements d’évaluation et de production dans les projets [!DNL Cloud Console] et de démarrage. Ajoutez la variable d’environnement `SCD_ON_DEMAND` à l’étape `global` dans le fichier `.magento.env.yaml` :
+Le préchargement du cache à l’aide du hook [`post_deploy` réduit ](../application/hooks-property.md) temps d’arrêt du site. Le réchauffement du cache n’est disponible que pour les projets Pro contenant des environnements d’évaluation et de production dans les projets [!DNL Cloud Console] et de démarrage. Ajoutez la variable d’environnement `SCD_ON_DEMAND` à l’étape `global` dans le fichier `.magento.env.yaml` :
 
 ```yaml
 stage:
@@ -189,7 +206,7 @@ stage:
 - **Par défaut**—_Non défini_
 - **Version**—Adobe Commerce 2.1.4 et versions ultérieures
 
-Utilisez la variable `X_FRAME_CONFIGURATION` pour modifier la configuration de l’en-tête [`X-Frame-Options`](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/security/xframe-options) de votre site Adobe Commerce. Cette configuration contrôle la manière dont le navigateur effectue le rendu d’une page dans une `<frame>`, un `<iframe>` ou un `<object>`. Utilisez l’une des options suivantes :
+Utilisez la variable `X_FRAME_CONFIGURATION` pour modifier la configuration de l’en-tête [`X-Frame-Options`](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/security/xframe-options) de votre site Adobe Commerce. Cette configuration contrôle la manière dont le navigateur effectue le rendu d’une page dans une `<frame>`, un `<iframe>` ou un `<object>`. Utilisez l’une des options suivantes :
 
 - `DENY` : la page ne peut pas être affichée dans un cadre.
 - `SAMEORIGIN` : (paramètre Adobe Commerce par défaut). La page ne peut être affichée que dans un cadre de la même origine que la page elle-même.

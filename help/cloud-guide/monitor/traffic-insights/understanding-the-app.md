@@ -3,13 +3,22 @@ title: Présentation de l’application
 description: Découvrez le fonctionnement des statistiques de trafic Adobe Commerce, comment les piloter avec des filtres, comment leurs données sont mesurées, ainsi que leurs limites et performances de données.
 feature: Cloud, Observability
 role: Admin
-source-git-commit: 09318645dd341a74d72237f4d4162d1d26d03651
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
-
 ---
-
 # Présentation de l’application
 
 L’application [!DNL Adobe Commerce Traffic Insights] visualise les journaux d’accès au réseau de diffusion de contenu (CDN) Fastly bruts dans une image du trafic Edge d’un magasin. Les graphiques sont regroupés dans les onglets suivants :
@@ -59,4 +68,4 @@ Comprendre quelques choix de mesure facilite la confiance et l’interprétation
 ## Limites et performances des données
 
 - **rétention de 30 jours** - Les journaux du réseau CDN Fastly sont conservés dans New Relic pendant **30 jours** selon la formule d’abonnement. Toute fenêtre que vous sélectionnez doit être comprise dans les 30 derniers jours. Pour une bande passante **totale** à plus long terme, utilisez l’intégration directe Fastly dans le panneau de [!DNL Adobe Commerce admin], **Tableau de bord > Fastly > Bande passante > Total**, mais considérez qu’elle renvoie par ID de service ; les données doivent donc être collectées par environnement et agrégées pour être comparées à l’indemnité contractuelle.
-- **limite de requête de 60 secondes** - Le NRQL de chaque graphique dispose d’une limite d’exécution de [&#x200B; 60 secondes](https://docs.newrelic.com/docs/nrql/using-nrql/rate-limits-nrql-queries/#query-duration). Pour les comptes à trafic très élevé, un widget peut expirer lors de l’analyse d’un trop grand nombre d’enregistrements de journal. Si cela se produit, réduisez la période et rechargez les graphiques. Vous pouvez le développer à nouveau pour des onglets plus clairs.
+- **limite de requête de 60 secondes** - Le NRQL de chaque graphique dispose d’une limite d’exécution de [ 60 secondes](https://docs.newrelic.com/docs/nrql/using-nrql/rate-limits-nrql-queries/#query-duration). Pour les comptes à trafic très élevé, un widget peut expirer lors de l’analyse d’un trop grand nombre d’enregistrements de journal. Si cela se produit, réduisez la période et rechargez les graphiques. Vous pouvez le développer à nouveau pour des onglets plus clairs.
