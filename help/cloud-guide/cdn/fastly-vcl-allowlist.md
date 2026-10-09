@@ -3,7 +3,7 @@ title: VCL personnalisé pour autoriser les requêtes
 description: Filtrez les requêtes entrantes et autorisez l’accès par adresse IP pour les sites Adobe Commerce à l’aide d’une liste de contrôle d’accès Fastly Edge et d’un fragment de code VCL personnalisé.
 feature: Cloud, Configuration, Security
 exl-id: 836779b5-5029-4a21-ad77-0c82ebbbcdd5
-last-update: 2026-08-25T00:00:00.000Z
+last-update: 2026-08-25
 TQID: 'https://experienceleague.adobe.com/szgjjm841ttfcCwULGf3lBNSRhixIhMPfmoYILbNGKY'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -23,7 +23,7 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
+source-git-commit: 35ab85b64dabcaab652e3f0025b99bdcba81a080
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Le code de fragment de code VCL personnalisé suivant (format JSON) montre la lo
 }
 ```
 
-Avant de [créer un extrait de code personnalisé](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist#add-the-custom-vcl-snippet) à partir de cet exemple, passez en revue les valeurs pour déterminer si vous devez apporter des modifications. Saisissez ensuite chaque valeur dans les champs respectifs, par exemple `type` dans le champ Type `content` dans le champ Contenu .
+Avant de [créer un extrait de code personnalisé](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist#add-the-custom-vcl-snippet) à partir de cet exemple, passez en revue les valeurs pour déterminer si vous devez apporter des modifications. Saisissez ensuite chaque valeur dans les champs respectifs, par exemple `type` dans le champ Type `content` dans le champ Contenu .
 
 - `name` — Nom du fragment de code VCL. Pour cet exemple, `allowlist`.
 
