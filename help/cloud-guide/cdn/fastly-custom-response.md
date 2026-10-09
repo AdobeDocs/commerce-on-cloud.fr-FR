@@ -103,7 +103,7 @@ Pour ajouter la page de réponse personnalisée à la configuration Fastly :
 
 Les clients voient la page d’erreur WAF suivante par défaut lorsqu’une demande de l’origine Fastly échoue avec une erreur `403 Forbidden` due à un événement de blocage [WAF](fastly-waf-service.md).
 
-![Page d&#39;erreur ](../../assets/cdn/fastly-waf-403-error.png)
+![Page d&#39;erreur &#x200B;](../../assets/cdn/fastly-waf-403-error.png)
 
 L’exemple de code suivant montre la source HTML de la page par défaut :
 
@@ -139,7 +139,7 @@ Vous pouvez utiliser l’option **Pages synthétiques personnalisées** > **Modi
 
 1. Dans le volet de droite, développez **Cache de page complet** > **Configuration rapide** > **Pages synthétiques personnalisées**.
 
-   ![Option Modifier la page d’erreur WAF ](../../assets/cdn/fastly-custom-synthetic-pages-edit-waf.png)
+   ![Option Modifier la page d’erreur WAF &#x200B;](../../assets/cdn/fastly-custom-synthetic-pages-edit-waf.png)
 
 1. Sélectionnez **Modifier la page WAF**.
 

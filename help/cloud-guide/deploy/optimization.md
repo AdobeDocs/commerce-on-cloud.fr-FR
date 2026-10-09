@@ -38,7 +38,7 @@ Les rubriques suivantes peuvent vous aider à mieux comprendre comment optimiser
 - [Processus de déploiement dans le cloud](process.md)
 Le processus de déploiement dans le cloud comprend trois phases. Vous pouvez tirer parti des forces et des faiblesses de chaque phase.
 
-- Déploiement sans interruption de service [](reduce-downtime.md)
+- Déploiement sans interruption de service [&#128279;](reduce-downtime.md)
 Découvrez ce qui se passe pendant le déploiement et comment réduire les temps d’arrêt de vos expériences de magasin lors d’une mise à jour de l’environnement de production.
 
 - [Déploiement de contenu statique](static-content.md)

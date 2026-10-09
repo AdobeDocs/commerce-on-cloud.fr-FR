@@ -57,7 +57,7 @@ Vous pouvez optimiser davantage les performances du niveau de service en achemin
 
 ### Niveau web
 
-Il existe trois nœuds web pour le traitement des requêtes et du trafic web : **php-fpm** et **NGINX**. En plus de la mise à l’échelle verticale en augmentant la puissance et la mémoire, le niveau web peut être mis à l’échelle horizontale en ajoutant des serveurs web à un cluster existant lorsqu’il est limité au niveau PHP. Pour découvrir comment les nœuds web se mettent à l’échelle automatiquement, consultez [ Mise à l’échelle automatique ](autoscaling.md).
+Il existe trois nœuds web pour le traitement des requêtes et du trafic web : **php-fpm** et **NGINX**. En plus de la mise à l’échelle verticale en augmentant la puissance et la mémoire, le niveau web peut être mis à l’échelle horizontale en ajoutant des serveurs web à un cluster existant lorsqu’il est limité au niveau PHP. Pour découvrir comment les nœuds web se mettent à l’échelle automatiquement, consultez [&#x200B; Mise à l’échelle automatique &#x200B;](autoscaling.md).
 
 ![Mise à l’échelle de niveau web](../../assets/scaling-web.png)
 
@@ -73,7 +73,7 @@ Les projets Pro avec l&#39;architecture à l&#39;échelle ont six nœuds disponi
 
 - 3 nœuds de service m5.2xlarge (8 CPU, 32 Go de RAM)
 
-Cependant, chaque projet est unique et nécessite une surveillance des performances pour analyser correctement la gestion des ressources. Chaque compte comprend le service [](../monitor/new-relic-service.md), qui se connecte automatiquement aux données de l’application et à l’analyse des performances pour fournir une surveillance dynamique du serveur. Plus précisément, vous pouvez utiliser le service New Relic pour surveiller l’utilisation de CPU et de la RAM afin de déterminer les nœuds qui nécessitent des ressources supplémentaires. Lorsqu’une ressource atteint sa capacité maximale ou que vous constatez une dégradation des performances en fonction des analyses, vous pouvez créer une demande afin d’adapter votre infrastructure en fonction de la demande.
+Cependant, chaque projet est unique et nécessite une surveillance des performances pour analyser correctement la gestion des ressources. Chaque compte comprend le service [&#128279;](../monitor/new-relic-service.md), qui se connecte automatiquement aux données de l’application et à l’analyse des performances pour fournir une surveillance dynamique du serveur. Plus précisément, vous pouvez utiliser le service New Relic pour surveiller l’utilisation de CPU et de la RAM afin de déterminer les nœuds qui nécessitent des ressources supplémentaires. Lorsqu’une ressource atteint sa capacité maximale ou que vous constatez une dégradation des performances en fonction des analyses, vous pouvez créer une demande afin d’adapter votre infrastructure en fonction de la demande.
 
 ### Accès SSH
 
@@ -127,4 +127,4 @@ project-id@server-id:~$
 
 Les emplacements des journaux varient légèrement en fonction du nœud. Par exemple, le **journal des erreurs MySQL** (`/var/log/mysql/mysql-error.log`) est disponible sur un nœud de service, mais pas sur un nœud web.
 
-Chaque compte Pro inclut le service [Journaux ](../monitor/new-relic-service.md), qui se connecte automatiquement aux données de journal de l&#39;application pour fournir une gestion dynamique des journaux. Les données de journal agrégées de tous les nœuds s’affichent dans l’application Journaux New Relic afin que vous puissiez résoudre les problèmes de performances sur des nœuds spécifiques à partir d’un seul tableau de bord.
+Chaque compte Pro inclut le service [Journaux &#x200B;](../monitor/new-relic-service.md), qui se connecte automatiquement aux données de journal de l&#39;application pour fournir une gestion dynamique des journaux. Les données de journal agrégées de tous les nœuds s’affichent dans l’application Journaux New Relic afin que vous puissiez résoudre les problèmes de performances sur des nœuds spécifiques à partir d’un seul tableau de bord.

@@ -56,7 +56,7 @@ Chaque version d’Adobe Commerce nécessite une contrainte différente basée s
 
 Si vous souhaitez installer Adobe Commerce `2.3.5-p2`, définissez `current_version` sur `2.3.5` et le `next_version` sur `2.3.6`. La contrainte `">=2.3.5 <2.3.6"` installe le dernier package disponible pour la version 2.3.5.
 
-Vous pouvez toujours trouver la dernière contrainte de métapaquet dans le modèle de ](https://github.com/magento/magento-cloud/blob/master/composer.json).[`magento-cloud`
+Vous pouvez toujours trouver la dernière contrainte de métapaquet dans le modèle de [&#128279;](https://github.com/magento/magento-cloud/blob/master/composer.json).`magento-cloud`
 
 L’exemple suivant place une contrainte pour le métapaquet Adobe Commerce sur l’infrastructure cloud sur toute version supérieure ou égale à la version actuelle 2.4.8 et inférieure à la version suivante 2.4.9 :
 

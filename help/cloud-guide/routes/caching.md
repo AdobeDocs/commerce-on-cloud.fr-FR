@@ -95,7 +95,7 @@ La durée du cache est déterminée par la valeur de l’en-tête de réponse `C
 
 ## Clé de cache
 
-Pour décider comment mettre en cache une réponse, Adobe Commerce crée une clé de cache qui dépend de plusieurs facteurs et stocke la réponse associée à cette clé. Lorsqu’une requête est fournie avec la même clé de cache, la réponse est réutilisée. Son objectif est similaire à celui de l’en-tête HTTP ](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.44).[`Vary`
+Pour décider comment mettre en cache une réponse, Adobe Commerce crée une clé de cache qui dépend de plusieurs facteurs et stocke la réponse associée à cette clé. Lorsqu’une requête est fournie avec la même clé de cache, la réponse est réutilisée. Son objectif est similaire à celui de l’en-tête HTTP [&#128279;](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.44).`Vary`
 
 Les paramètres `headers` et clés de `cookies` permettent de modifier cette clé de cache.
 

@@ -48,7 +48,7 @@ Bien que cette section explique comment obtenir le nom du compositeur et la vers
 
 **Pour obtenir le nom du compositeur d’un module à partir du Commerce Marketplace** :
 
-1. Connectez-vous à [](https://marketplace.magento.com) avec le nom d&#39;utilisateur et le mot de passe utilisés pour acheter le composant.
+1. Connectez-vous à [&#128279;](https://marketplace.magento.com) avec le nom d&#39;utilisateur et le mot de passe utilisés pour acheter le composant.
 
 1. Dans le coin supérieur droit, cliquez sur votre nom d’utilisateur et sélectionnez **Mon profil**.
 

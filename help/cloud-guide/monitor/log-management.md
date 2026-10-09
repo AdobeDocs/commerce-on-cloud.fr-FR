@@ -29,7 +29,7 @@ ht-degree: 0%
 ---
 # Gestion des journaux New Relic
 
-Tous les projets d’infrastructure cloud incluent la [gestion des journaux ](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/). Le service est préconfiguré pour agréger toutes les données de journal de vos environnements d’évaluation et de production et les afficher dans un tableau de bord de gestion des journaux centralisé.
+Tous les projets d’infrastructure cloud incluent la [gestion des journaux &#x200B;](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/). Le service est préconfiguré pour agréger toutes les données de journal de vos environnements d’évaluation et de production et les afficher dans un tableau de bord de gestion des journaux centralisé.
 
 Les données agrégées incluent des informations provenant des journaux suivants :
 
@@ -50,7 +50,7 @@ Utilisez l’application Journaux New Relic pour rechercher dans les données de
 
 **Pour utiliser l’application Journaux New Relic** :
 
-1. Connectez-vous à votre compte [](https://login.newrelic.com/login).
+1. Connectez-vous à votre compte [&#128279;](https://login.newrelic.com/login).
 
 1. Sélectionnez **Journaux** dans le menu de navigation de l’Explorateur.
 

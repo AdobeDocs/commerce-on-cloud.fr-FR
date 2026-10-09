@@ -51,9 +51,9 @@ Le processus de création et de déploiement est légèrement différent pour ch
 
 ## Suivre le processus
 
-Vous pouvez effectuer le suivi des actions de génération et de déploiement en temps réel à l’aide du terminal ou des messages de statut de [!DNL Cloud Console] (`in-progress`, `pending`, `success` ou `failed`) affichés pendant le processus de déploiement. Vous pouvez afficher les détails dans les fichiers journaux. Voir [ Afficher les journaux ](../test/log-locations.md).
+Vous pouvez effectuer le suivi des actions de génération et de déploiement en temps réel à l’aide du terminal ou des messages de statut de [!DNL Cloud Console] (`in-progress`, `pending`, `success` ou `failed`) affichés pendant le processus de déploiement. Vous pouvez afficher les détails dans les fichiers journaux. Voir [&#x200B; Afficher les journaux &#x200B;](../test/log-locations.md).
 
-Si vous utilisez des référentiels GitHub externes, le journal des opérations ne s’affiche pas dans la session GitHub. Cependant, vous pouvez toujours suivre l’activité dans l’interface pour le référentiel externe et le [!DNL Cloud Console]. Pour plus d&#39;informations, consultez la section [ Intégrations ](../integrations/overview.md).
+Si vous utilisez des référentiels GitHub externes, le journal des opérations ne s’affiche pas dans la session GitHub. Cependant, vous pouvez toujours suivre l’activité dans l’interface pour le référentiel externe et le [!DNL Cloud Console]. Pour plus d&#39;informations, consultez la section [&#x200B; Intégrations &#x200B;](../integrations/overview.md).
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ Examinez ces bonnes pratiques et considérations concernant votre processus de d
 
 - **Assurez-vous d’exécuter la version la plus récente du package `ece-tools`**
 
-  Voir [ Notes de mise à jour pour les outils CEE](../release-notes/ece-tools-package.md).
+  Voir [&#x200B; Notes de mise à jour pour les outils CEE](../release-notes/ece-tools-package.md).
 
 - **Suivez le processus de création et de déploiement**
 
@@ -103,7 +103,7 @@ Examinez ces bonnes pratiques et considérations concernant votre processus de d
 
 - **Après avoir effectué les tests dans les environnements locaux et d’intégration, déployez et testez-les dans l’environnement d’évaluation**
 
-  Voir [ Test d’évaluation et de production ](../test/staging-and-production.md).
+  Voir [&#x200B; Test d’évaluation et de production &#x200B;](../test/staging-and-production.md).
 
 - **Vérifiez la configuration de l’environnement de production**
 
@@ -148,7 +148,7 @@ Cette phase crée la base de code et exécute les crochets dans la section `buil
 
 - Application de correctifs dans `vendor/magento/ece-patches` et de correctifs facultatifs spécifiques au projet dans `m2-hotfixes`
 - Régénère le code et la configuration [injection de dépendance](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) (c’est-à-dire le répertoire `generated/`, qui comprend `generated/code` et `generated/metapackage`) à l’aide de `bin/magento setup:di:compile`.
-- Vérifie si le fichier [`app/etc/config.php`](../store/store-settings.md) existe dans la base de code. Adobe Commerce génère automatiquement ce fichier s’il ne le détecte pas lors de la phase de création et inclut une liste de modules et d’extensions. S’il existe, la phase de création se poursuit normalement, comprime les fichiers statiques à l’aide de GZIP et se déploie, ce qui réduit le temps d’arrêt dans la phase de déploiement. Pour en savoir plus sur la personnalisation ou la désactivation de la compression de fichiers](../environment/variables-build.md) voir [Options de création.
+- Vérifie si le fichier [`app/etc/config.php`](../store/store-settings.md) existe dans la base de code. Adobe Commerce génère automatiquement ce fichier s’il ne le détecte pas lors de la phase de création et inclut une liste de modules et d’extensions. S’il existe, la phase de création se poursuit normalement, comprime les fichiers statiques à l’aide de GZIP et se déploie, ce qui réduit le temps d’arrêt dans la phase de déploiement. Pour en savoir plus sur la personnalisation ou la désactivation de la compression de fichiers[&#128279;](../environment/variables-build.md) voir Options de création.
 
 >[!WARNING]
 >

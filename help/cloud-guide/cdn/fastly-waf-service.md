@@ -52,7 +52,7 @@ Le service WAF offre les avantages suivants :
 - **Soutien à l&#39;exploitation et à la maintenance**—
   - Adobe et Fastly configurent et gèrent vos journaux, règles et alertes pour le service WAF.
   - Adobe trie les tickets du service clientèle liés aux problèmes de service WAF qui bloquent le trafic légitime en tant que problèmes de priorité 1.
-  - Les mises à niveau automatisées vers la version de service WAF assurent une couverture immédiate des exploits nouveaux ou en évolution. Voir [Maintenance et mises à niveau de ](#waf-maintenance-and-updates).
+  - Les mises à niveau automatisées vers la version de service WAF assurent une couverture immédiate des exploits nouveaux ou en évolution. Voir [Maintenance et mises à niveau de &#x200B;](#waf-maintenance-and-updates).
 
 >[!TIP]
 >
@@ -64,7 +64,7 @@ Adobe active le service WAF sur de nouveaux comptes dans les 2 à 3 semaines sui
 
 >[!NOTE]
 >
->Avant de pouvoir utiliser le service WAF, vous devez acheminer tout le trafic externe vers votre projet d’infrastructure cloud d’Adobe Commerce via le service Fastly . Voir [ Configuration rapide ](fastly-configuration.md).
+>Avant de pouvoir utiliser le service WAF, vous devez acheminer tout le trafic externe vers votre projet d’infrastructure cloud d’Adobe Commerce via le service Fastly . Voir [&#x200B; Configuration rapide &#x200B;](fastly-configuration.md).
 
 ## Fonctionnement
 
@@ -76,7 +76,7 @@ Le service WAF inspecte le trafic HTTP et HTTPS (requêtes GET et POST) par rapp
 
 Lorsque le service WAF est activé, il inspecte tout le trafic web et administrateur par rapport aux règles de WAF et bloque toute requête web qui déclenche une règle. Lorsqu’une requête est bloquée, le demandeur voit une page d’erreur de `403 Forbidden` par défaut qui inclut un identifiant de référence pour l’événement de blocage.
 
-![Page d&#39;erreur ](../../assets/cdn/fastly-waf-403-error.png)
+![Page d&#39;erreur &#x200B;](../../assets/cdn/fastly-waf-403-error.png)
 
 Vous pouvez personnaliser cette page de réponse d’erreur à partir de l’Administration. Voir [Personnaliser la page de réponse de WAF](fastly-custom-response.md#customize-the-waf-error-page).
 
@@ -107,5 +107,5 @@ Le service WAF standard optimisé par Fastly ne prend pas en charge les fonction
 
 Le service WAF vous permet de bloquer ou d’autoriser le trafic en fonction des adresses IP. Vous pouvez ajouter des listes de contrôle d’accès (ACL) et des fragments de code VCL personnalisés à votre service Fastly pour spécifier les adresses IP et la logique VCL pour bloquer ou autoriser le trafic. Voir [Extraits personnalisés Fastly VCL](fastly-vcl-custom-snippets.md).
 
-Le service WAF ne prend pas en charge le filtrage des requêtes TCP, UDP ou ICMP. Cependant, cette fonctionnalité est fournie par la protection DDoS intégrée incluse avec le service Fast CDN. Voir [ Protection DDoS ](fastly.md#ddos-protection).
+Le service WAF ne prend pas en charge le filtrage des requêtes TCP, UDP ou ICMP. Cependant, cette fonctionnalité est fournie par la protection DDoS intégrée incluse avec le service Fast CDN. Voir [&#x200B; Protection DDoS &#x200B;](fastly.md#ddos-protection).
 

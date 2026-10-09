@@ -26,7 +26,7 @@ ht-degree: 0%
 ---
 # Inclusions côté serveur
 
-Les [ inclusions côté serveur ](https://nginx.org/en/docs/http/ngx_http_ssi_module.html) (SSI) sont des directives dans les pages HTML qui sont évaluées sur le serveur pendant le rendu des pages. SSI vous permet d’ajouter du contenu généré dynamiquement à une page HTML existante sans diffuser la page entière.
+Les [&#x200B; inclusions côté serveur &#x200B;](https://nginx.org/en/docs/http/ngx_http_ssi_module.html) (SSI) sont des directives dans les pages HTML qui sont évaluées sur le serveur pendant le rendu des pages. SSI vous permet d’ajouter du contenu généré dynamiquement à une page HTML existante sans diffuser la page entière.
 
 Vous pouvez activer ou désactiver SSI par route dans votre `.magento/routes.yaml` ; par exemple :
 
@@ -45,7 +45,7 @@ Vous pouvez activer ou désactiver SSI par route dans votre `.magento/routes.yam
             enabled: true
 ```
 
-SSI vous permet d’inclure dans votre réponse HTML des directives qui font en sorte que le serveur remplisse des parties d’HTML, en respectant toute [ configuration de mise en cache](caching.md) existante.
+SSI vous permet d’inclure dans votre réponse HTML des directives qui font en sorte que le serveur remplisse des parties d’HTML, en respectant toute [&#x200B; configuration de mise en cache](caching.md) existante.
 
 L&#39;exemple suivant montre comment insérer un contrôle de date dynamique en haut d&#39;une page et un autre contrôle de date en bas qui est mis à jour toutes les 600 secondes :
 

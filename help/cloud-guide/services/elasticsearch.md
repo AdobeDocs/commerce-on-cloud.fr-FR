@@ -32,7 +32,7 @@ ht-degree: 0%
 ---
 # Configuration du service Elasticsearch
 
-[](https://www.elastic.co) est un produit open-source qui vous permet de prendre des données de n’importe quelle source, n’importe quel format, et de les rechercher et de les visualiser en temps réel.
+[&#128279;](https://www.elastic.co) est un produit open-source qui vous permet de prendre des données de n’importe quelle source, n’importe quel format, et de les rechercher et de les visualiser en temps réel.
 
 {{elasticsearch-support}}
 
@@ -218,7 +218,7 @@ La prise en charge des versions de service et de la compatibilité pour Adobe Co
 
 ## Redémarrez le service Elasticsearch
 
-Si vous devez redémarrer le service [](https://www.elastic.co), vous devez contacter l’assistance Adobe Commerce.
+Si vous devez redémarrer le service [&#128279;](https://www.elastic.co), vous devez contacter l’assistance Adobe Commerce.
 
 ## Configuration de recherche supplémentaire
 

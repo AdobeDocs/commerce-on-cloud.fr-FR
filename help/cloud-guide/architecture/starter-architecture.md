@@ -147,7 +147,7 @@ Adobe Commerce sur les infrastructures cloud utilise le système d&#39;exploitat
 
 - [OpenSearch](../services/opensearch.md)
 
-Dans les environnements d’évaluation et de production, vous utilisez Fastly pour le CDN et la mise en cache. La dernière version de l’extension Fastly CDN s’installe lors de l’approvisionnement initial de votre projet. Vous pouvez mettre à niveau l’extension pour obtenir les derniers correctifs et améliorations. Voir [Module de réseau CDN Fastly pour Magento 2](https://github.com/fastly/fastly-magento2). Vous avez également accès à [](../monitor/account-management.md) pour le suivi des performances.
+Dans les environnements d’évaluation et de production, vous utilisez Fastly pour le CDN et la mise en cache. La dernière version de l’extension Fastly CDN s’installe lors de l’approvisionnement initial de votre projet. Vous pouvez mettre à niveau l’extension pour obtenir les derniers correctifs et améliorations. Voir [Module de réseau CDN Fastly pour Magento 2](https://github.com/fastly/fastly-magento2). Vous avez également accès à [&#128279;](../monitor/account-management.md) pour le suivi des performances.
 
 Utilisez les fichiers suivants pour configurer les versions de logiciels que vous souhaitez utiliser dans votre implémentation.
 
@@ -159,7 +159,7 @@ Utilisez les fichiers suivants pour configurer les versions de logiciels que vou
 
 ### Sauvegarde et reprise après sinistre
 
-Vous pouvez créer une sauvegarde de votre base de données et de votre système de fichiers à l’aide du [!DNL Cloud Console] ou de l’interface de ligne de commande. Voir [ Gestion des sauvegardes ](../storage/snapshots.md).
+Vous pouvez créer une sauvegarde de votre base de données et de votre système de fichiers à l’aide du [!DNL Cloud Console] ou de l’interface de ligne de commande. Voir [&#x200B; Gestion des sauvegardes &#x200B;](../storage/snapshots.md).
 
 ## Préparation au développement
 

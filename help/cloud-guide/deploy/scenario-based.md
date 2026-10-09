@@ -243,7 +243,7 @@ hooks:
 
 ## Ajout d’un module personnalisé pour étendre les `ece-tools`
 
-Le package `ece-tools` fournit des interfaces API par défaut qui respectent les normes de version sémantique. Toutes les interfaces API sont marquées avec l’annotation ****. Vous pouvez remplacer l’implémentation par défaut de l’API par la vôtre en créant un module personnalisé et en modifiant le code par défaut selon vos besoins.
+Le package `ece-tools` fournit des interfaces API par défaut qui respectent les normes de version sémantique. Toutes les interfaces API sont marquées avec l’annotation **&#x200B;**. Vous pouvez remplacer l’implémentation par défaut de l’API par la vôtre en créant un module personnalisé et en modifiant le code par défaut selon vos besoins.
 
 Pour utiliser le module personnalisé avec Adobe Commerce sur une infrastructure cloud, vous devez enregistrer votre module dans la liste des extensions du package `ece-tools`. Le processus d’enregistrement est similaire à celui que vous utilisez pour enregistrer des modules dans Adobe Commerce.
 

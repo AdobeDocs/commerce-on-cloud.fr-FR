@@ -71,7 +71,7 @@ La combinaison back-end et cache-service prise en charge dépend de la version d
 
 >[!NOTE]
 >
->Pour obtenir des conseils plus détaillés sur la configuration des services Redis et Valkey, voir [ Bonnes pratiques pour la configuration des services Valkey et Redis ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)
+>Pour obtenir des conseils plus détaillés sur la configuration des services Redis et Valkey, voir [&#x200B; Bonnes pratiques pour la configuration des services Valkey et Redis &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)
 
 Par défaut, le processus de déploiement remplace la configuration de cache correspondante. Pour fusionner les valeurs spécifiées avec la configuration générée, définissez `_merge` sur `true` :
 
@@ -691,7 +691,7 @@ stage:
 
 - **Default**—`quick`
 
-Permet de personnaliser la [stratégie de déploiement](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy) pour le contenu statique. Voir [ Déploiement de fichiers de vue statiques ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment).
+Permet de personnaliser la [stratégie de déploiement](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy) pour le contenu statique. Voir [&#x200B; Déploiement de fichiers de vue statiques &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment).
 
 Utilisez ces options _uniquement_ si vous disposez de plusieurs paramètres régionaux :
 

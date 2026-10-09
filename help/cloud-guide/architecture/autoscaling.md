@@ -68,12 +68,12 @@ Les seuils minimum et maximum sont déterminés et fixés en fonction des limite
 
 ### Surveillance des seuils avec New Relic
 
-Vous pouvez utiliser le service [](../monitor/new-relic-service.md) pour surveiller certains seuils, tels que le nombre d&#39;hôtes et l&#39;utilisation de CPU. Les requêtes New Relic suivantes utilisent une notation de variable à des fins d’`cluster-id` uniquement.
+Vous pouvez utiliser le service [&#128279;](../monitor/new-relic-service.md) pour surveiller certains seuils, tels que le nombre d&#39;hôtes et l&#39;utilisation de CPU. Les requêtes New Relic suivantes utilisent une notation de variable à des fins d’`cluster-id` uniquement.
 
 >[!TIP]
 >
 >Pour plus d’informations sur la création de requêtes, voir [syntaxe, clauses et fonctions NRQL](https://docs.newrelic.com/docs/query-your-data/nrql-new-relic-query-language/get-started/nrql-syntax-clauses-functions/) dans la documentation de _New Relic_.
->Utilisez vos requêtes pour créer un tableau de bord [](https://docs.newrelic.com/docs/query-your-data/explore-query-data/dashboards/introduction-dashboards/).
+>Utilisez vos requêtes pour créer un tableau de bord [&#128279;](https://docs.newrelic.com/docs/query-your-data/explore-query-data/dashboards/introduction-dashboards/).
 
 #### Nombre d’hôtes
 
@@ -85,7 +85,7 @@ SELECT uniqueCount(SystemSample.entityId) AS 'Infrastructure hosts', uniqueCount
 
 Dans la capture d’écran suivante, **hôtes APM vus** fait référence au nombre d’hôtes avec des transactions consignées pendant la période sélectionnée.
 
-![Nombre d’hôtes ](../../assets/new-relic/host-count.png)
+![Nombre d’hôtes &#x200B;](../../assets/new-relic/host-count.png)
 
 #### Utilisation de CPU
 

@@ -193,7 +193,7 @@ Pour plus d’informations, consultez le [Guide des paramètres du serveur princ
 
 L’authentification de base est une fonctionnalité permettant de protéger chaque page et ressource de votre site avec un nom d’utilisateur et un mot de passe.
 
-Adobe **déconseillé** active l’authentification de base sur votre environnement de production. Vous pouvez le configurer sur Évaluation pour protéger votre site pendant le processus de développement. Consultez le [ Guide d’authentification de base ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BASIC-AUTH.md) dans la documentation du module Fastly CDN.
+Adobe **déconseillé** active l’authentification de base sur votre environnement de production. Vous pouvez le configurer sur Évaluation pour protéger votre site pendant le processus de développement. Consultez le [&#x200B; Guide d’authentification de base &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BASIC-AUTH.md) dans la documentation du module Fastly CDN.
 
 Si vous ajoutez un accès utilisateur et activez l’authentification de base lors de l’évaluation, vous pouvez toujours accéder à l’administrateur sans avoir besoin d’informations d’identification supplémentaires.
 
@@ -209,7 +209,7 @@ Pour obtenir des instructions sur la création de fragments de code VCL personna
 
 >[!NOTE]
 >
->Avant d’ajouter du code VCL personnalisé, des dictionnaires Edge et des listes de contrôle d’accès à votre configuration de module Fastly, vérifiez que le service de mise en cache Fastly fonctionne avec la configuration par défaut. Voir [ Configuration rapide ](fastly-configuration.md).
+>Avant d’ajouter du code VCL personnalisé, des dictionnaires Edge et des listes de contrôle d’accès à votre configuration de module Fastly, vérifiez que le service de mise en cache Fastly fonctionne avec la configuration par défaut. Voir [&#x200B; Configuration rapide &#x200B;](fastly-configuration.md).
 
 ## Gestion des domaines
 
@@ -217,7 +217,7 @@ Pour les projets Starter et Pro, vous pouvez utiliser l’option [!UICONTROL Dom
 
 - Pour les projets de démarrage, accédez à l’URL du projet sous l’onglet [!UICONTROL Domains] dans la [!DNL Cloud Console] pour ajouter votre URL de projet.
 
-- Pour les projets Pro, envoyez un [ticket d’assistance ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour ajouter le domaine à la configuration de votre projet cloud. L’équipe d’assistance met également à jour la configuration du compte Fastly Adobe Commerce pour ajouter le domaine.
+- Pour les projets Pro, envoyez un [ticket d’assistance &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour ajouter le domaine à la configuration de votre projet cloud. L’équipe d’assistance met également à jour la configuration du compte Fastly Adobe Commerce pour ajouter le domaine.
 
 **Pour gérer la configuration de domaine Fastly à partir de l’administrateur** :
 

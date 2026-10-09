@@ -35,7 +35,7 @@ Vous pouvez configurer votre référentiel Bitbucket pour créer et déployer au
 ## Conditions préalables
 
 - Accès des administrateurs au projet d’infrastructure cloud d’Adobe Commerce
-- [`magento-cloud` de l’interface de ligne ](../dev-tools/cloud-cli-overview.md) commande dans votre environnement local
+- [`magento-cloud` de l’interface de ligne &#x200B;](../dev-tools/cloud-cli-overview.md) commande dans votre environnement local
 - Un compte Bitbucket
 - Accès de l’administrateur au référentiel Bitbucket
 - Clé d’accès SSH pour le référentiel Bitbucket
@@ -99,7 +99,7 @@ L’intégration de Bitbucket nécessite un client [OAuth](https://support.atlas
 
 **Pour créer un client OAuth dans Bitbucket** :
 
-1. Connectez-vous à votre compte [ Bitbucket ](https://id.atlassian.com/login).
+1. Connectez-vous à votre compte [&#x200B; Bitbucket &#x200B;](https://id.atlassian.com/login).
 
 1. Cliquez sur **Paramètres** > **Gestion des accès** > **OAuth**.
 
@@ -178,7 +178,7 @@ L’intégration de Bitbucket nécessite un client [OAuth](https://support.atlas
 
 Pour communiquer des événements (une notification push, par exemple) avec votre serveur Git Cloud, est-il nécessaire de disposer d’un webhook pour votre référentiel BitBucket ? La méthode de configuration d’une intégration Bitbucket présentée sur cette page, lorsqu’elle est correctement suivie, crée automatiquement un webhook. Il est important de vérifier le webhook pour éviter de créer plusieurs intégrations.
 
-1. Connectez-vous à votre compte [ Bitbucket ](https://id.atlassian.com/login).
+1. Connectez-vous à votre compte [&#x200B; Bitbucket &#x200B;](https://id.atlassian.com/login).
 
 1. Cliquez sur **Référentiels** et sélectionnez votre projet.
 
@@ -290,7 +290,7 @@ Vous pouvez également supprimer l’intégration Bitbucket en vous connectant �
 Pour utiliser l’intégration du serveur Bitbucket, vous avez besoin des éléments suivants :
 
 - [Jeton d’accès Bitbucket](https://confluence.atlassian.com/bitbucketserver/http-access-tokens-939515499.html) : générez un jeton qui accorde l’accès à Project `read` et à Repository `admin`
-- [ URL du serveur Bitbucket ](https://confluence.atlassian.com/bitbucketserver/specify-the-bitbucket-base-url-776640392.html) : ajoutez l’URL de base de votre instance Bitbucket
+- [&#x200B; URL du serveur Bitbucket &#x200B;](https://confluence.atlassian.com/bitbucketserver/specify-the-bitbucket-base-url-776640392.html) : ajoutez l’URL de base de votre instance Bitbucket
 
 Bien que vous puissiez utiliser l’interface de ligne de commande Cloud pour suivre les étapes d’intégration du serveur Bitbucket, la commande complète ressemble à ce qui suit :
 

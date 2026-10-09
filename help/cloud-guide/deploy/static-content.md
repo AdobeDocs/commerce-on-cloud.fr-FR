@@ -78,7 +78,7 @@ La génération de contenu statique nécessite l’accès aux thèmes et aux par
    magento-cloud ssh
    ```
 
-1. Déplacez les paramètres régionaux vers le système de fichiers, puis mettez à jour le fichier ](../development/commerce-version.md#create-a-configphp-file).[`config.php`
+1. Déplacez les paramètres régionaux vers le système de fichiers, puis mettez à jour le fichier [&#128279;](../development/commerce-version.md#create-a-configphp-file).`config.php`
 
 1. Le fichier de configuration `.magento.env.yaml` doit contenir les valeurs suivantes :
 
@@ -88,7 +88,7 @@ La génération de contenu statique nécessite l’accès aux thèmes et aux par
 
 1. Vérifiez la configuration du hook [Post-déploiement](../application/hooks-property.md) dans le fichier `.magento.app.yaml`.
 
-1. Vérifiez vos paramètres en exécutant l’assistant [ Smart pour obtenir l’état idéal](smart-wizards.md).
+1. Vérifiez vos paramètres en exécutant l’assistant [&#x200B; Smart pour obtenir l’état idéal](smart-wizards.md).
 
    ```bash
    php ./vendor/bin/ece-tools wizard:ideal-state
