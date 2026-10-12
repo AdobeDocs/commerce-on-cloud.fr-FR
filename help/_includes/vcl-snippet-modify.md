@@ -3,7 +3,6 @@ source-git-commit: 0df07e865c3c4fc4ac14483972643eafa8814726
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
-
 ---
 # Inclure le fichier pour modifier le VCL personnalisé pour Fastly
 
