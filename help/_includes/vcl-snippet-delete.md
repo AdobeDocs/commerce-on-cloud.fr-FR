@@ -18,7 +18,7 @@ ht-degree: 0%
 
 1. Dans la colonne _Action_, cliquez sur l’icône de la corbeille en regard du fragment de code à supprimer.
 
-1. Dans la fenêtre modale suivante, cliquez sur **** et activez une nouvelle version.
+1. Dans la fenêtre modale suivante, cliquez sur **&#x200B;**&#x200B;et activez une nouvelle version.
 
 >[!WARNING]
 >
