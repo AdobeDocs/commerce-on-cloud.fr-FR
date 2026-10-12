@@ -3,7 +3,6 @@ source-git-commit: 0df07e865c3c4fc4ac14483972643eafa8814726
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 0%
-
 ---
 # Inclure le fichier pour supprimer le VCL personnalisé pour Fastly
 
@@ -19,7 +18,7 @@ ht-degree: 0%
 
 1. Dans la colonne _Action_, cliquez sur l’icône de la corbeille en regard du fragment de code à supprimer.
 
-1. Dans la fenêtre modale suivante, cliquez sur **DELETE** et activez une nouvelle version.
+1. Dans la fenêtre modale suivante, cliquez sur **&#x200B;**&#x200B;et activez une nouvelle version.
 
 >[!WARNING]
 >
