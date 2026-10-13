@@ -24,7 +24,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
+source-git-commit: 6f7a0fb23a3b479c766f82273658d4404707a171
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 3%
@@ -36,8 +36,8 @@ Ces informations de mise à jour présentent les dernières améliorations appor
 | Notes de mise à jour | Version | Description | Source |
 | ----------------- |----------| ---------------------------------------- | --------------------------- |
 | [package ece-tools](ece-tools-package.md) | 2002.2.15 | Ensemble de scripts et d’outils conçu pour gérer et déployer des projets cloud. | [`magento/ece-tools`](https://github.com/magento/ece-tools/tree/2002.2.15) |
-| [Correctifs cloud pour Commerce](cloud-patches.md) | 1.1.21 | Un ensemble de correctifs qui améliorent l’intégration de toutes les versions d’Adobe Commerce avec les environnements cloud. Ce package comprend les correctifs Adobe Commerce et les correctifs disponibles qui sont appliqués lorsque vous utilisez `ece-tools` pour le déploiement | `magento/magento-cloud-patches`, via le référentiel du compositeur Commerce à l’adresse `repo.magento.com` (nécessite une autorisation Adobe Commerce sur l’infrastructure cloud ; voir [Notes de mise à jour des correctifs cloud pour Commerce](cloud-patches.md)). |
-| [&#x200B; Cloud Docker pour Commerce &#x200B;](cloud-docker.md) | 1.4.10 | Fichiers de fonctionnalité et de configuration pour les images Docker afin de déployer Adobe Commerce dans un environnement cloud local | [`magento/magento-cloud-docker`](https://github.com/magento/magento-cloud-docker/tree/1.4.10) |
+| [Correctifs cloud pour Commerce](cloud-patches.md) | 1.1.22 | Un ensemble de correctifs qui améliorent l’intégration de toutes les versions d’Adobe Commerce avec les environnements cloud. Ce package comprend les correctifs Adobe Commerce et les correctifs disponibles qui sont appliqués lorsque vous utilisez `ece-tools` pour le déploiement | `magento/magento-cloud-patches`, via le référentiel du compositeur Commerce à l’adresse `repo.magento.com` (nécessite une autorisation Adobe Commerce sur l’infrastructure cloud ; voir [Notes de mise à jour des correctifs cloud pour Commerce](cloud-patches.md)). |
+| [ Cloud Docker pour Commerce ](cloud-docker.md) | 1.4.10 | Fichiers de fonctionnalité et de configuration pour les images Docker afin de déployer Adobe Commerce dans un environnement cloud local | [`magento/magento-cloud-docker`](https://github.com/magento/magento-cloud-docker/tree/1.4.10) |
 | [Composants cloud de Commerce](cloud-components.md) | 1.1.4 | Fonctionnalité principale Adobe Commerce étendue pour les sites déployés sur l’infrastructure cloud | [`magento/magento-cloud-components`](https://github.com/magento/magento-cloud-components/tree/1.1.4) |
 
 Lorsque vous mettez à jour ECE-Tools 2002.1.0 ou une version ultérieure, vous mettez automatiquement à jour vers les dernières versions des autres packages, qui sont des dépendances pour le package `ece-tools`. Voir [Métapaquet cloud](../development/overview.md#cloud-metapackage) pour obtenir une liste des dépendances.
