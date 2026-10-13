@@ -72,7 +72,7 @@ Par exemple, pour utiliser la dernière version d’Adobe Commerce, la version 2
 
 Les principaux packages de ce métapaquet sont les suivants :
 
-- **fournisseur/magento/ece-tools** : le package `ece-tools` est compatible avec Adobe Commerce version 2.1.4 et ultérieure. Il fournit un ensemble riche de fonctionnalités que vous pouvez utiliser pour gérer votre projet d’infrastructure Adobe Commerce sur cloud. Il contient des scripts et des commandes d’infrastructure cloud d’Adobe Commerce conçues pour vous aider à gérer votre code et à créer et déployer automatiquement vos projets. Voir la présentation du package ](../dev-tools/package-overview.md).[`ece-tools`
+- **fournisseur/magento/ece-tools** : le package `ece-tools` est compatible avec Adobe Commerce version 2.1.4 et ultérieure. Il fournit un ensemble riche de fonctionnalités que vous pouvez utiliser pour gérer votre projet d’infrastructure Adobe Commerce sur cloud. Il contient des scripts et des commandes d’infrastructure cloud d’Adobe Commerce conçues pour vous aider à gérer votre code et à créer et déployer automatiquement vos projets. Voir la présentation du package [&#128279;](../dev-tools/package-overview.md).`ece-tools`
 - **chez le fournisseur/magento/product-enterprise-edition** : ce métapaquet nécessite des composants d’application, notamment des modules, des structures, des thèmes, etc.
 - **fournisseur/fastly2/magento2** : ce module gère le réseau CDN et les services Fastly pour les environnements d’évaluation et de production Pro et de production de démarrage. Voir [Services Fastly](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2).
 - **fournisseur/aem/rum** : ce module gère l’outil de collecte de données [Télémétrie opérationnelle](../monitor/operational-telemetry.md).
@@ -91,4 +91,4 @@ Vous pouvez utiliser l’outil Cloud Docker for Commerce pour émuler Adobe Comm
 
 >[!TIP]
 >
->Pour plus d’informations sur l’utilisation des services d’hébergement basés sur Git avec Adobe Commerce sur les infrastructures cloud, voir [ Intégrations ](../integrations/overview.md).
+>Pour plus d’informations sur l’utilisation des services d’hébergement basés sur Git avec Adobe Commerce sur les infrastructures cloud, voir [&#x200B; Intégrations &#x200B;](../integrations/overview.md).
