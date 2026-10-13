@@ -25,9 +25,9 @@ role_v2:
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
+source-git-commit: f25bd014c1b6f546d3395db1691128b3e63bfa85
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '555'
 ht-degree: 0%
 ---
 # Présentation du développement
@@ -72,10 +72,9 @@ Par exemple, pour utiliser la dernière version d’Adobe Commerce, la version 2
 
 Les principaux packages de ce métapaquet sont les suivants :
 
-- **fournisseur/magento/ece-tools** : le package `ece-tools` est compatible avec Adobe Commerce version 2.1.4 et ultérieure. Il fournit un ensemble riche de fonctionnalités que vous pouvez utiliser pour gérer votre projet d’infrastructure Adobe Commerce sur cloud. Il contient des scripts et des commandes d’infrastructure cloud d’Adobe Commerce conçues pour vous aider à gérer votre code et à créer et déployer automatiquement vos projets. Voir la présentation du package [&#128279;](../dev-tools/package-overview.md).`ece-tools`
+- **fournisseur/magento/ece-tools** : le package `ece-tools` est compatible avec Adobe Commerce version 2.1.4 et ultérieure. Il fournit un ensemble riche de fonctionnalités que vous pouvez utiliser pour gérer votre projet d’infrastructure Adobe Commerce sur cloud. Il contient des scripts et des commandes d’infrastructure cloud d’Adobe Commerce conçues pour vous aider à gérer votre code et à créer et déployer automatiquement vos projets. Voir la présentation du package ](../dev-tools/package-overview.md).[`ece-tools`
 - **chez le fournisseur/magento/product-enterprise-edition** : ce métapaquet nécessite des composants d’application, notamment des modules, des structures, des thèmes, etc.
 - **fournisseur/fastly2/magento2** : ce module gère le réseau CDN et les services Fastly pour les environnements d’évaluation et de production Pro et de production de démarrage. Voir [Services Fastly](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2).
-- **fournisseur/magento/module-paypal-on-boarding**—Ce module permet de passer en caisse la passerelle de paiement PayPal en se connectant à votre compte marchand PayPal. Voir [Outil d’intégration PayPal](../store/paypal.md).
 - **fournisseur/aem/rum** : ce module gère l’outil de collecte de données [Télémétrie opérationnelle](../monitor/operational-telemetry.md).
 
 >[!TIP]
@@ -92,4 +91,4 @@ Vous pouvez utiliser l’outil Cloud Docker for Commerce pour émuler Adobe Comm
 
 >[!TIP]
 >
->Pour plus d’informations sur l’utilisation des services d’hébergement basés sur Git avec Adobe Commerce sur les infrastructures cloud, voir [&#x200B; Intégrations &#x200B;](../integrations/overview.md).
+>Pour plus d’informations sur l’utilisation des services d’hébergement basés sur Git avec Adobe Commerce sur les infrastructures cloud, voir [ Intégrations ](../integrations/overview.md).
