@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 6f7a0fb23a3b479c766f82273658d4404707a171
+source-git-commit: df46dbad973a1042e02fccc47c3fc17227a453a5
 workflow-type: tm+mt
-source-wordcount: '3097'
+source-wordcount: '3098'
 ht-degree: 0%
 ---
 # Correctifs cloud pour Commerce
@@ -60,7 +60,7 @@ Le package de `magento/magento-cloud-patches` utilise la séquence de version su
 
 Date de publication : 13 octobre 2026
 
-- ![icône de correctif](../../assets/fix.svg) **Améliorations de la sécurité** : application des correctifs de sécurité référencés dans la [Mise à jour de sécurité d’Adobe Commerce APSB26-153](https://helpx.adobe.com/security/products/magento/apsb26-153.html).<!--MCLOUD-15727 -->
+- ![icône de correctif](../../assets/fix.svg) **Améliorations de la sécurité** : application des correctifs de sécurité référencés dans la [Mise à jour de sécurité d’Adobe Commerce APSB26-153](https://www.adobe.com/trust/security/products/commerce/apsb26-153.html).<!--MCLOUD-15727 -->
 
 ## v1.1.21
 
