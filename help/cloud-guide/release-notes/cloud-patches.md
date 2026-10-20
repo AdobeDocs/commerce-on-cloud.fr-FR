@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: df46dbad973a1042e02fccc47c3fc17227a453a5
+source-git-commit: d7aff88a23f73345c5ad5c80f1131b77a8f797ca
 workflow-type: tm+mt
-source-wordcount: '3098'
+source-wordcount: '3143'
 ht-degree: 0%
 ---
 # Correctifs cloud pour Commerce
@@ -56,7 +56,13 @@ Le package de `magento/magento-cloud-patches` utilise la séquence de version su
 
 <!--Add release notes below-->
 
-## v1.1.22 {#latest}
+## v1.1.23 {#latest}
+
+Date de publication : 19 octobre 2026
+
+- ![icône de correctif](../../assets/fix.svg) **Améliorations de la sécurité**—Mise à jour du correctif de sécurité isolé d’octobre 2026 pour la version 2.4.8-p5 afin d’inclure des mesures de sécurité supplémentaires (défense en profondeur) pour réduire davantage les risques. Voir [KA-50927](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-50927).<!--MCLOUD-15841 -->
+
+## v1.1.22
 
 Date de publication : 13 octobre 2026
 
