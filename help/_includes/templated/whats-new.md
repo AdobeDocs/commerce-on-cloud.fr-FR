@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2e4b0e29f89050cddd138865dbd7f5b823c0427b
+source-git-commit: e3d730f2e6ca7fe67e6f07368bef4d3b4f461d38
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '438'
 ht-degree: 1%
 ---
 # Nouveautés du modèle
@@ -124,36 +124,6 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
         Feedback
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/ea46582388a9afaf94eb9ced6b61dbef0044370d">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 24 Août 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">référence CLI</a> après la version 2002.2.13 de ECE-Tools.</p>
-</td>
-      <td>
-        Technique
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/0ac31574952505e92744535f861591abcdd8ac56">validation</a></td>
-    </tr>
-    <tr>
-      <td><p>Ajout de la disponibilité <a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/autoscaling#vertical-auto-scaling">mise à l’échelle automatique verticale</a> à Adobe Commerce sur les infrastructures cloud.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/cd222546c1c57f5250408d9e423dc586284a34fc">validation</a></td>
     </tr>
   </tbody>
 </table>
