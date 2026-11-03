@@ -18,9 +18,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
+source-git-commit: 800e5c27d4d0879bafd32101fd70ec0f00f1880c
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2599'
 ht-degree: 0%
 ---
 # [!DNL Adobe Commerce Advanced Security]
@@ -31,7 +31,7 @@ ht-degree: 0%
 >
 >Utilisez l’application [Adobe Commerce Traffic Insights](../monitor/traffic-insights/overview.md) dans New Relic pour analyser votre trafic Fastly et vos modèles de robots, et déterminer si Advanced Security vous convient.
 
-[!DNL Adobe Commerce on Cloud Infrastructure] comprend une protection DDoS de couche 3 et 4 intégrée [&#128279;](./fastly.md#ddos-protection) et un [pare-feu d’application web (WAF)](./fastly-waf-service.md). Dans le cadre du [modèle de responsabilité partagée](https://experienceleague.adobe.com/fr/docs/commerce-operations/security-and-compliance/shared-responsibility), la détection DDoS de couche 7, la protection des robots et le blocage proactif des adresses IP sont des responsabilités des commerçants, que [!DNL Adobe Commerce Advanced Security] est conçu pour traiter.
+[!DNL Adobe Commerce on Cloud Infrastructure] comprend une protection DDoS de couche 3 et 4 intégrée [](./fastly.md#ddos-protection) et un [pare-feu d’application web (WAF)](./fastly-waf-service.md). Dans le cadre du [modèle de responsabilité partagée](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility), la détection DDoS de couche 7, la protection des robots et le blocage proactif des adresses IP sont des responsabilités des commerçants, que [!DNL Adobe Commerce Advanced Security] est conçu pour traiter.
 
 [!DNL Advanced Security] étend la protection du storefront grâce à des fonctionnalités de sécurité de périphérie optimisées par Fastly, qui offre une gestion des robots, une limitation de débit avancée et une protection DDoS de couche 7 dans le cadre d&#39;une plateforme de périphérie unifiée qui combine l&#39;évolutivité, les performances et la sécurité à la périphérie du réseau.
 
@@ -57,11 +57,11 @@ ht-degree: 0%
 >
 >**Limites actuelles**
 >
->Jusqu’à la fin du 3e trimestre 2026, les clients ne peuvent pas modifier ni gérer directement les règles de gestion des robots.
+>Actuellement, les clients ne peuvent pas modifier ni gérer directement les règles de gestion des robots.
 >
->Pour ajouter, modifier ou ajuster une règle, contactez l’assistance Adobe Commerce au moyen d’un ticket d’assistance [&#128279;](https://experienceleague.adobe.com/home?lang=fr&support-tab=home#support). L’équipe d’assistance mettra en œuvre les modifications demandées.
+>Pour ajouter, modifier ou ajuster une règle, contactez l’assistance Adobe Commerce au moyen d’un ticket d’assistance [](https://experienceleague.adobe.com/home?support-tab=home#support). L’équipe d’assistance mettra en œuvre les modifications demandées.
 >
->À compter du 4e trimestre 2026, Fastly prévoit de publier une fonctionnalité complémentaire qui permettra aux clients de gérer les règles de gestion des robots dans le panneau d’administration Commerce.
+>À compter du 1er trimestre 2027, Fastly prévoit de publier une fonctionnalité complémentaire qui permettra aux clients de gérer les règles de gestion des robots dans l’administration Commerce.
 
 ## Règles et protections par défaut
 
@@ -175,6 +175,12 @@ Les scénarios suivants sont mieux gérés avec [!DNL Advanced Security] :
 | Vous souhaitez gérer les robots d&#39;exploration d’IA et les récupérateurs accédant à votre contenu storefront | La gestion des robots comprend des politiques de détection et d’application des robots d’IA configurables |
 | Vous avez besoin d’une solution de sécurité Edge prise en charge par Adobe intégrée à votre réseau CDN Fastly existant | [!DNL Advanced Security] s’exécute sur la même plateforme Fastly Edge qui sert déjà votre storefront |
 
+#### Conseils pour les implémentations découplées
+
+Si votre site Adobe Commerce utilise une mise en œuvre découplée, où le storefront n’est pas le storefront par défaut d’Adobe Commerce et est hébergé ou diffusé par l’intermédiaire d’un fournisseur de storefront distinct, déterminez où le trafic affecté est diffusé avant de sélectionner une solution de protection des robots.
+
+Pour le trafic storefront, si le robot ou l’activité de robot d&#39;exploration cible principalement les pages storefront frontales, telles que les pages de détails du produit (PDP), les pages de liste de produits (PLP) ou les pages de catégorie, collaborez avec votre fournisseur storefront pour évaluer les fonctionnalités de gestion de robots ou de sécurité disponibles pour ce storefront.
+
 ### Quand utiliser les protections existantes ?
 
 Les scénarios suivants sont mieux gérés avec les protections existantes :
@@ -233,7 +239,7 @@ Les scénarios suivants sont mieux gérés avec des protections alternatives qui
 - **Outils de conformité** : analyses PCI, rapports de conformité SOC et outils d’audit réglementaire.
 - **Renforcement au niveau de l’application** : authentification de l’API basée sur les jetons, normalisation des paramètres de requête et conception de stratégie de mise en cache.
 
-Pour obtenir un aperçu complet des responsabilités d’Adobe et de la sécurité des clients, reportez-vous au [modèle de responsabilité partagée](https://experienceleague.adobe.com/fr/docs/commerce-operations/security-and-compliance/shared-responsibility).
+Pour obtenir un aperçu complet des responsabilités d’Adobe et de la sécurité des clients, reportez-vous au [modèle de responsabilité partagée](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility).
 
 ## Schémas et protections d’attaque courants
 
@@ -271,7 +277,7 @@ Pour demander une [!DNL Advanced Security] :
 
 1. Contactez votre équipe de compte Adobe ou votre représentant commercial Adobe pour discuter des [!DNL Advanced Security] de votre projet.
 
-1. Après l’achat de [!DNL Advanced Security], [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) demandant l’activation du [!DNL Advanced Security]. Incluez votre ID de projet [!DNL Adobe Commerce on Cloud Infrastructure] et les environnements nécessitant une activation (par exemple, Production et Évaluation).
+1. Après l’achat de [!DNL Advanced Security], [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) demandant l’activation du [!DNL Advanced Security]. Incluez votre ID de projet [!DNL Adobe Commerce on Cloud Infrastructure] et les environnements nécessitant une activation (par exemple, Production et Évaluation).
 
 1. Adobe active [!DNL Advanced Security] sur votre service Fastly et configure les politiques de protection initiales. L’activation est généralement effectuée dans les jours ouvrables suivant l’envoi du ticket.
 
@@ -279,7 +285,7 @@ Pour demander une [!DNL Advanced Security] :
 
 >[!NOTE]
 >
->Les modifications de configuration apportées à [!DNL Advanced Security] nécessitent actuellement [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). La configuration en libre-service via l’interface utilisateur d’administration est prévue pour une version ultérieure.
+>Les modifications de configuration apportées à [!DNL Advanced Security] nécessitent actuellement [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). La configuration en libre-service via l’interface utilisateur d’administration est prévue pour une version ultérieure.
 
 ## Restrictions
 
