@@ -18,9 +18,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
+source-git-commit: 800e5c27d4d0879bafd32101fd70ec0f00f1880c
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2599'
 ht-degree: 0%
 ---
 # [!DNL Adobe Commerce Advanced Security]
@@ -57,11 +57,11 @@ ht-degree: 0%
 >
 >**Limites actuelles**
 >
->Jusqu’à la fin du 3e trimestre 2026, les clients ne peuvent pas modifier ni gérer directement les règles de gestion des robots.
+>Actuellement, les clients ne peuvent pas modifier ni gérer directement les règles de gestion des robots.
 >
 >Pour ajouter, modifier ou ajuster une règle, contactez l’assistance Adobe Commerce au moyen d’un ticket d’assistance [&#128279;](https://experienceleague.adobe.com/home?lang=fr&support-tab=home#support). L’équipe d’assistance mettra en œuvre les modifications demandées.
 >
->À compter du 4e trimestre 2026, Fastly prévoit de publier une fonctionnalité complémentaire qui permettra aux clients de gérer les règles de gestion des robots dans le panneau d’administration Commerce.
+>À compter du 1er trimestre 2027, Fastly prévoit de publier une fonctionnalité complémentaire qui permettra aux clients de gérer les règles de gestion des robots dans l’administration Commerce.
 
 ## Règles et protections par défaut
 
@@ -174,6 +174,12 @@ Les scénarios suivants sont mieux gérés avec [!DNL Advanced Security] :
 | Les URL spécifiques ou les points d’entrée d’API sont ciblés par un trafic distribué à volume élevé qui ne peut pas être bloqué par IP | La limitation de débit avancée fournit des contrôles granulaires pour des points d’entrée et des modèles de trafic spécifiques |
 | Vous souhaitez gérer les robots d&#39;exploration d’IA et les récupérateurs accédant à votre contenu storefront | La gestion des robots comprend des politiques de détection et d’application des robots d’IA configurables |
 | Vous avez besoin d’une solution de sécurité Edge prise en charge par Adobe intégrée à votre réseau CDN Fastly existant | [!DNL Advanced Security] s’exécute sur la même plateforme Fastly Edge qui sert déjà votre storefront |
+
+#### Conseils pour les implémentations découplées
+
+Si votre site Adobe Commerce utilise une mise en œuvre découplée, où le storefront n’est pas le storefront par défaut d’Adobe Commerce et est hébergé ou diffusé par l’intermédiaire d’un fournisseur de storefront distinct, déterminez où le trafic affecté est diffusé avant de sélectionner une solution de protection des robots.
+
+Pour le trafic storefront, si le robot ou l’activité de robot d&#39;exploration cible principalement les pages storefront frontales, telles que les pages de détails du produit (PDP), les pages de liste de produits (PLP) ou les pages de catégorie, collaborez avec votre fournisseur storefront pour évaluer les fonctionnalités de gestion de robots ou de sécurité disponibles pour ce storefront.
 
 ### Quand utiliser les protections existantes ?
 
