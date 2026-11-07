@@ -57,7 +57,7 @@ Pour ajouter des [!DNL Xdebug], Adobe recommande de travailler dans [une branche
 
 Vous pouvez activer [!DNL Xdebug] directement dans tous les environnements de démarrage et les environnements d’intégration Pro. Cette étape de configuration n’est pas requise pour les environnements de production et d’évaluation Pro. Voir [Débogage pour l’évaluation et la production pro](#debug-for-pro-staging-and-production).
 
->[!VIDEO](https://video.tv.adobe.com/v/3437407?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3505678?captions=fre_fr&learn=on)
 
 Pour activer le [!DNL Xdebug] pour votre projet, ajoutez des `xdebug` à la section `runtime:extensions` du fichier `.magento.app.yaml`.
 
@@ -97,7 +97,7 @@ Lorsqu’il est déployé dans des environnements de démarrage et des environne
 
 ### Configuration du serveur PhpStorm
 
->[!VIDEO](https://video.tv.adobe.com/v/3437409?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3505696?captions=fre_fr&learn=on)
 
 L’IDE [PhpStorm](https://www.jetbrains.com/phpstorm/) doit être configuré pour fonctionner correctement avec [!DNL Xdebug].
 
@@ -137,7 +137,7 @@ L’IDE [PhpStorm](https://www.jetbrains.com/phpstorm/) doit être configuré po
 
 Cela permet à l’application de disposer des paramètres de débogage corrects pour gérer la requête de l’application Adobe Commerce.
 
->[!VIDEO](https://video.tv.adobe.com/v/3437426?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3505741?captions=fre_fr&learn=on)
 
 1. Ouvrez l&#39;application PHPStorm et cliquez sur **[!UICONTROL Add Configuration]** dans le coin supérieur droit de l&#39;écran.
 
@@ -154,7 +154,7 @@ Cela permet à l’application de disposer des paramètres de débogage corrects
 
 ### Configurer le transfert de port
 
->[!VIDEO](https://video.tv.adobe.com/v/3437410?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3505687?captions=fre_fr&learn=on)
 
 Mappez la connexion `XDEBUG` du serveur à votre système local. Pour effectuer tout type de débogage, vous devez transférer le port 9000 de votre serveur Adobe Commerce on cloud infrastructure vers votre ordinateur local. Consultez l’une des sections suivantes :
 
@@ -323,7 +323,7 @@ Vous avez besoin des éléments suivants :
 
 Il s’agit d’une démonstration des configurations utilisées, ainsi que du paramètre GET permettant de démarrer une session de débogage à distance.
 
->[!VIDEO](https://video.tv.adobe.com/v/3437417?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3505710?captions=fre_fr&learn=on)
 
 1. Activer le débogage à distance ; visitez le site dans le navigateur et ajoutez ce qui suit à l’URL où `KEY` est la valeur de `xdebug_key`.
 
