@@ -24,17 +24,17 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-last-update: 2026-11-03
-source-git-commit: 7513318f6851aefc6a71d7c9b60b6431d5a00cb4
+last-update: 2026-11-09
+source-git-commit: df29f8e45e03c90870918b186a36664c034d6543
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
 ---
 # Commerce sur les infrastructures cloud
 
-Adobe Commerce sur les infrastructures cloud fournit une plateforme d’hébergement automatisée avec une approche **en libre-service** permettant de créer, de déployer et de gérer votre application [!DNL Commerce] dans un environnement conçu pour le cloud. Adobe Commerce sur les infrastructures cloud est fourni avec des fonctionnalités supplémentaires qui le distinguent des plateformes Adobe Commerce et Magento Open Source sur site :
+Adobe Commerce sur l’infrastructure cloud fournit une plateforme d’hébergement automatisée avec une approche **en libre-service** de création, de déploiement et de gestion de votre application [!DNL Commerce] dans un environnement conçu pour le cloud. Adobe Commerce sur les infrastructures cloud est fourni avec des fonctionnalités supplémentaires qui le distinguent des plateformes Adobe Commerce et Magento Open Source sur site :
 
-- Une infrastructure préconfigurée qui inclut PHP, MySQL (MariaDB), Redis ou Valkey, des services de file d’attente de messages ([!DNL RabbitMQ] ou [!DNL ActiveMQ]) et des technologies de moteurs de recherche prises en charge.
+- Une infrastructure préconfigurée qui inclut PHP, MySQL (MariaDB), Redis ou Valkey, des services de file d&#39;attente de messages ([!DNL RabbitMQ] ou [!DNL ActiveMQ]) et des technologies de moteurs de recherche prises en charge.
 - Workflow basé sur Git avec création et déploiement automatiques pour un développement rapide et un déploiement continu efficaces, chaque fois que vous poussez des modifications de code dans un environnement Platform as a Service (PaaS).
 - Fichiers de configuration d’environnement hautement personnalisables et outils de gestion et de déploiement d’interface de ligne de commande (CLI).
 - L’hébergement Amazon Web Services (AWS) qui offre un environnement évolutif et sécurisé pour la vente et la vente en ligne.
@@ -43,9 +43,9 @@ Adobe Commerce sur les infrastructures cloud fournit une plateforme d’héberge
 
 >[!NOTE]
 >
->Pour plus d’informations sur la sécurité, consultez la [liste de contrôle de lancement de la sécurité](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
+>Pour plus d&#39;informations sur la sécurité, consultez la [liste de contrôle de lancement de la sécurité](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
 
-Affichez la [pile technologique](architecture/tech-stack.md) en détail ou découvrez en détail les fonctionnalités spécifiques et les produits pris en charge dans [Architecture cloud pour Commerce](architecture/cloud-architecture.md).
+Affichez la [pile technologique](architecture/tech-stack.md) en détail ou découvrez les fonctionnalités spécifiques et les produits pris en charge dans l’[architecture cloud pour Commerce](architecture/cloud-architecture.md).
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -76,11 +76,11 @@ Les sections suivantes fournissent des détails sur les différentes régions d�
 
 ## Documentation Adobe Commerce
 
-Le guide Commerce sur les infrastructures cloud suppose que vous avez une connaissance pratique et une compréhension de l’application Adobe Commerce. Consultez les guides de l’utilisateur et du développeur [!DNL Commerce] ci-dessous :
+Le guide Commerce sur les infrastructures cloud suppose que vous avez une connaissance pratique et une compréhension de l’application Adobe Commerce. Reportez-vous aux guides du développeur et de l&#39;utilisateur [!DNL Commerce] ci-dessous :
 
-- [Documentation pour les développeurs Adobe Commerce &#x200B;](https://developer.adobe.com/commerce/docs/) (site Adobe Developer) : développez, personnalisez, intégrez, étendez et utilisez des fonctionnalités avancées
+- [Documentation pour les développeurs Adobe Commerce](https://developer.adobe.com/commerce/docs/) (site Adobe Developer) : développez, personnalisez, intégrez, étendez et utilisez des fonctionnalités avancées
 
-- [Documentation Adobe Commerce &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce) (Adobe Experience League) : planification, implémentation, exploitation, mise à niveau et maintenance de vos projets [!DNL Commerce]
+- [Documentation Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce) (Adobe Experience League) : planifiez, implémentez, exploitez, mettez à niveau et gérez vos [!DNL Commerce] projets
 
 {{$include /help/_includes/templated/whats-new.md}}
 
