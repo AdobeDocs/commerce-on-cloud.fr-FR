@@ -24,8 +24,8 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-last-update: 2026-11-09
-source-git-commit: df29f8e45e03c90870918b186a36664c034d6543
+last-update: 2026-11-21
+source-git-commit: 4bf8c3cf92ac700adddad82436fbd71a32571604
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Adobe Commerce sur l’infrastructure cloud fournit une plateforme d’hébergem
 
 >[!NOTE]
 >
->Pour plus d&#39;informations sur la sécurité, consultez la [liste de contrôle de lancement de la sécurité](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
+>Pour plus d&#39;informations sur la sécurité, consultez la [liste de contrôle de lancement de la sécurité](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
 
 Affichez la [pile technologique](architecture/tech-stack.md) en détail ou découvrez les fonctionnalités spécifiques et les produits pris en charge dans l’[architecture cloud pour Commerce](architecture/cloud-architecture.md).
 
@@ -80,7 +80,7 @@ Le guide Commerce sur les infrastructures cloud suppose que vous avez une connai
 
 - [Documentation pour les développeurs Adobe Commerce](https://developer.adobe.com/commerce/docs/) (site Adobe Developer) : développez, personnalisez, intégrez, étendez et utilisez des fonctionnalités avancées
 
-- [Documentation Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce) (Adobe Experience League) : planifiez, implémentez, exploitez, mettez à niveau et gérez vos [!DNL Commerce] projets
+- [Documentation Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce) (Adobe Experience League) : planifiez, implémentez, exploitez, mettez à niveau et gérez vos [!DNL Commerce] projets
 
 {{$include /help/_includes/templated/whats-new.md}}
 
